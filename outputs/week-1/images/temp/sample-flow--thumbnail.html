@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Technical Diagram</title>
+</head>
+<body style="background-color:#0a0a0a;">
+
+<svg width="400" height="200">
+
+  <!-- Node positions -->
+  <g id="user" transform="translate(20, 80)">
+    <ellipse cx="30" cy="20" rx="30" ry="20" fill="#ffd43b" stroke="white" stroke-width="3"/>
+    <text x="30" y="25" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">User</text>
+  </g>
+
+  <g id="bottle_rocket" transform="translate(100, 80)">
+    <rect x="0" y="0" width="80" height="40" fill="#4dabf7" stroke="white" stroke-width="3"/>
+    <text x="40" y="25" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Bottle Rocket</text>
+  </g>
+
+  <g id="ai_model" transform="translate(200, 80)">
+    <rect x="0" y="0" width="80" height="40" rx="10" ry="10" fill="#69db7c" stroke="white" stroke-width="3"/>
+    <text x="40" y="25" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">AI Model</text>
+  </g>
+
+  <g id="response" transform="translate(300, 80)">
+    <polygon points="0,0 80,0 70,40 0,40 10,0" fill="#74c0fc" stroke="white" stroke-width="3"/>
+    <text x="40" y="25" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Response</text>
+  </g>
+
+  <!-- Edges -->
+  <path d="M80,100 L100,100" stroke="white" stroke-width="3" marker-end="url(#arrowhead)" />
+  <path d="M180,100 L200,100" stroke="white" stroke-width="3" marker-end="url(#arrowhead)" />
+  <path d="M280,100 C 270,60 110,60 100,100" stroke="white" stroke-width="3" marker-end="url(#arrowhead)" fill="none"/>
+  <path d="M180,100 L300,100" stroke="white" stroke-width="3" marker-end="url(#arrowhead)" />
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="white" />
+    </marker>
+  </defs>
+
+</svg>
+
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 08 - Voice Mode Setup</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .exercise-badge {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      background: #e82127;
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .two-col {
+      display: flex;
+      gap: 30px;
+    }
+    .col {
+      flex: 1;
+    }
+    .step-card {
+      background: #1a1a1a;
+      padding: 18px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .step-title {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .step-content {
+      font-size: 13px;
+      color: #a0a0a0;
+      line-height: 1.5;
+    }
+    .key {
+      background: #2a2a2a;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 12px;
+      color: #ffffff;
+    }
+    .tip {
+      background: rgba(74, 222, 128, 0.1);
+      border-left: 3px solid #4ade80;
+      padding: 12px;
+      font-size: 13px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="exercise-badge">Exercise 2</div>
+  <div class="content">
+    <h1>Voice Mode Setup</h1>
+    <div class="two-col">
+      <div class="col">
+        <div class="step-card">
+          <p class="step-title">1. Install VS Code Speech</p>
+          <p class="step-content">Extensions (<span class="key">Ctrl+Shift+X</span>)<br>Search "VS Code Speech"<br>Install and reload</p>
+        </div>
+        <div class="step-card">
+          <p class="step-title">2. Configure Settings</p>
+          <p class="step-content">Settings (<span class="key">Ctrl+,</span>)<br>Search "accessibility.voice"<br>Enable wake word (optional)</p>
+        </div>
+        <div class="step-card">
+          <p class="step-title">3. Test Voice Input</p>
+          <p class="step-content">Press <span class="key">Ctrl+U</span><br>Say "Hello, can you hear me?"<br>Press Escape to stop</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="step-card">
+          <p class="step-title">Voice Commands</p>
+          <p class="step-content">
+            <span class="key">Ctrl+U</span> Voice Chat<br>
+            <span class="key">Ctrl+Alt+V</span> Editor Dictation<br>
+            <span class="key">Escape</span> Stop Dictation
+          </p>
+        </div>
+        <div class="tip">
+          Voice is 3-5x faster than typing. Humans speak at 150 WPM vs 40 WPM typing.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

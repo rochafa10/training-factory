@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 11 - Plan-Execute-Iterate Loop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .flow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .phase {
+      background: #1a1a1a;
+      padding: 24px;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+    }
+    .phase-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .phase-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .phase-desc {
+      font-size: 12px;
+      color: #a0a0a0;
+      line-height: 1.4;
+    }
+    .arrow {
+      font-size: 24px;
+      color: #e82127;
+    }
+    .you-box {
+      border: 2px solid #e82127;
+    }
+    .bottom-text {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <h1>The Plan-Execute-Iterate Loop</h1>
+    <div class="flow">
+      <div class="phase you-box">
+        <p class="phase-icon">You</p>
+        <p class="phase-title">Describe Goal</p>
+        <p class="phase-desc">State what you want to accomplish</p>
+      </div>
+      <span class="arrow">-></span>
+      <div class="phase">
+        <p class="phase-icon">1</p>
+        <p class="phase-title">Plan</p>
+        <p class="phase-desc">Analyzes request, identifies files, breaks into subtasks</p>
+      </div>
+      <span class="arrow">-></span>
+      <div class="phase">
+        <p class="phase-icon">2</p>
+        <p class="phase-title">Execute</p>
+        <p class="phase-desc">Edits files, runs commands, creates content</p>
+      </div>
+      <span class="arrow">-></span>
+      <div class="phase">
+        <p class="phase-icon">3</p>
+        <p class="phase-title">Iterate</p>
+        <p class="phase-desc">Checks for errors, reviews output, self-corrects</p>
+      </div>
+    </div>
+    <p class="bottom-text">You're always in control. Nothing executes without your approval.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 05 - What is MCP?</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #a0a0a0;
+      margin-bottom: 30px;
+    }
+    .main-concept {
+      background: #1a1a1a;
+      padding: 24px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      border-left: 4px solid #e82127;
+    }
+    .main-concept p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .components {
+      display: flex;
+      gap: 20px;
+    }
+    .component {
+      flex: 1;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .component-icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .component-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .component-desc {
+      font-size: 13px;
+      color: #a0a0a0;
+      line-height: 1.4;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <h1>What is MCP?</h1>
+    <p class="subtitle">Model Context Protocol</p>
+
+    <div class="main-concept">
+      <p>MCP is an open standard that connects AI models to external tools and data sources. It extends Copilot beyond the IDE to control browsers, files, and APIs.</p>
+    </div>
+
+    <div class="components">
+      <div class="component">
+        <div class="component-icon">🔌</div>
+        <div class="component-title">MCP Servers</div>
+        <div class="component-desc">Provide tools and data to AI models (Playwright, Filesystem)</div>
+      </div>
+      <div class="component">
+        <div class="component-icon">💻</div>
+        <div class="component-title">MCP Clients</div>
+        <div class="component-desc">Consume tools (VS Code, GitHub Copilot)</div>
+      </div>
+      <div class="component">
+        <div class="component-icon">🔧</div>
+        <div class="component-title">Tools</div>
+        <div class="component-desc">Specific capabilities (navigate, click, read file, write file)</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

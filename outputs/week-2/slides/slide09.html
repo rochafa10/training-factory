@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 09 - Exercise 1</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .exercise-badge {
+      background: #e82127;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .time-badge {
+      margin-left: auto;
+      background: #2a2a2a;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .right-col {
+      width: 340px;
+    }
+    .scenario-box {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .scenario-label {
+      font-size: 11px;
+      color: #e82127;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .scenario-text {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .data-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .data-day {
+      font-size: 11px;
+      color: #a0a0a0;
+      width: 80px;
+    }
+    .data-value {
+      font-size: 11px;
+      font-family: monospace;
+    }
+    .data-bad {
+      color: #f87171;
+    }
+    .data-ok {
+      color: #facc15;
+    }
+    .data-good {
+      color: #4ade80;
+    }
+    .instructions-box {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .instructions-title {
+      font-size: 12px;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .instruction-item {
+      font-size: 13px;
+      margin-bottom: 8px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .instruction-item::before {
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .instruction-item:nth-child(2)::before { content: "1."; }
+    .instruction-item:nth-child(3)::before { content: "2."; }
+    .instruction-item:nth-child(4)::before { content: "3."; }
+    .instruction-item:nth-child(5)::before { content: "4."; }
+    .prompt-hint {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      height: 100%;
+    }
+    .hint-title {
+      font-size: 11px;
+      color: #e82127;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .hint-text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #a0a0a0;
+      font-family: monospace;
+    }
+    .highlight {
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="exercise-badge">Exercise 1</span>
+      <h1>Chain-of-Thought Prompts</h1>
+      <span class="time-badge">25 minutes</span>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="scenario-box">
+          <div class="scenario-label">Scenario</div>
+          <div class="scenario-text">Your DC missed its productivity target by 8% last week. Leadership wants to know why and what to do about it.</div>
+          <div class="data-row">
+            <span class="data-day">Monday:</span>
+            <span class="data-value data-good">95% of target (normal)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Tuesday:</span>
+            <span class="data-value data-ok">92% (2 call-outs)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Wednesday:</span>
+            <span class="data-value data-bad">78% (conveyor down 3 hrs)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Thursday:</span>
+            <span class="data-value data-ok">88% (running behind)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Friday:</span>
+            <span class="data-value data-ok">85% (catching up)</span>
+          </div>
+        </div>
+        <div class="instructions-box">
+          <div class="instructions-title">Your Task</div>
+          <div class="instruction-item">Use CoT to analyze this productivity shortfall</div>
+          <div class="instruction-item">Include the data in your CONTEXT</div>
+          <div class="instruction-item">Use "First..., Then..., Finally..." structure</div>
+          <div class="instruction-item">Get specific recommendations, not generic advice</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="prompt-hint">
+          <div class="hint-title">Prompt Structure Hint</div>
+          <div class="hint-text">ROLE: Operations analyst...
+
+CONTEXT: [Paste the data above]
+
+TASK: Analyze <span class="highlight">step by step</span>:
+<span class="highlight">1. First</span>, calculate each day's impact
+<span class="highlight">2. Then</span>, identify the biggest factor
+<span class="highlight">3. Next</span>, trace the root cause
+<span class="highlight">4. Finally</span>, recommend actions
+
+FORMAT: Numbered sections...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

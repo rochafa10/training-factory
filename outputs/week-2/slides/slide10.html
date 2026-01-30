@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 10 - Section 3 Divider</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .left-panel {
+      width: 320px;
+      background: #e82127;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .section-number {
+      font-size: 200px;
+      font-weight: bold;
+      color: rgba(0,0,0,0.2);
+      position: absolute;
+    }
+    .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+    }
+    .section-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #a0a0a0;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .description {
+      font-size: 16px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="left-panel">
+    <span class="section-number">3</span>
+  </div>
+  <div class="right-panel">
+    <div class="section-label">Section 3</div>
+    <h1>Operations Use Cases</h1>
+    <p class="description">Five high-impact areas where AI saves significant time</p>
+  </div>
+</body>
+</html>

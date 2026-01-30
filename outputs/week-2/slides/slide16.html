@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 16 - Key Takeaways</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .takeaways-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .takeaway-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      gap: 16px;
+    }
+    .takeaway-number {
+      font-size: 36px;
+      font-weight: bold;
+      color: #e82127;
+      line-height: 1;
+    }
+    .takeaway-content {
+      flex: 1;
+    }
+    .takeaway-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .takeaway-desc {
+      font-size: 13px;
+      color: #a0a0a0;
+      line-height: 1.4;
+    }
+    .footer {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Key Takeaways</h1>
+    <div class="takeaways-grid">
+      <div class="takeaway-card">
+        <div class="takeaway-number">1</div>
+        <div class="takeaway-content">
+          <div class="takeaway-title">Chain-of-Thought</div>
+          <div class="takeaway-desc">Forces step-by-step analysis. Improves complex reasoning by 20-40%. Use for analysis and root cause investigation.</div>
+        </div>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-number">2</div>
+        <div class="takeaway-content">
+          <div class="takeaway-title">Few-Shot Examples</div>
+          <div class="takeaway-desc">2-5 examples ensure consistent formatting. Quality beats quantity. Perfect for standardized outputs.</div>
+        </div>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-number">3</div>
+        <div class="takeaway-content">
+          <div class="takeaway-title">Enhanced Personas</div>
+          <div class="takeaway-desc">Specific expertise + traits = better outputs. "15 years experience, known for..." not just "expert."</div>
+        </div>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-number">4</div>
+        <div class="takeaway-content">
+          <div class="takeaway-title">Model Selection</div>
+          <div class="takeaway-desc">Claude for writing, Gemini for speed/scale, Grok for math/real-time. Match model to task.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Build your template library → Use daily → Track time savings</div>
+  </div>
+</body>
+</html>

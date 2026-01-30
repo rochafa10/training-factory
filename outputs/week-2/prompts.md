@@ -1,0 +1,869 @@
+# Week 2 Prompt Library: Prompt Engineering for Operations
+
+This library contains advanced prompts incorporating chain-of-thought reasoning, few-shot examples, and enhanced personas for operations management tasks.
+
+**Tool Legend:**
+- 🟢 Bottle Rocket - Tesla Data OK
+- 🟡 GitHub Copilot - No Tesla Data
+
+**Week 2 Techniques Applied:**
+- **CoT** = Chain-of-Thought (step-by-step reasoning)
+- **Few-Shot** = Examples provided for consistent output
+- **Persona+** = Enhanced persona with experience and traits
+
+---
+
+## Prompts Overview
+
+| # | Prompt Name | Category | Tool | Technique | Effectiveness |
+|---|-------------|----------|------|-----------|---------------|
+| 1 | Advanced Root Cause Analysis | Analysis | 🟢 | CoT | 9/10 |
+| 2 | Vendor Performance Communication | Communications | 🟢 | Persona+ | 8/10 |
+| 3 | Leadership KPI Narrative | Reporting | 🟢 | Few-Shot + Persona+ | 9/10 |
+| 4 | Team Announcement Creator | Communications | 🟢 | Few-Shot | 8/10 |
+| 5 | Labor Planning Analysis | Planning | 🟢 | CoT + Persona+ | 9/10 |
+| 6 | Incident Investigation Report | Analysis | 🟢 | CoT | 8/10 |
+
+---
+
+## Category: Analysis
+
+### Prompt 1: Advanced Root Cause Analysis (5-Whys with CoT)
+
+🟢 **Tool:** Bottle Rocket
+📋 **Category:** Analysis
+⏱️ **When to use:** Complex problems requiring systematic investigation
+⭐ **Effectiveness:** 9/10
+🔧 **Technique:** Chain-of-Thought (CoT)
+
+#### Template
+
+```
+ROLE: You are a continuous improvement specialist with 15 years of experience in distribution center operations. You're known for methodical analysis that gets to true root causes, not just symptoms.
+
+CONTEXT:
+- Facility: [DC NAME] distribution center
+- Problem: [DESCRIBE THE ISSUE - what happened, when, impact]
+- Data available: [LIST METRICS OR DATA POINTS]
+- What we've already ruled out: [ANY INITIAL FINDINGS]
+
+TASK: Conduct a comprehensive root cause analysis step by step:
+1. First, quantify the impact by calculating the deviation from normal
+2. Then, identify all potential contributing factors (people, process, equipment, environment)
+3. Next, apply 5-whys analysis to the top 3 most likely causes
+4. Finally, recommend specific countermeasures with owner and timeline
+
+FORMAT:
+- Use numbered sections matching the analysis steps
+- Include a root cause fishbone diagram structure
+- Provide specific data to pull for validation
+- Recommendations must include who/what/when
+- Keep total output under 500 words
+```
+
+#### Example (Filled In)
+
+```
+ROLE: You are a continuous improvement specialist with 15 years of experience in distribution center operations. You're known for methodical analysis that gets to true root causes, not just symptoms.
+
+CONTEXT:
+- Facility: Tampa DC distribution center
+- Problem: Productivity dropped 8% last week vs. target. Daily breakdown: Monday 95%, Tuesday 92%, Wednesday 78%, Thursday 88%, Friday 85%
+- Data available: Daily order counts, headcount, equipment logs, overtime hours
+- What we've already ruled out: No major staffing changes, same SKU mix as prior weeks
+
+TASK: Conduct a comprehensive root cause analysis step by step:
+1. First, quantify the impact by calculating the deviation from normal
+2. Then, identify all potential contributing factors (people, process, equipment, environment)
+3. Next, apply 5-whys analysis to the top 3 most likely causes
+4. Finally, recommend specific countermeasures with owner and timeline
+
+FORMAT:
+- Use numbered sections matching the analysis steps
+- Include a root cause fishbone diagram structure
+- Provide specific data to pull for validation
+- Recommendations must include who/what/when
+- Keep total output under 500 words
+```
+
+#### Sample Output
+
+> **1. Impact Quantification**
+>
+> Weekly productivity gap: 8% below target
+> - Daily shortfall contributions:
+>   - Monday: 5% × 0.2 = 1.0% contribution
+>   - Tuesday: 8% × 0.2 = 1.6% contribution
+>   - Wednesday: 22% × 0.2 = 4.4% contribution ← **Key driver**
+>   - Thursday: 12% × 0.2 = 2.4% contribution
+>   - Friday: 15% × 0.2 = 3.0% contribution
+> - **Wednesday accounts for 55% of the weekly shortfall**
+>
+> **2. Contributing Factors (Fishbone)**
+>
+> ```
+> EQUIPMENT ─────┬───── PROCESS
+>   Conveyor     │     Wave timing
+>   Scanners     │     Pick paths
+>                │
+>           [8% SHORTFALL]
+>                │
+>   Training     │     Temperature
+>   Fatigue      │     Receiving delays
+> PEOPLE ────────┴───── ENVIRONMENT
+> ```
+>
+> **3. 5-Whys Analysis**
+>
+> **Path A: Equipment (Most Likely)**
+> - Why low Wednesday? → Conveyor down 3 hours
+> - Why down? → Belt failure at 10:30 AM
+> - Why failure? → Worn belt not replaced during PM
+> - Why not replaced? → PM schedule slipped 2 weeks
+> - **Root Cause: Preventive maintenance backlog**
+>
+> **Path B: Cascade Effect**
+> - Why low Thu/Fri? → Playing catch-up from Wed
+> - Why catching up? → Backlog of 400+ orders
+> - Why backlog? → Wednesday conveyor downtime
+> - **Root Cause: Same - equipment failure cascade**
+>
+> **4. Countermeasures**
+>
+> | Action | Owner | Timeline |
+> |--------|-------|----------|
+> | Clear PM backlog for critical equipment | Maintenance Lead | 5 days |
+> | Add conveyor to daily pre-shift check | Shift Supervisor | Immediate |
+> | Create escalation trigger: PM >7 days late | AGM | 2 weeks |
+>
+> **Data to Validate:**
+> - Pull PM completion log for past 30 days
+> - Review conveyor maintenance history
+
+#### Customization Tips
+
+1. **For safety incidents:** Change persona to "safety specialist with incident investigation training"
+2. **For systemic issues:** Add "Include organizational/systemic factors in the fishbone"
+3. **For urgent issues:** Add "Prioritize immediate containment actions first"
+4. **For multiple root causes:** Request "Address each root cause separately with countermeasures"
+
+#### Iterations to Try
+
+- "Dig deeper on the maintenance backlog - why did it slip?"
+- "Add a timeline of events leading to the issue"
+- "Include cost impact estimates for each recommended action"
+- "Suggest leading indicators to prevent recurrence"
+
+#### Validation
+
+- **Effectiveness score:** 9/10
+- **Clarity:** 9/10 | **Completeness:** 9/10 | **Output Quality:** 9/10
+- **Duplicate check:** ✅ Advanced version of Week 1 "Root Cause Analysis Starter"
+
+---
+
+### Prompt 6: Incident Investigation Report
+
+🟢 **Tool:** Bottle Rocket
+📋 **Category:** Analysis
+⏱️ **When to use:** After safety incidents or near-misses requiring documentation
+⭐ **Effectiveness:** 8/10
+🔧 **Technique:** Chain-of-Thought (CoT)
+
+#### Template
+
+```
+ROLE: You are a safety manager with 12 years of experience in warehouse operations. You're trained in incident investigation and focus on system improvements rather than blame.
+
+CONTEXT:
+- Facility: [DC NAME]
+- Incident type: [INJURY/NEAR-MISS/PROPERTY DAMAGE]
+- What happened: [DESCRIBE INCIDENT]
+- When/where: [DATE, TIME, LOCATION IN DC]
+- Who was involved: [ROLES, not names for privacy]
+- Immediate actions taken: [WHAT WAS DONE RIGHT AFTER]
+
+TASK: Create an incident investigation report step by step:
+1. First, document the facts of what occurred without assumptions
+2. Then, identify contributing factors at 4 levels: Individual, Task, Environment, Organization
+3. Next, determine the root cause(s) using 5-whys
+4. Finally, recommend corrective actions at each level
+
+FORMAT:
+- Use standard incident report sections
+- Focus on system fixes, not individual blame
+- Include both immediate and long-term actions
+- Add follow-up verification steps
+- Keep factual and objective throughout
+```
+
+#### Example (Filled In)
+
+```
+ROLE: You are a safety manager with 12 years of experience in warehouse operations. You're trained in incident investigation and focus on system improvements rather than blame.
+
+CONTEXT:
+- Facility: Greenville DC
+- Incident type: Minor injury (first aid only)
+- What happened: Associate strained lower back while lifting a 45-lb box from floor level
+- When/where: Tuesday 2:15 PM, Pack Line 3
+- Who was involved: Picker (2 years experience)
+- Immediate actions taken: First aid administered, associate completed shift on light duty, supervisor notified
+
+TASK: Create an incident investigation report step by step:
+1. First, document the facts of what occurred without assumptions
+2. Then, identify contributing factors at 4 levels: Individual, Task, Environment, Organization
+3. Next, determine the root cause(s) using 5-whys
+4. Finally, recommend corrective actions at each level
+
+FORMAT:
+- Use standard incident report sections
+- Focus on system fixes, not individual blame
+- Include both immediate and long-term actions
+- Add follow-up verification steps
+- Keep factual and objective throughout
+```
+
+#### Sample Output
+
+> **INCIDENT INVESTIGATION REPORT**
+>
+> **1. Incident Summary**
+>
+> | Field | Details |
+> |-------|---------|
+> | Date/Time | Tuesday, 2:15 PM |
+> | Location | Pack Line 3, Greenville DC |
+> | Incident Type | Ergonomic - Lifting injury |
+> | Severity | First Aid Only |
+> | Lost Time | None (light duty completed shift) |
+>
+> **Facts:** Associate was picking orders at Pack Line 3. A 45-lb box was positioned at floor level. While lifting the box, associate experienced sudden lower back strain. First aid was administered on-site. Associate completed shift on light duty tasks.
+>
+> **2. Contributing Factor Analysis**
+>
+> | Level | Contributing Factor |
+> |-------|---------------------|
+> | **Individual** | Experienced associate (2 years), no noted fatigue or rushing |
+> | **Task** | 45-lb item at floor level requires bend-and-lift motion |
+> | **Environment** | Heavy items stored at floor level rather than waist height |
+> | **Organization** | Slotting protocol doesn't account for weight-based positioning |
+>
+> **3. Root Cause Analysis (5-Whys)**
+>
+> - Why injury? → Lifting 45-lb box from floor level
+> - Why at floor level? → Item slotted in ground-level bin
+> - Why ground level? → Slotting based on velocity, not weight
+> - Why not weight-considered? → No ergonomic factor in slotting rules
+> - **Root Cause:** Slotting algorithm doesn't include weight-based positioning criteria
+>
+> **4. Corrective Actions**
+>
+> | Action | Level | Owner | Due Date | Verification |
+> |--------|-------|-------|----------|--------------|
+> | Re-slot items >35 lbs to waist height | Environment | Inventory Lead | 7 days | Audit slot locations |
+> | Add weight criteria to slotting SOP | Organization | Operations Mgr | 14 days | Review updated SOP |
+> | Refresher: proper lifting technique | Individual | Safety Lead | 3 days | Training sign-off |
+> | Install lift-assist equipment at Pack 3 | Environment | Maintenance | 30 days | Equipment operational |
+>
+> **Follow-up:** Safety Lead to verify all actions complete; add to next safety meeting agenda.
+
+#### Customization Tips
+
+1. **For near-misses:** Change "Injury" sections to "Potential outcome"
+2. **For OSHA recordables:** Add "Regulatory reporting requirements" section
+3. **For repeat incidents:** Add "Comparison to previous similar incidents"
+4. **For property damage:** Include cost estimate and insurance notification
+
+#### Validation
+
+- **Effectiveness score:** 8/10
+- **Clarity:** 8/10 | **Completeness:** 9/10 | **Output Quality:** 8/10
+- **Duplicate check:** ✅ Unique (Week 2 safety focus)
+
+---
+
+## Category: Communications
+
+### Prompt 2: Vendor Performance Communication
+
+🟢 **Tool:** Bottle Rocket
+📋 **Category:** Communications
+⏱️ **When to use:** Addressing vendor issues or requesting performance improvements
+⭐ **Effectiveness:** 8/10
+🔧 **Technique:** Enhanced Persona (Persona+)
+
+#### Template
+
+```
+ROLE: You are a supply chain manager with 10 years of experience managing vendor relationships. You're known for being firm but fair, maintaining partnerships while holding vendors accountable. You understand that good vendor relationships are built on clear expectations and mutual respect.
+
+CONTEXT:
+- Vendor: [VENDOR NAME]
+- Relationship history: [BRIEF HISTORY - new vendor, long-term partner, etc.]
+- Current issue: [DESCRIBE PERFORMANCE PROBLEM]
+- Impact on your operations: [SPECIFIC IMPACT WITH NUMBERS]
+- Previous communication: [ANY PRIOR DISCUSSIONS]
+- Desired outcome: [WHAT YOU WANT TO ACHIEVE]
+
+TASK: Draft a professional communication that addresses the performance issue while preserving the relationship.
+
+FORMAT:
+- Include subject line
+- Open with acknowledgment of relationship
+- State issue with specific data
+- Explain impact on your operations
+- Propose clear path forward
+- Close with commitment to partnership
+- Tone: [professional/firm/collaborative]
+- Under 250 words
+```
+
+#### Example (Filled In)
+
+```
+ROLE: You are a supply chain manager with 10 years of experience managing vendor relationships. You're known for being firm but fair, maintaining partnerships while holding vendors accountable. You understand that good vendor relationships are built on clear expectations and mutual respect.
+
+CONTEXT:
+- Vendor: FastFreight Logistics
+- Relationship history: 3-year partner, generally reliable until recently
+- Current issue: On-time delivery dropped from 96% to 82% over past 6 weeks
+- Impact on your operations: 14 missed customer shipments, $8,500 in expedited shipping costs, 45 hours overtime
+- Previous communication: Mentioned in weekly call 3 weeks ago, no improvement
+- Desired outcome: Return to 95%+ on-time delivery within 30 days
+
+TASK: Draft a professional communication that addresses the performance issue while preserving the relationship.
+
+FORMAT:
+- Include subject line
+- Open with acknowledgment of relationship
+- State issue with specific data
+- Explain impact on your operations
+- Propose clear path forward
+- Close with commitment to partnership
+- Tone: firm but collaborative
+- Under 250 words
+```
+
+#### Sample Output
+
+> **Subject: Delivery Performance Discussion - Partnership Alignment Needed**
+>
+> Hi [Account Manager Name],
+>
+> I wanted to reach out directly regarding FastFreight's delivery performance over the past several weeks. Our teams have worked well together for three years, and I value that partnership, which is why I want to address this openly.
+>
+> **Current Performance:**
+> Over the past 6 weeks, on-time delivery has declined from our historical 96% to 82%. I first raised this during our weekly call three weeks ago, but we haven't seen improvement.
+>
+> **Impact on Our Operations:**
+> - 14 missed customer shipments
+> - $8,500 in expedited shipping to meet commitments
+> - 45 hours of unplanned overtime
+>
+> **Path Forward:**
+> I'd like to schedule a 30-minute call this week to:
+> 1. Understand what's driving the delivery challenges
+> 2. Agree on a corrective action plan
+> 3. Set a target of returning to 95%+ within 30 days
+>
+> I'm committed to making this partnership work. If there are constraints on your end we can help address, let's discuss those too.
+>
+> Please let me know your availability Thursday or Friday.
+>
+> Best regards,
+> [Your Name]
+
+#### Customization Tips
+
+1. **For new vendor issues:** Soften tone, reference contract terms
+2. **For escalation:** Add "CC: [Your leadership]" and increase urgency
+3. **For quality issues:** Include defect rates and quality standards
+4. **For positive feedback:** Flip template to recognition format
+
+#### Iterations to Try
+
+- "Make this more direct - we've discussed this multiple times"
+- "Soften the tone - they're dealing with their own challenges"
+- "Add specific contract terms we're referencing"
+- "Include request for root cause analysis from their side"
+
+#### Validation
+
+- **Effectiveness score:** 8/10
+- **Clarity:** 8/10 | **Completeness:** 8/10 | **Output Quality:** 8/10
+- **Duplicate check:** ✅ Unique (builds on Week 1 email with vendor-specific persona)
+
+---
+
+### Prompt 4: Team Announcement Creator
+
+🟢 **Tool:** Bottle Rocket
+📋 **Category:** Communications
+⏱️ **When to use:** Creating announcements for policy changes, updates, or important news
+⭐ **Effectiveness:** 8/10
+🔧 **Technique:** Few-Shot Examples
+
+#### Template
+
+```
+ROLE: You are a distribution center manager who communicates clearly and builds team trust through transparency.
+
+CONTEXT:
+- Audience: [WHO - all associates, specific shift, supervisors, etc.]
+- Topic: [WHAT - policy change, schedule update, recognition, etc.]
+- Key details: [THE IMPORTANT INFORMATION]
+- Tone needed: [informational/celebratory/serious/urgent]
+- How it will be shared: [email/posted/spoken at standup]
+
+TASK: Create a team announcement following the examples below.
+
+EXAMPLES:
+
+Example 1 (Policy Change):
+---
+**Schedule Change Effective March 1**
+Team, starting March 1, shift start times will move 30 minutes earlier (5:30 AM instead of 6:00 AM) to accommodate increased volume.
+**What this means for you:** Arrive by 5:25 AM for pre-shift. Adjusted break times will be posted.
+**Why:** Customer demand has increased; earlier starts help us ship same-day.
+**Questions?** See your supervisor or attend the Q&A session Friday at 2 PM.
+---
+
+Example 2 (Recognition):
+---
+**Shout-out: Record-Breaking Week!**
+Last week, our team processed 18,500 orders - a new DC record! Special recognition to Pack Line 2 for zero errors and Receiving for clearing the backlog in record time.
+This achievement reflects everyone's hard work. Thank you for your dedication.
+---
+
+FORMAT:
+- Bold headline
+- Keep under 150 words
+- Include "What this means for you" if it affects daily work
+- Include "Why" for any changes
+- End with next steps or acknowledgment
+```
+
+#### Example (Filled In)
+
+```
+ROLE: You are a distribution center manager who communicates clearly and builds team trust through transparency.
+
+CONTEXT:
+- Audience: All associates at Chicago DC
+- Topic: New safety protocol - mandatory safety glasses in receiving area
+- Key details: Starting Monday, safety glasses required in all receiving zones. Glasses provided at entrance. Supervisors will enforce.
+- Tone needed: Serious but supportive
+- How it will be shared: Posted on boards and announced at standups
+
+TASK: Create a team announcement following the examples below.
+
+EXAMPLES:
+
+Example 1 (Policy Change):
+---
+**Schedule Change Effective March 1**
+Team, starting March 1, shift start times will move 30 minutes earlier...
+---
+
+Example 2 (Recognition):
+---
+**Shout-out: Record-Breaking Week!**
+Last week, our team processed 18,500 orders...
+---
+
+FORMAT:
+- Bold headline
+- Keep under 150 words
+- Include "What this means for you" if it affects daily work
+- Include "Why" for any changes
+- End with next steps or acknowledgment
+```
+
+#### Sample Output
+
+> **Safety Update: Protective Eyewear Now Required in Receiving**
+>
+> Team, starting Monday, safety glasses will be required for everyone entering the receiving area - no exceptions.
+>
+> **What this means for you:**
+> - Pick up glasses at the Receiving entrance before entering
+> - Glasses are provided at no cost
+> - Keep them on while in the zone; return to the rack when leaving
+>
+> **Why this change:**
+> We had two near-miss incidents last month involving debris and packaging materials. This precaution protects your vision and keeps everyone safe.
+>
+> **Supervisors:** Please reinforce this during standups and coach anyone who forgets.
+>
+> Your safety is our priority. Thank you for following this new protocol.
+>
+> Questions? Ask your supervisor or come to the safety office.
+
+#### Customization Tips
+
+1. **For urgent announcements:** Add "EFFECTIVE IMMEDIATELY" and use red/bold formatting
+2. **For positive news:** Lead with celebration, add specific names when recognizing
+3. **For difficult news:** Add "We understand this is challenging" and offer support resources
+4. **For multi-language teams:** Note "Spanish version posted at [location]"
+
+#### Iterations to Try
+
+- "Make this shorter for a quick standup read"
+- "Add more detail about why this matters"
+- "Include consequences for non-compliance"
+- "Make the tone more encouraging"
+
+#### Validation
+
+- **Effectiveness score:** 8/10
+- **Clarity:** 9/10 | **Completeness:** 8/10 | **Output Quality:** 8/10
+- **Duplicate check:** ✅ Unique
+
+---
+
+## Category: Reporting
+
+### Prompt 3: Leadership KPI Narrative
+
+🟢 **Tool:** Bottle Rocket
+📋 **Category:** Reporting
+⏱️ **When to use:** Weekly/monthly updates for leadership summarizing performance
+⭐ **Effectiveness:** 9/10
+🔧 **Technique:** Few-Shot + Enhanced Persona (Persona+)
+
+#### Template
+
+```
+ROLE: You are an operations leader with 8 years of experience presenting to executives. You're known for turning data into clear narratives that highlight what matters. You focus on insights, not just numbers.
+
+CONTEXT:
+- Report period: [WEEK/MONTH]
+- Facility: [DC NAME]
+- Key metrics:
+  - [METRIC 1]: [VALUE] vs. target [TARGET] ([+/-]%)
+  - [METRIC 2]: [VALUE] vs. target [TARGET] ([+/-]%)
+  - [METRIC 3]: [VALUE] vs. target [TARGET] ([+/-]%)
+- Key events: [ANYTHING NOTABLE THAT HAPPENED]
+- Audience: [WHO WILL READ THIS]
+
+TASK: Create a leadership update that tells the story behind the numbers, following these examples.
+
+EXAMPLES:
+
+Example 1 (Strong Performance):
+---
+**Tampa DC | Week 12 Performance Summary**
+Strong week overall with throughput exceeding target by 7%. The outbound team drove this result by implementing a new wave release timing that reduced wait time between picks.
+
+**Key Metrics:**
+| Metric | Actual | Target | Status |
+|--------|--------|--------|--------|
+| Throughput | 107% | 100% | ✅ |
+| Quality | 99.2% | 99.0% | ✅ |
+| Safety | 0 incidents | 0 | ✅ |
+
+**What Drove Success:** Early wave releases + cross-training investment paying off.
+**Watch Item:** Overtime crept up 8% - reviewing staffing mix.
+---
+
+Example 2 (Mixed Results):
+---
+**Greenville DC | Week 12 Performance Summary**
+Mixed results this week. Throughput on target but quality dipped due to Wednesday's system glitch. Root cause identified and corrected.
+
+**Key Metrics:**
+| Metric | Actual | Target | Status |
+|--------|--------|--------|--------|
+| Throughput | 100% | 100% | ✅ |
+| Quality | 97.8% | 99.0% | ⚠️ |
+| Safety | 0 incidents | 0 | ✅ |
+
+**What Happened:** WMS update caused mispicks for 2 hours Wednesday AM.
+**Corrective Action:** Rolled back update, IT reviewing before re-deployment.
+---
+
+FORMAT:
+- Lead with 2-sentence narrative summary
+- Metric table with status indicators (✅ ⚠️ ❌)
+- "What Drove Success" or "What Happened" explanation
+- "Watch Items" or "Corrective Actions" as applicable
+- Under 200 words
+- Executive-ready tone
+```
+
+#### Example (Filled In)
+
+```
+ROLE: You are an operations leader with 8 years of experience presenting to executives. You're known for turning data into clear narratives that highlight what matters.
+
+CONTEXT:
+- Report period: Week 14
+- Facility: Newburgh DC
+- Key metrics:
+  - Throughput: 94% vs. target 100% (-6%)
+  - Quality: 99.5% vs. target 99.0% (+0.5%)
+  - Safety: 1 first-aid incident vs. target 0
+  - Overtime: 145 hours vs. budget 100 hours (+45%)
+- Key events: Conveyor breakdown Wednesday, new associate class started Thursday
+- Audience: Regional Director
+
+TASK: Create a leadership update following the examples format.
+```
+
+#### Sample Output
+
+> **Newburgh DC | Week 14 Performance Summary**
+>
+> Challenging week due to equipment downtime, but the team maintained quality standards and managed recovery well. Throughput gap was contained to 6% despite a 3-hour conveyor outage mid-week.
+>
+> **Key Metrics:**
+> | Metric | Actual | Target | Status |
+> |--------|--------|--------|--------|
+> | Throughput | 94% | 100% | ⚠️ -6% |
+> | Quality | 99.5% | 99.0% | ✅ +0.5% |
+> | Safety | 1 FA | 0 | ⚠️ |
+> | Overtime | 145 hrs | 100 hrs | ⚠️ +45% |
+>
+> **What Happened:** Wednesday's conveyor failure caused 3-hour stoppage. Team pivoted to manual processing but couldn't fully recover volume. Overtime required to clear backlog Thursday-Friday.
+>
+> **Corrective Actions:**
+> - Conveyor PM schedule accelerated (due: this week)
+> - Overtime hours returning to budget this week as backlog cleared
+> - Safety incident reviewed: associate reminded on proper lifting technique
+>
+> **Looking Ahead:** New associate class (8 people) started Thursday - expect productivity boost in 2 weeks post-training.
+
+#### Customization Tips
+
+1. **For monthly reports:** Add trend lines and month-over-month comparison
+2. **For board-level:** Reduce detail, increase strategic focus
+3. **For peer sharing:** Add "What we learned" section for knowledge transfer
+4. **For underperformance:** Lead with root cause and corrective actions
+
+#### Iterations to Try
+
+- "Add financial impact of the conveyor downtime"
+- "Include comparison to other DCs in the region"
+- "Make this more concise for a busy executive"
+- "Add forward-looking projections for next week"
+
+#### Validation
+
+- **Effectiveness score:** 9/10
+- **Clarity:** 9/10 | **Completeness:** 9/10 | **Output Quality:** 9/10
+- **Duplicate check:** ✅ Advanced version of Week 1 "Performance Summary"
+
+---
+
+## Category: Planning
+
+### Prompt 5: Labor Planning Analysis
+
+🟢 **Tool:** Bottle Rocket
+📋 **Category:** Planning
+⏱️ **When to use:** Planning staffing for upcoming week or special events
+⭐ **Effectiveness:** 9/10
+🔧 **Technique:** Chain-of-Thought + Enhanced Persona (CoT + Persona+)
+
+#### Template
+
+```
+ROLE: You are a workforce planning specialist with 10 years of experience in distribution center operations. You're known for practical recommendations that balance efficiency with realistic constraints like absenteeism and training curves.
+
+CONTEXT:
+- Facility: [DC NAME]
+- Planning period: [WEEK/EVENT]
+- Current headcount: [NUMBER] associates
+- Productivity rate: [UNITS] per labor hour
+- Projected demand: [VOLUME OR ORDERS]
+- Known constraints: [CALL-OUTS, TRAINING, EQUIPMENT, etc.]
+- Historical patterns: [RELEVANT TRENDS]
+
+TASK: Create a labor plan analyzing step by step:
+1. First, calculate required capacity based on projected demand
+2. Then, compare available capacity to required capacity
+3. Next, identify gaps by shift, day, or function
+4. Finally, recommend specific staffing actions with contingencies
+
+FORMAT:
+- Summary table: required vs. available by day/shift
+- Gap analysis with specific numbers
+- Recommendations prioritized by impact
+- Include contingency plan for 10-15% variance
+- Flag dependencies and risks
+- Keep under 400 words
+```
+
+#### Example (Filled In)
+
+```
+ROLE: You are a workforce planning specialist with 10 years of experience in distribution center operations. You're known for practical recommendations that balance efficiency with realistic constraints.
+
+CONTEXT:
+- Facility: Chicago DC
+- Planning period: Next week (Peak volume expected)
+- Current headcount: 48 associates across 2 shifts
+- Productivity rate: 45 orders per labor hour
+- Projected demand: 16,000 orders (20% above normal)
+- Known constraints: 2 associates on vacation, 1 in training (reduced productivity), historical 8% call-out rate on Mondays
+- Historical patterns: Peak weeks typically see 12% absenteeism
+
+TASK: Create a labor plan analyzing step by step:
+1. First, calculate required capacity based on projected demand
+2. Then, compare available capacity to required capacity
+3. Next, identify gaps by shift, day, or function
+4. Finally, recommend specific staffing actions with contingencies
+
+FORMAT:
+- Summary table: required vs. available by day/shift
+- Gap analysis with specific numbers
+- Recommendations prioritized by impact
+- Include contingency plan for 10-15% variance
+- Flag dependencies and risks
+- Keep under 400 words
+```
+
+#### Sample Output
+
+> **Chicago DC | Week of [Date] Labor Plan**
+>
+> **1. Capacity Calculation**
+> - Projected demand: 16,000 orders
+> - Productivity rate: 45 orders/labor hour
+> - Required labor hours: 16,000 ÷ 45 = **356 hours**
+> - Daily requirement (5 days): **71 hours/day**
+>
+> **2. Available vs. Required**
+>
+> | Factor | Calculation | Result |
+> |--------|-------------|--------|
+> | Base headcount | 48 associates × 8 hrs × 5 days | 1,920 hrs |
+> | Vacation deduction | -2 associates × 40 hrs | -80 hrs |
+> | Training reduction | -1 associate × 50% × 40 hrs | -20 hrs |
+> | Absenteeism (12%) | 1,820 × 0.12 | -218 hrs |
+> | **Available capacity** | | **1,502 hrs** |
+> | **Required capacity** | | **1,780 hrs** |
+>
+> **3. Gap Analysis**
+> - **Shortfall: 278 labor hours (16% gap)**
+> - Heaviest impact: Monday (call-out spike) and Thursday (mid-week peak)
+> - Function most affected: Picking (highest volume sensitivity)
+>
+> **4. Recommendations**
+>
+> | Priority | Action | Hours Gained | Owner |
+> |----------|--------|--------------|-------|
+> | 1 | Authorize 40 hrs overtime (8 hrs × 5 top performers) | +40 hrs | AGM |
+> | 2 | Request 3 temps Mon-Thu | +96 hrs | HR |
+> | 3 | Cross-train 2 receivers to picking | +32 hrs | Ops Lead |
+> | 4 | Offer voluntary Saturday shift | +64 hrs | Supervisor |
+> | **Total** | | **+232 hrs** | |
+>
+> **Contingency (if demand +15%):**
+> - Activate weekend shift with premium pay
+> - Pull receiving associates during peak pick windows
+>
+> **Risks:**
+> - Temp availability not guaranteed - submit request by EOD today
+> - Cross-trained associates at 80% productivity first 2 days
+
+#### Customization Tips
+
+1. **For seasonal peaks:** Add "Include ramp-up schedule for temps"
+2. **For cost-conscious planning:** Add budget constraints and cost per option
+3. **For multiple shifts:** Break down by AM/PM/Night shift
+4. **For automation integration:** Include equipment capacity constraints
+
+#### Iterations to Try
+
+- "Add cost estimates for each staffing option"
+- "Build in more contingency - leadership is risk-averse"
+- "Focus the plan on picking specifically"
+- "Add a visual timeline for the week"
+
+#### Validation
+
+- **Effectiveness score:** 9/10
+- **Clarity:** 9/10 | **Completeness:** 9/10 | **Output Quality:** 9/10
+- **Duplicate check:** ✅ Unique (Week 2 planning with CoT)
+
+---
+
+## Quick Reference Card
+
+| Task | Prompt Start | Tool | Technique | Week |
+|------|-------------|------|-----------|------|
+| Root cause analysis | "ROLE: You are a continuous improvement specialist with 15 years..." | 🟢 | CoT | 2 |
+| Vendor communication | "ROLE: You are a supply chain manager with 10 years..." | 🟢 | Persona+ | 2 |
+| Leadership KPI update | "ROLE: You are an operations leader with 8 years..." | 🟢 | Few-Shot + Persona+ | 2 |
+| Team announcement | "ROLE: You are a DC manager who communicates clearly..." | 🟢 | Few-Shot | 2 |
+| Labor planning | "ROLE: You are a workforce planning specialist with 10 years..." | 🟢 | CoT + Persona+ | 2 |
+| Incident investigation | "ROLE: You are a safety manager with 12 years..." | 🟢 | CoT | 2 |
+
+---
+
+## Tips for Week 2 Prompts
+
+1. **Use Chain-of-Thought for analysis** - Force step-by-step reasoning for complex problems
+2. **Enhance personas** - Add years of experience and "known for" traits
+3. **Provide few-shot examples** - 2-3 examples ensure consistent formatting
+4. **Be specific about FORMAT** - Word limits, sections, and structure elements
+5. **Include follow-up iterations** - First output is a starting point, not final
+
+---
+
+## Prompt Validation Log
+
+| Prompt | Clarity | Completeness | Output Quality | Average | Pass? |
+|--------|---------|--------------|----------------|---------|-------|
+| Advanced Root Cause Analysis | 9/10 | 9/10 | 9/10 | 9/10 | ✅ |
+| Vendor Performance Communication | 8/10 | 8/10 | 8/10 | 8/10 | ✅ |
+| Leadership KPI Narrative | 9/10 | 9/10 | 9/10 | 9/10 | ✅ |
+| Team Announcement Creator | 9/10 | 8/10 | 8/10 | 8/10 | ✅ |
+| Labor Planning Analysis | 9/10 | 9/10 | 9/10 | 9/10 | ✅ |
+| Incident Investigation Report | 8/10 | 9/10 | 8/10 | 8/10 | ✅ |
+
+---
+
+## Cross-Week Prompt Inventory
+
+| Prompt Name | This Week | Previous Weeks | Status |
+|-------------|-----------|----------------|--------|
+| Advanced Root Cause Analysis | ✅ Week 2 | Similar in Week 1 | Advanced version with CoT |
+| Vendor Performance Communication | ✅ Week 2 | Email Draft Week 1 | Specialized vendor focus |
+| Leadership KPI Narrative | ✅ Week 2 | Performance Summary Week 1 | Advanced with few-shot |
+| Team Announcement Creator | ✅ Week 2 | N/A | Unique |
+| Labor Planning Analysis | ✅ Week 2 | N/A | Unique |
+| Incident Investigation Report | ✅ Week 2 | N/A | Unique |
+
+---
+
+## Week 2 Technique Summary
+
+| Technique | Prompts Using It | When to Apply |
+|-----------|------------------|---------------|
+| **Chain-of-Thought** | #1, #5, #6 | Complex analysis requiring step-by-step reasoning |
+| **Few-Shot Examples** | #3, #4 | Consistent formatting across similar outputs |
+| **Enhanced Persona** | #1, #2, #3, #5, #6 | Tasks requiring specific expertise or perspective |
+
+---
+
+## Quality Checklist
+
+| Check | Requirement | Status |
+|-------|-------------|--------|
+| Prompt count | 5+ prompts per week | ✅ 6 prompts |
+| Formula adherence | All follow ROLE+CONTEXT+TASK+FORMAT | ✅ |
+| Examples | All have filled-in examples | ✅ |
+| Testing | All scored 7+ effectiveness | ✅ (avg 8.5) |
+| Deduplication | No duplicates from previous weeks | ✅ (3 advanced versions labeled) |
+| Tool assignment | Correct tool per prompt | ✅ All Bottle Rocket |
+| Validation log | Complete for all prompts | ✅ |
+| Week 2 techniques | CoT, Few-Shot, Persona+ used | ✅ All applied |
+
+---
+
+*Prompt Library created for Week 2: Prompt Engineering for Operations*
+*Primary Tool: Bottle Rocket (go.tesla.com/chat)*
+*Techniques: Chain-of-Thought, Few-Shot, Enhanced Personas*

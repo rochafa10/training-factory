@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 07 - Copilot vs Bottle Rocket</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+      padding: 14px 16px;
+      background: #1a1a1a;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #2a2a2a;
+      font-size: 14px;
+    }
+    .feature {
+      color: #a0a0a0;
+    }
+    .yes {
+      color: #4ade80;
+    }
+    .no {
+      color: #f87171;
+    }
+    .warning-box {
+      background: rgba(250, 204, 21, 0.1);
+      border: 1px solid #facc15;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .warning-icon {
+      font-size: 24px;
+      margin-right: 12px;
+    }
+    .warning-text {
+      font-size: 14px;
+      color: #facc15;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <h1>Copilot Chat vs. Bottle Rocket</h1>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Bottle Rocket</th>
+        <th>Copilot Chat</th>
+      </tr>
+      <tr>
+        <td class="feature">Tesla Data</td>
+        <td class="yes">Allowed</td>
+        <td class="no">Not Allowed</td>
+      </tr>
+      <tr>
+        <td class="feature">File Creation</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+      </tr>
+      <tr>
+        <td class="feature">Terminal Commands</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+      </tr>
+      <tr>
+        <td class="feature">Project Context</td>
+        <td class="no">None</td>
+        <td class="yes">Full Workspace</td>
+      </tr>
+      <tr>
+        <td class="feature">Voice Input</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+      </tr>
+      <tr>
+        <td class="feature">Agent Mode</td>
+        <td class="no">No</td>
+        <td class="yes">Yes</td>
+      </tr>
+    </table>
+    <div class="warning-box">
+      <span class="warning-icon">!</span>
+      <span class="warning-text">Copilot = NO Tesla Data | Bottle Rocket = Tesla Data OK</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 13 - Terminal Command Approval</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .two-col {
+      display: flex;
+      gap: 30px;
+    }
+    .col {
+      flex: 1;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      height: 100%;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+    }
+    .safe { color: #4ade80; }
+    .danger { color: #f87171; }
+    .icon {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    ul {
+      list-style: none;
+    }
+    li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    code {
+      background: #2a2a2a;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 13px;
+    }
+    .reminder {
+      margin-top: 25px;
+      background: rgba(232, 33, 39, 0.1);
+      border: 1px solid #e82127;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <h1>Terminal Command Approval</h1>
+    <div class="two-col">
+      <div class="col">
+        <div class="card">
+          <p class="card-title safe"><span class="icon">OK</span> Safe to Auto-Approve</p>
+          <ul>
+            <li><code>git status</code> <code>git log</code></li>
+            <li><code>npm install</code> <code>npm test</code></li>
+            <li><code>ls</code> <code>pwd</code></li>
+            <li><code>python script.py</code></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <p class="card-title danger"><span class="icon">!!</span> Always Review First</p>
+          <ul>
+            <li><code>rm</code> (delete files)</li>
+            <li><code>curl</code> <code>wget</code> (downloads)</li>
+            <li><code>sudo</code> (elevated permissions)</li>
+            <li>Anything you don't understand</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="reminder">
+      You're always in control. Read every command before clicking "Continue".
+    </div>
+  </div>
+</body>
+</html>

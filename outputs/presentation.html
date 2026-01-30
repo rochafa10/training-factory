@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Training Course - Presentation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    
+    .presentation {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Top info bar - fades after interaction */
+    .info-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 8px 20px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 100%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+      z-index: 100;
+    }
+    
+    .info-bar.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .week-title {
+      font-size: 14px;
+      color: #a0a0a0;
+    }
+    
+    .week-title span {
+      color: #e82127;
+      font-weight: bold;
+    }
+    
+    .help-hint {
+      font-size: 12px;
+      color: #666;
+    }
+    
+    /* Main slide area */
+    .slide-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+    
+    .slide-frame {
+      position: relative;
+      width: 960px;
+      height: 540px;
+      background: #000;
+      transform-origin: center center;
+    }
+    
+    .slide-frame iframe {
+      width: 960px;
+      height: 540px;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    /* Bottom counter */
+    .slide-counter {
+      position: fixed;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      color: #555;
+      background: transparent;
+      padding: 4px 12px;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+      z-index: 100;
+    }
+    
+    .slide-counter.hidden {
+      opacity: 0;
+    }
+    
+    .slide-counter .current {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    
+    /* Progress bar */
+    .progress-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background: #e82127;
+      transition: width 0.3s ease;
+      z-index: 100;
+    }
+    
+    /* Help overlay */
+    .help-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 200;
+    }
+    
+    .help-overlay.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+    .help-content {
+      background: #1a1a1a;
+      padding: 40px 50px;
+      border-radius: 12px;
+      border-left: 4px solid #e82127;
+      max-width: 400px;
+    }
+    
+    .help-content h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    
+    .help-content table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .help-content td {
+      padding: 8px 0;
+      border-bottom: 1px solid #333;
+    }
+    
+    .help-content td:first-child {
+      color: #e82127;
+      font-family: monospace;
+      font-size: 14px;
+      width: 100px;
+    }
+    
+    .help-content td:last-child {
+      color: #a0a0a0;
+      font-size: 14px;
+    }
+    
+    .help-content .hint {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="presentation">
+    <!-- Top info bar -->
+    <div class="info-bar" id="infoBar">
+      <div class="week-title">
+        <span id="weekLabel">Week 1</span> | <span id="slideTitle">Title - Week 1</span>
+      </div>
+      <div class="help-hint">Press ? for help</div>
+    </div>
+    
+    <!-- Main slide -->
+    <div class="slide-container">
+      <div class="slide-frame">
+        <iframe id="slideFrame" src=""></iframe>
+      </div>
+    </div>
+    
+    <!-- Bottom counter -->
+    <div class="slide-counter" id="slideCounter">
+      <span class="current" id="currentNum">1</span> / <span id="totalNum">69</span>
+    </div>
+    
+    <!-- Progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Help overlay -->
+    <div class="help-overlay" id="helpOverlay">
+      <div class="help-content">
+        <h2>Keyboard Controls</h2>
+        <table>
+          <tr><td>→ Space</td><td>Next slide</td></tr>
+          <tr><td>←</td><td>Previous slide</td></tr>
+          <tr><td>Home</td><td>First slide</td></tr>
+          <tr><td>End</td><td>Last slide</td></tr>
+          <tr><td>1 2 3 4</td><td>Jump to week</td></tr>
+          <tr><td>?</td><td>Toggle this help</td></tr>
+        </table>
+        <p class="hint">Press any key to close</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Slide data
+    const weeks = [
+      { num: 1, title: "AI Fundamentals & Prompt Engineering Basics", slides: 19, start: 0,
+        titles: ["Title - Week 1", "Session Agenda", "Learning Objectives", "AI at Tesla", "What AI Can Do", "Approved Tools Overview", "Bottle Rocket Demo", "The Prompt Formula", "ROLE Component", "CONTEXT Component", "TASK Component", "FORMAT Component", "Exercise 1: First Prompt", "Common Mistakes", "Iteration Technique", "Exercise 2: Iteration", "When to Use AI", "Key Takeaways", "Homework & Next Week"] },
+      { num: 2, title: "Professional Prompting & Business Applications", slides: 17, start: 19,
+        titles: ["Title - Week 2", "Session Agenda", "Learning Objectives", "Week 1 Review", "Advanced Prompt Techniques", "Chain of Thought", "Few-Shot Prompting", "Exercise 1: Advanced Prompts", "Business Writing with AI", "Email Templates", "Report Generation", "Exercise 2: Business Writing", "Data Analysis Basics", "Exercise 3: Data Analysis", "Quality Control", "Key Takeaways", "Homework & Next Week"] },
+      { num: 3, title: "GitHub Copilot, Voice Mode & Agent Mode", slides: 17, start: 36,
+        titles: ["Title - Week 3", "Session Agenda", "Learning Objectives", "Week 2 Review", "GitHub Copilot Introduction", "Copilot Policy Warning", "Voice Mode Overview", "Voice Mode Demo", "Exercise 1: Voice Mode", "Agent Mode Introduction", "Agent Mode Capabilities", "Human-in-the-Loop", "Exercise 2: Agent Mode", "Combining Modes", "Exercise 3: Combined Workflow", "Key Takeaways", "Homework & Next Week"] },
+      { num: 4, title: "Advanced Automation, MCPs & Multi-Agent Orchestration", slides: 16, start: 53,
+        titles: ["Title - Week 4", "Session Agenda", "Learning Objectives", "Course Time Savings Review", "What is MCP?", "Exercise 1: MCP Installation", "Playwright MCP Tools", "MCP Policy Reminder", "Exercise 2: Web Automation", "Section: Multi-Agent Orchestration", "Orchestration Patterns", "Human-in-the-Loop", "Exercise 3: Dive Deep Automation", "Personal Project Workshop", "Key Takeaways", "Course Completion"] }
+    ];
+    
+    // Build flat slide array
+    let allSlides = [];
+    weeks.forEach(week => {
+      for (let i = 1; i <= week.slides; i++) {
+        allSlides.push({
+          week: week.num,
+          weekTitle: week.title,
+          slideNum: i,
+          slideTitle: week.titles[i-1] || `Slide ${i}`,
+          path: `week-${week.num}/slides/slide${String(i).padStart(2, '0')}.html`
+        });
+      }
+    });
+    
+    let currentIndex = 0;
+    let hideTimeout = null;
+    let helpVisible = false;
+    
+    // Elements
+    const slideFrame = document.getElementById('slideFrame');
+    const weekLabel = document.getElementById('weekLabel');
+    const slideTitle = document.getElementById('slideTitle');
+    const currentNum = document.getElementById('currentNum');
+    const totalNum = document.getElementById('totalNum');
+    const progressBar = document.getElementById('progressBar');
+    const infoBar = document.getElementById('infoBar');
+    const slideCounter = document.getElementById('slideCounter');
+    const helpOverlay = document.getElementById('helpOverlay');
+    
+    // Slide scaling
+    const slideFrameEl = document.querySelector('.slide-frame');
+    const SLIDE_WIDTH = 960;
+    const SLIDE_HEIGHT = 540;
+    
+    function scaleSlide() {
+      const container = document.querySelector('.slide-container');
+      const availableWidth = container.clientWidth - 40;
+      const availableHeight = container.clientHeight - 40;
+      
+      const scaleX = availableWidth / SLIDE_WIDTH;
+      const scaleY = availableHeight / SLIDE_HEIGHT;
+      const scale = Math.min(scaleX, scaleY);
+      
+      slideFrameEl.style.transform = `scale(${scale})`;
+    }
+    
+    window.addEventListener('resize', scaleSlide);
+    
+    // Initialize
+    totalNum.textContent = allSlides.length;
+    loadSlide(0);
+    
+    // Initial scale after DOM ready
+    setTimeout(scaleSlide, 100);
+    
+    function loadSlide(index) {
+      if (index < 0 || index >= allSlides.length) return;
+      
+      currentIndex = index;
+      const slide = allSlides[index];
+      
+      slideFrame.src = slide.path;
+      weekLabel.textContent = `Week ${slide.week}`;
+      slideTitle.textContent = slide.slideTitle;
+      currentNum.textContent = index + 1;
+      
+      // Update progress bar
+      const progress = ((index + 1) / allSlides.length) * 100;
+      progressBar.style.width = progress + '%';
+      
+      // Show UI briefly
+      showUI();
+    }
+    
+    function nextSlide() {
+      if (currentIndex < allSlides.length - 1) {
+        loadSlide(currentIndex + 1);
+      }
+    }
+    
+    function prevSlide() {
+      if (currentIndex > 0) {
+        loadSlide(currentIndex - 1);
+      }
+    }
+    
+    function goToWeek(weekNum) {
+      const week = weeks.find(w => w.num === weekNum);
+      if (week) {
+        loadSlide(week.start);
+      }
+    }
+    
+    function showUI() {
+      infoBar.classList.remove('hidden');
+      slideCounter.classList.remove('hidden');
+      
+      // Auto-hide after 3 seconds
+      clearTimeout(hideTimeout);
+      hideTimeout = setTimeout(() => {
+        if (!helpVisible) {
+          infoBar.classList.add('hidden');
+          slideCounter.classList.add('hidden');
+        }
+      }, 3000);
+    }
+    
+    function toggleHelp() {
+      helpVisible = !helpVisible;
+      helpOverlay.classList.toggle('visible', helpVisible);
+      if (helpVisible) {
+        infoBar.classList.remove('hidden');
+        slideCounter.classList.remove('hidden');
+      }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      // Close help on any key if visible
+      if (helpVisible && e.key !== '?') {
+        toggleHelp();
+        return;
+      }
+      
+      switch(e.key) {
+        case 'ArrowRight':
+        case ' ':
+          e.preventDefault();
+          nextSlide();
+          break;
+        case 'ArrowLeft':
+          prevSlide();
+          break;
+        case 'Home':
+          loadSlide(0);
+          break;
+        case 'End':
+          loadSlide(allSlides.length - 1);
+          break;
+        case '1':
+          goToWeek(1);
+          break;
+        case '2':
+          goToWeek(2);
+          break;
+        case '3':
+          goToWeek(3);
+          break;
+        case '4':
+          goToWeek(4);
+          break;
+        case '?':
+          toggleHelp();
+          break;
+      }
+    });
+    
+    // Show UI on mouse move
+    document.addEventListener('mousemove', () => {
+      showUI();
+    });
+    
+    // Click to advance (optional)
+    document.querySelector('.slide-container').addEventListener('click', (e) => {
+      const rect = e.target.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      if (x > rect.width / 2) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+    });
+  </script>
+</body>
+</html>

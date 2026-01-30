@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 08 - What is Tesla Data</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      display: flex;
+      gap: 32px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .right-col {
+      flex: 1;
+    }
+    .definition {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .definition p {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #a0a0a0;
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #e82127;
+    }
+    .data-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .data-item {
+      background: #1a1a1a;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 12px;
+    }
+    .rule-box {
+      background: #e82127;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .rule-box p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .rule-subtext {
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+      margin-top: 8px;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>What is "Tesla Data"?</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="definition">
+          <p>Any information about Tesla, customers, employees, affiliates, or users.</p>
+        </div>
+        <h2>Examples of Tesla Data</h2>
+        <div class="data-grid">
+          <div class="data-item">Performance metrics</div>
+          <div class="data-item">KPIs</div>
+          <div class="data-item">Employee names</div>
+          <div class="data-item">Schedules</div>
+          <div class="data-item">Customer info</div>
+          <div class="data-item">Internal SOPs</div>
+          <div class="data-item">Financial data</div>
+          <div class="data-item">Proprietary code</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="rule-box">
+          <p>The Simple Rule</p>
+          <p class="rule-subtext">If it came from inside Tesla,<br>it's Tesla Data. Use Bottle Rocket.</p>
+        </div>
+        <h2>When in Doubt</h2>
+        <div class="definition">
+          <p>Assume it's Tesla Data and use Bottle Rocket. This is the safe choice and keeps you compliant.</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer">Section 2 | Tesla AI Policy</p>
+  </div>
+</body>
+</html>

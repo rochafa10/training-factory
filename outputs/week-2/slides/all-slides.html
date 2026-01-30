@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 2: Prompt Engineering for Operations - All Slides</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1a1a1a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #e82127;
+    }
+    .slide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 20px;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+    .slide-container {
+      background: #0a0a0a;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .slide-container:hover {
+      transform: scale(1.02);
+    }
+    .slide-label {
+      background: #2a2a2a;
+      padding: 8px 16px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+    .slide-label span {
+      color: #e82127;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 270px;
+      border: none;
+      transform-origin: top left;
+    }
+    .fullscreen-view {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #0a0a0a;
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .fullscreen-view.active {
+      display: flex;
+    }
+    .fullscreen-view iframe {
+      width: 960px;
+      height: 540px;
+    }
+    .fullscreen-nav {
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      z-index: 1001;
+    }
+    .fullscreen-nav button {
+      background: #e82127;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .fullscreen-nav button:hover {
+      background: #c41d22;
+    }
+    .slide-counter {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 10px 20px;
+      border-radius: 6px;
+      z-index: 1001;
+    }
+    .info {
+      text-align: center;
+      color: #a0a0a0;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Week 2: Prompt Engineering for Operations</h1>
+  <p class="info">17 Slides | Click any slide to view fullscreen | Use arrow keys to navigate</p>
+
+  <div class="slide-grid">
+    <div class="slide-container" onclick="openFullscreen(0)">
+      <div class="slide-label"><span>Slide 01</span> - Title</div>
+      <iframe src="slide01.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(1)">
+      <div class="slide-label"><span>Slide 02</span> - Agenda</div>
+      <iframe src="slide02.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(2)">
+      <div class="slide-label"><span>Slide 03</span> - Section 1 Divider</div>
+      <iframe src="slide03.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(3)">
+      <div class="slide-label"><span>Slide 04</span> - Week 1 Wins</div>
+      <iframe src="slide04.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(4)">
+      <div class="slide-label"><span>Slide 05</span> - Section 2 Divider</div>
+      <iframe src="slide05.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(5)">
+      <div class="slide-label"><span>Slide 06</span> - Chain-of-Thought</div>
+      <iframe src="slide06.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(6)">
+      <div class="slide-label"><span>Slide 07</span> - Few-Shot Prompting</div>
+      <iframe src="slide07.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(7)">
+      <div class="slide-label"><span>Slide 08</span> - Persona Prompting</div>
+      <iframe src="slide08.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(8)">
+      <div class="slide-label"><span>Slide 09</span> - Exercise 1</div>
+      <iframe src="slide09.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(9)">
+      <div class="slide-label"><span>Slide 10</span> - Section 3 Divider</div>
+      <iframe src="slide10.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(10)">
+      <div class="slide-label"><span>Slide 11</span> - Five Use Cases</div>
+      <iframe src="slide11.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(11)">
+      <div class="slide-label"><span>Slide 12</span> - Exercise 2</div>
+      <iframe src="slide12.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(12)">
+      <div class="slide-label"><span>Slide 13</span> - Section 4 Divider</div>
+      <iframe src="slide13.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(13)">
+      <div class="slide-label"><span>Slide 14</span> - Model Comparison</div>
+      <iframe src="slide14.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(14)">
+      <div class="slide-label"><span>Slide 15</span> - Exercise 3</div>
+      <iframe src="slide15.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(15)">
+      <div class="slide-label"><span>Slide 16</span> - Key Takeaways</div>
+      <iframe src="slide16.html" scrolling="no"></iframe>
+    </div>
+    <div class="slide-container" onclick="openFullscreen(16)">
+      <div class="slide-label"><span>Slide 17</span> - Homework</div>
+      <iframe src="slide17.html" scrolling="no"></iframe>
+    </div>
+  </div>
+
+  <div class="fullscreen-view" id="fullscreenView">
+    <div class="slide-counter" id="slideCounter">Slide 1 of 17</div>
+    <iframe id="fullscreenFrame" src="" scrolling="no"></iframe>
+    <div class="fullscreen-nav">
+      <button onclick="prevSlide()">← Previous</button>
+      <button onclick="closeFullscreen()">Close (ESC)</button>
+      <button onclick="nextSlide()">Next →</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = [
+      'slide01.html', 'slide02.html', 'slide03.html', 'slide04.html', 'slide05.html',
+      'slide06.html', 'slide07.html', 'slide08.html', 'slide09.html', 'slide10.html',
+      'slide11.html', 'slide12.html', 'slide13.html', 'slide14.html', 'slide15.html',
+      'slide16.html', 'slide17.html'
+    ];
+    let currentSlide = 0;
+
+    function openFullscreen(index) {
+      currentSlide = index;
+      document.getElementById('fullscreenFrame').src = slides[currentSlide];
+      document.getElementById('slideCounter').textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+      document.getElementById('fullscreenView').classList.add('active');
+    }
+
+    function closeFullscreen() {
+      document.getElementById('fullscreenView').classList.remove('active');
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      document.getElementById('fullscreenFrame').src = slides[currentSlide];
+      document.getElementById('slideCounter').textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      document.getElementById('fullscreenFrame').src = slides[currentSlide];
+      document.getElementById('slideCounter').textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (document.getElementById('fullscreenView').classList.contains('active')) {
+        if (e.key === 'Escape') closeFullscreen();
+        if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+      }
+    });
+  </script>
+</body>
+</html>

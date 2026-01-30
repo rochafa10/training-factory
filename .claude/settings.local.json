@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__filesystem__directory_tree",
+      "mcp__filesystem__list_directory",
+      "mcp__filesystem__read_text_file",
+      "mcp__filesystem__list_directory_with_sizes",
+      "Bash(ls:*)",
+      "mcp__filesystem__get_file_info",
+      "mcp__perplexity__perplexity_research",
+      "mcp__perplexity__perplexity_search",
+      "mcp__memory__create_entities",
+      "mcp__playwright__browser_navigate",
+      "Bash(dir \"C:\\\\Users\\\\fs_ro\\\\Documents\\\\training-factory\\\\outputs\\\\week-1\\\\slides\")",
+      "Bash(python -m http.server:*)",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_close",
+      "WebSearch",
+      "mcp__memory__search_nodes",
+      "Bash(findstr:*)",
+      "Bash(curl -s -X POST \"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent\" -H \"Content-Type: application/json\" -H \"x-goog-api-key: AIzaSyDSKlpmlq6foDfgA_LGTDyPSMoYp-bv5b0\" -d '{\n    \"\"contents\"\": [{\n      \"\"parts\"\": [{\"\"text\"\": \"\"You are a technical diagram renderer. Generate a complete HTML document with inline SVG.\\\\n\\\\n## LOCKED STRUCTURE \\(DO NOT MODIFY\\)\\\\n\\\\nNodes:\\\\n1. \\\\\"\"User\\\\\"\" \\(yellow ellipse #ffd43b\\)\\\\n2. \\\\\"\"Bottle Rocket\\\\\"\" \\(blue rectangle #4dabf7\\)\\\\n3. \\\\\"\"AI Model\\\\\"\" \\(green rounded rectangle #69db7c\\)\\\\n4. \\\\\"\"Response\\\\\"\" \\(light blue parallelogram #a5d8ff\\)\\\\n\\\\nEdges:\\\\n1. User → Bottle Rocket \\(label: \\\\\"\"prompt\\\\\"\"\\)\\\\n2. Bottle Rocket → AI Model \\(label: \\\\\"\"request\\\\\"\"\\)\\\\n3. AI Model → Bottle Rocket \\(label: \\\\\"\"generation\\\\\"\"\\)\\\\n4. Bottle Rocket → Response \\(label: \\\\\"\"output\\\\\"\"\\)\\\\n\\\\nLabels \\(use EXACTLY as written\\):\\\\n- User\\\\n- Bottle Rocket\\\\n- AI Model\\\\n- Response\\\\n- prompt\\\\n- request\\\\n- generation\\\\n- output\\\\n\\\\n## STYLE: Minimal\\\\n\\\\nBackground: #ffffff \\(pure white\\)\\\\nStrokes: 1-2px, clean vectors\\\\nFill: Solid flat colors as specified\\\\nFont: Arial or Helvetica, clean sans-serif\\\\nNode shadows: None or very subtle 1px\\\\nLayout: Left to right flow\\\\nDimensions: 800x400px\\\\n\\\\n## CRITICAL CONSTRAINTS\\\\n\\\\n- DO NOT add any nodes not in the list\\\\n- DO NOT add any edges not in the list\\\\n- DO NOT add explanatory text outside the diagram\\\\n- DO NOT paraphrase or abbreviate labels\\\\n- Use EXACTLY the labels provided\\\\n\\\\nOutput ONLY the complete HTML code with embedded SVG, no explanation.\"\"}]\n    }],\n    \"\"generationConfig\"\": {\n      \"\"temperature\"\": 0.1,\n      \"\"maxOutputTokens\"\": 8192\n    }\n  }')",
+      "Bash(copy \"C:\\\\Users\\\\fs_ro\\\\Documents\\\\training-factory\\\\.playwright-mcp\\\\sample-flow--minimal.png\" \"C:\\\\Users\\\\fs_ro\\\\Documents\\\\training-factory\\\\outputs\\\\week-1\\\\images\\\\sample-flow--minimal.png\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\fs_ro\\\\Documents\\\\training-factory\\\\tools\\\\test-gemini-thumbnail.ps1\")",
+      "Bash(dir:*)",
+      "Bash(gh auth status:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 04 - Week 1 Wins</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .stat-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 48px;
+      font-weight: bold;
+      color: #e82127;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-size: 14px;
+      color: #a0a0a0;
+      margin-bottom: 16px;
+    }
+    .stat-detail {
+      font-size: 12px;
+      color: #666;
+    }
+    .discussion-box {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 16px;
+    }
+    .discussion-title {
+      font-size: 12px;
+      color: #e82127;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .discussion-item {
+      font-size: 13px;
+      margin-bottom: 8px;
+      padding-left: 16px;
+      position: relative;
+    }
+    .discussion-item::before {
+      content: "?";
+      position: absolute;
+      left: 0;
+      color: #e82127;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>What Did You Discover in Week 1?</h1>
+    <div class="main-content">
+      <div class="stat-card">
+        <div class="stat-number">7.5</div>
+        <div class="stat-label">Hours saved per week</div>
+        <div class="stat-detail">Average for trained AI users</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">2x</div>
+        <div class="stat-label">More productive</div>
+        <div class="stat-detail">Trained vs untrained users</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">20%</div>
+        <div class="stat-label">Save 4+ hours weekly</div>
+        <div class="stat-detail">Frequent AI users</div>
+      </div>
+    </div>
+    <div class="discussion-box">
+      <div class="discussion-title">Discussion Questions</div>
+      <div class="discussion-item">What prompt worked best for you this week?</div>
+      <div class="discussion-item">What didn't work as expected?</div>
+      <div class="discussion-item">How much time did your prompts save?</div>
+    </div>
+  </div>
+</body>
+</html>

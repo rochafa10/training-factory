@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 12 - Human-in-the-Loop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px;
+      margin-left: 8px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    .stat-highlight {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .stat-number {
+      font-size: 72px;
+      font-weight: bold;
+      color: #4ade80;
+    }
+    .stat-unit {
+      font-size: 24px;
+      color: #4ade80;
+    }
+    .stat-desc {
+      font-size: 14px;
+      color: #a0a0a0;
+      margin-top: 10px;
+    }
+    .principle {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #e82127;
+    }
+    .principle p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .workflow {
+      background: #1a1a1a;
+      padding: 24px;
+      border-radius: 8px;
+    }
+    .workflow-title {
+      font-size: 14px;
+      color: #a0a0a0;
+      margin-bottom: 16px;
+    }
+    .workflow-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .workflow-step {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    .step-icon {
+      width: 32px;
+      height: 32px;
+      background: #2a2a2a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      font-size: 14px;
+    }
+    .step-icon.human {
+      background: #4ade80;
+      color: #0a0a0a;
+    }
+    .arrow {
+      text-align: center;
+      color: #a0a0a0;
+      font-size: 12px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <div class="left-panel">
+      <h1>Human-in-the-Loop</h1>
+
+      <div class="stat-highlight">
+        <span class="stat-number">76</span><span class="stat-unit">%</span>
+        <div class="stat-desc">of enterprises include human review in AI workflows</div>
+      </div>
+
+      <div class="principle">
+        <p>Your judgment matters. Always review AI outputs before using them.</p>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="workflow">
+        <div class="workflow-title">Dive Deep Workflow with Human Review</div>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <span class="step-icon">1</span>
+            <span>Agent reads data file</span>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="workflow-step">
+            <span class="step-icon">2</span>
+            <span>Agent analyzes patterns</span>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="workflow-step">
+            <span class="step-icon">3</span>
+            <span>Agent generates report</span>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="workflow-step">
+            <span class="step-icon human">✓</span>
+            <span>You review and approve</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

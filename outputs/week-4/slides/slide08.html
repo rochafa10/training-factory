@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 08 - MCP Policy Reminder</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .warning-box {
+      background: #3a1a1a;
+      border: 2px solid #e82127;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 30px;
+    }
+    .warning-title {
+      color: #e82127;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .warning-text {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .rules {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .rule-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .rule-card.safe {
+      border-left: 4px solid #4ade80;
+    }
+    .rule-card.avoid {
+      border-left: 4px solid #f87171;
+    }
+    .rule-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .rule-title.safe { color: #4ade80; }
+    .rule-title.avoid { color: #f87171; }
+    .rule-list {
+      list-style: none;
+      font-size: 13px;
+    }
+    .rule-list li {
+      margin-bottom: 8px;
+      padding-left: 16px;
+      position: relative;
+    }
+    .rule-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <h1>MCP Policy Reminder</h1>
+
+    <div class="warning-box">
+      <div class="warning-title">⚠️ Critical Rule</div>
+      <div class="warning-text">MCP = NO Tesla Data. Use Bottle Rocket for Tesla data. MCP servers interact with external systems—treat all data as public.</div>
+    </div>
+
+    <div class="rules">
+      <div class="rule-card safe">
+        <div class="rule-title safe">✓ Safe with MCP</div>
+        <ul class="rule-list">
+          <li>Public websites</li>
+          <li>Placeholder/sample data</li>
+          <li>Project directories</li>
+          <li>Non-Tesla information</li>
+        </ul>
+      </div>
+      <div class="rule-card avoid">
+        <div class="rule-title avoid">✗ Never with MCP</div>
+        <ul class="rule-list">
+          <li>Tesla internal systems</li>
+          <li>Proprietary data</li>
+          <li>System directories</li>
+          <li>Untrusted downloads</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 17 - Homework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .left-col, .right-col {
+      flex: 1;
+    }
+    .homework-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 12px;
+    }
+    .homework-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .homework-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .homework-time {
+      font-size: 11px;
+      color: #e82127;
+      background: #2a2a2a;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .template-list {
+      list-style: none;
+    }
+    .template-list li {
+      font-size: 12px;
+      margin-bottom: 6px;
+      padding-left: 20px;
+      position: relative;
+      color: #a0a0a0;
+    }
+    .template-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #a0a0a0;
+      border-radius: 2px;
+    }
+    h2 {
+      font-size: 14px;
+      color: #e82127;
+      margin-bottom: 12px;
+    }
+    .tracking-table {
+      background: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .table-header {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      background: #2a2a2a;
+      padding: 10px 12px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .table-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      padding: 8px 12px;
+      border-bottom: 1px solid #2a2a2a;
+      font-size: 11px;
+    }
+    .table-row:last-child {
+      border-bottom: none;
+    }
+    .row-label {
+      color: #a0a0a0;
+    }
+    .input-cell {
+      color: #666;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: auto;
+      text-align: center;
+    }
+    .footer strong {
+      color: #e82127;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Homework & Time Tracking</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="homework-card">
+          <div class="homework-header">
+            <span class="homework-title">Create 3 Operations Templates</span>
+            <span class="homework-time">~30 min</span>
+          </div>
+          <ul class="template-list">
+            <li><strong>Labor Planning</strong> - CoT reasoning, DC-specific data</li>
+            <li><strong>Incident Analysis</strong> - 5-Whys, system focus</li>
+            <li><strong>Leadership Update</strong> - Enhanced persona, few-shot format</li>
+          </ul>
+        </div>
+        <div class="homework-card">
+          <div class="homework-header">
+            <span class="homework-title">Test Each Template</span>
+          </div>
+          <ul class="template-list">
+            <li>Use real or realistic data from your DC</li>
+            <li>Refine until output is work-ready</li>
+            <li>Save templates for reuse</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-col">
+        <h2>Time Savings Log (Week 2)</h2>
+        <div class="tracking-table">
+          <div class="table-header">
+            <span>Task</span>
+            <span>Without AI</span>
+            <span>With AI</span>
+            <span>Saved</span>
+          </div>
+          <div class="table-row">
+            <span class="row-label">Labor planning</span>
+            <span class="input-cell">___ min</span>
+            <span class="input-cell">___ min</span>
+            <span class="input-cell">___</span>
+          </div>
+          <div class="table-row">
+            <span class="row-label">Incident analysis</span>
+            <span class="input-cell">___ min</span>
+            <span class="input-cell">___ min</span>
+            <span class="input-cell">___</span>
+          </div>
+          <div class="table-row">
+            <span class="row-label">Leadership update</span>
+            <span class="input-cell">___ min</span>
+            <span class="input-cell">___ min</span>
+            <span class="input-cell">___</span>
+          </div>
+          <div class="table-row" style="background:#2a2a2a">
+            <span style="color:#4ade80">Weekly Total</span>
+            <span></span>
+            <span></span>
+            <span class="input-cell" style="color:#4ade80">___</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer"><strong>Next Week:</strong> GitHub Copilot, Voice Mode & Agent Fundamentals</p>
+  </div>
+</body>
+</html>

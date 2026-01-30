@@ -1,0 +1,23 @@
+# Environment variables (contains API keys)
+.env
+.env.local
+.env.*.local
+
+# Playwright MCP artifacts
+.playwright-mcp/
+
+# Node modules (if any)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+nul

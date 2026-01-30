@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 09 - Policy Examples</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      flex: 1;
+    }
+    th {
+      text-align: left;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #a0a0a0;
+      padding: 12px 16px;
+      border-bottom: 2px solid #2a2a2a;
+    }
+    td {
+      padding: 14px 16px;
+      font-size: 13px;
+      border-bottom: 1px solid #1a1a1a;
+      vertical-align: middle;
+    }
+    tr:nth-child(even) {
+      background: #1a1a1a;
+    }
+    .yes {
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .no {
+      color: #f87171;
+      font-weight: bold;
+    }
+    .use {
+      color: #facc15;
+      font-weight: bold;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Real Scenarios: Which Tool?</h1>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 50%;">Scenario</th>
+          <th style="width: 25%;">ChatGPT?</th>
+          <th style="width: 25%;">Bottle Rocket?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Draft email about yesterday's shipment numbers</td>
+          <td class="no">NO</td>
+          <td class="yes">YES</td>
+        </tr>
+        <tr>
+          <td>Learn how to write a Python script (generic)</td>
+          <td class="no">NO (use Copilot)</td>
+          <td class="yes">YES</td>
+        </tr>
+        <tr>
+          <td>Summarize a vendor's public press release</td>
+          <td class="no">NO</td>
+          <td class="yes">YES</td>
+        </tr>
+        <tr>
+          <td>Ask about my DC's safety incident</td>
+          <td class="no">NO</td>
+          <td class="yes">YES</td>
+        </tr>
+        <tr>
+          <td>Excel formulas help (no Tesla data)</td>
+          <td class="use">Use Copilot</td>
+          <td class="yes">YES</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="footer">Section 2 | Tesla AI Policy</p>
+  </div>
+</body>
+</html>

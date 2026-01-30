@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 05 - Key Statistics</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 32px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 32px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      flex: 1;
+    }
+    .stat-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 48px;
+      font-weight: bold;
+      color: #e82127;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-size: 14px;
+      color: #a0a0a0;
+      line-height: 1.4;
+    }
+    .source {
+      font-size: 10px;
+      color: #666;
+      margin-top: 12px;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Business Case for AI</h1>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">7.5</span>
+        <span class="stat-label">hours saved per week<br>with AI tools</span>
+        <span class="source">Worklytics 2025</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">20-30%</span>
+        <span class="stat-label">efficiency improvement<br>with proper AI training</span>
+        <span class="source">Centric Consulting</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">95%</span>
+        <span class="stat-label">of AI pilots fail<br>due to organizational factors</span>
+        <span class="source">MIT/Fortune 2025</span>
+      </div>
+    </div>
+    <p class="footer">Section 1 | Why AI Matters for Operations</p>
+  </div>
+</body>
+</html>

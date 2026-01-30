@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 02 - Agenda</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .agenda-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+    .agenda-item {
+      display: flex;
+      align-items: center;
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+    .time {
+      font-size: 12px;
+      color: #a0a0a0;
+      width: 80px;
+      flex-shrink: 0;
+    }
+    .topic {
+      font-size: 14px;
+      flex: 1;
+    }
+    .duration {
+      font-size: 12px;
+      color: #e82127;
+      background: #2a2a2a;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .break-item {
+      background: #2a2a2a;
+    }
+    .exercise-badge {
+      background: #e82127;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Today's Agenda</h1>
+    <div class="agenda-list">
+      <div class="agenda-item">
+        <span class="time">0:00 - 0:15</span>
+        <span class="topic">Homework Review: Best Prompts</span>
+        <span class="duration">15 min</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">0:15 - 0:25</span>
+        <span class="topic">Advanced Prompting Techniques</span>
+        <span class="duration">10 min</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">0:25 - 0:50</span>
+        <span class="topic">Chain-of-Thought Prompts<span class="exercise-badge">Exercise 1</span></span>
+        <span class="duration">25 min</span>
+      </div>
+      <div class="agenda-item break-item">
+        <span class="time">0:50 - 0:55</span>
+        <span class="topic">Break</span>
+        <span class="duration">5 min</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">0:55 - 1:05</span>
+        <span class="topic">Operations Use Cases Overview</span>
+        <span class="duration">10 min</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">1:05 - 1:30</span>
+        <span class="topic">Build 3 Operations Templates<span class="exercise-badge">Exercise 2</span></span>
+        <span class="duration">25 min</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">1:30 - 1:50</span>
+        <span class="topic">Model Comparison Challenge<span class="exercise-badge">Exercise 3</span></span>
+        <span class="duration">20 min</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">1:50 - 2:00</span>
+        <span class="topic">Share & Discuss Best Templates</span>
+        <span class="duration">10 min</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

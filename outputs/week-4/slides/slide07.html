@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 07 - Playwright MCP Tools</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .tool-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .tool-name {
+      font-family: monospace;
+      font-size: 13px;
+      color: #e82127;
+      margin-bottom: 8px;
+    }
+    .tool-desc {
+      font-size: 14px;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .tool-example {
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+    .use-cases {
+      margin-top: 24px;
+      background: #1a1a1a;
+      padding: 16px 20px;
+      border-radius: 8px;
+    }
+    .use-cases-title {
+      font-size: 12px;
+      color: #a0a0a0;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .use-cases-list {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <h1>Playwright MCP Tools</h1>
+
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-name">browser_navigate</div>
+        <div class="tool-desc">Go to any URL</div>
+        <div class="tool-example">Open websites</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">browser_snapshot</div>
+        <div class="tool-desc">Read page structure</div>
+        <div class="tool-example">Understand content</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">browser_click</div>
+        <div class="tool-desc">Click elements</div>
+        <div class="tool-example">Press buttons</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">browser_type</div>
+        <div class="tool-desc">Enter text</div>
+        <div class="tool-example">Fill search boxes</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">browser_fill_form</div>
+        <div class="tool-desc">Complete forms</div>
+        <div class="tool-example">Multi-field input</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">browser_screenshot</div>
+        <div class="tool-desc">Capture visual</div>
+        <div class="tool-example">Document results</div>
+      </div>
+    </div>
+
+    <div class="use-cases">
+      <div class="use-cases-title">Common Use Cases</div>
+      <div class="use-cases-list">
+        <span>Web data extraction</span>
+        <span>•</span>
+        <span>Form automation</span>
+        <span>•</span>
+        <span>Report generation</span>
+        <span>•</span>
+        <span>Testing</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

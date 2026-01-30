@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 12 - Agent Mode Capabilities</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .capabilities {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .capability {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .cap-num {
+      background: #e82127;
+      color: #ffffff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+    .cap-content h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .cap-content p {
+      font-size: 13px;
+      color: #a0a0a0;
+    }
+    .how-to {
+      margin-top: 25px;
+      background: #2a2a2a;
+      padding: 16px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .how-to strong {
+      color: #e82127;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <h1>What Agent Mode Can Do</h1>
+    <div class="capabilities">
+      <div class="capability">
+        <span class="cap-num">1</span>
+        <div class="cap-content">
+          <h3>Autonomous Context Discovery</h3>
+          <p>Finds relevant files without being told</p>
+        </div>
+      </div>
+      <div class="capability">
+        <span class="cap-num">2</span>
+        <div class="cap-content">
+          <h3>Multi-File Editing</h3>
+          <p>Coordinates changes across your project</p>
+        </div>
+      </div>
+      <div class="capability">
+        <span class="cap-num">3</span>
+        <div class="cap-content">
+          <h3>Terminal Execution</h3>
+          <p>Runs commands (with your approval)</p>
+        </div>
+      </div>
+      <div class="capability">
+        <span class="cap-num">4</span>
+        <div class="cap-content">
+          <h3>Self-Correction</h3>
+          <p>Monitors output and fixes errors</p>
+        </div>
+      </div>
+    </div>
+    <div class="how-to">
+      <strong>How to Activate:</strong> In Copilot Chat, click the dropdown and select "Agent" mode
+    </div>
+  </div>
+</body>
+</html>

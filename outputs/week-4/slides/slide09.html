@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 09 - Exercise 2: Web Automation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px;
+      margin-left: 8px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .exercise-badge {
+      background: #e82127;
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+    .instructions {
+      list-style: none;
+    }
+    .instructions li {
+      margin-bottom: 14px;
+      font-size: 14px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .instructions li::before {
+      content: attr(data-step);
+      position: absolute;
+      left: 0;
+      color: #e82127;
+      font-weight: bold;
+    }
+    .prompt-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .prompt-label {
+      font-size: 11px;
+      color: #a0a0a0;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .prompt-text {
+      font-size: 13px;
+      line-height: 1.5;
+      font-style: italic;
+      color: #ffffff;
+    }
+    .time-savings {
+      background: #1a2a1a;
+      padding: 16px;
+      border-radius: 8px;
+      border-left: 3px solid #4ade80;
+    }
+    .savings-title {
+      font-size: 12px;
+      color: #4ade80;
+      margin-bottom: 8px;
+    }
+    .savings-compare {
+      font-size: 14px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <div class="left-panel">
+      <div class="exercise-badge">Exercise 2</div>
+      <h1>Web Automation with Playwright</h1>
+
+      <ul class="instructions">
+        <li data-step="1.">Open Copilot Chat: Ctrl+Alt+I</li>
+        <li data-step="2.">Switch to Agent Mode (dropdown)</li>
+        <li data-step="3.">Enter a web automation command</li>
+        <li data-step="4.">Review the agent's plan</li>
+        <li data-step="5.">Watch tool calls execute</li>
+        <li data-step="6.">Iterate if needed</li>
+      </ul>
+    </div>
+
+    <div class="right-panel">
+      <div class="prompt-card">
+        <div class="prompt-label">Try This Prompt:</div>
+        <div class="prompt-text">"Navigate to https://example.com and describe what content is on the page"</div>
+      </div>
+
+      <div class="prompt-card">
+        <div class="prompt-label">Data Extraction:</div>
+        <div class="prompt-text">"Go to jsonplaceholder.typicode.com/users and extract the first 3 users with names and emails"</div>
+      </div>
+
+      <div class="time-savings">
+        <div class="savings-title">Time Savings</div>
+        <div class="savings-compare">Manual: 5-10 min → With MCP: 30 seconds</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

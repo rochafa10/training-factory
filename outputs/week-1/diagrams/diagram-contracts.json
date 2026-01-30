@@ -1,0 +1,72 @@
+{
+  "diagrams": [
+    {
+      "filename": "sample-flow.excalidraw",
+      "title": "Simple Agent Flow",
+      "week": 1,
+      "contentSection": "AI Foundations",
+      "nodes": [
+        {
+          "id": "user",
+          "label": "User",
+          "type": "user",
+          "description": "Person making a request"
+        },
+        {
+          "id": "bottlerocket",
+          "label": "Bottle Rocket",
+          "type": "agent",
+          "description": "Tesla AI chat interface"
+        },
+        {
+          "id": "model",
+          "label": "AI Model",
+          "type": "tool",
+          "description": "Grok, Claude, or Gemini"
+        },
+        {
+          "id": "response",
+          "label": "Response",
+          "type": "data",
+          "description": "Generated output"
+        }
+      ],
+      "edges": [
+        {
+          "from": "user",
+          "to": "bottlerocket",
+          "label": "prompt",
+          "type": "data_flow"
+        },
+        {
+          "from": "bottlerocket",
+          "to": "model",
+          "label": "request",
+          "type": "control_flow"
+        },
+        {
+          "from": "model",
+          "to": "bottlerocket",
+          "label": "generation",
+          "type": "data_flow"
+        },
+        {
+          "from": "bottlerocket",
+          "to": "response",
+          "label": "output",
+          "type": "data_flow"
+        }
+      ],
+      "constraints": {
+        "allowedColors": {
+          "user": "#ffd43b",
+          "agent": "#4dabf7",
+          "tool": "#69db7c",
+          "data": "#a5d8ff"
+        },
+        "maxNodes": 4,
+        "layoutDirection": "left-to-right"
+      }
+    }
+  ]
+}

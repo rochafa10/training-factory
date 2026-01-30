@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 15 - Key Takeaways</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .takeaways {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .takeaway {
+      display: flex;
+      align-items: flex-start;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .takeaway-num {
+      background: #e82127;
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    .takeaway-text {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .takeaway-text strong {
+      color: #4ade80;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <h1>Key Takeaways</h1>
+
+    <div class="takeaways">
+      <div class="takeaway">
+        <span class="takeaway-num">1</span>
+        <span class="takeaway-text"><strong>MCP extends Copilot's reach</strong> — Browser automation, file operations, external systems</span>
+      </div>
+      <div class="takeaway">
+        <span class="takeaway-num">2</span>
+        <span class="takeaway-text"><strong>Multi-agent patterns coordinate complex tasks</strong> — Sequential, Parallel, Supervisor, Human-in-Loop</span>
+      </div>
+      <div class="takeaway">
+        <span class="takeaway-num">3</span>
+        <span class="takeaway-text"><strong>76% of enterprises use human review</strong> — Always verify AI outputs before using</span>
+      </div>
+      <div class="takeaway">
+        <span class="takeaway-num">4</span>
+        <span class="takeaway-text"><strong>40-60 minutes daily savings</strong> — Cumulative impact of AI tools on routine tasks</span>
+      </div>
+      <div class="takeaway">
+        <span class="takeaway-num">5</span>
+        <span class="takeaway-text"><strong>Policy always applies</strong> — Bottle Rocket for Tesla data; Copilot + MCP for everything else</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 14 - Personal Project Workshop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px;
+      margin-left: 8px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    .checklist {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .checklist-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #e82127;
+    }
+    .checklist-items {
+      list-style: none;
+    }
+    .checklist-items li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #4ade80;
+      border-radius: 3px;
+      margin-right: 12px;
+    }
+    .enhancement {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .enhancement-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .enhancement-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .enhancement-item {
+      background: #2a2a2a;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      text-align: center;
+    }
+    .time-doc {
+      background: #2a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 3px solid #e82127;
+    }
+    .time-doc-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .time-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #a0a0a0;
+    }
+    .time-input {
+      background: #1a1a1a;
+      border: 1px solid #3a3a3a;
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: #ffffff;
+      width: 80px;
+      text-align: right;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <div class="left-panel">
+      <h1>Personal Project Workshop</h1>
+
+      <div class="checklist">
+        <div class="checklist-title">Today's Goals</div>
+        <ul class="checklist-items">
+          <li><span class="checkbox"></span> End-to-end workflow functional</li>
+          <li><span class="checkbox"></span> At least one iteration complete</li>
+          <li><span class="checkbox"></span> Time savings documented</li>
+        </ul>
+      </div>
+
+      <div class="enhancement">
+        <div class="enhancement-title">Enhancement Ideas</div>
+        <div class="enhancement-grid">
+          <div class="enhancement-item">Add voice input</div>
+          <div class="enhancement-item">File operations</div>
+          <div class="enhancement-item">Web data</div>
+          <div class="enhancement-item">Multi-step workflow</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="time-doc">
+        <div class="time-doc-title">Document Your Savings</div>
+        <div class="time-row">
+          <span>Task Before AI:</span>
+          <span class="time-input">___ min</span>
+        </div>
+        <div class="time-row">
+          <span>Task With AI:</span>
+          <span class="time-input">___ min</span>
+        </div>
+        <div class="time-row">
+          <span>Savings Per Use:</span>
+          <span class="time-input">___ min</span>
+        </div>
+        <div class="time-row">
+          <span>Uses Per Week:</span>
+          <span class="time-input">___</span>
+        </div>
+        <div class="time-row" style="padding-top: 12px; border-top: 1px solid #3a2a2a; color: #4ade80;">
+          <span>Weekly Savings:</span>
+          <span class="time-input">___ min</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

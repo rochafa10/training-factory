@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 15 - Personal Project</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #a0a0a0;
+      margin-bottom: 25px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+    .project {
+      background: #1a1a1a;
+      padding: 18px;
+      border-radius: 8px;
+    }
+    .project-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #e82127;
+    }
+    .project-desc {
+      font-size: 12px;
+      color: #a0a0a0;
+      line-height: 1.4;
+    }
+    .prompt-hint {
+      margin-top: 25px;
+      background: #2a2a2a;
+      padding: 16px;
+      border-radius: 8px;
+    }
+    .hint-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #e82127;
+      margin-bottom: 8px;
+    }
+    .hint-text {
+      font-size: 13px;
+      font-style: italic;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <h1>Personal Project: Define Requirements</h1>
+    <p class="subtitle">Choose your automation project for Week 4</p>
+    <div class="projects-grid">
+      <div class="project">
+        <p class="project-title">Dive Deep Automation</p>
+        <p class="project-desc">Auto-generate dive deep reports from data analysis</p>
+      </div>
+      <div class="project">
+        <p class="project-title">Email Management</p>
+        <p class="project-desc">Voice-dictated emails with AI formatting</p>
+      </div>
+      <div class="project">
+        <p class="project-title">Daily Report Generator</p>
+        <p class="project-desc">Pull data, analyze, create and distribute reports</p>
+      </div>
+      <div class="project">
+        <p class="project-title">KPI Dashboard Narrator</p>
+        <p class="project-desc">Generate executive summaries from metrics</p>
+      </div>
+      <div class="project">
+        <p class="project-title">Incident Analysis Agent</p>
+        <p class="project-desc">Multi-agent root cause analysis system</p>
+      </div>
+      <div class="project">
+        <p class="project-title">Your Own Idea</p>
+        <p class="project-desc">What repetitive task could you automate?</p>
+      </div>
+    </div>
+    <div class="prompt-hint">
+      <p class="hint-label">Use Agent Mode</p>
+      <p class="hint-text">"Help me create a requirements document for my project. The project is [DESCRIBE]. Ask me questions to understand what I need."</p>
+    </div>
+  </div>
+</body>
+</html>

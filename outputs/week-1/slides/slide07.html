@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 07 - Three Tiers</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .tiers {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .tier {
+      flex: 1;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .tier-approved {
+      background: linear-gradient(135deg, #166534 0%, #14532d 100%);
+      border: 2px solid #4ade80;
+    }
+    .tier-conditional {
+      background: linear-gradient(135deg, #854d0e 0%, #713f12 100%);
+      border: 2px solid #facc15;
+    }
+    .tier-prohibited {
+      background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);
+      border: 2px solid #f87171;
+    }
+    .tier-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .tier-icon {
+      font-size: 20px;
+    }
+    .tier-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .tier-subtitle {
+      font-size: 11px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+    }
+    .tier ul {
+      list-style: none;
+      flex: 1;
+    }
+    .tier li {
+      font-size: 13px;
+      margin-bottom: 8px;
+      padding-left: 16px;
+      position: relative;
+    }
+    .tier li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Three Tiers of AI Tools</h1>
+    <div class="tiers">
+      <div class="tier tier-approved">
+        <div class="tier-header">
+          <span class="tier-icon">&#10003;</span>
+          <span class="tier-title">APPROVED</span>
+        </div>
+        <p class="tier-subtitle">Tesla Data Allowed</p>
+        <ul>
+          <li><strong>Bottle Rocket</strong><br>go.tesla.com/chat</li>
+          <li>IT Assist Bot</li>
+          <li>Employee Assist Bot</li>
+        </ul>
+      </div>
+      <div class="tier tier-conditional">
+        <div class="tier-header">
+          <span class="tier-icon">&#9888;</span>
+          <span class="tier-title">CONDITIONAL</span>
+        </div>
+        <p class="tier-subtitle">No Tesla Data</p>
+        <ul>
+          <li><strong>GitHub Copilot</strong><br>Generic coding only</li>
+          <li>GitHub Copilot CLI</li>
+        </ul>
+      </div>
+      <div class="tier tier-prohibited">
+        <div class="tier-header">
+          <span class="tier-icon">&#10007;</span>
+          <span class="tier-title">PROHIBITED</span>
+        </div>
+        <p class="tier-subtitle">Never Use</p>
+        <ul>
+          <li>ChatGPT</li>
+          <li>Claude.ai (web)</li>
+          <li>Gemini (external)</li>
+          <li>Meeting transcription AI</li>
+          <li>Apple Intelligence</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer">Section 2 | Tesla AI Policy | go.tesla.com/aitools</p>
+  </div>
+</body>
+</html>

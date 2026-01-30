@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 13 - The Formula</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .formula-display {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .formula-item {
+      background: #e82127;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .formula-plus {
+      font-size: 24px;
+      color: #a0a0a0;
+    }
+    .components {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .component {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .component-header {
+      font-size: 14px;
+      font-weight: bold;
+      color: #e82127;
+      margin-bottom: 8px;
+    }
+    .component-desc {
+      font-size: 12px;
+      color: #a0a0a0;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .component-example {
+      background: #2a2a2a;
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 11px;
+      font-style: italic;
+      line-height: 1.4;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Prompt Formula</h1>
+    <div class="formula-display">
+      <span class="formula-item">ROLE</span>
+      <span class="formula-plus">+</span>
+      <span class="formula-item">CONTEXT</span>
+      <span class="formula-plus">+</span>
+      <span class="formula-item">TASK</span>
+      <span class="formula-plus">+</span>
+      <span class="formula-item">FORMAT</span>
+    </div>
+    <div class="components">
+      <div class="component">
+        <span class="component-header">ROLE</span>
+        <p class="component-desc">Tell the AI who to be</p>
+        <div class="component-example">"You are an experienced operations manager at a distribution center."</div>
+      </div>
+      <div class="component">
+        <span class="component-header">CONTEXT</span>
+        <p class="component-desc">Give background information</p>
+        <div class="component-example">"I manage the morning shift at Tampa DC with 45 associates."</div>
+      </div>
+      <div class="component">
+        <span class="component-header">TASK</span>
+        <p class="component-desc">State exactly what you need</p>
+        <div class="component-example">"Create a standup summary for today."</div>
+      </div>
+      <div class="component">
+        <span class="component-header">FORMAT</span>
+        <p class="component-desc">Specify output structure</p>
+        <div class="component-example">"Use bullet points, keep under 200 words."</div>
+      </div>
+    </div>
+    <p class="footer">Section 4 | Prompt Engineering Basics</p>
+  </div>
+</body>
+</html>

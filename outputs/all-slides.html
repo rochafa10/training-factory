@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Training Course - Complete Slide Gallery (All 4 Weeks)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1a1a1a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #a0a0a0;
+      margin-bottom: 40px;
+    }
+    .controls {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .controls button {
+      background: #e82127;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin: 0 5px;
+    }
+    .controls button:hover {
+      background: #c91b21;
+    }
+    .week-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .week-tab {
+      background: #2a2a2a;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .week-tab:hover {
+      background: #3a3a3a;
+    }
+    .week-tab.active {
+      background: #e82127;
+    }
+    .week-section {
+      margin-bottom: 50px;
+    }
+    .week-header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      padding: 20px 30px;
+      border-left: 4px solid #e82127;
+      margin-bottom: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+    .week-title {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .week-info {
+      color: #a0a0a0;
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .slide-container {
+      background: #0a0a0a;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .slide-container:hover {
+      transform: scale(1.02);
+    }
+    .slide-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+    .slide-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      pointer-events: none;
+    }
+    .slide-label {
+      padding: 10px 14px;
+      background: #2a2a2a;
+      font-size: 12px;
+    }
+    .slide-num {
+      color: #e82127;
+      font-weight: bold;
+    }
+    .fullscreen-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .fullscreen-overlay.active {
+      display: flex;
+    }
+    .fullscreen-slide {
+      width: 960px;
+      height: 540px;
+      max-width: 95vw;
+      max-height: 80vh;
+    }
+    .fullscreen-slide iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .fullscreen-nav {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .fullscreen-nav button {
+      background: #e82127;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .fullscreen-nav button:hover {
+      background: #c91b21;
+    }
+    .slide-counter {
+      font-size: 16px;
+      min-width: 120px;
+      text-align: center;
+    }
+    .week-indicator {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #2a2a2a;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .close-btn {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      background: transparent;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .keyboard-hint {
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 36px;
+      color: #e82127;
+      font-weight: bold;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Training Course - Complete Slide Gallery</h1>
+  <p class="subtitle">69 Slides | 4 Weeks | 8 Hours Total Training</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">69</div>
+      <div class="stat-label">Total Slides</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">4</div>
+      <div class="stat-label">Training Weeks</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">8</div>
+      <div class="stat-label">Hours Content</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">5</div>
+      <div class="stat-label">AGM Audience</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button onclick="startPresentation()">Start Full Presentation</button>
+  </div>
+
+  <div class="week-tabs">
+    <button class="week-tab active" onclick="scrollToWeek(1)">Week 1 (19)</button>
+    <button class="week-tab" onclick="scrollToWeek(2)">Week 2 (17)</button>
+    <button class="week-tab" onclick="scrollToWeek(3)">Week 3 (17)</button>
+    <button class="week-tab" onclick="scrollToWeek(4)">Week 4 (16)</button>
+  </div>
+
+  <div id="slideContent">
+    <!-- Week sections generated by JavaScript -->
+  </div>
+
+  <div class="fullscreen-overlay" id="fullscreenOverlay">
+    <button class="close-btn" onclick="closeFullscreen()">&times;</button>
+    <div class="week-indicator" id="weekIndicator">Week 1</div>
+    <div class="fullscreen-slide">
+      <iframe id="fullscreenFrame" src=""></iframe>
+    </div>
+    <div class="fullscreen-nav">
+      <button onclick="prevSlide()">Previous</button>
+      <span class="slide-counter" id="slideCounter">1 / 69</span>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <p class="keyboard-hint">Keyboard: Arrow keys to navigate, ESC to close fullscreen | Click any slide thumbnail to view</p>
+
+  <script>
+    const weeks = [
+      {
+        num: 1,
+        title: "Week 1: AI Fundamentals & Prompt Engineering Basics",
+        slides: 19,
+        topics: "AI Foundations, Prompt Formula, Bottle Rocket Introduction",
+        slideTitles: [
+          "Title - Week 1",
+          "Session Agenda",
+          "Learning Objectives",
+          "AI at Tesla",
+          "What AI Can Do",
+          "Approved Tools Overview",
+          "Bottle Rocket Demo",
+          "The Prompt Formula",
+          "ROLE Component",
+          "CONTEXT Component",
+          "TASK Component",
+          "FORMAT Component",
+          "Exercise 1: First Prompt",
+          "Common Mistakes",
+          "Iteration Technique",
+          "Exercise 2: Iteration",
+          "When to Use AI",
+          "Key Takeaways",
+          "Homework & Next Week"
+        ]
+      },
+      {
+        num: 2,
+        title: "Week 2: Professional Prompting & Business Applications",
+        slides: 17,
+        topics: "Advanced Prompting, Business Writing, Data Analysis",
+        slideTitles: [
+          "Title - Week 2",
+          "Session Agenda",
+          "Learning Objectives",
+          "Week 1 Review",
+          "Advanced Prompt Techniques",
+          "Chain of Thought",
+          "Few-Shot Prompting",
+          "Exercise 1: Advanced Prompts",
+          "Business Writing with AI",
+          "Email Templates",
+          "Report Generation",
+          "Exercise 2: Business Writing",
+          "Data Analysis Basics",
+          "Exercise 3: Data Analysis",
+          "Quality Control",
+          "Key Takeaways",
+          "Homework & Next Week"
+        ]
+      },
+      {
+        num: 3,
+        title: "Week 3: GitHub Copilot, Voice Mode & Agent Mode",
+        slides: 17,
+        topics: "GitHub Copilot, Voice Interaction, Autonomous Agents",
+        slideTitles: [
+          "Title - Week 3",
+          "Session Agenda",
+          "Learning Objectives",
+          "Week 2 Review",
+          "GitHub Copilot Introduction",
+          "Copilot Policy Warning",
+          "Voice Mode Overview",
+          "Voice Mode Demo",
+          "Exercise 1: Voice Mode",
+          "Agent Mode Introduction",
+          "Agent Mode Capabilities",
+          "Human-in-the-Loop",
+          "Exercise 2: Agent Mode",
+          "Combining Modes",
+          "Exercise 3: Combined Workflow",
+          "Key Takeaways",
+          "Homework & Next Week"
+        ]
+      },
+      {
+        num: 4,
+        title: "Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration",
+        slides: 16,
+        topics: "MCP Servers, Playwright, Multi-Agent Patterns, Course Completion",
+        slideTitles: [
+          "Title - Week 4",
+          "Session Agenda",
+          "Learning Objectives",
+          "Course Time Savings Review",
+          "What is MCP?",
+          "Exercise 1: MCP Installation",
+          "Playwright MCP Tools",
+          "MCP Policy Reminder",
+          "Exercise 2: Web Automation",
+          "Section: Multi-Agent Orchestration",
+          "Orchestration Patterns",
+          "Human-in-the-Loop",
+          "Exercise 3: Dive Deep Automation",
+          "Personal Project Workshop",
+          "Key Takeaways",
+          "Course Completion"
+        ]
+      }
+    ];
+
+    let allSlides = [];
+    let currentSlideIndex = 0;
+
+    // Build flat slide array with week info
+    weeks.forEach(week => {
+      for (let i = 1; i <= week.slides; i++) {
+        allSlides.push({
+          week: week.num,
+          weekTitle: week.title,
+          slideNum: i,
+          slideTitle: week.slideTitles[i-1] || `Slide ${i}`,
+          path: `week-${week.num}/slides/slide${String(i).padStart(2, '0')}.html`
+        });
+      }
+    });
+
+    // Generate HTML for all weeks
+    const content = document.getElementById('slideContent');
+    weeks.forEach(week => {
+      let html = `
+        <div class="week-section" id="week${week.num}">
+          <div class="week-header">
+            <div class="week-title">${week.title}</div>
+            <div class="week-info">${week.slides} slides | ${week.topics}</div>
+          </div>
+          <div class="grid">
+      `;
+
+      for (let i = 1; i <= week.slides; i++) {
+        const slideNum = String(i).padStart(2, '0');
+        const globalIndex = allSlides.findIndex(s => s.week === week.num && s.slideNum === i);
+        const slideTitle = week.slideTitles[i-1] || `Slide ${i}`;
+        html += `
+          <div class="slide-container" onclick="openSlide(${globalIndex})">
+            <div class="slide-wrapper">
+              <iframe src="week-${week.num}/slides/slide${slideNum}.html" loading="lazy"></iframe>
+            </div>
+            <div class="slide-label">
+              <span class="slide-num">W${week.num} Slide ${i}</span> - ${slideTitle}
+            </div>
+          </div>
+        `;
+      }
+
+      html += `</div></div>`;
+      content.innerHTML += html;
+    });
+
+    function scrollToWeek(weekNum) {
+      document.querySelectorAll('.week-tab').forEach((tab, i) => {
+        tab.classList.toggle('active', i === weekNum - 1);
+      });
+      document.getElementById(`week${weekNum}`).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openSlide(index) {
+      currentSlideIndex = index;
+      updateFullscreen();
+      document.getElementById('fullscreenOverlay').classList.add('active');
+    }
+
+    function closeFullscreen() {
+      document.getElementById('fullscreenOverlay').classList.remove('active');
+    }
+
+    function updateFullscreen() {
+      const slide = allSlides[currentSlideIndex];
+      document.getElementById('fullscreenFrame').src = slide.path;
+      document.getElementById('slideCounter').textContent = `${currentSlideIndex + 1} / ${allSlides.length}`;
+      document.getElementById('weekIndicator').textContent = `Week ${slide.week}: ${slide.slideTitle}`;
+    }
+
+    function nextSlide() {
+      if (currentSlideIndex < allSlides.length - 1) {
+        currentSlideIndex++;
+        updateFullscreen();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+        updateFullscreen();
+      }
+    }
+
+    function startPresentation() {
+      openSlide(0);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (document.getElementById('fullscreenOverlay').classList.contains('active')) {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+          prevSlide();
+        } else if (e.key === 'Escape') {
+          closeFullscreen();
+        }
+      }
+    });
+  </script>
+</body>
+</html>

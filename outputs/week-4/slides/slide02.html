@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 02 - Session Agenda</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .agenda {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 40px;
+    }
+    .agenda-item {
+      display: flex;
+      align-items: center;
+      background: #1a1a1a;
+      padding: 12px 16px;
+      border-radius: 6px;
+    }
+    .time {
+      font-size: 12px;
+      color: #a0a0a0;
+      min-width: 70px;
+    }
+    .topic {
+      font-size: 14px;
+    }
+    .exercise {
+      background: #2a1a1a;
+      border-left: 3px solid #e82127;
+    }
+    .break {
+      background: #1a2a1a;
+      border-left: 3px solid #4ade80;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+
+  <div class="content">
+    <h1>Session Agenda</h1>
+
+    <div class="agenda">
+      <div class="agenda-item">
+        <span class="time">0:00-0:10</span>
+        <span class="topic">Course Time Savings Review</span>
+      </div>
+      <div class="agenda-item exercise">
+        <span class="time">0:10-0:25</span>
+        <span class="topic">Exercise 1: MCP Installation</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">0:25-0:40</span>
+        <span class="topic">MCP Capabilities Deep Dive</span>
+      </div>
+      <div class="agenda-item exercise">
+        <span class="time">0:40-1:00</span>
+        <span class="topic">Exercise 2: Web Automation</span>
+      </div>
+      <div class="agenda-item break">
+        <span class="time">1:00-1:05</span>
+        <span class="topic">Break</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">1:05-1:20</span>
+        <span class="topic">Multi-Agent Orchestration</span>
+      </div>
+      <div class="agenda-item exercise">
+        <span class="time">1:20-1:40</span>
+        <span class="topic">Exercise 3: Dive Deep Automation</span>
+      </div>
+      <div class="agenda-item exercise">
+        <span class="time">1:40-1:55</span>
+        <span class="topic">Personal Project Workshop</span>
+      </div>
+      <div class="agenda-item">
+        <span class="time">1:55-2:00</span>
+        <span class="topic">Next Steps & Course Wrap</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+</body>
+</html>

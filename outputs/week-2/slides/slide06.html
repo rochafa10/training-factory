@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 06 - Chain-of-Thought</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .technique-badge {
+      background: #e82127;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .right-col {
+      flex: 1;
+    }
+    .definition {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .definition-label {
+      font-size: 11px;
+      color: #e82127;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .definition-text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .stat-highlight {
+      background: linear-gradient(135deg, #e82127 0%, #c41d22 100%);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .stat-number {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+    }
+    .trigger-list {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .trigger-title {
+      font-size: 12px;
+      color: #e82127;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .trigger-item {
+      font-size: 13px;
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      background: #2a2a2a;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .example-box {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      height: 100%;
+    }
+    .example-label {
+      font-size: 11px;
+      color: #e82127;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .example-code {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #a0a0a0;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+    .highlight {
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="technique-badge">Technique 1</span>
+      <h1>Chain-of-Thought Prompting</h1>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="definition">
+          <div class="definition-label">What It Is</div>
+          <div class="definition-text">Ask AI to show its reasoning step-by-step before giving an answer. Forces structured thinking on complex problems.</div>
+        </div>
+        <div class="stat-highlight">
+          <div class="stat-number">20-40%</div>
+          <div class="stat-label">Improvement on complex reasoning</div>
+        </div>
+        <div class="trigger-list">
+          <div class="trigger-title">Trigger Phrases</div>
+          <div class="trigger-item">"Let's think step by step"</div>
+          <div class="trigger-item">"Walk me through your reasoning"</div>
+          <div class="trigger-item">"First..., Then..., Finally..."</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="example-box">
+          <div class="example-label">Example: Operations Analysis</div>
+          <div class="example-code">Analyze our overtime increase <span class="highlight">step by step</span>:
+
+<span class="highlight">1. First</span>, list possible causes
+<span class="highlight">2. Then</span>, evaluate each against our data
+<span class="highlight">3. Finally</span>, identify root causes and recommend actions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

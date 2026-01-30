@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 12 - Exercise 2</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .exercise-badge {
+      background: #e82127;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .time-badge {
+      margin-left: auto;
+      background: #2a2a2a;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .right-col {
+      width: 320px;
+    }
+    .instruction-box {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .instruction-title {
+      font-size: 12px;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .instruction-item {
+      font-size: 13px;
+      margin-bottom: 8px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .instruction-item::before {
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .instruction-item:nth-child(2)::before { content: "1."; }
+    .instruction-item:nth-child(3)::before { content: "2."; }
+    .instruction-item:nth-child(4)::before { content: "3."; }
+    .instruction-item:nth-child(5)::before { content: "4."; }
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .option-card {
+      background: #2a2a2a;
+      border-radius: 6px;
+      padding: 12px;
+      text-align: center;
+    }
+    .option-name {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .option-desc {
+      font-size: 10px;
+      color: #a0a0a0;
+    }
+    .checklist-box {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .checklist-title {
+      font-size: 11px;
+      color: #e82127;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .check-item {
+      font-size: 12px;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+      color: #a0a0a0;
+    }
+    .check-item::before {
+      content: "☐";
+      position: absolute;
+      left: 0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="exercise-badge">Exercise 2</span>
+      <h1>Build 3 Operations Templates</h1>
+      <span class="time-badge">25 minutes</span>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="instruction-box">
+          <div class="instruction-title">Your Task</div>
+          <div class="instruction-item">Choose 3 use cases from the options below</div>
+          <div class="instruction-item">Build each template using advanced techniques</div>
+          <div class="instruction-item">Test each in Bottle Rocket with real data</div>
+          <div class="instruction-item">Refine based on output quality</div>
+        </div>
+        <div class="options-grid">
+          <div class="option-card">
+            <div class="option-name">Labor Planning</div>
+            <div class="option-desc">Staffing & productivity</div>
+          </div>
+          <div class="option-card">
+            <div class="option-name">Safety Analysis</div>
+            <div class="option-desc">5-Whys root cause</div>
+          </div>
+          <div class="option-card">
+            <div class="option-name">Vendor Email</div>
+            <div class="option-desc">Professional issues</div>
+          </div>
+          <div class="option-card">
+            <div class="option-name">KPI Narrative</div>
+            <div class="option-desc">Metrics to insights</div>
+          </div>
+          <div class="option-card">
+            <div class="option-name">SOP Writing</div>
+            <div class="option-desc">Clear procedures</div>
+          </div>
+          <div class="option-card">
+            <div class="option-name">Your Choice</div>
+            <div class="option-desc">What do you need?</div>
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="checklist-box">
+          <div class="checklist-title">Quality Checklist (Each Template)</div>
+          <div class="check-item">Enhanced ROLE (specific expert)</div>
+          <div class="check-item">CONTEXT with [PLACEHOLDERS]</div>
+          <div class="check-item">TASK with CoT structure</div>
+          <div class="check-item">FORMAT specifies output</div>
+          <div class="check-item">Tested with real data</div>
+          <div class="check-item">Useful for actual work</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

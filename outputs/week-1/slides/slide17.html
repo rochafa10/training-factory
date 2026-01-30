@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 17 - Exercise 3</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .exercise-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #e82127;
+      padding: 8px 16px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      width: fit-content;
+    }
+    .exercise-badge span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #a0a0a0;
+      margin-bottom: 24px;
+    }
+    .time-badge {
+      position: absolute;
+      top: 32px;
+      right: 40px;
+      background: #2a2a2a;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .time-badge .time {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e82127;
+    }
+    .time-badge .label {
+      font-size: 10px;
+      color: #a0a0a0;
+    }
+    .main-content {
+      display: flex;
+      gap: 32px;
+      flex: 1;
+    }
+    .left-col, .right-col {
+      flex: 1;
+    }
+    h2 {
+      font-size: 14px;
+      color: #e82127;
+      margin-bottom: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+      font-size: 11px;
+      font-weight: bold;
+      color: #a0a0a0;
+      padding: 8px 10px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    td {
+      font-size: 12px;
+      padding: 8px 10px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .tip-card {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .tip-card p {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #a0a0a0;
+    }
+    .sharing-box {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .sharing-box h3 {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .sharing-box ul {
+      list-style: none;
+    }
+    .sharing-box li {
+      font-size: 12px;
+      margin-bottom: 6px;
+      color: #a0a0a0;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">
+      <span>EXERCISE 3</span>
+    </div>
+    <h1>Iterate &amp; Improve</h1>
+    <p class="subtitle">Your first output is a starting point, not the final product.</p>
+    <div class="time-badge">
+      <div class="time">15</div>
+      <div class="label">MINUTES</div>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <h2>Iteration Follow-ups</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Try This</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Too long</td>
+              <td>"Make this under 100 words"</td>
+            </tr>
+            <tr>
+              <td>Too formal</td>
+              <td>"More conversational tone"</td>
+            </tr>
+            <tr>
+              <td>Missing details</td>
+              <td>"Add a section on [topic]"</td>
+            </tr>
+            <tr>
+              <td>Wrong format</td>
+              <td>"Convert to bullet points"</td>
+            </tr>
+            <tr>
+              <td>Too generic</td>
+              <td>"Make it specific to DC ops"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="right-col">
+        <div class="tip-card">
+          <p><strong>Key Insight:</strong> Don't rewrite your whole prompt. Just tell the AI what to fix in a follow-up message.</p>
+        </div>
+        <div class="sharing-box">
+          <h3>Sharing (Last 5 min)</h3>
+          <ul>
+            <li>What prompt did you iterate on?</li>
+            <li>What follow-up did you use?</li>
+            <li>How did the output improve?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="footer">Practice + Sharing | Hands-On</p>
+  </div>
+</body>
+</html>

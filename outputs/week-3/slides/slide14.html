@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 14 - First Agent Task</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #e82127;
+    }
+    .exercise-badge {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      background: #e82127;
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 50px 40px 50px;
+      margin-left: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .task-box {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .task-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .prompt-example {
+      background: #2a2a2a;
+      padding: 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      line-height: 1.5;
+      font-family: monospace;
+    }
+    .steps-row {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .step {
+      flex: 1;
+      background: #1a1a1a;
+      padding: 14px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .step-num {
+      color: #e82127;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .step-text {
+      font-size: 13px;
+      color: #a0a0a0;
+    }
+    .savings {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="exercise-badge">Exercise 4</div>
+  <div class="content">
+    <h1>First Agent Task: Project Setup</h1>
+    <div class="task-box">
+      <p class="task-title">Your Prompt (type or dictate):</p>
+      <div class="prompt-example">"Create a project folder called 'my-automation' for a KPI dashboard automation. Include a README.md with project description, a src folder, a data folder, a config folder, and a docs folder."</div>
+    </div>
+    <div class="steps-row">
+      <div class="step">
+        <p class="step-num">1</p>
+        <p class="step-text">Switch to Agent mode in Copilot Chat</p>
+      </div>
+      <div class="step">
+        <p class="step-num">2</p>
+        <p class="step-text">Enter your prompt</p>
+      </div>
+      <div class="step">
+        <p class="step-num">3</p>
+        <p class="step-text">Review the plan</p>
+      </div>
+      <div class="step">
+        <p class="step-num">4</p>
+        <p class="step-text">Approve execution</p>
+      </div>
+      <div class="step">
+        <p class="step-num">5</p>
+        <p class="step-text">Verify results</p>
+      </div>
+    </div>
+    <p class="savings">15+ minutes manual setup -> 30 seconds with Agent Mode</p>
+  </div>
+</body>
+</html>
