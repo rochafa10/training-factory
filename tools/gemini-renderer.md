@@ -135,9 +135,9 @@ After each render, verify against diagram-contracts.json:
 
 ---
 
-## Usage in Agent 03.6
+## Usage in Agent 05
 
-When running Agent 03.6 (Diagram Renderer):
+When running Agent 05 (Diagram Renderer):
 
 1. Load `.env` to get `GEMINI_API_KEY`
 2. Read `diagram-contracts.json` for locked structure

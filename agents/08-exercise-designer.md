@@ -1,4 +1,4 @@
-# Agent 05: Exercise Designer
+# Agent 08: Exercise Designer
 
 ## Purpose
 Create hands-on labs, exercises, and practice activities with validated difficulty progression.
@@ -128,7 +128,7 @@ Force mental-model transfer by having learners interact with system diagrams bef
 Every diagram-grounded exercise MUST include:
 
 ```markdown
-### 📊 Before You Start
+### Before You Start
 
 **Review:** [Diagram Name] (`diagrams/[filename].excalidraw`)
 
@@ -160,9 +160,9 @@ Include 2-3 questions that force engagement with the diagram:
 **Type:** Diagram-Grounded
 **Difficulty:** 7/10
 **Time:** 20 minutes
-**Tool:** 🟡 GitHub Copilot (No Tesla Data)
+**Tool:** GitHub Copilot (No Tesla Data)
 
-### 📊 Before You Start
+### Before You Start
 
 **Review:** Multi-Agent Orchestration (`diagrams/orchestration.excalidraw`)
 
@@ -244,7 +244,7 @@ Using GitHub Copilot Agent Mode, create a plan for adding email notification:
 **Type:** Guided Practice
 **Difficulty:** [X]/10
 **Time:** [X] minutes
-**Tool:** 🟢 Bottle Rocket (Tesla Data OK)
+**Tool:** Bottle Rocket (Tesla Data OK)
 
 ### Scenario
 
@@ -287,7 +287,7 @@ Using GitHub Copilot Agent Mode, create a plan for adding email notification:
 **Type:** Template Exercise
 **Difficulty:** [X]/10
 **Time:** [X] minutes
-**Tool:** 🟢 Bottle Rocket
+**Tool:** Bottle Rocket
 
 ### Scenario
 
@@ -328,7 +328,7 @@ Using GitHub Copilot Agent Mode, create a plan for adding email notification:
 **Type:** Scenario Challenge
 **Difficulty:** [X]/10
 **Time:** [X] minutes
-**Tool:** 🟢 Bottle Rocket
+**Tool:** Bottle Rocket
 
 ### Scenario
 
@@ -386,17 +386,17 @@ After completing the exercises, consider:
 
 | Exercise | Difficulty | perplexity_reason Score | Feasible? |
 |----------|------------|------------------------|-----------|
-| Exercise 1 | [X]/10 | [Notes from validation] | ✅/⚠️/❌ |
-| Exercise 2 | [X]/10 | [Notes from validation] | ✅/⚠️/❌ |
-| Exercise 3 | [X]/10 | [Notes from validation] | ✅/⚠️/❌ |
+| Exercise 1 | [X]/10 | [Notes from validation] | // |
+| Exercise 2 | [X]/10 | [Notes from validation] | // |
+| Exercise 3 | [X]/10 | [Notes from validation] | // |
 ```
 
 ---
 
 ### Tool Rules
 
-- **🟢 Bottle Rocket:** Can use Tesla Data (real numbers, names, etc.)
-- **🟡 GitHub Copilot:** Generic examples only, NO Tesla Data
+- **Bottle Rocket:** Can use Tesla Data (real numbers, names, etc.)
+- **GitHub Copilot:** Generic examples only, NO Tesla Data
 
 ---
 

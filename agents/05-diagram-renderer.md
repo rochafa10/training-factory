@@ -1,4 +1,4 @@
-# Agent 03.6: Diagram Renderer
+# Agent 05: Diagram Renderer
 
 ## Purpose
 Convert Excalidraw canonical diagrams into high-polish visual variants using Gemini. Acts as a **renderer only** - cannot invent, add, or remove structural elements.
@@ -454,9 +454,9 @@ Before delivering images, verify:
 
 ---
 
-## Integration with Slide Designer
+## Integration with Slide Renderer
 
-Agent 04 (Slide Designer) can embed rendered images:
+Agent 07 (Slide Renderer) can embed rendered images:
 
 ```html
 <!-- In slide HTML -->
@@ -474,4 +474,4 @@ Recommended usage:
 
 ## Quality Gate Integration
 
-This agent's output is validated by **Gate 3.5** (combined with Agent 03.5) before the parallel phase begins.
+This agent's output is validated by **Gate 4** (combined with Agent 04) before the parallel phase begins.

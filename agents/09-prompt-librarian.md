@@ -1,4 +1,4 @@
-# Agent 06: Prompt Librarian
+# Agent 09: Prompt Librarian
 
 ## Purpose
 Generate reusable, tested prompt templates for specific operations use cases with cross-week deduplication.
@@ -151,11 +151,11 @@ FORMAT: [Standard format]
 ```markdown
 ### Prompt 7: Architecture-Aware Debugging
 
-🟡 **Tool:** GitHub Copilot
-📋 **Category:** Diagram-Grounded
-⏱️ **When to use:** Debugging agent workflows
-⭐ **Effectiveness:** 8/10
-📊 **References:** `orchestration.excalidraw`
+**Tool:** GitHub Copilot
+**Category:** Diagram-Grounded
+**When to use:** Debugging agent workflows
+**Effectiveness:** 8/10
+**References:** `orchestration.excalidraw`
 
 #### Template
 
@@ -260,8 +260,8 @@ EVAL LOOP: Output → Evaluation → Feedback → Iteration → Final Approval
 This library contains reusable prompts for [topic area].
 
 **Tool Legend:**
-- 🟢 Bottle Rocket - Tesla Data OK
-- 🟡 GitHub Copilot - No Tesla Data
+- Bottle Rocket - Tesla Data OK
+- GitHub Copilot - No Tesla Data
 
 ---
 
@@ -269,9 +269,9 @@ This library contains reusable prompts for [topic area].
 
 | # | Prompt Name | Category | Tool | Effectiveness Score |
 |---|-------------|----------|------|---------------------|
-| 1 | [Name] | [Category] | 🟢 | [X]/10 |
-| 2 | [Name] | [Category] | 🟢 | [X]/10 |
-| 3 | [Name] | [Category] | 🟡 | [X]/10 |
+| 1 | [Name] | [Category] | Bottle Rocket | [X]/10 |
+| 2 | [Name] | [Category] | Bottle Rocket | [X]/10 |
+| 3 | [Name] | [Category] | GitHub Copilot | [X]/10 |
 
 ---
 
@@ -279,10 +279,10 @@ This library contains reusable prompts for [topic area].
 
 ### Prompt 1: [Prompt Name]
 
-🟢 **Tool:** Bottle Rocket
-📋 **Category:** [Category]
-⏱️ **When to use:** [Specific situation]
-⭐ **Effectiveness:** [X]/10
+**Tool:** Bottle Rocket
+**Category:** [Category]
+**When to use:** [Specific situation]
+**Effectiveness:** [X]/10
 
 #### Template
 
@@ -331,8 +331,8 @@ If the output isn't quite right, try:
 #### Validation
 
 - **perplexity_reason score:** [X]/10
-- **Tested in tool:** ✅ Yes
-- **Duplicate check:** ✅ Unique (or "Evolution of Week [N] prompt")
+- **Tested in tool:** Yes
+- **Duplicate check:** Unique (or "Evolution of Week [N] prompt")
 
 ---
 
@@ -346,9 +346,9 @@ If the output isn't quite right, try:
 
 | Task | Prompt Start | Tool | Week |
 |------|-------------|------|------|
-| [Task 1] | "ROLE: Act as a... CONTEXT:..." | 🟢 | [N] |
-| [Task 2] | "ROLE: You are a... CONTEXT:..." | 🟢 | [N] |
-| [Task 3] | "ROLE: As a... CONTEXT:..." | 🟡 | [N] |
+| [Task 1] | "ROLE: Act as a... CONTEXT:..." | Bottle Rocket | [N] |
+| [Task 2] | "ROLE: You are a... CONTEXT:..." | Bottle Rocket | [N] |
+| [Task 3] | "ROLE: As a... CONTEXT:..." | GitHub Copilot | [N] |
 
 ---
 
@@ -366,8 +366,8 @@ If the output isn't quite right, try:
 
 | Prompt | Clarity | Completeness | Output Quality | Average | Pass? |
 |--------|---------|--------------|----------------|---------|-------|
-| [Prompt 1] | [X]/10 | [X]/10 | [X]/10 | [X]/10 | ✅/❌ |
-| [Prompt 2] | [X]/10 | [X]/10 | [X]/10 | [X]/10 | ✅/❌ |
+| [Prompt 1] | [X]/10 | [X]/10 | [X]/10 | [X]/10 | / |
+| [Prompt 2] | [X]/10 | [X]/10 | [X]/10 | [X]/10 | / |
 
 ---
 
@@ -375,8 +375,8 @@ If the output isn't quite right, try:
 
 | Prompt Name | This Week | Previous Weeks | Status |
 |-------------|-----------|----------------|--------|
-| [Prompt 1] | ✅ New | N/A | Unique |
-| [Prompt 2] | ✅ New | Similar in Week 1 | Advanced version |
+| [Prompt 1] | New | N/A | Unique |
+| [Prompt 2] | New | Similar in Week 1 | Advanced version |
 ```
 
 ---

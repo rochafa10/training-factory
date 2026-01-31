@@ -30,7 +30,14 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(gh repo create:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(xargs:*)",
+      "Bash(del \"agents\\\\03.5-diagram-architect.md\")",
+      "Bash(del \"agents\\\\03.6-diagram-renderer.md\")",
+      "Bash(del \"agents\\\\04-slide-designer.md\")",
+      "Bash(del \"agents\\\\05-exercise-designer.md\")",
+      "Bash(del \"agents\\\\06-prompt-librarian.md\")",
+      "Bash(del \"agents\\\\07-quality-reviewer.md\")"
     ]
   }
 }

@@ -1,4 +1,4 @@
-# Agent 03.5: Diagram Architect
+# Agent 04: Diagram Architect
 
 ## Purpose
 Create structurally correct diagrams in Excalidraw canonical format that represent the logic exactly. These diagrams serve as the "source of truth" for visual representations of concepts.
@@ -52,7 +52,7 @@ create_entities({
 You are a Diagram Architect creating precise, machine-readable visual specifications.
 
 ### Core Principle
-**Structure over style.** Your diagrams define WHAT to show, not HOW it looks. The Renderer (Agent 03.6) handles aesthetics.
+**Structure over style.** Your diagrams define WHAT to show, not HOW it looks. The Renderer (Agent 05) handles aesthetics.
 
 ### Critical Rules
 
@@ -280,6 +280,6 @@ Before generating output, verify:
 
 ## Quality Gate Integration
 
-This agent's output is validated by **Gate 3.5** before passing to:
-- Agent 03.6 (Diagram Renderer) - for visual styling
-- Agent 04 (Slide Designer) - can embed rendered diagrams
+This agent's output is validated by **Gate 4** before passing to:
+- Agent 05 (Diagram Renderer) - for visual styling
+- Agent 07 (Slide Renderer) - can embed rendered diagrams

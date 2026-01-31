@@ -25,15 +25,9 @@ claude
 
 ```
 Curriculum Architect → Research Agent → Content Writer
-                                              ↓
-                           ┌──────────────────┼──────────────────┐
-                           ↓                  ↓                  ↓
-                    Slide Designer    Exercise Designer   Prompt Librarian
-                     (HTML only)        (Markdown)         (Markdown)
-                           ↓                  ↓                  ↓
-                           └──────────────────┴──────────────────┘
-                                              ↓
-                                     Quality Reviewer
+    → Diagram Architect → Diagram Renderer
+        → Slide Planner → Slide Renderer ‖ Exercise Designer ‖ Prompt Librarian
+            → Quality Reviewer
 ```
 
 ---
@@ -43,12 +37,15 @@ Curriculum Architect → Research Agent → Content Writer
 | # | Agent | What It Does | Output Format |
 |---|-------|--------------|---------------|
 | 01 | Curriculum Architect | Course structure & objectives | Markdown |
-| 02 | **Research Agent** | Gathers info for content | Markdown |
+| 02 | Research Agent | Gathers info for content | Markdown |
 | 03 | Content Writer | Detailed session content | Markdown |
-| 04 | Slide Designer | Visual presentation slides | **HTML** |
-| 05 | Exercise Designer | Hands-on practice activities | Markdown |
-| 06 | Prompt Librarian | Reusable prompt templates | Markdown |
-| 07 | Quality Reviewer | Reviews for accuracy & policy | Markdown |
+| 04 | Diagram Architect | Canonical diagram structure | Excalidraw JSON |
+| 05 | Diagram Renderer | Styled diagram PNGs | PNG |
+| 06 | Slide Planner | Slide content plan | Markdown |
+| 07 | Slide Renderer | Visual presentation slides | **HTML** |
+| 08 | Exercise Designer | Hands-on practice activities | Markdown |
+| 09 | Prompt Librarian | Reusable prompt templates | Markdown |
+| 10 | Quality Reviewer | Reviews for accuracy & policy | Markdown |
 
 ---
 
@@ -60,8 +57,11 @@ outputs/
 ├── week-1/
 │   ├── research.md          ← Background research
 │   ├── content.md           ← Session content + speaker notes
-│   ├── slides/              ← HTML slides (960x540px)
-│   │   ├── slide01.html
+│   ├── diagrams/            ← Excalidraw JSON + contracts
+│   ├── images/              ← Rendered diagram PNGs
+│   ├── slides/
+│   │   ├── slide-plan.md    ← Slide blueprint
+│   │   ├── slide01.html     ← HTML slides (960x540px)
 │   │   └── ...
 │   ├── exercises.md         ← Hands-on labs
 │   └── prompts.md           ← Reusable prompts
@@ -79,9 +79,9 @@ outputs/
 | `create syllabus` | Generate course structure |
 | `research week 1` | Run Research Agent for Week 1 |
 | `create content for week 1` | Run Content Writer (needs research first!) |
-| `create slides for week 1` | Run Slide Designer (HTML output) |
+| `create slides for week 1` | Plan + render slides (HTML output) |
 | `create week 1` | Run ALL agents for Week 1 |
-| `review week 1` | Run Quality Reviewer |
+| `review week 1` | Run Quality Reviewer (Agent 10) |
 | `create full course` | Everything for all 4 weeks |
 
 ---
