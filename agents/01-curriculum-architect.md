@@ -25,7 +25,7 @@ Use these tools to validate curriculum design decisions:
 
 **Validate Training Duration:**
 ```
-WebSearch({ "query": "corporate AI training curriculum best practices duration 2025" })
+WebSearch({ "query": "corporate AI training curriculum best practices duration 2026" })
 ```
 
 **Research Optimal Structure:**
@@ -43,7 +43,7 @@ create_entities({
   "entities": [{
     "name": "Curriculum Decision: Week Structure",
     "entityType": "CurriculumDecision",
-    "observations": ["4 weeks total", "90 min per session", "60/40 hands-on ratio"]
+    "observations": ["4 weeks total", "240 min per session", "hands-on ratio per requirements"]
   }]
 })
 ```
@@ -72,10 +72,11 @@ For each major design choice, document:
 ### Time Validation Rules
 
 Before finalizing any week:
-1. Sum all agenda items → Must equal session length (90 min)
-2. Calculate hands-on percentage → Must be ≥ 55%
-3. Verify homework is ≤ 30 minutes
-4. Check topic count → 3-5 topics per week (not overloaded)
+1. Sum all agenda items → Must equal session length specified in requirements.md
+2. Calculate hands-on percentage → Must be ≥ 40% (Week 1 is instruction-heavy; later weeks ≥ 50%)
+3. Verify homework is ≤ 45 minutes
+4. Include 2-3 breaks per session for sessions over 120 min
+5. Follow the section structure defined in requirements.md for each week
 
 ---
 
@@ -85,7 +86,7 @@ Before finalizing any week:
 # Course Syllabus: [Course Title]
 
 **Duration:** 4 weeks
-**Session Length:** 90 minutes per week
+**Session Length:** [As specified in requirements.md]
 **Target Audience:** [Description]
 
 ---
@@ -115,7 +116,7 @@ By the end of this course, participants will be able to:
 
 | Decision | Choice | Rationale |
 |----------|--------|-----------|
-| Session length | 90 min | Allows depth without fatigue |
+| Session length | [From requirements] | [Rationale] |
 | Hands-on ratio | 60/40 | Maximizes retention for adult learners |
 | Tool progression | Simple → Complex | Builds confidence before complexity |
 
@@ -138,7 +139,7 @@ By the end of this course, participants will be able to:
 | 0:00 - 0:10 | [Topic] | [Lecture/Demo/Exercise] | 10 min |
 | 0:10 - 0:25 | [Topic] | [Activity type] | 15 min |
 | ... | ... | ... | ... |
-| **TOTAL** | | | **90 min** |
+| **TOTAL** | | | **[Session length from requirements]** |
 
 **Hands-on Time:** [X] min ([Y]%)
 
@@ -208,19 +209,24 @@ Before delivering syllabus.md, verify ALL items pass:
 | Check | Requirement | Status |
 |-------|-------------|--------|
 | Week count | Exactly 4 weeks | [ ] |
-| Time per week | 90 minutes total | [ ] |
-| Time math | All agenda items sum to 90 min | [ ] |
-| Hands-on ratio | ≥ 55% per week | [ ] |
-| Learning goals | All 5 from requirements mapped | [ ] |
+| Time per week | Matches session length in requirements.md | [ ] |
+| Time math | All agenda items sum to session length | [ ] |
+| Breaks | 2-3 breaks per session (for sessions > 120 min) | [ ] |
+| Hands-on ratio | ≥ 40% Week 1, ≥ 50% Weeks 2-4 | [ ] |
+| Learning goals | All goals from requirements.md mapped | [ ] |
 | Tool progression | Bottle Rocket Week 1, Copilot Week 3+ | [ ] |
-| Homework | ≤ 30 min per week | [ ] |
+| Homework | ≤ 45 min per week | [ ] |
 | Policy reference | Every week mentions policy | [ ] |
 | Progressive difficulty | Week N harder than Week N-1 | [ ] |
+| New topics | Agent skills (MCP), project memory covered | [ ] |
+| Section coverage | All sections from requirements.md included | [ ] |
 
 ### FAIL CONDITIONS (must revise before output):
-- Total time ≠ 90 minutes for any week
-- Hands-on time < 50% for any week
+- Total time ≠ session length for any week
+- Hands-on time < 40% for any week
 - Any learning goal from requirements.md not assigned to a week
 - GitHub Copilot introduced before Week 3
-- Homework exceeds 30 minutes for any week
+- Homework exceeds 45 minutes for any week
 - No policy/compliance mention in any week
+- Agent skills (MCP) or project memory topics missing
+- Missing sections that are specified in requirements.md

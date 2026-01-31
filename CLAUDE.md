@@ -20,6 +20,7 @@ These are natural-language commands typed directly into Claude Code:
 | `create content for week N` | Run Agent 03 only (requires research.md to exist) → `outputs/week-N/content.md` |
 | `create diagrams for week N` | Run Agents 04 + 05 sequentially → `outputs/week-N/diagrams/` + `outputs/week-N/images/` |
 | `create slides for week N` | Run Agent 06 (plan) then Agent 07 (render) → `outputs/week-N/slides/slide-plan.md` + `slides/*.html` |
+| `update week N` | Edit existing week content and re-run only affected downstream agents (see Change Impact Map below) |
 | `review week N` | Run Agent 10 → `outputs/week-N/review.md` |
 | `create full course` | Run `create syllabus` then `create week N` for weeks 1-4 sequentially |
 
@@ -83,7 +84,8 @@ The base template and all slide type HTML templates are in `agents/07-slide-rend
 
 Include this context when running any agent:
 
-- **Who:** 5 Area General Managers (AGMs) at Tesla distribution centers, non-technical, managing 30-50 associates each
+- **Who:** 5 Area General Managers (AGMs) at Tesla distribution centers, non-technical, zero AI experience, managing 30-50 associates each
+- **Session length:** 4 hours (240 min) per week × 4 weeks = 16 hours total
 - **Sites:** Newburgh NY, Greenville SC, Chicago IL, Tampa FL, Scarborough ON
 - **Tools taught:** Bottle Rocket (go.tesla.com/chat — Tesla data OK), GitHub Copilot (NO Tesla data)
 - **Policy:** Approved: Bottle Rocket, IT Assist, Employee Assist. Conditional: GitHub Copilot (no Tesla data). Prohibited: ChatGPT, Claude.ai, meeting transcription, Apple Intelligence
@@ -103,6 +105,29 @@ Include this context when running any agent:
 | 08 Exercise Designer | perplexity_reason (validation), Memory MCP (skill tracking) |
 | 09 Prompt Librarian | perplexity_reason (test effectiveness, min 7/10), Memory MCP (deduplication) |
 | 10 Quality Reviewer | Playwright, WebSearch, perplexity_search, Memory MCP |
+
+## Update Workflow (Edit-and-Cascade)
+
+When reviewing a completed week and changes are needed, use `update week N` instead of re-running the full pipeline. The workflow:
+
+1. User describes what needs to change (e.g., "add more theory on prompt engineering to week 1")
+2. Edit the appropriate source file directly (usually `content.md`)
+3. Re-run only the downstream agents affected by the change
+4. Re-run Agent 10 (review) on the updated week
+
+### Change Impact Map
+
+| What Changed | Edit This | Then Re-run |
+|---|---|---|
+| Research was wrong/incomplete | Re-run Agent 02 | → 03 → 04 → 05 → 06 → 07, 08, 09 → 10 |
+| Content needs more theory | Edit `content.md` directly | → 06 → 07 (slides), possibly 08/09 if affected → 10 |
+| Diagram structure wrong | Edit `*.excalidraw` or re-run Agent 04 | → 05 → 07 (re-render slides with new images) → 10 |
+| Slide plan/flow is wrong | Edit `slide-plan.md` or re-run Agent 06 | → 07 (re-render HTML only) → 10 |
+| Slide HTML looks broken | Re-run Agent 07 only | → 10 |
+| Exercise too hard/easy | Edit `exercises.md` directly | → 10 |
+| Prompt needs fixing | Edit `prompts.md` directly | → 10 |
+
+**Key principle:** Edit the highest-level file that needs changing, then cascade downward. Never re-run upstream agents unnecessarily.
 
 ## Error Recovery
 

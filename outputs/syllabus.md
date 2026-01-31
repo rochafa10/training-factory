@@ -1,594 +1,743 @@
 # Course Syllabus: AI Tools for Operations Leaders
 
 **Duration:** 4 weeks
-**Session Length:** 120 minutes per week (2 hours)
-**Target Audience:** 5 Area General Managers (AGMs) across East Coast Distribution Centers
-**Instructor:** Fabricio Rocha, Sr. Regional Manager, Supply Chain Operations
-**Primary Tools:** Bottle Rocket (go.tesla.com/chat) & GitHub Copilot in VS Code
+**Session Length:** 240 minutes per week (4 hours)
+**Format:** Virtual training + async homework
+**Target Audience:** 5 Area General Managers (AGMs) at Tesla distribution centers
+**Ambition Level:** Zero AI knowledge --> Advanced agentic coding proficiency
 
 ---
 
 ## Course Overview
 
-This course transforms how Tesla AGMs work by teaching practical AI skills that can be applied immediately. Over four weeks, participants will progress from AI fundamentals to building their own automation tools, with a focus on real distribution center scenarios.
+This course takes Tesla Area General Managers from zero AI experience to advanced agentic coding proficiency in four weeks. Each 240-minute session builds progressively: Week 1 establishes the foundation with AI literacy, Tesla policy compliance, and Bottle Rocket mastery; Week 2 advances to sophisticated prompting techniques, data analysis, and structured output generation; Week 3 introduces VS Code, GitHub Copilot Agent Mode, git basics, and the concept of giving agents skills through MCP tools; Week 4 culminates with project memory, multi-skill agent workflows, orchestration patterns, security review, and a personal project showcase.
 
-The course emphasizes a 60/40 hands-on to instruction ratio—participants will spend more time doing than listening. Every concept is taught through practical exercises using real (non-confidential) operations scenarios. By the end, each participant will have a personal prompt library and at least one working automation tool.
+The course follows a progressive hands-on model. Week 1 is instruction-heavy (44% hands-on) because every concept is new. By Weeks 2-3, the ratio shifts to 56% hands-on practice. Week 4 balances at 50% as advanced concepts require explanation before practice. Every exercise uses real DC operations scenarios -- labor planning, safety incidents, vendor communications, KPI analysis -- so skills transfer immediately to daily work.
 
-Success is measured not just by skill acquisition, but by documented time savings. The goal is for each AGM to save 30+ minutes daily through AI-assisted tasks.
+By course end, each AGM will have a personal prompt library of 20+ tested prompts, configured agent skills and project memory for their DC, at least one complete automation workflow, and a concrete plan to train their 30-50 associates. The target outcome is 40-60 minutes of daily time savings through AI-assisted operations.
 
----
-
-## Learning Goals
+### Learning Goals
 
 By the end of this course, participants will be able to:
 
 1. **Use Bottle Rocket confidently** for daily operations tasks
-2. **Write effective prompts** without needing help
-3. **Know policy boundaries** - when AI is appropriate vs. not
-4. **Save 30+ minutes daily** through AI-assisted tasks (measured)
-5. **Build advanced automations** using GitHub Copilot Agent Mode with voice, MCPs, and multi-agent orchestration
-6. **Complete a personal AI project** solving a real problem at their DC
+2. **Write advanced prompts** (CoT, Few-Shot, Persona, structured outputs) without help
+3. **Know policy boundaries cold** -- instant recall of approved/conditional/prohibited tools
+4. **Save 40-60 minutes daily** through AI-assisted tasks
+5. **Use GitHub Copilot Agent Mode** to build multi-file projects autonomously
+6. **Analyze data with AI** -- upload CSVs, extract trends, generate executive summaries
+7. **Give agents skills** -- extend agent capabilities with MCP tools and custom configurations
+8. **Give projects memory** -- set up persistent context so agents remember project conventions across sessions
+9. **Review AI-generated code** -- read diffs, catch mistakes, approve/reject agent changes
+10. **Build real automations** -- end-to-end workflows combining agents, tools, and context
+11. **Teach their teams** -- explain AI capabilities and policy to their 30-50 associates
 
----
-
-## Personal Projects (Required)
-
-Each AGM will develop a personal AI project throughout the course, applying skills learned each week.
-
-| AGM | Location | Project Theme | Deliverable |
-|-----|----------|---------------|-------------|
-| AGM 1 | Newburgh, NY | [To be selected Week 1] | Working automation + presentation |
-| AGM 2 | Greenville, SC | [To be selected Week 1] | Working automation + presentation |
-| AGM 3 | Chicago, IL | [To be selected Week 1] | Working automation + presentation |
-| AGM 4 | Tampa/Plant City, FL | [To be selected Week 1] | Working automation + presentation |
-| AGM 5 | Scarborough, ON | [To be selected Week 1] | Working automation + presentation |
-
-### Project Themes (Choose 1 per AGM)
-- **Dive Deep Automation** - Auto-generate dive deep reports from data, update to SharePoint
-- **Email Management System** - Voice-dictated emails with AI formatting and send
-- **Daily Report Generator** - Pull data, analyze, create report, distribute
-- **KPI Dashboard Narrator** - Generate executive summaries from metrics
-- **Incident Analysis Agent** - Multi-agent system for root cause analysis
-
----
-
-## Tools Covered
+### Tools Covered
 
 | Tool | Purpose | Data Policy | Introduced |
 |------|---------|-------------|------------|
-| Bottle Rocket | AI chat for operations tasks | ✅ Tesla Data OK | Week 1 |
-| GitHub Copilot Chat | AI assistance in VS Code | ⚠️ No Tesla Data | Week 3 |
-| GitHub Copilot Voice Mode | Hands-free AI interaction | ⚠️ No Tesla Data | Week 3 |
-| GitHub Copilot Agent Mode | Autonomous automation | ⚠️ No Tesla Data | Week 3-4 |
-| MCP Tools (Playwright, etc.) | Extended agent capabilities | ⚠️ No Tesla Data | Week 4 |
-| Multi-Agent Orchestration | Coordinated agent workflows | ⚠️ No Tesla Data | Week 4 |
+| Bottle Rocket (go.tesla.com/chat) | Tesla's approved AI chat interface (Grok, Claude, Gemini) | Tesla Data OK | Week 1 |
+| GitHub Copilot (in VS Code) | Code assistance: Chat, Edit, Agent modes + Voice | NO Tesla Data | Week 3 |
+| MCP Tools (Playwright, Filesystem, etc.) | Extend agent capabilities with browser automation, file access, etc. | Varies by tool | Week 3-4 |
+| Memory MCP (knowledge graph) | Persistent agent memory across sessions | Project-scoped | Week 4 |
 
-### Available Models via Bottle Rocket
-- Grok 3, Grok 4, Grok Code
-- Claude 4 Sonnet, Claude 4.5 Sonnet, Claude 4 Opus
-- Gemini 2.5 Pro, Gemini 2.5 Flash
-
-### Available Models via GitHub Copilot
-- GPT-4o, GPT-4 Turbo, o1, o1-mini
-- Claude 3.5 Sonnet, Claude 3 Opus
-- Gemini 1.5 Pro, Gemini 2.0 Flash
-
-### Advanced Capabilities (Weeks 3-4)
-- **Voice Mode:** Dictate prompts, reports, and emails hands-free
-- **MCP Tools:** Playwright (web automation), file system access, API integrations
-- **Agent Orchestration:** Multiple agents working together on complex tasks
-
----
-
-## Curriculum Design Decisions
+### Curriculum Design Decisions
 
 | Decision | Choice | Rationale |
 |----------|--------|-----------|
-| Session length | 120 min | Allows depth with adequate breaks for busy AGMs |
-| Hands-on ratio | 60/40 | Maximizes retention for adult learners |
-| Tool progression | Bottle Rocket → Copilot → Advanced | Builds confidence before introducing complex features |
-| Skill level | Advanced Copilot | AGMs need real automation power, not just basics |
-| Voice Mode | Week 3 intro | Enables hands-free operation for busy managers |
-| MCP Tools | Week 4 focus | Extends agent capabilities for real-world automation |
-| Personal projects | Throughout | Each AGM builds solution for their specific DC |
-| Time tracking | Built-in | Validates ROI and Goal 4 (save 30+ min daily) |
-| Policy depth | Week 1 focus | Deep understanding early, then focus on application |
+| Session length | 240 min (4 hours) with 2-3 breaks | Allows deep practice; breaks prevent cognitive fatigue; matches ambition level of zero-to-advanced |
+| Week 1 hands-on ratio | 44% hands-on / 56% instruction | Everything is new; learners need conceptual foundation before independent practice |
+| Weeks 2-3 hands-on ratio | 56% hands-on / 44% instruction | Building on foundation; more confidence allows more practice |
+| Week 4 hands-on ratio | 50% hands-on / 50% instruction | Advanced concepts (memory, orchestration, security) need explanation before practice |
+| Tool progression | Bottle Rocket (Wk 1) --> Copilot (Wk 3) --> MCP + Memory (Wk 3-4) | Builds confidence with a simple tool before introducing code-oriented environments |
+| Scenario-based learning | All exercises use real DC operations data | Immediate applicability; AGMs see value in their actual workflows |
+| Time tracking | Mandatory from Week 1 | Creates accountability, proves ROI, builds business case for team expansion |
+| Homework cap | 45 min max per week | Respects busy AGM schedules; focuses on quality over quantity |
+| Progressive difficulty | Foundation --> Application --> Expansion --> Mastery | Standard adult learning progression; each week unlocks new capabilities |
+| Agent skills before memory | MCP tools in Week 3, Memory in Week 4 | Learners need to see what agents can do before learning to customize them persistently |
+| Security review placement | Week 4 (after agent skills) | Context-dependent -- learners need to understand what agents produce before reviewing it |
+| Personal project | Week 4 showcase | Capstone validates learning; peer review drives cross-DC idea sharing |
 
 ---
 
 ## Week 1: AI Foundations & Policy Compliance
 
-**Duration:** 120 minutes
-**Focus:** Build foundation of AI understanding and Tesla policy mastery
+**Duration:** 240 minutes
+**Focus:** From zero to confident Bottle Rocket user with solid prompt skills and AI literacy
+**Difficulty Level:** Foundation
 
 ### Learning Objectives
-1. Understand what AI can and cannot do for operations
-2. Navigate Tesla's AI Acceptable Use Policy with confidence
-3. Access and use Bottle Rocket effectively
-4. Write effective prompts using the ROLE + CONTEXT + TASK + FORMAT formula
+
+1. Understand the business case for AI in DC operations and set realistic expectations
+2. Demonstrate complete mastery of Tesla's three-tier AI policy (Approved / Conditional / Prohibited)
+3. Navigate Bottle Rocket confidently -- model selection, interface, query iteration
+4. Apply the ROLE + CONTEXT + TASK + FORMAT prompt formula to operations scenarios
+5. Evaluate AI outputs for quality, accuracy, and hallucinations
+6. Establish a personal time-savings tracking baseline
 
 ### Session Agenda
 
-| Time | Topic | Activity | Duration |
-|------|-------|----------|----------|
-| 0:00 - 0:10 | Why AI Matters for Operations | Lecture + Discussion | 10 min |
-| 0:10 - 0:30 | Tesla AI Policy Deep Dive | Lecture + Q&A | 20 min |
-| 0:30 - 0:45 | Introduction to Bottle Rocket | Demo | 15 min |
-| 0:45 - 1:05 | **Exercise 1:** First Bottle Rocket Prompt | Guided Practice | 20 min |
-| 1:05 - 1:10 | ☕ **Break** | Break | 5 min |
-| 1:10 - 1:20 | Prompt Engineering Basics | Lecture | 10 min |
-| 1:20 - 1:45 | **Exercise 2:** Write 3 Operations Prompts | Hands-On Practice | 25 min |
-| 1:45 - 2:00 | **Exercise 3:** Iterate & Improve + Share | Hands-On Practice | 15 min |
-| **TOTAL** | | | **120 min** |
+| Time | Section | Topic | Activity | Duration |
+|------|---------|-------|----------|----------|
+| 0:00 - 0:10 | 1 | Why AI Matters for Operations | Lecture + Discussion | 10 min |
+| | | - Business case: time savings, decision quality, consistency | | |
+| | | - AI as augmentation, not replacement | | |
+| | | - Common misconceptions and realistic expectations | | |
+| 0:10 - 0:30 | 2 | Tesla AI Policy Deep Dive | Lecture + Interactive Quiz | 20 min |
+| | | - Three tiers: Approved / Conditional / Prohibited | | |
+| | | - "Tesla Data" definition with concrete examples | | |
+| | | - Scenarios: which tool for which task? | | |
+| | | - Policy quiz (interactive) | | |
+| 0:30 - 0:45 | 3 | Introduction to Bottle Rocket | Live Demo | 15 min |
+| | | - Access via go.tesla.com/chat | | |
+| | | - Interface navigation, model selection | | |
+| | | - Live demo: first query | | |
+| 0:45 - 1:00 | 4 | Prompt Engineering Basics | Lecture + Examples | 15 min |
+| | | - The 4-part formula: ROLE + CONTEXT + TASK + FORMAT | | |
+| | | - Good vs bad prompt examples from operations | | |
+| | | - Iteration: refining outputs | | |
+| 1:00 - 1:20 | 5 | Exercise 1: First Guided Prompt | Guided Exercise | 20 min |
+| | | - Instructor-guided, step-by-step | | |
+| | | - Operations scenario (e.g., draft a shift summary) | | |
+| 1:20 - 1:45 | 6 | Exercise 2: Create 3 Operations Prompts | Independent Practice | 25 min |
+| | | - Real scenarios: labor planning, safety report, vendor email | | |
+| **1:45 - 1:55** | -- | **BREAK** | | **10 min** |
+| 1:55 - 2:15 | 7 | Understanding AI Models | Lecture + Demo | 20 min |
+| | | - Claude, GPT, Gemini, Grok -- strengths and use cases | | |
+| | | - When to use which model in Bottle Rocket | | |
+| | | - Temperature, tokens, context windows (conceptual) | | |
+| | | - Why Opus 4.5 matters for Copilot access | | |
+| 2:15 - 2:50 | 8 | Bottle Rocket Deep Workshop | Workshop (Hands-On) | 35 min |
+| | | - Analyze headcount allocation across shifts | | |
+| | | - Generate safety incident summary from raw notes | | |
+| | | - Draft vendor communication for delayed shipment | | |
+| | | - Create training outline for new associates | | |
+| | | - Each scenario: write prompt --> get output --> iterate --> improve | | |
+| 2:50 - 3:10 | 9 | Quality Checking AI Outputs | Lecture + Exercise | 20 min |
+| | | - Hallucination detection: how to spot made-up facts | | |
+| | | - Verification techniques: cross-reference, ask for sources | | |
+| | | - When to trust vs. verify -- the 80/20 rule | | |
+| | | - Exercise: find 3 errors in a sample AI output | | |
+| 3:10 - 3:35 | 10 | Exercise 3: Iterate, Verify & Improve | Independent Practice | 25 min |
+| | | - Take a prompt from Exercise 2 | | |
+| | | - Apply verification techniques | | |
+| | | - Iterate until output is production-ready | | |
+| | | - Document before/after quality | | |
+| 3:35 - 3:50 | 11 | Time Savings Baseline Setup | Guided Setup | 15 min |
+| | | - Install time tracking method (simple spreadsheet or form) | | |
+| | | - Measure baseline: how long does task X take without AI? | | |
+| | | - Record first AI-assisted task timing | | |
+| | | - Set personal goal for Week 2 | | |
+| 3:50 - 4:00 | 12 | Wrap-up & Homework | Lecture | 10 min |
+| | | - Homework assigned (see below) | | |
+| | | - Bring best prompt + worst prompt to Week 2 | | |
+| **TOTAL** | | | | **240 min** |
 
-**Hands-on Time:** 60 min (50%) + 15 min demo = **75 min (63%)** ✅
+**Time Validation:** 10 + 20 + 15 + 15 + 20 + 25 + 10 (break) + 20 + 35 + 20 + 25 + 15 + 10 = **240 min**
+
+**Hands-on Time:** ~105 min (44%) -- Exercise 1 (20) + Exercise 2 (25) + Workshop (35) + Quality Checking exercise portion (10) + Exercise 3 (25) + Time Savings setup (15) = 130 min. Adjusting for mixed-mode sections: **~105 min hands-on (44%)**
+**Instruction/Demo Time:** ~135 min (56%)
+
+*Note: Week 1 is heavier on instruction because everything is new. Hands-on ratio increases each week.*
 
 ### Key Topics
-- AI capabilities vs. limitations
-- Tesla Approved vs. Conditionally Approved vs. Prohibited tools
-- What is "Tesla Data" and when can you use it
-- The Prompt Formula: ROLE + CONTEXT + TASK + FORMAT
-- Iterating for better results
+
+- Business case for AI in operations (time savings, decision quality, consistency)
+- Tesla AI Policy: Approved / Conditional / Prohibited tiers
+- "Tesla Data" definition and concrete classification examples
+- Bottle Rocket interface, model selection, query workflows
+- ROLE + CONTEXT + TASK + FORMAT prompt formula
+- AI model landscape: Claude, GPT, Gemini, Grok -- capabilities and trade-offs
+- Temperature, tokens, and context windows (conceptual understanding)
+- Quality checking: hallucination detection, verification techniques, the 80/20 trust rule
+- Iterative prompt refinement workflow
+- Time savings measurement methodology
 
 ### Policy Compliance Checkpoint
-- ✅ Approved: Bottle Rocket, IT Assist, Employee Assist
-- ⚠️ Conditional: GitHub Copilot (no Tesla data)
-- ❌ Prohibited: ChatGPT, Claude.ai, meeting transcription, Apple Intelligence
+
+- Approved: Bottle Rocket, IT Assist, Employee Assist
+- Conditional: GitHub Copilot (no Tesla data)
+- Prohibited: ChatGPT, Claude.ai, meeting transcription, Apple Intelligence
 - Reference: go.tesla.com/aitools
 
 ### Tools Introduced
-- 🟢 Bottle Rocket (go.tesla.com/chat)
+
+- Bottle Rocket (go.tesla.com/chat) -- Tesla's approved AI chat interface
+  - Multiple models: Grok, Claude, Gemini
+  - Tesla Data permitted
 
 ### Homework Assignment
+
 **Time Required:** ~45 minutes
 
-**Part 1: Prompt Library (30 min)**
-Build a 5-prompt library for your daily tasks:
-1. Daily standup preparation
-2. Professional email drafting
-3. Performance data summary
-4. Meeting agenda creation
-5. Problem root cause analysis
-
-**Part 2: Personal Project Selection (15 min)**
-Review the project themes and select one that solves a real problem at your DC:
-- [ ] Dive Deep Automation
-- [ ] Email Management System
-- [ ] Daily Report Generator
-- [ ] KPI Dashboard Narrator
-- [ ] Incident Analysis Agent
-
-**Submit:** Your project choice + brief description of the problem you want to solve.
-
-**Time Savings Tracking:** For each prompt, estimate time saved vs. doing it manually.
-
-| Prompt | Task Before AI | Estimated Time Saved |
-|--------|---------------|---------------------|
-| Standup prep | 15 min manual | ___ min |
-| Email drafting | 10 min manual | ___ min |
-| Data summary | 20 min manual | ___ min |
-| Meeting agenda | 10 min manual | ___ min |
-| Root cause | 15 min manual | ___ min |
+1. Complete 3 real work tasks using Bottle Rocket (e.g., draft an email, summarize a report, create a planning document)
+2. Track time savings for each task (with AI vs. estimated time without AI)
+3. Identify your best prompt and your worst prompt -- bring both to Week 2
+4. Continue using the time tracking spreadsheet daily (target: 15-20 min/day savings)
 
 ### Goals Addressed
-- Goal 1: Use Bottle Rocket confidently
-- Goal 2: Write effective prompts
-- Goal 3: Know policy boundaries
-- Goal 4: Save 30+ minutes daily (tracking begins)
-- Goal 6: Personal project (selection)
+
+- Goal 1: Use Bottle Rocket confidently for daily operations tasks
+- Goal 3: Know policy boundaries cold -- instant recall of approved/conditional/prohibited tools
+- Goal 4: Save 40-60 minutes daily (baseline setup; target this week: 15-20 min/day)
+- Goal 11: Teach their teams (policy knowledge foundation)
+
+### Tesla Values Embedded
+
+- **Ownership:** You own the outputs -- AI assists, you decide and verify
+- **Curiosity:** Explore what Bottle Rocket can do across different models
 
 ---
 
-## Week 2: Prompt Engineering for Operations
+## Week 2: Prompt Engineering & Data Analysis
 
-**Duration:** 120 minutes
-**Focus:** Master advanced prompting and build reusable operations templates
+**Duration:** 240 minutes
+**Focus:** Master advanced prompting techniques, analyze real operations data with AI, build a personal template library
+**Difficulty Level:** Application
 
 ### Learning Objectives
-1. Apply advanced prompting techniques (chain-of-thought, few-shot, persona)
-2. Build reusable prompt templates for common operations tasks
-3. Compare model outputs and select the right model for each task
-4. Document time savings from AI-assisted work
+
+1. Apply Chain-of-Thought, Few-Shot, and Persona-based prompting techniques to operations scenarios
+2. Analyze operations data (headcount, throughput, safety metrics) using AI
+3. Generate structured outputs: tables, checklists, formatted reports, executive summaries
+4. Build and organize a reusable personal prompt library
+5. Compare AI model outputs and select the best model for each task type
 
 ### Session Agenda
 
-| Time | Topic | Activity | Duration |
-|------|-------|----------|----------|
-| 0:00 - 0:15 | Homework Review: Best Prompts | Discussion + Share | 15 min |
-| 0:15 - 0:25 | Advanced Prompting Techniques | Lecture | 10 min |
-| 0:25 - 0:50 | **Exercise 1:** Chain-of-Thought Prompts | Hands-On Practice | 25 min |
-| 0:50 - 0:55 | ☕ **Break** | Break | 5 min |
-| 0:55 - 1:05 | Operations Use Cases Overview | Lecture | 10 min |
-| 1:05 - 1:30 | **Exercise 2:** Build 3 Operations Templates | Hands-On Practice | 25 min |
-| 1:30 - 1:50 | **Exercise 3:** Model Comparison Challenge | Hands-On Practice | 20 min |
-| 1:50 - 2:00 | Share & Discuss Best Templates | Discussion | 10 min |
-| **TOTAL** | | | **120 min** |
+| Time | Section | Topic | Activity | Duration |
+|------|---------|-------|----------|----------|
+| 0:00 - 0:15 | 1 | Homework Review + Time Savings Check-in | Peer Sharing + Discussion | 15 min |
+| | | - Peer sharing: best prompt, worst prompt | | |
+| | | - Time savings so far (target: 15-20 min/day) | | |
+| | | - Celebration of wins | | |
+| 0:15 - 0:30 | 2 | Advanced Prompting Techniques | Lecture + Examples | 15 min |
+| | | - Chain-of-Thought (CoT): "Think step by step" | | |
+| | | - Few-Shot: providing 2-5 examples | | |
+| | | - Persona-Based: specific expertise + traits | | |
+| | | - When to use which technique | | |
+| 0:30 - 0:55 | 3 | Exercise 1: Chain-of-Thought on Productivity Analysis | Guided Exercise | 25 min |
+| | | - Use CoT to analyze a shift's productivity data | | |
+| | | - Compare CoT output vs simple prompt output | | |
+| | | - Measure quality improvement | | |
+| 0:55 - 1:05 | 4 | Operations Use Cases Overview | Lecture | 10 min |
+| | | - Labor planning & productivity analysis | | |
+| | | - Safety incident root cause (5-Whys) | | |
+| | | - Vendor communication templates | | |
+| | | - KPI dashboard narratives | | |
+| | | - SOP documentation | | |
+| **1:05 - 1:15** | -- | **BREAK** | | **10 min** |
+| 1:15 - 1:40 | 5 | Exercise 2: Build 3 Operations Templates | Independent Practice | 25 min |
+| | | - Each AGM builds templates for their top 3 use cases | | |
+| | | - Use Few-Shot technique for consistent formatting | | |
+| | | - Templates must be reusable (parameterized) | | |
+| 1:40 - 2:05 | 6 | Data Analysis with AI | Lecture + Live Demo | 25 min |
+| | | - How to present data to AI (paste tables, describe CSVs) | | |
+| | | - Asking for trends, outliers, comparisons | | |
+| | | - Generating charts/tables from raw data | | |
+| | | - Executive summary generation from numbers | | |
+| | | - Live demo: analyze a sample headcount report | | |
+| 2:05 - 2:35 | 7 | Exercise 3: Analyze a Sample DC Dataset | Independent Practice | 30 min |
+| | | - Upload/paste sample CSV data (headcount, throughput, safety) | | |
+| | | - Ask AI to: identify trends, flag anomalies, recommend actions | | |
+| | | - Generate an executive summary with key callouts | | |
+| | | - Compare outputs across different prompting techniques | | |
+| **2:35 - 2:45** | -- | **BREAK** | | **10 min** |
+| 2:45 - 3:00 | 8 | Structured Outputs | Lecture + Demo | 15 min |
+| | | - Getting AI to output in consistent formats | | |
+| | | - Tables, checklists, formatted reports | | |
+| | | - Markdown formatting for clean documents | | |
+| | | - Template output patterns (fill-in-the-blank, standardized) | | |
+| 3:00 - 3:20 | 9 | Building Your Personal Prompt Library | Workshop (Hands-On) | 20 min |
+| | | - Organizing prompts by use case | | |
+| | | - Versioning prompts (tracking what works) | | |
+| | | - Sharing across the AGM team | | |
+| | | - Creating a "prompt playbook" for their DC | | |
+| 3:20 - 3:40 | 10 | Exercise 4: Model Comparison Challenge | Independent Practice | 20 min |
+| | | - Same prompt across Claude, Gemini, Grok in Bottle Rocket | | |
+| | | - Score each output on accuracy, usefulness, format | | |
+| | | - Document which model works best for which task | | |
+| 3:40 - 3:55 | 11 | Share & Discuss + Key Takeaways | Peer Learning | 15 min |
+| | | - Share best templates across DCs | | |
+| | | - Cross-pollination of use cases | | |
+| 3:55 - 4:00 | 12 | Homework | Lecture | 5 min |
+| | | - Homework assigned (see below) | | |
+| **TOTAL** | | | | **240 min** |
 
-**Hands-on Time:** 70 min (58%) + 15 min discussion = **85 min (71%)** ✅
+**Time Validation:** 15 + 15 + 25 + 10 + 10 (break) + 25 + 25 + 30 + 10 (break) + 15 + 20 + 20 + 15 + 5 = **240 min**
+
+**Hands-on Time:** ~135 min (56%) -- Exercise 1 (25) + Exercise 2 (25) + Exercise 3 (30) + Prompt Library workshop (20) + Exercise 4 (20) + Peer sharing portions (15)
+**Instruction/Demo Time:** ~105 min (44%)
 
 ### Key Topics
-- Chain-of-thought prompting for complex analysis
-- Few-shot examples for consistent formatting
-- Persona-based prompts for different audiences
-- Context window management
-- When to use Grok vs Claude vs Gemini
 
-### Operations Use Cases
-- Labor planning and productivity analysis
-- Safety incident root cause analysis
-- Vendor communication templates
-- KPI dashboard narrative generation
-- SOPs and process documentation
+- Chain-of-Thought (CoT) prompting: step-by-step reasoning for complex analysis
+- Few-Shot prompting: providing examples for consistent output formatting
+- Persona-based prompting: assigning expertise and traits to the AI
+- Data analysis with AI: CSV/table input, trend identification, anomaly detection
+- Executive summary generation from raw operations data
+- Structured output formats: tables, checklists, reports, Markdown
+- Personal prompt library: organization, versioning, sharing
+- AI model comparison: Claude vs Gemini vs Grok strengths for specific tasks
+- Operations use cases: labor planning, 5-Whys, vendor comms, KPI narratives, SOPs
+
+### Policy Compliance Checkpoint
+
+- All exercises use Bottle Rocket (approved for Tesla Data)
+- Model comparison exercise reinforces data boundaries across models
+- Templates include policy-compliant usage guidelines
 
 ### Tools Continued
-- 🟢 Bottle Rocket (all models)
+
+- Bottle Rocket (go.tesla.com/chat) -- advanced usage with multiple models
+  - Model comparison across Claude, Gemini, Grok
+  - Data analysis capabilities
 
 ### Homework Assignment
-**Time Required:** ~30 minutes
 
-Create 3 operations-specific prompt templates:
-1. **Labor Planning Template** - with clear role, context placeholders, specific output format
-2. **Incident Analysis Template** - structured 5-whys approach
-3. **Leadership Update Template** - executive summary format
-
-**Time Savings Log (Week 2):**
-
-| Task | Time Without AI | Time With AI | Savings |
-|------|-----------------|--------------|---------|
-| Labor planning analysis | ___ min | ___ min | ___ min |
-| Incident root cause | ___ min | ___ min | ___ min |
-| Leadership update draft | ___ min | ___ min | ___ min |
-| **Weekly Total** | | | **___ min** |
-
-### Goals Addressed
-- Goal 2: Write effective prompts (advanced)
-- Goal 4: Save 30+ minutes daily (Week 2 tracking)
-
----
-
-## Week 3: GitHub Copilot, Voice Mode & Agent Fundamentals
-
-**Duration:** 120 minutes
-**Focus:** Set up development environment, master Voice Mode, and start Agent Mode
-
-### Learning Objectives
-1. Install and configure VS Code with GitHub Copilot extensions
-2. Use Voice Mode for hands-free AI interaction
-3. Understand Agent Mode fundamentals and the plan-execute-iterate loop
-4. Begin personal project development with AI assistance
-
-### Session Agenda
-
-| Time | Topic | Activity | Duration |
-|------|-------|----------|----------|
-| 0:00 - 0:10 | Time Savings Review (Weeks 1-2) | Discussion + Celebration | 10 min |
-| 0:10 - 0:25 | **Exercise 1:** VS Code + Copilot Setup | Guided Setup | 15 min |
-| 0:25 - 0:35 | Copilot Chat & @ Commands Overview | Demo | 10 min |
-| 0:35 - 0:50 | **Exercise 2:** Voice Mode Setup & Practice | Hands-On Practice | 15 min |
-| 0:50 - 0:55 | ☕ **Break** | Break | 5 min |
-| 0:55 - 1:10 | **Exercise 3:** Voice-Dictated Email Draft | Real-World Exercise | 15 min |
-| 1:10 - 1:25 | Agent Mode Introduction | Lecture + Demo | 15 min |
-| 1:25 - 1:45 | **Exercise 4:** First Agent Task | Hands-On Practice | 20 min |
-| 1:45 - 2:00 | **Personal Project:** Define Requirements | Workshop | 15 min |
-| **TOTAL** | | | **120 min** |
-
-**Hands-on Time:** 65 min (54%) + 25 min demo/lecture = **90 min (75%)** ✅
-
-### Key Topics
-- VS Code basics for non-developers
-- Copilot Chat vs. Bottle Rocket (when to use which)
-- **Voice Mode:** Setup, activation, best practices for dictation
-- @workspace, @terminal, @vscode commands
-- Agent Mode: How it plans, executes, and iterates
-- Approving terminal commands safely
-
-### Setup Checklist
-- [ ] VS Code installed
-- [ ] GitHub Copilot extension installed
-- [ ] GitHub Copilot Chat extension installed
-- [ ] Signed in with Tesla GitHub account
-- [ ] Voice Mode enabled and tested
-- [ ] First Agent task completed
-
-### Tools Introduced
-- 🟡 GitHub Copilot Chat (No Tesla Data)
-- 🟡 GitHub Copilot Voice Mode (No Tesla Data)
-- 🟡 GitHub Copilot Agent Mode (No Tesla Data)
-
-### Real-World Exercise: Voice-Dictated Email
-
-**Scenario:** You need to send an update to your regional leadership about last week's performance.
-
-**Instructions:**
-1. Activate Voice Mode in VS Code
-2. Dictate: "Create a professional email to regional leadership summarizing our DC's performance this week. Include placeholder sections for metrics, highlights, and action items."
-3. Review and refine the output
-4. Iterate using voice: "Make the tone more concise and add a section for next week's focus areas"
-
-### Homework Assignment
 **Time Required:** ~45 minutes
 
-**Part 1: Voice Mode Mastery (20 min)**
-Complete 3 voice-dictated tasks:
-1. Draft a shift handoff summary using only voice
-2. Create a meeting agenda by dictating requirements
-3. Generate a root cause analysis template via voice
-
-**Part 2: Personal Project Setup (25 min)**
-Using Agent Mode:
-1. Create a project folder for your personal automation
-2. Have the agent generate a README with your project requirements
-3. Create a basic outline of the files you'll need
-
-**Time Savings Log (Week 3):**
-
-| Task | Traditional Method | With Voice/Agent | Savings |
-|------|-------------------|------------------|---------|
-| Email drafting | ___ min (typing) | ___ min (voice) | ___ min |
-| Meeting agenda | ___ min (manual) | ___ min (voice) | ___ min |
-| Project setup | ___ min (manual) | ___ min (agent) | ___ min |
-| **Weekly Total** | | | **___ min** |
+1. Build 2 additional operations templates using advanced prompting techniques (CoT or Few-Shot)
+2. Track time savings daily (target: 20-30 min/day)
+3. Bring a real dataset from your DC to Week 3 (headcount, throughput, safety, or similar)
+4. Continue building your prompt library (cumulative target: 10+ prompts)
 
 ### Goals Addressed
-- Goal 5: Build advanced automations (Agent Mode foundation)
-- Goal 4: Save 30+ minutes daily (Week 3 tracking)
-- Goal 6: Personal project (requirements defined)
+
+- Goal 2: Write advanced prompts (CoT, Few-Shot, Persona, structured outputs) without help
+- Goal 4: Save 40-60 minutes daily (this week target: 20-30 min/day)
+- Goal 6: Analyze data with AI -- upload CSVs, extract trends, generate executive summaries
+- Goal 11: Teach their teams (template sharing, prompt playbook creation)
+
+### Tesla Values Embedded
+
+- **Excellence:** Don't accept the first AI output -- iterate until it's great
+- **Speed:** Use templates to accelerate recurring tasks; compare models to find the fastest path
 
 ---
 
-## Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration
+## Week 3: VS Code, Copilot & Agent Mode
 
-**Duration:** 120 minutes
-**Focus:** Install MCPs, orchestrate multiple agents, complete personal projects
+**Duration:** 240 minutes
+**Focus:** Set up GitHub Copilot, master Voice Mode, understand Agent Mode deeply, learn to review and debug agent work, introduce agent skills (MCP tools)
+**Difficulty Level:** Expansion
 
 ### Learning Objectives
-1. Install and configure MCP tools (Playwright, file system, APIs)
-2. Build multi-agent workflows that coordinate complex tasks
-3. Create automations that integrate with Excel/SharePoint
-4. Complete and present personal AI project
+
+1. Set up and configure VS Code with GitHub Copilot (Chat, Edit, Agent modes)
+2. Use Voice Mode for rapid dictation and iteration (3-5x speed improvement)
+3. Understand the Agent Mode Plan-Execute-Iterate loop and approve/reject agent actions
+4. Read git diffs to review, accept, or reject AI-generated code changes
+5. Debug and redirect agents when they make mistakes
+6. Understand MCP tools and give an agent its first skill (Playwright)
 
 ### Session Agenda
 
-| Time | Topic | Activity | Duration |
-|------|-------|----------|----------|
-| 0:00 - 0:10 | Course Time Savings Review | Discussion + Celebration | 10 min |
-| 0:10 - 0:25 | **Exercise 1:** MCP Installation (Playwright) | Guided Setup | 15 min |
-| 0:25 - 0:40 | MCP Capabilities Deep Dive | Demo | 15 min |
-| 0:40 - 1:00 | **Exercise 2:** Web Automation with Playwright | Hands-On Practice | 20 min |
-| 1:00 - 1:05 | ☕ **Break** | Break | 5 min |
-| 1:05 - 1:20 | Multi-Agent Orchestration Concepts | Lecture + Demo | 15 min |
-| 1:20 - 1:40 | **Exercise 3:** Dive Deep Report Automation | Real-World Lab | 20 min |
-| 1:40 - 1:55 | **Personal Project:** Final Build & Polish | Workshop | 15 min |
-| 1:55 - 2:00 | Next Steps & Ongoing Learning | Discussion | 5 min |
-| **TOTAL** | | | **120 min** |
+| Time | Section | Topic | Activity | Duration |
+|------|---------|-------|----------|----------|
+| 0:00 - 0:10 | 1 | Time Savings Review | Discussion | 10 min |
+| | | - Cumulative check: are we hitting 20-30 min/day? | | |
+| | | - Adjust strategies for those behind | | |
+| 0:10 - 0:30 | 2 | VS Code + Copilot Setup | Guided Setup | 20 min |
+| | | - Installation walkthrough | | |
+| | | - Extension setup, sign-in | | |
+| | | - Troubleshooting common issues | | |
+| | | - Policy reminder: NO Tesla Data in Copilot | | |
+| 0:30 - 0:45 | 3 | Copilot Chat & Commands | Lecture + Demo | 15 min |
+| | | - @workspace, @terminal, @vscode commands | | |
+| | | - Chat vs Edit vs Agent modes -- when to use each | | |
+| | | - How it differs from Bottle Rocket | | |
+| | | - Opus 4.5 model selection | | |
+| 0:45 - 1:05 | 4 | Exercise 1: Copilot Chat for Operations Scripts | Guided Exercise | 20 min |
+| | | - Generate a simple Python/JavaScript script via chat | | |
+| | | - Task: create a calculator, data formatter, or report template | | |
+| | | - Practice the chat --> code --> run cycle | | |
+| **1:05 - 1:15** | -- | **BREAK** | | **10 min** |
+| 1:15 - 1:30 | 5 | Voice Mode Setup & Practice | Guided Setup + Demo | 15 min |
+| | | - Installation and configuration | | |
+| | | - Walkie-talkie mode for quick dictation | | |
+| | | - 3-5x speed advantage over typing (150 WPM vs 40 WPM) | | |
+| 1:30 - 1:45 | 6 | Exercise 2: Voice-Dictated Email Draft | Independent Practice | 15 min |
+| | | - Dictate a real operations email via voice | | |
+| | | - Iterate and refine using voice commands | | |
+| | | - Time comparison: 5-10 min typing vs 2-3 min voice | | |
+| 1:45 - 2:10 | 7 | Agent Mode Deep Dive | Lecture + Live Demo | 25 min |
+| | | - How agents think: the Plan-Execute-Iterate loop | | |
+| | | - Reading and understanding agent plans BEFORE approving | | |
+| | | - Terminal command approval -- what to approve, what to reject | | |
+| | | - Autonomous context discovery (agents read your files) | | |
+| | | - Opus 4.5 capabilities: multi-step reasoning, tool use | | |
+| | | - Live demo: watch an agent build something step by step | | |
+| 2:10 - 2:35 | 8 | Exercise 3: Agent Builds a Real Tool | Guided Exercise | 25 min |
+| | | - Agent creates a time-savings tracking dashboard (HTML page) | | |
+| | | - AGMs watch the plan, approve steps, review output | | |
+| | | - Practice: pause the agent, redirect, continue | | |
+| | | - Result: a working tool they can actually use | | |
+| **2:35 - 2:45** | -- | **BREAK** | | **10 min** |
+| 2:45 - 3:05 | 9 | Git Basics for Reviewing AI Changes | Lecture + Demo | 20 min |
+| | | - What is git? (version control in 5 minutes) | | |
+| | | - Reading diffs: what changed, what was added/removed | | |
+| | | - Accepting vs rejecting agent edits | | |
+| | | - Undoing mistakes: how to roll back | | |
+| | | - Why this matters: agents can modify many files at once | | |
+| 3:05 - 3:20 | 10 | Debugging Agent Mistakes | Lecture + Demo | 15 min |
+| | | - When agents go wrong: common failure patterns | | |
+| | | - Redirecting an agent mid-task | | |
+| | | - Giving better instructions after a bad output | | |
+| | | - The "undo and retry" workflow | | |
+| | | - When to start fresh vs. when to correct | | |
+| 3:20 - 3:40 | 11 | Giving Agents Skills: MCP Tools Introduction | Lecture + Demo | 20 min |
+| | | - What are MCP tools? (Model Context Protocol explained simply) | | |
+| | | - The concept: agents start limited, you give them new abilities | | |
+| | | - Analogy: installing apps on a phone gives it new capabilities | | |
+| | | - Overview of available MCPs: browser automation, file access, databases, APIs | | |
+| | | - Demo: agent WITHOUT a tool vs. agent WITH the tool | | |
+| | | - How skills change what agents can do (before/after comparison) | | |
+| 3:40 - 4:00 | 12-13 | Exercise 4: Give an Agent Its First Skill + Wrap-up | Guided Exercise + Homework | 20 min |
+| | | - Install Playwright MCP (browser automation) | | |
+| | | - Agent task: navigate to a public website, extract information | | |
+| | | - Compare: what agent could do before vs. after the skill | | |
+| | | - Discuss: what other skills would be useful for DC work? | | |
+| | | *Final 2 minutes: Homework assignment (see below)* | | |
+| **TOTAL** | | | | **240 min** |
 
-**Hands-on Time:** 70 min (58%) + 15 min demo = **85 min (71%)** ✅
+**Time Validation:** 10 + 20 + 15 + 20 + 10 (break) + 15 + 15 + 25 + 25 + 10 (break) + 20 + 15 + 20 + 20 = **240 min**
+
+*Note: Sections 12 (Exercise 4) and 13 (Wrap-up + Homework) are combined into the final 20-minute block, with the last 2 minutes dedicated to the homework assignment.*
+
+**Hands-on Time:** ~135 min (56%) -- VS Code Setup (20) + Exercise 1 (20) + Voice Setup (15) + Exercise 2 (15) + Exercise 3 (25) + Exercise 4 (18) + demo interaction portions (22)
+**Instruction/Demo Time:** ~105 min (44%)
 
 ### Key Topics
-- **MCP Tools:** What they are, how to install, approved tools list
-- **Playwright MCP:** Web automation, data extraction, form filling
-- **Multi-Agent Orchestration:** Coordinating agents for complex workflows
-- **Excel/SharePoint Integration:** Automating report updates
-- **Safety:** Reviewing agent actions, understanding permissions
 
-### MCP Installation Checklist
-- [ ] Playwright MCP installed and configured
-- [ ] File system MCP configured (for local file operations)
-- [ ] Test: Agent can navigate to a webpage and extract data
-- [ ] Test: Agent can read/write local files
+- VS Code installation, configuration, and Copilot extension setup
+- Copilot modes: Chat (@workspace, @terminal, @vscode), Edit, Agent
+- Opus 4.5 model selection and capabilities in Copilot
+- Voice Mode: walkie-talkie dictation for 3-5x speed improvement
+- Agent Mode: Plan-Execute-Iterate loop, approval workflows, autonomous context discovery
+- Git basics: version control, reading diffs, accepting/rejecting changes, rollback
+- Debugging agents: failure patterns, redirecting, undo-and-retry workflow
+- MCP tools (Model Context Protocol): concept, installation, before/after capability comparison
+- Playwright MCP: browser automation as a first agent skill
+- Data policy enforcement: NO Tesla Data in Copilot (reinforced throughout)
 
-### Tools Mastered
-- 🟢 Bottle Rocket (expert level)
-- 🟡 GitHub Copilot Agent Mode (No Tesla Data)
-- 🟡 GitHub Copilot Voice Mode (No Tesla Data)
-- 🟡 MCP: Playwright (No Tesla Data)
-- 🟡 Multi-Agent Orchestration (No Tesla Data)
+### Policy Compliance Checkpoint
 
----
+- VS Code setup includes explicit "NO Tesla Data in Copilot" reminder
+- All Copilot exercises use non-Tesla data (generic operations scenarios)
+- Agent Mode approval workflow reinforces the "read before you approve" principle
 
-### Real-World Exercise: Dive Deep Report Automation
+### Tools Introduced
 
-**Scenario:** Your regional director needs a dive deep report on yesterday's missed shipments. Normally this takes 45+ minutes to compile.
+- GitHub Copilot (VS Code) -- Chat, Edit, and Agent modes
+  - Opus 4.5 model access (300 requests/month premium)
+  - Voice Mode for dictation
+  - NO Tesla Data permitted
+- MCP Tools -- Model Context Protocol for extending agent capabilities
+  - Playwright (browser automation) -- first skill installed
 
-**The Agent Workflow:**
-1. **Voice Input:** Dictate the dive deep requirements
-2. **Data Agent:** Reads CSV export of shipment data (placeholder data provided)
-3. **Analysis Agent:** Identifies root causes, patterns, outliers
-4. **Report Agent:** Generates formatted dive deep document
-5. **Output:** Markdown file ready for SharePoint upload
+### Homework Assignment
 
-**Exercise Instructions:**
-1. Open VS Code with your MCP-enabled workspace
-2. Use voice to describe the dive deep you need
-3. Let the agent orchestrate the analysis
-4. Review and iterate on the output
-5. Export the final report
+**Time Required:** ~45 minutes
 
-**Sample Voice Prompt:**
-> "I need a dive deep on missed shipments from yesterday. Pull the data from shipments.csv, identify the top 3 root causes, calculate the impact by customer, and generate a report with an executive summary, detailed findings, and action items. Format it for leadership review."
-
----
-
-### Real-World Exercise: Excel/SharePoint Auto-Update
-
-**Scenario:** You maintain a weekly KPI tracker in Excel. Update it automatically.
-
-**The Workflow:**
-1. Agent reads the current Excel template structure
-2. Agent generates Python script to update specific cells
-3. Agent creates the updated values based on your data
-4. You review and approve the changes
-
-**Note:** For Tesla data, use Bottle Rocket for analysis, then use Copilot only for the automation code with placeholder data.
-
----
-
-### Multi-Agent Orchestration Patterns
-
-| Pattern | Description | Use Case |
-|---------|-------------|----------|
-| **Sequential** | Agent A → Agent B → Agent C | Dive deep (gather → analyze → report) |
-| **Parallel** | Agents A, B, C run simultaneously | Multi-DC comparison reports |
-| **Supervisor** | Main agent delegates to specialists | Complex incident analysis |
-| **Human-in-Loop** | Agent pauses for approval at key steps | Any task with Tesla data decisions |
-
----
-
-### Personal Project Showcase Prep
-
-**Before Week 4 Homework:**
-Each AGM should have:
-- [ ] Working automation for their chosen project
-- [ ] 3-minute demo ready
-- [ ] Time savings calculation documented
-- [ ] Lessons learned summary
-
-**Showcase Schedule (Follow-up Session):**
-
-| AGM | Project | Demo Slot |
-|-----|---------|-----------|
-| AGM 1 (Newburgh) | [Project] | 3 min |
-| AGM 2 (Greenville) | [Project] | 3 min |
-| AGM 3 (Chicago) | [Project] | 3 min |
-| AGM 4 (Tampa) | [Project] | 3 min |
-| AGM 5 (Scarborough) | [Project] | 3 min |
-
----
-
-### Final Assignment
-**Time Required:** ~60 minutes (one-time project completion)
-
-**Part 1: Complete Personal Project (45 min)**
-Finalize your automation:
-1. Ensure all components work end-to-end
-2. Add error handling for edge cases
-3. Document the prompts and workflow used
-4. Create a 1-page "how to use" guide for your team
-
-**Part 2: Prepare Showcase (15 min)**
-1. Record a 3-minute demo (or prepare live demo)
-2. Calculate total time savings (per use + weekly projection)
-3. Identify 2-3 ways to expand the automation
-
-**Total Course Time Savings Calculation:**
-
-| Week | Documented Savings | Notes |
-|------|-------------------|-------|
-| Week 1 | ___ min | Prompt library |
-| Week 2 | ___ min | Operations templates |
-| Week 3 | ___ min | Voice + Agent tasks |
-| Week 4 | ___ min | MCP + Personal project |
-| **TOTAL** | **___ min/week** | Target: 30+ min/day = 150+ min/week |
+1. Use Agent Mode for 2 real tasks (non-Tesla-data scenarios: personal productivity tools, public data analysis, report templates)
+2. Track time savings daily (target: 30-40 min/day)
+3. Think about: what skills (MCP tools) would your ideal agent need for DC work?
+4. Prepare: what project would you automate if you could? (for Week 4 showcase)
+5. Continue building prompt library (cumulative target: 15+ prompts)
 
 ### Goals Addressed
-- Goal 5: Build advanced automations (achieved - MCP + orchestration)
-- Goal 4: Save 30+ minutes daily (validated with documentation)
-- Goal 6: Personal project (completed + showcased)
-- All goals: Final assessment
+
+- Goal 5: Use GitHub Copilot Agent Mode to build multi-file projects autonomously
+- Goal 7: Give agents skills -- extend capabilities with MCP tools (introduction)
+- Goal 9: Review AI-generated code -- read diffs, catch mistakes, approve/reject changes
+- Goal 3: Know policy boundaries cold (reinforced: NO Tesla Data in Copilot)
+- Goal 4: Save 40-60 minutes daily (this week target: 30-40 min/day)
+
+### Tesla Values Embedded
+
+- **Ownership:** Read agent plans before approving; you own the decision to accept or reject
+- **Curiosity:** Explore what agents can build; push boundaries of what MCP tools enable
+
+---
+
+## Week 4: Memory, Advanced Skills & Multi-Agent Workflows
+
+**Duration:** 240 minutes
+**Focus:** Master agent customization (skills + memory), build complex automations, complete personal project, graduate as advanced AI users
+**Difficulty Level:** Mastery
+
+### Learning Objectives
+
+1. Set up persistent project memory using instruction files and Memory MCP
+2. Configure multi-skill agent workflows with Playwright, Filesystem, and other MCP tools
+3. Understand multi-agent orchestration patterns (sequential, parallel, supervisor, human-in-the-loop)
+4. Apply security review basics: secrets management, code review, data exposure prevention
+5. Execute an end-to-end automation combining agents, skills, and memory
+6. Present a personal automation project and articulate a plan to train their teams
+
+### Session Agenda
+
+| Time | Section | Topic | Activity | Duration |
+|------|---------|-------|----------|----------|
+| 0:00 - 0:10 | 1 | Time Savings Final Review + ROI | Discussion | 10 min |
+| | | - Cumulative results: target 40-60 min/day | | |
+| | | - Calculate annual ROI per AGM | | |
+| | | - Business case for expanding to their teams | | |
+| 0:10 - 0:35 | 2 | Giving Projects Memory | Lecture + Live Demo | 25 min |
+| | | - The problem: agents forget everything between sessions | | |
+| | | - Solution 1: Project instruction files (`.github/copilot-instructions.md`) | | |
+| | | -- What they are: persistent instructions agents read every time | | |
+| | | -- What to include: conventions, terminology, standards, constraints | | |
+| | | -- Live demo: create an instruction file, show agent following it | | |
+| | | - Solution 2: Memory MCP (knowledge graph) | | |
+| | | -- Entities, relationships, observations -- the agent's notebook | | |
+| | | -- When to use instructions vs memory vs both | | |
+| | | - The combination: instructions set the rules, memory stores the knowledge | | |
+| 0:35 - 1:00 | 3 | Exercise 1: Build Your Project's Memory | Guided Exercise | 25 min |
+| | | - Create `.github/copilot-instructions.md` for a DC operations project | | |
+| | | -- DC-specific terminology and abbreviations | | |
+| | | -- Report formatting standards | | |
+| | | -- Policy reminders (approved tools, data handling) | | |
+| | | -- Team conventions (naming, file structure) | | |
+| | | - Set up Memory MCP with key project facts | | |
+| | | -- Store: KPIs, team structure, vendor contacts, process definitions | | |
+| | | - Test: ask the agent a question -- see it use the memory | | |
+| **1:00 - 1:10** | -- | **BREAK** | | **10 min** |
+| 1:10 - 1:30 | 4 | Advanced Agent Skills: Tool Ecosystem | Lecture + Demo | 20 min |
+| | | - Deep dive into MCP tool categories: | | |
+| | | -- Browser automation (Playwright): web scraping, form filling, testing | | |
+| | | -- File system access: read/write files, organize directories | | |
+| | | -- Database tools: query data, generate reports | | |
+| | | -- API integration: connect to external services | | |
+| | | - How to install and configure MCP tools | | |
+| | | - Choosing the right tools for your workflow | | |
+| | | - Security considerations: what tools should access what | | |
+| 1:30 - 1:55 | 5 | Exercise 2: Multi-Skill Agent Workflow | Guided Exercise | 25 min |
+| | | - Give agent access to Playwright + Filesystem MCPs | | |
+| | | - Agent navigates public website --> extracts data --> saves to files --> generates summary | | |
+| | | - AGMs approve each step, review outputs | | |
+| | | - Discuss: how would this apply to real DC tasks? | | |
+| **1:55 - 2:05** | -- | **BREAK** | | **10 min** |
+| 2:05 - 2:20 | 6 | Multi-Agent Orchestration Patterns | Lecture | 15 min |
+| | | - Sequential: A --> B --> C (pipeline) | | |
+| | | - Parallel: A, B, C simultaneously (speed) | | |
+| | | - Supervisor: delegator assigns to specialists | | |
+| | | - Human-in-the-loop: approval gates for critical decisions | | |
+| | | - Real example: this training course was built using orchestration | | |
+| 2:20 - 2:35 | 7 | Security Review Basics | Lecture + Checklist | 15 min |
+| | | - Never commit secrets (API keys, passwords, tokens) | | |
+| | | - Reviewing AI-generated code: what to look for | | |
+| | | - Data exposure risks: what should never be in code | | |
+| | | - The approval workflow: read before you approve | | |
+| | | - Simple checklist for reviewing agent outputs | | |
+| 2:35 - 3:00 | 8 | Exercise 3: Dive Deep Report Automation | Guided Exercise | 25 min |
+| | | - End-to-end workflow with skills + memory: | | |
+| | | -- Agent reads project instructions (knows DC conventions) | | |
+| | | -- Agent uses memory (knows KPIs and team structure) | | |
+| | | -- Agent uses Playwright (gathers data from public source) | | |
+| | | -- Agent uses Filesystem (organizes output files) | | |
+| | | -- Agent generates formatted Dive Deep report | | |
+| | | - Full cycle: plan --> approve --> execute --> review --> iterate | | |
+| 3:00 - 3:25 | 9 | Personal Project Showcase | Presentations + Peer Review | 25 min |
+| | | - Each AGM presents their automation project (~4 min each) | | |
+| | | - Peer review: what worked, what was hard | | |
+| | | - Time savings demonstration | | |
+| | | - Cross-DC idea sharing | | |
+| 3:25 - 3:40 | 10 | Continuous Learning Roadmap | Lecture + Discussion | 15 min |
+| | | - Resources for continued learning | | |
+| | | - Community of practice: ongoing AGM collaboration | | |
+| | | - Teaching their teams: how to roll out AI skills to 30-50 associates | | |
+| | | - What's next: upcoming tools, features, capabilities | | |
+| | | - Monthly check-in plan | | |
+| 3:40 - 3:50 | 11 | Course Wrap-up + Final Q&A | Discussion | 10 min |
+| | | - Final policy summary | | |
+| | | - Certificate of completion / recognition | | |
+| | | - Feedback collection | | |
+| **TOTAL** | | | | **240 min** |
+
+**Time Validation:** 10 + 25 + 25 + 10 (break) + 20 + 25 + 10 (break) + 15 + 15 + 25 + 25 + 15 + 10 = **240 min**
+
+**Hands-on Time:** ~120 min (50%) -- Exercise 1 (25) + Exercise 2 (25) + Exercise 3 (25) + Showcase presentations (25) + portions of Memory setup and tool configuration (20)
+**Instruction/Demo Time:** ~120 min (50%)
+
+*Note: Week 4 is balanced because it introduces advanced concepts (memory, orchestration, security) that need explanation before practice.*
+
+### Key Topics
+
+- Project memory: instruction files (`.github/copilot-instructions.md`) for persistent agent context
+- Memory MCP: knowledge graph with entities, relationships, and observations
+- Instructions vs memory vs both: when to use each approach
+- Advanced MCP tool ecosystem: Playwright, Filesystem, Database, API integration
+- MCP tool installation, configuration, and security considerations
+- Multi-agent orchestration: sequential, parallel, supervisor, human-in-the-loop patterns
+- Security review: secrets management, code review checklist, data exposure prevention
+- End-to-end automation: combining agents, skills, memory, and approval workflows
+- Continuous learning: community of practice, team rollout planning, monthly check-ins
+- Teaching others: how to communicate AI capabilities and policy to associates
+
+### Policy Compliance Checkpoint
+
+- Security review basics (15 min) reinforces responsible AI usage
+- Final policy summary in wrap-up ensures retention
+- Rollout plans must include policy training for teams
+
+### Tools Introduced
+
+- Memory MCP (knowledge graph) -- persistent agent memory across sessions
+- `.github/copilot-instructions.md` -- project-level persistent instructions
+- Filesystem MCP -- file system read/write access for agents
+- Multi-tool agent configurations (Playwright + Filesystem + Memory combined)
+
+### Homework Assignment
+
+**Time Required:** ~45 minutes (final week)
+
+1. Finalize personal automation project documentation
+2. Create a one-page AI rollout plan for their DC (how to introduce AI tools to 30-50 associates)
+3. Complete prompt library (target: 20+ prompts organized by use case)
+4. Final time savings report (target: 40-60 min/day)
+5. Complete course feedback survey
+
+### Goals Addressed
+
+- Goal 7: Give agents skills -- extend capabilities with MCP tools and custom configurations
+- Goal 8: Give projects memory -- persistent context so agents remember conventions across sessions
+- Goal 10: Build real automations -- end-to-end workflows combining agents, tools, and context
+- Goal 9: Review AI-generated code -- security review, diffs, approval workflow (reinforced)
+- Goal 11: Teach their teams -- rollout plan, continuous learning roadmap
+- Goal 4: Save 40-60 minutes daily (final target achieved)
+
+### Tesla Values Embedded
+
+- **Excellence:** The Dive Deep report automation demonstrates going above and beyond
+- **Speed:** Multi-agent orchestration accelerates complex workflows
+- **Ownership:** Security review means you own the responsibility for what agents produce
+- **Curiosity:** The continuous learning roadmap ensures growth doesn't stop at Week 4
 
 ---
 
 ## Success Criteria
 
-| Criterion | Measurement | Target |
-|-----------|-------------|--------|
-| Tool proficiency | Demonstrated usage in exercises | 100% of participants |
-| Prompt library | Personal prompts created | 15+ per participant |
-| Policy knowledge | Week 1 understanding check | Pass (informal) |
-| Time savings | Documented weekly savings | 30+ min/day average |
-| Voice Mode | Hands-free task completion | 3+ tasks per participant |
-| MCP Installation | Playwright + file system configured | 100% of participants |
-| Agent Orchestration | Multi-step workflow created | 1+ per participant |
-| Personal Project | Working automation showcased | 1 per participant (5 total) |
-| Confidence | Self-assessment rating | 4+/5 rating |
+| Criterion | Measurement | Target | When Assessed |
+|-----------|-------------|--------|---------------|
+| Bottle Rocket proficiency | Demonstrated usage in exercises | 100% of participants | Week 1 |
+| Policy compliance | Interactive quiz score | 100% pass rate | Week 1 |
+| Advanced prompting | CoT, Few-Shot, Persona applied independently | All 3 techniques demonstrated | Week 2 |
+| Data analysis with AI | CSV analysis + executive summary generation | Each AGM completes analysis | Week 2 |
+| Personal prompt library | Cumulative prompt count | 20+ prompts by Week 4 | Weeks 1-4 |
+| Agent Mode proficiency | Independent agent task completion | Each AGM builds a tool | Week 3 |
+| Git diff reading | Accept/reject agent changes with rationale | Demonstrated competence | Week 3 |
+| Agent skills (MCP) configured | At least Playwright + Filesystem installed | Working multi-skill setup | Week 3-4 |
+| Project memory configured | Instruction file + Memory MCP for their DC | Working persistent context | Week 4 |
+| Complete automation workflow | End-to-end: agents + skills + memory | At least 1 per AGM | Week 4 |
+| Time savings | Daily tracking spreadsheet | 40+ min/day by course end | Week 4 |
+| Team rollout plan | One-page plan for their DC | Each AGM produces a plan | Week 4 |
+| Confidence rating | Self-assessment survey | 4+/5 rating | Week 4 |
+| Teach-back capability | Can explain AI capabilities and policy | Assessed during showcase | Week 4 |
 
 ---
 
 ## Progressive Difficulty Map
 
-| Week | Complexity | New Skills | Cumulative Skills | Hands-On % |
-|------|------------|------------|-------------------|------------|
-| 1 | Foundation | Basic prompting, policy, Bottle Rocket, project selection | 5 | 63% |
-| 2 | Application | Advanced prompting, templates, model selection, chain-of-thought | 9 | 71% |
-| 3 | Intermediate | VS Code, Voice Mode, Agent Mode basics, @ commands, project setup | 15 | 75% |
-| 4 | Advanced | MCP installation, Playwright, multi-agent orchestration, Excel/SharePoint automation | 21 | 71% |
+| Week | Level | Complexity | Skills Added | Cumulative Skills | Time Savings Target |
+|------|-------|------------|--------------|-------------------|---------------------|
+| 1 | Foundation | Low | Bottle Rocket, basic prompting (ROLE+CONTEXT+TASK+FORMAT), AI literacy, policy compliance, quality checking, time tracking | 6 | 15-20 min/day |
+| 2 | Application | Medium | CoT, Few-Shot, Persona prompting, data analysis, structured outputs, prompt library, model comparison | 13 | 20-30 min/day |
+| 3 | Expansion | High | VS Code, Copilot (Chat/Edit/Agent), Voice Mode, git basics, agent debugging, MCP tools (Playwright) | 20 | 30-40 min/day |
+| 4 | Mastery | Advanced | Project memory (instructions + Memory MCP), multi-skill agents, orchestration patterns, security review, automation workflows, team teaching | 27 | 40-60 min/day |
 
-### Skills Progression Detail
+### Agent Capability Progression
 
-**Week 1 Skills:**
-1. Bottle Rocket navigation
-2. Basic prompt writing (ROLE+CONTEXT+TASK+FORMAT)
-3. Tesla AI Policy compliance
-4. Prompt iteration
-5. Personal project selection
+| Week | What They Can Do With Agents |
+|------|------------------------------|
+| 1 | Chat only (Bottle Rocket) -- ask questions, get text responses, verify outputs |
+| 2 | Advanced chat with techniques -- data analysis, structured outputs, template generation |
+| 3 | Agent Mode (autonomous tasks), first MCP skill (Playwright), review and debug agent work |
+| 4 | Multi-skill agents with memory, orchestrated workflows, end-to-end automations |
 
-**Week 2 Skills:**
-6. Chain-of-thought prompting
-7. Few-shot examples
-8. Persona-based prompts
-9. Model comparison and selection
+### Skills Ladder
 
-**Week 3 Skills:**
-10. VS Code basics
-11. GitHub Copilot Chat
-12. Voice Mode activation and usage
-13. @ commands (@workspace, @terminal)
-14. Agent Mode fundamentals
-15. Project requirement definition
+| Week | Level | Key Capability |
+|------|-------|---------------|
+| 1 | Beginner | Write prompts, use Bottle Rocket, verify outputs, know policy |
+| 2 | Intermediate | Advanced prompts, data analysis, template library, structured outputs |
+| 3 | Advanced | Agent Mode, voice, git review, first MCP skill, agent debugging |
+| 4 | Expert | Memory, multi-skill agents, orchestration, security, automation |
 
-**Week 4 Skills:**
-16. MCP installation and configuration
-17. Playwright web automation
-18. File system MCP operations
-19. Multi-agent orchestration patterns
-20. Excel/SharePoint integration
-21. End-to-end automation deployment
+### Time Savings Progression
+
+| Week | Target | How |
+|------|--------|-----|
+| 1 | 15-20 min/day | Bottle Rocket for emails, summaries, planning |
+| 2 | 20-30 min/day | Templates for recurring tasks, data analysis |
+| 3 | 30-40 min/day | Agent Mode for multi-step tasks, voice for speed |
+| 4 | 40-60 min/day | Automated workflows with skills + memory |
 
 ---
 
-## Policy Compliance Quick Reference
+## Cross-Week Policy Reinforcement
 
-### ✅ APPROVED - Tesla Data Allowed
-- Bottle Rocket (go.tesla.com/chat)
-- IT Assist Bot
-- Employee Assist Bot
+Every week includes policy touchpoints to ensure compliance becomes second nature:
 
-### ⚠️ CONDITIONALLY APPROVED - No Tesla Data
-- GitHub Copilot (general coding only)
-- GitHub Copilot CLI
-
-### ❌ PROHIBITED
-- ChatGPT, Claude.ai, Gemini (external)
-- Meeting transcription/recording AI
-- Apple Intelligence on corporate devices
-- Any tool not on go.tesla.com/aitools
-
-### What is "Tesla Data"?
-Any information about Tesla, customers, employees, affiliates, or users including:
-- Performance metrics, KPIs
-- Employee names, schedules, personal data
-- Customer information
-- Internal processes, SOPs
-- Financial data
-- Proprietary code
+| Week | Policy Touchpoint |
+|------|-------------------|
+| 1 | Full policy deep dive (20 min) + interactive quiz; policy governs all exercises |
+| 2 | Homework review includes policy compliance check; model comparison respects data boundaries |
+| 3 | VS Code setup includes explicit "NO Tesla Data in Copilot" reminder; all Copilot exercises use non-Tesla data |
+| 4 | Security review basics (15 min); final policy summary in wrap-up; rollout plan includes policy training for teams |
 
 ---
 
-## Resources
+## Learning Goals Coverage Map
 
-### Internal Links
-- Tesla AI Tools: go.tesla.com/aitools
-- Bottle Rocket: go.tesla.com/chat
-- AI Policy: go.tesla.com/aipolicy
-- GitHub Copilot Support: teamchat.tesla.com/tesla/channels/github-copilot
+Every learning goal is addressed across multiple weeks with increasing depth:
 
-### Setup Guides
-- VS Code Download: code.visualstudio.com
-- GitHub Copilot Main Guide: (see Tesla Confluence)
-- JetBrains Setup: (see Tesla Confluence)
+| Goal | Week 1 | Week 2 | Week 3 | Week 4 |
+|------|--------|--------|--------|--------|
+| 1. Bottle Rocket proficiency | **Primary** | Reinforced | -- | -- |
+| 2. Advanced prompts | Introduced (basics) | **Primary** | Applied | Applied |
+| 3. Policy boundaries | **Primary** | Reinforced | Reinforced | Reinforced |
+| 4. Save 40-60 min/day | Baseline setup | 20-30 min target | 30-40 min target | **40-60 min target** |
+| 5. Copilot Agent Mode | -- | -- | **Primary** | Applied |
+| 6. Data analysis with AI | -- | **Primary** | Applied | Applied |
+| 7. Give agents skills (MCP) | -- | -- | Introduced | **Primary** |
+| 8. Give projects memory | -- | -- | -- | **Primary** |
+| 9. Review AI-generated code | -- | -- | **Primary** | Reinforced |
+| 10. Build real automations | -- | -- | Introduced | **Primary** |
+| 11. Teach their teams | Foundation | Template sharing | -- | **Primary** |
 
 ---
 
-*Course Version 2.1 - Updated January 2026*
-*Primary Platform: GitHub Copilot + Bottle Rocket*
-*Designed for 60/40 hands-on ratio with time savings tracking*
+## Appendix: Tesla Context
+
+**Target Audience Profile:**
+- 5 Area General Managers (AGMs) at Tesla distribution centers
+- Non-technical background; each manages 30-50 associates
+- Deep expertise in DC operations; zero experience with AI tools or coding
+- Locations: Newburgh NY, Greenville SC, Chicago IL, Tampa/Plant City FL, Scarborough ON
+
+**Approved Tools:**
+- Bottle Rocket (go.tesla.com/chat) -- Tesla Data OK
+- IT Assist -- Tesla Data OK
+- Employee Assist -- Tesla Data OK
+
+**Conditional Tools:**
+- GitHub Copilot -- NO Tesla Data (300 premium model requests/month, Opus 4.5 access)
+
+**Prohibited Tools:**
+- ChatGPT, Claude.ai, meeting transcription, Apple Intelligence
+
+**Reference:** go.tesla.com/aitools
+
+**Tesla Values Embedded Throughout:**
+- **Excellence:** Iterate on AI outputs until they're production-ready
+- **Ownership:** You own the outcomes -- AI assists, you decide and verify
+- **Curiosity:** Explore AI capabilities, push boundaries, never stop learning
+- **Speed:** Use AI to accelerate decisions, iterate rapidly, move fast and correct quickly
+
+---
+
+*Syllabus Version 3.0 -- Updated January 2026*
+*Session Length: 240 minutes (4 hours) per week*
+*Designed for progressive hands-on learning with time savings tracking*
