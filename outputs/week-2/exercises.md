@@ -1,44 +1,43 @@
-# Week 2 Exercises: Prompt Engineering & Data Analysis
+# Week 2 Exercises: Advanced Prompts & Your First Agent
 
-**Total Time:** 100 minutes (during session)
-**Tools Needed:** Bottle Rocket (go.tesla.com/chat)
-**Difficulty Range:** 4-6 / 10
+**Total In-Session Time:** 195 minutes (81% of session)
+**Tools Needed:** Bottle Rocket (go.tesla.com/chat), VS Code with GitHub Copilot
+**Difficulty Range:** 3-7 / 10
 
 ---
 
 ## Skills Progression
 
 ### Skills Reinforced (from Week 1)
-- **Basic prompting** - Submitting requests to AI systems
-- **ROLE component** - Specifying AI persona
-- **CONTEXT component** - Providing background information
-- **TASK component** - Articulating specific requests
-- **FORMAT component** - Specifying output structure
-- **Iteration** - Refining prompts through follow-ups
+- **Basic prompting** -- ROLE + CONTEXT + TASK + FORMAT formula
+- **Iteration** -- Refining prompts through follow-ups
+- **Policy awareness** -- Approved/Conditional/Prohibited tools
 
 ### Skills Introduced (Week 2)
-- **Chain-of-thought prompting** - Forcing step-by-step reasoning
-- **Few-shot prompting** - Providing examples for consistent output
-- **Persona enhancement** - Adding specific expertise and traits
-- **Data analysis with AI** - Presenting data and extracting insights
-- **Structured outputs** - Controlling AI output format (tables, checklists, reports)
-- **Prompt library building** - Organizing and versioning reusable prompts
-- **Model selection** - Choosing the right model for the task
-- **Template creation** - Building reusable prompt templates
-- **Testing & refinement** - Validating templates with real data
+- **Chain-of-thought prompting** -- Step-by-step reasoning
+- **Few-shot prompting** -- Teaching by example
+- **Enhanced persona** -- Specific expertise and traits
+- **VS Code setup** -- IDE configuration for AI-assisted work
+- **Agent Mode** -- Autonomous multi-step task completion
+- **MCP tools** -- Giving agents new capabilities (Playwright)
+- **Plan-Execute-Iterate** -- Agent workflow pattern
+- **Agent debugging** -- Redirecting and fixing agent mistakes
+- **Git basics** -- Reviewing what agents changed
 
 ---
 
-## Exercise 1: Chain-of-Thought Analysis
+## Exercise 1: CoT + Data Analysis Sprint
 
-**Type:** Guided Practice → Template Exercise
+**Type:** Guided Practice
 **Difficulty:** 4/10
-**Time:** 25 minutes
-**Tool:** 🟢 Bottle Rocket (Tesla Data OK)
+**Time:** 30 minutes
+**Tool:** Bottle Rocket (Tesla Data OK)
 
 ### Scenario
 
-Your DC missed its productivity target by 8% last week. Leadership wants to understand the root cause and what actions to take. Instead of a generic answer, you need a structured analysis that shows the thinking process.
+You need to analyze your DC's performance data. Instead of spending an hour in a spreadsheet, you'll use AI with advanced prompting to extract executive-ready insights in minutes.
+
+### Part A: Chain-of-Thought Analysis (15 min)
 
 **The Data:**
 | Day | Performance | Notes |
@@ -49,447 +48,633 @@ Your DC missed its productivity target by 8% last week. Leadership wants to unde
 | Thursday | 88% of target | Running behind on orders |
 | Friday | 85% of target | Still catching up |
 
-### Instructions
-
-1. Open Bottle Rocket at **go.tesla.com/chat**
-2. **Part A (Guided):** Copy the prompt below and run it
-3. Review how the AI shows its reasoning step-by-step
-4. **Part B (Template):** Create your own CoT prompt for a different analysis
-5. Compare the depth of analysis to a simple question
-
-### Part A: Guided Prompt (Copy This)
-
+**Step 1: Simple Prompt (3 min)**
+Open Bottle Rocket. Paste this:
 ```
-ROLE: You are an operations analyst helping a distribution center manager understand a productivity shortfall.
+Here's our DC performance data this week:
+Monday 95%, Tuesday 92%, Wednesday 78%, Thursday 88%, Friday 85%.
+What do you see?
+```
+Note the response quality.
 
-CONTEXT: Our DC missed its weekly productivity target by 8%. Here's the daily breakdown:
+**Step 2: CoT Prompt (7 min)**
+Now paste this upgraded version:
+```
+ROLE: You are an operations analyst helping a DC manager understand a productivity shortfall.
+
+CONTEXT: Our DC missed its weekly productivity target by 8%. Daily breakdown:
 - Monday: 95% of target (normal)
 - Tuesday: 92% (2 call-outs)
 - Wednesday: 78% (conveyor down 3 hours)
 - Thursday: 88% (running behind)
 - Friday: 85% (catching up)
 
-TASK: Analyze this step by step:
-1. First, calculate the impact of each day's shortfall on the weekly total
-2. Then, identify which day had the biggest impact and why
-3. Next, determine if this was a single event or multiple issues
-4. Finally, recommend 2-3 specific actions to prevent recurrence
+TASK: Analyze step by step:
+1. First, calculate each day's contribution to the weekly shortfall
+2. Then, identify the primary driver
+3. Next, trace any cascade effects between days
+4. Finally, recommend 2-3 specific preventive actions
 
-FORMAT: Use numbered sections matching the steps above. Include specific percentages and calculations where relevant. Keep recommendations actionable.
+FORMAT: Numbered sections matching the steps. Include calculations. Keep recommendations actionable with who/what/when.
 ```
 
-### Part B: Create Your Own CoT Prompt
+**Step 3: Compare (5 min)**
+Side by side: how much deeper is the CoT response? Look for:
+- Calculations (did it show math?)
+- Root cause identification (Wednesday conveyor = primary driver?)
+- Cascade recognition (Thursday/Friday = downstream effects?)
+- Actionable recommendations (specific vs. generic?)
 
-Now apply chain-of-thought to one of these scenarios (or choose your own):
+### Part B: Structured Data Analysis (15 min)
 
-**Option 1: Overtime Analysis**
-- Why did overtime spike 40% last month?
-- Include: department breakdown, historical comparison, causes
+**The Dataset:**
+| Week | Orders | Fill Rate | Overtime Hrs | Headcount | Safety |
+|------|--------|-----------|-------------|-----------|--------|
+| Week 1 | 12,450 | 97.2% | 85 | 42 | 0 |
+| Week 2 | 13,100 | 96.8% | 110 | 42 | 1 |
+| Week 3 | 11,800 | 98.1% | 60 | 40 | 0 |
+| Week 4 | 14,200 | 94.5% | 145 | 42 | 0 |
+| Week 5 | 13,900 | 95.1% | 130 | 41 | 2 |
+| Week 6 | 15,100 | 93.8% | 160 | 43 | 1 |
 
-**Option 2: Safety Incident Investigation**
-- A minor injury occurred during picking operations
-- Include: what happened, contributing factors, system issues
-
-**Your Template:**
+**Prompt to Use:**
 ```
-ROLE: [Expert role appropriate to the analysis]
+ROLE: You are a DC operations analyst with 10 years of experience spotting correlations others miss.
 
-CONTEXT: [Your specific situation with data]
+CONTEXT: 6 weeks of operations data from our distribution center:
+[Paste the table above]
+Volume is trending up due to seasonal demand.
 
 TASK: Analyze step by step:
-1. First, [initial analysis step]
-2. Then, [deeper analysis step]
-3. Next, [connection/pattern identification]
-4. Finally, [recommendations]
+1. First, identify the trend for each metric (improving/declining/stable) with specific numbers
+2. Then, find correlations between metrics (e.g., does volume affect fill rate?)
+3. Next, flag any anomalies or warning signs needing immediate attention
+4. Finally, recommend 3 specific actions with measurable targets
 
-FORMAT: [How you want the output structured]
+FORMAT:
+- Start with a trend summary table
+- Use specific percentages and calculations
+- Bold the single most critical finding
+- Recommendations must include who should act and a target number
 ```
 
-### What Good Output Looks Like
-
-A strong CoT response will:
-- **Show calculations** - "Monday's 5% shortfall = 5% × 0.2 (one day of five) = 1% contribution to weekly miss"
-- **Identify the key driver** - "Wednesday's conveyor failure accounts for 60% of the total shortfall"
-- **Trace cascade effects** - "Thursday and Friday's shortfalls were recovery from Wednesday's backlog"
-- **Provide specific actions** - "Implement weekly conveyor inspection checklist" not just "improve maintenance"
+**What Good Output Looks Like:**
+- Identifies inverse relationship: orders up 21%, fill rate down 3.4 points
+- Flags overtime trend: 85 -> 160 hrs = 88% increase
+- Spots safety correlation: incidents cluster in high-volume weeks
+- Quantifies: "Each +1,000 orders costs ~25 OT hours and ~0.8% fill rate"
+- Recommends specific targets, not vague advice
 
 ### Troubleshooting
 
 | Problem | Likely Cause | Solution |
 |---------|--------------|----------|
 | AI gives generic advice | No data in CONTEXT | Include specific numbers and dates |
-| Analysis is shallow | Missing "step by step" instruction | Explicitly number the analysis steps |
-| Skips to conclusions | Steps not specific enough | Make each step concrete: "First calculate..., Then identify..." |
-| Recommendations too vague | No format guidance | Add "Keep recommendations actionable with specific who/what/when" |
-
-### Skills Practiced
-- Chain-of-thought prompting
-- Step-by-step reasoning structure
-- Data-driven analysis
-- Building on ROLE + CONTEXT + TASK + FORMAT
+| Analysis is shallow | Missing "step by step" instruction | Number the analysis steps explicitly |
+| Skips to conclusions | Steps not specific enough | Make each step concrete: "First calculate..." |
+| Recommendations too vague | No specificity requirement | Add "Include specific numbers and targets" to FORMAT |
 
 ---
 
-## Exercise 2: Build 3 Operations Templates
+## Exercise 2: Template Speed Build
 
-**Type:** Template Exercise
-**Difficulty:** 5/10
-**Time:** 25 minutes
-**Tool:** 🟢 Bottle Rocket (Tesla Data OK)
-
-### Scenario
-
-You're building a library of reusable prompt templates for tasks you do weekly. These templates should incorporate the advanced techniques from today: chain-of-thought where appropriate, enhanced personas, and clear formatting.
+**Type:** Independent Practice
+**Difficulty:** 4/10
+**Time:** 10 minutes
+**Tool:** Bottle Rocket (Tesla Data OK)
 
 ### Instructions
 
-1. **Choose 3 use cases** from the options below (or propose your own)
-2. **Build each template** using the structure provided
-3. **Test each template** in Bottle Rocket with real or realistic data
-4. **Refine** until the output is work-ready
-5. **Save** your templates for ongoing use
+1. Pick your most frequent weekly task:
+   - Weekly KPI report for leadership
+   - Shift handoff summary
+   - Vendor performance email
+   - Labor planning analysis
+   - Safety incident summary
 
-### Use Case Options
-
-| Category | Use Case | Recommended Technique |
-|----------|----------|----------------------|
-| **Planning** | Labor planning for next week | Chain-of-thought |
-| **Analysis** | Safety incident root cause (5-Whys) | Chain-of-thought |
-| **Communication** | Vendor performance email | Enhanced persona |
-| **Reporting** | KPI narrative for leadership | Persona + CoT |
-| **Documentation** | SOP creation or update | Persona + few-shot |
-| **Your Choice** | A task you do frequently | Mix of techniques |
-
-### Template Structure (Use for Each)
-
+2. Build a template using the upgraded formula:
 ```
-ROLE: [Specific expert with years of experience, known for specific strengths]
+ROLE: [Specific expert with years, specialization, "known for" trait]
 
 CONTEXT:
-- Facility: [Your DC name]
-- Situation: [What's happening]
-- Data: [Relevant numbers, dates, specifics]
-- [Additional context as needed]
+- Facility: [DC NAME]
+- Situation: [WHAT'S HAPPENING]
+- Data: [RELEVANT NUMBERS]
 
-TASK: [What you need, with CoT structure if analysis is involved]
-[If using CoT]: Analyze step by step:
+TASK: [Use CoT if analysis needed]
 1. First, [step]
 2. Then, [step]
 3. Finally, [step]
 
 FORMAT:
-- [Specific structure]
-- [Length constraint]
-- [Tone if relevant]
-- [What to include/exclude]
+- [Structure, length, tone]
+- [Example output pattern if using few-shot]
 ```
 
-### Example: Labor Planning Template
+3. Test it with realistic data
+4. Save it -- you'll use this in future weeks
 
-```
-ROLE: You are a workforce planning specialist with 10 years of experience in distribution center operations. You're known for practical recommendations that balance efficiency with realistic constraints.
-
-CONTEXT:
-- Facility: [DC NAME] distribution center
-- Current headcount: [NUMBER] associates across [NUMBER] shifts
-- Average productivity: [NUMBER] units per labor hour
-- Upcoming challenge: [DESCRIBE - e.g., Prime Week, new product launch]
-- Recent patterns: [Any relevant trends - absenteeism, overtime, etc.]
-
-TASK: Create a labor plan for next week, analyzing step by step:
-1. First, calculate capacity vs. projected demand
-2. Then, identify any gaps by shift or function
-3. Next, consider contingencies (call-outs, equipment issues)
-4. Finally, recommend specific staffing actions
-
-FORMAT:
-- Summary table: current vs. recommended headcount by shift
-- Bullet points for each recommendation
-- Include cost impact estimates where possible
-- Flag any risks or dependencies
-- Keep under 400 words
-```
-
-### Success Criteria (For Each Template)
-
-- [ ] **Enhanced ROLE** - Specific expertise, years of experience, "known for"
-- [ ] **Complete CONTEXT** - Uses [PLACEHOLDERS] for variable data
-- [ ] **Structured TASK** - Uses CoT where analysis is needed
-- [ ] **Detailed FORMAT** - Specifies structure, length, and elements
-- [ ] **Tested** - Run with real or realistic data from your DC
-- [ ] **Useful** - Output is something you would actually use at work
+### Success Criteria
+- [ ] Uses at least one Week 2 technique (CoT, Few-Shot, or enhanced persona)
+- [ ] Has [PLACEHOLDERS] for variable data
+- [ ] Tested with realistic data
+- [ ] Output is something you'd actually use at work
 
 ### Troubleshooting
 
 | Problem | Likely Cause | Solution |
 |---------|--------------|----------|
-| Output too generic | CONTEXT lacks specifics | Add your DC name, real numbers, actual situation |
-| Template doesn't save time | Too many [PLACEHOLDERS] | Pre-fill stable elements; only vary what changes |
-| Output wrong length | No length constraint | Add "Keep under [X] words" to FORMAT |
-| Analysis too shallow | No CoT structure | Add numbered "step by step" instructions to TASK |
-
-### Skills Practiced
-- Template creation for reuse
-- Enhanced persona writing
-- Chain-of-thought structure
-- Format specification
-- Testing and refinement
+| Output too generic | CONTEXT lacks specifics | Add your DC name, real numbers |
+| Template too complex | Too many placeholders | Pre-fill stable elements |
+| Output wrong length | No constraint | Add "Keep under X words" |
 
 ---
 
-## Exercise 3: Analyze a Sample DC Dataset
+## Exercise 3: VS Code + Copilot Setup
 
-**Type:** Guided Practice → Independent Analysis
-**Difficulty:** 5/10
-**Time:** 30 minutes
-**Tool:** 🟢 Bottle Rocket (Tesla Data OK)
-
-### Scenario
-
-You've been given 6 weeks of operations data from a distribution center. Leadership wants insights — trends, anomalies, and recommendations. Instead of spending 45+ minutes manually combing through a spreadsheet, you'll use AI to extract executive-ready insights in minutes.
-
-**The Dataset:**
-
-| Week | Orders | Fill Rate | Overtime Hrs | Headcount | Safety |
-|------|--------|-----------|-------------|-----------|--------|
-| Week 1 | 12,450 | 97.2% | 85 | 42 | 0 |
-| Week 2 | 13,100 | 96.8% | 110 | 42 | 1 |
-| Week 3 | 11,800 | 98.1% | 60 | 40 | 0 |
-| Week 4 | 14,200 | 94.5% | 145 | 42 | 0 |
-| Week 5 | 13,900 | 95.1% | 130 | 41 | 2 |
-| Week 6 | 15,100 | 93.8% | 160 | 43 | 1 |
-
-### Instructions
-
-1. Open Bottle Rocket at **go.tesla.com/chat**
-2. **Part A (Simple Prompt):** Paste the data with a basic question — "What do you see in this data?"
-3. Note what the AI produces (likely surface-level observations)
-4. **Part B (CoT Prompt):** Use the structured prompt below to get deeper analysis
-5. **Compare** the two outputs side by side
-6. **Part C (Your Data):** If you brought your own DC data, run the same structured prompt on it
-
-### Part A: Simple Prompt (Try This First)
-
-```
-Here's 6 weeks of DC operations data:
-
-Week 1: 12,450 orders, 97.2% fill rate, 85 OT hrs, 42 headcount, 0 safety
-Week 2: 13,100 orders, 96.8% fill rate, 110 OT hrs, 42 headcount, 1 safety
-Week 3: 11,800 orders, 98.1% fill rate, 60 OT hrs, 40 headcount, 0 safety
-Week 4: 14,200 orders, 94.5% fill rate, 145 OT hrs, 42 headcount, 0 safety
-Week 5: 13,900 orders, 95.1% fill rate, 130 OT hrs, 41 headcount, 2 safety
-Week 6: 15,100 orders, 93.8% fill rate, 160 OT hrs, 43 headcount, 1 safety
-
-What do you see in this data?
-```
-
-### Part B: Chain-of-Thought Analysis Prompt
-
-```
-ROLE: You are a distribution center operations analyst with 10 years of experience finding actionable insights in operations data.
-
-CONTEXT: Here is 6 weeks of operations data from our DC:
-
-| Week | Orders | Fill Rate | Overtime Hrs | Headcount | Safety |
-|------|--------|-----------|-------------|-----------|--------|
-| Week 1 | 12,450 | 97.2% | 85 | 42 | 0 |
-| Week 2 | 13,100 | 96.8% | 110 | 42 | 1 |
-| Week 3 | 11,800 | 98.1% | 60 | 40 | 0 |
-| Week 4 | 14,200 | 94.5% | 145 | 42 | 0 |
-| Week 5 | 13,900 | 95.1% | 130 | 41 | 2 |
-| Week 6 | 15,100 | 93.8% | 160 | 43 | 1 |
-
-TASK: Analyze this data step by step:
-1. First, identify the overall trend for each metric (improving, declining, stable)
-2. Then, find correlations between metrics (e.g., does volume affect fill rate?)
-3. Next, flag any anomalies or warning signs
-4. Finally, recommend 3 specific actions based on your analysis
-
-FORMAT:
-- Use a trend summary table first
-- Include specific numbers and percentages in your analysis
-- Highlight the most critical finding
-- Keep recommendations actionable with specific targets
-```
-
-### Part C: Use Your Own Data (Optional)
-
-If you brought data from your DC, swap out the sample dataset with your own numbers. Keep the same ROLE, TASK, and FORMAT structure — just change the CONTEXT.
-
-### What Good Output Looks Like
-
-A strong data analysis response will:
-- **Identify the inverse relationship** between orders and fill rate (as volume rises, quality drops)
-- **Flag the overtime trend** — 85 → 160 hours is an 88% increase over 6 weeks
-- **Spot the safety correlation** — incidents cluster in high-volume weeks (Weeks 2, 5, 6)
-- **Quantify the trade-off** — "Each 1,000 additional orders costs approximately 25 overtime hours and 0.5% fill rate"
-- **Recommend specific targets** — not just "reduce overtime" but "cap at 120 hours by adding 2 headcount"
-
-### Troubleshooting
-
-| Problem | Likely Cause | Solution |
-|---------|--------------|----------|
-| AI only describes the data | No "analyze" instruction | Use CoT prompt with explicit analysis steps |
-| Missing correlations | Data not in table format | Present data as a clean table, not paragraphs |
-| Recommendations too vague | No specificity requirement | Add "Include specific numbers and targets" to FORMAT |
-| AI hallucinates data | Too much interpretation requested | Add "Only use the data provided — do not invent additional data points" |
-
-### Skills Practiced
-- Presenting data to AI systems
-- Chain-of-thought for data analysis
-- Comparing simple vs. structured prompts
-- Extracting actionable insights from operations data
-
----
-
-## Exercise 4: Model Comparison Challenge
-
-**Type:** Scenario Challenge
-**Difficulty:** 6/10
+**Type:** Guided Setup
+**Difficulty:** 3/10
 **Time:** 20 minutes
-**Tool:** 🟢 Bottle Rocket (Tesla Data OK)
+**Tool:** VS Code + GitHub Copilot
+
+### Before You Start
+
+You'll need:
+- Your laptop with admin/install permissions
+- A GitHub account (create one if you don't have it)
+- Internet access
+
+### Step-by-Step Setup
+
+**Step 1: Install VS Code (3 min)**
+1. Open your browser
+2. Go to https://code.visualstudio.com
+3. Click "Download" (it detects your operating system)
+4. Run the installer with default settings
+5. Launch VS Code when installation completes
+
+**Step 2: Install GitHub Copilot Extension (2 min)**
+1. In VS Code, click the Extensions icon in the left sidebar (looks like 4 squares)
+2. Search for "GitHub Copilot"
+3. Click "Install" on the one by GitHub (it should be the first result)
+4. Wait for installation to complete
+
+**Step 3: Sign In (3 min)**
+1. A notification will appear asking you to sign in to GitHub
+2. Click "Sign in to GitHub"
+3. Your browser will open -- sign in with your GitHub credentials
+4. Authorize VS Code to access your GitHub account
+5. Return to VS Code -- you should see the Copilot icon in the status bar
+
+**Step 4: Select the Model (2 min)**
+1. Open Copilot Chat: press Ctrl+Shift+I (or click the Copilot icon)
+2. At the top of the chat panel, find the model dropdown
+3. Select **Claude Opus 4.5** (premium model, best quality)
+4. Note: you have 300 premium requests per month
+
+**Step 5: Verify It Works (2 min)**
+1. In the Copilot Chat panel, type: "Hello! What can you help me with?"
+2. You should get a response from the AI
+3. If you see a response -- you're set up!
+
+**Step 6: Troubleshooting Buffer (8 min)**
+Use this time to help anyone who got stuck.
+
+### Common Issues
+
+| Problem | Solution |
+|---------|----------|
+| Can't install VS Code | Check admin permissions; try portable version |
+| Extension won't install | Restart VS Code; check internet connection |
+| GitHub sign-in fails | Try signing in at github.com first, then retry |
+| No Copilot icon | Close and reopen VS Code; verify extension is installed |
+| Model dropdown missing | Make sure Copilot extension is up to date |
+| "No access" error | Verify Copilot subscription is active on your GitHub account |
+
+### Policy Reminder
+
+> **CRITICAL:** GitHub Copilot is CONDITIONALLY approved at Tesla.
+> - **NO Tesla Data** in Copilot -- ever
+> - No metrics, employee names, vendor details, internal processes
+> - Use generic/fictional data for all exercises
+> - Tesla data stays in Bottle Rocket (go.tesla.com/chat)
+> - Reference: go.tesla.com/aitools
+
+---
+
+## Exercise 4: Your First Agent Mode Task
+
+**Type:** Guided Practice
+**Difficulty:** 5/10
+**Time:** 25 minutes
+**Tool:** GitHub Copilot (Agent Mode) -- NO Tesla Data
 
 ### Scenario
 
-Different AI models have different strengths. In this challenge, you'll discover these differences firsthand by running the same prompt through multiple models and comparing results.
+You're going to ask an AI agent to BUILD something for you -- not just write text, but create actual files on your computer.
 
-### Your Task
+### Setup (2 min)
 
-1. **Select your best template** from Exercise 2 or 3
-2. **Run it on your default model** (likely Claude)
-3. **Switch to a different model** and run the exact same prompt
-4. **Compare** using the worksheet below
-5. **Decide** which model worked better for this specific task
+1. In VS Code, create a new folder: File > Open Folder > create "week2-exercises" on your Desktop
+2. Open Copilot Chat (Ctrl+Shift+I)
+3. At the top of the chat panel, switch the mode dropdown to **"Agent"**
+4. Make sure the model is set to **Claude Opus 4.5**
 
-### How to Switch Models (in Bottle Rocket)
+### The Task (23 min)
 
-[Note: Model selection may vary by Bottle Rocket version. Look for model selector in the interface, or consult go.tesla.com/aitools for current instructions.]
+**Step 1: Give the agent a task (3 min)**
+Type this in Agent Mode:
+```
+Create a professional shift handoff template as an HTML page.
 
-### Comparison Worksheet
+It should include:
+- Header with date and shift (Day → Night)
+- Status indicator (On Track / Watch / Behind)
+- Metrics table: Orders Processed, Quality %, Headcount (actual vs target)
+- Key Events section with timestamps
+- Carryover items for next shift (checklist)
+- Watch Items section
+- Clean, professional design with dark background
 
-Complete this for each model you test:
+Use sample data to fill it in so I can see what it looks like.
+```
 
-| Criteria | Model 1: _________ | Model 2: _________ |
-|----------|-------------------|-------------------|
-| **Speed** (how fast?) | | |
-| **Format adherence** (followed structure?) | | |
-| **Content quality** (useful insights?) | | |
-| **Instruction following** (did what you asked?) | | |
-| **Specificity** (actionable vs. generic?) | | |
-| **Overall Winner** | ☐ | ☐ |
+**Step 2: Read the plan (3 min)**
+The agent will show you its plan. Read it:
+- What files will it create?
+- Does the plan match what you asked for?
+- Anything missing?
 
-### Model Selection Guidelines
+If it looks good, **approve** the plan.
 
-Use this as a reference when comparing:
+**Step 3: Watch the agent work (5 min)**
+The agent will:
+- Create an HTML file
+- Write the template with your specifications
+- May ask for permission to run commands
 
-| Model | Best For | Watch For |
-|-------|----------|-----------|
-| **Claude** | Writing, complex analysis, nuanced tone | May be slower |
-| **Gemini** | Speed, large documents, visual content | May be less nuanced |
-| **Grok** | Math, real-time info, quantitative tasks | May be more direct |
+**Approve safe commands** like creating files. **Ask questions** about anything you don't understand.
 
-### Discussion Questions
+**Step 4: Review the output (5 min)**
+1. Find the HTML file the agent created (in your week2-exercises folder)
+2. Right-click the file > "Open with" > your browser
+3. Does it look right? Check:
+   - All sections present?
+   - Sample data filled in?
+   - Professional appearance?
 
-After completing your comparison:
+**Step 5: Iterate (7 min)**
+Ask the agent to improve it:
+- "Add a color-coded status: green for on track, yellow for watch, red for behind"
+- "Make the design match Tesla branding -- dark background, red accents"
+- "Add a section for safety observations"
 
-1. **Which differences surprised you?**
-2. **For THIS specific task, which model worked better?**
-3. **Would you switch models for other tasks?**
-4. **What would make you choose one over another?**
+### What You Just Experienced
+
+| What Happened | Why It Matters |
+|---------------|---------------|
+| You described what you wanted in English | No coding knowledge needed |
+| Agent created a plan and showed you | You stay in control |
+| Agent built real files on your computer | This is a working tool, not just text |
+| You iterated with feedback | Same refine-and-improve cycle as Bottle Rocket |
+| The result is something you can actually use | Agents create reusable tools |
+
+### Troubleshooting
+
+| Problem | Likely Cause | Solution |
+|---------|--------------|----------|
+| Agent asks to run terminal commands | Normal behavior for file creation | Approve "safe" commands (mkdir, creating files) |
+| Output looks wrong in browser | HTML formatting issue | Ask agent: "The output looks wrong in the browser. Can you fix the HTML?" |
+| Agent creates code you don't understand | Normal -- you don't need to read code | Focus on the rendered output, not the code |
+| Agent gets stuck or loops | Complex task or conflicting instructions | Type "Stop. Let's start over with a simpler approach" |
+| Agent didn't create the file | May have only shown code in chat | Ask: "Please create this as an actual file in my project" |
+
+---
+
+## Exercise 5: Install & Use First MCP Skill
+
+**Type:** Guided Practice
+**Difficulty:** 6/10
+**Time:** 25 minutes
+**Tool:** GitHub Copilot (Agent Mode) + Playwright MCP -- NO Tesla Data
+
+### Scenario
+
+Your Copilot agent can read and write files. But it can't browse the internet, fill out forms, or interact with websites. Let's give it that ability by installing the Playwright MCP tool.
+
+### Part 1: Install Playwright MCP (5 min)
+
+**Step 1:** Open VS Code Settings
+- Press Ctrl+Shift+P (Command Palette)
+- Type "Settings JSON" and select "Preferences: Open User Settings (JSON)"
+
+**Step 2:** Add MCP Configuration
+Add this to your settings.json:
+```json
+{
+  "mcp": {
+    "servers": {
+      "playwright": {
+        "command": "npx",
+        "args": ["-y", "@anthropic-ai/mcp-playwright"]
+      }
+    }
+  }
+}
+```
+
+**Step 3:** Restart Copilot
+- Close and reopen the Copilot Chat panel
+- The agent now has browser automation capabilities
+
+### Part 2: Use the New Skill (10 min)
+
+**Step 1: Task without context (see what happens)**
+In Agent Mode, type:
+```
+Go to https://news.ycombinator.com and tell me what the top 5 stories are right now.
+```
+
+Watch the agent:
+1. Open a browser (you may see a browser window appear)
+2. Navigate to the website
+3. Read the page content
+4. Report back with the top stories
+
+**This was impossible before installing the MCP tool.**
+
+**Step 2: A more useful task**
+```
+Go to https://weather.gov and find the 7-day forecast for Tampa, FL.
+Summarize it in a simple table: Day | High | Low | Conditions.
+Save the result as weather-forecast.html in my project folder.
+```
+
+Watch the agent combine skills: browse (Playwright) + create files (built-in).
+
+### Part 3: Before vs After (5 min)
+
+Try removing the MCP configuration (comment it out), restart Copilot, and ask the same question. The agent will say it can't access websites.
+
+Re-enable it. The skill is back.
+
+**The lesson:** MCP tools are like installing apps. Each one gives the agent a new capability.
+
+### Part 4: Discussion (5 min)
+
+With your group, discuss:
+1. What websites or data sources do you check regularly for your DC?
+2. Which of those could an agent check for you automatically?
+3. What other "skills" would be useful? (Database access? Email? Calendar?)
+
+### Troubleshooting
+
+| Problem | Likely Cause | Solution |
+|---------|--------------|----------|
+| "npx not found" error | Node.js not installed | Install Node.js from nodejs.org (LTS version) |
+| MCP doesn't appear to work | Config syntax error | Double-check JSON formatting (commas, brackets) |
+| Browser doesn't open | Playwright dependencies missing | Run: npx playwright install |
+| Agent says it can't browse | MCP not loaded | Restart VS Code completely, not just the chat panel |
+| Website blocks the agent | Anti-bot protection | Try a different public website |
+
+---
+
+## Exercise 6: Agent Builds a Real Tool
+
+**Type:** Independent Practice
+**Difficulty:** 6/10
+**Time:** 30 minutes
+**Tool:** GitHub Copilot (Agent Mode) -- NO Tesla Data
+
+### Scenario
+
+Now that you've seen what agents can do, it's time to build something you'll actually use: a time-savings tracking dashboard.
+
+### The Task
+
+In Agent Mode, type:
+```
+Build me a time-savings tracking dashboard as a single HTML file.
+
+Requirements:
+- A form to log tasks: task name, time without AI (minutes), time with AI (minutes)
+- Auto-calculate time saved for each entry
+- A running table showing all logged tasks
+- Summary stats at the top: total tasks, total time saved, average savings per task
+- A weekly goal progress bar (goal: 150 minutes saved per week)
+- Professional dark design with red accent color (#e82127)
+- The data should persist in the browser (use localStorage)
+- Make it look clean and modern
+
+This is a personal productivity tool for a distribution center manager.
+```
+
+### What to Watch For
+
+As the agent works:
+
+1. **Read the plan** -- Does it make sense? Does it cover all requirements?
+2. **Approve steps** -- The agent may want to create files, install packages, or run commands
+3. **Check the output** -- Open the HTML file in your browser after creation
+4. **Test the form** -- Add a few sample entries:
+   - "Weekly KPI Report" | 45 min without AI | 15 min with AI
+   - "Vendor email" | 20 min without AI | 5 min with AI
+   - "Shift handoff summary" | 15 min without AI | 3 min with AI
+
+### Iteration Ideas
+
+After the initial build, ask the agent to improve:
+- "Add a button to export the data as CSV"
+- "Add a chart showing time saved per day"
+- "Add categories: Analysis, Communication, Planning, Documentation"
+- "Make it work on mobile too"
 
 ### Success Criteria
 
-- [ ] Ran the same prompt on at least 2 models
-- [ ] Completed the comparison worksheet
-- [ ] Can articulate why one was better for THIS task
-- [ ] Have a sense of when you might switch models in future
+- [ ] Dashboard loads in browser
+- [ ] Can add new task entries
+- [ ] Time saved calculates correctly
+- [ ] Running total updates
+- [ ] Goal progress bar works
+- [ ] Data persists after page refresh (localStorage)
+- [ ] Looks professional
 
 ### Troubleshooting
 
 | Problem | Likely Cause | Solution |
 |---------|--------------|----------|
-| Models give identical output | Simple prompt doesn't differentiate | Use a more complex analysis prompt |
-| Can't find model selector | UI varies by version | Check Bottle Rocket help or ask facilitator |
-| One model failed | Input too long or unsupported | Try shorter prompt; check context limits |
-| No clear winner | Task doesn't favor one model | That's valid! Note that any model works here |
-
-### Skills Practiced
-- Model selection awareness
-- Critical evaluation of AI outputs
-- Comparative analysis
-- Matching tools to tasks
+| HTML file won't open | File path issue | Right-click file in VS Code Explorer > "Reveal in File Explorer" > double-click |
+| Form doesn't work | JavaScript error | Ask agent: "The form isn't working. Can you check for JavaScript errors?" |
+| Data doesn't persist | localStorage not implemented | Ask agent: "The data disappears on refresh. Please add localStorage" |
+| Design looks bad | Agent used default styling | Give specific design instructions: "Use dark background #1a1a1a, red accent #e82127, white text" |
+| Agent creates too many files | Overcomplicating | Ask: "Please put everything in a single HTML file" |
 
 ---
 
-## Reflection Questions
+## Exercise 7: Debug & Redirect an Agent
 
-After completing the exercises, consider:
+**Type:** Scenario Challenge
+**Difficulty:** 7/10
+**Time:** 25 minutes
+**Tool:** GitHub Copilot (Agent Mode) -- NO Tesla Data
 
-1. **Which technique made the biggest difference today?**
-   - Chain-of-thought? Few-shot? Enhanced personas? Structured outputs?
+### Scenario
 
-2. **Which template will you use first at work?**
-   - Tomorrow? This week?
+Agents are powerful but imperfect. This exercise teaches you the most important agent skill: recognizing when something goes wrong and fixing it.
 
-3. **How did the data analysis exercise change your approach?**
-   - Will you start pasting data into AI for quick insights?
+### Part A: The Vague Instruction Test (10 min)
 
-4. **How confident are you switching between models?**
-   - What would help you feel more confident?
+**Step 1:** Give the agent a deliberately vague task:
+```
+Make me a tool for my DC.
+```
 
-5. **How many prompts are in your library now?**
-   - Target: 10+ by end of this week
+**Step 2:** Observe what happens. The agent will likely:
+- Ask clarifying questions (this is GOOD -- it means the agent knows it needs more info)
+- OR make assumptions and build something generic (this is COMMON)
+
+**Step 3:** If the agent asks questions, answer vaguely: "Just something useful."
+
+**Step 4:** Review the output. Is it useful? Probably not very.
+
+**Step 5:** NOW redirect with specificity:
+```
+Stop. I need something specific: a daily checklist for a DC Area General Manager.
+
+Include these sections:
+1. Pre-shift (safety walk, staffing review, equipment check)
+2. Mid-shift (productivity check, quality audit, break scheduling)
+3. End-of-shift (handoff notes, metrics capture, next-day prep)
+
+Each item should have a checkbox, responsible party, and time estimate.
+Make it as a clean HTML page with dark theme.
+```
+
+**Step 6:** Compare the two outputs. The specific redirect should produce dramatically better results.
+
+**The lesson:** "Garbage in, garbage out" applies even more to agents than to chat. With chat, you get bad text. With agents, you get bad files, bad code, bad tools.
+
+### Part B: Catch and Fix a Mistake (15 min)
+
+**Step 1:** Give the agent a task with a specific constraint:
+```
+Create an HTML page displaying a weekly KPI dashboard.
+
+Use this sample data:
+- Orders: 14,200 (target: 13,000) -- 109%
+- Fill Rate: 96.5% (target: 99.0%) -- below target
+- Safety: 1 incident (target: 0) -- below target
+- Overtime: 130 hrs (target: 100) -- 30% over
+- Headcount: 42/45 -- 3 short
+
+Requirements:
+- Must fit on one screen (960x540 pixels, no scrolling)
+- Use color coding: green for above target, red for below
+- Dark background (#0a0a0a), red accent (#e82127), white text
+- Show each metric as a card with actual vs target
+
+IMPORTANT: The page must be exactly 960x540 pixels. Do not create a page that scrolls.
+```
+
+**Step 2:** Review the output. Common agent mistakes:
+- Page scrolls despite the constraint
+- Wrong colors used
+- Missing metrics
+- Over-designed (too fancy, ignoring simplicity)
+
+**Step 3:** For each mistake, practice the fix workflow:
+
+**If the page scrolls:**
+> "The page scrolls. I said 960x540 with no scrolling. Reduce font sizes and remove any padding to make everything fit."
+
+**If colors are wrong:**
+> "The colors are wrong. Use exactly: background #0a0a0a, accent #e82127, text #ffffff, cards #1a1a1a."
+
+**If a metric is missing:**
+> "You're missing the headcount metric. Add it as a card showing 42/45 with status indicator."
+
+**Step 4:** After fixing, review what changed:
+- Look at the file in VS Code -- can you see what was modified?
+- Open in browser -- does it look right now?
+
+### Key Takeaways
+
+| Skill | What You Practiced |
+|-------|-------------------|
+| Recognizing vague instructions | Part A: saw what happens with "make me a tool" |
+| Redirecting with specificity | Part A: "Stop. I need specifically..." |
+| Identifying agent mistakes | Part B: found constraint violations |
+| Giving specific corrections | Part B: pointed to exact issues |
+| Iterative debugging | Part B: fix → check → fix → check |
+
+### Troubleshooting
+
+| Problem | Likely Cause | Solution |
+|---------|--------------|----------|
+| Agent refuses to stop | It may be mid-execution | Wait for it to finish, then redirect |
+| Agent repeats the same mistake | Instructions still ambiguous | Be more explicit: include dimensions, colors, exact text |
+| Agent over-corrects | Too many changes at once | Fix one thing at a time |
+| Agent deletes your good work | It sometimes starts over | Say "Don't delete the existing file. Just modify the [specific section]" |
 
 ---
 
 ## Homework Extension
 
-Continue building your template library after the session:
+### Part 1: Agent Mode Practice (~20 min)
 
-### Part 1: Build 2 More Templates (~20 min)
+Use Agent Mode for 2 non-Tesla-data tasks:
 
-Create 2 additional templates using techniques from today:
-1. **Use CoT or Few-Shot technique** — apply what you learned
-2. **Test with real DC data** — validate with actual numbers from your operations
-3. **Add to your prompt library** — save with clear naming (e.g., `weekly-overtime-analysis-v1`)
+**Task Ideas:**
+1. Build a meeting agenda template (HTML or Markdown)
+2. Create a simple calculator (convert units, calculate overtime costs)
+3. Generate a training checklist for new hires (generic, not Tesla-specific)
+4. Build a habit tracker or reading log
 
-### Part 2: Prepare for Week 3 (~25 min)
+For each task:
+- Use Agent Mode (not Chat)
+- Read the plan before approving
+- Iterate at least once
+- Note: time to complete, quality of output, any issues
 
-1. **Track time savings daily** — target 20-30 min/day savings using your templates
-2. **Bring a real dataset** from your DC to Week 3 (any spreadsheet or report you analyze regularly)
-3. **Grow your prompt library** to 10+ prompts (you should have 5-7 after today)
+### Part 2: MCP Exploration (~10 min)
 
-### Part 3: Time Savings Tracking (daily)
+Research what other MCP tools exist. Find 3 that would help your DC work.
 
-Use this log to track your actual time savings:
+Good starting points:
+- https://github.com/modelcontextprotocol -- the official MCP repository
+- Search for: "MCP servers list" or "Model Context Protocol tools"
 
-| Task | Without AI | With AI | Saved | Notes |
-|------|------------|---------|-------|-------|
-| Data analysis | ___ min | ___ min | ___ min | |
-| Report drafting | ___ min | ___ min | ___ min | |
-| Email/comms | ___ min | ___ min | ___ min | |
-| Other: _________ | ___ min | ___ min | ___ min | |
-| **Weekly Total** | | | **___ min** | |
+For each tool you find, note:
+- What it does
+- How it could help your DC operations
+- Whether it would need Tesla data access (if yes, it may not be approved)
 
-### Part 4: Model Experimentation
+### Part 3: Think Ahead (~10 min)
 
-Over the next week, try switching models when:
-- Your first output isn't quite right
-- You're doing a math-heavy analysis
-- You need to process a long document
+Write a 2-sentence description of a project you'd automate if you could:
+- What does it do?
+- What tools/skills would the agent need?
 
-Note which model worked better for each task type.
+Example: "I want an agent that reads my weekly headcount spreadsheet, compares it to the demand forecast, and generates a staffing recommendation email to my regional director. It would need file access (to read the spreadsheet) and a formatting skill (to create the email)."
+
+### Part 4: Daily Time Tracking (~5 min/day)
+
+Use your new time-savings dashboard from Exercise 6 to track savings daily.
+Target: 20-30 min/day this week.
 
 ---
 
 ## Exercise Validation Log
 
-| Exercise | Difficulty | Validation Notes | Feasible? |
-|----------|------------|------------------|-----------|
-| Exercise 1: Chain-of-Thought | 4/10 | Guided start with template follow-up. Clear data provided. Step-by-step structure teaches technique. | ✅ |
-| Exercise 2: Build 3 Templates | 5/10 | Template-based with options. Tests technique application. Real-world use cases. Requires customization skill. | ✅ |
-| Exercise 3: DC Dataset Analysis | 5/10 | Guided data analysis with compare-and-contrast structure. Sample data provided. Builds on CoT from Exercise 1. Optional self-data extension. | ✅ |
-| Exercise 4: Model Comparison | 6/10 | Requires critical evaluation. Builds model selection awareness. May need facilitator help with model switching. | ✅ |
+| Exercise | Difficulty | Duration | Type | Tool | Feasible? |
+|----------|------------|----------|------|------|-----------|
+| 1: CoT + Data Analysis | 4/10 | 30 min | Guided | Bottle Rocket | Yes |
+| 2: Template Speed Build | 4/10 | 10 min | Independent | Bottle Rocket | Yes |
+| 3: VS Code + Copilot Setup | 3/10 | 20 min | Guided Setup | VS Code | Yes (IT support needed) |
+| 4: First Agent Mode Task | 5/10 | 25 min | Guided | Copilot Agent | Yes |
+| 5: Install First MCP Skill | 6/10 | 25 min | Guided | Copilot + MCP | Yes (Node.js required) |
+| 6: Agent Builds Real Tool | 6/10 | 30 min | Independent | Copilot Agent | Yes |
+| 7: Debug & Redirect Agent | 7/10 | 25 min | Challenge | Copilot Agent | Yes |
 
 ---
 
@@ -497,16 +682,17 @@ Note which model worked better for each task type.
 
 | Check | Requirement | Status |
 |-------|-------------|--------|
-| Exercise count | 3+ exercises per week | ✅ 4 exercises |
-| Difficulty range | Within week's calibration (4-6) | ✅ Range: 4-6 |
-| Exercise mix | Matches week's ratio (50% Guided, 40% Template, 10% Challenge) | ✅ Mixed types |
-| Tool coverage | Correct tool per exercise | ✅ All Bottle Rocket |
-| Troubleshooting | 3+ issues per exercise | ✅ 4 per exercise |
-| Time realistic | Total ≤ 100 min | ✅ 100 min total (25+25+30+20) |
-| Skills tracked | Reinforce + Introduce documented | ✅ 6 reinforced, 9 introduced |
+| Exercise count | 3+ exercises per week | 7 exercises |
+| Difficulty range | Progressive (3-7/10) | 3, 4, 4, 5, 6, 6, 7 |
+| Tool coverage | Correct tool per exercise | BR (1-2), Copilot (3-7) |
+| Troubleshooting | 3+ issues per exercise | 3-5 per exercise |
+| Time realistic | Total fits in session | 195 min (81% of 240) |
+| Skills tracked | Reinforce + Introduce documented | 3 reinforced, 9 introduced |
+| Policy compliance | NO Tesla Data in Copilot exercises | Verified -- all use generic data |
+| Hands-on ratio | 80%+ target | 81% achieved |
 
 ---
 
-*Exercises designed for Week 2: Prompt Engineering & Data Analysis*
-*Primary Tool: Bottle Rocket (go.tesla.com/chat)*
-*Difficulty Focus: Intermediate (4-6/10)*
+*Exercises designed for Week 2: Advanced Prompts & Your First Agent*
+*Primary Tools: Bottle Rocket (Exercises 1-2), GitHub Copilot Agent Mode (Exercises 3-7)*
+*Difficulty Focus: Progressive 3-7/10*

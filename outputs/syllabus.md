@@ -189,130 +189,140 @@ By the end of this course, participants will be able to:
 
 ---
 
-## Week 2: Prompt Engineering & Data Analysis
+## Week 2: Advanced Prompts & Your First Agent
 
 **Duration:** 240 minutes
-**Focus:** Master advanced prompting techniques, analyze real operations data with AI, build a personal template library
-**Difficulty Level:** Application
+**Focus:** Compressed advanced prompting, then hands-on VS Code + Copilot Agent Mode + MCP skills introduction
+**Difficulty Level:** Application --> Expansion
 
 ### Learning Objectives
 
-1. Apply Chain-of-Thought, Few-Shot, and Persona-based prompting techniques to operations scenarios
-2. Analyze operations data (headcount, throughput, safety metrics) using AI
-3. Generate structured outputs: tables, checklists, formatted reports, executive summaries
-4. Build and organize a reusable personal prompt library
-5. Compare AI model outputs and select the best model for each task type
+1. Apply Chain-of-Thought, Few-Shot, and Persona prompting to operations data analysis
+2. Set up VS Code with GitHub Copilot (Chat, Edit, Agent modes)
+3. Understand what AI agents are and how they differ from chat
+4. Use Agent Mode to complete multi-step tasks autonomously
+5. Understand MCP (Model Context Protocol) and install a first skill
+6. Read agent plans and review agent-generated changes
+7. Debug and redirect agents when they make mistakes
 
 ### Session Agenda
 
 | Time | Section | Topic | Activity | Duration |
 |------|---------|-------|----------|----------|
-| 0:00 - 0:15 | 1 | Homework Review + Time Savings Check-in | Peer Sharing + Discussion | 15 min |
-| | | - Peer sharing: best prompt, worst prompt | | |
-| | | - Time savings so far (target: 15-20 min/day) | | |
-| | | - Celebration of wins | | |
-| 0:15 - 0:30 | 2 | Advanced Prompting Techniques | Lecture + Examples | 15 min |
-| | | - Chain-of-Thought (CoT): "Think step by step" | | |
-| | | - Few-Shot: providing 2-5 examples | | |
-| | | - Persona-Based: specific expertise + traits | | |
-| | | - When to use which technique | | |
-| 0:30 - 0:55 | 3 | Exercise 1: Chain-of-Thought on Productivity Analysis | Guided Exercise | 25 min |
-| | | - Use CoT to analyze a shift's productivity data | | |
-| | | - Compare CoT output vs simple prompt output | | |
-| | | - Measure quality improvement | | |
-| 0:55 - 1:05 | 4 | Operations Use Cases Overview | Lecture | 10 min |
-| | | - Labor planning & productivity analysis | | |
-| | | - Safety incident root cause (5-Whys) | | |
-| | | - Vendor communication templates | | |
-| | | - KPI dashboard narratives | | |
-| | | - SOP documentation | | |
-| **1:05 - 1:15** | -- | **BREAK** | | **10 min** |
-| 1:15 - 1:40 | 5 | Exercise 2: Build 3 Operations Templates | Independent Practice | 25 min |
-| | | - Each AGM builds templates for their top 3 use cases | | |
-| | | - Use Few-Shot technique for consistent formatting | | |
-| | | - Templates must be reusable (parameterized) | | |
-| 1:40 - 2:05 | 6 | Data Analysis with AI | Lecture + Live Demo | 25 min |
-| | | - How to present data to AI (paste tables, describe CSVs) | | |
-| | | - Asking for trends, outliers, comparisons | | |
-| | | - Generating charts/tables from raw data | | |
-| | | - Executive summary generation from numbers | | |
-| | | - Live demo: analyze a sample headcount report | | |
-| 2:05 - 2:35 | 7 | Exercise 3: Analyze a Sample DC Dataset | Independent Practice | 30 min |
-| | | - Upload/paste sample CSV data (headcount, throughput, safety) | | |
-| | | - Ask AI to: identify trends, flag anomalies, recommend actions | | |
-| | | - Generate an executive summary with key callouts | | |
-| | | - Compare outputs across different prompting techniques | | |
-| **2:35 - 2:45** | -- | **BREAK** | | **10 min** |
-| 2:45 - 3:00 | 8 | Structured Outputs | Lecture + Demo | 15 min |
-| | | - Getting AI to output in consistent formats | | |
-| | | - Tables, checklists, formatted reports | | |
-| | | - Markdown formatting for clean documents | | |
-| | | - Template output patterns (fill-in-the-blank, standardized) | | |
-| 3:00 - 3:20 | 9 | Building Your Personal Prompt Library | Workshop (Hands-On) | 20 min |
-| | | - Organizing prompts by use case | | |
-| | | - Versioning prompts (tracking what works) | | |
-| | | - Sharing across the AGM team | | |
-| | | - Creating a "prompt playbook" for their DC | | |
-| 3:20 - 3:40 | 10 | Exercise 4: Model Comparison Challenge | Independent Practice | 20 min |
-| | | - Same prompt across Claude, Gemini, Grok in Bottle Rocket | | |
-| | | - Score each output on accuracy, usefulness, format | | |
-| | | - Document which model works best for which task | | |
-| 3:40 - 3:55 | 11 | Share & Discuss + Key Takeaways | Peer Learning | 15 min |
-| | | - Share best templates across DCs | | |
-| | | - Cross-pollination of use cases | | |
-| 3:55 - 4:00 | 12 | Homework | Lecture | 5 min |
-| | | - Homework assigned (see below) | | |
+| 0:00 - 0:10 | 1 | Homework Review & Wins | Peer Sharing | 10 min |
+| | | - Best prompt / worst prompt sharing | | |
+| | | - Time savings check (target: 15-20 min/day) | | |
+| 0:10 - 0:15 | 2 | Advanced Prompting Techniques | Concept Intro | 5 min |
+| | | - CoT, Few-Shot, Persona -- 90-second each | | |
+| 0:15 - 0:45 | 3 | Exercise 1: CoT + Data Analysis Sprint | Hands-On | 30 min |
+| | | - Part A: CoT prompt on productivity data (15 min) | | |
+| | | - Part B: Data analysis with structured output (15 min) | | |
+| 0:45 - 0:55 | 4 | Exercise 2: Template Speed Build | Hands-On | 10 min |
+| | | - Build 1-2 reusable prompt templates in Bottle Rocket | | |
+| **0:55 - 1:05** | -- | **BREAK** | | **10 min** |
+| 1:05 - 1:10 | 5 | What Is an AI Agent? | Concept Intro | 5 min |
+| | | - Chat vs Agent: the autonomy difference | | |
+| | | - Plan-Execute-Iterate loop | | |
+| | | - Why agents matter for operations | | |
+| 1:10 - 1:30 | 6 | Exercise 3: VS Code + Copilot Setup | Guided Setup | 20 min |
+| | | - Install VS Code, Copilot extension, sign in | | |
+| | | - Policy reminder: NO Tesla Data in Copilot | | |
+| | | - Verify working: first Copilot chat message | | |
+| 1:30 - 1:35 | 7 | Copilot Modes: Chat vs Edit vs Agent | Concept Intro | 5 min |
+| | | - Chat: ask questions, get answers | | |
+| | | - Edit: targeted changes to specific files | | |
+| | | - Agent: autonomous multi-step task completion | | |
+| 1:35 - 2:00 | 8 | Exercise 4: Your First Agent Mode Task | Hands-On | 25 min |
+| | | - Agent creates a shift summary template | | |
+| | | - Watch the plan, approve steps, review output | | |
+| | | - See Agent vs Chat difference firsthand | | |
+| **2:00 - 2:10** | -- | **BREAK** | | **10 min** |
+| 2:10 - 2:15 | 9 | MCP Tools: Giving Agents Skills | Concept Intro | 5 min |
+| | | - What is MCP? (like installing apps on a phone) | | |
+| | | - Types: browser, filesystem, database, API | | |
+| | | - Before/after: agent with vs without skills | | |
+| 2:15 - 2:40 | 10 | Exercise 5: Install & Use First MCP Skill | Hands-On | 25 min |
+| | | - Install Playwright MCP (browser automation) | | |
+| | | - Agent navigates a public website, extracts info | | |
+| | | - Compare: what agent could do before vs after skill | | |
+| 2:40 - 2:45 | 11 | Reading Agent Plans & Git Basics | Concept Intro | 5 min |
+| | | - How to read what an agent changed | | |
+| | | - Accept/reject agent edits | | |
+| 2:45 - 3:15 | 12 | Exercise 6: Agent Builds a Real Tool | Hands-On | 30 min |
+| | | - Agent creates a time-savings tracking dashboard (HTML) | | |
+| | | - Multi-step: plan --> approve --> build --> review | | |
+| | | - Pause, redirect, continue practice | | |
+| 3:15 - 3:40 | 13 | Exercise 7: Debug & Redirect an Agent | Hands-On | 25 min |
+| | | - Give agent a deliberately vague instruction | | |
+| | | - Watch it go wrong, practice redirecting | | |
+| | | - Undo and retry workflow | | |
+| 3:40 - 4:00 | 14 | Share Results + Key Takeaways + Homework | Peer Discussion | 20 min |
+| | | - Show off what agents built | | |
+| | | - Discuss: what would you automate at your DC? | | |
 | **TOTAL** | | | | **240 min** |
 
-**Time Validation:** 15 + 15 + 25 + 10 + 10 (break) + 25 + 25 + 30 + 10 (break) + 15 + 20 + 20 + 15 + 5 = **240 min**
+**Time Validation:** 10 + 5 + 30 + 10 + 10 (break) + 5 + 20 + 5 + 25 + 10 (break) + 5 + 25 + 5 + 30 + 25 + 20 = **240 min**
 
-**Hands-on Time:** ~135 min (56%) -- Exercise 1 (25) + Exercise 2 (25) + Exercise 3 (30) + Prompt Library workshop (20) + Exercise 4 (20) + Peer sharing portions (15)
-**Instruction/Demo Time:** ~105 min (44%)
+**Hands-on Time:** ~195 min (81%) -- Peer sharing (10) + Ex 1 (30) + Ex 2 (10) + VS Code setup (20) + Ex 4 (25) + Ex 5 (25) + Ex 6 (30) + Ex 7 (25) + Share/discuss (20)
+**Concept Intros:** ~25 min (10%) -- five 5-min concept intros
+**Breaks:** ~20 min (8%)
+
+*Note: Week 2 shifts to 81% hands-on with concept intros kept to 5 minutes each. VS Code setup and exercises are the primary learning mode.*
 
 ### Key Topics
 
-- Chain-of-Thought (CoT) prompting: step-by-step reasoning for complex analysis
-- Few-Shot prompting: providing examples for consistent output formatting
-- Persona-based prompting: assigning expertise and traits to the AI
-- Data analysis with AI: CSV/table input, trend identification, anomaly detection
-- Executive summary generation from raw operations data
-- Structured output formats: tables, checklists, reports, Markdown
-- Personal prompt library: organization, versioning, sharing
-- AI model comparison: Claude vs Gemini vs Grok strengths for specific tasks
-- Operations use cases: labor planning, 5-Whys, vendor comms, KPI narratives, SOPs
+- Advanced prompting: CoT, Few-Shot, Persona (compressed from full session to sprint)
+- Data analysis with AI: tables, trends, structured outputs
+- AI agents: what they are, how they differ from chat, Plan-Execute-Iterate loop
+- VS Code + GitHub Copilot: setup, Chat/Edit/Agent modes
+- MCP (Model Context Protocol): giving agents skills like browser automation
+- Agent workflow: plan --> approve --> execute --> review
+- Git basics: reading what agents changed, accept/reject edits
+- Agent debugging: redirecting agents, undo and retry
 
 ### Policy Compliance Checkpoint
 
-- All exercises use Bottle Rocket (approved for Tesla Data)
-- Model comparison exercise reinforces data boundaries across models
-- Templates include policy-compliant usage guidelines
+- Exercises 1-2 use Bottle Rocket (approved for Tesla Data)
+- Exercises 3-7 use GitHub Copilot (NO Tesla Data -- reinforced during setup)
+- Agent exercises use only public/non-Tesla data
+- Policy reminder embedded in VS Code setup exercise
 
-### Tools Continued
+### Tools Introduced
 
-- Bottle Rocket (go.tesla.com/chat) -- advanced usage with multiple models
-  - Model comparison across Claude, Gemini, Grok
+- Bottle Rocket (go.tesla.com/chat) -- continued from Week 1
+  - Advanced prompting techniques
   - Data analysis capabilities
+- GitHub Copilot (in VS Code) -- **NEW this week**
+  - Chat, Edit, and Agent modes
+  - Opus 4.5 model selection
+  - NO Tesla Data policy
+- Playwright MCP -- **NEW this week**
+  - Browser automation skill for agents
+  - First MCP tool installation experience
 
 ### Homework Assignment
 
 **Time Required:** ~45 minutes
 
-1. Build 2 additional operations templates using advanced prompting techniques (CoT or Few-Shot)
+1. Use Agent Mode for 2 real tasks (non-Tesla data): create a report template, build a simple tool
 2. Track time savings daily (target: 20-30 min/day)
-3. Bring a real dataset from your DC to Week 3 (headcount, throughput, safety, or similar)
-4. Continue building your prompt library (cumulative target: 10+ prompts)
+3. Explore: what other MCP skills exist? List 3 that would help your DC work
+4. Think about: what project would you automate if you could? (preparation for Week 4)
 
 ### Goals Addressed
 
-- Goal 2: Write advanced prompts (CoT, Few-Shot, Persona, structured outputs) without help
+- Goal 2: Write advanced prompts (CoT, Few-Shot, Persona) without help
 - Goal 4: Save 40-60 minutes daily (this week target: 20-30 min/day)
-- Goal 6: Analyze data with AI -- upload CSVs, extract trends, generate executive summaries
-- Goal 11: Teach their teams (template sharing, prompt playbook creation)
+- Goal 5: Use GitHub Copilot Agent Mode to build multi-file projects
+- Goal 6: Analyze data with AI (compressed exercise)
+- Goal 7: Give agents skills (MCP tools introduction)
+- Goal 9: Review AI-generated code (reading agent plans, git basics)
 
 ### Tesla Values Embedded
 
-- **Excellence:** Don't accept the first AI output -- iterate until it's great
-- **Speed:** Use templates to accelerate recurring tasks; compare models to find the fastest path
+- **Curiosity:** Explore what agents can do -- push boundaries, try new skills
+- **Speed:** Agents complete in minutes what takes hours manually
+- **Ownership:** You approve every step -- agents assist, you decide
 
 ---
 

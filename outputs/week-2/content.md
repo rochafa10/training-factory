@@ -1,8 +1,8 @@
-# Week 2: Prompt Engineering & Data Analysis
+# Week 2: Advanced Prompts & Your First Agent
 
 **Duration:** 240 minutes (4 hours)
 **Prerequisites:** Week 1 - AI Foundations & Policy Compliance
-**Tools Needed:** Laptop with browser access to go.tesla.com/chat (Bottle Rocket)
+**Tools Needed:** Laptop with browser access to go.tesla.com/chat (Bottle Rocket), VS Code installation capability
 
 ---
 
@@ -11,17 +11,20 @@
 This content is based on:
 - `outputs/week-2/research.md` (primary source)
 - `outputs/syllabus.md` (objectives)
+- `inputs/requirements.md` (learning goals 2, 5, 6, 7, 9)
 
 ---
 
 ## Learning Objectives
 
 By the end of this session, participants will be able to:
-1. Apply Chain-of-Thought, Few-Shot, and Persona-based prompting techniques to operations scenarios
-2. Analyze operations data (headcount, throughput, safety metrics) using AI
-3. Generate structured outputs: tables, checklists, formatted reports, executive summaries
-4. Build and organize a reusable personal prompt library
-5. Compare AI model outputs and select the best model for each task type
+1. Apply Chain-of-Thought, Few-Shot, and Persona prompting to operations data analysis
+2. Set up VS Code with GitHub Copilot (Chat, Edit, Agent modes)
+3. Understand what AI agents are and how they differ from chat
+4. Use Agent Mode to complete multi-step tasks autonomously
+5. Understand MCP (Model Context Protocol) and install a first skill
+6. Read agent plans and review agent-generated changes
+7. Debug and redirect agents when they make mistakes
 
 ---
 
@@ -29,1101 +32,583 @@ By the end of this session, participants will be able to:
 
 | Time | Section | Topic | Activity | Duration |
 |------|---------|-------|----------|----------|
-| 0:00 - 0:15 | 1 | Homework Review + Time Savings Check-in | Discussion | 15 min |
-| 0:15 - 0:30 | 2 | Advanced Prompting Techniques | Lecture + Examples | 15 min |
-| 0:30 - 0:55 | 3 | **Exercise 1:** Chain-of-Thought Analysis | Guided Exercise | 25 min |
-| 0:55 - 1:05 | 4 | Operations Use Cases Overview | Lecture | 10 min |
-| 1:05 - 1:15 | 4B | Power Automate — Automation Beyond Prompts | Lecture | 10 min |
-| **1:15 - 1:25** | -- | **BREAK** | | **10 min** |
-| 1:25 - 1:50 | 5 | **Exercise 2:** Build 3 Operations Templates | Independent Practice | 25 min |
-| 1:50 - 2:15 | 6 | Data Analysis with AI | Lecture + Live Demo | 25 min |
-| 2:15 - 2:45 | 7 | **Exercise 3:** Analyze a Sample DC Dataset | Independent Practice | 30 min |
-| **2:45 - 2:55** | -- | **BREAK** | | **10 min** |
-| 2:55 - 3:10 | 8 | Structured Outputs | Lecture + Demo | 15 min |
-| 3:10 - 3:30 | 9 | Building Your Personal Prompt Library | Workshop | 20 min |
-| 3:30 - 3:50 | 10 | **Exercise 4:** Model Comparison Challenge | Independent Practice | 20 min |
-| 3:50 - 4:05 | 11 | Share & Discuss + Key Takeaways | Peer Learning | 15 min |
-| 4:05 - 4:10 | 12 | Homework | Lecture | 5 min |
-| **TOTAL** | | | | **250 min** |
+| 0:00 - 0:10 | 1 | Homework Review & Wins | Peer Sharing | 10 min |
+| 0:10 - 0:15 | 2 | Advanced Prompting Techniques | Concept Intro | 5 min |
+| 0:15 - 0:45 | 3 | **Exercise 1:** CoT + Data Analysis Sprint | Hands-On | 30 min |
+| 0:45 - 0:55 | 4 | **Exercise 2:** Template Speed Build | Hands-On | 10 min |
+| **0:55 - 1:05** | -- | **BREAK** | | **10 min** |
+| 1:05 - 1:10 | 5 | What Is an AI Agent? | Concept Intro | 5 min |
+| 1:10 - 1:30 | 6 | **Exercise 3:** VS Code + Copilot Setup | Guided Setup | 20 min |
+| 1:30 - 1:35 | 7 | Copilot Modes: Chat vs Edit vs Agent | Concept Intro | 5 min |
+| 1:35 - 2:00 | 8 | **Exercise 4:** Your First Agent Mode Task | Hands-On | 25 min |
+| **2:00 - 2:10** | -- | **BREAK** | | **10 min** |
+| 2:10 - 2:15 | 9 | MCP Tools: Giving Agents Skills | Concept Intro | 5 min |
+| 2:15 - 2:40 | 10 | **Exercise 5:** Install & Use First MCP Skill | Hands-On | 25 min |
+| 2:40 - 2:45 | 11 | Reading Agent Plans & Git Basics | Concept Intro | 5 min |
+| 2:45 - 3:15 | 12 | **Exercise 6:** Agent Builds a Real Tool | Hands-On | 30 min |
+| 3:15 - 3:40 | 13 | **Exercise 7:** Debug & Redirect an Agent | Hands-On | 25 min |
+| 3:40 - 4:00 | 14 | Share Results + Key Takeaways + Homework | Peer Discussion | 20 min |
+| **TOTAL** | | | | **240 min** |
 
-**Time Validation:** 15 + 15 + 25 + 10 + 10 + 10 + 25 + 25 + 30 + 10 + 15 + 20 + 20 + 15 + 5 = **250 min**
+**Time Validation:** 10 + 5 + 30 + 10 + 10 + 5 + 20 + 5 + 25 + 10 + 5 + 25 + 5 + 30 + 25 + 20 = **240 min**
 
-**Hands-on Time:** ~135 min (54%) — Exercise 1 (25) + Exercise 2 (25) + Exercise 3 (30) + Prompt Library workshop (20) + Exercise 4 (20) + Peer sharing (15)
-**Instruction/Demo Time:** ~115 min (46%)
+**Hands-on Time:** ~195 min (81%)
+**Concept Intros:** ~25 min (10%)
+**Breaks:** ~20 min (8%)
 
 ---
 
-## Section 1: Homework Review - Best Prompts
+## Section 1: Homework Review & Wins
 
-**Duration:** 15 minutes
-**Objective:** Share learnings and celebrate successes from Week 1 homework
+**Duration:** 10 minutes
+**Activity:** Peer Sharing
 
-### Key Concept
+### Content
 
-Learning accelerates when we share what works. Your Week 1 homework asked you to build a 5-prompt library and track time savings. Today we'll see what you discovered.
+Welcome back! Before we dive into today's session, let's hear about your wins from last week.
 
-> **From Research:** "Trained users are 2x more productive, saving 11 hours per week compared to 5 hours for untrained users."
-> **Source:** research.md, Key Statistics (LSE Report)
+**Quick Round (2 minutes each x 5 AGMs):**
+- What was your **best prompt** this week? What made it work?
+- What was your **worst prompt**? What went wrong?
+- How much time did you save? (Target was 15-20 min/day)
 
-### Discussion Framework
+**Facilitator Notes:**
+- Celebrate specific wins publicly
+- Note common challenges for the group
+- If anyone saved 30+ min/day, ask them to explain how
+- If someone struggled, pair them with a successful peer
 
-1. **Share a Win:** What prompt worked best for you this week?
-2. **Share a Challenge:** What didn't work as expected?
-3. **Time Saved:** How much time did your prompts save?
-
-### Common Patterns to Highlight
-
-Based on typical Week 1 experiences, watch for these discussion points:
-- Prompts that were too vague got generic responses
-- Adding FORMAT dramatically improved usefulness
-- Real context (your DC, your situation) made outputs relevant
-
-> **From Research:** "20.5% of frequent AI users report saving 4+ hours weekly at work."
-> **Source:** research.md, Key Statistics (ITIF May 2025)
-
-### Speaker Notes
-
-```
-TIMING: 15 minutes
-
-SAY: "Before we dive into new techniques, let's celebrate your progress. Last week you started building your prompt library. Who wants to share a prompt that worked really well?"
-
-ASK: "What made that prompt work? What did you include that made the difference?"
-
-DEMO: If someone shares a great prompt, consider projecting it and analyzing why it works using the ROLE + CONTEXT + TASK + FORMAT framework.
-
-NOTE: If participants report struggles, normalize this. "That's exactly why we're here today - to level up from basic to advanced techniques."
-
-TRANSITION: "Great insights! Now let's build on that foundation with three advanced techniques that will take your prompts to the next level."
-```
+> **SPEAKER NOTES:** Keep this fast. Two minutes per person, strict timekeeper. The energy from sharing wins sets the tone. If time runs short, ask for best prompt only. Transition: "Now let's level up your prompting with three powerful techniques."
 
 ---
 
 ## Section 2: Advanced Prompting Techniques
 
-**Duration:** 10 minutes
-**Objective:** Understand three advanced techniques that dramatically improve AI outputs
-
-### Key Concept
-
-The basic ROLE + CONTEXT + TASK + FORMAT formula gets you started. But for complex operations tasks - analyzing safety incidents, planning labor, creating performance summaries - you need more powerful techniques.
-
-> **From Research:** "Chain-of-thought prompting improves complex reasoning accuracy by 20-40% on multi-step problems."
-> **Source:** research.md, Key Concepts - Chain-of-Thought Prompting
-
-### Technique 1: Chain-of-Thought (CoT) Prompting
-
-**What it is:** Asking AI to show its reasoning step-by-step before giving an answer.
-
-**When to use it:** Complex analysis, root cause investigations, multi-factor decisions.
-
-**How to trigger it:**
-- Add "Let's think step by step"
-- Ask "Walk me through your reasoning"
-- Structure: "First analyze X, then consider Y, finally recommend Z"
-
-> **From Research:** "CoT decomposes multi-step problems into intermediate steps, which increases the likelihood of getting the right answer and enables models to allocate more compute to problems that require more reasoning steps."
-> **Source:** research.md, Key Concepts - Chain-of-Thought Prompting
-
-**Example - Before vs After:**
-
-| Without CoT | With CoT |
-|-------------|----------|
-| "Why did our overtime increase last week?" | "Analyze our overtime increase step by step: First, list possible causes. Then evaluate each against our data. Finally, identify the most likely root causes and recommend actions." |
-
----
-
-### Technique 2: Few-Shot Prompting
-
-**What it is:** Providing 2-5 examples of the input-output pattern you want before making your actual request.
-
-**When to use it:** Standardized formats, consistent tone, classification tasks.
-
-**Best practices:**
-- Use 2-5 examples (more isn't better)
-- Keep formatting identical across examples
-- Use clear prefixes (Input:, Output:)
-
-> **From Research:** "Few-shot prompting uses 2-5 examples in prompts to guide LLM behavior, with performance plateauing after 4-5 demonstrations."
-> **Source:** research.md, Key Concepts - Few-Shot Prompting
-
-**Example - Shift Handoff Format:**
-```
-Convert notes into a handoff summary:
-
-Example 1:
-Notes: Conveyor B down 2 hrs. 847 orders. Short 2 pickers.
-Summary: Conveyor B experienced 2-hour downtime (resolved). Processed 847 orders despite being short-staffed by 2 pickers.
-
-Example 2:
-Notes: Record day 1200 orders. No issues. New hire started.
-Summary: Record volume day with 1,200 orders processed. No issues. New hire began training.
-
-Now convert:
-Notes: Power outage 30 min. 956 orders. Safety walk done.
-Summary:
-```
-
----
-
-### Technique 3: Persona-Based (Role) Prompting
-
-**What it is:** Assigning AI a specific expert role with detailed characteristics to shape its responses.
-
-**When to use it:** Different audiences need different styles - technical reports for leadership, motivational messages for teams.
-
-**How to make it effective:**
-- Be specific (not just "expert" - specify years, specialization)
-- Add personality traits (professional, direct, friendly)
-- Include audience context
-
-> **From Research:** "A strong prompt doesn't just say 'You are a marketing expert.' It says, 'You are a senior marketing strategist known for concise, data-driven recommendations.'"
-> **Source:** research.md, Key Concepts - Persona-Based Prompting
-
-**Example - Enhanced Role:**
-
-| Basic Role | Enhanced Role |
-|------------|---------------|
-| "You are an operations manager." | "You are a senior distribution center manager with 15 years of experience in high-volume fulfillment. You're known for clear, data-driven communication and practical recommendations that front-line teams can actually implement." |
-
----
-
-### The Power Stack
-
-For the most complex operations tasks, combine all three techniques:
-
-```
-ROLE: [Enhanced persona with specifics]
-
-CONTEXT: [Your situation with relevant data]
-
-TASK: [What you need, with CoT instruction]
-"Analyze step by step: First..., Then..., Finally..."
-
-FORMAT: [Desired output structure]
-
-EXAMPLES (if needed): [2-3 examples of desired format]
-```
-
-### Speaker Notes
-
-```
-TIMING: 10 minutes
-
-SAY: "Last week you learned the basics: ROLE, CONTEXT, TASK, FORMAT. Today we're adding three power-ups that transform good prompts into great ones."
-
-ASK: "How many of you had a prompt last week where the AI's response was technically correct but not quite what you needed?" (Hands will go up)
-
-SAY: "That's the gap these techniques fill. Let me show you the three techniques, then you'll practice each one."
-
-DEMO: Show the Before vs After slide for each technique briefly. Don't deep-dive - they'll learn by doing in the exercises.
-
-TRANSITION: "Let's put chain-of-thought to work on a real operations challenge."
-```
-
----
-
-## Section 3: Exercise 1 - Chain-of-Thought Prompts
-
-**Duration:** 25 minutes
-**Objective:** Apply chain-of-thought prompting to complex operations analysis
-
-### Exercise Overview
-
-Participants will use chain-of-thought prompting to analyze a realistic operations challenge: investigating why a DC missed its productivity target.
-
-> **From Research:** "The 5-Whys methodology, a proven root cause analysis technique, addresses [surface] limitation by systematically challenging each answer with additional 'why' questions until investigators reach true root causes."
-> **Source:** research.md, Operations Use Cases - Safety Incident Root Cause Analysis
-
-### The Scenario
-
-Your DC missed its productivity target (units processed per labor hour) by 8% last week. Leadership wants to know why and what to do about it.
-
-**Data provided:**
-- Monday: 95% of target (normal)
-- Tuesday: 92% of target (2 call-outs)
-- Wednesday: 78% of target (conveyor issue for 3 hours)
-- Thursday: 88% of target (running behind on orders)
-- Friday: 85% of target (still catching up)
-
-### Without CoT (What NOT to do)
-
-```
-Why did we miss our productivity target by 8% last week?
-```
-
-*This will get a generic answer that doesn't help.*
-
-### With CoT (What TO do)
-
-```
-ROLE: You are an operations analyst helping a distribution center manager understand a productivity shortfall.
-
-CONTEXT: Our DC missed its weekly productivity target by 8%. Here's the daily breakdown:
-- Monday: 95% (normal)
-- Tuesday: 92% (2 call-outs)
-- Wednesday: 78% (conveyor down 3 hours)
-- Thursday: 88% (running behind)
-- Friday: 85% (catching up)
-
-TASK: Analyze this step by step:
-1. First, calculate the impact of each day's shortfall
-2. Then, identify which day had the biggest impact and why
-3. Next, trace the root cause - was it one event or multiple?
-4. Finally, recommend 2-3 specific actions to prevent recurrence
-
-FORMAT: Use numbered sections matching the steps above. Include specific percentages and calculations where relevant.
-```
-
-### Success Criteria
-
-A good CoT response will:
-- Show calculations for each day's impact
-- Identify Wednesday's conveyor issue as the trigger
-- Note the cascade effect (Thursday/Friday were recovery)
-- Recommend conveyor maintenance improvements, not just "work harder"
-
-### Common Mistakes
-
-**Mistake 1:** Skipping the "step by step" instruction
-- Why it happens: Seems unnecessary
-- How to avoid: Always include explicit reasoning instructions
-- **Source:** research.md, Common Pitfalls
-
-**Mistake 2:** Not providing data for analysis
-- Why it happens: Assuming AI will figure it out
-- How to avoid: Include specific numbers and dates in CONTEXT
-- **Source:** research.md, Common Pitfalls
-
-### Speaker Notes
-
-```
-TIMING: 25 minutes (5 min setup, 15 min practice, 5 min share)
-
-SAY: "Now you'll practice chain-of-thought on a real scenario. Open Bottle Rocket and let's work through a productivity investigation together."
-
-DEMO: Show the scenario and the CoT prompt structure. Walk through why each section matters.
-
-DURING PRACTICE: Circulate and help participants who get stuck. Common issues:
-- Forgetting to include the data in CONTEXT
-- Not being specific in the step-by-step instructions
-- Not specifying a clear FORMAT
-
-ASK (during share): "What did the step-by-step approach reveal that a simple question wouldn't have?"
-
-TRANSITION: "Great work! Now let's talk about the specific operations tasks where these techniques really shine."
-```
-
----
-
-## Section 4: Operations Use Cases Overview
-
-**Duration:** 10 minutes
-**Objective:** Understand high-value operations use cases for advanced prompting
-
-### Key Concept
-
-Advanced prompting techniques are most valuable for complex, recurring operations tasks. We'll focus on five high-impact areas where AI can save significant time.
-
-> **From Research:** "Professionals using AI save an average of 7.5 hours per week - worth around $14,000 per employee per year in productivity gains."
-> **Source:** research.md, Key Statistics (LSE Global Report 2025)
-
-### The Five High-Impact Use Cases
-
-#### 1. Labor Planning & Productivity Analysis
-
-**Challenge:** Forecasting staffing needs and identifying productivity patterns across shifts.
-
-**Why AI helps:** Can analyze multiple variables (volume, absenteeism, seasonality) simultaneously.
-
-> **From Research:** "Workforce capacity planning using AI-driven recommendations achieves measurable improvements: determining the right number of people with the right skills at the right time becomes less of an art and more of a science."
-> **Source:** research.md, Operations Use Cases - Labor Planning
-
-**Template Preview:**
-```
-ROLE: Workforce analytics expert with DC operations experience
-
-CONTEXT: [Your staffing levels, productivity data, upcoming events]
-
-TASK: Analyze our labor situation and provide:
-1. Staffing gap analysis
-2. Productivity improvement opportunities
-3. Recommended schedule adjustments
-4. Cost impact of recommendations
-
-FORMAT: Tables for data, bullets for recommendations
-```
-
----
-
-#### 2. Safety Incident Root Cause Analysis (5-Whys)
-
-**Challenge:** Moving beyond surface causes to identify systemic issues that prevent recurrence.
-
-**Why AI helps:** Systematically explores multiple root cause pathways without bias.
-
-> **From Research:** "Human and organizational performance (HOP) principles emphasize that the vast majority of incidents reflect system failures rather than worker failures."
-> **Source:** research.md, Operations Use Cases - Safety Incident Root Cause Analysis
-
-**Template Preview:**
-```
-ROLE: Safety investigation specialist trained in HOP principles
-
-CONTEXT: [Incident details, known factors]
-
-TASK: Conduct a 5-Whys analysis:
-1. Start with what happened
-2. Ask "Why?" at least 5 times
-3. Identify system failures, not individual blame
-4. Recommend corrective actions addressing root causes
-
-FORMAT: Number each Why level clearly
-```
-
----
-
-#### 3. Vendor Communication Templates
-
-**Challenge:** Maintaining professional relationships while addressing performance issues.
-
-**Why AI helps:** Drafts professional communications quickly with the right tone.
-
-> **From Research:** "Rather than spending hours crafting emails asking suppliers about delayed shipments or quality issues, managers can provide AI with context about the supplier relationship, the specific issue, and the desired tone."
-> **Source:** research.md, Operations Use Cases - Vendor Communication
-
-**Template Preview:**
-```
-ROLE: Operations manager maintaining professional vendor relationships
-
-CONTEXT: [Vendor name, relationship history, specific issue, business impact]
-
-TASK: Draft a professional email that:
-1. Acknowledges the relationship
-2. States the issue with specific facts
-3. Explains business impact
-4. Requests specific action
-
-FORMAT: Professional but firm, under 200 words
-```
-
----
-
-#### 4. KPI Dashboard Narratives
-
-**Challenge:** Converting raw metrics into insights that explain "what happened and why."
-
-**Why AI helps:** Quickly identifies meaningful patterns and generates executive-ready narratives.
-
-> **From Research:** "AI-assisted KPI dashboard systems combine real-time data integration, automated analysis, anomaly detection, and narrative generation to transform raw performance data into business intelligence."
-> **Source:** research.md, Operations Use Cases - KPI Dashboard Narrative Generation
-
-**Template Preview:**
-```
-ROLE: Data analyst translating metrics into leadership insights
-
-CONTEXT: [Your KPI data - paste weekly metrics]
-
-TASK: Generate a narrative summary:
-1. Top 3 significant changes (good or bad)
-2. Likely causes for each change
-3. Trends requiring attention
-4. Recommended actions
-
-FORMAT: Executive summary first, then details
-```
-
----
-
-#### 5. SOP Documentation
-
-**Challenge:** Creating and maintaining clear procedures that frontline employees actually follow.
-
-**Why AI helps:** Structures information clearly and maintains consistent format across procedures.
-
-> **From Research:** "Well-designed SOPs establish clear expectations for how tasks should be performed, reduce variation, accelerate employee onboarding, and create organizational memory that doesn't depend on individual employee tenure."
-> **Source:** research.md, Operations Use Cases - SOP Documentation
-
-**Template Preview:**
-```
-ROLE: Technical writer for non-technical audiences
-
-CONTEXT: [Process name, current state, audience, changes needed]
-
-TASK: Create an SOP including:
-1. Purpose and scope
-2. Required equipment/access
-3. Step-by-step procedure
-4. Quality checkpoints
-5. Troubleshooting common issues
-
-FORMAT: Numbered steps (max 10), simple language, bold safety warnings
-```
-
-### Speaker Notes
-
-```
-TIMING: 10 minutes
-
-SAY: "These five use cases are where AI delivers the biggest return for operations managers. Each one is a task you probably do weekly - or should be doing but don't have time for."
-
-ASK: "Which of these five resonates most with your weekly challenges?" (Take a quick poll)
-
-SAY: "In the next exercise, you'll build templates for three of these. Focus on the ones most relevant to your DC."
-
-DEMO: Quickly show one template preview on screen. Don't go deep - they'll build these in the exercise.
-
-TRANSITION: "Before our break, let me show you how these use cases connect to something bigger — automation that runs without you."
-```
-
----
-
-## Section 4B: Power Automate — Automation Beyond Prompts
-
-**Duration:** 10 minutes
-**Objective:** Understand how Power Automate extends AI prompting with recurring automation
-
-### Key Concept
-
-The prompts you've been building are powerful — but they require you to run them manually each time. Power Automate takes automation further by executing workflows automatically on schedules or triggers.
-
-> **From Research:** "Microsoft Power Automate enables organizations to automate repetitive tasks across applications and services, with over 400 pre-built connectors including SharePoint, Outlook, Teams, and Excel."
-> **Source:** Microsoft Power Automate Documentation 2025
-
-### What Power Automate Does
-
-Power Automate offers three types of automation:
-
-| Type | What It Does | Example |
-|------|--------------|---------|
-| **Desktop Flows (RPA)** | Automate mouse/keyboard actions on local apps | Clicking through legacy systems, copying data between applications |
-| **Cloud Flows** | Triggered workflows across cloud services | When email arrives → extract attachment → save to SharePoint |
-| **Process Flows** | Multi-step approval chains | PO request → Manager approval → Finance review → Vendor notification |
-
-> **From Research:** "RPA (Robotic Process Automation) can reduce process cycle times by 30-50% and achieve ROI within 6-9 months for well-selected use cases."
-> **Source:** Gartner RPA Market Report 2024
-
-### Connection to Today's Use Cases
-
-The five operations use cases from Section 4 become even more powerful with Power Automate:
-
-| Section 4 Use Case | Manual Approach | Power Automate Approach |
-|--------------------|-----------------|-------------------------|
-| **KPI Dashboard Narratives** | Run prompt daily, copy/paste data | Scheduled flow runs at 7 AM, sends narrative to your inbox |
-| **Weekly Reports** | Remember to run every Friday | Triggered when data refreshes in SharePoint |
-| **Vendor Communication** | Draft email, send manually | Automated with approval step before sending |
-| **Labor Planning** | Run analysis when you remember | Weekly trigger analyzes and alerts if gaps detected |
-| **SOP Documentation** | Manual updates | Version-controlled with approval workflow |
-
-### Power Automate vs. AI Prompts
-
-Understanding when to use each tool:
-
-| Aspect | AI Prompts (Bottle Rocket) | Power Automate |
-|--------|---------------------------|----------------|
-| **Execution** | One-time: you ask, AI answers | Recurring: runs on schedule or trigger |
-| **Interaction** | Conversational, iterative | Set-and-forget, automated |
-| **Best for** | Complex analysis, creative tasks, ad-hoc questions | Repetitive workflows, data movement, approvals |
-| **Requires** | Your time and attention each run | Initial setup, then runs independently |
-
-**The Combination:** Build your prompt in Bottle Rocket → test and refine → convert to Power Automate flow for recurring execution.
-
-### Why This Matters
-
-For operations managers, the combination of AI prompts + Power Automate creates a force multiplier:
-
-1. **Morning Briefings:** Your KPI narrative prompt runs automatically at 6 AM, waiting in your inbox before you arrive
-2. **Exception Alerts:** Safety metrics automatically flagged when thresholds exceeded
-3. **Report Distribution:** Weekly summaries generated and sent to leadership without your involvement
-4. **Vendor Escalations:** Delayed shipments trigger automatic follow-up sequences
-
-> **From Research:** "Organizations combining AI with process automation report 40-60% greater productivity gains compared to using either technology alone."
-> **Source:** McKinsey Digital 2024
-
-### Policy Status
-
-**Power Automate is fully approved at Tesla** for use with Tesla data.
-
-| Requirement | Details |
-|-------------|---------|
-| **Approval Status** | Fully approved — can process Tesla data |
-| **Data Retention** | Must follow Tesla data retention policies |
-| **Automation Review** | Review automation logic before activating |
-| **Access** | Available through Office 365 license |
-
-**No additional approval required** — unlike external AI tools, Power Automate is part of the approved Microsoft ecosystem.
-
-### Preview: Week 4
-
-In Week 4, you'll get hands-on with Power Automate:
-- Build your first automated flow
-- Connect Bottle Rocket prompts to scheduled triggers
-- Create approval workflows for your DC
-- Set up exception-based alerts
-
-Today's focus: understanding what's possible. Week 4: building it yourself.
-
-### Common Mistakes
-
-**Mistake 1:** Automating before perfecting the manual process
-- Why it happens: Excitement about automation
-- How to avoid: Run your prompt manually 5+ times before automating. Fix issues when you can iterate quickly.
-
-**Mistake 2:** Creating overly complex flows
-- Why it happens: Trying to handle every edge case
-- How to avoid: Start with simple flows (one trigger, one action). Add complexity only when needed.
-
-**Mistake 3:** Forgetting to test with real data
-- Why it happens: Using sample data during setup
-- How to avoid: Always test with actual DC data before activating. Check outputs for the first week.
-
-### Speaker Notes
-
-```
-TIMING: 10 minutes
-
-SAY: "Everything we've covered today — the prompts, the templates, the data analysis — is powerful. But it still requires you to run it manually. Power Automate takes the next step."
-
-DEMO: If time permits, show a simple Power Automate flow (can be a screenshot or short video):
-- Example: "When new email arrives from supplier X → extract attachment → save to DC folder → send Teams notification"
-
-ASK: "Which of the five use cases would save you the most time if it ran automatically every day?"
-
-SAY: "The key insight is this: AI prompts are for thinking tasks. Power Automate is for repeating tasks. Together, they multiply your capacity."
-
-SAY: "Power Automate is fully approved at Tesla — you can use it with Tesla data right now. In Week 4, we'll build these flows together."
-
-TRANSITION: "Let's take our break. When we come back, you'll build your own operations templates."
-```
-
----
-
-## Section 5: Break
-
 **Duration:** 5 minutes
+**Activity:** Concept Intro
 
-### Speaker Notes
+### Content
 
+Three techniques that take your prompts from good to great -- 90 seconds each.
+
+**1. Chain-of-Thought (CoT)** -- Force step-by-step reasoning
+- Add "Analyze step by step" or number your analysis steps
+- AI shows its work: calculations, logic, conclusions
+- Best for: complex analysis, root cause investigation, planning
+- *Source: Wei et al. research shows 20-40% accuracy improvement on complex reasoning -- Research Reference 1*
+
+**2. Few-Shot** -- Teach by example
+- Show 2-3 examples of the exact output format you want
+- AI learns your pattern and replicates it consistently
+- Best for: reports, shift handoffs, standardized communications
+- *Source: Research shows 2-5 examples optimal, quality beats quantity -- Research Reference 2*
+
+**3. Enhanced Persona** -- Assign specific expertise
+- "You are a [specific role] with [X years] experience, known for [trait]"
+- More specific = better output ("warehouse safety specialist" > "expert")
+- Best for: communications, analysis, planning documents
+- *Source: Specific roles outperform generic ones -- Research Reference 3*
+
+**The Formula Upgrade:**
 ```
-TIMING: 5 minutes
-
-SAY: "Let's take 5 minutes. When we come back, you'll be building your personal template library for operations tasks."
-
-NOTE: Use this time to reset the room energy. Check that everyone's Bottle Rocket is working.
+Week 1: ROLE + CONTEXT + TASK + FORMAT
+Week 2: ENHANCED ROLE + CONTEXT + STRUCTURED TASK (with CoT) + FORMAT (with examples)
 ```
+
+> **SPEAKER NOTES:** This is a 5-minute speed round. Show one slide per technique with a before/after example. Don't teach deeply -- they'll learn by doing in Exercise 1. The key message: "You already know the formula. These three upgrades make it dramatically better." Transition directly to Exercise 1.
 
 ---
 
-## Section 6: Exercise 2 - Build 3 Operations Templates
-
-**Duration:** 25 minutes
-**Objective:** Create reusable prompt templates for high-value operations tasks
-
-### Exercise Overview
-
-Each participant will create three complete prompt templates they can use repeatedly for their actual work.
-
-### Instructions
-
-1. **Choose 3 use cases** from the five covered (or propose your own)
-2. **Build each template** using the advanced techniques learned today
-3. **Test each template** in Bottle Rocket with real (or realistic) data
-4. **Refine based on output** - iteration is expected!
-
-### Template Quality Checklist
-
-For each template, verify:
-- [ ] Has enhanced ROLE (not just "expert")
-- [ ] CONTEXT has placeholders for your real data
-- [ ] TASK uses CoT structure where appropriate
-- [ ] FORMAT specifies exact output structure
-- [ ] Tested in Bottle Rocket with real or realistic input
-- [ ] Output was useful for your actual work
-
-### Example: Complete Labor Planning Template
-
-```
-ROLE: You are a workforce analytics expert with 10 years of experience in distribution center operations. You're known for practical recommendations that balance cost efficiency with service levels.
-
-CONTEXT:
-I manage the [SHIFT] shift at the [DC NAME] distribution center.
-- Current headcount: [NUMBER] associates
-- Average productivity: [NUMBER] units per labor hour
-- Upcoming challenge: [DESCRIBE - e.g., peak season, new product launch]
-- Historical pattern: [ANY RELEVANT TRENDS]
-
-TASK: Analyze our labor situation step by step:
-1. First, calculate our current capacity vs. projected demand
-2. Then, identify any staffing gaps or overstaffing by area
-3. Next, consider productivity improvement opportunities
-4. Finally, recommend specific actions with cost implications
-
-FORMAT:
-- Summary table showing current vs. needed headcount by area
-- Bullet points for each recommendation
-- Include estimated cost impact where possible
-- Keep total under 400 words
-```
-
-### Common Mistakes
-
-**Mistake 1:** Making templates too generic
-- Why it happens: Trying to create "one prompt to rule them all"
-- How to avoid: Create specific templates for specific tasks; use [PLACEHOLDERS] for variable data
-- **Source:** research.md, Common Pitfalls
-
-**Mistake 2:** Forgetting to test with real data
-- Why it happens: Template "looks good" on paper
-- How to avoid: Always test with actual (or realistic) numbers from your DC
-- **Source:** research.md, Common Pitfalls
-
-### Speaker Notes
-
-```
-TIMING: 25 minutes (5 min setup, 18 min build, 2 min check)
-
-SAY: "Now you're building templates you'll actually use at work. Choose three use cases that matter to your DC. Use the template quality checklist to make sure each one is complete."
-
-DEMO: Show the complete Labor Planning template as an example of what "complete" looks like.
-
-DURING PRACTICE:
-- Circulate and provide feedback
-- Encourage testing with real data
-- Push participants to be MORE specific, not less
-- If someone finishes early, have them create a 4th template
-
-WATCH FOR:
-- Generic roles ("You are an expert")
-- Missing placeholders for context
-- No CoT structure in complex tasks
-- Missing format specifications
-
-TRANSITION: "Keep your templates open - we're going to compare how different models handle the same prompt."
-```
-
----
-
-## Section 7: Data Analysis with AI
-
-**Duration:** 25 minutes
-**Objective:** Learn to present data to AI and extract insights, trends, and executive summaries
-
-### Key Concept
-
-AI can transform raw operations data into actionable insights in minutes instead of hours. The key is knowing how to present data and what to ask for.
-
-### Three Ways to Present Data to AI
-
-#### 1. Paste Tables Directly
-Copy data from spreadsheets into Bottle Rocket. AI reads structured text well — include headers and units.
-
-**Example prompt:**
-```
-Here's our weekly throughput data. Target UPH is 150, headcount budget is 38.
-
-Week | Orders | UPH | Headcount | Safety | OT Hours
-W1   | 12,450 | 142 | 38        | 0      | 45
-W2   | 13,100 | 148 | 38        | 1      | 52
-...
-
-Identify trends, flag anomalies, and recommend actions.
-```
-
-#### 2. Upload Files
-Drag & drop PDFs, Excel spreadsheets, or images directly into Bottle Rocket. Supported formats: .xlsx, .csv, .pdf, images.
-
-#### 3. Describe the Structure
-Tell AI what the data represents, what units mean, and what "good" looks like.
-
-**Example:** "UPH means units per hour. Our target is 150. Anything below 130 is a concern."
-
-### What to Ask For
-
-| Request Type | Example Prompt Addition |
-|---|---|
-| Trends | "Identify trends over the 6-week period" |
-| Outliers | "Flag any values that are significantly above or below average" |
-| Comparisons | "Compare morning vs. afternoon shift performance" |
-| Root causes | "What might explain the W3 and W6 dips?" |
-| Executive summary | "Write a 200-word executive summary for my VP" |
-
-### Speaker Notes
-
-```
-TIMING: 25 minutes (10 min lecture, 15 min demo)
-
-SAY: "Until now we've been giving AI text prompts. Now we're going to give it data. This is where AI saves the most time for operations managers."
-
-DEMO: Live demo with sample data — paste the weekly operations table into Bottle Rocket:
-1. First, just paste data and ask "What do you see?"
-2. Then, use CoT: "Step by step: 1) Calculate averages, 2) Flag anomalies, 3) Identify causes, 4) Recommend actions"
-3. Show the quality difference between simple and structured prompts
-
-ASK: "How long would this analysis take you manually?"
-
-SAY: "AI doesn't replace your judgment. It gets you to 80% in 2 minutes instead of 45. You spend your time on the 20% that requires your expertise."
-
-TRANSITION: "Now you'll try this with a sample dataset. Open Bottle Rocket."
-```
-
----
-
-## Section 8: Exercise 3 - Analyze a Sample DC Dataset
+## Section 3: Exercise 1 -- CoT + Data Analysis Sprint
 
 **Duration:** 30 minutes
-**Objective:** Apply data analysis techniques to realistic operations data
+**Activity:** Hands-On (Bottle Rocket)
 
-### The Dataset
+*See `exercises.md` Exercise 1 for full instructions, data, and troubleshooting.*
 
-| Week | Orders | UPH | Headcount | Safety Incidents | OT Hours |
-|------|--------|-----|-----------|-----------------|----------|
-| W1 | 12,450 | 142 | 38 | 0 | 45 |
-| W2 | 13,100 | 148 | 38 | 1 | 52 |
-| W3 | 11,800 | 135 | 35 | 0 | 68 |
-| W4 | 14,200 | 151 | 40 | 2 | 38 |
-| W5 | 13,900 | 146 | 39 | 0 | 41 |
-| W6 | 12,100 | 128 | 36 | 1 | 72 |
+### Summary
 
-**Context:** Target UPH: 150. Headcount budget: 38.
+This exercise combines chain-of-thought prompting with data analysis in two parts:
 
-### Instructions
+**Part A (15 min): CoT Productivity Analysis**
+- AGMs receive a week of DC performance data (daily breakdown)
+- First: try a simple prompt ("What do you see in this data?")
+- Then: use a structured CoT prompt with numbered analysis steps
+- Compare the depth and quality of both outputs
 
-1. Paste the dataset into Bottle Rocket
-2. Ask AI to identify the top 3 trends
-3. Ask AI to flag any anomalies or concerns
-4. Generate an executive summary (under 200 words)
-5. Compare: run the same data with a simple prompt vs. a CoT prompt
+**Part B (15 min): Structured Data Analysis**
+- AGMs receive 6 weeks of operations data (orders, fill rate, overtime, headcount, safety)
+- Use CoT + enhanced persona to extract trends, correlations, and recommendations
+- Output must include a trend summary table and specific action items
 
-### Success Criteria
+**Key Teaching Point:** The difference between "asking AI a question" and "instructing AI to analyze systematically." CoT transforms vague observations into actionable analysis.
 
-A good analysis will:
-- Identify that W3 and W6 have correlated low UPH, low headcount, and high OT
-- Note that W4 had the best UPH but also the most safety incidents
-- Suggest investigating the relationship between understaffing, OT, and safety
-- Provide actionable recommendations (not just "improve UPH")
-
-### Speaker Notes
-
-```
-TIMING: 30 minutes (5 min setup, 20 min practice, 5 min share)
-
-SAY: "Copy the dataset from the slide and paste it into Bottle Rocket. Remember to include the targets in your context."
-
-DURING PRACTICE:
-- Circulate and review outputs
-- Ask participants to compare their simple prompt vs. CoT results
-- Encourage follow-up questions ("drill deeper on W6")
-- Watch for participants who verify AI's calculations
-
-ASK (during share): "What did AI catch that you might have missed manually? What did it get wrong?"
-
-TRANSITION: "Let's take a 10-minute break. When we come back, we'll talk about getting AI to always give you the exact format you need."
-```
+> **SPEAKER NOTES:** Walk the room during this exercise. Common issue: AGMs will skip Part A and go straight to Part B. Encourage them to do Part A first -- seeing the quality difference is the learning moment. If anyone finishes early, challenge them to add their own DC data. Transition: "Now let's build templates you'll use every week."
 
 ---
 
-## Section 9: Structured Outputs
+## Section 4: Exercise 2 -- Template Speed Build
 
-**Duration:** 15 minutes
-**Objective:** Learn to get AI to output in consistent, reusable formats
+**Duration:** 10 minutes
+**Activity:** Hands-On (Bottle Rocket)
 
-### Key Concept
+*See `exercises.md` Exercise 2 for full instructions.*
 
-The FORMAT component of your prompts determines whether AI output is immediately usable or requires heavy editing. Mastering structured outputs saves editing time on every task.
+### Summary
 
-### Four Output Format Types
+Quick exercise: build 1-2 reusable prompt templates using the advanced techniques just practiced.
 
-#### 1. Tables
-**Prompt pattern:** "Present this as a table with columns for [X], [Y], [Z]"
-**Best for:** Comparisons, data summaries, schedules
+**Instructions:**
+1. Pick your most frequent weekly task (KPI report, shift handoff, vendor email, labor plan)
+2. Build a template using ENHANCED ROLE + CoT TASK + FORMAT with examples
+3. Test it with real or realistic data
+4. Save it to your prompt library
 
-#### 2. Checklists
-**Prompt pattern:** "Create a checklist with checkboxes for each step"
-**Best for:** SOPs, audit prep, onboarding
+**Success Criteria:**
+- Template uses at least one Week 2 technique (CoT, Few-Shot, or enhanced persona)
+- Template has [PLACEHOLDERS] for variable data
+- Tested and produces work-ready output
 
-#### 3. Formatted Reports
-**Prompt pattern:** "Write an executive summary with: headline, 3 key findings, recommendation"
-**Best for:** Leadership updates, weekly reports
-
-#### 4. Markdown
-**Prompt pattern:** "Format using Markdown with headers, bold, and bullet points"
-**Best for:** Documentation, knowledge base articles
-
-### Template Output Patterns
-
-| Pattern | How to Use |
-|---|---|
-| Fill-in-the-blank | "Generate a [REPORT TYPE] for [AUDIENCE] covering [TOPIC]" |
-| Fixed headers | "Use these exact sections: Summary, Findings, Actions, Timeline" |
-| Length limits | "Keep each section under 50 words" or "Total under 200 words" |
-| Tone matching | "Match the tone of this example: [paste example]" |
-| Output chaining | Use one AI output as input for the next prompt |
-
-### Speaker Notes
-
-```
-TIMING: 15 minutes (10 min lecture, 5 min examples)
-
-SAY: "The FORMAT section of your prompt is the most overlooked. When you're specific about format, AI gives you something you can use immediately instead of spending 10 minutes reformatting."
-
-DEMO: Show same content in 4 formats:
-1. "Summarize this meeting" → unstructured paragraph
-2. "Summarize in a table" → organized comparison
-3. "3 bullet points, under 20 words each" → concise and actionable
-4. "Executive summary with headline, findings, recommendation" → ready for VP
-
-ASK: "Which format would your VP prefer? Which would your team prefer?"
-
-SAY: "The right format depends on the audience. Build format specifications into your templates."
-
-TRANSITION: "Now let's organize everything you've built today into a prompt library you can use every day."
-```
+> **SPEAKER NOTES:** This is intentionally short. One template, done well. They already built templates in Week 1 -- this is an upgrade pass. If someone is stuck, point them to the labor planning or KPI narrative template from the prompt library. Transition to break: "Take 10 minutes. When we come back, everything changes -- we're going from chatting with AI to commanding AI agents."
 
 ---
 
-## Section 10: Building Your Personal Prompt Library
-
-**Duration:** 20 minutes
-**Objective:** Organize, version, and share prompts for daily use
-
-### Key Concept
-
-A prompt library is your collection of tested, reusable prompts organized by use case. It compounds your productivity over time.
-
-### How to Organize
-
-| Frequency | Category | Examples |
-|---|---|---|
-| Daily | Quick tasks | Standup summary, email drafts, schedule review |
-| Weekly | Reports & analysis | KPI narratives, labor planning, safety reviews |
-| Monthly | Deep work | Root cause analysis, executive presentations, SOPs |
-
-### Prompt Naming Convention
-
-| Don't | Do |
-|---|---|
-| "Prompt 3" | "Weekly KPI Narrative - CoT" |
-| "Labor thing" | "Shift Planning Analysis v2" |
-| "Email" | "Vendor Issue Communication - Persona+" |
-
-### Versioning Tips
-
-- Note what you changed and why (v1 → v2: "added specific UPH targets")
-- Track which prompts save the most time
-- Share best prompts across DCs
-
-### Speaker Notes
-
-```
-TIMING: 20 minutes (5 min lecture, 15 min workshop)
-
-SAY: "You've been building prompts all day. Now let's organize them so you can actually find and use them tomorrow."
-
-WORKSHOP INSTRUCTIONS:
-1. Open a document (OneNote, email draft, shared doc)
-2. Organize your prompts from today into daily/weekly/monthly categories
-3. For each: add a clear title, when to use it, and the full template
-4. Identify 2-3 prompts to share with a peer AGM
-
-DURING WORKSHOP:
-- Circulate and review organization approaches
-- Encourage clear naming (not "Prompt 3")
-- Ask: "Where will you save these so you actually use them?"
-- Nudge towards sharing: "What's working for Tampa might help Greenville"
-
-TRANSITION: "One more exercise — let's compare how different models handle the same prompt."
-```
+## BREAK (10 minutes)
 
 ---
 
-## Section 11: Exercise 4 - Model Comparison Challenge
-
-**Duration:** 20 minutes
-**Objective:** Understand which Bottle Rocket model works best for different tasks
-
-### Key Concept
-
-Bottle Rocket gives you access to multiple AI models. Each has different strengths. Knowing which to use for which task will make you more effective.
-
-> **From Research:** "Organizations are adopting multi-model strategies that leverage each platform's specific strengths rather than depending on a single solution."
-> **Source:** research.md, Model Comparison section
-
-### Model Comparison Quick Reference
-
-| Model | Best For | Strengths |
-|-------|----------|-----------|
-| **Claude** | Writing, complex analysis | Best writing style, follows complex instructions |
-| **Gemini** | Large documents, speed | 1M token context, fastest responses |
-| **Grok** | Real-time info, math | Live data access, mathematical reasoning |
-
-### Instructions
-
-1. **Select one template** from your Exercise 2 work
-2. **Run it on your default model** (Qwen 3 30B)
-3. **Run the same prompt on a different model** (Claude, Gemini, or Grok)
-4. **Compare the outputs** using the scorecard
-
-### Comparison Scorecard
-
-| Criteria | Model 1: _____ | Model 2: _____ |
-|----------|---------------|---------------|
-| Speed | | |
-| Format adherence | | |
-| Content quality | | |
-| Instruction following | | |
-| **Winner for this task** | | |
-
-### Speaker Notes
-
-```
-TIMING: 20 minutes (3 min setup, 12 min compare, 5 min discuss)
-
-SAY: "Bottle Rocket isn't just one AI - it's multiple models optimized for different tasks. Let's see the difference in action."
-
-DEMO: Show how to switch models in Bottle Rocket (model selector at top of chat).
-
-ASK (during comparison): "What differences are you noticing?"
-
-DURING DISCUSSION:
-- Have 2-3 participants share their comparison findings
-- Highlight that there's no "best" model - only best for specific tasks
-- Connect findings to the Model Selection Guide
-
-SAY: "The goal isn't to memorize which model does what. It's to know that you have options, and to experiment when a model isn't giving you what you need."
-
-TRANSITION: "Let's close by sharing the best templates and techniques you've discovered today."
-```
-
----
-
-## Section 12: Share & Discuss + Key Takeaways
-
-**Duration:** 15 minutes
-**Objective:** Peer learning, cross-DC template sharing, and reinforcement of key concepts
-
-### Discussion Framework
-
-1. **Share your best template** (2-3 volunteers)
-2. **What technique made the biggest difference?** (CoT, Few-Shot, Persona)
-3. **Which model surprised you?**
-4. **What will you use first at work tomorrow?**
-
-> **From Research:** "Among frequent AI users, 27% save over 9 hours per week, with some 'superusers' reclaiming 20+ hours weekly."
-> **Source:** research.md, Key Statistics
-
-### Key Takeaways
-
-1. **Chain-of-thought prompting** forces step-by-step reasoning — improves complex analysis by 20-40%
-2. **Few-shot examples** (2-5) teach AI your exact output format — no more guessing
-3. **AI can analyze your DC data in minutes** — trends, outliers, and executive summaries from raw numbers
-4. **Structured outputs** save editing time — specify FORMAT explicitly every time
-5. **Your prompt library is your competitive edge** — organize, version, and share across DCs
-6. **Different models have different strengths** — match the model to the task for best results
-
----
-
-## Section 13: Homework
+## Section 5: What Is an AI Agent?
 
 **Duration:** 5 minutes
-**Objective:** Set homework expectations and time savings targets
+**Activity:** Concept Intro
 
-### Homework Assignment (~45 minutes)
+### Content
 
-1. **Build 2 additional templates** using advanced prompting techniques (CoT or Few-Shot)
-2. **Track time savings daily** (target: 20-30 min/day)
-3. **Bring a real dataset** from your DC to Week 3 (headcount, throughput, safety, or similar)
-4. **Continue building your prompt library** (cumulative target: 10+ prompts)
+**The Big Idea:** Until now, you've been *chatting* with AI -- asking questions, getting answers. An AI agent is different. An agent can *do work* autonomously.
 
-### Time Savings Log (Week 2)
+**Chat vs Agent:**
 
-| Task | Time Without AI | Time With AI | Savings |
-|------|-----------------|--------------|---------|
-| Data analysis | ___ min | ___ min | ___ min |
-| Report drafting | ___ min | ___ min | ___ min |
-| Email/comms | ___ min | ___ min | ___ min |
-| **Weekly Total** | | | **___ min** |
+| | Chat (Bottle Rocket) | Agent (Copilot Agent Mode) |
+|---|---|---|
+| **You say** | "Write me a report" | "Build me a reporting tool" |
+| **AI does** | Writes text in the chat window | Creates files, writes code, runs commands |
+| **Output** | Text you copy-paste | Working files on your computer |
+| **Steps** | One response | Multiple steps, asks for approval |
+| **Autonomy** | None -- you do everything | High -- agent plans and executes |
 
-### Speaker Notes
+**The Plan-Execute-Iterate Loop:**
+1. **Plan** -- Agent reads your request and creates a step-by-step plan
+2. **Execute** -- Agent carries out each step (creating files, writing code, running commands)
+3. **Iterate** -- You review the output, provide feedback, agent adjusts
 
+**Real-World Analogy:** Chat AI is like asking a colleague for advice. An agent is like delegating a task to a capable assistant who goes and does it, checking in with you at key decision points.
+
+**Why This Matters for You:**
+- Agents can build tools you'll use daily (dashboards, trackers, report generators)
+- Agents can process data across multiple files
+- Agents can automate multi-step workflows
+- You stay in control -- agents ask before taking action
+
+*Source: GitHub Copilot Agent Mode documentation; Anthropic Claude Code documentation -- Research Reference 4*
+
+> **SPEAKER NOTES:** This is the "aha moment" slide. The key insight: agents DO work, chat SUGGESTS work. Use the analogy heavily -- asking for advice vs. delegating a task. Don't go deep on technical details. They'll experience it hands-on in 5 minutes. Transition: "Let's set up the tool that makes this possible."
+
+---
+
+## Section 6: Exercise 3 -- VS Code + Copilot Setup
+
+**Duration:** 20 minutes
+**Activity:** Guided Setup
+
+*See `exercises.md` Exercise 3 for full step-by-step instructions and troubleshooting.*
+
+### Summary
+
+Guided setup with the entire group. Everyone finishes with a working VS Code + Copilot installation.
+
+**Steps:**
+1. Download and install VS Code (3 min)
+2. Install GitHub Copilot extension (2 min)
+3. Sign in with GitHub account (3 min)
+4. Select Opus 4.5 model (2 min)
+5. Verify: send first Copilot Chat message (2 min)
+6. Troubleshoot any issues (8 min buffer)
+
+**Critical Policy Reminder:**
+> **GitHub Copilot is CONDITIONALLY approved. NO Tesla Data in Copilot -- ever.**
+> - No Tesla metrics, employee names, vendor details, or internal processes
+> - Use generic/fictional data for all Copilot exercises
+> - Bottle Rocket (go.tesla.com/chat) remains the tool for Tesla data
+> - Reference: go.tesla.com/aitools
+
+> **SPEAKER NOTES:** This is a setup exercise, not a lecture. Walk the room. Have IT support on standby for login issues. The biggest blocker will be GitHub account creation/sign-in. Have backup accounts ready. Do NOT move on until everyone has Copilot Chat working. The 8-min buffer handles stragglers. Transition: "Now let me show you the three things Copilot can do."
+
+---
+
+## Section 7: Copilot Modes -- Chat vs Edit vs Agent
+
+**Duration:** 5 minutes
+**Activity:** Concept Intro
+
+### Content
+
+GitHub Copilot has three modes. Each is right for different situations.
+
+**Chat Mode** (like Bottle Rocket)
+- Ask questions, get answers
+- "How do I calculate overtime cost?"
+- Output: text in a chat panel
+- Use when: you need information or ideas
+
+**Edit Mode** (targeted changes)
+- Highlight code/text, ask for specific changes
+- "Make this table sort by date"
+- Output: changes to specific files
+- Use when: you know exactly what to change
+
+**Agent Mode** (autonomous work)
+- Describe a task, agent plans and executes
+- "Build me a dashboard that tracks weekly KPIs"
+- Output: multiple files created, code written, commands run
+- Use when: you want something *built*, not just *written about*
+
+**How to Switch Modes:**
+- Chat: click the chat icon in the sidebar (or Ctrl+Shift+I)
+- Edit: select text, right-click, "Copilot > Edit"
+- Agent: in Chat panel, select "Agent" from the mode dropdown at the top
+
+**Model Selection:**
+- Select **Claude Opus 4.5** for best results (premium model, 300 requests/month)
+- Available in the model dropdown within the Chat panel
+
+*Source: GitHub Copilot documentation -- Research Reference 5*
+
+> **SPEAKER NOTES:** Quick demo showing all three modes. Don't dwell -- they'll use Agent Mode hands-on next. The key point: Chat is what they know, Agent is what they're about to learn. Edit is for later. Transition: "Let's put Agent Mode to work."
+
+---
+
+## Section 8: Exercise 4 -- Your First Agent Mode Task
+
+**Duration:** 25 minutes
+**Activity:** Hands-On (Copilot Agent Mode)
+
+*See `exercises.md` Exercise 4 for full instructions and troubleshooting.*
+
+### Summary
+
+First hands-on experience with Agent Mode. The agent creates something real.
+
+**The Task:** Ask the agent to create a shift summary template.
+
+**What AGMs Will Experience:**
+1. Type a task description in Agent Mode
+2. Watch the agent create a plan
+3. Read the plan before approving
+4. Watch the agent create files step by step
+5. Review the finished output
+6. Iterate: ask the agent to improve something
+
+**Key Teaching Points:**
+- Agents show you their plan BEFORE executing -- you're always in control
+- You can approve or reject each step
+- The output is real files on your computer, not just chat text
+- Iteration works just like Bottle Rocket -- "make the header bigger" or "add a section for safety"
+
+**Comparison Moment:** "You spent 25 minutes building templates in Bottle Rocket (Exercise 2). The agent just built a more complex template in 5 minutes. That's the power of agents."
+
+> **SPEAKER NOTES:** This is the most important exercise of the day. Walk the room constantly. Common issues: (1) Agent asks to run terminal commands -- guide AGMs to approve "safe" commands like creating files. (2) Agent creates code they don't understand -- reassure them they don't need to read code, just review the output. (3) Someone's agent gets stuck -- show them how to type "start over" or "try a different approach." The "aha" is when they see a file appear on their screen that the agent created. Transition: "The agent just did something impressive. But it was limited to writing files. What if we could give it new abilities?"
+
+---
+
+## BREAK (10 minutes)
+
+---
+
+## Section 9: MCP Tools -- Giving Agents Skills
+
+**Duration:** 5 minutes
+**Activity:** Concept Intro
+
+### Content
+
+**The Big Idea:** Right now, your Copilot agent can read files, write files, and run commands. That's it. MCP tools give it new abilities -- like installing apps on your phone.
+
+**What is MCP?**
+- MCP stands for **Model Context Protocol**
+- It's a standard way to give AI agents new skills
+- Think of it as a plug-in system: each MCP tool adds a new capability
+- Created by Anthropic, now an open standard used across the industry
+
+*Source: Anthropic MCP documentation -- Research Reference 6*
+
+**The Phone Analogy:**
+
+| Phone | AI Agent |
+|-------|----------|
+| Out of the box: calls, texts, camera | Out of the box: read files, write files, run commands |
+| Install Maps app: can navigate | Install Playwright MCP: can browse websites |
+| Install banking app: can transfer money | Install Database MCP: can query databases |
+| Install Slack: can message teams | Install API MCP: can connect to services |
+
+**MCP Tools Available:**
+
+| MCP Tool | What It Does | Example Use |
+|----------|-------------|-------------|
+| **Playwright** | Browse websites, fill forms, extract data | Check a public dashboard, pull data from a website |
+| **Filesystem** | Read/write files in a directory | Organize reports, process CSV data |
+| **Memory** | Remember facts across sessions | Store DC conventions, remember KPIs |
+| **Fetch** | Call web APIs | Pull data from external services |
+
+**Before vs After:**
+
+Without MCP:
+> "Check the weather forecast for our DC locations" --> Agent: "I can't access the internet."
+
+With Playwright MCP:
+> "Check the weather forecast for our DC locations" --> Agent opens weather site, reads forecast, creates a summary.
+
+*Source: Model Context Protocol specification, Anthropic -- Research Reference 6*
+
+> **SPEAKER NOTES:** The phone analogy is the key teaching tool. Everyone understands installing apps. The before/after example makes it concrete. Don't explain the technical details of MCP -- just the concept of "giving agents new abilities." They'll install one themselves next. Transition: "Let's install your agent's first skill."
+
+---
+
+## Section 10: Exercise 5 -- Install & Use First MCP Skill
+
+**Duration:** 25 minutes
+**Activity:** Hands-On (VS Code + MCP)
+
+*See `exercises.md` Exercise 5 for full step-by-step instructions and troubleshooting.*
+
+### Summary
+
+AGMs install the Playwright MCP tool and watch their agent gain browser automation capabilities.
+
+**The Experience:**
+1. Install Playwright MCP in VS Code (5 min guided)
+2. Give agent a task it couldn't do before: "Go to [public website] and get [information]" (10 min)
+3. Watch the agent navigate a real website, extract data, and report back
+4. Compare: try the same task WITHOUT the MCP tool (5 min)
+5. Discuss: what other skills would help your DC work? (5 min)
+
+**Key Teaching Points:**
+- MCP tools are easy to install -- one configuration step
+- Each tool gives the agent a genuinely new capability
+- You can mix multiple tools (Playwright + Filesystem = browse + save)
+- The agent asks for permission before using new skills
+
+> **SPEAKER NOTES:** Pre-test the public website URL before the session to make sure it works. A good choice: a public logistics or weather site. The "aha" moment is when the agent opens a browser and navigates on its own. Common issue: Playwright installation may require npm -- have instructions ready. If someone can't install, pair them with a neighbor to watch. Transition: "Your agent now has a skill. Let me show you how to review what agents do."
+
+---
+
+## Section 11: Reading Agent Plans & Git Basics
+
+**Duration:** 5 minutes
+**Activity:** Concept Intro
+
+### Content
+
+**Why This Matters:** Agents can create and modify many files at once. You need to know what they changed before you accept it.
+
+**Reading Agent Plans:**
+- Before executing, agents show you what they plan to do
+- Read the plan like a to-do list: "I will create file X, then modify file Y, then run command Z"
+- You can say: "Yes, go ahead" or "No, change your approach" or "Do step 1 but skip step 3"
+
+**What Is Git? (30-second version)**
+- Git tracks changes to files -- like "Track Changes" in Word, but for everything
+- When an agent modifies files, git shows you exactly what changed
+- Green = added, Red = removed
+- You can undo any change the agent made
+
+**Reading a Diff (What Changed):**
 ```
-TIMING: 5 minutes
-
-SAY: "Your homework has two parts: build 2 more templates, and — this is important — bring a real dataset from your DC to Week 3. We'll be doing more data analysis."
-
-SAY: "Your time savings log is your proof that this training is working. Track it daily."
-
-ASK: "Any questions about the homework or what we covered today?"
-
-SAY: "Next week we're moving to a whole new level: VS Code, GitHub Copilot, and Agent Mode. Great work today!"
+- Old text that was removed (shown in red)
++ New text that was added (shown in green)
 ```
 
----
+**The Approval Workflow:**
+1. Agent proposes changes
+2. You review the diff (what changed)
+3. You accept (keep changes) or reject (undo changes)
+4. If rejected, tell the agent what to do differently
 
-## Research Citation Log
+**Key Rule:** Never accept changes you don't understand. Ask the agent to explain what it did and why.
 
-| Section | Citations | Source Sections Referenced |
-|---------|-----------|---------------------------|
-| Section 1: Homework Review | 2 | Key Statistics |
-| Section 2: Advanced Techniques | 4 | Key Concepts (CoT, Few-Shot, Persona) |
-| Section 3: Exercise 1 | 2 | Operations Use Cases, Common Pitfalls |
-| Section 4: Use Cases Overview | 5 | Operations Use Cases (all 5) |
-| Section 4B: Power Automate | 3 | Microsoft Power Automate Documentation, Gartner RPA Report, McKinsey Digital |
-| Section 6: Exercise 2 | 1 | Common Pitfalls |
-| Section 7: Data Analysis | 2 | Key Statistics, Operations Use Cases |
-| Section 8: Exercise 3 | 1 | Operations Use Cases |
-| Section 9: Structured Outputs | 1 | Key Concepts |
-| Section 10: Prompt Library | 1 | Key Statistics |
-| Section 11: Model Comparison | 2 | Model Comparison |
-| Section 12: Share & Discuss | 1 | Key Statistics |
-| **Total** | **25** | |
+*Source: Git documentation, GitHub Copilot documentation -- Research Reference 7*
+
+> **SPEAKER NOTES:** This is intentionally surface-level. They don't need to learn git commands -- just the concept of reviewing changes. Show one example diff on screen. The key message: "You can always undo." This builds confidence for the next two exercises where agents will do more complex work. Transition: "Now let's have the agent build something real."
 
 ---
 
-## Terminology Introduced
+## Section 12: Exercise 6 -- Agent Builds a Real Tool
 
-| Term | Definition | First Used |
-|------|------------|------------|
-| Chain-of-Thought (CoT) | Prompting technique that encourages AI to show step-by-step reasoning | Week 2 |
-| Few-Shot Prompting | Providing 2-5 examples before making a request | Week 2 |
-| Persona-Based Prompting | Assigning AI a specific role with detailed characteristics | Week 2 |
-| Context Window | Maximum text an AI can process in a single interaction | Week 2 |
-| 5-Whys Analysis | Root cause investigation asking "why" iteratively | Week 2 |
-| Structured Output | Specific output format specified in the FORMAT section of a prompt | Week 2 |
-| Prompt Library | Organized collection of tested, reusable prompt templates | Week 2 |
-| Output Chaining | Using one AI output as input for the next prompt | Week 2 |
-| Power Automate | Microsoft platform for automating workflows across applications | Week 2 |
-| Desktop Flow (RPA) | Robotic Process Automation that automates mouse/keyboard actions on local apps | Week 2 |
-| Cloud Flow | Triggered workflow that runs across cloud services (schedule, email, data change) | Week 2 |
-| Process Flow | Multi-step approval chain automation | Week 2 |
-| ROLE + CONTEXT + TASK + FORMAT | The prompt formula from Week 1 | Week 1 (continued) |
-| Bottle Rocket | Tesla's approved AI chat tool | Week 1 (continued) |
-| Tesla Data | Company-confidential information per AI policy | Week 1 (continued) |
+**Duration:** 30 minutes
+**Activity:** Hands-On (Copilot Agent Mode)
 
----
+*See `exercises.md` Exercise 6 for full instructions and troubleshooting.*
 
-## Sources Used
+### Summary
 
-All content derived from:
-- `outputs/week-2/research.md` - 22 citations
-- `outputs/syllabus.md` - objectives and structure
+The flagship exercise of the day. The agent builds a time-savings tracking dashboard -- a real HTML page that AGMs can actually use going forward.
 
----
+**The Task:**
+Ask the agent to build a simple HTML dashboard that:
+- Has a form to enter: Task name, time without AI, time with AI
+- Calculates time saved automatically
+- Shows a running total of weekly savings
+- Uses Tesla branding (red accent, clean design)
 
-## Quality Gate Checklist
+**What AGMs Will Experience:**
+1. Describe the tool to the agent in plain English (3 min)
+2. Watch the agent create a plan (review and approve) (2 min)
+3. Agent creates HTML, CSS, and JavaScript files (10 min)
+4. Open the dashboard in a browser and test it (5 min)
+5. Ask the agent to improve it: "Add a weekly goal of 30 minutes" (5 min)
+6. Review what the agent changed (git diff concept) (5 min)
 
-| Check | Requirement | Status |
-|-------|-------------|--------|
-| Research citations | 3+ per major section | ✅ 25 total across 13 sections |
-| Speaker notes | Present for all sections | ✅ All 14 sections have notes |
-| Examples | All from research (not invented) | ✅ All sourced |
-| Statistics | All cited from research | ✅ All cited |
-| Terminology | Consistent with Week 1 | ✅ Verified |
-| Time estimates | Total = 250 minutes | ✅ 250 min |
-| Citation log | Complete and accurate | ✅ Complete |
-| Hands-on ratio | 54% target | ✅ ~135 min (54%) |
+**Key Teaching Points:**
+- You described what you wanted in English. The agent built it.
+- Multi-step: plan, create files, write code, test -- all autonomous
+- Iteration: you can refine just like with Bottle Rocket
+- The result is a working tool you keep and use
+
+> **SPEAKER NOTES:** This exercise produces a tangible artifact they'll use for the rest of the course. Pre-build a reference version to show if anyone gets stuck. The biggest "wow" is when they open the HTML file in a browser and see a working dashboard. If an agent generates something that doesn't work, use it as a teaching moment: "This is why we review before we accept." Transition: "The agent did great work. But what happens when it doesn't?"
 
 ---
 
-*Content updated: February 2026*
-*Expanded from 120 min to 240 min per syllabus*
-*Based on: Week 2 Research + Syllabus*
-*Total Citations: 22*
+## Section 13: Exercise 7 -- Debug & Redirect an Agent
+
+**Duration:** 25 minutes
+**Activity:** Hands-On (Copilot Agent Mode)
+
+*See `exercises.md` Exercise 7 for full instructions and troubleshooting.*
+
+### Summary
+
+Agents make mistakes. This exercise teaches AGMs how to handle it.
+
+**Part A (10 min): Deliberately Vague Instructions**
+Give the agent a task with intentionally vague instructions:
+> "Make me a tool for my DC"
+
+Watch what happens:
+- Agent will ask clarifying questions (good behavior)
+- Or agent will make assumptions and build something generic (common behavior)
+- Review the output: is this what you wanted? Probably not.
+
+Then redirect:
+> "Stop. I need a tool that specifically tracks daily headcount by shift. It should have fields for each shift (Day, Swing, Night) and calculate total vs. target."
+
+Watch how the agent adjusts.
+
+**Part B (15 min): Catch and Fix a Mistake**
+Give the agent a clear task but with a constraint it might miss:
+> "Build an HTML page that shows our DC's KPIs. Use these numbers: [provide data]. Make sure the page fits on one screen without scrolling."
+
+The agent may:
+- Create a page that scrolls (missed the constraint)
+- Use wrong colors (didn't know Tesla palette)
+- Include unnecessary complexity
+
+Practice the fix workflow:
+1. Identify what's wrong
+2. Tell the agent specifically: "The page scrolls -- reduce the font size and remove the footer"
+3. Watch the agent fix it
+4. Review the diff: what changed?
+
+**Key Teaching Points:**
+- Vague instructions = vague results (same as Bottle Rocket, but higher stakes)
+- You can always redirect: "Stop. Instead, do X"
+- You can always undo: "Revert those changes"
+- Specific feedback gets specific fixes
+- Agents learn from your corrections within the same session
+
+> **SPEAKER NOTES:** This is intentionally frustrating at first. That's the point. The learning happens when they realize vague instructions cause problems and specific redirects fix them. Pair this with the Week 1 lesson about iteration. Key phrase to teach: "Stop. I need you to..." -- this is how you redirect. Transition to final sharing session.
+
+---
+
+## Section 14: Share Results + Key Takeaways + Homework
+
+**Duration:** 20 minutes
+**Activity:** Peer Discussion
+
+### Content
+
+**Show & Tell (12 min):**
+Each AGM shows the most impressive thing their agent built today:
+- The time-savings dashboard from Exercise 6
+- Any improvements they made
+- One thing that surprised them about agents
+
+**Key Takeaways (3 min):**
+
+1. **CoT + Few-Shot + Persona** upgrade your prompts from good to great
+2. **Agents DO work, chat SUGGESTS work** -- that's the fundamental difference
+3. **MCP tools give agents new skills** -- like installing apps on a phone
+4. **You stay in control** -- agents plan, you approve
+5. **Specific instructions = specific results** -- same rule as prompting, higher stakes with agents
+
+**Week 2 Skills Summary:**
+
+| Skill | Practiced In |
+|-------|-------------|
+| Chain-of-thought prompting | Exercise 1 |
+| Data analysis with AI | Exercise 1 |
+| Template creation | Exercise 2 |
+| VS Code + Copilot setup | Exercise 3 |
+| Agent Mode basics | Exercise 4 |
+| MCP tool installation | Exercise 5 |
+| Multi-step agent builds | Exercise 6 |
+| Agent debugging | Exercise 7 |
+
+**Homework (5 min):**
+
+**Time Required:** ~45 minutes
+
+1. **Use Agent Mode for 2 tasks** (non-Tesla data): create a report template, build a simple calculator, or generate a formatted checklist (~20 min)
+2. **Track time savings daily** using your new dashboard (target: 20-30 min/day) (~5 min/day)
+3. **Explore MCP tools**: research what other MCP skills exist. List 3 that would help your DC work (~10 min)
+4. **Think ahead**: what project would you automate if you could? Write a 2-sentence description (~10 min)
+
+**Looking Ahead -- Week 3:**
+Next week goes deeper into agents:
+- Voice Mode for rapid dictation (3-5x faster than typing)
+- Advanced Agent Mode workflows
+- Multi-skill agent configurations
+- Agent file access and workspace context
+- Building more complex tools
+
+> **SPEAKER NOTES:** The show-and-tell is important -- it builds confidence and cross-pollinates ideas. If time is short, have each AGM show their dashboard in 1 minute. The homework is designed to build muscle memory with Agent Mode before Week 3 goes deeper. The "think ahead" question seeds the Week 4 personal project. End on energy: "You went from chatting with AI to commanding an AI agent -- in one afternoon."
+
+---
+
+## Content Citation Log
+
+| Section | Citations from research.md | Verified |
+|---------|---------------------------|----------|
+| Section 2: Advanced Prompting | CoT (Wei et al.), Few-Shot (PromptHub, DigitalOcean), Persona (ExpertPrompting) | Yes |
+| Section 3: Exercise 1 | CoT improvement 20-40% (Prompt Engineering Guide), Few-shot 2-5 optimal | Yes |
+| Section 5: What Is an Agent? | Agent architectures (GitHub Copilot docs, Anthropic docs) | Yes |
+| Section 7: Copilot Modes | GitHub Copilot documentation | Yes |
+| Section 9: MCP Tools | Anthropic MCP specification, Model Context Protocol docs | Yes |
+| Section 11: Git Basics | Git documentation, GitHub Copilot documentation | Yes |
+
+---
+
+## Policy Compliance Verification
+
+| Check | Status |
+|-------|--------|
+| Approved tools correctly identified | Bottle Rocket (Exercises 1-2) |
+| Conditional tools noted | GitHub Copilot - NO Tesla Data (Exercises 3-7) |
+| Policy reminder embedded | In Exercise 3 setup, repeated before each Copilot exercise |
+| Prohibited tools not recommended | ChatGPT, Claude.ai not mentioned as alternatives |
+| go.tesla.com/aitools referenced | Yes, in Exercise 3 |
+| Agent exercises use non-Tesla data | Yes, all Copilot exercises use generic/fictional data |
+
+---
+
+*Content created for Week 2: Advanced Prompts & Your First Agent*
+*Session length: 240 minutes | Hands-on: 81% | Concept intros: 10% | Breaks: 8%*
+*Primary Tools: Bottle Rocket (go.tesla.com/chat), GitHub Copilot (VS Code), Playwright MCP*
