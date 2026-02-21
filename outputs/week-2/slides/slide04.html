@@ -2,126 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 04 - Week 1 Wins</title>
+  <title>Slide 04 - Section Divider: Agents</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      width: 960px;
-      height: 540px;
-      background: #ffffff;
-      color: #000000;
+      width: 960px; height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
       font-family: Arial, sans-serif;
-      position: relative;
       overflow: hidden;
+      position: relative;
     }
-    .accent-bar {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 8px;
-      height: 100%;
-      background: #cc0000;
+    .section-block {
+      position: absolute; left: 0; top: 0;
+      width: 320px; height: 100%;
+      background: #e82127;
+      display: flex; align-items: center; justify-content: center;
     }
-    .container {
-      padding: 32px 40px 24px 48px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    .section-number {
+      font-size: 180px; font-weight: bold;
+      color: rgba(255, 255, 255, 0.15);
     }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 24px;
+    .section-content {
+      margin-left: 360px;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      height: 100%; padding: 40px;
     }
-    .main-content {
-      display: flex;
-      gap: 24px;
-      flex: 1;
-    }
-    .stat-card {
-      background: #f5f5f5;
-      border-radius: 12px;
-      border: 1px solid #e0e0e0;
-      padding: 24px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .stat-number {
-      font-size: 48px;
-      font-weight: bold;
-      color: #cc0000;
-      margin-bottom: 8px;
-    }
-    .stat-label {
-      font-size: 14px;
-      color: #666666;
+    .section-label {
+      font-size: 12px; text-transform: uppercase;
+      letter-spacing: 2px; color: #a0a0a0;
       margin-bottom: 16px;
     }
-    .stat-detail {
-      font-size: 12px;
-      color: #666666;
-    }
-    .discussion-box {
-      background: #f5f5f5;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-      padding: 16px 20px;
-      margin-top: 16px;
-    }
-    .discussion-title {
-      font-size: 12px;
-      color: #cc0000;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-    .discussion-item {
-      font-size: 13px;
-      color: #666666;
-      margin-bottom: 8px;
-      padding-left: 16px;
-      position: relative;
-    }
-    .discussion-item::before {
-      content: "?";
-      position: absolute;
-      left: 0;
-      color: #cc0000;
-      font-weight: bold;
-    }
+    h1 { font-size: 40px; font-weight: bold; margin-bottom: 16px; line-height: 1.2; }
+    .duration { font-size: 16px; color: #a0a0a0; }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="container">
-    <h1>What Did You Discover in Week 1?</h1>
-    <div class="main-content">
-      <div class="stat-card">
-        <div class="stat-number">7.5</div>
-        <div class="stat-label">Hours saved per week</div>
-        <div class="stat-detail">Average for trained AI users</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">2x</div>
-        <div class="stat-label">More productive</div>
-        <div class="stat-detail">Trained vs untrained users</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">20%</div>
-        <div class="stat-label">Save 4+ hours weekly</div>
-        <div class="stat-detail">Frequent AI users</div>
-      </div>
-    </div>
-    <div class="discussion-box">
-      <div class="discussion-title">Discussion Questions</div>
-      <div class="discussion-item">What prompt worked best for you this week?</div>
-      <div class="discussion-item">What didn't work as expected?</div>
-      <div class="discussion-item">How much time did your prompts save?</div>
-    </div>
+  <div class="section-block">
+    <span class="section-number">02</span>
+  </div>
+  <div class="section-content">
+    <div class="section-label">Part 2</div>
+    <h1>Meet Your<br>AI Agent</h1>
+    <p class="duration">From chatting with AI to commanding AI agents</p>
   </div>
 </body>
 </html>

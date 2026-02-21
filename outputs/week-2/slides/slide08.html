@@ -2,178 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 08 - Persona Prompting</title>
+  <title>Slide 08 - Copilot Three Modes</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      width: 960px;
-      height: 540px;
-      background: #ffffff;
-      color: #000000;
+      width: 960px; height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
       font-family: Arial, sans-serif;
-      position: relative;
       overflow: hidden;
+      position: relative;
     }
     .accent-bar {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 8px;
-      height: 100%;
-      background: #cc0000;
+      position: absolute; left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #e82127;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 32px 40px;
       height: 100%;
+      display: flex; flex-direction: column;
+    }
+    h1 { font-size: 28px; margin-bottom: 24px; }
+    .modes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px; flex: 1;
+    }
+    .mode {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
     }
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 20px;
+    .mode-chat { border-top: 4px solid #a0a0a0; }
+    .mode-edit { border-top: 4px solid #facc15; }
+    .mode-agent { border-top: 4px solid #4ade80; }
+    .mode-label {
+      font-size: 12px; text-transform: uppercase;
+      letter-spacing: 1px; margin-bottom: 8px;
     }
-    .technique-badge {
-      background: #cc0000;
-      color: #000000;
-      padding: 4px 12px;
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
+    .mode-chat .mode-label { color: #a0a0a0; }
+    .mode-edit .mode-label { color: #facc15; }
+    .mode-agent .mode-label { color: #4ade80; }
+    .mode-title {
+      font-size: 22px; font-weight: bold;
+      margin-bottom: 16px;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-    }
-    .main-content {
-      display: flex;
-      gap: 24px;
-      flex: 1;
-    }
-    .comparison {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .definition {
-      background: #f5f5f5;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-      padding: 16px;
-    }
-    .definition-label {
-      font-size: 11px;
-      color: #cc0000;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-    .definition-text {
-      font-size: 14px;
-      line-height: 1.5;
-      color: #666666;
-    }
-    .compare-box {
-      background: #f5f5f5;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-      padding: 16px;
-      flex: 1;
-    }
-    .compare-label {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .bad-label {
-      color: #f87171;
-    }
-    .good-label {
-      color: #4ade80;
-    }
-    .compare-text {
-      font-size: 13px;
-      line-height: 1.6;
-      font-family: monospace;
-      color: #666666;
-      background: #e0e0e0;
+    .mode-example {
+      font-size: 12px; color: #a0a0a0;
+      font-style: italic;
+      padding: 8px 12px;
+      background: #2a2a2a;
       border-radius: 6px;
-      padding: 10px;
-    }
-    .highlight {
-      color: #4ade80;
-    }
-    .tips {
-      width: 280px;
-    }
-    .tips-box {
-      background: #f5f5f5;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-      padding: 16px;
-    }
-    .tips-title {
-      font-size: 12px;
-      color: #cc0000;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       margin-bottom: 12px;
     }
-    .tip-item {
-      font-size: 12px;
-      margin-bottom: 10px;
-      padding-left: 16px;
-      position: relative;
-      color: #666666;
+    .mode-output {
+      font-size: 13px; color: #a0a0a0;
+      margin-bottom: 8px;
     }
-    .tip-item::before {
-      content: "\2192";
-      position: absolute;
-      left: 0;
-      color: #cc0000;
+    .mode-when {
+      font-size: 12px; color: #e82127;
+      margin-top: auto; font-weight: bold;
     }
+    .policy {
+      background: #2a1a1a;
+      border: 1px solid #e82127;
+      border-radius: 8px;
+      padding: 12px 24px;
+      margin-top: 16px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .policy strong { color: #e82127; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <div class="header">
-      <span class="technique-badge">Technique 3</span>
-      <h1>Persona-Based Prompting</h1>
+    <h1>GitHub Copilot: Three Modes</h1>
+    <div class="modes">
+      <div class="mode mode-chat">
+        <div class="mode-label">Familiar</div>
+        <div class="mode-title">Chat</div>
+        <div class="mode-example">"How do I calculate overtime cost?"</div>
+        <div class="mode-output">Output: text in chat panel</div>
+        <div class="mode-when">Use when: you need information</div>
+      </div>
+      <div class="mode mode-edit">
+        <div class="mode-label">Targeted</div>
+        <div class="mode-title">Edit</div>
+        <div class="mode-example">"Make this table sort by date"</div>
+        <div class="mode-output">Output: changes to specific files</div>
+        <div class="mode-when">Use when: you know what to change</div>
+      </div>
+      <div class="mode mode-agent">
+        <div class="mode-label">Autonomous</div>
+        <div class="mode-title">Agent</div>
+        <div class="mode-example">"Build me a KPI dashboard"</div>
+        <div class="mode-output">Output: multiple files created</div>
+        <div class="mode-when">Use when: you want something built</div>
+      </div>
     </div>
-    <div class="main-content">
-      <div class="comparison">
-        <div class="definition">
-          <div class="definition-label">What It Is</div>
-          <div class="definition-text">Assign AI a specific expert role with detailed characteristics to shape style, tone, and content focus.</div>
-        </div>
-        <div class="compare-box">
-          <div class="compare-label bad-label">&#10007; Basic Role</div>
-          <div class="compare-text">"You are an operations manager."</div>
-        </div>
-        <div class="compare-box">
-          <div class="compare-label good-label">&#10003; Enhanced Role</div>
-          <div class="compare-text">"You are a <span class="highlight">senior distribution center manager with 15 years of experience</span> in high-volume fulfillment. You're <span class="highlight">known for clear, data-driven communication</span> and practical recommendations."</div>
-        </div>
-      </div>
-      <div class="tips">
-        <div class="tips-box">
-          <div class="tips-title">Make It Effective</div>
-          <div class="tip-item">Add years of experience</div>
-          <div class="tip-item">Specify expertise area</div>
-          <div class="tip-item">Include personality traits</div>
-          <div class="tip-item">Describe what they're "known for"</div>
-          <div class="tip-item">Match persona to audience</div>
-        </div>
-      </div>
+    <div class="policy">
+      <strong>Policy:</strong> GitHub Copilot is conditionally approved. NO Tesla Data &mdash; ever. Use generic data only.
     </div>
   </div>
 </body>

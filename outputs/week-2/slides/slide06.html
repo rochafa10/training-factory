@@ -2,183 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 06 - Chain-of-Thought</title>
+  <title>Slide 06 - Plan Execute Iterate</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      width: 960px;
-      height: 540px;
-      background: #ffffff;
-      color: #000000;
+      width: 960px; height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
       font-family: Arial, sans-serif;
-      position: relative;
       overflow: hidden;
+      position: relative;
     }
     .accent-bar {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 8px;
-      height: 100%;
-      background: #cc0000;
+      position: absolute; left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #e82127;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 32px 40px;
       height: 100%;
-      display: flex;
-      flex-direction: column;
+      display: flex; flex-direction: column;
     }
-    .header {
+    h1 { font-size: 28px; margin-bottom: 32px; }
+    .flow {
       display: flex;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 20px;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
     }
-    .technique-badge {
-      background: #cc0000;
-      color: #000000;
-      padding: 4px 12px;
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-    }
-    .main-content {
-      display: flex;
-      gap: 24px;
-      flex: 1;
-    }
-    .left-col {
-      flex: 1;
-    }
-    .right-col {
-      flex: 1;
-    }
-    .definition {
-      background: #f5f5f5;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-    .definition-label {
-      font-size: 11px;
-      color: #cc0000;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-    .definition-text {
-      font-size: 14px;
-      line-height: 1.5;
-      color: #666666;
-    }
-    .stat-highlight {
-      background: linear-gradient(135deg, #cc0000, #990000);
-      border-radius: 8px;
-      padding: 16px;
+    .step {
+      width: 200px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 16px;
     }
-    .stat-number {
-      font-size: 36px;
-      font-weight: bold;
-      color: #ffffff;
+    .step-num {
+      width: 36px; height: 36px;
+      background: #e82127;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: bold;
+      margin: 0 auto 12px;
     }
-    .stat-label {
-      font-size: 12px;
-      color: rgba(255,255,255,0.8);
-    }
-    .trigger-list {
-      background: #f5f5f5;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-      padding: 16px;
-    }
-    .trigger-title {
-      font-size: 12px;
-      color: #cc0000;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-    }
-    .trigger-item {
-      font-size: 13px;
-      color: #666666;
+    .step-title {
+      font-size: 18px; font-weight: bold;
       margin-bottom: 8px;
-      padding: 8px 12px;
-      background: #e0e0e0;
-      border-radius: 4px;
-      font-family: monospace;
     }
-    .example-box {
-      background: #f5f5f5;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-      padding: 16px;
-      height: 100%;
+    .step-desc {
+      font-size: 12px; color: #a0a0a0;
+      line-height: 1.4;
     }
-    .example-label {
-      font-size: 11px;
-      color: #cc0000;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
+    .arrow {
+      font-size: 24px; color: #e82127;
     }
-    .example-code {
-      font-size: 12px;
-      line-height: 1.6;
-      color: #666666;
-      font-family: monospace;
-      white-space: pre-wrap;
-      background: #e0e0e0;
-      border-radius: 6px;
-      padding: 12px;
+    .you-control {
+      background: #1a1a1a;
+      border: 2px solid #4ade80;
+      border-radius: 12px;
+      padding: 20px 32px;
+      text-align: center;
+      margin-top: auto;
     }
-    .highlight {
-      color: #4ade80;
+    .you-control-title {
+      font-size: 16px; font-weight: bold;
+      color: #4ade80; margin-bottom: 8px;
+    }
+    .you-control-desc {
+      font-size: 13px; color: #a0a0a0;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <div class="header">
-      <span class="technique-badge">Technique 1</span>
-      <h1>Chain-of-Thought Prompting</h1>
+    <h1>How Agents Work: Plan &rarr; Execute &rarr; Iterate</h1>
+    <div class="flow">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">Plan</div>
+        <div class="step-desc">Agent reads your request and creates a step-by-step plan</div>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">Execute</div>
+        <div class="step-desc">Agent creates files, writes code, runs commands</div>
+      </div>
+      <div class="arrow">&rarr;</div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">Iterate</div>
+        <div class="step-desc">You review output, give feedback, agent adjusts</div>
+      </div>
     </div>
-    <div class="main-content">
-      <div class="left-col">
-        <div class="definition">
-          <div class="definition-label">What It Is</div>
-          <div class="definition-text">Ask AI to show its reasoning step-by-step before giving an answer. Forces structured thinking on complex problems.</div>
-        </div>
-        <div class="stat-highlight">
-          <div class="stat-number">20-40%</div>
-          <div class="stat-label">Improvement on complex reasoning</div>
-        </div>
-        <div class="trigger-list">
-          <div class="trigger-title">Trigger Phrases</div>
-          <div class="trigger-item">"Let's think step by step"</div>
-          <div class="trigger-item">"Walk me through your reasoning"</div>
-          <div class="trigger-item">"First..., Then..., Finally..."</div>
-        </div>
-      </div>
-      <div class="right-col">
-        <div class="example-box">
-          <div class="example-label">Example: Operations Analysis</div>
-          <div class="example-code">Analyze our overtime increase <span class="highlight">step by step</span>:
-
-<span class="highlight">1. First</span>, list possible causes
-<span class="highlight">2. Then</span>, evaluate each against our data
-<span class="highlight">3. Finally</span>, identify root causes and recommend actions</div>
-        </div>
-      </div>
+    <div class="you-control">
+      <div class="you-control-title">You Stay in Control</div>
+      <div class="you-control-desc">Agents ask before taking action. You approve every step. You can pause, redirect, or undo at any time.</div>
     </div>
   </div>
 </body>
