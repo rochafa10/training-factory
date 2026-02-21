@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 13 - The Formula</title>
+  <title>Slide 13 - What Would You Do Manager Scenarios</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,113 +20,146 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 24px 24px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 24px;
-    }
-    .formula-display {
+    .header-row {
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 24px;
+      gap: 16px;
+      margin-bottom: 16px;
     }
-    .formula-item {
-      background: #e82127;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 18px;
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 4px 12px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: 28px;
       font-weight: bold;
     }
-    .formula-plus {
-      font-size: 24px;
-      color: #a0a0a0;
-    }
-    .components {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+    .main-content {
+      display: flex;
       gap: 16px;
       flex: 1;
+      min-height: 0;
     }
-    .component {
-      background: #1a1a1a;
+    .cards-area {
+      flex: 1;
+      display: flex;
+      gap: 16px;
+    }
+    .scenario-card {
+      flex: 1;
+      background: #f5f5f5;
       border-radius: 12px;
       padding: 16px;
       display: flex;
       flex-direction: column;
     }
-    .component-header {
-      font-size: 14px;
+    .scenario-header {
+      font-size: 13px;
       font-weight: bold;
-      color: #e82127;
-      margin-bottom: 8px;
-    }
-    .component-desc {
-      font-size: 12px;
-      color: #a0a0a0;
+      color: #cc0000;
       margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .scenario-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
       flex: 1;
+      margin-bottom: 12px;
     }
-    .component-example {
-      background: #2a2a2a;
-      border-radius: 6px;
-      padding: 10px;
+    .key-point {
       font-size: 11px;
-      font-style: italic;
+      font-weight: bold;
       line-height: 1.4;
+      padding: 8px 10px;
+      border-radius: 6px;
+      background: #e0e0e0;
     }
-    .footer {
+    .key-point.green { color: #16a34a; }
+    .key-point.yellow { color: #a16207; }
+    .key-point.red { color: #dc2626; }
+    .sidebar {
+      width: 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .time-box {
+      background: #cc0000;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .time-box .time {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .time-box .label {
       font-size: 11px;
-      color: #666;
+      color: rgba(255,255,255,0.8);
+      margin-top: 2px;
+    }
+    .bottom-instruction {
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
       margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>The Prompt Formula</h1>
-    <div class="formula-display">
-      <span class="formula-item">ROLE</span>
-      <span class="formula-plus">+</span>
-      <span class="formula-item">CONTEXT</span>
-      <span class="formula-plus">+</span>
-      <span class="formula-item">TASK</span>
-      <span class="formula-plus">+</span>
-      <span class="formula-item">FORMAT</span>
+    <div class="header-row">
+      <span class="badge">Group Discussion</span>
+      <h1>What Would You Do? &mdash; Manager Scenarios</h1>
     </div>
-    <div class="components">
-      <div class="component">
-        <span class="component-header">ROLE</span>
-        <p class="component-desc">Tell the AI who to be</p>
-        <div class="component-example">"You are an experienced operations manager at a distribution center."</div>
+    <div class="main-content">
+      <div class="cards-area">
+        <div class="scenario-card">
+          <div class="scenario-header">The VP Request</div>
+          <div class="scenario-text">Your VP messages at 4:45 PM: &ldquo;I need a Dive Deep on Q4 throughput by 8 AM.&rdquo; A colleague says &ldquo;use ChatGPT &mdash; it&rsquo;s faster.&rdquo;</div>
+          <div class="key-point green">Urgency doesn&rsquo;t override policy.</div>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-header">The Data Leak</div>
+          <div class="scenario-text">Your supervisor uploaded weekly KPI spreadsheets to Perplexity for a month. They didn&rsquo;t know it was wrong.</div>
+          <div class="key-point yellow">Stop. Report. Rebuild on approved tools.</div>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-header">The Competitive Pressure</div>
+          <div class="scenario-text">A peer AGM&rsquo;s team uses unapproved tools and gets better numbers. Do you match them?</div>
+          <div class="key-point red">Policy violations aren&rsquo;t justified by productivity.</div>
+        </div>
       </div>
-      <div class="component">
-        <span class="component-header">CONTEXT</span>
-        <p class="component-desc">Give background information</p>
-        <div class="component-example">"I manage the morning shift at Tampa DC with 45 associates."</div>
-      </div>
-      <div class="component">
-        <span class="component-header">TASK</span>
-        <p class="component-desc">State exactly what you need</p>
-        <div class="component-example">"Create a standup summary for today."</div>
-      </div>
-      <div class="component">
-        <span class="component-header">FORMAT</span>
-        <p class="component-desc">Specify output structure</p>
-        <div class="component-example">"Use bullet points, keep under 200 words."</div>
+      <div class="sidebar">
+        <div class="time-box">
+          <div class="time">7 MIN</div>
+          <div class="label">table discussion</div>
+        </div>
       </div>
     </div>
-    <p class="footer">Section 4 | Prompt Engineering Basics</p>
+    <div class="bottom-instruction">Discuss with your table &mdash; 7 minutes</div>
   </div>
 </body>
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 51 - Exercise 4 Answer Key</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .answer-badge {
+      display: inline-block;
+      background: #4ade80;
+      color: #000000;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .answer-col {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+    }
+    .answer-col.email {
+      border-color: #f87171;
+    }
+    .answer-col.analysis {
+      border-color: #facc15;
+    }
+    .answer-col.report {
+      border-color: #fb923c;
+    }
+    .col-title {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid;
+    }
+    .email .col-title {
+      color: #f87171;
+      border-color: #f87171;
+    }
+    .analysis .col-title {
+      color: #b45309;
+      border-color: #facc15;
+    }
+    .report .col-title {
+      color: #c2410c;
+      border-color: #fb923c;
+    }
+    .error-item {
+      margin-bottom: 10px;
+    }
+    .error-num {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 2px;
+    }
+    .error-text {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <span class="answer-badge">Exercise 4 Answers</span>
+      <h1>Spot the Mistakes - Answer Key</h1>
+    </div>
+    <div class="columns">
+      <div class="answer-col email">
+        <div class="col-title">Email Errors (4)</div>
+        <div class="error-item">
+          <div class="error-num">1. Hallucinated Statistic</div>
+          <div class="error-text">"Industry average 99.7%" - no source provided, likely made up</div>
+        </div>
+        <div class="error-item">
+          <div class="error-num">2. Math Contradiction</div>
+          <div class="error-text">98.2% described as "above" 99.7% - that's actually below</div>
+        </div>
+        <div class="error-item">
+          <div class="error-num">3. Fake Citation</div>
+          <div class="error-text">"2025 OSHA Report" - citation may not exist, verify before using</div>
+        </div>
+        <div class="error-item">
+          <div class="error-num">4. Hallucinated Numbers</div>
+          <div class="error-text">All specific numbers (47, 12.3%, 3) - hallucinated without data provided</div>
+        </div>
+      </div>
+      <div class="answer-col analysis">
+        <div class="col-title">Analysis Errors (3)</div>
+        <div class="error-item">
+          <div class="error-num">1. Misinterpreted Trend</div>
+          <div class="error-text">"Improved significantly" ignores 3 weeks of DECLINE (13.2 > 12.8 > 12.4)</div>
+        </div>
+        <div class="error-item">
+          <div class="error-num">2. Over-confident Causation</div>
+          <div class="error-text">"Confirms" causation from conveyor - correlation does not equal causation</div>
+        </div>
+        <div class="error-item">
+          <div class="error-num">3. Fabricated Projection</div>
+          <div class="error-text">"$47,000 savings" - precise dollar figure with no supporting analysis</div>
+        </div>
+      </div>
+      <div class="answer-col report">
+        <div class="col-title">Report Errors (3)</div>
+        <div class="error-item">
+          <div class="error-num">1. Fake File References</div>
+          <div class="error-text">"staffing-data-2025.csv" may not exist - verify files are real</div>
+        </div>
+        <div class="error-item">
+          <div class="error-num">2. Fabricated Source</div>
+          <div class="error-text">"NWA 2025 Annual Report" - verify this document exists before trusting</div>
+        </div>
+        <div class="error-item">
+          <div class="error-num">3. Over-precise Predictions</div>
+          <div class="error-text">"22% overtime reduction, 18% UPLH" - too precise without supporting data</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><strong>Remember:</strong> AI is your first draft, not your final answer.</div>
+  </div>
+</body>
+</html>

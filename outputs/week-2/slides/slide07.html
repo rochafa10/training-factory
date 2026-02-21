@@ -8,8 +8,8 @@
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -35,13 +35,14 @@
       margin-bottom: 20px;
     }
     .technique-badge {
-      background: #e82127;
-      color: white;
-      padding: 6px 12px;
+      background: #cc0000;
+      color: #000000;
+      padding: 4px 12px;
       border-radius: 4px;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: bold;
       text-transform: uppercase;
+      letter-spacing: 1.5px;
     }
     h1 {
       font-size: 32px;
@@ -59,14 +60,15 @@
       flex: 1;
     }
     .definition {
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 8px;
+      border: 1px solid #e0e0e0;
       padding: 16px;
       margin-bottom: 16px;
     }
     .definition-label {
       font-size: 11px;
-      color: #e82127;
+      color: #cc0000;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 8px;
@@ -74,40 +76,44 @@
     .definition-text {
       font-size: 14px;
       line-height: 1.5;
+      color: #666666;
     }
     .best-practice {
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 8px;
+      border: 1px solid #e0e0e0;
       padding: 16px;
     }
     .bp-title {
       font-size: 12px;
-      color: #e82127;
+      color: #cc0000;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 12px;
     }
     .bp-item {
       font-size: 13px;
+      color: #666666;
       margin-bottom: 8px;
       padding-left: 16px;
       position: relative;
     }
     .bp-item::before {
-      content: "✓";
+      content: "\2713";
       position: absolute;
       left: 0;
       color: #4ade80;
     }
     .example-box {
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 8px;
+      border: 1px solid #e0e0e0;
       padding: 16px;
       height: 100%;
     }
     .example-label {
       font-size: 11px;
-      color: #e82127;
+      color: #cc0000;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 12px;
@@ -115,12 +121,12 @@
     .example-item {
       margin-bottom: 12px;
       padding: 12px;
-      background: #2a2a2a;
+      background: #e0e0e0;
       border-radius: 6px;
     }
     .example-input {
       font-size: 11px;
-      color: #a0a0a0;
+      color: #666666;
       margin-bottom: 4px;
     }
     .example-output {
@@ -128,15 +134,15 @@
       color: #4ade80;
     }
     .your-turn {
-      background: #2a2a2a;
-      border: 1px dashed #e82127;
+      background: #e0e0e0;
+      border: 1px dashed #cc0000;
       border-radius: 6px;
       padding: 12px;
       text-align: center;
     }
     .your-turn-label {
       font-size: 11px;
-      color: #e82127;
+      color: #cc0000;
     }
   </style>
 </head>
@@ -166,11 +172,11 @@
           <div class="example-label">Example: Shift Handoff Format</div>
           <div class="example-item">
             <div class="example-input">Notes: Conveyor B down 2 hrs. 847 orders. Short 2 pickers.</div>
-            <div class="example-output">→ Summary: Conveyor B experienced 2-hour downtime (resolved). Processed 847 orders despite being short-staffed by 2 pickers.</div>
+            <div class="example-output">&rarr; Summary: Conveyor B experienced 2-hour downtime (resolved). Processed 847 orders despite being short-staffed by 2 pickers.</div>
           </div>
           <div class="example-item">
             <div class="example-input">Notes: Record day 1200 orders. No issues. New hire started.</div>
-            <div class="example-output">→ Summary: Record volume day with 1,200 orders processed. No issues. New hire began training.</div>
+            <div class="example-output">&rarr; Summary: Record volume day with 1,200 orders processed. No issues. New hire began training.</div>
           </div>
           <div class="your-turn">
             <div class="your-turn-label">Now convert your actual notes...</div>

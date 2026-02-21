@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 33 - Activity B: Quality Scoring Practice</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 20px 32px 16px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .time-badge {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #666666;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 14px;
+    }
+    .content-area {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+      overflow: hidden;
+    }
+    .sample-output {
+      flex: 1;
+    }
+    .sample-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .sample-box {
+      background: #fff8f8;
+      border: 2px solid #f87171;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 11px;
+      line-height: 1.6;
+      color: #666666;
+      height: calc(100% - 24px);
+    }
+    .scorecard-column {
+      width: 380px;
+    }
+    .scorecard-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .scorecard {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .scorecard-header {
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
+      background: #e0e0e0;
+      padding: 8px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+    }
+    .scorecard-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
+      padding: 8px 12px;
+      font-size: 11px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .scorecard-row:last-child {
+      border-bottom: none;
+    }
+    .dimension {
+      color: #000000;
+      font-weight: bold;
+    }
+    .score-input {
+      color: #cc0000;
+      font-weight: bold;
+      text-align: center;
+    }
+    .notes {
+      color: #666666;
+      font-size: 10px;
+    }
+    .question-box {
+      margin-top: 12px;
+      background: #facc15;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Activity B</span>
+      <h1>Quality Scoring Practice</h1>
+      <span class="time-badge">5 min</span>
+    </div>
+    <div class="subtitle">Score this AI-generated output using the Quality Scorecard</div>
+    <div class="content-area">
+      <div class="sample-output">
+        <div class="sample-label">Sample Output to Score</div>
+        <div class="sample-box">
+Missed Shipment Analysis
+
+Several shipments were not delivered on time this week.
+The main causes appear to be carrier issues and inventory
+problems. We should look into this further and take action.
+
+Recommendations:
+- Improve carrier relationships
+- Better inventory management
+- Continue monitoring the situation
+        </div>
+      </div>
+      <div class="scorecard-column">
+        <div class="scorecard-label">Scorecard to Apply</div>
+        <div class="scorecard">
+          <div class="scorecard-header">
+            <span>Dimension</span>
+            <span>Score</span>
+            <span>Notes</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Accuracy</span>
+            <span class="score-input">?</span>
+            <span class="notes">Are facts correct?</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Completeness</span>
+            <span class="score-input">?</span>
+            <span class="notes">All info included?</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Format</span>
+            <span class="score-input">?</span>
+            <span class="notes">Structured properly?</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Speed</span>
+            <span class="score-input">?</span>
+            <span class="notes">Time saved?</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Usability</span>
+            <span class="score-input">?</span>
+            <span class="notes">Ready to use?</span>
+          </div>
+        </div>
+        <div class="question-box">What is the total score? What would you change?</div>
+      </div>
+    </div>
+    <div class="footer">Week 4: Advanced Automation, Power Automate & Multi-Agent Orchestration</div>
+  </div>
+</body>
+</html>

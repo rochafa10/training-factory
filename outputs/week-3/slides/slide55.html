@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 55 - Week 4 Preview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .preview-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      background: #cc0000;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .card-list {
+      list-style: none;
+      flex: 1;
+    }
+    .card-list li {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 6px;
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .card-list li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+    }
+    .callout {
+      margin-top: 16px;
+      background: #fef2f2;
+      border: 2px solid #cc0000;
+      border-radius: 8px;
+      padding: 14px 20px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 14px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .callout-text span {
+      color: #cc0000;
+    }
+    .footer {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Week 4 Preview - What's Coming</h1>
+    <div class="preview-grid">
+      <div class="preview-card">
+        <div class="card-icon">&#x1F9E0;</div>
+        <div class="card-title">Memory &amp; Context</div>
+        <ul class="card-list">
+          <li>Agents that remember your DC</li>
+          <li>Building on previous conversations</li>
+          <li>Persistent project context</li>
+        </ul>
+      </div>
+      <div class="preview-card">
+        <div class="card-icon">&#x1F517;</div>
+        <div class="card-title">Multi-Agent Workflows</div>
+        <ul class="card-list">
+          <li>Chaining agents for complex tasks</li>
+          <li>Research > Draft > Review pipelines</li>
+          <li>Automated quality checks</li>
+        </ul>
+      </div>
+      <div class="preview-card">
+        <div class="card-icon">&#x1F527;</div>
+        <div class="card-title">MCP Tools</div>
+        <ul class="card-list">
+          <li>Playwright for web automation</li>
+          <li>Filesystem for local operations</li>
+          <li>Extending agent capabilities</li>
+        </ul>
+      </div>
+      <div class="preview-card">
+        <div class="card-icon">&#x1F3C6;</div>
+        <div class="card-title">Project Showcase</div>
+        <ul class="card-list">
+          <li>Present your personal automation</li>
+          <li>Share wins and lessons learned</li>
+          <li>AI rollout planning for your team</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-text"><span>Bring your personal project ready to demo!</span></div>
+    </div>
+    <div class="footer"><strong>Week 4 is the capstone.</strong> Come prepared to show what you've built.</div>
+  </div>
+</body>
+</html>

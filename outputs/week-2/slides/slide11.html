@@ -8,8 +8,8 @@
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -31,6 +31,7 @@
     h1 {
       font-size: 28px;
       font-weight: bold;
+      color: #000000;
       margin-bottom: 20px;
     }
     .use-case-grid {
@@ -41,8 +42,9 @@
       flex: 1;
     }
     .use-case-card {
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 8px;
+      border: 1px solid #e0e0e0;
       padding: 16px;
       display: flex;
       flex-direction: column;
@@ -50,29 +52,31 @@
     .card-number {
       font-size: 24px;
       font-weight: bold;
-      color: #e82127;
+      color: #cc0000;
       margin-bottom: 8px;
     }
     .card-title {
       font-size: 14px;
       font-weight: bold;
+      color: #000000;
       margin-bottom: 8px;
     }
     .card-desc {
       font-size: 11px;
-      color: #a0a0a0;
+      color: #666666;
       line-height: 1.4;
       flex: 1;
     }
     .card-technique {
       font-size: 10px;
-      color: #4ade80;
+      color: #16a34a;
       margin-top: 8px;
       padding-top: 8px;
-      border-top: 1px solid #2a2a2a;
+      border-top: 1px solid #e0e0e0;
     }
     .stat-card {
-      background: linear-gradient(135deg, #e82127 0%, #c41d22 100%);
+      background: #cc0000;
+      border: none;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -82,9 +86,11 @@
     .stat-number {
       font-size: 36px;
       font-weight: bold;
+      color: #ffffff;
     }
     .stat-label {
       font-size: 12px;
+      color: #ffffff;
       opacity: 0.9;
     }
   </style>

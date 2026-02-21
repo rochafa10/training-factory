@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 40 - The Three Nevers</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 32px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .cards-row {
+      display: flex;
+      gap: 16px;
+      flex: 1;
+    }
+    .never-card {
+      flex: 1;
+      background: #fef2f2;
+      border: 2px solid #f87171;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-icon {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #dc2626;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .card-rule {
+      font-size: 12px;
+      color: #000000;
+      line-height: 1.5;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .card-tip {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-top: auto;
+    }
+    .tip-label {
+      font-size: 9px;
+      font-weight: bold;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .tip-text {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .footer {
+      margin-top: 16px;
+      text-align: center;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer-text {
+      font-size: 14px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Three Nevers</h1>
+    <div class="cards-row">
+      <div class="never-card">
+        <div class="card-icon">&#128721;</div>
+        <div class="card-title">Never Auto-Approve</div>
+        <div class="card-rule">Always read what the agent plans to do before clicking approve</div>
+        <div class="card-tip">
+          <div class="tip-label">Tip</div>
+          <div class="tip-text">If you don't understand a command, ask the agent to explain it</div>
+        </div>
+      </div>
+      <div class="never-card">
+        <div class="card-icon">&#128065;</div>
+        <div class="card-title">Never Skip Review</div>
+        <div class="card-rule">Every output that goes to someone else must be reviewed by you</div>
+        <div class="card-tip">
+          <div class="tip-label">Tip</div>
+          <div class="tip-text">Check numbers, check logic, check for hallucinated facts</div>
+        </div>
+      </div>
+      <div class="never-card">
+        <div class="card-icon">&#128274;</div>
+        <div class="card-title">Never Share Secrets</div>
+        <div class="card-rule">Never paste passwords, API keys, or credentials into any AI tool</div>
+        <div class="card-tip">
+          <div class="tip-label">Tip</div>
+          <div class="tip-text">Never include associate PII (names, SSNs, addresses) in prompts</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-text">Your name is on the output, not the AI's.</div>
+    </div>
+  </div>
+</body>
+</html>

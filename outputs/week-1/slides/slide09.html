@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 09 - Policy Examples</title>
+  <title>Slide 09 - What Counts as Tesla Data</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -31,92 +31,89 @@
     h1 {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    li {
+      font-size: 14px;
+      color: #666666;
+      padding: 6px 0;
+      padding-left: 16px;
+      border-left: 2px solid #e0e0e0;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .example-row {
+      display: flex;
+      gap: 24px;
+      margin-top: auto;
+    }
+    .example-box {
       flex: 1;
-    }
-    th {
-      text-align: left;
-      font-size: 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #a0a0a0;
-      padding: 12px 16px;
-      border-bottom: 2px solid #2a2a2a;
-    }
-    td {
+      border-radius: 8px;
       padding: 14px 16px;
-      font-size: 13px;
-      border-bottom: 1px solid #1a1a1a;
-      vertical-align: middle;
     }
-    tr:nth-child(even) {
-      background: #1a1a1a;
+    .example-bad {
+      background: rgba(248, 113, 113, 0.1);
+      border: 1px solid #f87171;
     }
-    .yes {
-      color: #4ade80;
+    .example-good {
+      background: rgba(74, 222, 128, 0.1);
+      border: 1px solid #4ade80;
+    }
+    .example-icon {
+      font-size: 14px;
       font-weight: bold;
+      margin-bottom: 6px;
     }
-    .no {
-      color: #f87171;
-      font-weight: bold;
+    .example-bad .example-icon { color: #f87171; }
+    .example-good .example-icon { color: #4ade80; }
+    .example-box p {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.4;
     }
-    .use {
-      color: #facc15;
-      font-weight: bold;
+    .example-box .tool {
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
     }
     .footer {
       font-size: 11px;
-      color: #666;
-      margin-top: 16px;
+      color: #666666;
+      margin-top: 12px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Real Scenarios: Which Tool?</h1>
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 50%;">Scenario</th>
-          <th style="width: 25%;">ChatGPT?</th>
-          <th style="width: 25%;">Bottle Rocket?</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Draft email about yesterday's shipment numbers</td>
-          <td class="no">NO</td>
-          <td class="yes">YES</td>
-        </tr>
-        <tr>
-          <td>Learn how to write a Python script (generic)</td>
-          <td class="no">NO (use Copilot)</td>
-          <td class="yes">YES</td>
-        </tr>
-        <tr>
-          <td>Summarize a vendor's public press release</td>
-          <td class="no">NO</td>
-          <td class="yes">YES</td>
-        </tr>
-        <tr>
-          <td>Ask about my DC's safety incident</td>
-          <td class="no">NO</td>
-          <td class="yes">YES</td>
-        </tr>
-        <tr>
-          <td>Excel formulas help (no Tesla data)</td>
-          <td class="use">Use Copilot</td>
-          <td class="yes">YES</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="footer">Section 2 | Tesla AI Policy</p>
+    <h1>What Counts as &ldquo;Tesla Data&rdquo;?</h1>
+    <ul>
+      <li>Any information not publicly available outside Tesla</li>
+      <li>Employee names, headcount, schedules, shift assignments</li>
+      <li>KPIs, throughput rates, error rates, safety incident details</li>
+      <li>Vendor names, contract terms, customer order information</li>
+      <li>Internal SOPs, financial data, email content about Tesla business</li>
+    </ul>
+    <div class="example-row">
+      <div class="example-box example-bad">
+        <p class="example-icon">&#10007; WRONG</p>
+        <p>&ldquo;Sort my DC&rsquo;s headcount data by shift&rdquo;</p>
+        <p class="tool">in ChatGPT</p>
+      </div>
+      <div class="example-box example-good">
+        <p class="example-icon">&#10003; RIGHT</p>
+        <p>&ldquo;Sort my DC&rsquo;s headcount data by shift&rdquo;</p>
+        <p class="tool">in Bottle Rocket</p>
+      </div>
+    </div>
+    <p class="footer">When in doubt, assume it is Tesla Data and use Bottle Rocket.</p>
   </div>
 </body>
 </html>

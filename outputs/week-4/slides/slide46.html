@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 46 - Project Scoring Rubric</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 22px 32px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .rubric-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+      margin-bottom: 14px;
+    }
+    .rubric-table th {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      padding: 8px 6px;
+      text-align: center;
+      font-weight: bold;
+      color: #000000;
+    }
+    .rubric-table th:first-child {
+      text-align: left;
+      width: 120px;
+    }
+    .rubric-table td {
+      border: 1px solid #e0e0e0;
+      padding: 8px 6px;
+      text-align: center;
+      color: #666666;
+      vertical-align: top;
+    }
+    .rubric-table td:first-child {
+      text-align: left;
+      font-weight: bold;
+      color: #000000;
+      background: #f5f5f5;
+    }
+    .point-header {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .scoring-guide {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 18px;
+      flex: 1;
+    }
+    .guide-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .score-card {
+      text-align: center;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .score-outstanding {
+      background: #f0fdf4;
+      border: 1px solid #4ade80;
+    }
+    .score-solid {
+      background: #e0f2fe;
+      border: 1px solid #38bdf8;
+    }
+    .score-good {
+      background: #fef3c7;
+      border: 1px solid #facc15;
+    }
+    .score-keep {
+      background: #fef2f2;
+      border: 1px solid #f87171;
+    }
+    .score-range {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .score-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .label-outstanding { color: #16a34a; }
+    .label-solid { color: #0284c7; }
+    .label-good { color: #d97706; }
+    .label-keep { color: #dc2626; }
+    .score-desc {
+      font-size: 9px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Peer Scoring</span>
+      <h1>Project Scoring Rubric</h1>
+    </div>
+
+    <table class="rubric-table">
+      <tr>
+        <th>Dimension</th>
+        <th><span class="point-header">1 Point</span></th>
+        <th><span class="point-header">2 Points</span></th>
+        <th><span class="point-header">3 Points</span></th>
+        <th><span class="point-header">4 Points</span></th>
+        <th><span class="point-header">5 Points</span></th>
+      </tr>
+      <tr>
+        <td>Practical Impact</td>
+        <td>Nice idea</td>
+        <td>Could use sometimes</td>
+        <td>Weekly value</td>
+        <td>Daily value</td>
+        <td>Game-changer</td>
+      </tr>
+      <tr>
+        <td>Technical Skill</td>
+        <td>Basic prompt</td>
+        <td>Prompt + formula</td>
+        <td>+ One technique</td>
+        <td>+ Multiple techniques</td>
+        <td>Full toolkit</td>
+      </tr>
+      <tr>
+        <td>Presentation</td>
+        <td>Confusing</td>
+        <td>Some clarity</td>
+        <td>Clear explanation</td>
+        <td>Good demo</td>
+        <td>Compelling story</td>
+      </tr>
+    </table>
+
+    <div class="scoring-guide">
+      <div class="guide-title">Scoring Guide</div>
+      <div class="score-grid">
+        <div class="score-card score-outstanding">
+          <div class="score-range">13-15</div>
+          <div class="score-label label-outstanding">Outstanding</div>
+          <div class="score-desc">Teach others this approach</div>
+        </div>
+        <div class="score-card score-solid">
+          <div class="score-range">10-12</div>
+          <div class="score-label label-solid">Solid</div>
+          <div class="score-desc">Great foundation to build on</div>
+        </div>
+        <div class="score-card score-good">
+          <div class="score-range">7-9</div>
+          <div class="score-label label-good">Good Start</div>
+          <div class="score-desc">Identify one thing to improve</div>
+        </div>
+        <div class="score-card score-keep">
+          <div class="score-range">Below 7</div>
+          <div class="score-label label-keep">Keep Practicing</div>
+          <div class="score-desc">Ask for help</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">Score honestly - feedback helps everyone improve</div>
+  </div>
+</body>
+</html>

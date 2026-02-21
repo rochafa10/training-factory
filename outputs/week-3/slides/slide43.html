@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 43 - Identify the Error Type Quiz</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 960px; height: 540px;
+      overflow: hidden;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #000000;
+    }
+    .slide {
+      width: 960px; height: 540px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #cc0000;
+    }
+    .header {
+      padding: 18px 30px 8px 30px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000000;
+    }
+    .subtitle {
+      padding: 2px 30px 12px 30px;
+      font-size: 11px;
+      color: #666666;
+    }
+    .table-wrap {
+      flex: 1;
+      padding: 0 30px 14px 30px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+    thead th {
+      background: #e0e0e0;
+      color: #666666;
+      font-weight: 700;
+      text-align: left;
+      padding: 6px 10px;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #333;
+    }
+    thead th:first-child { width: 28px; text-align: center; }
+    thead th:last-child { width: 100px; text-align: center; }
+    tbody tr:nth-child(odd) { background: #f5f5f5; }
+    tbody tr:nth-child(even) { background: #ffffff; }
+    tbody td {
+      padding: 8px 10px;
+      color: #000000;
+      border-bottom: 1px solid #e0e0e0;
+      line-height: 1.35;
+    }
+    tbody td:first-child {
+      text-align: center;
+      color: #cc0000;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    tbody td:last-child {
+      text-align: center;
+      color: #666666;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 10px 30px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      color: #666666;
+    }
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .dot-h { background: #f87171; }
+    .dot-d { background: #facc15; }
+    .dot-o { background: #fb923c; }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="header">
+    <span class="badge">Interactive Quiz</span>
+    <span class="title">Identify the Error Type</span>
+  </div>
+  <div class="subtitle">For each AI output, call out: HALLUCINATION / DRIFT / OVER-CONFIDENCE</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>AI Output</th>
+          <th>Answer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>"Your DC processed exactly 15,247 orders last week" (no data given)</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>You asked for a template, agent also created a dashboard and 3 extra reports</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>"This change will definitely reduce overtime by 22%"</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>"According to the 2025 MIT Supply Chain Study..." (no source verified)</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>"The best practice is always to use this approach"</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>You asked about staffing, agent started discussing inventory management</td>
+          <td>?</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot dot-h"></div>Hallucination = made up facts</div>
+    <div class="legend-item"><div class="legend-dot dot-d"></div>Drift = wandered off task</div>
+    <div class="legend-item"><div class="legend-dot dot-o"></div>Over-confidence = too certain</div>
+  </div>
+</div>
+</body>
+</html>

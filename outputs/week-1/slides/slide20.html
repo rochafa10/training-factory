@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 20 - The Prompt Formula</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .formula-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .formula-pill {
+      background: #cc0000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .formula-plus {
+      font-size: 20px;
+      color: #666666;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .card-label {
+      font-size: 13px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 4px;
+    }
+    .card-desc {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+    .card-example {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 11px;
+      font-style: italic;
+      line-height: 1.4;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Prompt Formula: ROLE + CONTEXT + TASK + FORMAT</h1>
+    <div class="formula-bar">
+      <span class="formula-pill">ROLE</span>
+      <span class="formula-plus">+</span>
+      <span class="formula-pill">CONTEXT</span>
+      <span class="formula-plus">+</span>
+      <span class="formula-pill">TASK</span>
+      <span class="formula-plus">+</span>
+      <span class="formula-pill">FORMAT</span>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <p class="card-label">ROLE</p>
+        <p class="card-desc">Tell the AI who to be</p>
+        <div class="card-example">&ldquo;You are an experienced operations manager at a distribution center&rdquo;</div>
+      </div>
+      <div class="card">
+        <p class="card-label">CONTEXT</p>
+        <p class="card-desc">Give background information</p>
+        <div class="card-example">&ldquo;I manage the morning shift at Tampa DC with 45 associates&rdquo;</div>
+      </div>
+      <div class="card">
+        <p class="card-label">TASK</p>
+        <p class="card-desc">State exactly what you need</p>
+        <div class="card-example">&ldquo;Create a standup summary for today&rsquo;s meeting&rdquo;</div>
+      </div>
+      <div class="card">
+        <p class="card-label">FORMAT</p>
+        <p class="card-desc">Specify the output structure</p>
+        <div class="card-example">&ldquo;Bullet points, under 150 words, 3 sections&rdquo;</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

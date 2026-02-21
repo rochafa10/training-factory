@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 53 - Iteration Techniques</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 36px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #000000;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+    }
+    thead th {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #666666;
+      text-align: left;
+      padding: 6px 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    thead th:first-child { width: 22%; }
+    thead th:last-child { width: 78%; }
+    tbody td {
+      font-size: 11px;
+      padding: 5px 10px;
+      vertical-align: top;
+      line-height: 1.35;
+    }
+    tbody tr:nth-child(odd) { background: #f5f5f5; }
+    tbody tr:nth-child(even) { background: #141414; }
+    .issue {
+      color: #f87171;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .fix {
+      color: #666666;
+      font-style: italic;
+    }
+    .tip-box {
+      background: #f5f5f5;
+      border-left: 3px solid #facc15;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin-top: auto;
+    }
+    .tip-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #facc15;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+    .tip-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Exercise 6</span>
+      <h1>Iteration Techniques</h1>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>What&rsquo;s Wrong</th>
+          <th>Follow-Up Prompt to Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="issue">Too long</td>
+          <td class="fix">&ldquo;Shorten this to under 100 words. Keep the 3 most important points.&rdquo;</td>
+        </tr>
+        <tr>
+          <td class="issue">Too short</td>
+          <td class="fix">&ldquo;Expand the section on [topic]. Add specific examples.&rdquo;</td>
+        </tr>
+        <tr>
+          <td class="issue">Too formal</td>
+          <td class="fix">&ldquo;Rewrite in a more direct, conversational tone.&rdquo;</td>
+        </tr>
+        <tr>
+          <td class="issue">Too casual</td>
+          <td class="fix">&ldquo;Make this more professional. This is going to the regional director.&rdquo;</td>
+        </tr>
+        <tr>
+          <td class="issue">Missing section</td>
+          <td class="fix">&ldquo;Add a section at the end with 3 specific next steps and owners.&rdquo;</td>
+        </tr>
+        <tr>
+          <td class="issue">Wrong format</td>
+          <td class="fix">&ldquo;Convert from paragraphs to bullet-point summary. Group by category.&rdquo;</td>
+        </tr>
+        <tr>
+          <td class="issue">Too generic</td>
+          <td class="fix">&ldquo;Make this specific to a Tesla DC processing 3,000+ orders/day.&rdquo;</td>
+        </tr>
+        <tr>
+          <td class="issue">Unverifiable claims</td>
+          <td class="fix">&ldquo;Remove statistics you can&rsquo;t verify. Replace with [INSERT ACTUAL METRIC].&rdquo;</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tip-box">
+      <div class="tip-label">Pro Tip</div>
+      <div class="tip-text">Don&rsquo;t rewrite the entire prompt &mdash; just tell the AI what to fix. Iteration is the skill that separates good AI users from great ones.</div>
+    </div>
+  </div>
+</body>
+</html>

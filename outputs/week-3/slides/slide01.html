@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 01 - Week 3 Title</title>
+  <title>Slide 01 - Title</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
     .accent-bar {
       position: absolute;
@@ -24,41 +23,53 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
+    }
+    .content {
+      text-align: center;
+      padding: 40px;
     }
     .week-label {
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 3px;
-      color: #e82127;
-      margin-bottom: 20px;
+      color: #cc0000;
+      margin-bottom: 24px;
     }
     h1 {
-      font-size: 44px;
+      font-size: 48px;
       font-weight: bold;
-      text-align: center;
+      margin-bottom: 16px;
       line-height: 1.2;
-      margin-bottom: 20px;
     }
     .subtitle {
-      font-size: 18px;
-      color: #a0a0a0;
-      text-align: center;
+      font-size: 24px;
+      color: #666666;
+      margin-bottom: 48px;
     }
-    .duration {
-      position: absolute;
-      bottom: 40px;
+    .meta {
       font-size: 14px;
-      color: #a0a0a0;
+      color: #666666;
+    }
+    .meta span {
+      margin: 0 12px;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <p class="week-label">Week 3</p>
-  <h1>GitHub Copilot, Voice Mode<br>& Agent Fundamentals</h1>
-  <p class="subtitle">From Chat to Autonomous AI Assistants</p>
-  <p class="duration">120 minutes | 75% Hands-On</p>
+  <div class="content">
+    <p class="week-label">Week 3 of 4</p>
+    <h1>VS Code, Agents &amp;<br>How AI Thinks</h1>
+    <p class="subtitle">From Chat to Agent: Understanding How AI Works for You</p>
+    <p class="meta">
+      <span>240 minutes</span>
+      <span>|</span>
+      <span>54% Hands-on</span>
+      <span>|</span>
+      <span>VS Code + GitHub Copilot, Bottle Rocket</span>
+    </p>
+  </div>
 </body>
 </html>

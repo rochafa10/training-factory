@@ -2,193 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 13 - Exercise 3: Dive Deep Automation</title>
+  <title>Slide 13 - Break</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
+      display: flex;
     }
-    .accent-bar {
+    .section-block {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
+      width: 320px;
       height: 100%;
-      background: #e82127;
-    }
-    .content {
-      padding: 40px 50px;
-      margin-left: 8px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-    .exercise-badge {
-      background: #e82127;
-      display: inline-block;
-      padding: 6px 14px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 16px;
-    }
-    h1 {
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
-    .scenario {
-      background: #1a1a1a;
-      padding: 16px;
-      border-radius: 6px;
-      margin-bottom: 20px;
-      border-left: 3px solid #e82127;
-    }
-    .scenario-title {
-      font-size: 12px;
-      color: #a0a0a0;
-      margin-bottom: 8px;
-    }
-    .scenario-text {
-      font-size: 14px;
-      line-height: 1.4;
-    }
-    .workflow {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      font-size: 13px;
-    }
-    .workflow-step {
-      display: flex;
-      align-items: center;
-      background: #1a1a1a;
-      padding: 10px 14px;
-      border-radius: 4px;
-    }
-    .step-num {
-      background: #e82127;
-      color: white;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
+      background: #cc0000;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 11px;
-      margin-right: 12px;
     }
-    .prompt-box {
-      background: #1a1a1a;
-      padding: 16px;
-      border-radius: 6px;
+    .section-icon {
+      font-size: 120px;
+      color: rgba(255, 255, 255, 0.15);
+    }
+    .section-content {
+      margin-left: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      height: 100%;
+    }
+    .section-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #666666;
       margin-bottom: 16px;
     }
-    .prompt-label {
-      font-size: 11px;
-      color: #a0a0a0;
-      margin-bottom: 8px;
-    }
-    .prompt-text {
-      font-size: 12px;
-      line-height: 1.5;
-      font-style: italic;
-    }
-    .time-savings {
-      background: #1a2a1a;
-      padding: 16px;
-      border-radius: 6px;
-      border-left: 3px solid #4ade80;
-    }
-    .savings-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-    .savings-row:last-child {
-      margin-bottom: 0;
-      padding-top: 8px;
-      border-top: 1px solid #2a3a2a;
+    h1 {
+      font-size: 48px;
       font-weight: bold;
-      color: #4ade80;
+      color: #000000;
+      line-height: 1.2;
+      margin-bottom: 16px;
     }
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50px;
-      font-size: 12px;
-      color: #a0a0a0;
+    .duration {
+      font-size: 18px;
+      color: #666666;
+      margin-bottom: 24px;
+    }
+    .break-message {
+      font-size: 16px;
+      color: #666666;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-
-  <div class="content">
-    <div class="left-panel">
-      <div class="exercise-badge">Exercise 3</div>
-      <h1>Dive Deep Report Automation</h1>
-
-      <div class="scenario">
-        <div class="scenario-title">Scenario</div>
-        <div class="scenario-text">Regional director needs a dive deep on missed shipments. Create an automated report using sample data.</div>
-      </div>
-
-      <div class="workflow">
-        <div class="workflow-step">
-          <span class="step-num">1</span>
-          <span>Create sample-data.csv</span>
-        </div>
-        <div class="workflow-step">
-          <span class="step-num">2</span>
-          <span>Agent reads CSV file</span>
-        </div>
-        <div class="workflow-step">
-          <span class="step-num">3</span>
-          <span>Agent analyzes patterns</span>
-        </div>
-        <div class="workflow-step">
-          <span class="step-num">4</span>
-          <span>Agent generates report</span>
-        </div>
-        <div class="workflow-step">
-          <span class="step-num">5</span>
-          <span>You review and iterate</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="right-panel">
-      <div class="prompt-box">
-        <div class="prompt-label">Sample Prompt:</div>
-        <div class="prompt-text">"I need a dive deep on missed shipments. Read sample-data.csv, identify the top 3 root causes, calculate impact by customer, and generate a report with executive summary, findings, and action items."</div>
-      </div>
-
-      <div class="time-savings">
-        <div class="savings-row">
-          <span>Traditional Method</span>
-          <span>45+ min</span>
-        </div>
-        <div class="savings-row">
-          <span>With Agent Automation</span>
-          <span>5-10 min</span>
-        </div>
-        <div class="savings-row">
-          <span>Savings</span>
-          <span>80%</span>
-        </div>
-      </div>
-    </div>
+  <div class="section-block">
+    <span class="section-icon">&#9749;</span>
   </div>
-
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+  <div class="section-content">
+    <div class="section-label">Break</div>
+    <h1>10-Minute Break</h1>
+    <p class="duration">Stretch, refill, recharge</p>
+    <p class="break-message">Next up: Build your own persistent DC assistant with project memory.</p>
+  </div>
 </body>
 </html>

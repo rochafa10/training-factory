@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 17 - Homework</title>
+  <title>Slide 17 - Sample Data</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -29,171 +29,167 @@
       flex-direction: column;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 24px;
+      color: #000000;
+      margin-bottom: 8px;
     }
-    .main-content {
-      display: flex;
-      gap: 24px;
-      flex: 1;
+    .subtitle {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 20px;
     }
-    .left-col, .right-col {
-      flex: 1;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
     }
-    .homework-card {
-      background: #1a1a1a;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 12px;
+    thead {
+      background: #e0e0e0;
     }
-    .homework-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-    .homework-title {
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .homework-time {
-      font-size: 11px;
-      color: #e82127;
-      background: #2a2a2a;
-      padding: 4px 10px;
-      border-radius: 4px;
-    }
-    .template-list {
-      list-style: none;
-    }
-    .template-list li {
-      font-size: 12px;
-      margin-bottom: 6px;
-      padding-left: 20px;
-      position: relative;
-      color: #a0a0a0;
-    }
-    .template-list li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 8px;
-      height: 8px;
-      border: 2px solid #a0a0a0;
-      border-radius: 2px;
-    }
-    h2 {
-      font-size: 14px;
-      color: #e82127;
-      margin-bottom: 12px;
-    }
-    .tracking-table {
-      background: #1a1a1a;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .table-header {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      background: #2a2a2a;
-      padding: 10px 12px;
+    thead th {
       font-size: 10px;
+      text-transform: uppercase;
+      color: #666666;
+      padding: 8px 8px;
+      text-align: left;
       font-weight: bold;
+      letter-spacing: 0.5px;
     }
-    .table-row {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      padding: 8px 12px;
-      border-bottom: 1px solid #2a2a2a;
+    tbody tr:nth-child(odd) {
+      background: #f5f5f5;
+    }
+    tbody tr:nth-child(even) {
+      background: #ebebeb;
+    }
+    tbody td {
       font-size: 11px;
-    }
-    .table-row:last-child {
-      border-bottom: none;
+      padding: 5px 8px;
+      font-family: monospace;
+      color: #000000;
     }
     .row-label {
-      color: #a0a0a0;
+      font-family: Arial, sans-serif;
+      color: #666666;
+      font-weight: bold;
     }
-    .input-cell {
-      color: #666;
+    .approved { color: #4ade80; font-weight: bold; }
+    .conditional { color: #facc15; font-weight: bold; }
+    .prohibited { color: #f87171; font-weight: bold; }
+    .prompts-bar {
+      display: flex;
+      gap: 12px;
+    }
+    .prompt-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      flex: 1;
+    }
+    .prompt-label {
+      font-size: 10px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .prompt-text {
+      font-size: 12px;
+      color: #666666;
+      font-style: italic;
     }
     .footer {
       font-size: 11px;
-      color: #666;
-      margin-top: auto;
+      color: #666666;
       text-align: center;
+      margin-top: auto;
+      padding-top: 8px;
+      border-top: 1px solid #e0e0e0;
     }
     .footer strong {
-      color: #e82127;
+      color: #cc0000;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Homework & Time Tracking</h1>
-    <div class="main-content">
-      <div class="left-col">
-        <div class="homework-card">
-          <div class="homework-header">
-            <span class="homework-title">Create 3 Operations Templates</span>
-            <span class="homework-time">~30 min</span>
-          </div>
-          <ul class="template-list">
-            <li><strong>Labor Planning</strong> - CoT reasoning, DC-specific data</li>
-            <li><strong>Incident Analysis</strong> - 5-Whys, system focus</li>
-            <li><strong>Leadership Update</strong> - Enhanced persona, few-shot format</li>
-          </ul>
-        </div>
-        <div class="homework-card">
-          <div class="homework-header">
-            <span class="homework-title">Test Each Template</span>
-          </div>
-          <ul class="template-list">
-            <li>Use real or realistic data from your DC</li>
-            <li>Refine until output is work-ready</li>
-            <li>Save templates for reuse</li>
-          </ul>
-        </div>
+    <h1>Sample DC Dataset — Weekly Operations</h1>
+    <div class="subtitle">Copy this data into Bottle Rocket for Exercise 3. Target UPH: 150. Headcount budget: 38.</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Orders</th>
+          <th>UPH</th>
+          <th>Headcount</th>
+          <th>Safety Incidents</th>
+          <th>OT Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label">W1</td>
+          <td>12,450</td>
+          <td class="conditional">142</td>
+          <td>38</td>
+          <td>0</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td class="row-label">W2</td>
+          <td>13,100</td>
+          <td class="conditional">148</td>
+          <td>38</td>
+          <td class="conditional">1</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <td class="row-label">W3</td>
+          <td>11,800</td>
+          <td class="prohibited">135</td>
+          <td class="prohibited">35</td>
+          <td>0</td>
+          <td class="prohibited">68</td>
+        </tr>
+        <tr>
+          <td class="row-label">W4</td>
+          <td class="approved">14,200</td>
+          <td class="approved">151</td>
+          <td>40</td>
+          <td class="prohibited">2</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <td class="row-label">W5</td>
+          <td>13,900</td>
+          <td class="conditional">146</td>
+          <td>39</td>
+          <td>0</td>
+          <td>41</td>
+        </tr>
+        <tr>
+          <td class="row-label">W6</td>
+          <td>12,100</td>
+          <td class="prohibited">128</td>
+          <td class="prohibited">36</td>
+          <td class="conditional">1</td>
+          <td class="prohibited">72</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="prompts-bar">
+      <div class="prompt-card">
+        <div class="prompt-label">Try This First</div>
+        <div class="prompt-text">"What trends do you see? What should I be concerned about?"</div>
       </div>
-      <div class="right-col">
-        <h2>Time Savings Log (Week 2)</h2>
-        <div class="tracking-table">
-          <div class="table-header">
-            <span>Task</span>
-            <span>Without AI</span>
-            <span>With AI</span>
-            <span>Saved</span>
-          </div>
-          <div class="table-row">
-            <span class="row-label">Labor planning</span>
-            <span class="input-cell">___ min</span>
-            <span class="input-cell">___ min</span>
-            <span class="input-cell">___</span>
-          </div>
-          <div class="table-row">
-            <span class="row-label">Incident analysis</span>
-            <span class="input-cell">___ min</span>
-            <span class="input-cell">___ min</span>
-            <span class="input-cell">___</span>
-          </div>
-          <div class="table-row">
-            <span class="row-label">Leadership update</span>
-            <span class="input-cell">___ min</span>
-            <span class="input-cell">___ min</span>
-            <span class="input-cell">___</span>
-          </div>
-          <div class="table-row" style="background:#2a2a2a">
-            <span style="color:#4ade80">Weekly Total</span>
-            <span></span>
-            <span></span>
-            <span class="input-cell" style="color:#4ade80">___</span>
-          </div>
-        </div>
+      <div class="prompt-card">
+        <div class="prompt-label">Then Try CoT</div>
+        <div class="prompt-text">"Step by step: 1) Calculate averages, 2) Flag anomalies, 3) Identify root causes, 4) Recommend actions"</div>
       </div>
     </div>
-    <p class="footer"><strong>Next Week:</strong> GitHub Copilot, Voice Mode & Agent Fundamentals</p>
+    <div class="footer"><strong>Red values</strong> = below target or concerning | Copy the table above into Bottle Rocket</div>
   </div>
 </body>
 </html>

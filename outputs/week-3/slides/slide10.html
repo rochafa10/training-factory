@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 10 - Agent Mode Introduction</title>
+  <title>Slide 10 - Copilot Chat vs Bottle Rocket</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,60 +20,152 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .red-panel {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 320px;
-      height: 100%;
-      background: linear-gradient(135deg, #e82127 0%, #b01a1f 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 40px;
-    }
-    .section-num {
-      font-size: 120px;
-      font-weight: bold;
-      opacity: 0.3;
-      line-height: 1;
-    }
-    .section-label {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-top: 20px;
-    }
-    .main-content {
-      margin-left: 360px;
-      padding: 40px 50px 40px 0;
+    .container {
+      padding: 28px 40px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
     h1 {
-      font-size: 36px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 20px;
+      color: #000000;
+      margin-bottom: 16px;
     }
-    .description {
-      font-size: 18px;
-      color: #a0a0a0;
-      line-height: 1.6;
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      flex: 1;
+    }
+    .comparison-card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-header {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      padding: 10px 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .header-approved {
+      background: #4ade80;
+    }
+    .header-conditional {
+      background: #facc15;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+    .feature-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 13px;
+    }
+    .feature-row:last-child {
+      border-bottom: none;
+    }
+    .feature-label {
+      color: #666666;
+    }
+    .feature-value {
+      font-weight: bold;
+    }
+    .value-yes {
+      color: #4ade80;
+    }
+    .value-no {
+      color: #f87171;
+    }
+    .callout {
+      background: #fff5f5;
+      border: 2px solid #f87171;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 12px;
+    }
+    .callout-text {
+      font-size: 13px;
+      color: #000000;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .callout-text strong {
+      color: #cc0000;
     }
   </style>
 </head>
 <body>
-  <div class="red-panel">
-    <p class="section-num">7</p>
-    <p class="section-label">Section</p>
-  </div>
-  <div class="main-content">
-    <h1>Agent Mode</h1>
-    <p class="description">From assistant that answers questions to autonomous collaborator that plans, executes, and iterates on complex tasks.</p>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Copilot Chat vs. Bottle Rocket</h1>
+    <div class="comparison-grid">
+      <div class="comparison-card">
+        <div class="card-header header-approved">Tesla Data OK</div>
+        <div class="card-title">Bottle Rocket</div>
+        <div class="feature-row">
+          <span class="feature-label">Tesla data</span>
+          <span class="feature-value value-yes">ALLOWED</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">File creation</span>
+          <span class="feature-value value-no">No</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">Terminal commands</span>
+          <span class="feature-value value-no">No</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">Voice input</span>
+          <span class="feature-value value-no">No</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">Agent Mode</span>
+          <span class="feature-value value-no">No</span>
+        </div>
+      </div>
+      <div class="comparison-card">
+        <div class="card-header header-conditional">NO Tesla Data</div>
+        <div class="card-title">Copilot Chat</div>
+        <div class="feature-row">
+          <span class="feature-label">Tesla data</span>
+          <span class="feature-value value-no">NOT ALLOWED</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">File creation</span>
+          <span class="feature-value value-yes">Yes</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">Terminal commands</span>
+          <span class="feature-value value-yes">Yes</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">Voice input</span>
+          <span class="feature-value value-yes">Yes</span>
+        </div>
+        <div class="feature-row">
+          <span class="feature-label">Agent Mode</span>
+          <span class="feature-value value-yes">Yes</span>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-text"><strong>CRITICAL:</strong> Never paste Tesla data into Copilot. Use Bottle Rocket for employee/customer/order data.</div>
+    </div>
   </div>
 </body>
 </html>

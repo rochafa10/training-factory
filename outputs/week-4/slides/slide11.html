@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 11 - Orchestration Patterns</title>
+  <title>Slide 11 - The New Temp vs. The Veteran</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,54 +20,112 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .content {
-      padding: 40px 50px;
+      padding: 28px 40px 24px 48px;
       margin-left: 8px;
     }
     h1 {
-      font-size: 32px;
-      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+      text-align: center;
     }
-    .patterns {
+    .comparison {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 24px;
+      margin-bottom: 20px;
     }
-    .pattern {
-      background: #1a1a1a;
-      padding: 24px;
-      border-radius: 8px;
+    .column {
+      border-radius: 12px;
+      padding: 20px;
     }
-    .pattern-name {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 12px;
-      color: #e82127;
+    .column.without {
+      background: #fff8f8;
+      border: 2px solid #f87171;
     }
-    .pattern-desc {
+    .column.with {
+      background: #f0fdf4;
+      border: 2px solid #4ade80;
+    }
+    .column-header {
       font-size: 14px;
-      color: #a0a0a0;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
       margin-bottom: 12px;
     }
-    .pattern-example {
-      font-size: 13px;
-      background: #2a2a2a;
-      padding: 10px;
-      border-radius: 4px;
-    }
-    .pattern-label {
+    .column.without .column-header { color: #f87171; }
+    .column.with .column-header { color: #16a34a; }
+    .prompt-label {
       font-size: 11px;
-      color: #a0a0a0;
-      margin-bottom: 4px;
+      color: #666666;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .prompt-text {
+      font-size: 12px;
+      font-style: italic;
+      color: #000000;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #e0e0e0;
+    }
+    .result-label {
+      font-size: 11px;
+      color: #666666;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .result-text {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .result-text.bad {
+      color: #666666;
+    }
+    .result-text.good {
+      color: #000000;
+    }
+    .problem {
+      font-size: 11px;
+      color: #f87171;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .benefit {
+      font-size: 11px;
+      color: #16a34a;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .bottom-callout {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 20px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 14px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .callout-highlight {
+      color: #cc0000;
     }
     .footer {
       position: absolute;
       bottom: 20px;
-      left: 50px;
+      left: 56px;
       font-size: 12px;
-      color: #a0a0a0;
+      color: #666666;
     }
   </style>
 </head>
@@ -75,41 +133,30 @@
   <div class="accent-bar"></div>
 
   <div class="content">
-    <h1>Orchestration Patterns</h1>
+    <h1>The New Temp vs. The Veteran</h1>
 
-    <div class="patterns">
-      <div class="pattern">
-        <div class="pattern-name">Sequential</div>
-        <div class="pattern-desc">Agent A → Agent B → Agent C</div>
-        <div class="pattern-example">
-          <div class="pattern-label">Use Case:</div>
-          Dive deep: gather → analyze → report
-        </div>
+    <div class="comparison">
+      <div class="column without">
+        <div class="column-header">Without Project Memory</div>
+        <div class="prompt-label">Prompt</div>
+        <div class="prompt-text">"Write a summary of this week's missed shipments."</div>
+        <div class="result-label">Result</div>
+        <div class="result-text bad">"Here is a generic summary of missed shipments: Some shipments were missed this week. Several factors may have contributed..."</div>
+        <div class="problem">Vague, generic, useless without heavy editing</div>
       </div>
-      <div class="pattern">
-        <div class="pattern-name">Parallel</div>
-        <div class="pattern-desc">Agents A, B, C run simultaneously</div>
-        <div class="pattern-example">
-          <div class="pattern-label">Use Case:</div>
-          Multi-DC comparison reports
-        </div>
+
+      <div class="column with">
+        <div class="column-header">With Project Memory</div>
+        <div class="prompt-label">Same Prompt</div>
+        <div class="prompt-text">"Write a summary of this week's missed shipments."</div>
+        <div class="result-label">Result</div>
+        <div class="result-text good">"Newburgh DC Missed Shipment Summary - Week of Jan 27: 12 missed shipments (+50% vs last week). Primary root cause: Carrier delay. Recommended action: Activate backup carrier protocol per SOP-204..."</div>
+        <div class="benefit">Specific, actionable, ready to send</div>
       </div>
-      <div class="pattern">
-        <div class="pattern-name">Supervisor</div>
-        <div class="pattern-desc">Main agent delegates to specialists</div>
-        <div class="pattern-example">
-          <div class="pattern-label">Use Case:</div>
-          Complex incident analysis
-        </div>
-      </div>
-      <div class="pattern">
-        <div class="pattern-name">Human-in-Loop</div>
-        <div class="pattern-desc">Agent pauses for approval at key steps</div>
-        <div class="pattern-example">
-          <div class="pattern-label">Use Case:</div>
-          Any task with data decisions
-        </div>
-      </div>
+    </div>
+
+    <div class="bottom-callout">
+      <span class="callout-text">Agents with project memory produce <span class="callout-highlight">40-60% more relevant</span> outputs on first attempt.</span>
     </div>
   </div>
 

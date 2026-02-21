@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 28 - Your 90-Day Roadmap</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 18px;
+    }
+    .roadmap-columns {
+      display: flex;
+      gap: 16px;
+      flex: 1;
+    }
+    .roadmap-col {
+      flex: 1;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .col-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #cc0000;
+    }
+    .col-badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .col-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .week-list {
+      list-style: none;
+      flex: 1;
+    }
+    .week-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .week-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      width: 50px;
+      flex-shrink: 0;
+    }
+    .week-task {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .callout-box {
+      background: #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin-top: 14px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 13px;
+      color: #000000;
+    }
+    .callout-text strong {
+      color: #cc0000;
+    }
+    .footer {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 12px;
+      color: #666666;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer strong {
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Your 90-Day Roadmap</h1>
+    <div class="roadmap-columns">
+      <div class="roadmap-col">
+        <div class="col-header">
+          <span class="col-badge">Days 1-30</span>
+          <span class="col-title">Build the Habit</span>
+        </div>
+        <ul class="week-list">
+          <li class="week-item">
+            <span class="week-label">Week 1</span>
+            <span class="week-task">Use Bottle Rocket for at least one task per day</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 2</span>
+            <span class="week-task">Save your 3 best prompts as templates</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 3</span>
+            <span class="week-task">Use Agent Mode for one multi-step task per week</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 4</span>
+            <span class="week-task">Teach one lead your best prompt</span>
+          </li>
+        </ul>
+      </div>
+      <div class="roadmap-col">
+        <div class="col-header">
+          <span class="col-badge">Days 31-60</span>
+          <span class="col-title">Expand Your Skills</span>
+        </div>
+        <ul class="week-list">
+          <li class="week-item">
+            <span class="week-label">Week 5</span>
+            <span class="week-task">Automate one recurring web or file task</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 6</span>
+            <span class="week-task">Update copilot-instructions.md with lessons learned</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 7</span>
+            <span class="week-task">Try Chain-of-Thought on a complex analysis</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 8</span>
+            <span class="week-task">Run a 15-min "AI tip of the week" with leads</span>
+          </li>
+        </ul>
+      </div>
+      <div class="roadmap-col">
+        <div class="col-header">
+          <span class="col-badge">Days 61-90</span>
+          <span class="col-title">Multiply the Impact</span>
+        </div>
+        <ul class="week-list">
+          <li class="week-item">
+            <span class="week-label">Week 9</span>
+            <span class="week-task">Calculate actual time savings over 2 months</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 10</span>
+            <span class="week-task">Identify 3 new tasks to automate</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 11</span>
+            <span class="week-task">Share best practices with another AGM</span>
+          </li>
+          <li class="week-item">
+            <span class="week-label">Week 12</span>
+            <span class="week-task">Review what's working, set goals for next quarter</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout-box">
+      <span class="callout-text">Consistent users get <strong>3x the productivity gains</strong> compared to occasional users.</span>
+    </div>
+    <div class="footer"><strong>Daily usage beats occasional expertise.</strong></div>
+  </div>
+</body>
+</html>

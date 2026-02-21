@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 33 - Activity B: Upload and Query Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .timer {
+      position: absolute;
+      top: 24px;
+      right: 40px;
+      background: #e0e0e0;
+      color: #666666;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 4px;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 16px;
+    }
+    .demo-section {
+      flex: 1;
+      display: flex;
+      gap: 20px;
+    }
+    .demo-step {
+      flex: 1;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .demo-step.step-bad {
+      border-color: #f87171;
+    }
+    .demo-step.step-good {
+      border-color: #4ade80;
+    }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .step-number {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .step-bad .step-number { background: #f87171; }
+    .step-good .step-number { background: #4ade80; color: #000000; }
+    .step-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .step-label {
+      font-size: 10px;
+      color: #666666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .step-prompt {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 11px;
+      color: #000000;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+    .step-result-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .step-bad .step-result-label { color: #f87171; }
+    .step-good .step-result-label { color: #4ade80; }
+    .step-result {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .observation-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .obs-title {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .obs-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 20px;
+    }
+    .obs-item {
+      font-size: 11px;
+      color: #666666;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .checkbox {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #cc0000;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .footer {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="timer">5 MIN</div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Activity B</span>
+      <h1>Upload and Query Demo</h1>
+    </div>
+    <div class="subtitle">Watch how grounding AI in data changes the response</div>
+
+    <div class="demo-section">
+      <div class="demo-step step-bad">
+        <div class="step-header">
+          <div class="step-number">1</div>
+          <div class="step-title">Without Data</div>
+        </div>
+        <div class="step-label">Ask Bottle Rocket:</div>
+        <div class="step-prompt">"What were the top 3 issues at my DC last week?"</div>
+        <div class="step-result-label">Result:</div>
+        <div class="step-result">AI says it doesn't have that info OR makes something up with generic issues that sound plausible</div>
+      </div>
+      <div class="demo-step step-good">
+        <div class="step-header">
+          <div class="step-number">2</div>
+          <div class="step-title">With Data</div>
+        </div>
+        <div class="step-label">Upload CSV, then ask same question:</div>
+        <div class="step-prompt">"What were the top 3 issues at my DC last week?"</div>
+        <div class="step-result-label">Result:</div>
+        <div class="step-result">AI references specific data points from your file: "Based on your issues log, the top 3 were..."</div>
+      </div>
+    </div>
+
+    <div class="observation-box">
+      <div class="obs-title">Observation Checklist</div>
+      <div class="obs-list">
+        <div class="obs-item"><div class="checkbox"></div>Ungrounded response was vague or invented</div>
+        <div class="obs-item"><div class="checkbox"></div>Grounded response cited specific data</div>
+        <div class="obs-item"><div class="checkbox"></div>AI mentioned file name or data source</div>
+        <div class="obs-item"><div class="checkbox"></div>Numbers matched actual file contents</div>
+      </div>
+    </div>
+
+    <div class="footer">Always provide data when you want accurate, specific answers.</div>
+  </div>
+</body>
+</html>

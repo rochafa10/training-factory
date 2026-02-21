@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 22 - Why AI Makes Things Up</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .bullets-col {
+      flex: 1;
+    }
+    .bullet-list {
+      list-style: none;
+    }
+    .bullet-list li {
+      font-size: 14px;
+      color: #666666;
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      line-height: 1.4;
+    }
+    .bullet-list li:last-child {
+      border-bottom: none;
+    }
+    .bullet-icon {
+      width: 24px;
+      height: 24px;
+      background: #f5f5f5;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 12px;
+      color: #cc0000;
+    }
+    .hallucination-tag {
+      display: inline-block;
+      background: #fef2f2;
+      border: 1px solid #cc0000;
+      color: #cc0000;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+    .analogy-col {
+      width: 320px;
+    }
+    .analogy-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 24px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .analogy-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .analogy-icon {
+      font-size: 32px;
+    }
+    .analogy-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .analogy-text {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .analogy-text em {
+      color: #000000;
+      font-style: italic;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Why AI "Makes Things Up"</h1>
+    <div class="main-content">
+      <div class="bullets-col">
+        <ul class="bullet-list">
+          <li>
+            <span class="bullet-icon">1</span>
+            AI learned patterns from billions of pages during training
+          </li>
+          <li>
+            <span class="bullet-icon">2</span>
+            It predicts what words should come next &mdash; generates, doesn't look up
+          </li>
+          <li>
+            <span class="bullet-icon">3</span>
+            No memory of sources &mdash; generates text that sounds right
+          </li>
+          <li>
+            <span class="bullet-icon">4</span>
+            When it doesn't have real data, it fills gaps with plausible-sounding fiction
+          </li>
+          <li>
+            <span class="bullet-icon">5</span>
+            This is called <span class="hallucination-tag">HALLUCINATION</span>
+          </li>
+        </ul>
+      </div>
+      <div class="analogy-col">
+        <div class="analogy-box">
+          <div class="analogy-header">
+            <span class="analogy-icon">&#x1F4DA;</span>
+            <span class="analogy-label">Analogy</span>
+          </div>
+          <p class="analogy-text">Like someone who read every operations textbook but <em>never set foot in a DC</em>. They can write convincing reports, but the specific numbers are made up.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><strong>AI's goal is text that sounds right.</strong> It doesn't know the difference between real and plausible.</div>
+  </div>
+</body>
+</html>

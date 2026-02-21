@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 35 - Break</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 60px;
+    }
+    .break-icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 48px;
+      font-weight: bold;
+      color: #000000;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .duration {
+      display: inline-block;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 20px;
+      padding: 12px 28px;
+      font-size: 18px;
+      color: #666666;
+    }
+    .duration strong {
+      color: #cc0000;
+    }
+    .tip {
+      margin-top: 32px;
+      font-size: 14px;
+      color: #666666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="break-icon">&#9749;</div>
+    <div class="section-title">10-Minute Break</div>
+    <div class="duration"><strong>10 min</strong></div>
+    <div class="tip">Stretch, refill your coffee, and prepare for the next section</div>
+  </div>
+</body>
+</html>

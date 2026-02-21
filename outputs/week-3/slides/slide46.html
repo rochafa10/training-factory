@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 46 - Activity C: Verification Drill</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .activity-badge {
+      display: inline-block;
+      background: #facc15;
+      color: #000000;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .time-box {
+      margin-left: auto;
+      background: #facc15;
+      border-radius: 12px;
+      padding: 8px 14px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .time-big {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .time-label {
+      font-size: 10px;
+      color: #000000;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 14px;
+    }
+    .main-content {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .ai-output-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    .ai-output-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .ai-output-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+      font-style: italic;
+    }
+    .right-col {
+      width: 340px;
+    }
+    .checklist-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      height: 100%;
+    }
+    .checklist-title {
+      font-size: 12px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .checklist-item {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .checklist-item::before {
+      content: "\2610";
+      position: absolute;
+      left: 0;
+      color: #666666;
+    }
+    .checklist-item em {
+      color: #cc0000;
+      font-style: normal;
+    }
+    .footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <span class="activity-badge">Activity C</span>
+      <h1>Verification Drill</h1>
+      <div class="time-box">
+        <div class="time-big">3</div>
+        <div class="time-label">Minutes</div>
+      </div>
+    </div>
+    <div class="subtitle">Quick practice applying the verification framework to AI output</div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="ai-output-box">
+          <div class="ai-output-label">AI Output to Analyze</div>
+          <div class="ai-output-text">
+            "Based on analysis of your staffing patterns, the night shift is consistently understaffed by 2.3 workers. According to the 2025 National Warehousing Association report, this represents a 15% deviation from industry benchmarks. Recommendation: hire 3 part-time workers to achieve optimal coverage."
+          </div>
+        </div>
+        <div style="background: #fef2f2; border: 1px solid #f87171; border-radius: 8px; padding: 12px;">
+          <div style="font-size: 10px; color: #cc0000; font-weight: bold; text-transform: uppercase; margin-bottom: 6px;">Scenario</div>
+          <div style="font-size: 11px; color: #666666;">An agent just generated this output. Apply the verification checklist to identify potential issues.</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="checklist-box">
+          <div class="checklist-title">Verification Checklist</div>
+          <div class="checklist-item">Did I provide staffing data? <em>(If no, "2.3 workers" is hallucinated)</em></div>
+          <div class="checklist-item">Does the NWA 2025 report exist? <em>(Verify before citing)</em></div>
+          <div class="checklist-item">Is "15% deviation" supported by data? <em>(Too precise without analysis)</em></div>
+          <div class="checklist-item">Is "3 part-time workers" a justified recommendation? <em>(Needs human judgment)</em></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><strong>Answer:</strong> Multiple issues - likely hallucinated stats and over-confident recommendation.</div>
+  </div>
+</body>
+</html>

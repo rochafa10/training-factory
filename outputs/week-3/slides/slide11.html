@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 11 - Plan-Execute-Iterate Loop</title>
+  <title>Slide 11 - Voice Mode</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,88 +20,171 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    .flow {
+    .header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
     }
-    .phase {
-      background: #1a1a1a;
-      padding: 24px;
-      border-radius: 8px;
-      width: 200px;
-      text-align: center;
-    }
-    .phase-icon {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
-    .phase-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .phase-desc {
+    .speed-badge {
+      background: #4ade80;
+      color: #000000;
+      padding: 6px 14px;
+      border-radius: 4px;
       font-size: 12px;
-      color: #a0a0a0;
-      line-height: 1.4;
+      font-weight: bold;
     }
-    .arrow {
-      font-size: 24px;
-      color: #e82127;
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
     }
-    .you-box {
-      border: 2px solid #e82127;
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
     }
-    .bottom-text {
-      text-align: center;
-      margin-top: 30px;
+    .left-col {
+      flex: 1;
+    }
+    .right-col {
+      width: 380px;
+    }
+    .stat-box {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .stat-icon {
+      font-size: 32px;
+    }
+    .stat-text {
       font-size: 14px;
-      color: #a0a0a0;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .stat-text strong {
+      color: #000000;
+    }
+    .benefit-item {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .benefit-item::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .shortcut-grid {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+    }
+    .shortcut-title {
+      font-size: 12px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .shortcut-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .shortcut-row:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .shortcut-key {
+      background: #cc0000;
+      color: #ffffff;
+      font-family: monospace;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 4px;
+      min-width: 100px;
+      text-align: center;
+    }
+    .shortcut-desc {
+      font-size: 13px;
+      color: #666666;
+      margin-left: 12px;
+    }
+    .footer {
+      font-size: 13px;
+      color: #666666;
+      text-align: center;
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="content">
-    <h1>The Plan-Execute-Iterate Loop</h1>
-    <div class="flow">
-      <div class="phase you-box">
-        <p class="phase-icon">You</p>
-        <p class="phase-title">Describe Goal</p>
-        <p class="phase-desc">State what you want to accomplish</p>
+  <div class="container">
+    <div class="header">
+      <span class="speed-badge">3-5x FASTER</span>
+      <h1>Voice Mode - Faster Than Typing</h1>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="stat-box">
+          <div class="stat-icon">&#128172;</div>
+          <div class="stat-text">Humans speak at <strong>150 WPM</strong> vs type at <strong>40 WPM</strong></div>
+        </div>
+        <div class="benefit-item">Voice keeps you in flow state</div>
+        <div class="benefit-item">No context-switching to keyboard</div>
+        <div class="benefit-item">Natural conversation with AI</div>
+        <div class="benefit-item">Perfect for brainstorming and drafting</div>
       </div>
-      <span class="arrow">-></span>
-      <div class="phase">
-        <p class="phase-icon">1</p>
-        <p class="phase-title">Plan</p>
-        <p class="phase-desc">Analyzes request, identifies files, breaks into subtasks</p>
-      </div>
-      <span class="arrow">-></span>
-      <div class="phase">
-        <p class="phase-icon">2</p>
-        <p class="phase-title">Execute</p>
-        <p class="phase-desc">Edits files, runs commands, creates content</p>
-      </div>
-      <span class="arrow">-></span>
-      <div class="phase">
-        <p class="phase-icon">3</p>
-        <p class="phase-title">Iterate</p>
-        <p class="phase-desc">Checks for errors, reviews output, self-corrects</p>
+      <div class="right-col">
+        <div class="shortcut-grid">
+          <div class="shortcut-title">Keyboard Shortcuts</div>
+          <div class="shortcut-row">
+            <span class="shortcut-key">Ctrl+U</span>
+            <span class="shortcut-desc">Voice Chat (talk to Copilot)</span>
+          </div>
+          <div class="shortcut-row">
+            <span class="shortcut-key">Ctrl+Alt+V</span>
+            <span class="shortcut-desc">Editor Dictation (type with voice)</span>
+          </div>
+          <div class="shortcut-row">
+            <span class="shortcut-key">Escape</span>
+            <span class="shortcut-desc">Stop Dictation</span>
+          </div>
+          <div class="shortcut-row">
+            <span class="shortcut-key">Hold Ctrl+Alt+V</span>
+            <span class="shortcut-desc">Walky-Talky mode</span>
+          </div>
+        </div>
       </div>
     </div>
-    <p class="bottom-text">You're always in control. Nothing executes without your approval.</p>
+    <div class="footer">Voice may feel awkward at first. By end of Exercise 1, it will feel natural.</div>
   </div>
 </body>
 </html>

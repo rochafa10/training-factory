@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Slide 49 - The 4 Prompt Levels</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 960px; height: 540px; overflow: hidden;
+    background: #ffffff; font-family: Arial, sans-serif; color: #000000;
+    position: relative;
+  }
+  .accent-bar {
+    position: absolute; left: 0; top: 0; width: 8px; height: 100%;
+    background: #cc0000;
+  }
+  .content { padding: 28px 36px 20px 36px; margin-left: 8px; }
+  .header { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .title { font-size: 22px; font-weight: 700; color: #000000; }
+  .badge {
+    background: #cc0000; color: #000000; font-size: 10px; font-weight: 700;
+    padding: 3px 10px; border-radius: 3px; letter-spacing: 0.5px;
+  }
+  .level-row {
+    display: flex; align-items: stretch; gap: 12px;
+    background: #f5f5f5; border-radius: 6px; margin-bottom: 10px;
+    overflow: hidden; min-height: 82px;
+  }
+  .level-border { width: 5px; flex-shrink: 0; }
+  .level-body {
+    display: flex; align-items: center; gap: 14px;
+    padding: 10px 14px 10px 10px; flex: 1;
+  }
+  .level-num {
+    font-size: 13px; font-weight: 700; color: #000000;
+    background: #e0e0e0; border-radius: 4px; padding: 4px 8px;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .prompt-text {
+    font-family: 'Courier New', monospace; font-size: 10px; color: #666666;
+    line-height: 1.35; flex: 1;
+  }
+  .level-label {
+    font-size: 12px; font-weight: 700; color: #000000;
+    white-space: nowrap; flex-shrink: 0; text-align: right; min-width: 90px;
+  }
+  .bottom-text {
+    text-align: center; font-style: italic; color: #666666;
+    font-size: 13px; margin-top: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <div class="header">
+      <span class="title">The 4 Prompt Levels</span>
+      <span class="badge">ACTIVITY C</span>
+    </div>
+
+    <div class="level-row">
+      <div class="level-border" style="background:#f87171;"></div>
+      <div class="level-body">
+        <span class="level-num">Level 1</span>
+        <span class="prompt-text">Analyze the file.</span>
+        <span class="level-label" style="color:#f87171;">The Lazy Prompt<br><span style="font-weight:400;font-size:10px;color:#666;">3 words, zero guidance</span></span>
+      </div>
+    </div>
+
+    <div class="level-row">
+      <div class="level-border" style="background:#facc15;"></div>
+      <div class="level-body">
+        <span class="level-num">Level 2</span>
+        <span class="prompt-text">You are a warehouse analyst. Look at the order data and tell me what's going on. Find any problems and give me a summary. Use bullet points.</span>
+        <span class="level-label" style="color:#facc15;">Some Effort</span>
+      </div>
+    </div>
+
+    <div class="level-row">
+      <div class="level-border" style="background:#60a5fa;"></div>
+      <div class="level-body">
+        <span class="level-num">Level 3</span>
+        <span class="prompt-text"><b style="color:#60a5fa;">ROLE:</b> Operations analyst&hellip; <b style="color:#60a5fa;">CONTEXT:</b> Order Monitor export, Hot Calls, VOR&hellip;<br><b style="color:#60a5fa;">TASK:</b> Executive summary, flag urgent, identify problems, 3-5 recommendations&hellip;<br><b style="color:#60a5fa;">FORMAT:</b> Headers, bullets, bold numbers</span>
+        <span class="level-label" style="color:#60a5fa;">Good Structure<br><span style="font-size:10px;font-weight:400;">(RCTF Framework)</span></span>
+      </div>
+    </div>
+
+    <div class="level-row">
+      <div class="level-border" style="background:#4ade80;"></div>
+      <div class="level-body">
+        <span class="level-num">Level 4</span>
+        <span class="prompt-text">Everything from Level 3 <b style="color:#4ade80;">PLUS:</b> 50+ field definitions, status lifecycle, pick location format, part groups, route types, analysis thresholds</span>
+        <span class="level-label" style="color:#4ade80;">Expert</span>
+      </div>
+    </div>
+
+    <div class="bottom-text">Same AI model. Same data. Only the prompt changes.</div>
+  </div>
+</body>
+</html>

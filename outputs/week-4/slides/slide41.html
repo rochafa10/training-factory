@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 41 - Code Review Checklist for Non-Developers</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 32px 16px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 16px;
+    }
+    .columns {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .column.red-flags {
+      background: #fef2f2;
+      border: 2px solid #f87171;
+    }
+    .column.green-flags {
+      background: #f0fdf4;
+      border: 2px solid #4ade80;
+    }
+    .column-header {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .column.red-flags .column-header {
+      color: #dc2626;
+    }
+    .column.green-flags .column-header {
+      color: #16a34a;
+    }
+    .column-subtitle {
+      font-size: 10px;
+      color: #666666;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 11px;
+      line-height: 1.4;
+    }
+    .checkbox {
+      width: 14px;
+      height: 14px;
+      border: 2px solid;
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .column.red-flags .checkbox {
+      border-color: #f87171;
+    }
+    .column.green-flags .checkbox {
+      border-color: #4ade80;
+    }
+    .item-text {
+      color: #000000;
+    }
+    .callout {
+      margin-top: 14px;
+      background: #facc15;
+      border-radius: 8px;
+      padding: 12px 16px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 13px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .footer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Code Review Checklist for Non-Developers</h1>
+    <div class="columns">
+      <div class="column red-flags">
+        <div class="column-header">&#128308; Red Flags (Reject and Ask Questions)</div>
+        <div class="column-subtitle">Stop and investigate before approving</div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">References to files you didn't mention</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">URLs you don't recognize</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Commands that delete (rm, del) or overwrite files</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">References to environment variables or system settings</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Any mention of passwords, tokens, or keys</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Commands that install software you didn't request</span>
+        </div>
+      </div>
+      <div class="column green-flags">
+        <div class="column-header">&#128994; Green Flags (Generally Safe)</div>
+        <div class="column-subtitle">These actions are typically okay to approve</div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Reading files you created (like your CSV data)</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Writing new files to your workspace</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Navigating to URLs you specified</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Formatting and text processing operations</span>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <span class="item-text">Creating markdown reports</span>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-text">The principle: If you don't understand it, don't approve it.</div>
+    </div>
+    <div class="footer">You don't need to be a developer to review agent commands</div>
+  </div>
+</body>
+</html>

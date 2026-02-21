@@ -8,8 +8,8 @@
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,39 +20,51 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 28px 40px 24px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
-    .header {
+    .header-row {
       display: flex;
       align-items: center;
       gap: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
     .exercise-badge {
-      background: #e82127;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-size: 14px;
+      display: inline-block;
+      background: #cc0000;
+      color: #000000;
+      padding: 4px 12px;
+      font-size: 10px;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
     }
     h1 {
       font-size: 28px;
       font-weight: bold;
     }
-    .time-badge {
+    .time-box {
       margin-left: auto;
-      background: #2a2a2a;
-      padding: 6px 12px;
-      border-radius: 4px;
-      font-size: 12px;
-      color: #a0a0a0;
+      background: #cc0000;
+      border-radius: 12px;
+      padding: 10px 16px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .time-big {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .time-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
     }
     .main-content {
       display: flex;
@@ -66,21 +78,24 @@
       width: 340px;
     }
     .scenario-box {
-      background: #1a1a1a;
-      border-radius: 8px;
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
       padding: 16px;
       margin-bottom: 16px;
     }
-    .scenario-label {
-      font-size: 11px;
-      color: #e82127;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    .scenario-header {
+      font-size: 13px;
+      font-weight: bold;
+      color: #cc0000;
       margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0e0e0;
     }
     .scenario-text {
       font-size: 14px;
       line-height: 1.5;
+      color: #666666;
       margin-bottom: 12px;
     }
     .data-row {
@@ -90,7 +105,7 @@
     }
     .data-day {
       font-size: 11px;
-      color: #a0a0a0;
+      color: #666666;
       width: 80px;
     }
     .data-value {
@@ -107,8 +122,9 @@
       color: #4ade80;
     }
     .instructions-box {
-      background: #2a2a2a;
-      border-radius: 8px;
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
       padding: 16px;
     }
     .instructions-title {
@@ -120,6 +136,7 @@
     }
     .instruction-item {
       font-size: 13px;
+      color: #666666;
       margin-bottom: 8px;
       padding-left: 24px;
       position: relative;
@@ -135,14 +152,15 @@
     .instruction-item:nth-child(4)::before { content: "3."; }
     .instruction-item:nth-child(5)::before { content: "4."; }
     .prompt-hint {
-      background: #1a1a1a;
-      border-radius: 8px;
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
       padding: 16px;
       height: 100%;
     }
     .hint-title {
       font-size: 11px;
-      color: #e82127;
+      color: #cc0000;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 12px;
@@ -150,8 +168,12 @@
     .hint-text {
       font-size: 12px;
       line-height: 1.6;
-      color: #a0a0a0;
+      color: #666666;
       font-family: monospace;
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 12px;
+      white-space: pre-wrap;
     }
     .highlight {
       color: #4ade80;
@@ -161,15 +183,18 @@
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <div class="header">
+    <div class="header-row">
       <span class="exercise-badge">Exercise 1</span>
       <h1>Chain-of-Thought Prompts</h1>
-      <span class="time-badge">25 minutes</span>
+      <div class="time-box">
+        <div class="time-big">25</div>
+        <div class="time-label">Minutes</div>
+      </div>
     </div>
     <div class="main-content">
       <div class="left-col">
         <div class="scenario-box">
-          <div class="scenario-label">Scenario</div>
+          <div class="scenario-header">Scenario</div>
           <div class="scenario-text">Your DC missed its productivity target by 8% last week. Leadership wants to know why and what to do about it.</div>
           <div class="data-row">
             <span class="data-day">Monday:</span>

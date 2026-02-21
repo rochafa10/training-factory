@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 18 - The Agent Mindset</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .comparison-grid {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .column-header {
+      padding: 12px 16px;
+      border-radius: 8px 8px 0 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .column-header.red {
+      background: #f87171;
+      color: #000000;
+    }
+    .column-header.green {
+      background: #4ade80;
+      color: #000000;
+    }
+    .column-body {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      padding: 20px;
+      flex: 1;
+    }
+    .approach-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+    .column.old .approach-label {
+      color: #f87171;
+    }
+    .column.new .approach-label {
+      color: #16a34a;
+    }
+    .example-text {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #666666;
+      background: #e0e0e0;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: monospace;
+    }
+    .column.old .example-text {
+      border-left: 4px solid #f87171;
+    }
+    .column.new .example-text {
+      border-left: 4px solid #4ade80;
+    }
+    .callout-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 15px;
+      font-weight: bold;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Agent Mindset - Goal, Not Steps</h1>
+    <div class="comparison-grid">
+      <div class="column old">
+        <div class="column-header red">OLD WAY</div>
+        <div class="column-body">
+          <div class="approach-label">Micro-Managing (Don't Do This)</div>
+          <div class="example-text">"First create a file called template.md. Then add a header that says Shift Handoff. Then add a section for outgoing shift..."</div>
+        </div>
+      </div>
+      <div class="column new">
+        <div class="column-header green">NEW WAY</div>
+        <div class="column-body">
+          <div class="approach-label">Goal-Oriented (Do This)</div>
+          <div class="example-text">"Create a shift handoff system for a distribution center. Capture outgoing summary, ongoing issues, and incoming priorities. Include template and sample."</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout-box">
+      <span class="callout-text">Describe the destination, not the turn-by-turn directions. The agent plans the steps.</span>
+    </div>
+  </div>
+</body>
+</html>

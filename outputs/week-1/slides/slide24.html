@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 24 - Tesla Employees Are Already Building AI Agents</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .section-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #cc0000;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .agent-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+      flex: 1;
+    }
+    .agent-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .agent-card.cta {
+      border: 1px dashed #cc0000;
+    }
+    .agent-name {
+      font-size: 13px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .dept-tag {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+    .dept-ops { color: #4ade80; }
+    .dept-energy { color: #facc15; }
+    .dept-eng { color: #60a5fa; }
+    .dept-mfg { color: #c084fc; }
+    .dept-you { color: #cc0000; }
+    .agent-desc {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="section-label">Section 05 &mdash; AI Models &amp; Agents</div>
+    <h1>Tesla Employees Are Already Building AI Agents</h1>
+    <div class="agent-grid">
+      <div class="agent-card">
+        <span class="agent-name">5-Why Analysis Agent</span>
+        <span class="dept-tag dept-ops">Operations</span>
+        <span class="agent-desc">Guides structured root cause analysis for production issues</span>
+      </div>
+      <div class="agent-card">
+        <span class="agent-name">Parts SOP Generator</span>
+        <span class="dept-tag dept-ops">Operations</span>
+        <span class="agent-desc">Generates standard operating procedures from parts documentation</span>
+      </div>
+      <div class="agent-card">
+        <span class="agent-name">Watt Wizard</span>
+        <span class="dept-tag dept-energy">Energy</span>
+        <span class="agent-desc">Answers energy storage and battery technical questions</span>
+      </div>
+      <div class="agent-card">
+        <span class="agent-name">SPARQ</span>
+        <span class="dept-tag dept-eng">Engineering</span>
+        <span class="agent-desc">Spark plug analysis and quality inspection checks</span>
+      </div>
+      <div class="agent-card">
+        <span class="agent-name">Megafactory 5S</span>
+        <span class="dept-tag dept-mfg">Manufacturing</span>
+        <span class="agent-desc">5S audit assistance for factory floor operations</span>
+      </div>
+      <div class="agent-card cta">
+        <span class="agent-name">Your Agent?</span>
+        <span class="dept-tag dept-you">Your DC</span>
+        <span class="agent-desc">What repetitive task could AI handle for your team?</span>
+      </div>
+    </div>
+    <div class="footer">Built on Nabu (nabu.bottlerocket.tesla.com) &mdash; 38 agents and growing. No code required.</div>
+  </div>
+</body>
+</html>

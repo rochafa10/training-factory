@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 25 - Model Selection Guide</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .models-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .model-card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .model-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .model-sub {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 12px;
+    }
+    .model-strengths {
+      font-size: 12px;
+      color: #4ade80;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .model-best-for {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .model-best-for strong {
+      color: #000000;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .task-table {
+      background: #f5f5f5;
+      border-radius: 8px;
+      overflow: hidden;
+      flex: 1;
+    }
+    .task-header {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      background: #e0e0e0;
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .task-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      padding: 8px 16px;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 12px;
+    }
+    .task-row:nth-child(even) {
+      background: #f0f0f0;
+    }
+    .task-row:last-child { border-bottom: none; }
+    .task-name { color: #666666; }
+    .task-model { color: #4ade80; font-weight: bold; }
+    .footer {
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Model Selection Guide</h1>
+    <div class="models-grid">
+      <div class="model-card">
+        <div class="model-name">Claude</div>
+        <div class="model-sub">via Bottle Rocket</div>
+        <div class="model-strengths">Best writing style, complex instructions</div>
+        <div class="model-best-for">
+          <strong>Best for:</strong>
+          Email drafts, detailed analysis, long-form reports, nuanced writing
+        </div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">Gemini</div>
+        <div class="model-sub">via Bottle Rocket</div>
+        <div class="model-strengths">1M token context, fast responses</div>
+        <div class="model-best-for">
+          <strong>Best for:</strong>
+          Large documents, quick analysis, multimodal (images), speed
+        </div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">Grok</div>
+        <div class="model-sub">via Bottle Rocket</div>
+        <div class="model-strengths">Real-time data, math reasoning</div>
+        <div class="model-best-for">
+          <strong>Best for:</strong>
+          Live information, calculations, trend analysis, current events
+        </div>
+      </div>
+    </div>
+    <div class="task-table">
+      <div class="task-header">
+        <span>Task Type</span>
+        <span>Recommended Model</span>
+      </div>
+      <div class="task-row">
+        <span class="task-name">Email drafting & vendor comms</span>
+        <span class="task-model">Claude</span>
+      </div>
+      <div class="task-row">
+        <span class="task-name">Analyzing large spreadsheets</span>
+        <span class="task-model">Gemini</span>
+      </div>
+      <div class="task-row">
+        <span class="task-name">Math & calculations</span>
+        <span class="task-model">Grok</span>
+      </div>
+      <div class="task-row">
+        <span class="task-name">Quick daily tasks</span>
+        <span class="task-model">Qwen 3 30B (default)</span>
+      </div>
+    </div>
+    <div class="footer">Start with the default. Switch models when you need specific strengths.</div>
+  </div>
+</body>
+</html>

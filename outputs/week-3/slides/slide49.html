@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 49 - Exercise 4: Output 2 Data Analysis</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .output-badge {
+      display: inline-block;
+      background: #facc15;
+      color: #000000;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .time-box {
+      margin-left: auto;
+      background: #facc15;
+      border-radius: 12px;
+      padding: 8px 14px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .time-big {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .time-label {
+      font-size: 10px;
+      color: #000000;
+    }
+    .main-content {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .ai-output-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-left: 4px solid #facc15;
+      border-radius: 8px;
+      padding: 16px;
+      height: 100%;
+    }
+    .ai-output-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #b45309;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .report-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-top: 10px;
+      margin-bottom: 6px;
+    }
+    .report-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .trend-item {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 3px;
+      padding-left: 14px;
+      position: relative;
+    }
+    .trend-item::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #666666;
+    }
+    .insight-box {
+      background: #fefce8;
+      border: 1px solid #facc15;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .insight-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #b45309;
+      margin-bottom: 4px;
+    }
+    .insight-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .right-col {
+      width: 280px;
+    }
+    .error-box {
+      background: #fefce8;
+      border: 1px solid #facc15;
+      border-radius: 12px;
+      padding: 16px;
+      height: 100%;
+    }
+    .error-title {
+      font-size: 12px;
+      color: #b45309;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      font-weight: bold;
+    }
+    .error-item {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+    .error-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #facc15;
+      margin-bottom: 4px;
+    }
+    .error-input {
+      font-size: 11px;
+      color: #999999;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <span class="output-badge">Exercise 4 - Output 2</span>
+      <h1>Find the Errors: Data Analysis</h1>
+      <div class="time-box">
+        <div class="time-big">5</div>
+        <div class="time-label">MIN</div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="ai-output-box">
+          <div class="ai-output-label">AI Output Box</div>
+          <div class="report-title">Weekly Productivity Analysis - Week 4</div>
+          <div class="section-title">Summary:</div>
+          <div class="report-text">Productivity improved significantly this week. UPLH increased from 12.4 to 14.1.</div>
+          <div class="section-title">Trend Analysis:</div>
+          <div class="trend-item">Week 1: 13.2 UPLH</div>
+          <div class="trend-item">Week 2: 12.8 UPLH</div>
+          <div class="trend-item">Week 3: 12.4 UPLH</div>
+          <div class="trend-item">Week 4: 14.1 UPLH</div>
+          <div class="insight-box">
+            <div class="insight-label">Key Insight:</div>
+            <div class="insight-text">The conveyor system installation (Week 3) confirms that capital equipment investment directly drives throughput.</div>
+          </div>
+          <div class="section-title">Recommendation:</div>
+          <div class="report-text">A second conveyor would yield 13-15% additional improvement, saving $47,000 annually.</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="error-box">
+          <div class="error-title">Find 3 Errors</div>
+          <div class="error-item">
+            <div class="error-label">Error 1:</div>
+            <div class="error-input">______________________</div>
+          </div>
+          <div class="error-item">
+            <div class="error-label">Error 2:</div>
+            <div class="error-input">______________________</div>
+          </div>
+          <div class="error-item">
+            <div class="error-label">Error 3:</div>
+            <div class="error-input">______________________</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 21 - The Quality Scorecard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .dimensions-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .dimension-card {
+      flex: 1;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .dimension-number {
+      font-size: 24px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 8px;
+    }
+    .dimension-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+    .dimension-question {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+      flex: 1;
+    }
+    .dimension-score {
+      font-size: 12px;
+      color: #cc0000;
+      font-weight: bold;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #e0e0e0;
+      width: 100%;
+    }
+    .scoring-guide {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      gap: 24px;
+    }
+    .scoring-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .score-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #666666;
+    }
+    .score-range {
+      font-weight: bold;
+      min-width: 50px;
+    }
+    .score-25 { color: #4ade80; }
+    .score-20 { color: #4ade80; }
+    .score-15 { color: #facc15; }
+    .score-low { color: #f87171; }
+    .footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Quality Scorecard - 5 Dimensions</h1>
+    <div class="dimensions-row">
+      <div class="dimension-card">
+        <div class="dimension-number">1</div>
+        <div class="dimension-title">Accuracy</div>
+        <div class="dimension-question">Are the facts, numbers, and logic correct?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-number">2</div>
+        <div class="dimension-title">Completeness</div>
+        <div class="dimension-question">Does it cover everything you asked for?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-number">3</div>
+        <div class="dimension-title">Format</div>
+        <div class="dimension-question">Is it structured the way you need it?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-number">4</div>
+        <div class="dimension-title">Speed</div>
+        <div class="dimension-question">Did it save significant time vs. manual?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-number">5</div>
+        <div class="dimension-title">Usability</div>
+        <div class="dimension-question">Can you use it as-is, or does it need heavy editing?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+    </div>
+    <div class="scoring-guide">
+      <div>
+        <div class="scoring-title">Scoring Guide</div>
+      </div>
+      <div class="score-item">
+        <span class="score-range score-25">25/25</span>
+        <span>Ready to use immediately</span>
+      </div>
+      <div class="score-item">
+        <span class="score-range score-20">20-24</span>
+        <span>Minor edits needed (sweet spot)</span>
+      </div>
+      <div class="score-item">
+        <span class="score-range score-15">15-19</span>
+        <span>Significant editing - refine your prompt</span>
+      </div>
+      <div class="score-item">
+        <span class="score-range score-low">Below 15</span>
+        <span>Re-prompt or switch approach</span>
+      </div>
+    </div>
+    <div class="footer">Rate every important output on these five dimensions.</div>
+  </div>
+</body>
+</html>

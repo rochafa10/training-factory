@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 10 - Section 3 Divider</title>
+  <title>Slide 10 - The Grok Trap</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
-      display: flex;
     }
     .accent-bar {
       position: absolute;
@@ -21,56 +20,128 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .red-block {
-      width: 320px;
+    .container {
+      padding: 32px 40px 24px 48px;
       height: 100%;
-      background: #e82127;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .section-number {
-      font-size: 180px;
-      font-weight: bold;
-      color: rgba(255, 255, 255, 0.3);
-    }
-    .content {
-      flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 40px 48px;
-    }
-    .section-label {
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #a0a0a0;
-      margin-bottom: 16px;
     }
     h1 {
-      font-size: 40px;
+      font-size: 32px;
       font-weight: bold;
-      line-height: 1.2;
+      margin-bottom: 24px;
     }
-    .duration {
-      font-size: 14px;
-      color: #a0a0a0;
-      margin-top: 24px;
+    .columns {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column.bad { border-top: 3px solid #f87171; }
+    .column h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .column.good h2 { color: #4ade80; }
+    .column.bad h2 { color: #f87171; }
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .detail-label {
+      font-size: 12px;
+      color: #666666;
+    }
+    .detail-value {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .column.good .detail-value { color: #4ade80; }
+    .column.bad .detail-value { color: #f87171; }
+    .verdict {
+      margin-top: 12px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #4ade80;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .callout {
+      background: #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .callout p {
+      font-size: 13px;
+      color: #666666;
+    }
+    .callout strong {
+      color: #000000;
     }
   </style>
 </head>
 <body>
-  <div class="red-block">
-    <span class="section-number">03</span>
-  </div>
-  <div class="content">
-    <p class="section-label">Section 3</p>
-    <h1>Introduction to<br>Bottle Rocket</h1>
-    <p class="duration">15 minutes | Demo</p>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Grok Trap &mdash; Same Model, Different Rules</h1>
+    <div class="columns">
+      <div class="column good">
+        <h2>Grok via Bottle Rocket</h2>
+        <div class="detail">
+          <span class="detail-label">Platform</span>
+          <span class="detail-value">go.tesla.com/chat</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Tesla Data</span>
+          <span class="detail-value">YES &mdash; fully approved</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Routing</span>
+          <span class="detail-value">Tesla secure infrastructure</span>
+        </div>
+        <div class="verdict">Use freely with internal data</div>
+      </div>
+      <div class="column bad">
+        <h2>Grok via X / xAI Apps</h2>
+        <div class="detail">
+          <span class="detail-label">Platform</span>
+          <span class="detail-value">x.com, xAI website, xAI apps</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Tesla Data</span>
+          <span class="detail-value">NO &mdash; policy violation</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Routing</span>
+          <span class="detail-value">External xAI servers</span>
+        </div>
+        <div class="verdict">Never use for Tesla work</div>
+      </div>
+    </div>
+    <div class="callout">
+      <p><strong>The platform determines data protection, not the model name.</strong></p>
+    </div>
   </div>
 </body>
 </html>

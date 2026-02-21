@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 16 - Exercise 2</title>
+  <title>Slide 16 - Inside Bottle Rocket</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -28,177 +28,49 @@
       display: flex;
       flex-direction: column;
     }
-    .exercise-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #e82127;
-      padding: 8px 16px;
-      border-radius: 6px;
-      margin-bottom: 16px;
-      width: fit-content;
-    }
-    .exercise-badge span {
-      font-size: 14px;
-      font-weight: bold;
-    }
     h1 {
       font-size: 28px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 28px;
     }
-    .main-content {
+    .bullets {
       display: flex;
-      gap: 24px;
+      flex-direction: column;
+      gap: 16px;
       flex: 1;
     }
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      flex: 1;
+    .bullet {
+      padding-left: 16px;
+      border-left: 2px solid #e0e0e0;
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5;
     }
-    .category {
-      background: #1a1a1a;
-      border-radius: 8px;
-      padding: 14px;
-    }
-    .category h3 {
-      font-size: 13px;
-      color: #e82127;
-      margin-bottom: 10px;
-    }
-    .category ul {
-      list-style: none;
-    }
-    .category li {
-      font-size: 11px;
-      margin-bottom: 6px;
-      padding-left: 12px;
-      position: relative;
-      color: #a0a0a0;
-    }
-    .category li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #e82127;
-    }
-    .time-badge {
-      position: absolute;
-      top: 32px;
-      right: 40px;
-      background: #2a2a2a;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .time-badge .time {
-      font-size: 28px;
-      font-weight: bold;
-      color: #e82127;
-    }
-    .time-badge .label {
-      font-size: 10px;
-      color: #a0a0a0;
-    }
-    .checklist {
-      background: #2a2a2a;
-      border-radius: 8px;
-      padding: 16px;
-      margin-top: 16px;
-    }
-    .checklist h3 {
-      font-size: 12px;
-      color: #e82127;
-      margin-bottom: 10px;
-    }
-    .check-items {
-      display: flex;
-      gap: 24px;
-    }
-    .check-item {
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .check-box {
-      width: 14px;
-      height: 14px;
-      border: 2px solid #a0a0a0;
-      border-radius: 3px;
+    .bullet strong {
+      color: #000000;
     }
     .footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
       font-size: 11px;
       color: #666;
-      margin-top: 12px;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <div class="exercise-badge">
-      <span>EXERCISE 2</span>
+    <h1>Inside Bottle Rocket</h1>
+    <div class="bullets">
+      <div class="bullet"><strong>Access at go.tesla.com/chat</strong> &mdash; sign in with Tesla credentials</div>
+      <div class="bullet"><strong>Chat interface:</strong> type your prompt, AI responds in real-time</div>
+      <div class="bullet"><strong>Model selector (top):</strong> choose from 8 AI models for different tasks</div>
+      <div class="bullet"><strong>Personas (sidebar):</strong> pre-built AI personalities for specialized tasks</div>
+      <div class="bullet"><strong>File upload:</strong> drag &amp; drop PDFs, spreadsheets, images for AI analysis</div>
+      <div class="bullet"><strong>Web search toggle (globe icon):</strong> ground responses with live internet data</div>
     </div>
-    <h1>Write 3 Operations Prompts</h1>
-    <div class="time-badge">
-      <div class="time">25</div>
-      <div class="label">MINUTES</div>
-    </div>
-    <div class="categories">
-      <div class="category">
-        <h3>Email Drafts</h3>
-        <ul>
-          <li>Vendor late delivery</li>
-          <li>Leadership update</li>
-          <li>Team recognition</li>
-        </ul>
-      </div>
-      <div class="category">
-        <h3>Meeting Prep</h3>
-        <ul>
-          <li>Safety meeting agenda</li>
-          <li>1:1 discussion points</li>
-          <li>Shift debrief questions</li>
-        </ul>
-      </div>
-      <div class="category">
-        <h3>Performance</h3>
-        <ul>
-          <li>Weekly metrics summary</li>
-          <li>Incident report</li>
-          <li>Shift handoff notes</li>
-        </ul>
-      </div>
-      <div class="category">
-        <h3>Analysis</h3>
-        <ul>
-          <li>Missed shipment causes</li>
-          <li>Overtime spike factors</li>
-          <li>Dock efficiency issues</li>
-        </ul>
-      </div>
-    </div>
-    <div class="checklist">
-      <h3>For Each Prompt, Check:</h3>
-      <div class="check-items">
-        <div class="check-item">
-          <span class="check-box"></span>
-          <span>Has all 4 components (ROLE, CONTEXT, TASK, FORMAT)</span>
-        </div>
-        <div class="check-item">
-          <span class="check-box"></span>
-          <span>Relevant to your actual work</span>
-        </div>
-        <div class="check-item">
-          <span class="check-box"></span>
-          <span>Reusable tomorrow</span>
-        </div>
-      </div>
-    </div>
-    <p class="footer">Independent Practice | Hands-On</p>
+    <div class="footer">All models inside Bottle Rocket are approved for Tesla Data. v2.0.5</div>
   </div>
 </body>
 </html>

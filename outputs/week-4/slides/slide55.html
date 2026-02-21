@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 55 - Certificate of Completion</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .border-frame {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border: 3px solid #cc0000;
+      border-radius: 4px;
+    }
+    .inner-border {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      border: 1px solid #e0e0e0;
+    }
+    .container {
+      padding: 40px 60px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 6px 16px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .certifies {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 12px;
+    }
+    .name-line {
+      width: 400px;
+      border-bottom: 2px solid #000000;
+      margin-bottom: 6px;
+      height: 36px;
+    }
+    .name-label {
+      font-size: 10px;
+      color: #666666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    .completed {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+    }
+    .stats {
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .stats span {
+      margin: 0 8px;
+      color: #666666;
+    }
+    .skills-section {
+      margin-bottom: 20px;
+    }
+    .skills-label {
+      font-size: 10px;
+      color: #666666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .skills-grid {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+    .skill-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #000000;
+    }
+    .skill-check {
+      width: 16px;
+      height: 16px;
+      background: #4ade80;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 10px;
+    }
+    .signature-row {
+      display: flex;
+      gap: 80px;
+      margin-top: 10px;
+    }
+    .signature-block {
+      text-align: center;
+    }
+    .signature-line {
+      width: 160px;
+      border-bottom: 1px solid #000000;
+      margin-bottom: 4px;
+      height: 24px;
+    }
+    .signature-label {
+      font-size: 9px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+    .footer-note {
+      position: absolute;
+      bottom: 30px;
+      font-size: 11px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="border-frame"></div>
+  <div class="inner-border"></div>
+  <div class="container">
+    <span class="badge">Certificate of Completion</span>
+
+    <p class="certifies">This certifies that</p>
+
+    <div class="name-line"></div>
+    <p class="name-label">[Name]</p>
+
+    <p class="completed">has successfully completed the</p>
+
+    <h1>AI Operations Training Course</h1>
+
+    <p class="stats">
+      4 Weeks <span>|</span> 16 Hours <span>|</span> 12 Tools Mastered
+    </p>
+
+    <div class="skills-section">
+      <p class="skills-label">Skills Demonstrated</p>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <span class="skill-check">&#10003;</span>
+          <span>Prompt Engineering</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-check">&#10003;</span>
+          <span>Agent Automation</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-check">&#10003;</span>
+          <span>Workflow Automation</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-check">&#10003;</span>
+          <span>Security Best Practices</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="signature-row">
+      <div class="signature-block">
+        <div class="signature-line"></div>
+        <p class="signature-label">Date</p>
+      </div>
+      <div class="signature-block">
+        <div class="signature-line"></div>
+        <p class="signature-label">Instructor</p>
+      </div>
+    </div>
+
+    <p class="footer-note">Take a photo of your certificate!</p>
+  </div>
+</body>
+</html>

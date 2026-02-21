@@ -2,97 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 05 - Key Statistics</title>
+  <title>Slide 05 - Section 1 Divider</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
     }
-    .accent-bar {
+    .section-block {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
+      width: 320px;
       height: 100%;
-      background: #e82127;
-    }
-    .container {
-      padding: 32px 40px 32px 48px;
-      height: 100%;
+      background: #cc0000;
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    h1 {
-      font-size: 32px;
+    .section-number {
+      font-size: 180px;
       font-weight: bold;
-      margin-bottom: 32px;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
     }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      flex: 1;
-    }
-    .stat-card {
-      background: #1a1a1a;
-      border-radius: 12px;
-      padding: 24px;
+    .section-content {
+      margin-left: 360px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;
+      height: 100%;
+      padding: 40px;
     }
-    .stat-number {
-      font-size: 48px;
+    h1 {
+      font-size: 40px;
       font-weight: bold;
-      color: #e82127;
-      margin-bottom: 8px;
+      margin-bottom: 16px;
+      line-height: 1.2;
     }
-    .stat-label {
-      font-size: 14px;
-      color: #a0a0a0;
-      line-height: 1.4;
-    }
-    .source {
-      font-size: 10px;
-      color: #666;
-      margin-top: 12px;
-    }
-    .footer {
-      font-size: 11px;
-      color: #666;
-      margin-top: 16px;
+    .duration {
+      font-size: 16px;
+      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="container">
-    <h1>The Business Case for AI</h1>
-    <div class="stats-grid">
-      <div class="stat-card">
-        <span class="stat-number">7.5</span>
-        <span class="stat-label">hours saved per week<br>with AI tools</span>
-        <span class="source">Worklytics 2025</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">20-30%</span>
-        <span class="stat-label">efficiency improvement<br>with proper AI training</span>
-        <span class="source">Centric Consulting</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">95%</span>
-        <span class="stat-label">of AI pilots fail<br>due to organizational factors</span>
-        <span class="source">MIT/Fortune 2025</span>
-      </div>
-    </div>
-    <p class="footer">Section 1 | Why AI Matters for Operations</p>
+  <div class="section-block">
+    <span class="section-number">01</span>
+  </div>
+  <div class="section-content">
+    <h1>Why AI Matters<br>for Operations</h1>
+    <p class="duration">10 minutes</p>
   </div>
 </body>
 </html>

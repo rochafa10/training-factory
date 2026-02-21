@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 37 - Three Tiers of AI: Chatbot → Workflow → Agent</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 18px 24px 14px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .badge {
+      background: #60a5fa;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 4px 12px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      color: #666666;
+      font-size: 12px;
+      margin-bottom: 14px;
+    }
+    .tiers {
+      display: flex;
+      gap: 14px;
+      flex: 1;
+    }
+    .tier {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 14px 14px 12px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .tier-1 { border-color: #4ade80; }
+    .tier-2 { border-color: #facc15; }
+    .tier-3 { border-color: #60a5fa; }
+
+    .tier-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .tier-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .tier-1 .tier-number { background: #4ade80; color: #ffffff; }
+    .tier-2 .tier-number { background: #facc15; color: #ffffff; }
+    .tier-3 .tier-number { background: #60a5fa; color: #ffffff; }
+
+    .tier-name {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: -0.3px;
+    }
+    .tier-1 .tier-name { color: #4ade80; }
+    .tier-2 .tier-name { color: #facc15; }
+    .tier-3 .tier-name { color: #60a5fa; }
+
+    .tier-tagline {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 10px;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    .tier-desc {
+      font-size: 11px;
+      color: #d0d0d0;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .tier-desc strong {
+      color: #000000;
+    }
+
+    .tier-how {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      flex: 1;
+    }
+    .tier-how ul {
+      list-style: none;
+      padding: 0;
+    }
+    .tier-how li {
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 3px;
+    }
+    .tier-how li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #666;
+    }
+
+    .tier-example {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 10px;
+      line-height: 1.4;
+    }
+    .tier-example .label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 4px;
+    }
+    .tier-1 .tier-example .label { color: #4ade80; }
+    .tier-2 .tier-example .label { color: #facc15; }
+    .tier-3 .tier-example .label { color: #60a5fa; }
+
+    .tier-example .tool {
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .arrow-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999999;
+      font-size: 20px;
+      padding: 0 2px;
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    .source-tag {
+      font-size: 9px;
+      color: #999999;
+      text-align: right;
+      margin-top: 6px;
+    }
+    .source-tag a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <div class="badge">Concept</div>
+      <h1>Three Tiers of AI: Chatbot → Workflow → Agent</h1>
+    </div>
+    <div class="subtitle">Not all AI is the same. Understanding the tiers helps you pick the right tool for the job.</div>
+
+    <div class="tiers">
+      <!-- Tier 1: AI Chatbot -->
+      <div class="tier tier-1">
+        <div class="tier-header">
+          <div class="tier-number">1</div>
+          <div class="tier-name">AI Chatbot</div>
+        </div>
+        <div class="tier-tagline">Answers questions by retrieving content</div>
+        <div class="tier-desc">
+          Fetches information from a <strong>known set</strong> of documents or data. Matches your question to stored content and generates a response.
+        </div>
+        <div class="tier-how">
+          <ul>
+            <li>Retrieves from documents (RAG)</li>
+            <li>Matches query to content</li>
+            <li>Generates formatted answer</li>
+            <li><strong>Read-only</strong> — cannot take action</li>
+          </ul>
+        </div>
+        <div class="tier-example">
+          <div class="label">Tesla Example</div>
+          <span class="tool">Bottle Rocket Chat</span> — ask questions, get answers from AI models. <strong>Nabu</strong> agents with uploaded docs.
+        </div>
+      </div>
+
+      <div class="arrow-connector">▸</div>
+
+      <!-- Tier 2: AI Workflow -->
+      <div class="tier tier-2">
+        <div class="tier-header">
+          <div class="tier-number">2</div>
+          <div class="tier-name">AI Workflow</div>
+        </div>
+        <div class="tier-tagline">Answers questions by invoking systems</div>
+        <div class="tier-desc">
+          Orchestrates data from <strong>multiple sources</strong> or services. Goes beyond static retrieval — calls APIs and combines results.
+        </div>
+        <div class="tier-how">
+          <ul>
+            <li>Calls external APIs for live data</li>
+            <li>Combines multiple data sources</li>
+            <li>Computes or aggregates results</li>
+            <li><strong>Read-only</strong> — pulls data, doesn't change it</li>
+          </ul>
+        </div>
+        <div class="tier-example">
+          <div class="label">Tesla Example</div>
+          <span class="tool">IT Assist / Employee Assist</span> — pulls from HR systems, knowledge bases, and ticketing to answer your question.
+        </div>
+      </div>
+
+      <div class="arrow-connector">▸</div>
+
+      <!-- Tier 3: AI Agent -->
+      <div class="tier tier-3">
+        <div class="tier-header">
+          <div class="tier-number">3</div>
+          <div class="tier-name">AI Agent</div>
+        </div>
+        <div class="tier-tagline">Performs actions by invoking systems</div>
+        <div class="tier-desc">
+          Autonomous entity that <strong>executes tasks</strong> and influences the environment. Makes decisions and acts on them.
+        </div>
+        <div class="tier-how">
+          <ul>
+            <li>Perceives situation & decides actions</li>
+            <li>Calls APIs to <strong>read AND write</strong></li>
+            <li>Automates workflows end-to-end</li>
+            <li>Monitors outcomes, adjusts behavior</li>
+          </ul>
+        </div>
+        <div class="tier-example">
+          <div class="label">Tesla Example</div>
+          <span class="tool">Future state</span> — an agent that monitors Order Monitor, auto-escalates stuck VOR orders, and reassigns pickers.
+        </div>
+      </div>
+    </div>
+
+    <div class="source-tag">Source: docs.bottlerocket.tesla.com/general-information/ai-tiers</div>
+  </div>
+</body>
+</html>

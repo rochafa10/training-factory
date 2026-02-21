@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 56 - Time Savings Tracker</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .table-section {
+      flex: 1;
+    }
+    .table-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #f5f5f5;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      font-size: 11px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    th {
+      background: #e0e0e0;
+      font-weight: bold;
+      color: #000000;
+    }
+    td {
+      color: #666666;
+    }
+    .input-cell {
+      color: #999999;
+      font-style: italic;
+    }
+    .total-row {
+      background: #fef2f2;
+    }
+    .total-row td {
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .expected-section {
+      width: 280px;
+    }
+    .expected-box {
+      background: #f0fdf4;
+      border: 1px solid #4ade80;
+      border-radius: 12px;
+      padding: 16px;
+      height: 100%;
+    }
+    .expected-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #16a34a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .expected-item {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .expected-item::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+    }
+    .expected-item strong {
+      color: #000000;
+    }
+    .footer {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Time Savings Tracker - Week 3</h1>
+    <div class="main-content">
+      <div class="table-section">
+        <div class="table-title">Your Week 3 Tracking</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Traditional</th>
+              <th>With Week 3 Tools</th>
+              <th>Savings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Email drafting</td>
+              <td class="input-cell">___ min (typing)</td>
+              <td class="input-cell">___ min (voice)</td>
+              <td class="input-cell">___ min</td>
+            </tr>
+            <tr>
+              <td>Project setup</td>
+              <td class="input-cell">___ min (manual)</td>
+              <td class="input-cell">___ min (agent)</td>
+              <td class="input-cell">___ min</td>
+            </tr>
+            <tr>
+              <td>Template creation</td>
+              <td class="input-cell">___ min (manual)</td>
+              <td class="input-cell">___ min (agent)</td>
+              <td class="input-cell">___ min</td>
+            </tr>
+            <tr>
+              <td>Change review</td>
+              <td class="input-cell">___ min (scanning)</td>
+              <td class="input-cell">___ min (diff)</td>
+              <td class="input-cell">___ min</td>
+            </tr>
+            <tr class="total-row">
+              <td>Weekly Total</td>
+              <td></td>
+              <td></td>
+              <td class="input-cell">___ min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="expected-section">
+        <div class="expected-box">
+          <div class="expected-title">Expected Savings</div>
+          <div class="expected-item"><strong>Email drafting:</strong> 3-7 min per email</div>
+          <div class="expected-item"><strong>Project setup (5 files):</strong> ~14 min</div>
+          <div class="expected-item"><strong>Template creation:</strong> 8-13 min</div>
+          <div class="expected-item"><strong>Change review:</strong> 5-10 min</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><strong>Track daily.</strong> Share totals next week during Week 4 opening.</div>
+  </div>
+</body>
+</html>

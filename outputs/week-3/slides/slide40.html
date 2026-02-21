@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 40 - Git Review Checklist</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .checklist-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+    .step-number {
+      width: 28px;
+      height: 28px;
+      background: #cc0000;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .step-content {
+      flex: 1;
+    }
+    .step-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 2px;
+    }
+    .step-detail {
+      font-size: 11px;
+      color: #666666;
+    }
+    .step-shortcut {
+      background: #e0e0e0;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-family: 'Consolas', monospace;
+      font-size: 11px;
+      color: #cc0000;
+      font-weight: bold;
+    }
+    .check-item.highlight {
+      border-color: #f87171;
+      background: #fef2f2;
+    }
+    .callout {
+      background: #fef2f2;
+      border: 2px solid #f87171;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin-top: 14px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 13px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Git Review Checklist</h1>
+    <div class="checklist-container">
+      <div class="check-item">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <div class="step-title">Open Source Control</div>
+          <div class="step-detail">Or click the branch icon in the sidebar</div>
+        </div>
+        <div class="step-shortcut">Ctrl+Shift+G</div>
+      </div>
+      <div class="check-item">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <div class="step-title">Check file list</div>
+          <div class="step-detail">Look for U (new) and M (modified) markers</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <div class="step-title">Click each file</div>
+          <div class="step-detail">See full diff view with green/red highlighting</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <div class="step-title">Verify content matches request</div>
+          <div class="step-detail">All sections present? No Tesla data?</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <div class="step-title">Stage or Discard</div>
+          <div class="step-detail">Right-click > "Stage Changes" (accept) or "Discard Changes" (reject)</div>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <div class="step-title">Ask Copilot if unclear</div>
+          <div class="step-detail">"Explain what [filename] does"</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-text">Never approve changes you don't understand.</div>
+    </div>
+    <div class="footer">Review agent work like you'd review an associate's work &mdash; before it goes out.</div>
+  </div>
+</body>
+</html>

@@ -2,86 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 10 - Section: Multi-Agent Orchestration</title>
+  <title>Slide 10 - Section Divider: Agents That Remember</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: linear-gradient(135deg, #e82127 0%, #0a0a0a 50%);
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
-      display: flex;
     }
-    .accent-bar {
+    .red-panel {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
-      height: 100%;
-      background: #e82127;
-    }
-    .left-section {
       width: 320px;
-      background: rgba(232, 33, 39, 0.9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .section-number {
-      font-size: 180px;
-      font-weight: bold;
-      opacity: 0.3;
-    }
-    .right-section {
-      flex: 1;
+      height: 100%;
+      background: linear-gradient(135deg, #cc0000 0%, #990000 100%);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 60px;
+      padding: 40px;
+    }
+    .section-num {
+      font-size: 140px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
     }
     .section-label {
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 3px;
-      color: #a0a0a0;
-      margin-bottom: 20px;
+      color: #ffffff;
+      margin-top: 16px;
+    }
+    .main-content {
+      margin-left: 360px;
+      padding: 40px 50px 40px 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     h1 {
-      font-size: 42px;
+      font-size: 38px;
       font-weight: bold;
+      color: #000000;
       margin-bottom: 20px;
       line-height: 1.2;
     }
-    .subtitle {
+    .description {
       font-size: 18px;
-      color: #a0a0a0;
+      color: #666666;
+      line-height: 1.6;
+      max-width: 480px;
     }
-    .stat {
-      margin-top: 40px;
+    .duration {
+      margin-top: 30px;
       font-size: 14px;
-      color: #a0a0a0;
+      color: #666666;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .stat-value {
-      color: #4ade80;
+    .duration-badge {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      padding: 6px 12px;
+      border-radius: 20px;
       font-weight: bold;
+      color: #000000;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-
-  <div class="left-section">
-    <span class="section-number">2</span>
+  <div class="red-panel">
+    <p class="section-num">04</p>
+    <p class="section-label">Section</p>
   </div>
-
-  <div class="right-section">
-    <div class="section-label">Section</div>
-    <h1>Multi-Agent Orchestration</h1>
-    <p class="subtitle">Coordinating multiple AI agents for complex tasks</p>
-    <p class="stat"><span class="stat-value">72%</span> of enterprise AI projects use multi-agent architectures</p>
+  <div class="main-content">
+    <h1>Agents That Remember<br>(Memory & Context)</h1>
+    <p class="description">Transform AI from a forgetful assistant into a knowledgeable teammate that understands your DC, your KPIs, and your way of working.</p>
+    <div class="duration">
+      <span class="duration-badge">20 min</span>
+    </div>
   </div>
 </body>
 </html>

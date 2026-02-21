@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 22 - Exercise 1: First Guided Prompt</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: white;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .main-content {
+      display: flex;
+      gap: 28px;
+      flex: 1;
+    }
+    .left-col { flex: 1.2; }
+    .right-col {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    ol {
+      list-style: none;
+      padding: 0;
+      counter-reset: step;
+    }
+    ol li {
+      counter-increment: step;
+      font-size: 13px;
+      color: #666666;
+      padding: 6px 0 6px 32px;
+      position: relative;
+      line-height: 1.5;
+    }
+    ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      top: 6px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .time-big {
+      font-size: 36px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .time-label {
+      font-size: 12px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+    .time-sublabel {
+      font-size: 10px;
+      color: #666;
+      margin-top: 4px;
+    }
+    .tip-box {
+      background: #f5f5f5;
+      border-left: 4px solid #facc15;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .tip-box p {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .tip-box strong {
+      color: #facc15;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Exercise 1</div>
+    <h1>First Guided Prompt &mdash; Standup Summary</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <ol>
+          <li>Open Bottle Rocket (go.tesla.com/chat)</li>
+          <li>Select Qwen 3 30B model (the default &mdash; fast and reliable)</li>
+          <li>Copy the prompt template (provided)</li>
+          <li>Replace placeholders with your DC&rsquo;s real information</li>
+          <li>Submit and review the output</li>
+          <li>Check: Is it under 150 words? In bullet format? Relevant?</li>
+        </ol>
+      </div>
+      <div class="right-col">
+        <div class="time-box">
+          <div class="time-big">20</div>
+          <div class="time-label">Minutes</div>
+          <div class="time-sublabel">5 min fill | 10 min test | 5 min share</div>
+        </div>
+        <div class="tip-box">
+          <p><strong>Tips:</strong> Add specific details. If output is too generic, add more CONTEXT. If format is wrong, be more explicit in FORMAT.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

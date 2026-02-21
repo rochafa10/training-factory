@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 44 - Capstone Project Overview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 26px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .badge {
+      display: inline-block;
+      background: #cc0000;
+      color: white;
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+    .req-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      flex: 1;
+      margin-bottom: 12px;
+    }
+    .req-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      border-left: 3px solid;
+    }
+    .req-card:nth-child(1) { border-color: #cc0000; }
+    .req-card:nth-child(2) { border-color: #60a5fa; }
+    .req-card:nth-child(3) { border-color: #4ade80; }
+    .req-card:nth-child(4) { border-color: #facc15; }
+    .req-num {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1;
+      min-width: 24px;
+    }
+    .req-card:nth-child(1) .req-num { color: #cc0000; }
+    .req-card:nth-child(2) .req-num { color: #60a5fa; }
+    .req-card:nth-child(3) .req-num { color: #4ade80; }
+    .req-card:nth-child(4) .req-num { color: #facc15; }
+    .req-content { flex: 1; }
+    .req-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 3px;
+    }
+    .req-desc {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .deliverable-bar {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .del-label {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #cc0000;
+      white-space: nowrap;
+    }
+    .del-items {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .del-item {
+      font-size: 11px;
+      color: #666666;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .del-dot {
+      width: 6px;
+      height: 6px;
+      background: #4ade80;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #666666;
+    }
+    .footer strong { color: #000000; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Capstone Project</div>
+    <h1>Build a Multi-Agent Solution for Your DC</h1>
+    <p class="subtitle">Design, build, and present an AI-powered workflow that solves a real problem at your distribution center.</p>
+    <div class="req-grid">
+      <div class="req-card">
+        <span class="req-num">01</span>
+        <div class="req-content">
+          <div class="req-title">Multi-Agent System</div>
+          <div class="req-desc">Build a project using multiple AI agents that work together &mdash; Nabu agents, Bottle Rocket prompts, or custom workflows</div>
+        </div>
+      </div>
+      <div class="req-card">
+        <span class="req-num">02</span>
+        <div class="req-content">
+          <div class="req-title">Power Automate Integration</div>
+          <div class="req-desc">Connect your AI workflows with business systems using Power Automate &mdash; triggers, approvals, or scheduled runs</div>
+        </div>
+      </div>
+      <div class="req-card">
+        <span class="req-num">03</span>
+        <div class="req-content">
+          <div class="req-title">Business-Relevant Problem</div>
+          <div class="req-desc">Solve a real operations challenge &mdash; headcount, safety, throughput, vendor management, or associate training</div>
+        </div>
+      </div>
+      <div class="req-card">
+        <span class="req-num">04</span>
+        <div class="req-content">
+          <div class="req-title">ROI Justification</div>
+          <div class="req-desc">Quantify your impact with hard numbers &mdash; hours saved per week, cost reduction, error rate improvement, or efficiency gains</div>
+        </div>
+      </div>
+    </div>
+    <div class="deliverable-bar">
+      <span class="del-label">You Deliver</span>
+      <div class="del-items">
+        <span class="del-item"><span class="del-dot"></span>Working multi-agent workflow</span>
+        <span class="del-item"><span class="del-dot"></span>Power Automate integration</span>
+        <span class="del-item"><span class="del-dot"></span>ROI report with real metrics</span>
+        <span class="del-item"><span class="del-dot"></span>5-min live demo to peers</span>
+      </div>
+    </div>
+    <div class="footer">
+      <span><strong>Timeline:</strong> Introduced Week 1 &rarr; Built Weeks 2&ndash;3 &rarr; Presented Week 4</span>
+      <span><strong>Scope:</strong> Individual or paired project</span>
+    </div>
+  </div>
+</body>
+</html>

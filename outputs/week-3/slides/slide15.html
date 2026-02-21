@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 15 - Personal Project</title>
+  <title>Slide 15 - The ReAct Pattern</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,98 +20,199 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 25px;
+      color: #000000;
+      margin-bottom: 20px;
     }
-    .subtitle {
-      font-size: 16px;
-      color: #a0a0a0;
-      margin-bottom: 25px;
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
     }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+    .flow-column {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
-    .project {
-      background: #1a1a1a;
-      padding: 18px;
+    .step-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
       border-radius: 8px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
     }
-    .project-title {
+    .step-number {
+      background: #cc0000;
+      color: #ffffff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .step-content {
+      flex: 1;
+    }
+    .step-label {
       font-size: 14px;
       font-weight: bold;
-      margin-bottom: 8px;
-      color: #e82127;
+      color: #cc0000;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
-    .project-desc {
-      font-size: 12px;
-      color: #a0a0a0;
-      line-height: 1.4;
+    .step-desc {
+      font-size: 13px;
+      color: #000000;
+      margin-bottom: 4px;
     }
-    .prompt-hint {
-      margin-top: 25px;
-      background: #2a2a2a;
-      padding: 16px;
+    .step-example {
+      font-size: 11px;
+      color: #666666;
+      font-style: italic;
+      background: #e0e0e0;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+    .step-card.repeat {
+      background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+      border: 2px solid #cc0000;
+    }
+    .right-column {
+      flex: 0.8;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .analogy-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
       border-radius: 8px;
+      padding: 16px;
+      flex: 1;
     }
-    .hint-label {
-      font-size: 12px;
+    .analogy-label {
+      font-size: 11px;
+      color: #cc0000;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #e82127;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      font-weight: bold;
     }
-    .hint-text {
-      font-size: 13px;
-      font-style: italic;
-      color: #a0a0a0;
+    .analogy-text {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.6;
+    }
+    .cycle-diagram {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cycle-visual {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .cycle-item {
+      background: #cc0000;
+      color: #ffffff;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+    .cycle-arrow {
+      color: #666666;
+      font-size: 18px;
+    }
+    .footer {
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="content">
-    <h1>Personal Project: Define Requirements</h1>
-    <p class="subtitle">Choose your automation project for Week 4</p>
-    <div class="projects-grid">
-      <div class="project">
-        <p class="project-title">Dive Deep Automation</p>
-        <p class="project-desc">Auto-generate dive deep reports from data analysis</p>
+  <div class="container">
+    <h1>The ReAct Pattern - How Agents Think</h1>
+    <div class="main-content">
+      <div class="flow-column">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <div class="step-label">Think</div>
+            <div class="step-desc">Agent analyzes what needs to happen</div>
+            <div class="step-example">"I need to create 3 files: template, sample, README"</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <div class="step-label">Act</div>
+            <div class="step-desc">Agent takes one step</div>
+            <div class="step-example">Creates the template file</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <div class="step-label">Observe</div>
+            <div class="step-desc">Agent checks if it worked</div>
+            <div class="step-example">"File created successfully. Moving to next step."</div>
+          </div>
+        </div>
+        <div class="step-card repeat">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <div class="step-label">Repeat</div>
+            <div class="step-desc">Back to step 1 until goal is met</div>
+          </div>
+        </div>
       </div>
-      <div class="project">
-        <p class="project-title">Email Management</p>
-        <p class="project-desc">Voice-dictated emails with AI formatting</p>
-      </div>
-      <div class="project">
-        <p class="project-title">Daily Report Generator</p>
-        <p class="project-desc">Pull data, analyze, create and distribute reports</p>
-      </div>
-      <div class="project">
-        <p class="project-title">KPI Dashboard Narrator</p>
-        <p class="project-desc">Generate executive summaries from metrics</p>
-      </div>
-      <div class="project">
-        <p class="project-title">Incident Analysis Agent</p>
-        <p class="project-desc">Multi-agent root cause analysis system</p>
-      </div>
-      <div class="project">
-        <p class="project-title">Your Own Idea</p>
-        <p class="project-desc">What repetitive task could you automate?</p>
+      <div class="right-column">
+        <div class="analogy-box">
+          <div class="analogy-label">Analogy</div>
+          <div class="analogy-text">Like a new hire who thinks before acting and checks their work after each step</div>
+        </div>
+        <div class="cycle-diagram">
+          <div class="cycle-visual">
+            <span class="cycle-item">Think</span>
+            <span class="cycle-arrow">&#8594;</span>
+            <span class="cycle-item">Act</span>
+            <span class="cycle-arrow">&#8594;</span>
+            <span class="cycle-item">Observe</span>
+            <span class="cycle-arrow">&#8635;</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="prompt-hint">
-      <p class="hint-label">Use Agent Mode</p>
-      <p class="hint-text">"Help me create a requirements document for my project. The project is [DESCRIBE]. Ask me questions to understand what I need."</p>
-    </div>
+    <div class="footer">You describe the goal. The agent figures out the steps.</div>
   </div>
 </body>
 </html>

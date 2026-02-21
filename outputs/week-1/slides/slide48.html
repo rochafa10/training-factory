@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Slide 48 - Exercise 2: Choose Your Category</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 960px; height: 540px;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  .slide {
+    width: 960px; height: 540px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .accent-bar {
+    position: absolute;
+    left: 0; top: 0;
+    width: 8px; height: 100%;
+    background: #cc0000;
+  }
+  .header {
+    padding: 14px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .badge {
+    background: #cc0000;
+    color: #000000;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 0 30px;
+    flex: 1;
+    overflow: hidden;
+  }
+  .card {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid #999999;
+  }
+  .card-a { border-left-color: #cc0000; }
+  .card-b { border-left-color: #60a5fa; }
+  .card-c { border-left-color: #4ade80; }
+  .card-d { border-left-color: #facc15; }
+  .card-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .card-a .card-label { color: #cc0000; }
+  .card-b .card-label { color: #60a5fa; }
+  .card-c .card-label { color: #4ade80; }
+  .card-d .card-label { color: #facc15; }
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  .card-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .card-items li {
+    font-size: 11px;
+    color: #666666;
+    line-height: 1.35;
+    padding-left: 10px;
+    position: relative;
+  }
+  .card-items li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #999999;
+  }
+  .bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 14px 30px;
+  }
+  .instruction-text {
+    font-size: 10px;
+    color: #666666;
+    line-height: 1.4;
+    max-width: 720px;
+  }
+  .instruction-text strong {
+    color: #000000;
+  }
+  .time-box {
+    background: #cc0000;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 4px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="header">
+    <span class="badge">Exercise 2</span>
+    <span class="title">Choose Your Category</span>
+  </div>
+  <div class="grid">
+    <div class="card card-a">
+      <div class="card-label">Card A</div>
+      <div class="card-title">Email Drafts</div>
+      <ul class="card-items">
+        <li>Vendor late delivery</li>
+        <li>Leadership update</li>
+        <li>Team recognition</li>
+        <li>Customer escalation</li>
+      </ul>
+    </div>
+    <div class="card card-b">
+      <div class="card-label">Card B</div>
+      <div class="card-title">Meeting Prep</div>
+      <ul class="card-items">
+        <li>Safety meeting agenda</li>
+        <li>1:1 with supervisor</li>
+        <li>Shift handoff debrief</li>
+        <li>QBR talking points</li>
+      </ul>
+    </div>
+    <div class="card card-c">
+      <div class="card-label">Card C</div>
+      <div class="card-title">Performance Summaries</div>
+      <ul class="card-items">
+        <li>Weekly metrics</li>
+        <li>Incident report</li>
+        <li>Shift handoff</li>
+        <li>Regional highlight email</li>
+      </ul>
+    </div>
+    <div class="card card-d">
+      <div class="card-label">Card D</div>
+      <div class="card-title">Analysis &amp; Problem-Solving</div>
+      <ul class="card-items">
+        <li>Missed shipments</li>
+        <li>Overtime spikes</li>
+        <li>Dock door efficiency</li>
+        <li>Retention brainstorm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <div class="instruction-text"><strong>Pick 3 tasks.</strong> Write an RCTF prompt for each. Test in Bottle Rocket. For <strong>ONE</strong> prompt, switch to Feynman persona and compare.</div>
+    <div class="time-box">25 MIN</div>
+  </div>
+</div>
+</body>
+</html>

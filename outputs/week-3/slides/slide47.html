@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 47 - Exercise 4: Spot the Mistakes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: #ffffff;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .time-box {
+      margin-left: auto;
+      background: #cc0000;
+      border-radius: 12px;
+      padding: 10px 16px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .time-big {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .time-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
+    }
+    .scenario {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 16px;
+    }
+    .main-content {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .instructions-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .instructions-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .instruction-item {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 8px;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .instruction-item .num {
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+      font-weight: bold;
+    }
+    .outputs-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .outputs-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .output-item {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 8px;
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .output-item::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+    }
+    .output-item strong {
+      color: #000000;
+    }
+    .right-col {
+      width: 300px;
+    }
+    .success-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      height: 100%;
+    }
+    .success-title {
+      font-size: 12px;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .success-item {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .success-item::before {
+      content: "\2610";
+      position: absolute;
+      left: 0;
+      color: #666666;
+    }
+    .key-takeaway {
+      background: #fef2f2;
+      border: 1px solid #f87171;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-top: 12px;
+    }
+    .key-takeaway-text {
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+    .key-takeaway-text strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <span class="exercise-badge">Exercise 4</span>
+      <h1>Spot the Mistakes</h1>
+      <div class="time-box">
+        <div class="time-big">20</div>
+        <div class="time-label">Minutes</div>
+      </div>
+    </div>
+    <div class="scenario">Review 3 AI-generated outputs and find the errors</div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="instructions-box">
+          <div class="instructions-title">Instructions</div>
+          <div class="instruction-item"><span class="num">1.</span> Individual work (10 min): Read all 3 outputs, list every error</div>
+          <div class="instruction-item"><span class="num">2.</span> Partner discussion (5 min): Compare findings</div>
+          <div class="instruction-item"><span class="num">3.</span> Group debrief (5 min): Review answers together</div>
+        </div>
+        <div class="outputs-box">
+          <div class="outputs-title">Outputs to Analyze</div>
+          <div class="output-item"><strong>Output 1:</strong> Email draft (find 4 errors - hallucinated stats, contradictions, fake citations)</div>
+          <div class="output-item"><strong>Output 2:</strong> Data analysis (find 3 errors - misinterpreted trends, invented correlations, fabricated projections)</div>
+          <div class="output-item"><strong>Output 3:</strong> Agent report (find 3 errors - fake file references, fabricated sources, over-precise predictions)</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="success-box">
+          <div class="success-title">Success Criteria</div>
+          <div class="success-item">Found 3+ of 4 errors in Output 1</div>
+          <div class="success-item">Found 2+ of 3 errors in Output 2</div>
+          <div class="success-item">Found 2+ of 3 errors in Output 3</div>
+          <div class="success-item">Can explain hallucination vs. drift vs. over-confidence</div>
+          <div class="key-takeaway">
+            <div class="key-takeaway-text"><strong>Key Takeaway:</strong> AI is your first draft, not your final answer.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

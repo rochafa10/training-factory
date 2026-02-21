@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 34 - Quality Scoring Answer Key</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 20px 32px 16px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .badge {
+      background: #4ade80;
+      color: #000000;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .content-area {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+      overflow: hidden;
+    }
+    .scorecard-results {
+      flex: 1;
+    }
+    .scorecard {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .scorecard-header {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr 3fr;
+      background: #e0e0e0;
+      padding: 8px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+    }
+    .scorecard-row {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr 3fr;
+      padding: 8px 12px;
+      font-size: 11px;
+      border-bottom: 1px solid #e0e0e0;
+      align-items: center;
+    }
+    .scorecard-row:last-child {
+      border-bottom: none;
+    }
+    .dimension {
+      color: #000000;
+      font-weight: bold;
+    }
+    .score {
+      color: #f87171;
+      font-weight: bold;
+      text-align: center;
+    }
+    .reasoning {
+      color: #666666;
+      font-size: 10px;
+    }
+    .total-row {
+      background: #f87171;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+    .improvements {
+      width: 320px;
+    }
+    .improvements-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .improvements-box {
+      background: #f0fdf4;
+      border: 2px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .improvement-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 11px;
+      color: #000000;
+      line-height: 1.4;
+    }
+    .improvement-item:last-child {
+      margin-bottom: 0;
+    }
+    .check-icon {
+      color: #4ade80;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .callout {
+      margin-top: 14px;
+      background: #facc15;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 11px;
+      color: #000000;
+      font-weight: bold;
+      text-align: center;
+    }
+    .footer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Answer Key</span>
+      <h1>Quality Scoring - Sample Answers</h1>
+    </div>
+    <div class="content-area">
+      <div class="scorecard-results">
+        <div class="scorecard">
+          <div class="scorecard-header">
+            <span>Dimension</span>
+            <span>Score</span>
+            <span>Reasoning</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Accuracy</span>
+            <span class="score">2/5</span>
+            <span class="reasoning">No specific numbers, vague causes</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Completeness</span>
+            <span class="score">2/5</span>
+            <span class="reasoning">Missing root cause %, customer impact, trends</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Format</span>
+            <span class="score">2/5</span>
+            <span class="reasoning">No tables, no executive summary, no next steps</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Speed</span>
+            <span class="score">3/5</span>
+            <span class="reasoning">Generated fast but needs heavy editing</span>
+          </div>
+          <div class="scorecard-row">
+            <span class="dimension">Usability</span>
+            <span class="score">1/5</span>
+            <span class="reasoning">Cannot send as-is, requires complete rewrite</span>
+          </div>
+          <div class="total-row">
+            <span>Total: 10/25</span>
+            <span>Re-prompt or switch approach</span>
+          </div>
+        </div>
+      </div>
+      <div class="improvements">
+        <div class="improvements-label">What to Change</div>
+        <div class="improvements-box">
+          <div class="improvement-item">
+            <span class="check-icon">+</span>
+            <span>Add project memory for DC-specific context</span>
+          </div>
+          <div class="improvement-item">
+            <span class="check-icon">+</span>
+            <span>Request specific metrics and percentages</span>
+          </div>
+          <div class="improvement-item">
+            <span class="check-icon">+</span>
+            <span>Specify format with tables and sections</span>
+          </div>
+          <div class="improvement-item">
+            <span class="check-icon">+</span>
+            <span>Ask for action items with owners and deadlines</span>
+          </div>
+        </div>
+        <div class="callout">This is why project memory and specific prompts matter!</div>
+      </div>
+    </div>
+    <div class="footer">Week 4: Advanced Automation, Power Automate & Multi-Agent Orchestration</div>
+  </div>
+</body>
+</html>

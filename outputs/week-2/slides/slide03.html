@@ -8,70 +8,56 @@
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
-      display: flex;
     }
-    .accent-bar {
+    .section-block {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
-      height: 100%;
-      background: #e82127;
-    }
-    .left-panel {
       width: 320px;
-      background: #e82127;
+      height: 100%;
+      background: #cc0000;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
     }
     .section-number {
-      font-size: 200px;
+      font-size: 180px;
       font-weight: bold;
-      color: rgba(0,0,0,0.2);
-      position: absolute;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
     }
-    .right-panel {
-      flex: 1;
+    .section-content {
+      margin-left: 360px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 60px;
-    }
-    .section-label {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #a0a0a0;
-      margin-bottom: 16px;
+      height: 100%;
+      padding: 40px;
     }
     h1 {
-      font-size: 42px;
+      font-size: 40px;
       font-weight: bold;
-      line-height: 1.2;
       margin-bottom: 16px;
+      line-height: 1.2;
     }
-    .description {
+    .duration {
       font-size: 16px;
-      color: #a0a0a0;
+      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="left-panel">
-    <span class="section-number">1</span>
+  <div class="section-block">
+    <span class="section-number">01</span>
   </div>
-  <div class="right-panel">
-    <div class="section-label">Section 1</div>
+  <div class="section-content">
     <h1>Homework Review</h1>
-    <p class="description">Share your best prompts and time savings from Week 1</p>
+    <p class="duration">15 minutes</p>
   </div>
 </body>
 </html>

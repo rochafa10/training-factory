@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 12 - Agent Mode Capabilities</title>
+  <title>Slide 12 - Exercise 1</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,98 +20,195 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
-    }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    .capabilities {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .capability {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
       display: flex;
-      align-items: flex-start;
+      flex-direction: column;
     }
-    .cap-num {
-      background: #e82127;
-      color: #ffffff;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
+    .header-row {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: #000000;
+      padding: 4px 12px;
+      font-size: 10px;
       font-weight: bold;
-      margin-right: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .time-box {
+      margin-left: auto;
+      background: #cc0000;
+      border-radius: 12px;
+      padding: 10px 16px;
+      text-align: center;
       flex-shrink: 0;
     }
-    .cap-content h3 {
-      font-size: 16px;
-      margin-bottom: 6px;
+    .time-big {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
     }
-    .cap-content p {
+    .time-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
+    }
+    .main-content {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .right-col {
+      width: 320px;
+    }
+    .task-box {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .task-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .task-number {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .task-time {
+      font-size: 11px;
+      color: #666666;
+    }
+    .task-title {
       font-size: 13px;
-      color: #a0a0a0;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 8px;
     }
-    .how-to {
-      margin-top: 25px;
-      background: #2a2a2a;
-      padding: 16px 20px;
+    .task-desc {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .success-box {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      height: 100%;
+    }
+    .success-title {
+      font-size: 12px;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .success-item {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .success-item::before {
+      content: "\2610";
+      position: absolute;
+      left: 0;
+      color: #666666;
+    }
+    .policy-reminder {
+      background: #fff5f5;
+      border: 1px solid #f87171;
       border-radius: 8px;
-      font-size: 14px;
+      padding: 10px 12px;
+      margin-top: 12px;
     }
-    .how-to strong {
-      color: #e82127;
+    .policy-text {
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+    .policy-text strong {
+      color: #cc0000;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="content">
-    <h1>What Agent Mode Can Do</h1>
-    <div class="capabilities">
-      <div class="capability">
-        <span class="cap-num">1</span>
-        <div class="cap-content">
-          <h3>Autonomous Context Discovery</h3>
-          <p>Finds relevant files without being told</p>
-        </div>
-      </div>
-      <div class="capability">
-        <span class="cap-num">2</span>
-        <div class="cap-content">
-          <h3>Multi-File Editing</h3>
-          <p>Coordinates changes across your project</p>
-        </div>
-      </div>
-      <div class="capability">
-        <span class="cap-num">3</span>
-        <div class="cap-content">
-          <h3>Terminal Execution</h3>
-          <p>Runs commands (with your approval)</p>
-        </div>
-      </div>
-      <div class="capability">
-        <span class="cap-num">4</span>
-        <div class="cap-content">
-          <h3>Self-Correction</h3>
-          <p>Monitors output and fixes errors</p>
-        </div>
+  <div class="container">
+    <div class="header-row">
+      <span class="exercise-badge">Exercise 1</span>
+      <h1>Voice + Chat Practice</h1>
+      <div class="time-box">
+        <div class="time-big">20</div>
+        <div class="time-label">Minutes</div>
       </div>
     </div>
-    <div class="how-to">
-      <strong>How to Activate:</strong> In Copilot Chat, click the dropdown and select "Agent" mode
+    <div class="main-content">
+      <div class="left-col">
+        <div class="task-box">
+          <div class="task-header">
+            <span class="task-number">1a</span>
+            <span class="task-time">5 min</span>
+          </div>
+          <div class="task-title">@ Commands Practice</div>
+          <div class="task-desc">Use @workspace, @terminal, and @vscode once each. Try finding files, creating folders, and changing settings.</div>
+        </div>
+        <div class="task-box">
+          <div class="task-header">
+            <span class="task-number">1b</span>
+            <span class="task-time">5 min</span>
+          </div>
+          <div class="task-title">Voice Chat Conversation</div>
+          <div class="task-desc">Press Ctrl+U and have a voice conversation with Copilot. Ask 2-3 questions about VS Code features or productivity tips.</div>
+        </div>
+        <div class="task-box">
+          <div class="task-header">
+            <span class="task-number">1c</span>
+            <span class="task-time">10 min</span>
+          </div>
+          <div class="task-title">Dictate an Email</div>
+          <div class="task-desc">Draft an email to your regional director using voice dictation. Include a weekly update with placeholders for metrics. Iterate with follow-up voice prompts.</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="success-box">
+          <div class="success-title">Success Criteria</div>
+          <div class="success-item">Used all three @ commands (@workspace, @terminal, @vscode)</div>
+          <div class="success-item">Completed voice chat conversation (2+ exchanges)</div>
+          <div class="success-item">Dictated email draft using voice</div>
+          <div class="success-item">Iterated with follow-up voice prompt</div>
+          <div class="policy-reminder">
+            <div class="policy-text"><strong>Policy reminder:</strong> No Tesla data in Copilot - use placeholders like [INSERT METRICS]</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

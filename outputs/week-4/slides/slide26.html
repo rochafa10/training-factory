@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 26 - Personal Project Showcase</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .time-box {
+      margin-left: auto;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: #666666;
+    }
+    .time-box strong {
+      color: #cc0000;
+    }
+    .main-content {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .scenario {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    .scenario-label {
+      font-size: 10px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    .scenario-text {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .format-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .format-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .format-step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+    .step-time {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      width: 60px;
+      flex-shrink: 0;
+    }
+    .step-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #000000;
+      width: 70px;
+      flex-shrink: 0;
+    }
+    .step-desc {
+      font-size: 11px;
+      color: #666666;
+    }
+    .right-col {
+      width: 380px;
+    }
+    .rubric-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .rubric-table {
+      background: #f5f5f5;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .rubric-header {
+      display: grid;
+      grid-template-columns: 100px 1fr 1fr 1fr;
+      background: #e0e0e0;
+      padding: 8px 10px;
+      font-size: 9px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .rubric-row {
+      display: grid;
+      grid-template-columns: 100px 1fr 1fr 1fr;
+      padding: 8px 10px;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 10px;
+    }
+    .rubric-row:last-child {
+      border-bottom: none;
+    }
+    .rubric-label {
+      font-weight: bold;
+      color: #000000;
+    }
+    .rubric-cell {
+      color: #666666;
+      padding-right: 6px;
+    }
+    .score-1 { color: #f87171; }
+    .score-3 { color: #facc15; }
+    .score-5 { color: #4ade80; }
+    .footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 12px;
+      color: #666666;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer strong {
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Exercise 4</span>
+      <h1>Personal Project Showcase</h1>
+      <div class="time-box"><strong>25 min</strong> (5 min per AGM)</div>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="scenario">
+          <div class="scenario-label">Scenario</div>
+          <div class="scenario-text">Present your personal AI automation project developed during Weeks 2-4. Show what you built, explain how it works, and share the impact.</div>
+        </div>
+        <div class="format-title">Presentation Format (5 min each)</div>
+        <div class="format-steps">
+          <div class="format-step">
+            <span class="step-time">0:00-2:00</span>
+            <span class="step-label">Demo</span>
+            <span class="step-desc">Show what you built and how it works</span>
+          </div>
+          <div class="format-step">
+            <span class="step-time">2:00-3:30</span>
+            <span class="step-label">Explain</span>
+            <span class="step-desc">What technique did you use? What did you learn?</span>
+          </div>
+          <div class="format-step">
+            <span class="step-time">3:30-4:00</span>
+            <span class="step-label">Impact</span>
+            <span class="step-desc">How much time does it save? How often will you use it?</span>
+          </div>
+          <div class="format-step">
+            <span class="step-time">4:00-5:00</span>
+            <span class="step-label">Q&A</span>
+            <span class="step-desc">Peer questions and feedback</span>
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="rubric-title">Peer Scoring Rubric</div>
+        <div class="rubric-table">
+          <div class="rubric-header">
+            <span>Dimension</span>
+            <span class="score-1">1 (Needs Work)</span>
+            <span class="score-3">3 (Solid)</span>
+            <span class="score-5">5 (Outstanding)</span>
+          </div>
+          <div class="rubric-row">
+            <span class="rubric-label">Practical Impact</span>
+            <span class="rubric-cell">Nice idea, unlikely to use</span>
+            <span class="rubric-cell">Useful for weekly tasks</span>
+            <span class="rubric-cell">Game-changer for daily ops</span>
+          </div>
+          <div class="rubric-row">
+            <span class="rubric-label">Technical Skill</span>
+            <span class="rubric-cell">Basic prompt only</span>
+            <span class="rubric-cell">Prompt formula + one technique</span>
+            <span class="rubric-cell">Multiple techniques combined</span>
+          </div>
+          <div class="rubric-row">
+            <span class="rubric-label">Presentation</span>
+            <span class="rubric-cell">Hard to follow</span>
+            <span class="rubric-cell">Clear explanation</span>
+            <span class="rubric-cell">Compelling story + live demo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><strong>This is a celebration, not a test.</strong> Any automation that saves time is valuable.</div>
+  </div>
+</body>
+</html>

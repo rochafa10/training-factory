@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 32 - Expected Dive Deep Output Format</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 32px 16px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 16px;
+    }
+    .content-area {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+      overflow: hidden;
+    }
+    .output-preview {
+      flex: 1;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 10px;
+      line-height: 1.45;
+      color: #333333;
+      overflow: hidden;
+    }
+    .output-preview .heading {
+      color: #cc0000;
+      font-weight: bold;
+      font-size: 11px;
+    }
+    .output-preview .subheading {
+      color: #666666;
+      font-size: 10px;
+    }
+    .output-preview .table-header {
+      background: #e0e0e0;
+      padding: 2px 4px;
+      display: inline-block;
+      margin-top: 6px;
+    }
+    .output-preview .metric {
+      color: #0066cc;
+      font-weight: bold;
+    }
+    .output-preview .action-item {
+      color: #16a34a;
+    }
+    .time-comparison {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .time-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .time-card.manual {
+      border-color: #f87171;
+    }
+    .time-card.ai {
+      border-color: #4ade80;
+    }
+    .time-label {
+      font-size: 10px;
+      color: #666666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .time-value {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .time-card.manual .time-value {
+      color: #f87171;
+    }
+    .time-card.ai .time-value {
+      color: #4ade80;
+    }
+    .time-unit {
+      font-size: 12px;
+      color: #666666;
+    }
+    .savings-callout {
+      background: #4ade80;
+      color: #000000;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .footer {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Expected Dive Deep Output Format</h1>
+    <div class="content-area">
+      <div class="output-preview">
+<span class="heading"># [Your DC] Dive Deep - Missed Shipments</span>
+<span class="subheading">## Week of January 20-21, 2026</span>
+
+<span class="heading">### Executive Summary</span>
+Analyzed 15 shipments over 2 days. Miss rate: <span class="metric">67%</span> (10 of 15).
+Primary root cause: carrier_delay (<span class="metric">60%</span> of misses).
+Most affected customer: Customer_A (4 interactions, 2 misses).
+Trend: Improving from 70% (Jan 20) to 60% (Jan 21).
+
+<span class="heading">### Root Cause Analysis</span>
+<span class="table-header">| Root Cause        | Count | Percentage |</span>
+| carrier_delay     | 6     | <span class="metric">60%</span>        |
+| inventory_shortage| 3     | <span class="metric">30%</span>        |
+| system_error      | 1     | <span class="metric">10%</span>        |
+
+<span class="heading">### Action Items</span>
+<span class="action-item">- [ ] Contact carrier manager - Owner: [AGM]</span>
+<span class="action-item">- [ ] Review inventory reorder points - Owner: [Lead]</span>
+<span class="action-item">- [ ] Escalate system errors to IT - Owner: [AGM]</span>
+      </div>
+      <div class="time-comparison">
+        <div class="time-card manual">
+          <div class="time-label">Manual Process</div>
+          <div class="time-value">45+</div>
+          <div class="time-unit">minutes</div>
+        </div>
+        <div class="time-card ai">
+          <div class="time-label">With Agent Mode</div>
+          <div class="time-value">2-3</div>
+          <div class="time-unit">minutes</div>
+        </div>
+        <div class="savings-callout">93% Time Savings</div>
+      </div>
+    </div>
+    <div class="footer">Agent generates formatted, actionable reports with specific metrics and owners</div>
+  </div>
+</body>
+</html>

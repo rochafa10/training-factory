@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Slide 50 - Exercise 4: Scenario Data</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 960px; height: 540px; overflow: hidden;
+    background: #ffffff; font-family: Arial, sans-serif; color: #000000;
+    position: relative;
+  }
+  .accent-bar {
+    position: absolute; left: 0; top: 0; width: 8px; height: 100%;
+    background: #cc0000;
+  }
+  .content { padding: 28px 32px 20px 32px; margin-left: 8px; }
+  .header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .title { font-size: 22px; font-weight: 700; color: #000000; }
+  .badge {
+    background: #cc0000; color: #000000; font-size: 10px; font-weight: 700;
+    padding: 3px 10px; border-radius: 3px; letter-spacing: 0.5px;
+  }
+  .columns { display: flex; gap: 16px; }
+  .col { flex: 1; }
+  .col-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .col-title { font-size: 14px; font-weight: 700; color: #000000; }
+  .tag {
+    font-size: 9px; font-weight: 700; padding: 2px 8px;
+    border-radius: 3px; letter-spacing: 0.3px;
+  }
+  .tag-yellow { background: #facc15; color: #ffffff; }
+  .tag-green { background: #4ade80; color: #ffffff; }
+  .data-box {
+    background: #f5f5f5; border-radius: 6px; padding: 12px 14px;
+    border: 1px solid #e0e0e0;
+    height: 400px; overflow: hidden;
+  }
+  .data-text {
+    font-family: 'Courier New', monospace; font-size: 9px;
+    color: #666666; line-height: 1.55; white-space: pre-wrap;
+  }
+  .data-label {
+    font-family: 'Courier New', monospace; font-size: 9px;
+    color: #60a5fa; font-weight: 700; margin-bottom: 6px;
+  }
+  .day-row { margin-bottom: 2px; }
+  .day-name { color: #000000; font-weight: 700; }
+  .separator {
+    border: none; border-top: 1px solid #e0e0e0; margin: 8px 0;
+  }
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <div class="header">
+      <span class="title">Exercise 4: Scenario Data</span>
+      <span class="badge">EXERCISE 4</span>
+    </div>
+
+    <div class="columns">
+      <!-- Scenario A -->
+      <div class="col">
+        <div class="col-header">
+          <span class="col-title">Scenario A: Headcount</span>
+          <span class="tag tag-yellow">FILE UPLOAD</span>
+        </div>
+        <div class="data-box">
+          <div class="data-label">SHIFT DATA - WEEK OF JAN 20-24:</div>
+          <div class="data-text"><span class="day-name">Mon:</span>
+Morning 18 assoc / 1,247 orders
+Afternoon 22 / 1,893
+Night 8 / 412
+
+<span class="day-name">Tue:</span>
+Morning 17 / 1,189
+Afternoon 23 / 2,104
+Night 9 / 387
+
+<span class="day-name">Wed:</span>
+Morning 19 / 1,302
+Afternoon 21 / 1,756
+Night 7 / 445
+
+<span class="day-name">Thu:</span>
+Morning 18 / 1,278
+Afternoon 24 / 2,231
+Night 8 / 398
+
+<span class="day-name">Fri:</span>
+Morning 20 / 1,534
+Afternoon 22 / 2,087
+Night 6 / 356</div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="col">
+        <div class="col-header">
+          <span class="col-title">Scenario B: Safety Notes</span>
+          <span class="tag tag-green">WEB SEARCH</span>
+        </div>
+        <div class="data-box">
+          <div class="data-label">RAW INCIDENT NOTES:</div>
+          <div class="data-text">- happened around 10:15am near
+  dock door 7
+
+- forklift operator Carlos M.,
+  badge #4472
+
+- backing up with loaded pallet,
+  didn't see pedestrian walkway
+  occupied
+
+- near-miss, nobody hurt
+
+- pedestrian was new hire Jamie L.
+  - no high-viz vest
+
+- vests on backorder, last 3
+  classes didn't get them
+
+- backup alarm on forklift #12
+  "kind of quiet" for a week
+
+- told maintenance to check
+  alarm TODAY</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

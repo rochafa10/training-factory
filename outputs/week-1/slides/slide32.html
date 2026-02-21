@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 32 - Exercise: Model Showdown</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    .exercise-badge { display: inline-block; background: #cc0000; color: white; padding: 6px 16px; font-size: 12px; font-weight: bold; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; width: fit-content; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 14px; }
+    .main-content { display: flex; gap: 20px; flex: 1; }
+    .left-col { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .right-col { width: 280px; display: flex; flex-direction: column; gap: 12px; }
+    .step { background: #f5f5f5; border-radius: 8px; padding: 12px 14px; display: flex; align-items: flex-start; gap: 12px; }
+    .step-num { min-width: 28px; height: 28px; background: #e0e0e0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; color: #cc0000; flex-shrink: 0; }
+    .step-text { font-size: 13px; color: #666666; line-height: 1.5; }
+    .step-text strong { color: #000000; }
+    .prompt-box { background: #f5f5f5; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px; }
+    .prompt-label { font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #cc0000; margin-bottom: 8px; }
+    .prompt-text { font-size: 12px; color: #666666; line-height: 1.6; font-style: italic; }
+    .screenshot-box { border-radius: 8px; overflow: hidden; border: 1px solid #e0e0e0; flex: 1; }
+    .screenshot-box img { width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 0.8; }
+    .time-box { background: #f5f5f5; border-radius: 8px; padding: 12px; text-align: center; }
+    .time-big { font-size: 32px; font-weight: bold; color: #cc0000; }
+    .time-label { font-size: 11px; color: #666666; text-transform: uppercase; }
+    .compare-box { background: #f5f5f5; border-left: 4px solid #facc15; border-radius: 8px; padding: 12px; }
+    .compare-box p { font-size: 12px; color: #666666; line-height: 1.5; }
+    .compare-box strong { color: #facc15; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Hands-On</div>
+    <h1>Model Showdown &mdash; Same Prompt, Different Brains</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Copy the prompt below into Bottle Rocket with <strong>Qwen 3 30B</strong> selected</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">Read the output. Then switch to <strong>Grok 4</strong> and paste the exact same prompt</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">Try a third model: <strong>Gemini 2.5 Pro</strong>. Compare all three outputs side-by-side</div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text"><strong>Discuss with your table:</strong> Which was fastest? Most detailed? Most useful for YOUR work?</div>
+        </div>
+        <div class="prompt-box">
+          <div class="prompt-label">Use This Prompt</div>
+          <div class="prompt-text">&ldquo;You are an operations analyst at a Tesla distribution center. Analyze the following scenario: our daily shipment volume increased 40% this week but headcount stayed the same. Recommend 3 specific actions I can take today to maintain delivery targets. Format as a numbered list with estimated impact.&rdquo;</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="screenshot-box">
+          <img src="screenshots/br-model-selector.png" alt="Model Selector showing 8 models">
+        </div>
+        <div class="time-box">
+          <div class="time-big">15</div>
+          <div class="time-label">Minutes</div>
+        </div>
+        <div class="compare-box">
+          <p><strong>Notice:</strong> Speed vs. depth trade-off. Qwen 3 30B is fast. Grok 4 thinks deeper but takes longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

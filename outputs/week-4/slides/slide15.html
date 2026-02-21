@@ -2,106 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 15 - Key Takeaways</title>
+  <title>Slide 15 - Section 6 Divider</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
+      display: flex;
     }
-    .accent-bar {
+    .section-block {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
+      width: 320px;
       height: 100%;
-      background: #e82127;
-    }
-    .content {
-      padding: 40px 50px;
-      margin-left: 8px;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 30px;
-    }
-    .takeaways {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .takeaway {
-      display: flex;
-      align-items: flex-start;
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .takeaway-num {
-      background: #e82127;
-      color: white;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
+      background: #cc0000;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
+    }
+    .section-number {
+      font-size: 180px;
       font-weight: bold;
-      margin-right: 20px;
-      flex-shrink: 0;
+      color: rgba(255, 255, 255, 0.15);
     }
-    .takeaway-text {
-      font-size: 16px;
-      line-height: 1.4;
+    .section-content {
+      margin-left: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      height: 100%;
     }
-    .takeaway-text strong {
-      color: #4ade80;
-    }
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50px;
+    .section-label {
       font-size: 12px;
-      color: #a0a0a0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #666666;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 38px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .duration {
+      font-size: 16px;
+      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-
-  <div class="content">
-    <h1>Key Takeaways</h1>
-
-    <div class="takeaways">
-      <div class="takeaway">
-        <span class="takeaway-num">1</span>
-        <span class="takeaway-text"><strong>MCP extends Copilot's reach</strong> — Browser automation, file operations, external systems</span>
-      </div>
-      <div class="takeaway">
-        <span class="takeaway-num">2</span>
-        <span class="takeaway-text"><strong>Multi-agent patterns coordinate complex tasks</strong> — Sequential, Parallel, Supervisor, Human-in-Loop</span>
-      </div>
-      <div class="takeaway">
-        <span class="takeaway-num">3</span>
-        <span class="takeaway-text"><strong>76% of enterprises use human review</strong> — Always verify AI outputs before using</span>
-      </div>
-      <div class="takeaway">
-        <span class="takeaway-num">4</span>
-        <span class="takeaway-text"><strong>40-60 minutes daily savings</strong> — Cumulative impact of AI tools on routine tasks</span>
-      </div>
-      <div class="takeaway">
-        <span class="takeaway-num">5</span>
-        <span class="takeaway-text"><strong>Policy always applies</strong> — Bottle Rocket for Tesla data; Copilot + MCP for everything else</span>
-      </div>
-    </div>
+  <div class="section-block">
+    <span class="section-number">06</span>
   </div>
-
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+  <div class="section-content">
+    <div class="section-label">Section 6</div>
+    <h1>Multi-Agent<br>Orchestration Patterns</h1>
+    <p class="duration">15 min</p>
+  </div>
 </body>
 </html>

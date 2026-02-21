@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 54 - Homework & Next Week Preview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      flex: 1;
+    }
+    .column {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .column.homework {
+      border-color: #cc0000;
+    }
+    .column.preview {
+      border-color: #4ade80;
+    }
+    .column-header {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid;
+    }
+    .homework .column-header {
+      color: #cc0000;
+      border-color: #cc0000;
+    }
+    .preview .column-header {
+      color: #16a34a;
+      border-color: #4ade80;
+    }
+    .time-note {
+      font-size: 11px;
+      color: #666666;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .item-list {
+      list-style: none;
+    }
+    .item-list li {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .homework .item-list li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+    }
+    .preview .item-list li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+    }
+    .item-list li strong {
+      color: #000000;
+    }
+    .sub-list {
+      margin-top: 6px;
+      margin-left: 0;
+    }
+    .sub-list li {
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+    .footer {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Homework &amp; Next Week Preview</h1>
+    <div class="columns">
+      <div class="column homework">
+        <div class="column-header">Homework (~45 min)</div>
+        <ul class="item-list">
+          <li><strong>Build 2 agent workflows</strong> using Copilot Agent Mode:
+            <ul class="sub-list">
+              <li>Meeting Prep Kit (agenda, checklist, notes, follow-up templates)</li>
+              <li>Incident Report System (template, sample, tracking sheet)</li>
+            </ul>
+          </li>
+          <li>Review each with <strong>Source Control</strong></li>
+          <li>Continue <strong>personal project</strong> - bring ready for Week 4 showcase</li>
+          <li>Track <strong>time savings</strong> daily</li>
+        </ul>
+      </div>
+      <div class="column preview">
+        <div class="column-header">Week 4 Preview</div>
+        <ul class="item-list">
+          <li><strong>Agents that remember</strong> your DC (memory)</li>
+          <li><strong>Multi-agent workflows</strong> (chaining)</li>
+          <li><strong>MCP tools</strong> (Playwright, filesystem)</li>
+          <li><strong>Evaluating AI quality</strong></li>
+          <li><strong>Personal project showcase</strong></li>
+          <li><strong>AI rollout planning</strong> for your team</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer"><strong>Next Week:</strong> Advanced Agents, Memory &amp; Optimization | <strong>Remember:</strong> NO Tesla data in Copilot</div>
+  </div>
+</body>
+</html>

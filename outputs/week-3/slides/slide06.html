@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 06 - @ Commands Overview</title>
+  <title>Slide 06 - Setup Checklist</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,68 +20,150 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
-    .subtitle {
-      font-size: 16px;
-      color: #a0a0a0;
-      margin-bottom: 30px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 16px;
+      flex: 1;
     }
-    .command-row {
+    .card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-header {
       display: flex;
       align-items: center;
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
-    .command {
-      font-family: monospace;
-      font-size: 20px;
-      color: #e82127;
-      font-weight: bold;
-      width: 160px;
-    }
-    .description {
-      flex: 1;
-      font-size: 16px;
-    }
-    .example {
+    .step-num {
+      width: 28px;
+      height: 28px;
+      background: #cc0000;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 13px;
-      color: #a0a0a0;
-      font-style: italic;
-      max-width: 350px;
+      font-weight: bold;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .step-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .card-content {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .card-content li {
+      margin-bottom: 4px;
+      margin-left: 16px;
+    }
+    .footer {
+      font-size: 12px;
+      color: #666666;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="content">
-    <h1>Copilot Chat @ Commands</h1>
-    <p class="subtitle">Chat participants are like domain experts with specialty knowledge</p>
-    <div class="command-row">
-      <span class="command">@workspace</span>
-      <span class="description">Searches your entire project</span>
-      <span class="example">"Find all files that handle inventory"</span>
+  <div class="container">
+    <h1>Setup Checklist - 6 Steps</h1>
+    <div class="grid">
+      <div class="card">
+        <div class="card-header">
+          <span class="step-num">1</span>
+          <span class="step-title">VS Code</span>
+        </div>
+        <ul class="card-content">
+          <li>Download from code.visualstudio.com</li>
+          <li>Or install from Microsoft Store</li>
+          <li>Launch after installation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <span class="step-num">2</span>
+          <span class="step-title">Copilot Extensions</span>
+        </div>
+        <ul class="card-content">
+          <li>Open Extensions (Ctrl+Shift+X)</li>
+          <li>Search "GitHub Copilot"</li>
+          <li>Install both Copilot + Copilot Chat</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <span class="step-num">3</span>
+          <span class="step-title">Sign In</span>
+        </div>
+        <ul class="card-content">
+          <li>Click Copilot icon in Status Bar</li>
+          <li>Select "Set up Copilot"</li>
+          <li>Sign in with Tesla GitHub account</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <span class="step-num">4</span>
+          <span class="step-title">Voice Extension</span>
+        </div>
+        <ul class="card-content">
+          <li>Search "VS Code Speech"</li>
+          <li>Install the extension</li>
+          <li>Look for microphone icon</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <span class="step-num">5</span>
+          <span class="step-title">Verify</span>
+        </div>
+        <ul class="card-content">
+          <li>See Copilot icon in Status Bar</li>
+          <li>Open Copilot Chat (Ctrl+Alt+I)</li>
+          <li>Type "Hello" and get response</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <span class="step-num">6</span>
+          <span class="step-title">Workspace</span>
+        </div>
+        <ul class="card-content">
+          <li>File > Open Folder</li>
+          <li>Create "ai-projects" on Desktop</li>
+          <li>This is your workspace for today</li>
+        </ul>
+      </div>
     </div>
-    <div class="command-row">
-      <span class="command">@terminal</span>
-      <span class="description">Generates and runs commands</span>
-      <span class="example">"Install the requests library"</span>
-    </div>
-    <div class="command-row">
-      <span class="command">@vscode</span>
-      <span class="description">Controls VS Code settings</span>
-      <span class="example">"Change to dark theme"</span>
+    <div class="footer">
+      Raise hand if stuck - we'll help troubleshoot
     </div>
   </div>
 </body>

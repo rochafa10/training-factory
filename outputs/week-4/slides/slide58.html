@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 58 - Congratulations, Graduates!</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .confetti {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background:
+        radial-gradient(circle at 10% 20%, #cc0000 3px, transparent 3px),
+        radial-gradient(circle at 90% 15%, #4ade80 4px, transparent 4px),
+        radial-gradient(circle at 25% 80%, #facc15 3px, transparent 3px),
+        radial-gradient(circle at 85% 75%, #cc0000 3px, transparent 3px),
+        radial-gradient(circle at 50% 10%, #4ade80 3px, transparent 3px),
+        radial-gradient(circle at 15% 50%, #facc15 4px, transparent 4px),
+        radial-gradient(circle at 95% 45%, #cc0000 3px, transparent 3px),
+        radial-gradient(circle at 70% 85%, #4ade80 3px, transparent 3px),
+        radial-gradient(circle at 35% 15%, #0284c7 3px, transparent 3px),
+        radial-gradient(circle at 80% 35%, #facc15 3px, transparent 3px),
+        radial-gradient(circle at 5% 70%, #4ade80 3px, transparent 3px),
+        radial-gradient(circle at 60% 5%, #cc0000 3px, transparent 3px);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .grad-icon {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .journey-col {
+      flex: 1;
+    }
+    .journey-card {
+      background: #f5f5f5;
+      border: 2px solid #4ade80;
+      border-radius: 14px;
+      padding: 20px;
+      height: 100%;
+    }
+    .journey-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #16a34a;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .journey-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .journey-icon {
+      width: 32px;
+      height: 32px;
+      background: #4ade80;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .journey-text {
+      font-size: 13px;
+      color: #666666;
+    }
+    .journey-text strong {
+      color: #000000;
+    }
+    .stats-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .stat-box {
+      flex: 1;
+      text-align: center;
+      background: #e0e0e0;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .stat-number {
+      font-size: 22px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .stat-label {
+      font-size: 10px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+    .toolkit-col {
+      width: 300px;
+    }
+    .toolkit-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+    .toolkit-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .toolkit-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .toolkit-item {
+      background: #e0e0e0;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 10px;
+      color: #666666;
+    }
+    .policy-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .policy-title {
+      font-size: 11px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .policy-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .policy-badge {
+      font-size: 8px;
+      font-weight: bold;
+      padding: 3px 6px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      width: 70px;
+      text-align: center;
+    }
+    .badge-approved {
+      background: #4ade80;
+      color: #000000;
+    }
+    .badge-conditional {
+      background: #facc15;
+      color: #000000;
+    }
+    .badge-prohibited {
+      background: #f87171;
+      color: #ffffff;
+    }
+    .policy-text {
+      font-size: 9px;
+      color: #666666;
+      line-height: 1.3;
+    }
+    .footer {
+      margin-top: auto;
+      text-align: center;
+      padding-top: 14px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer-text {
+      font-size: 22px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .footer-sub {
+      font-size: 14px;
+      color: #666666;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="confetti"></div>
+  <div class="container">
+    <div class="header">
+      <div class="grad-icon">&#127891;</div>
+      <h1>Congratulations, Graduates!</h1>
+    </div>
+    <div class="main-content">
+      <div class="journey-col">
+        <div class="journey-card">
+          <div class="journey-title">Your 4-Week AI Journey</div>
+          <div class="journey-item">
+            <div class="journey-icon">&#10003;</div>
+            <div class="journey-text"><strong>4 weeks ago:</strong> Zero AI experience</div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-icon">&#10003;</div>
+            <div class="journey-text"><strong>Today:</strong> Complete AI toolkit for DC operations</div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-icon">&#10003;</div>
+            <div class="journey-text"><strong>12 tools mastered:</strong> From prompts to multi-agent workflows</div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-icon">&#10003;</div>
+            <div class="journey-text"><strong>40-60 min/day:</strong> Time savings potential unlocked</div>
+          </div>
+          <div class="stats-row">
+            <div class="stat-box">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Hours Saved/Year</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">12</div>
+              <div class="stat-label">Tools Learned</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">16</div>
+              <div class="stat-label">Training Hours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toolkit-col">
+        <div class="toolkit-card">
+          <div class="toolkit-title">Your Complete Toolkit</div>
+          <div class="toolkit-items">
+            <span class="toolkit-item">Bottle Rocket</span>
+            <span class="toolkit-item">Prompt Formula</span>
+            <span class="toolkit-item">Chain-of-Thought</span>
+            <span class="toolkit-item">Few-Shot</span>
+            <span class="toolkit-item">Templates</span>
+            <span class="toolkit-item">Voice Mode</span>
+            <span class="toolkit-item">Agent Mode</span>
+            <span class="toolkit-item">Power Automate Desktop</span>
+            <span class="toolkit-item">Power Automate Cloud</span>
+            <span class="toolkit-item">Project Memory</span>
+            <span class="toolkit-item">Quality Scorecard</span>
+            <span class="toolkit-item">Security Review</span>
+          </div>
+        </div>
+        <div class="policy-card">
+          <div class="policy-title">Policy Quick Reference</div>
+          <div class="policy-row">
+            <span class="policy-badge badge-approved">APPROVED</span>
+            <span class="policy-text">Bottle Rocket, IT Assist, Employee Assist, Power Automate</span>
+          </div>
+          <div class="policy-row">
+            <span class="policy-badge badge-conditional">CONDITIONAL</span>
+            <span class="policy-text">GitHub Copilot (NO Tesla data)</span>
+          </div>
+          <div class="policy-row">
+            <span class="policy-badge badge-prohibited">PROHIBITED</span>
+            <span class="policy-text">ChatGPT, Claude.ai, meeting transcription, Apple Intelligence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-text">Go save some time. Class dismissed!</div>
+      <div class="footer-sub">go.tesla.com/chat</div>
+    </div>
+  </div>
+</body>
+</html>

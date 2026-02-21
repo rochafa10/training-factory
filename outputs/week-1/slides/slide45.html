@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 45 - Why Prompt Engineering Matters</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 14px;
+    }
+    .hero-stat {
+      font-size: 72px;
+      font-weight: bold;
+      color: #cc0000;
+      line-height: 1;
+      min-width: 120px;
+    }
+    .hero-text h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .hero-text p {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .hero-text strong {
+      color: #000000;
+    }
+    .hero-source {
+      font-size: 9px;
+      color: #999999;
+    }
+    .comparison {
+      display: flex;
+      gap: 16px;
+      flex: 1;
+      margin-bottom: 12px;
+    }
+    .col {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .col.bad { border-top: 3px solid #f87171; }
+    .col.good { border-top: 3px solid #4ade80; }
+    .col-header {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .col.bad .col-header { color: #f87171; }
+    .col.good .col-header { color: #4ade80; }
+    .evidence {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .ev-num {
+      font-size: 24px;
+      font-weight: bold;
+      min-width: 56px;
+      line-height: 1;
+    }
+    .col.bad .ev-num { color: #f87171; }
+    .col.good .ev-num { color: #4ade80; }
+    .ev-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .ev-source {
+      font-size: 9px;
+      color: #444;
+      margin-top: 2px;
+    }
+    .callout {
+      background: rgba(204, 0, 0, 0.08);
+      border: 1px solid rgba(204, 0, 0, 0.3);
+      border-radius: 8px;
+      padding: 10px 18px;
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .callout strong { color: #000000; }
+    .callout em { color: #cc0000; font-style: normal; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="hero">
+      <div class="hero-stat">50%</div>
+      <div class="hero-text">
+        <h1>Your Prompt Is Half the Equation</h1>
+        <p>MIT researchers found that half of AI performance comes from the model &mdash; and the other half from <strong>how you write your prompt</strong>. The best prompters weren&rsquo;t engineers. They were people who expressed ideas clearly.</p>
+        <span class="hero-source">MIT Sloan School of Management, 2024</span>
+      </div>
+    </div>
+    <div class="comparison">
+      <div class="col bad">
+        <div class="col-header">Without Prompt Skills</div>
+        <div class="evidence">
+          <div class="ev-num">83%</div>
+          <div>
+            <div class="ev-text">hallucination rate &mdash; AI confidently makes up facts when given vague instructions</div>
+            <div class="ev-source">Mount Sinai School of Medicine</div>
+          </div>
+        </div>
+        <div class="evidence">
+          <div class="ev-num">78%</div>
+          <div>
+            <div class="ev-text">of AI project failures caused by poor human-AI communication, not bad technology</div>
+            <div class="ev-source">Enterprise AI research, 2024</div>
+          </div>
+        </div>
+        <div class="evidence">
+          <div class="ev-num">5.8&times;</div>
+          <div>
+            <div class="ev-text">performance variance &mdash; the same model gives wildly different answers depending on wording</div>
+            <div class="ev-source">arXiv, Llama-2 study</div>
+          </div>
+        </div>
+      </div>
+      <div class="col good">
+        <div class="col-header">With Prompt Skills</div>
+        <div class="evidence">
+          <div class="ev-num">21%</div>
+          <div>
+            <div class="ev-text">hallucination rate &mdash; a 4&times; reduction just from writing clearer, structured prompts</div>
+            <div class="ev-source">Mount Sinai School of Medicine</div>
+          </div>
+        </div>
+        <div class="evidence">
+          <div class="ev-num">40%</div>
+          <div>
+            <div class="ev-text">higher quality output when users apply a structured prompting framework</div>
+            <div class="ev-source">Harvard / BCG, 758 consultants</div>
+          </div>
+        </div>
+        <div class="evidence">
+          <div class="ev-num">34%</div>
+          <div>
+            <div class="ev-text">productivity boost for beginners &mdash; new AI users gain the most from learning to prompt well</div>
+            <div class="ev-source">Stanford / MIT, 5,000 workers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="callout"><strong>Bottom line:</strong> Bottle Rocket already has the best AI models. The gap between a frustrating AI experience and a powerful one is <em>your prompt</em>.</div>
+  </div>
+</body>
+</html>

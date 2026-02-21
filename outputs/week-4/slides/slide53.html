@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 53 - Prompt Library Quick Reference</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 32px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 18px;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 20px;
+      flex: 1;
+    }
+    .left-col {
+      display: flex;
+      flex-direction: column;
+    }
+    .section-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .use-case-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      flex: 1;
+    }
+    .use-case-table th {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      padding: 8px 10px;
+      text-align: left;
+      font-weight: bold;
+      color: #000000;
+    }
+    .use-case-table td {
+      border: 1px solid #e0e0e0;
+      padding: 8px 10px;
+      color: #666666;
+      vertical-align: top;
+    }
+    .use-case-table td:first-child {
+      font-weight: bold;
+      color: #000000;
+      width: 140px;
+    }
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .quick-access {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 16px;
+      flex: 1;
+    }
+    .quick-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      padding: 8px 10px;
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+    }
+    .link-icon {
+      width: 28px;
+      height: 28px;
+      background: #cc0000;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .link-content {
+      flex: 1;
+    }
+    .link-name {
+      font-size: 11px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .link-url {
+      font-size: 9px;
+      color: #666666;
+      font-family: 'Consolas', monospace;
+    }
+    .bookmark-note {
+      background: #fef3c7;
+      border: 1px solid #facc15;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+    .bookmark-text {
+      font-size: 12px;
+      color: #92400e;
+      font-weight: bold;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Prompt Library Quick Reference</h1>
+
+    <div class="content-grid">
+      <div class="left-col">
+        <div class="section-title">By Use Case</div>
+        <table class="use-case-table">
+          <tr>
+            <th>Category</th>
+            <th>Key Prompts</th>
+          </tr>
+          <tr>
+            <td>Daily Operations</td>
+            <td>Standup summary, Shift handoff, KPI review</td>
+          </tr>
+          <tr>
+            <td>Analysis</td>
+            <td>Dive deep, Root cause, Trend comparison</td>
+          </tr>
+          <tr>
+            <td>Communication</td>
+            <td>Email draft, Meeting prep, Announcement</td>
+          </tr>
+          <tr>
+            <td>Automation</td>
+            <td>Power Automate flow, Agent Mode task, Scheduled job</td>
+          </tr>
+          <tr>
+            <td>Quality</td>
+            <td>Output review, Hallucination check, Format validation</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="right-col">
+        <div class="quick-access">
+          <div class="quick-title">Quick Access</div>
+
+          <div class="link-item">
+            <div class="link-icon">&#128640;</div>
+            <div class="link-content">
+              <div class="link-name">Bottle Rocket</div>
+              <div class="link-url">go.tesla.com/chat</div>
+            </div>
+          </div>
+
+          <div class="link-item">
+            <div class="link-icon">&#9889;</div>
+            <div class="link-content">
+              <div class="link-name">Power Automate</div>
+              <div class="link-url">make.powerautomate.com</div>
+            </div>
+          </div>
+
+          <div class="link-item">
+            <div class="link-icon">&#128220;</div>
+            <div class="link-content">
+              <div class="link-name">AI Policy</div>
+              <div class="link-url">go.tesla.com/aitools</div>
+            </div>
+          </div>
+
+          <div class="link-item">
+            <div class="link-icon">&#128190;</div>
+            <div class="link-content">
+              <div class="link-name">Project Memory</div>
+              <div class="link-url">.github/copilot-instructions.md</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bookmark-note">
+          <div class="bookmark-text">Bookmark these resources</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">Week 4: Advanced Automation &amp; Multi-Agent Orchestration</div>
+  </div>
+</body>
+</html>

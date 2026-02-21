@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 01 - Week 4 Title</title>
+  <title>Slide 01 - Title</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
     .accent-bar {
       position: absolute;
@@ -24,54 +23,53 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
+    }
+    .content {
+      text-align: center;
+      padding: 40px;
     }
     .week-label {
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 3px;
-      color: #e82127;
-      margin-bottom: 20px;
+      color: #cc0000;
+      margin-bottom: 24px;
     }
-    .title {
-      font-size: 48px;
+    h1 {
+      font-size: 44px;
       font-weight: bold;
-      text-align: center;
       margin-bottom: 16px;
-      max-width: 800px;
+      line-height: 1.2;
     }
     .subtitle {
       font-size: 24px;
-      color: #a0a0a0;
-      text-align: center;
+      color: #666666;
+      margin-bottom: 48px;
     }
-    .session-info {
-      position: absolute;
-      bottom: 40px;
+    .meta {
       font-size: 14px;
-      color: #a0a0a0;
+      color: #666666;
     }
-    .final-badge {
-      background: #e82127;
-      padding: 6px 16px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-top: 30px;
+    .meta span {
+      margin: 0 12px;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-
-  <div class="week-label">Week 4</div>
-  <h1 class="title">Advanced Automation, MCPs & Multi-Agent Orchestration</h1>
-  <p class="subtitle">Model Context Protocol | Multi-Agent Workflows | Personal Projects</p>
-  <div class="final-badge">Final Session</div>
-
-  <p class="session-info">120 Minutes | Final Week</p>
+  <div class="content">
+    <p class="week-label">Week 4 of 4 &mdash; Final Session</p>
+    <h1>Advanced Automation, MCPs<br>&amp; Multi-Agent Orchestration</h1>
+    <p class="subtitle">Agents That Remember, Learn, and Improve</p>
+    <p class="meta">
+      <span>240 minutes</span>
+      <span>|</span>
+      <span>40% Hands-on</span>
+      <span>|</span>
+      <span>VS Code + Copilot, MCP, Bottle Rocket</span>
+    </p>
+  </div>
 </body>
 </html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 36 - Official Policy: Conditional & Restricted</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 20px 20px 16px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      background: #facc15;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 4px 12px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+    .main-content {
+      display: flex;
+      gap: 16px;
+      flex: 1;
+      min-height: 0;
+    }
+    .screenshot-area {
+      flex: 1;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e0e0e0;
+    }
+    .screenshot-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top left;
+      display: block;
+    }
+    .callout {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background: #cc0000;
+      border: 2px solid #000000;
+      border-radius: 50%;
+      color: #000000;
+      font-size: 12px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      z-index: 10;
+    }
+    .callout.warn {
+      background: #facc15;
+      color: #ffffff;
+    }
+    .callout.block {
+      background: #f87171;
+    }
+    .sidebar {
+      width: 210px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .legend {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .legend-title {
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #cc0000;
+      margin-bottom: 8px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .legend-num {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      color: #000000;
+      font-size: 10px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .legend-num.green { background: #4ade80; color: #ffffff; }
+    .legend-num.yellow { background: #facc15; color: #ffffff; }
+    .legend-num.red { background: #f87171; }
+    .legend-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .warning-box {
+      background: rgba(248, 113, 113, 0.1);
+      border: 1px solid #f87171;
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .warning-box .warn-title {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #f87171;
+      margin-bottom: 6px;
+    }
+    .warning-box .warn-item {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+      padding-left: 10px;
+      border-left: 2px solid #f87171;
+      margin-bottom: 6px;
+    }
+    .tip-box {
+      background: #f5f5f5;
+      border-left: 4px solid #facc15;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .tip-box p {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .tip-box strong {
+      color: #facc15;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <span class="badge">Official Policy</span>
+      <h1>Conditional & Restricted Tools</h1>
+    </div>
+    <div class="subtitle">Same policy page &mdash; scroll down for the tricky rules</div>
+    <div class="main-content">
+      <div class="screenshot-area">
+        <img src="screenshots/policy-ai-tools-2.png" alt="Tesla AI Policy - Conditional and Restricted Tools">
+        <div class="callout warn" style="top: 3%; left: 19%;">1</div>
+        <div class="callout block" style="top: 44%; left: 19%;">2</div>
+        <div class="callout warn" style="top: 58%; left: 19%;">3</div>
+        <div class="callout block" style="top: 69%; left: 19%;">4</div>
+      </div>
+      <div class="sidebar">
+        <div class="legend">
+          <div class="legend-title">Annotations</div>
+          <div class="legend-item">
+            <div class="legend-num yellow">1</div>
+            <div class="legend-text"><strong>GitHub Copilot</strong> &mdash; approved but NO Tesla code</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-num red">2</div>
+            <div class="legend-text"><strong>Copilot in Office</strong> &mdash; M365 is NOT available</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-num yellow">3</div>
+            <div class="legend-text"><strong>M365 Chat</strong> &mdash; OK but use <em>corporate link only</em></div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-num red">4</div>
+            <div class="legend-text"><strong>Teams Recording</strong> &mdash; needs policy approval, vendors blocked</div>
+          </div>
+        </div>
+        <div class="warning-box">
+          <div class="warn-title">Common Mistakes</div>
+          <div class="warn-item">Using copilot.microsoft.com instead of m365.cloud.microsoft.chat</div>
+          <div class="warn-item">Letting vendors record or transcribe calls</div>
+        </div>
+        <div class="tip-box">
+          <p><strong>When in doubt:</strong> Use Bottle Rocket. It is always approved for Tesla Data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

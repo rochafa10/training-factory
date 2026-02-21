@@ -8,8 +8,8 @@
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -31,48 +31,84 @@
     h1 {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
+    }
+    .content-area {
+      display: flex;
+      gap: 28px;
+      flex: 1;
+    }
+    .agenda-col {
+      flex: 1;
     }
     .agenda-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex: 1;
+      list-style: none;
+      padding: 0;
+      counter-reset: agenda;
     }
-    .agenda-item {
-      display: flex;
-      align-items: center;
-      background: #1a1a1a;
-      border-radius: 8px;
-      padding: 12px 16px;
-    }
-    .time {
+    .agenda-list li {
+      counter-increment: agenda;
       font-size: 12px;
-      color: #a0a0a0;
-      width: 80px;
-      flex-shrink: 0;
+      color: #666666;
+      padding: 4px 0 4px 28px;
+      position: relative;
+      line-height: 1.5;
     }
-    .topic {
-      font-size: 14px;
-      flex: 1;
-    }
-    .duration {
+    .agenda-list li::before {
+      content: counter(agenda);
+      position: absolute;
+      left: 0;
       font-size: 12px;
-      color: #e82127;
-      background: #2a2a2a;
-      padding: 4px 10px;
-      border-radius: 4px;
+      font-weight: bold;
+      color: #cc0000;
+      min-width: 18px;
     }
-    .break-item {
-      background: #2a2a2a;
+    .agenda-list li.break-item {
+      color: #666666;
+      font-style: italic;
     }
     .exercise-badge {
-      background: #e82127;
-      color: white;
-      padding: 2px 8px;
+      background: #cc0000;
+      color: #000000;
+      padding: 2px 6px;
       border-radius: 4px;
-      font-size: 11px;
-      margin-left: 8px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-left: 6px;
+    }
+    .right-col {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .stat-card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 36px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .stat-number.red { color: #cc0000; }
+    .stat-number.black { color: #000000; }
+    .stat-label {
+      font-size: 12px;
+      color: #666666;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
     }
   </style>
 </head>
@@ -80,48 +116,36 @@
   <div class="accent-bar"></div>
   <div class="container">
     <h1>Today's Agenda</h1>
-    <div class="agenda-list">
-      <div class="agenda-item">
-        <span class="time">0:00 - 0:15</span>
-        <span class="topic">Homework Review: Best Prompts</span>
-        <span class="duration">15 min</span>
+    <div class="content-area">
+      <div class="agenda-col">
+        <ol class="agenda-list">
+          <li>Homework Review + Time Savings Check-in (15 min)</li>
+          <li>Advanced Prompting Techniques (15 min)</li>
+          <li>Chain-of-Thought Analysis <span class="exercise-badge">Ex 1</span> (25 min)</li>
+          <li>Operations Use Cases Overview (10 min)</li>
+          <li class="break-item">BREAK (10 min)</li>
+          <li>Build 3 Operations Templates <span class="exercise-badge">Ex 2</span> (25 min)</li>
+          <li>Data Analysis with AI (25 min)</li>
+          <li>Analyze a Sample DC Dataset <span class="exercise-badge">Ex 3</span> (30 min)</li>
+          <li class="break-item">BREAK (10 min)</li>
+          <li>Structured Outputs (15 min)</li>
+          <li>Build Your Prompt Library (20 min)</li>
+          <li>Model Comparison Challenge <span class="exercise-badge">Ex 4</span> (20 min)</li>
+          <li>Share, Takeaways &amp; Homework (20 min)</li>
+        </ol>
       </div>
-      <div class="agenda-item">
-        <span class="time">0:15 - 0:25</span>
-        <span class="topic">Advanced Prompting Techniques</span>
-        <span class="duration">10 min</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">0:25 - 0:50</span>
-        <span class="topic">Chain-of-Thought Prompts<span class="exercise-badge">Exercise 1</span></span>
-        <span class="duration">25 min</span>
-      </div>
-      <div class="agenda-item break-item">
-        <span class="time">0:50 - 0:55</span>
-        <span class="topic">Break</span>
-        <span class="duration">5 min</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">0:55 - 1:05</span>
-        <span class="topic">Operations Use Cases Overview</span>
-        <span class="duration">10 min</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">1:05 - 1:30</span>
-        <span class="topic">Build 3 Operations Templates<span class="exercise-badge">Exercise 2</span></span>
-        <span class="duration">25 min</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">1:30 - 1:50</span>
-        <span class="topic">Model Comparison Challenge<span class="exercise-badge">Exercise 3</span></span>
-        <span class="duration">20 min</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">1:50 - 2:00</span>
-        <span class="topic">Share & Discuss Best Templates</span>
-        <span class="duration">10 min</span>
+      <div class="right-col">
+        <div class="stat-card">
+          <span class="stat-number red">135 min</span>
+          <span class="stat-label">Hands-on (56%)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number black">105 min</span>
+          <span class="stat-label">Instruction (44%)</span>
+        </div>
       </div>
     </div>
+    <div class="footer">Total: 240 minutes (4 hours) &mdash; 2 breaks included</div>
   </div>
 </body>
 </html>

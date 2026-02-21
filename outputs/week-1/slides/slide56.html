@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Rapid Fire - Interactive Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 960px;
+            height: 540px;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .accent-bar {
+            width: 8px;
+            height: 100%;
+            background-color: #cc0000;
+            flex-shrink: 0;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px 32px 16px 40px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            margin-bottom: 16px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #cc0000;
+            color: white;
+            padding: 5px 14px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 11px;
+            color: #666666;
+        }
+
+        .table-wrapper {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        /* Custom scrollbar styling */
+        .table-wrapper::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .table-wrapper::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+
+        .table-wrapper::-webkit-scrollbar-thumb {
+            background: #666;
+            border-radius: 3px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        thead tr {
+            background-color: #e0e0e0;
+        }
+
+        thead th {
+            color: #cc0000;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 4px 8px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        thead th:first-child {
+            width: 30px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f5f5f5;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        tbody td {
+            padding: 4px 8px;
+            border: none;
+            color: #000000;
+        }
+
+        tbody td:first-child {
+            width: 30px;
+            color: #cc0000;
+            font-weight: bold;
+            text-align: right;
+            padding-right: 12px;
+        }
+
+        tbody td:last-child {
+            color: #666;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-bar"></div>
+    <div class="container">
+        <div class="header">
+            <div class="badge">Interactive Quiz</div>
+            <div class="title">Policy Rapid Fire</div>
+            <div class="subtitle">For each item, call out: APPROVED / CONDITIONAL / PROHIBITED</div>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Tool or Action</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Bottle Rocket</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Grok via X app</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Grok via Bottle Rocket</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Claude.ai (website)</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Claude inside Bottle Rocket</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>M365 Copilot Chat (m365.cloud.microsoft.chat)</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>M365 Copilot Chat (copilot.microsoft.com)</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>GitHub Copilot with Tesla code</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>GitHub Copilot with generic Python code</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>AI meeting transcription (approved tool)</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Apple Intelligence on personal iPhone at work</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Perplexity AI for generic research</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Nova searching Confluence</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Employee Assist for HR questions</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>DeepSeek (China-hosted)</td>
+                        <td>?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

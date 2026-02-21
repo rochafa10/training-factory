@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 02 - Session Agenda</title>
+  <title>Slide 02 - Agenda</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,99 +20,139 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     h1 {
-      font-size: 36px;
-      margin-bottom: 30px;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 12px;
     }
-    .agenda {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px 40px;
-    }
-    .agenda-item {
+    .content-area {
       display: flex;
-      align-items: center;
-      background: #1a1a1a;
-      padding: 12px 16px;
-      border-radius: 6px;
+      gap: 24px;
+      flex: 1;
     }
-    .time {
-      font-size: 12px;
-      color: #a0a0a0;
-      min-width: 70px;
+    .agenda-col {
+      flex: 1;
     }
-    .topic {
-      font-size: 14px;
+    .agenda-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: agenda;
     }
-    .exercise {
-      background: #2a1a1a;
-      border-left: 3px solid #e82127;
+    .agenda-list li {
+      counter-increment: agenda;
+      font-size: 11px;
+      color: #666666;
+      padding: 3px 0 3px 24px;
+      position: relative;
+      line-height: 1.4;
     }
-    .break {
-      background: #1a2a1a;
-      border-left: 3px solid #4ade80;
+    .agenda-list li::before {
+      content: counter(agenda);
+      position: absolute;
+      left: 0;
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      min-width: 16px;
+    }
+    .agenda-list li.break-item {
+      color: #666666;
+      font-style: italic;
+    }
+    .exercise-badge {
+      background: #cc0000;
+      color: #ffffff;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-left: 4px;
+    }
+    .right-col {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .stat-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 28px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .stat-number.red { color: #cc0000; }
+    .stat-number.black { color: #000000; }
+    .stat-number.gray { color: #666666; }
+    .stat-label {
+      font-size: 11px;
+      color: #666666;
     }
     .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50px;
-      font-size: 12px;
-      color: #a0a0a0;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-
-  <div class="content">
-    <h1>Session Agenda</h1>
-
-    <div class="agenda">
-      <div class="agenda-item">
-        <span class="time">0:00-0:10</span>
-        <span class="topic">Course Time Savings Review</span>
+  <div class="container">
+    <h1>Today's Agenda</h1>
+    <div class="content-area">
+      <div class="agenda-col">
+        <ol class="agenda-list">
+          <li>Course Time Savings Review + ROI (15 min)</li>
+          <li>MCP: Giving Agents Skills (15 min)</li>
+          <li>MCP Setup + Web Automation <span class="exercise-badge">Ex 1</span> (20 min)</li>
+          <li>Agents That Remember (Memory &amp; Context) (20 min)</li>
+          <li class="break-item">BREAK (10 min)</li>
+          <li>Build a Persistent DC Assistant <span class="exercise-badge">Ex 2</span> (25 min)</li>
+          <li>Multi-Agent Orchestration Patterns (15 min)</li>
+          <li>Dive Deep Report Automation <span class="exercise-badge">Ex 3</span> (25 min)</li>
+          <li class="break-item">BREAK (10 min)</li>
+          <li>Evaluating &amp; Optimizing AI Agents (20 min)</li>
+          <li>Security Review Basics (15 min)</li>
+          <li>Personal Project Showcase <span class="exercise-badge">Ex 4</span> (25 min)</li>
+          <li>Continuous Learning Roadmap (15 min)</li>
+          <li>Course Graduation + Next Steps (10 min)</li>
+        </ol>
       </div>
-      <div class="agenda-item exercise">
-        <span class="time">0:10-0:25</span>
-        <span class="topic">Exercise 1: MCP Installation</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">0:25-0:40</span>
-        <span class="topic">MCP Capabilities Deep Dive</span>
-      </div>
-      <div class="agenda-item exercise">
-        <span class="time">0:40-1:00</span>
-        <span class="topic">Exercise 2: Web Automation</span>
-      </div>
-      <div class="agenda-item break">
-        <span class="time">1:00-1:05</span>
-        <span class="topic">Break</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">1:05-1:20</span>
-        <span class="topic">Multi-Agent Orchestration</span>
-      </div>
-      <div class="agenda-item exercise">
-        <span class="time">1:20-1:40</span>
-        <span class="topic">Exercise 3: Dive Deep Automation</span>
-      </div>
-      <div class="agenda-item exercise">
-        <span class="time">1:40-1:55</span>
-        <span class="topic">Personal Project Workshop</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">1:55-2:00</span>
-        <span class="topic">Next Steps & Course Wrap</span>
+      <div class="right-col">
+        <div class="stat-card">
+          <span class="stat-number red">95 min</span>
+          <span class="stat-label">Hands-on (40%)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number black">125 min</span>
+          <span class="stat-label">Instruction (52%)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number gray">20 min</span>
+          <span class="stat-label">Breaks (8%)</span>
+        </div>
       </div>
     </div>
+    <div class="footer">Total: 240 minutes (4 hours) &mdash; Final Session with Project Showcase &amp; Graduation</div>
   </div>
-
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
 </body>
 </html>

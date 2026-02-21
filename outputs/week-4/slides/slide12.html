@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 12 - Human-in-the-Loop</title>
+  <title>Slide 12 - How Project Memory Works</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,96 +20,99 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .content {
-      padding: 40px 50px;
+      padding: 28px 40px 24px 48px;
       margin-left: 8px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      grid-template-columns: 200px 1fr;
+      gap: 30px;
     }
     h1 {
-      font-size: 32px;
-      margin-bottom: 24px;
-    }
-    .stat-highlight {
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 8px;
-      text-align: center;
-      margin-bottom: 24px;
-    }
-    .stat-number {
-      font-size: 72px;
+      font-size: 28px;
       font-weight: bold;
-      color: #4ade80;
+      color: #000000;
+      margin-bottom: 20px;
+      grid-column: span 2;
     }
-    .stat-unit {
-      font-size: 24px;
-      color: #4ade80;
-    }
-    .stat-desc {
-      font-size: 14px;
-      color: #a0a0a0;
-      margin-top: 10px;
-    }
-    .principle {
-      background: #1a1a1a;
-      padding: 20px;
+    .file-tree {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
       border-radius: 8px;
-      border-left: 4px solid #e82127;
+      padding: 16px;
     }
-    .principle p {
-      font-size: 16px;
-      line-height: 1.5;
+    .tree-title {
+      font-size: 11px;
+      color: #666666;
+      text-transform: uppercase;
+      margin-bottom: 12px;
     }
-    .workflow {
-      background: #1a1a1a;
-      padding: 24px;
-      border-radius: 8px;
-    }
-    .workflow-title {
-      font-size: 14px;
-      color: #a0a0a0;
-      margin-bottom: 16px;
-    }
-    .workflow-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .workflow-step {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-    }
-    .step-icon {
-      width: 32px;
-      height: 32px;
-      background: #2a2a2a;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 12px;
-      font-size: 14px;
-    }
-    .step-icon.human {
-      background: #4ade80;
-      color: #0a0a0a;
-    }
-    .arrow {
-      text-align: center;
-      color: #a0a0a0;
+    .tree-item {
+      font-family: monospace;
       font-size: 12px;
+      color: #666666;
+      padding: 4px 0;
+    }
+    .tree-item.folder {
+      color: #000000;
+    }
+    .tree-item.file {
+      padding-left: 16px;
+    }
+    .tree-item.highlight {
+      background: #fff8cc;
+      color: #cc0000;
+      font-weight: bold;
+      padding: 4px 8px;
+      margin-left: -8px;
+      border-radius: 4px;
+    }
+    .categories-table {
+      width: 100%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+      padding: 10px 12px;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+    }
+    td {
+      padding: 8px 12px;
+      border: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      vertical-align: top;
+    }
+    td:first-child {
+      font-weight: bold;
+      color: #000000;
+      width: 120px;
+    }
+    .footer-note {
+      grid-column: span 2;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #666666;
+      margin-top: 8px;
     }
     .footer {
       position: absolute;
       bottom: 20px;
-      left: 50px;
+      left: 56px;
       font-size: 12px;
-      color: #a0a0a0;
+      color: #666666;
     }
   </style>
 </head>
@@ -117,45 +120,51 @@
   <div class="accent-bar"></div>
 
   <div class="content">
-    <div class="left-panel">
-      <h1>Human-in-the-Loop</h1>
+    <h1>How Project Memory Works</h1>
 
-      <div class="stat-highlight">
-        <span class="stat-number">76</span><span class="stat-unit">%</span>
-        <div class="stat-desc">of enterprises include human review in AI workflows</div>
-      </div>
-
-      <div class="principle">
-        <p>Your judgment matters. Always review AI outputs before using them.</p>
-      </div>
+    <div class="file-tree">
+      <div class="tree-title">File Location</div>
+      <div class="tree-item folder">your-project/</div>
+      <div class="tree-item folder file">.github/</div>
+      <div class="tree-item file highlight">copilot-instructions.md</div>
+      <div class="tree-item folder file">src/</div>
+      <div class="tree-item file">...</div>
     </div>
 
-    <div class="right-panel">
-      <div class="workflow">
-        <div class="workflow-title">Dive Deep Workflow with Human Review</div>
-        <div class="workflow-steps">
-          <div class="workflow-step">
-            <span class="step-icon">1</span>
-            <span>Agent reads data file</span>
-          </div>
-          <div class="arrow">↓</div>
-          <div class="workflow-step">
-            <span class="step-icon">2</span>
-            <span>Agent analyzes patterns</span>
-          </div>
-          <div class="arrow">↓</div>
-          <div class="workflow-step">
-            <span class="step-icon">3</span>
-            <span>Agent generates report</span>
-          </div>
-          <div class="arrow">↓</div>
-          <div class="workflow-step">
-            <span class="step-icon human">✓</span>
-            <span>You review and approve</span>
-          </div>
-        </div>
-      </div>
+    <div class="categories-table">
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Example Content</th>
+        </tr>
+        <tr>
+          <td>Site Identity</td>
+          <td>"This is the Newburgh, NY distribution center (NWB)"</td>
+        </tr>
+        <tr>
+          <td>Team Size</td>
+          <td>"30 associates, 4 leads, 1 AGM"</td>
+        </tr>
+        <tr>
+          <td>Key KPIs</td>
+          <td>"Track: shipment accuracy, on-time delivery, inventory turns"</td>
+        </tr>
+        <tr>
+          <td>Common Tasks</td>
+          <td>"Dive deep reports, shift summaries, incident write-ups"</td>
+        </tr>
+        <tr>
+          <td>Terminology</td>
+          <td>"NABU = order management system, SHP = shipment prefix"</td>
+        </tr>
+        <tr>
+          <td>Formatting</td>
+          <td>"Use Tesla-standard headers, bullet points, action items"</td>
+        </tr>
+      </table>
     </div>
+
+    <div class="footer-note">Whatever you put in this file becomes permanent context for every Copilot conversation in this project.</div>
   </div>
 
   <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>

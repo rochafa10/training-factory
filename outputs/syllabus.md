@@ -10,7 +10,7 @@
 
 ## Course Overview
 
-This course takes Tesla Area General Managers from zero AI experience to advanced agentic coding proficiency in four weeks. Each 240-minute session builds progressively: Week 1 establishes the foundation with AI literacy, Tesla policy compliance, and Bottle Rocket mastery; Week 2 advances to sophisticated prompting techniques, data analysis, and structured output generation; Week 3 introduces VS Code, GitHub Copilot Agent Mode, git basics, and the concept of giving agents skills through MCP tools; Week 4 culminates with project memory, multi-skill agent workflows, orchestration patterns, security review, and a personal project showcase.
+This course takes Tesla Area General Managers from zero AI experience to advanced agentic coding proficiency in four weeks. Each 240-minute session builds progressively: Week 1 establishes the foundation with AI literacy, Tesla policy compliance, and Bottle Rocket mastery; Week 2 advances to sophisticated prompting techniques, data analysis, and structured output generation; Week 3 introduces VS Code, GitHub Copilot Agent Mode, git basics, and agent file access for multi-step workflows; Week 4 culminates with project memory, Power Automate for recurring automation, orchestration patterns, security review, and a personal project showcase.
 
 The course follows a progressive hands-on model. Week 1 is instruction-heavy (44% hands-on) because every concept is new. By Weeks 2-3, the ratio shifts to 56% hands-on practice. Week 4 balances at 50% as advanced concepts require explanation before practice. Every exercise uses real DC operations scenarios -- labor planning, safety incidents, vendor communications, KPI analysis -- so skills transfer immediately to daily work.
 
@@ -26,7 +26,7 @@ By the end of this course, participants will be able to:
 4. **Save 40-60 minutes daily** through AI-assisted tasks
 5. **Use GitHub Copilot Agent Mode** to build multi-file projects autonomously
 6. **Analyze data with AI** -- upload CSVs, extract trends, generate executive summaries
-7. **Give agents skills** -- extend agent capabilities with MCP tools and custom configurations
+7. **Use Power Automate** -- create recurring automated workflows for desktop and cloud tasks
 8. **Give projects memory** -- set up persistent context so agents remember project conventions across sessions
 9. **Review AI-generated code** -- read diffs, catch mistakes, approve/reject agent changes
 10. **Build real automations** -- end-to-end workflows combining agents, tools, and context
@@ -38,8 +38,8 @@ By the end of this course, participants will be able to:
 |------|---------|-------------|------------|
 | Bottle Rocket (go.tesla.com/chat) | Tesla's approved AI chat interface (Grok, Claude, Gemini) | Tesla Data OK | Week 1 |
 | GitHub Copilot (in VS Code) | Code assistance: Chat, Edit, Agent modes + Voice | NO Tesla Data | Week 3 |
-| MCP Tools (Playwright, Filesystem, etc.) | Extend agent capabilities with browser automation, file access, etc. | Varies by tool | Week 3-4 |
-| Memory MCP (knowledge graph) | Persistent agent memory across sessions | Project-scoped | Week 4 |
+| Power Automate (Desktop + Cloud) | Workflow automation for recurring tasks | Tesla Data OK | Week 4 |
+| Project Memory (copilot-instructions.md) | Persistent agent memory across sessions | Project-scoped | Week 4 |
 
 ### Curriculum Design Decisions
 
@@ -49,12 +49,12 @@ By the end of this course, participants will be able to:
 | Week 1 hands-on ratio | 44% hands-on / 56% instruction | Everything is new; learners need conceptual foundation before independent practice |
 | Weeks 2-3 hands-on ratio | 56% hands-on / 44% instruction | Building on foundation; more confidence allows more practice |
 | Week 4 hands-on ratio | 50% hands-on / 50% instruction | Advanced concepts (memory, orchestration, security) need explanation before practice |
-| Tool progression | Bottle Rocket (Wk 1) --> Copilot (Wk 3) --> MCP + Memory (Wk 3-4) | Builds confidence with a simple tool before introducing code-oriented environments |
+| Tool progression | Bottle Rocket (Wk 1) --> Copilot (Wk 3) --> Power Automate + Memory (Wk 4) | Builds confidence with a simple tool before introducing code-oriented environments |
 | Scenario-based learning | All exercises use real DC operations data | Immediate applicability; AGMs see value in their actual workflows |
 | Time tracking | Mandatory from Week 1 | Creates accountability, proves ROI, builds business case for team expansion |
 | Homework cap | 45 min max per week | Respects busy AGM schedules; focuses on quality over quantity |
 | Progressive difficulty | Foundation --> Application --> Expansion --> Mastery | Standard adult learning progression; each week unlocks new capabilities |
-| Agent skills before memory | MCP tools in Week 3, Memory in Week 4 | Learners need to see what agents can do before learning to customize them persistently |
+| Agent skills before memory | Agent Mode in Week 3, Power Automate + Memory in Week 4 | Learners need to see what agents can do before learning to customize them persistently |
 | Security review placement | Week 4 (after agent skills) | Context-dependent -- learners need to understand what agents produce before reviewing it |
 | Personal project | Week 4 showcase | Capstone validates learning; peer review drives cross-DC idea sharing |
 
@@ -319,7 +319,7 @@ By the end of this course, participants will be able to:
 ## Week 3: VS Code, Copilot & Agent Mode
 
 **Duration:** 240 minutes
-**Focus:** Set up GitHub Copilot, master Voice Mode, understand Agent Mode deeply, learn to review and debug agent work, introduce agent skills (MCP tools)
+**Focus:** Set up GitHub Copilot, master Voice Mode, understand Agent Mode deeply, learn to review and debug agent work
 **Difficulty Level:** Expansion
 
 ### Learning Objectives
@@ -329,7 +329,7 @@ By the end of this course, participants will be able to:
 3. Understand the Agent Mode Plan-Execute-Iterate loop and approve/reject agent actions
 4. Read git diffs to review, accept, or reject AI-generated code changes
 5. Debug and redirect agents when they make mistakes
-6. Understand MCP tools and give an agent its first skill (Playwright)
+6. Understand how agents can access and work with files in your project
 
 ### Session Agenda
 
@@ -386,18 +386,17 @@ By the end of this course, participants will be able to:
 | | | - Giving better instructions after a bad output | | |
 | | | - The "undo and retry" workflow | | |
 | | | - When to start fresh vs. when to correct | | |
-| 3:20 - 3:40 | 11 | Giving Agents Skills: MCP Tools Introduction | Lecture + Demo | 20 min |
-| | | - What are MCP tools? (Model Context Protocol explained simply) | | |
-| | | - The concept: agents start limited, you give them new abilities | | |
-| | | - Analogy: installing apps on a phone gives it new capabilities | | |
-| | | - Overview of available MCPs: browser automation, file access, databases, APIs | | |
-| | | - Demo: agent WITHOUT a tool vs. agent WITH the tool | | |
-| | | - How skills change what agents can do (before/after comparison) | | |
-| 3:40 - 4:00 | 12-13 | Exercise 4: Give an Agent Its First Skill + Wrap-up | Guided Exercise + Homework | 20 min |
-| | | - Install Playwright MCP (browser automation) | | |
-| | | - Agent task: navigate to a public website, extract information | | |
-| | | - Compare: what agent could do before vs. after the skill | | |
-| | | - Discuss: what other skills would be useful for DC work? | | |
+| 3:20 - 3:40 | 11 | Agent File Access & Workspace Context | Lecture + Demo | 20 min |
+| | | - How agents read and write files in your project | | |
+| | | - The concept: agents can access your workspace files | | |
+| | | - Demo: agent reading CSV data and generating reports | | |
+| | | - How file access enables multi-step workflows | | |
+| | | - Preview: Power Automate for recurring automation (Week 4) | | |
+| 3:40 - 4:00 | 12-13 | Exercise 4: Agent Builds a Data Report + Wrap-up | Guided Exercise + Homework | 20 min |
+| | | - Create a sample CSV with operations data | | |
+| | | - Agent task: read the data, analyze it, generate a formatted report | | |
+| | | - Compare: manual analysis vs. agent-assisted workflow | | |
+| | | - Discuss: what recurring tasks could you automate? | | |
 | | | *Final 2 minutes: Homework assignment (see below)* | | |
 | **TOTAL** | | | | **240 min** |
 
@@ -417,8 +416,8 @@ By the end of this course, participants will be able to:
 - Agent Mode: Plan-Execute-Iterate loop, approval workflows, autonomous context discovery
 - Git basics: version control, reading diffs, accepting/rejecting changes, rollback
 - Debugging agents: failure patterns, redirecting, undo-and-retry workflow
-- MCP tools (Model Context Protocol): concept, installation, before/after capability comparison
-- Playwright MCP: browser automation as a first agent skill
+- Agent file access: reading and writing files in your workspace
+- Multi-step agent workflows using file access
 - Data policy enforcement: NO Tesla Data in Copilot (reinforced throughout)
 
 ### Policy Compliance Checkpoint
@@ -433,8 +432,7 @@ By the end of this course, participants will be able to:
   - Opus 4.5 model access (300 requests/month premium)
   - Voice Mode for dictation
   - NO Tesla Data permitted
-- MCP Tools -- Model Context Protocol for extending agent capabilities
-  - Playwright (browser automation) -- first skill installed
+- Agent Mode file access -- reading/writing project files for multi-step workflows
 
 ### Homework Assignment
 
@@ -442,14 +440,14 @@ By the end of this course, participants will be able to:
 
 1. Use Agent Mode for 2 real tasks (non-Tesla-data scenarios: personal productivity tools, public data analysis, report templates)
 2. Track time savings daily (target: 30-40 min/day)
-3. Think about: what skills (MCP tools) would your ideal agent need for DC work?
+3. Think about: what recurring tasks could you automate with Power Automate?
 4. Prepare: what project would you automate if you could? (for Week 4 showcase)
 5. Continue building prompt library (cumulative target: 15+ prompts)
 
 ### Goals Addressed
 
 - Goal 5: Use GitHub Copilot Agent Mode to build multi-file projects autonomously
-- Goal 7: Give agents skills -- extend capabilities with MCP tools (introduction)
+- Goal 7: Understand agent file access for multi-step workflows (introduction)
 - Goal 9: Review AI-generated code -- read diffs, catch mistakes, approve/reject changes
 - Goal 3: Know policy boundaries cold (reinforced: NO Tesla Data in Copilot)
 - Goal 4: Save 40-60 minutes daily (this week target: 30-40 min/day)
@@ -457,7 +455,7 @@ By the end of this course, participants will be able to:
 ### Tesla Values Embedded
 
 - **Ownership:** Read agent plans before approving; you own the decision to accept or reject
-- **Curiosity:** Explore what agents can build; push boundaries of what MCP tools enable
+- **Curiosity:** Explore what agents can build; push boundaries of what automation enables
 
 ---
 
@@ -469,8 +467,8 @@ By the end of this course, participants will be able to:
 
 ### Learning Objectives
 
-1. Set up persistent project memory using instruction files and Memory MCP
-2. Configure multi-skill agent workflows with Playwright, Filesystem, and other MCP tools
+1. Set up persistent project memory using instruction files (copilot-instructions.md)
+2. Configure Power Automate workflows for recurring automation tasks
 3. Understand multi-agent orchestration patterns (sequential, parallel, supervisor, human-in-the-loop)
 4. Apply security review basics: secrets management, code review, data exposure prevention
 5. Execute an end-to-end automation combining agents, skills, and memory
@@ -490,34 +488,32 @@ By the end of this course, participants will be able to:
 | | | -- What they are: persistent instructions agents read every time | | |
 | | | -- What to include: conventions, terminology, standards, constraints | | |
 | | | -- Live demo: create an instruction file, show agent following it | | |
-| | | - Solution 2: Memory MCP (knowledge graph) | | |
-| | | -- Entities, relationships, observations -- the agent's notebook | | |
-| | | -- When to use instructions vs memory vs both | | |
-| | | - The combination: instructions set the rules, memory stores the knowledge | | |
+| | | - How agents use the instruction file every session | | |
+| | | - What to include: terminology, KPIs, formatting standards | | |
+| | | - The result: agents that "remember" your DC context | | |
 | 0:35 - 1:00 | 3 | Exercise 1: Build Your Project's Memory | Guided Exercise | 25 min |
 | | | - Create `.github/copilot-instructions.md` for a DC operations project | | |
 | | | -- DC-specific terminology and abbreviations | | |
 | | | -- Report formatting standards | | |
 | | | -- Policy reminders (approved tools, data handling) | | |
 | | | -- Team conventions (naming, file structure) | | |
-| | | - Set up Memory MCP with key project facts | | |
-| | | -- Store: KPIs, team structure, vendor contacts, process definitions | | |
-| | | - Test: ask the agent a question -- see it use the memory | | |
+| | | - Fill in the template with YOUR DC information | | |
+| | | -- Store: KPIs, team structure, terminology, formatting standards | | |
+| | | - Test: compare agent output with vs. without the instruction file | | |
 | **1:00 - 1:10** | -- | **BREAK** | | **10 min** |
-| 1:10 - 1:30 | 4 | Advanced Agent Skills: Tool Ecosystem | Lecture + Demo | 20 min |
-| | | - Deep dive into MCP tool categories: | | |
-| | | -- Browser automation (Playwright): web scraping, form filling, testing | | |
-| | | -- File system access: read/write files, organize directories | | |
-| | | -- Database tools: query data, generate reports | | |
-| | | -- API integration: connect to external services | | |
-| | | - How to install and configure MCP tools | | |
-| | | - Choosing the right tools for your workflow | | |
-| | | - Security considerations: what tools should access what | | |
-| 1:30 - 1:55 | 5 | Exercise 2: Multi-Skill Agent Workflow | Guided Exercise | 25 min |
-| | | - Give agent access to Playwright + Filesystem MCPs | | |
-| | | - Agent navigates public website --> extracts data --> saves to files --> generates summary | | |
-| | | - AGMs approve each step, review outputs | | |
-| | | - Discuss: how would this apply to real DC tasks? | | |
+| 1:10 - 1:30 | 4 | Power Automate: The Automation Platform | Lecture + Demo | 20 min |
+| | | - Power Automate Desktop vs Cloud Flows | | |
+| | | -- Desktop Flows (RPA): automate mouse clicks, keyboard input, legacy apps | | |
+| | | -- Cloud Flows: scheduled workflows, approval chains, data sync | | |
+| | | -- Process Flows: multi-step approval and routing | | |
+| | | - POLICY: Power Automate is APPROVED for Tesla data | | |
+| | | - Demo: creating a simple desktop flow | | |
+| | | - Choosing the right flow type for your task | | |
+| 1:30 - 1:55 | 5 | Exercise 2: Power Automate Desktop + Cloud Flows | Guided Exercise | 25 min |
+| | | - Part A: Create a desktop flow that extracts data from Excel | | |
+| | | - Part B: Create a cloud flow that sends a scheduled email | | |
+| | | - AGMs build their first automated workflow | | |
+| | | - Discuss: what recurring tasks could you automate? | | |
 | **1:55 - 2:05** | -- | **BREAK** | | **10 min** |
 | 2:05 - 2:20 | 6 | Multi-Agent Orchestration Patterns | Lecture | 15 min |
 | | | - Sequential: A --> B --> C (pipeline) | | |
@@ -532,12 +528,12 @@ By the end of this course, participants will be able to:
 | | | - The approval workflow: read before you approve | | |
 | | | - Simple checklist for reviewing agent outputs | | |
 | 2:35 - 3:00 | 8 | Exercise 3: Dive Deep Report Automation | Guided Exercise | 25 min |
-| | | - End-to-end workflow with skills + memory: | | |
+| | | - End-to-end workflow with project memory: | | |
 | | | -- Agent reads project instructions (knows DC conventions) | | |
-| | | -- Agent uses memory (knows KPIs and team structure) | | |
-| | | -- Agent uses Playwright (gathers data from public source) | | |
-| | | -- Agent uses Filesystem (organizes output files) | | |
+| | | -- Agent reads CSV data (uses file access) | | |
+| | | -- Agent analyzes and identifies root causes | | |
 | | | -- Agent generates formatted Dive Deep report | | |
+| | | -- Report uses your DC context automatically | | |
 | | | - Full cycle: plan --> approve --> execute --> review --> iterate | | |
 | 3:00 - 3:25 | 9 | Personal Project Showcase | Presentations + Peer Review | 25 min |
 | | | - Each AGM presents their automation project (~4 min each) | | |
@@ -566,10 +562,10 @@ By the end of this course, participants will be able to:
 ### Key Topics
 
 - Project memory: instruction files (`.github/copilot-instructions.md`) for persistent agent context
-- Memory MCP: knowledge graph with entities, relationships, and observations
-- Instructions vs memory vs both: when to use each approach
-- Advanced MCP tool ecosystem: Playwright, Filesystem, Database, API integration
-- MCP tool installation, configuration, and security considerations
+- What to include in instruction files: terminology, KPIs, formatting, team structure
+- Power Automate Desktop: RPA for automating desktop applications
+- Power Automate Cloud: scheduled and triggered workflow automation
+- Power Automate is APPROVED for Tesla data (unlike Copilot)
 - Multi-agent orchestration: sequential, parallel, supervisor, human-in-the-loop patterns
 - Security review: secrets management, code review checklist, data exposure prevention
 - End-to-end automation: combining agents, skills, memory, and approval workflows
@@ -584,10 +580,9 @@ By the end of this course, participants will be able to:
 
 ### Tools Introduced
 
-- Memory MCP (knowledge graph) -- persistent agent memory across sessions
-- `.github/copilot-instructions.md` -- project-level persistent instructions
-- Filesystem MCP -- file system read/write access for agents
-- Multi-tool agent configurations (Playwright + Filesystem + Memory combined)
+- `.github/copilot-instructions.md` -- project-level persistent instructions for agent context
+- Power Automate Desktop -- RPA for desktop application automation (Tesla data OK)
+- Power Automate Cloud -- scheduled and triggered workflow automation (Tesla data OK)
 
 ### Homework Assignment
 
@@ -601,7 +596,7 @@ By the end of this course, participants will be able to:
 
 ### Goals Addressed
 
-- Goal 7: Give agents skills -- extend capabilities with MCP tools and custom configurations
+- Goal 7: Use Power Automate for recurring workflow automation
 - Goal 8: Give projects memory -- persistent context so agents remember conventions across sessions
 - Goal 10: Build real automations -- end-to-end workflows combining agents, tools, and context
 - Goal 9: Review AI-generated code -- security review, diffs, approval workflow (reinforced)
@@ -628,8 +623,8 @@ By the end of this course, participants will be able to:
 | Personal prompt library | Cumulative prompt count | 20+ prompts by Week 4 | Weeks 1-4 |
 | Agent Mode proficiency | Independent agent task completion | Each AGM builds a tool | Week 3 |
 | Git diff reading | Accept/reject agent changes with rationale | Demonstrated competence | Week 3 |
-| Agent skills (MCP) configured | At least Playwright + Filesystem installed | Working multi-skill setup | Week 3-4 |
-| Project memory configured | Instruction file + Memory MCP for their DC | Working persistent context | Week 4 |
+| Power Automate configured | At least one desktop flow + one cloud flow | Working automation setup | Week 4 |
+| Project memory configured | Instruction file for their DC | Working persistent context | Week 4 |
 | Complete automation workflow | End-to-end: agents + skills + memory | At least 1 per AGM | Week 4 |
 | Time savings | Daily tracking spreadsheet | 40+ min/day by course end | Week 4 |
 | Team rollout plan | One-page plan for their DC | Each AGM produces a plan | Week 4 |
@@ -644,8 +639,8 @@ By the end of this course, participants will be able to:
 |------|-------|------------|--------------|-------------------|---------------------|
 | 1 | Foundation | Low | Bottle Rocket, basic prompting (ROLE+CONTEXT+TASK+FORMAT), AI literacy, policy compliance, quality checking, time tracking | 6 | 15-20 min/day |
 | 2 | Application | Medium | CoT, Few-Shot, Persona prompting, data analysis, structured outputs, prompt library, model comparison | 13 | 20-30 min/day |
-| 3 | Expansion | High | VS Code, Copilot (Chat/Edit/Agent), Voice Mode, git basics, agent debugging, MCP tools (Playwright) | 20 | 30-40 min/day |
-| 4 | Mastery | Advanced | Project memory (instructions + Memory MCP), multi-skill agents, orchestration patterns, security review, automation workflows, team teaching | 27 | 40-60 min/day |
+| 3 | Expansion | High | VS Code, Copilot (Chat/Edit/Agent), Voice Mode, git basics, agent debugging, file access | 20 | 30-40 min/day |
+| 4 | Mastery | Advanced | Project memory (instructions), Power Automate, orchestration patterns, security review, automation workflows, team teaching | 27 | 40-60 min/day |
 
 ### Agent Capability Progression
 
@@ -653,7 +648,7 @@ By the end of this course, participants will be able to:
 |------|------------------------------|
 | 1 | Chat only (Bottle Rocket) -- ask questions, get text responses, verify outputs |
 | 2 | Advanced chat with techniques -- data analysis, structured outputs, template generation |
-| 3 | Agent Mode (autonomous tasks), first MCP skill (Playwright), review and debug agent work |
+| 3 | Agent Mode (autonomous tasks), file access, review and debug agent work |
 | 4 | Multi-skill agents with memory, orchestrated workflows, end-to-end automations |
 
 ### Skills Ladder
@@ -662,7 +657,7 @@ By the end of this course, participants will be able to:
 |------|-------|---------------|
 | 1 | Beginner | Write prompts, use Bottle Rocket, verify outputs, know policy |
 | 2 | Intermediate | Advanced prompts, data analysis, template library, structured outputs |
-| 3 | Advanced | Agent Mode, voice, git review, first MCP skill, agent debugging |
+| 3 | Advanced | Agent Mode, voice, git review, file access, agent debugging |
 | 4 | Expert | Memory, multi-skill agents, orchestration, security, automation |
 
 ### Time Savings Progression
@@ -701,7 +696,7 @@ Every learning goal is addressed across multiple weeks with increasing depth:
 | 4. Save 40-60 min/day | Baseline setup | 20-30 min target | 30-40 min target | **40-60 min target** |
 | 5. Copilot Agent Mode | -- | -- | **Primary** | Applied |
 | 6. Data analysis with AI | -- | **Primary** | Applied | Applied |
-| 7. Give agents skills (MCP) | -- | -- | Introduced | **Primary** |
+| 7. Use Power Automate | -- | -- | -- | **Primary** |
 | 8. Give projects memory | -- | -- | -- | **Primary** |
 | 9. Review AI-generated code | -- | -- | **Primary** | Reinforced |
 | 10. Build real automations | -- | -- | Introduced | **Primary** |

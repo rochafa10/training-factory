@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 22 - Decision Framework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .ladder {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    .level {
+      display: flex;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .level-badge {
+      width: 80px;
+      background: #cc0000;
+      color: #ffffff;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      flex-shrink: 0;
+    }
+    .level-num {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .level-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .level-content {
+      flex: 1;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .level-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .level-task {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 4px;
+    }
+    .level-example {
+      font-size: 11px;
+      color: #4ade80;
+      font-family: monospace;
+      background: #e0e0e0;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .callout {
+      background: #f5f5f5;
+      border: 2px solid #cc0000;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 12px;
+    }
+    .callout-title {
+      font-size: 11px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .callout-text {
+      font-size: 13px;
+      color: #666666;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Decision Framework - Which Approach for Which Task?</h1>
+    <div class="ladder">
+      <div class="level">
+        <div class="level-badge">
+          <div class="level-num">1</div>
+          <div class="level-label">Simple</div>
+        </div>
+        <div class="level-content">
+          <div class="level-title">Simple Chat Prompt</div>
+          <div class="level-task">Task type: One answer, no context needed</div>
+          <div class="level-example">"What does OTD stand for?"</div>
+        </div>
+      </div>
+      <div class="level">
+        <div class="level-badge">
+          <div class="level-num">2</div>
+          <div class="level-label">Advanced</div>
+        </div>
+        <div class="level-content">
+          <div class="level-title">Advanced Prompt (ROLE+CONTEXT+TASK+FORMAT)</div>
+          <div class="level-task">Task type: Specific format, needs reasoning</div>
+          <div class="level-example">"Analyze these 5 KPIs and rank by improvement priority"</div>
+        </div>
+      </div>
+      <div class="level">
+        <div class="level-badge">
+          <div class="level-num">3</div>
+          <div class="level-label">Agent</div>
+        </div>
+        <div class="level-content">
+          <div class="level-title">Agent Mode</div>
+          <div class="level-task">Task type: Multiple phases, file access needed</div>
+          <div class="level-example">"Read the CSV, analyze trends, generate a report"</div>
+        </div>
+      </div>
+      <div class="level">
+        <div class="level-badge">
+          <div class="level-num">4</div>
+          <div class="level-label">Full Stack</div>
+        </div>
+        <div class="level-content">
+          <div class="level-title">Agent Mode + MCP + Project Memory</div>
+          <div class="level-task">Task type: Recurring workflow</div>
+          <div class="level-example">"Weekly dive deep on missed shipments"</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-title">The 80/20 Rule</div>
+      <div class="callout-text">80% of time savings come from 20% of your prompts. Optimize those.</div>
+    </div>
+    <div class="footer">Use the shortest prompt that produces the quality you need.</div>
+  </div>
+</body>
+</html>

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 14 - First Agent Task</title>
+  <title>Slide 14 - Chat vs Agent Comparison</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,108 +20,154 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .exercise-badge {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-      background: #e82127;
-      color: #ffffff;
-      padding: 8px 16px;
-      border-radius: 4px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
+      color: #000000;
       margin-bottom: 20px;
     }
-    .task-box {
-      background: #1a1a1a;
-      padding: 20px;
+    .comparison-grid {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .column-header {
+      padding: 12px 16px;
+      border-radius: 8px 8px 0 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .column-header.gray {
+      background: #666666;
+      color: #ffffff;
+    }
+    .column-header.green {
+      background: #4ade80;
+      color: #000000;
+    }
+    .column-body {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      padding: 16px;
+      flex: 1;
+    }
+    .approach-label {
+      font-size: 11px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .item-row {
+      display: flex;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .item-label {
+      color: #666666;
+      width: 90px;
+      flex-shrink: 0;
+    }
+    .item-value {
+      color: #000000;
+      flex: 1;
+    }
+    .item-value.highlight-green {
+      color: #16a34a;
+    }
+    .callout-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
       border-radius: 8px;
-      margin-bottom: 20px;
+      padding: 16px;
+      margin-top: 16px;
+      text-align: center;
     }
-    .task-title {
+    .callout-text {
       font-size: 16px;
       font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .prompt-example {
-      background: #2a2a2a;
-      padding: 14px;
-      border-radius: 6px;
-      font-size: 13px;
-      line-height: 1.5;
-      font-family: monospace;
-    }
-    .steps-row {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .step {
-      flex: 1;
-      background: #1a1a1a;
-      padding: 14px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .step-num {
-      color: #e82127;
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-    .step-text {
-      font-size: 13px;
-      color: #a0a0a0;
-    }
-    .savings {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #4ade80;
+      color: #000000;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="exercise-badge">Exercise 4</div>
-  <div class="content">
-    <h1>First Agent Task: Project Setup</h1>
-    <div class="task-box">
-      <p class="task-title">Your Prompt (type or dictate):</p>
-      <div class="prompt-example">"Create a project folder called 'my-automation' for a KPI dashboard automation. Include a README.md with project description, a src folder, a data folder, a config folder, and a docs folder."</div>
+  <div class="container">
+    <h1>Chat vs. Agent - The Big Difference</h1>
+    <div class="comparison-grid">
+      <div class="column">
+        <div class="column-header gray">CHAT MODE</div>
+        <div class="column-body">
+          <div class="approach-label">Helpline Approach</div>
+          <div class="item-row">
+            <span class="item-label">You say:</span>
+            <span class="item-value">"Write me a shift handoff template"</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">AI does:</span>
+            <span class="item-value">Generates text in chat window</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">Steps:</span>
+            <span class="item-value">1 (answer the question)</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">Output:</span>
+            <span class="item-value">Text you copy-paste</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">Analogy:</span>
+            <span class="item-value">Calling a helpline</span>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-header green">AGENT MODE</div>
+        <div class="column-body">
+          <div class="approach-label">Assistant Approach</div>
+          <div class="item-row">
+            <span class="item-label">You say:</span>
+            <span class="item-value">"Create a shift handoff system with template, sample, and README"</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">AI does:</span>
+            <span class="item-value highlight-green">Creates 3 files in your project</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">Steps:</span>
+            <span class="item-value highlight-green">Multiple (plan, create, verify)</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">Output:</span>
+            <span class="item-value highlight-green">Files ready to use</span>
+          </div>
+          <div class="item-row">
+            <span class="item-label">Analogy:</span>
+            <span class="item-value">Hiring an experienced assistant</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="steps-row">
-      <div class="step">
-        <p class="step-num">1</p>
-        <p class="step-text">Switch to Agent mode in Copilot Chat</p>
-      </div>
-      <div class="step">
-        <p class="step-num">2</p>
-        <p class="step-text">Enter your prompt</p>
-      </div>
-      <div class="step">
-        <p class="step-num">3</p>
-        <p class="step-text">Review the plan</p>
-      </div>
-      <div class="step">
-        <p class="step-num">4</p>
-        <p class="step-text">Approve execution</p>
-      </div>
-      <div class="step">
-        <p class="step-num">5</p>
-        <p class="step-text">Verify results</p>
-      </div>
+    <div class="callout-box">
+      <span class="callout-text">Chat gives you text. Agents give you results.</span>
     </div>
-    <p class="savings">15+ minutes manual setup -> 30 seconds with Agent Mode</p>
   </div>
 </body>
 </html>

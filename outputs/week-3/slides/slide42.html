@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 42 - Three Types of AI Mistakes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 18px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .mistake-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+    .mistake-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    .mistake-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .icon-hallucination { background: #f87171; }
+    .icon-drift { background: #facc15; color: #000000; }
+    .icon-overconfidence { background: #fb923c; }
+    .mistake-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .mistake-definition {
+      font-size: 11px;
+      color: #cc0000;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .mistake-examples {
+      flex: 1;
+    }
+    .example-item {
+      font-size: 10px;
+      color: #666666;
+      margin-bottom: 8px;
+      padding-left: 12px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .example-item::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+    }
+    .spot-it {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-top: 10px;
+    }
+    .spot-label {
+      font-size: 9px;
+      color: #cc0000;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .spot-text {
+      font-size: 10px;
+      color: #000000;
+      font-style: italic;
+    }
+    .callout {
+      background: #fef2f2;
+      border: 2px solid #f87171;
+      border-radius: 8px;
+      padding: 12px 20px;
+      margin-top: 14px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 12px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .callout-text span {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Three Types of AI Mistakes</h1>
+    <div class="cards-grid">
+      <div class="mistake-card">
+        <div class="mistake-header">
+          <div class="mistake-icon icon-hallucination">H</div>
+          <div class="mistake-title">Hallucination</div>
+        </div>
+        <div class="mistake-definition">Making up facts</div>
+        <div class="mistake-examples">
+          <div class="example-item">"Your DC processed 15,247 orders" (no data provided)</div>
+          <div class="example-item">"According to the 2025 OSHA report..." (doesn't exist)</div>
+        </div>
+        <div class="spot-it">
+          <div class="spot-label">Spot It</div>
+          <div class="spot-text">Did you give AI this data?</div>
+        </div>
+      </div>
+      <div class="mistake-card">
+        <div class="mistake-header">
+          <div class="mistake-icon icon-drift">D</div>
+          <div class="mistake-title">Drift</div>
+        </div>
+        <div class="mistake-definition">Starting right, then wandering</div>
+        <div class="mistake-examples">
+          <div class="example-item">Asked for template, also reorganized your folders</div>
+          <div class="example-item">Asked for simple list, got complex dashboard</div>
+        </div>
+        <div class="spot-it">
+          <div class="spot-label">Spot It</div>
+          <div class="spot-text">Did you ask for this?</div>
+        </div>
+      </div>
+      <div class="mistake-card">
+        <div class="mistake-header">
+          <div class="mistake-icon icon-overconfidence">O</div>
+          <div class="mistake-title">Over-Confidence</div>
+        </div>
+        <div class="mistake-definition">Presenting guesses as facts</div>
+        <div class="mistake-examples">
+          <div class="example-item">"This will reduce overtime by 30%"</div>
+          <div class="example-item">"The best practice is always..."</div>
+        </div>
+        <div class="spot-it">
+          <div class="spot-label">Spot It</div>
+          <div class="spot-text">Does it sound too certain?</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-text"><span>Trust but Verify:</span> AI output is a first draft, not a final answer.</div>
+    </div>
+  </div>
+</body>
+</html>

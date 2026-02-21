@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 28 - Exercise 4</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: white;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      display: flex;
+      gap: 32px;
+      flex: 1;
+    }
+    .left-col { flex: 1.2; }
+    .right-col { flex: 1; }
+    h2 {
+      font-size: 14px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    ol {
+      list-style: none;
+      padding: 0;
+      counter-reset: step;
+    }
+    ol li {
+      counter-increment: step;
+      font-size: 13px;
+      color: #666666;
+      padding: 6px 0 6px 32px;
+      position: relative;
+      line-height: 1.4;
+    }
+    ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      top: 5px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .time-big {
+      font-size: 36px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .time-label {
+      font-size: 12px;
+      color: #666666;
+    }
+    .tip-box {
+      background: #f5f5f5;
+      border-left: 4px solid #facc15;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .tip-box p {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Exercise 6</div>
+    <h1>Iterate, Verify &amp; Improve</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Take your best prompt from Exercise 2</li>
+          <li>Review the output critically &mdash; what is not quite right?</li>
+          <li>Apply a verification technique (cross-reference a claim, check a number)</li>
+          <li>Use a follow-up prompt to improve (e.g., &ldquo;Make this more concise&rdquo;)</li>
+          <li>Bonus: Re-run with web search ON and compare accuracy</li>
+        </ol>
+      </div>
+      <div class="right-col">
+        <div class="time-box">
+          <div class="time-big">25</div>
+          <div class="time-label">MINUTES</div>
+          <div class="time-label" style="margin-top:4px; font-size:10px;">5 min review | 10 min verify &amp; iterate | 10 min share</div>
+        </div>
+        <div class="tip-box">
+          <p><strong>Tips:</strong> Don&rsquo;t rewrite the entire prompt &mdash; just tell the AI what to fix. Iteration is the skill that separates good AI users from great ones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

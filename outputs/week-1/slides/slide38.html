@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 38 - Prompt Progression Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: white;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+    .main-content {
+      display: flex;
+      gap: 28px;
+      flex: 1;
+    }
+    .left-col { flex: 1.2; }
+    .right-col {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    ol {
+      list-style: none;
+      padding: 0;
+      counter-reset: step;
+    }
+    ol li {
+      counter-increment: step;
+      font-size: 13px;
+      color: #666666;
+      padding: 6px 0 6px 32px;
+      position: relative;
+      line-height: 1.5;
+    }
+    ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      top: 6px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .time-big {
+      font-size: 36px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .time-label {
+      font-size: 12px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+    .time-sublabel {
+      font-size: 10px;
+      color: #666;
+      margin-top: 4px;
+    }
+    .info-box {
+      background: #f5f5f5;
+      border-left: 4px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .info-box p {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .info-box strong {
+      color: #4ade80;
+    }
+    .footer-note {
+      font-size: 10px;
+      color: #999999;
+      margin-top: auto;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Instructor-Led Demo</div>
+    <h1>The Prompt Progression &mdash; Same Data, 4 Prompts</h1>
+    <div class="subtitle">Same AI model. Same data. Only the prompt quality changes.</div>
+    <div class="main-content">
+      <div class="left-col">
+        <ol>
+          <li>Trainer opens 4 Nabu agents (Order Monitor Levels 1&ndash;4), all loaded with same 1,000-order dataset</li>
+          <li>Same question asked to all 4: &ldquo;What are the most urgent orders I should worry about?&rdquo;</li>
+          <li>Watch outputs side-by-side &mdash; Level 1 (generic) &rarr; Level 4 (expert with part numbers and actions)</li>
+          <li>Group discussion: What made the difference at each level?</li>
+        </ol>
+      </div>
+      <div class="right-col">
+        <div class="time-box">
+          <div class="time-big">25</div>
+          <div class="time-label">Minutes</div>
+          <div class="time-sublabel">5 min setup | 10 min demo | 10 min discuss</div>
+        </div>
+        <div class="info-box">
+          <p><strong>Key insight:</strong> The AI model is the same. The data is the same. The ONLY variable is the quality of your instructions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">See nabu-exercise.md for full trainer guide</div>
+  </div>
+</body>
+</html>

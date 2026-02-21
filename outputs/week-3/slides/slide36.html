@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 36 - Git Diff Color Legend</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      flex: 1;
+    }
+    .legend-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .legend-card.card-green {
+      border-color: #4ade80;
+      border-width: 2px;
+    }
+    .legend-card.card-red {
+      border-color: #f87171;
+      border-width: 2px;
+    }
+    .legend-card.card-gray {
+      border-color: #9ca3af;
+      border-width: 2px;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .color-indicator {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .card-green .color-indicator { background: #4ade80; color: #000000; }
+    .card-red .color-indicator { background: #f87171; }
+    .card-gray .color-indicator { background: #9ca3af; }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .card-meaning {
+      font-size: 13px;
+      color: #cc0000;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .card-details {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+      flex: 1;
+    }
+    .card-details p {
+      margin-bottom: 8px;
+    }
+    .example-box {
+      background: #1e1e1e;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-top: 10px;
+      font-family: 'Consolas', monospace;
+      font-size: 11px;
+    }
+    .card-green .example-box { color: #4ade80; }
+    .card-red .example-box { color: #f87171; }
+    .card-gray .example-box { color: #9ca3af; }
+    .callout {
+      background: #fef2f2;
+      border: 2px solid #f87171;
+      border-radius: 8px;
+      padding: 12px 20px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 12px;
+      color: #000000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Git Diff Color Legend</h1>
+    <div class="cards-grid">
+      <div class="legend-card card-green">
+        <div class="card-header">
+          <div class="color-indicator">+</div>
+          <div class="card-title">GREEN</div>
+        </div>
+        <div class="card-meaning">Line was ADDED</div>
+        <div class="card-details">
+          <p><strong>Visual:</strong> Green background, + prefix</p>
+          <p><strong>Action:</strong> New content the agent created</p>
+        </div>
+        <div class="example-box">+ - Overtime Analysis</div>
+      </div>
+      <div class="legend-card card-red">
+        <div class="card-header">
+          <div class="color-indicator">-</div>
+          <div class="card-title">RED</div>
+        </div>
+        <div class="card-meaning">Line was REMOVED</div>
+        <div class="card-details">
+          <p><strong>Visual:</strong> Red background, - prefix</p>
+          <p><strong>Action:</strong> Content that was deleted or replaced</p>
+        </div>
+        <div class="example-box">- Last updated: January 2026</div>
+      </div>
+      <div class="legend-card card-gray">
+        <div class="card-header">
+          <div class="color-indicator">&nbsp;</div>
+          <div class="card-title">GRAY</div>
+        </div>
+        <div class="card-meaning">Line is UNCHANGED</div>
+        <div class="card-details">
+          <p><strong>Visual:</strong> Gray/white background, no prefix</p>
+          <p><strong>Action:</strong> Context &mdash; shows surrounding content</p>
+        </div>
+        <div class="example-box">  # Weekly Report Template</div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-text">If you see red lines you didn't expect, investigate before approving.</div>
+    </div>
+  </div>
+</body>
+</html>

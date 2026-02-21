@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 03 - Section 1 Divider</title>
+  <title>Slide 03 - After This Course You Will Be Able To</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
-      display: flex;
     }
     .accent-bar {
       position: absolute;
@@ -21,56 +20,74 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .red-block {
-      width: 320px;
+    .container {
+      padding: 32px 40px 24px 48px;
       height: 100%;
-      background: #e82127;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .section-number {
-      font-size: 180px;
-      font-weight: bold;
-      color: rgba(255, 255, 255, 0.3);
-    }
-    .content {
-      flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 40px 48px;
-    }
-    .section-label {
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #a0a0a0;
-      margin-bottom: 16px;
     }
     h1 {
-      font-size: 40px;
+      font-size: 32px;
       font-weight: bold;
-      line-height: 1.2;
+      margin-bottom: 28px;
     }
-    .duration {
-      font-size: 14px;
-      color: #a0a0a0;
-      margin-top: 24px;
+    .bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+    .bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .checkmark {
+      color: #4ade80;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.3;
+      flex-shrink: 0;
+    }
+    .bullet-text {
+      font-size: 15px;
+      color: #666666;
+      line-height: 1.4;
     }
   </style>
 </head>
 <body>
-  <div class="red-block">
-    <span class="section-number">01</span>
-  </div>
-  <div class="content">
-    <p class="section-label">Section 1</p>
-    <h1>Why AI Matters<br>for Operations</h1>
-    <p class="duration">10 minutes</p>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>After This Course, You Will Be Able To...</h1>
+    <div class="bullets">
+      <div class="bullet-item">
+        <span class="checkmark">&#10003;</span>
+        <span class="bullet-text">Use Bottle Rocket confidently for any operations task involving Tesla Data</span>
+      </div>
+      <div class="bullet-item">
+        <span class="checkmark">&#10003;</span>
+        <span class="bullet-text">Write effective prompts using the ROLE + CONTEXT + TASK + FORMAT formula</span>
+      </div>
+      <div class="bullet-item">
+        <span class="checkmark">&#10003;</span>
+        <span class="bullet-text">Make instant, correct decisions about which AI tools are allowed at Tesla</span>
+      </div>
+      <div class="bullet-item">
+        <span class="checkmark">&#10003;</span>
+        <span class="bullet-text">Verify AI outputs and catch hallucinations before they reach leadership</span>
+      </div>
+      <div class="bullet-item">
+        <span class="checkmark">&#10003;</span>
+        <span class="bullet-text">Build a personal prompt library that saves 30+ minutes per day</span>
+      </div>
+      <div class="bullet-item">
+        <span class="checkmark">&#10003;</span>
+        <span class="bullet-text">Train your associates on Tesla-approved AI tools and policy compliance</span>
+      </div>
+    </div>
   </div>
 </body>
 </html>

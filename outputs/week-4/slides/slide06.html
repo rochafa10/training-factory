@@ -2,152 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 06 - Exercise 1: MCP Installation</title>
+  <title>Slide 06 - Section 2 Divider</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
     }
-    .accent-bar {
+    .section-block {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
+      width: 320px;
       height: 100%;
-      background: #e82127;
-    }
-    .content {
-      padding: 40px 50px;
-      margin-left: 8px;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 30px;
-    }
-    .exercise-badge {
-      background: #e82127;
-      display: inline-block;
-      padding: 6px 14px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 16px;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 24px;
-    }
-    .steps {
-      list-style: none;
-    }
-    .steps li {
-      display: flex;
-      margin-bottom: 16px;
-      font-size: 14px;
-    }
-    .step-num {
-      background: #2a2a2a;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
+      background: #cc0000;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
-      margin-right: 12px;
-      flex-shrink: 0;
     }
-    .right-panel {
-      padding-top: 50px;
-    }
-    .code-block {
-      background: #1a1a1a;
-      padding: 16px;
-      border-radius: 6px;
-      font-family: monospace;
-      font-size: 11px;
-      margin-bottom: 20px;
-      overflow: hidden;
-    }
-    .code-label {
-      font-size: 11px;
-      color: #a0a0a0;
-      margin-bottom: 8px;
-    }
-    .verify {
-      background: #1a2a1a;
-      border-left: 3px solid #4ade80;
-      padding: 12px;
-      border-radius: 4px;
-      font-size: 13px;
-    }
-    .verify-title {
-      color: #4ade80;
+    .section-number {
+      font-size: 180px;
       font-weight: bold;
-      margin-bottom: 6px;
-      font-size: 12px;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
     }
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50px;
-      font-size: 12px;
-      color: #a0a0a0;
+    .section-content {
+      margin-left: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .duration {
+      font-size: 16px;
+      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-
-  <div class="content">
-    <div class="left-panel">
-      <div class="exercise-badge">Exercise 1</div>
-      <h1>Install Playwright MCP</h1>
-
-      <ul class="steps">
-        <li>
-          <span class="step-num">1</span>
-          <span>Check VS Code version: Help > About (need 1.99+)</span>
-        </li>
-        <li>
-          <span class="step-num">2</span>
-          <span>Open VS Code terminal (Ctrl+`)</span>
-        </li>
-        <li>
-          <span class="step-num">3</span>
-          <span>Run the installation command below</span>
-        </li>
-        <li>
-          <span class="step-num">4</span>
-          <span>Click "Start" on MCP server in config</span>
-        </li>
-        <li>
-          <span class="step-num">5</span>
-          <span>Verify tools are available in Copilot Chat</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="right-panel">
-      <div class="code-label">Installation Command:</div>
-      <div class="code-block">
-        code --add-mcp '{"name":"playwright","command":"npx","args":["@playwright/mcp"]}'
-      </div>
-
-      <div class="verify">
-        <div class="verify-title">Verification</div>
-        Ask Copilot: "What browser tools do you have access to?"
-      </div>
-    </div>
+  <div class="section-block">
+    <span class="section-number">02</span>
   </div>
-
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+  <div class="section-content">
+    <h1>Power Automate:<br>Workflow Automation</h1>
+    <p class="duration">15 minutes</p>
+  </div>
 </body>
 </html>

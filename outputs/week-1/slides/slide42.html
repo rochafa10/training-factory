@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 42 - Tier 2: Confidential Business Data</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #facc15;
+    }
+    .container {
+      padding: 24px 32px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      margin-bottom: 10px;
+    }
+    .tier-badge {
+      display: inline-block;
+      background: #facc15;
+      color: #ffffff;
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: #666666;
+    }
+    .columns {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+      min-height: 0;
+    }
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .col-header {
+      background: #e0e0e0;
+      padding: 8px 12px;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #facc15;
+      border-radius: 4px 4px 0 0;
+    }
+    .col-body {
+      background: #f5f5f5;
+      border-radius: 0 0 8px 8px;
+      padding: 12px;
+      flex: 1;
+    }
+    .category-name {
+      font-size: 10px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 1.4;
+      margin-top: 6px;
+    }
+    .category-name:first-child {
+      margin-top: 0;
+    }
+    .category-items {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .footer {
+      font-size: 10px;
+      color: #666;
+      font-style: italic;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <div class="tier-badge">Tier 2 &mdash; Confidential</div>
+      <div class="title">Tier 2: Confidential Business Data</div>
+      <div class="subtitle">Internal use only &mdash; approved tools required for AI processing</div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="col-header">Business Data</div>
+        <div class="col-body">
+          <div class="category-name">Core Info &amp; Security</div>
+          <div class="category-items">&middot; Board meeting agendas, &middot; non-sensitive source code, &middot; JIRA tickets, &middot; pen test reports, &middot; risk assessments</div>
+          <div class="category-name">Internal Corporate</div>
+          <div class="category-items">&middot; Org structure, &middot; employee roles, &middot; data center address, &middot; third party contracts, &middot; server logs</div>
+          <div class="category-name">Operational Info</div>
+          <div class="category-items">&middot; Internal policies &amp; procedures, &middot; meeting notes, &middot; staff presentations, &middot; aggregated statistics, &middot; Intranet content</div>
+          <div class="category-name">Product &amp; Manufacturing</div>
+          <div class="category-items">&middot; Design/manufacturing/testing info, &middot; floor plans, &middot; equipment specs, &middot; design documents, &middot; engineering docs</div>
+          <div class="category-name">Energy &amp; Aggregated</div>
+          <div class="category-items">&middot; SCADA configs, &middot; network diagrams, &middot; cyber asset lists, &middot; aggregated location/device/transaction data</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-header">Personal Data</div>
+        <div class="col-body">
+          <div class="category-name">Customer Contact</div>
+          <div class="category-items">&middot; Name, &middot; address, &middot; phone, &middot; email, &middot; date of birth</div>
+          <div class="category-name">Location &amp; Transactions</div>
+          <div class="category-items">&middot; SDK/beacon/IP location data, &middot; service records, &middot; credit card details</div>
+          <div class="category-name">Tesla Identifiers</div>
+          <div class="category-items">&middot; Employee ID, &middot; vehicle pseudonym ID, &middot; referral invite code</div>
+          <div class="category-name">Customer Content &amp; Comms</div>
+          <div class="category-items">&middot; Feedback/surveys, &middot; forum content, &middot; calls/texts/voice memos with customers</div>
+          <div class="category-name">Device &amp; Vehicle Data</div>
+          <div class="category-items">&middot; Device type, OS, carrier, app version; &middot; license plate, VIN, proof of insurance</div>
+          <div class="category-name">HR / Talent Data</div>
+          <div class="category-items">&middot; Contact details, &middot; CV, &middot; payroll, &middot; employment history, &middot; benefits, &middot; performance data</div>
+          <div class="category-name">Photos &amp; Recordings</div>
+          <div class="category-items">&middot; Customer uploaded photos, &middot; Autopilot camera recordings (safety events, FSD Beta)</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Source: Tesla Data Classification &amp; Handling Policy</div>
+  </div>
+</body>
+</html>

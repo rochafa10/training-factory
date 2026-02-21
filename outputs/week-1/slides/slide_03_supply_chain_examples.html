@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI in Supply Chain Operations</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 22px 32px 14px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .big-number {
+      font-size: 64px;
+      font-weight: bold;
+      color: #cc0000;
+      line-height: 1;
+      min-width: 80px;
+    }
+    .header-text h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .header-text p {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .header-text strong { color: #000000; }
+    .source {
+      font-size: 9px;
+      color: #999999;
+      margin-top: 3px;
+    }
+    .comparison {
+      display: flex;
+      gap: 14px;
+      flex: 1;
+      min-height: 0;
+    }
+    .col {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow: hidden;
+    }
+    .col.negative { border-top: 3px solid #cc0000; }
+    .col.positive { border-top: 3px solid #4ade80; }
+    .col-header {
+      font-size: 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+    }
+    .col.negative .col-header { color: #cc0000; }
+    .col.positive .col-header { color: #4ade80; }
+    .stat {
+      display: flex;
+      gap: 6px;
+      align-items: flex-start;
+    }
+    .stat-num {
+      font-size: 18px;
+      font-weight: bold;
+      min-width: 50px;
+      line-height: 1;
+    }
+    .col.negative .stat-num { color: #cc0000; }
+    .col.positive .stat-num { color: #4ade80; }
+    .stat-text {
+      font-size: 9px;
+      color: #666666;
+      line-height: 1.3;
+    }
+    .use-case {
+      font-size: 8px;
+      font-weight: bold;
+      color: #999999;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1px;
+    }
+    .banner {
+      background: rgba(204, 0, 0, 0.06);
+      border: 1px solid rgba(204, 0, 0, 0.2);
+      border-radius: 6px;
+      padding: 7px 14px;
+      margin-top: 8px;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .banner strong { color: #000000; }
+    .banner .hl { color: #cc0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <div class="big-number">5&times;</div>
+      <div class="header-text">
+        <h1>AI in Supply Chain Operations</h1>
+        <p>Real use cases from your daily work &mdash; not hypotheticals. These are tasks <strong>you already do</strong> that AI can accelerate, improve, or handle entirely.</p>
+        <div class="source">Based on distribution center operations workflows</div>
+      </div>
+    </div>
+    <div class="comparison">
+      <div class="col negative">
+        <div class="col-header">Before AI (Manual Approach)</div>
+        <div class="stat">
+          <div>
+            <div class="use-case">Daily Reports</div>
+            <div class="stat-num">45 min</div>
+            <div class="stat-text">Pulling data from multiple systems, formatting slides, writing commentary on variances</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div>
+            <div class="use-case">Email Communication</div>
+            <div class="stat-num">2+ hrs</div>
+            <div class="stat-text">Drafting updates to stakeholders, responding to inquiries, following up on exceptions</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div>
+            <div class="use-case">SOP Documentation</div>
+            <div class="stat-num">3-4 hrs</div>
+            <div class="stat-text">Writing new procedures from scratch, updating existing docs, formatting for consistency</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div>
+            <div class="use-case">Data Analysis</div>
+            <div class="stat-num">1+ hr</div>
+            <div class="stat-text">Identifying trends in DPTO, cost per line, labor productivity &mdash; manually reviewing spreadsheets</div>
+          </div>
+        </div>
+      </div>
+      <div class="col positive">
+        <div class="col-header">With AI (Your New Workflow)</div>
+        <div class="stat">
+          <div>
+            <div class="use-case">Daily Reports</div>
+            <div class="stat-num">10 min</div>
+            <div class="stat-text">AI drafts the narrative, you review and approve. Focus on insights, not formatting.</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div>
+            <div class="use-case">Email Communication</div>
+            <div class="stat-num">30 min</div>
+            <div class="stat-text">AI generates first drafts for routine updates. You customize tone and add judgment calls.</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div>
+            <div class="use-case">SOP Documentation</div>
+            <div class="stat-num">45 min</div>
+            <div class="stat-text">AI creates comprehensive first draft from your bullet points. You refine and validate.</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div>
+            <div class="use-case">Data Analysis</div>
+            <div class="stat-num">15 min</div>
+            <div class="stat-text">AI surfaces anomalies and patterns. You decide what actions to take.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner"><strong>This isn&rsquo;t about replacing you.</strong> It&rsquo;s about <span class="hl">amplifying your impact</span> &mdash; more time for strategic thinking, leadership, and decisions only you can make.</div>
+  </div>
+</body>
+</html>

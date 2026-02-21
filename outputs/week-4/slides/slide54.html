@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 54 - Your AI Journey: 4 Weeks of Growth</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .confetti {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background:
+        radial-gradient(circle at 5% 15%, #cc0000 2px, transparent 2px),
+        radial-gradient(circle at 95% 10%, #4ade80 2px, transparent 2px),
+        radial-gradient(circle at 15% 85%, #facc15 2px, transparent 2px),
+        radial-gradient(circle at 92% 80%, #cc0000 2px, transparent 2px);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    .container {
+      padding: 22px 32px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .timeline {
+      display: flex;
+      gap: 12px;
+      flex: 1;
+      position: relative;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, #cc0000, #4ade80);
+      border-radius: 2px;
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+    .week-card {
+      flex: 1;
+      background: #ffffff;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 14px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .week-card:first-child {
+      border-color: #cc0000;
+    }
+    .week-card:last-child {
+      border-color: #4ade80;
+    }
+    .week-number {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .week-card:last-child .week-number {
+      color: #16a34a;
+    }
+    .journey-row {
+      margin-bottom: 10px;
+    }
+    .journey-label {
+      font-size: 9px;
+      color: #666666;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .journey-text {
+      font-size: 11px;
+      color: #000000;
+      line-height: 1.4;
+    }
+    .tool-badge {
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .tool-label {
+      font-size: 9px;
+      color: #666666;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .tool-name {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .arrow-icon {
+      position: absolute;
+      right: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #cc0000;
+      z-index: 2;
+    }
+    .week-card:last-child .arrow-icon {
+      display: none;
+    }
+    .footer {
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      margin-top: 16px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="confetti"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Graduation</span>
+      <h1>Your AI Journey - 4 Weeks of Growth</h1>
+    </div>
+
+    <div class="timeline">
+      <div class="week-card">
+        <div class="week-number">Week 1</div>
+        <div class="journey-row">
+          <div class="journey-label">Started</div>
+          <div class="journey-text">"What is AI?"</div>
+        </div>
+        <div class="journey-row">
+          <div class="journey-label">Ended</div>
+          <div class="journey-text">"I can write effective prompts"</div>
+        </div>
+        <div class="tool-badge">
+          <div class="tool-label">Tool Mastered</div>
+          <div class="tool-name">Bottle Rocket</div>
+        </div>
+        <span class="arrow-icon">&#8594;</span>
+      </div>
+
+      <div class="week-card">
+        <div class="week-number">Week 2</div>
+        <div class="journey-row">
+          <div class="journey-label">Started</div>
+          <div class="journey-text">"Basic prompts work sometimes"</div>
+        </div>
+        <div class="journey-row">
+          <div class="journey-label">Ended</div>
+          <div class="journey-text">"I have templates that work every time"</div>
+        </div>
+        <div class="tool-badge">
+          <div class="tool-label">Techniques Mastered</div>
+          <div class="tool-name">Chain-of-Thought, Few-Shot</div>
+        </div>
+        <span class="arrow-icon">&#8594;</span>
+      </div>
+
+      <div class="week-card">
+        <div class="week-number">Week 3</div>
+        <div class="journey-row">
+          <div class="journey-label">Started</div>
+          <div class="journey-text">"AI types for me"</div>
+        </div>
+        <div class="journey-row">
+          <div class="journey-label">Ended</div>
+          <div class="journey-text">"AI works autonomously on my behalf"</div>
+        </div>
+        <div class="tool-badge">
+          <div class="tool-label">Modes Mastered</div>
+          <div class="tool-name">Voice Mode, Agent Mode</div>
+        </div>
+        <span class="arrow-icon">&#8594;</span>
+      </div>
+
+      <div class="week-card">
+        <div class="week-number">Week 4</div>
+        <div class="journey-row">
+          <div class="journey-label">Started</div>
+          <div class="journey-text">"One task at a time"</div>
+        </div>
+        <div class="journey-row">
+          <div class="journey-label">Ended</div>
+          <div class="journey-text">"Workflows run automatically"</div>
+        </div>
+        <div class="tool-badge">
+          <div class="tool-label">Tools Mastered</div>
+          <div class="tool-name">Power Automate, Project Memory</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">From zero AI experience to complete operations toolkit in 16 hours</div>
+  </div>
+</body>
+</html>

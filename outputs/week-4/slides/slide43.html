@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 43 - Security Review Answers</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+    .accent-bar {
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+      flex-shrink: 0;
+    }
+    .container {
+      flex: 1;
+      padding: 18px 28px 14px 36px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #4ade80;
+      color: #000000;
+      padding: 5px 14px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 2px;
+    }
+    .subtitle {
+      font-size: 10px;
+      color: #666666;
+    }
+    .legend {
+      display: flex;
+      gap: 12px;
+      margin-left: auto;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 9px;
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .legend-dot.green { background: #4ade80; }
+    .legend-dot.red { background: #f87171; }
+    .legend-dot.yellow { background: #facc15; }
+    .table-wrapper {
+      flex: 1;
+      overflow-y: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    thead tr {
+      background: #e0e0e0;
+    }
+    thead th {
+      color: #cc0000;
+      text-transform: uppercase;
+      font-size: 9px;
+      font-weight: bold;
+      padding: 5px 8px;
+      text-align: left;
+    }
+    thead th:first-child {
+      width: 24px;
+    }
+    thead th:nth-child(3) {
+      width: 70px;
+      text-align: center;
+    }
+    tbody tr:nth-child(odd) {
+      background: #f5f5f5;
+    }
+    tbody tr:nth-child(even) {
+      background: #ffffff;
+    }
+    tbody td {
+      padding: 5px 8px;
+      border: none;
+      color: #000000;
+    }
+    tbody td:first-child {
+      width: 24px;
+      color: #cc0000;
+      font-weight: bold;
+      text-align: right;
+      padding-right: 10px;
+    }
+    tbody td:nth-child(3) {
+      width: 70px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .decision-approve {
+      color: #16a34a;
+    }
+    .decision-reject {
+      color: #dc2626;
+    }
+    .decision-ask {
+      color: #d97706;
+    }
+    .reason {
+      color: #666666;
+      font-size: 9px;
+    }
+    .footer {
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: #facc15;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header" style="display: flex; align-items: flex-start;">
+      <div>
+        <div class="badge">Answer Key</div>
+        <div class="title">Security Review - Answers</div>
+        <div class="subtitle">Green = Approve | Red = Reject | Yellow = Ask Questions First</div>
+      </div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot green"></div>Approve</div>
+        <div class="legend-item"><div class="legend-dot red"></div>Reject</div>
+        <div class="legend-item"><div class="legend-dot yellow"></div>Ask</div>
+      </div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Agent Wants To...</th>
+            <th>Decision</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Read sample-data.csv from your workspace</td>
+            <td class="decision-approve">APPROVE</td>
+            <td class="reason">Your file, your workspace</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Delete all files in C:\temp</td>
+            <td class="decision-reject">REJECT</td>
+            <td class="reason">Destructive, unexpected</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Write dive-deep-report.md to your folder</td>
+            <td class="decision-approve">APPROVE</td>
+            <td class="reason">Creating output you requested</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Access your email password</td>
+            <td class="decision-reject">REJECT</td>
+            <td class="reason">Never Share Secrets</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Install a Python package</td>
+            <td class="decision-ask">ASK</td>
+            <td class="reason">Why? Is it necessary?</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Read an Excel file you created</td>
+            <td class="decision-approve">APPROVE</td>
+            <td class="reason">Your file, expected action</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Upload report to unknown URL</td>
+            <td class="decision-reject">REJECT</td>
+            <td class="reason">Don't recognize destination</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Create a new folder in your workspace</td>
+            <td class="decision-approve">APPROVE</td>
+            <td class="reason">Safe, within your space</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Access C:\Windows\System32</td>
+            <td class="decision-reject">REJECT</td>
+            <td class="reason">System files, not your data</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Format numbers in your spreadsheet</td>
+            <td class="decision-approve">APPROVE</td>
+            <td class="reason">Non-destructive, expected</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">When in doubt, reject and ask questions.</div>
+  </div>
+</body>
+</html>

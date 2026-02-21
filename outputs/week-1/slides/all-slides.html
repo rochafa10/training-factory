@@ -2,239 +2,238 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Week 1: AI Foundations & Policy Compliance - All Slides</title>
+  <title>Week 1: AI Foundations & Policy Compliance</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #1a1a1a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #e82127;
-    }
-    .slide-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-      gap: 20px;
-      max-width: 1920px;
-      margin: 0 auto;
-    }
-    .slide-container {
-      background: #0a0a0a;
-      border-radius: 8px;
+      height: 100vh;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      user-select: none;
     }
-    .slide-label {
-      background: #2a2a2a;
-      padding: 8px 16px;
-      font-size: 12px;
-      color: #a0a0a0;
-    }
-    .slide-label span {
-      color: #e82127;
-      font-weight: bold;
-    }
-    iframe {
-      width: 100%;
-      height: 270px;
-      border: none;
-      transform-origin: top left;
-    }
-    .nav {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      gap: 10px;
-    }
-    .nav button {
-      background: #e82127;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .nav button:hover {
-      background: #c41d22;
-    }
-    .fullscreen-view {
-      display: none;
-      position: fixed;
+    .slide-area {
+      position: absolute;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #0a0a0a;
-      z-index: 1000;
+      width: 100%;
+      height: 100%;
+      display: flex;
       align-items: center;
       justify-content: center;
     }
-    .fullscreen-view.active {
-      display: flex;
-    }
-    .fullscreen-view iframe {
+    .slide-wrapper {
+      position: relative;
       width: 960px;
       height: 540px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+      transform-origin: center center;
     }
-    .fullscreen-nav {
+    .slide-wrapper iframe {
+      width: 960px;
+      height: 540px;
+      border: none;
+      display: block;
+    }
+    .bottom-bar {
       position: fixed;
-      bottom: 40px;
-      left: 50%;
-      transform: translateX(-50%);
+      bottom: 0;
+      left: 0;
+      width: 100%;
       display: flex;
-      gap: 20px;
-      z-index: 1001;
+      flex-direction: column;
+      align-items: center;
+      padding: 8px 0 12px 0;
+      background: linear-gradient(transparent, rgba(255, 255, 255, 0.95) 30%, #ffffff);
+      z-index: 10;
+      opacity: 1;
+      transition: opacity 0.3s;
     }
-    .slide-counter {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: rgba(0,0,0,0.8);
-      padding: 10px 20px;
-      border-radius: 6px;
-      z-index: 1001;
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-btn {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #000000;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .nav-btn:hover {
+      background: #cc0000;
+      border-color: #cc0000;
+    }
+    .nav-btn:active {
+      background: #c41d22;
+    }
+    .slide-info {
+      font-size: 13px;
+      color: #666666;
+      min-width: 100px;
+      text-align: center;
+    }
+    .slide-info .current {
+      color: #000000;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .slide-title {
+      font-size: 12px;
+      color: #999999;
+      margin-top: 4px;
+      text-align: center;
+    }
+    .progress-bar {
+      height: 3px;
+      background: #f5f5f5;
+      border-radius: 2px;
+      margin-top: 6px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #cc0000;
+      transition: width 0.3s ease;
+      border-radius: 2px;
     }
   </style>
 </head>
 <body>
-  <h1>Week 1: AI Foundations & Policy Compliance</h1>
-  <p style="text-align: center; color: #a0a0a0; margin-bottom: 30px;">19 Slides | Click any slide to view fullscreen | Use arrow keys to navigate</p>
 
-  <div class="slide-grid">
-    <div class="slide-container" onclick="openFullscreen(0)">
-      <div class="slide-label"><span>Slide 01</span> - Title</div>
-      <iframe src="slide01.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(1)">
-      <div class="slide-label"><span>Slide 02</span> - Agenda</div>
-      <iframe src="slide02.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(2)">
-      <div class="slide-label"><span>Slide 03</span> - Section 1 Divider</div>
-      <iframe src="slide03.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(3)">
-      <div class="slide-label"><span>Slide 04</span> - AI as Collaborative Tool</div>
-      <iframe src="slide04.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(4)">
-      <div class="slide-label"><span>Slide 05</span> - Key Statistics</div>
-      <iframe src="slide05.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(5)">
-      <div class="slide-label"><span>Slide 06</span> - Section 2 Divider</div>
-      <iframe src="slide06.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(6)">
-      <div class="slide-label"><span>Slide 07</span> - Three Tiers</div>
-      <iframe src="slide07.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(7)">
-      <div class="slide-label"><span>Slide 08</span> - What is Tesla Data</div>
-      <iframe src="slide08.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(8)">
-      <div class="slide-label"><span>Slide 09</span> - Policy Examples</div>
-      <iframe src="slide09.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(9)">
-      <div class="slide-label"><span>Slide 10</span> - Section 3 Divider</div>
-      <iframe src="slide10.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(10)">
-      <div class="slide-label"><span>Slide 11</span> - Bottle Rocket Overview</div>
-      <iframe src="slide11.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(11)">
-      <div class="slide-label"><span>Slide 12</span> - Section 4 Divider</div>
-      <iframe src="slide12.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(12)">
-      <div class="slide-label"><span>Slide 13</span> - The Formula</div>
-      <iframe src="slide13.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(13)">
-      <div class="slide-label"><span>Slide 14</span> - Before vs After</div>
-      <iframe src="slide14.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(14)">
-      <div class="slide-label"><span>Slide 15</span> - Exercise 1</div>
-      <iframe src="slide15.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(15)">
-      <div class="slide-label"><span>Slide 16</span> - Exercise 2</div>
-      <iframe src="slide16.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(16)">
-      <div class="slide-label"><span>Slide 17</span> - Exercise 3</div>
-      <iframe src="slide17.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(17)">
-      <div class="slide-label"><span>Slide 18</span> - Key Takeaways</div>
-      <iframe src="slide18.html" scrolling="no"></iframe>
-    </div>
-    <div class="slide-container" onclick="openFullscreen(18)">
-      <div class="slide-label"><span>Slide 19</span> - Homework</div>
-      <iframe src="slide19.html" scrolling="no"></iframe>
+  <div class="slide-area">
+    <div class="slide-wrapper">
+      <iframe id="slideFrame" src="slide00.html" scrolling="no"></iframe>
     </div>
   </div>
 
-  <div class="fullscreen-view" id="fullscreenView">
-    <div class="slide-counter" id="slideCounter">Slide 1 of 19</div>
-    <iframe id="fullscreenFrame" src="" scrolling="no"></iframe>
-    <div class="fullscreen-nav">
-      <button onclick="prevSlide()">← Previous</button>
-      <button onclick="closeFullscreen()">Close (ESC)</button>
-      <button onclick="nextSlide()">Next →</button>
+  <div class="bottom-bar">
+    <div class="controls">
+      <button class="nav-btn" onclick="prev()" title="Previous (Left Arrow)">&#8592;</button>
+      <div class="slide-info">
+        <span class="current" id="counter">1</span> / 60
+      </div>
+      <button class="nav-btn" onclick="next()" title="Next (Right Arrow)">&#8594;</button>
+    </div>
+    <div id="titleDisplay" class="slide-title">Welcome</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress" style="width: 2.5%"></div>
     </div>
   </div>
 
   <script>
     const slides = [
-      'slide01.html', 'slide02.html', 'slide03.html', 'slide04.html', 'slide05.html',
-      'slide06.html', 'slide07.html', 'slide08.html', 'slide09.html', 'slide10.html',
-      'slide11.html', 'slide12.html', 'slide13.html', 'slide14.html', 'slide15.html',
-      'slide16.html', 'slide17.html', 'slide18.html', 'slide19.html'
+      { file: 'slide00.html', title: 'Welcome' },
+      { file: 'slide02.html', title: 'Your AI Journey — 4-Week Overview' },
+      { file: 'slide01.html', title: 'Title' },
+      { file: 'slide03.html', title: 'After This Course, You Will...' },
+      { file: 'slide04.html', title: 'Today\'s Agenda' },
+      { file: 'slide44.html', title: 'Capstone: Build a Multi-Agent Solution' },
+      { file: 'slide05.html', title: 'Section 1: Why AI Matters' },
+      { file: 'slide_01_shift_happening.html', title: 'The Shift Is Already Happening' },
+      { file: 'slide_02_time_audit.html', title: 'Where Does Your Time Actually Go?' },
+      { file: 'slide_03_supply_chain_examples.html', title: 'AI in Supply Chain Operations' },
+      { file: 'slide06.html', title: 'AI Is a Tool, Not a Replacement' },
+      { file: 'slide07.html', title: 'Section 2: Tesla AI Policy' },
+      { file: 'slide08.html', title: 'Three Tiers of AI Tools' },
+      { file: 'slide35.html', title: '★ Official Policy: Approved Tools' },
+      { file: 'slide36.html', title: '★ Official Policy: Conditional & Restricted' },
+      { file: 'slide09.html', title: 'What Counts as Tesla Data?' },
+      { file: 'slide41.html', title: 'Tier 1: Sensitive Data' },
+      { file: 'slide42.html', title: 'Tier 2: Confidential Business Data' },
+      { file: 'slide43.html', title: 'Tier 3: Public Data' },
+      { file: 'slide10.html', title: 'The Grok Trap' },
+      { file: 'slide11.html', title: 'The Two-Question Test' },
+      { file: 'slide12.html', title: 'Policy Rapid Fire Quiz' },
+      { file: 'slide56.html', title: 'Policy Rapid Fire — Questions' },
+      { file: 'slide46.html', title: 'Policy Rapid Fire — Answers' },
+      { file: 'slide13.html', title: 'What Would You Do? Manager Scenarios' },
+      { file: 'slide14.html', title: 'Gray Zones' },
+      { file: 'slide15.html', title: 'Section 3: Bottle Rocket' },
+      { file: 'slide16.html', title: 'Inside Bottle Rocket' },
+      { file: 'slide17.html', title: 'Choosing Your AI Model' },
+      { file: 'slide18.html', title: 'Personas — Customize Your Assistant' },
+      { file: 'slide19.html', title: 'Section 4: Prompt Engineering' },
+      { file: 'slide45.html', title: 'Why Prompt Engineering Matters' },
+      { file: 'slide20.html', title: 'The Prompt Formula' },
+      { file: 'slide21.html', title: 'Good Prompt vs Bad Prompt' },
+      { file: 'slide30.html', title: '★ Your AI Dashboard (Screenshot)' },
+      { file: 'slide31.html', title: 'Activity A: Explore Every Feature' },
+      { file: 'slide22.html', title: 'Exercise 1: First Guided Prompt' },
+      { file: 'slide47.html', title: 'Exercise 1: Prompt Template' },
+      { file: 'slide32.html', title: 'Activity B: Model Showdown' },
+      { file: 'slide23.html', title: 'Exercise 2: Operations + Personas' },
+      { file: 'slide48.html', title: 'Exercise 2: Choose Your Category' },
+      { file: 'slide37.html', title: 'Three Tiers of AI: Chatbot → Workflow → Agent' },
+      { file: 'slide24.html', title: 'Tesla Agents Built on Nabu' },
+      { file: 'slide33.html', title: '★ Nabu Agent Builder (Screenshot)' },
+      { file: 'slide38.html', title: 'Activity C: Prompt Progression Demo' },
+      { file: 'slide49.html', title: 'The 4 Prompt Levels' },
+      { file: 'slide34.html', title: 'Exercise 3: Design Your Agent' },
+      { file: 'slide25.html', title: 'Section 6: BR Workshop' },
+      { file: 'slide26.html', title: 'Exercise 4: Deep Workshop' },
+      { file: 'slide50.html', title: 'Exercise 4: Scenario Data' },
+      { file: 'slide27.html', title: 'Hallucination Detection' },
+      { file: 'slide39.html', title: 'Exercise 5: Hallucination Hunt' },
+      { file: 'slide51.html', title: 'Hallucination Hunt: Find the 3 Errors' },
+      { file: 'slide52.html', title: 'Hallucination Hunt: Answer Key' },
+      { file: 'slide28.html', title: 'Exercise 6: Iterate & Improve' },
+      { file: 'slide53.html', title: 'Iteration Techniques' },
+      { file: 'slide40.html', title: 'Exercise 7: Time Savings Baseline' },
+      { file: 'slide54.html', title: 'Time Savings Tracker' },
+      { file: 'slide55.html', title: 'Prompt Library Quick Reference' },
+      { file: 'slide29.html', title: 'Key Takeaways & Next Steps' }
     ];
-    let currentSlide = 0;
 
-    function openFullscreen(index) {
-      currentSlide = index;
-      document.getElementById('fullscreenFrame').src = slides[currentSlide];
-      document.getElementById('slideCounter').textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
-      document.getElementById('fullscreenView').classList.add('active');
+    let current = 0;
+
+    function show(index) {
+      current = index;
+      document.getElementById('slideFrame').src = slides[current].file;
+      document.getElementById('counter').textContent = current + 1;
+      document.getElementById('titleDisplay').textContent = slides[current].title;
+      document.getElementById('progress').style.width = ((current + 1) / slides.length * 100) + '%';
     }
 
-    function closeFullscreen() {
-      document.getElementById('fullscreenView').classList.remove('active');
+    function next() {
+      if (current < slides.length - 1) show(current + 1);
     }
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      document.getElementById('fullscreenFrame').src = slides[currentSlide];
-      document.getElementById('slideCounter').textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
-    }
-
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      document.getElementById('fullscreenFrame').src = slides[currentSlide];
-      document.getElementById('slideCounter').textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+    function prev() {
+      if (current > 0) show(current - 1);
     }
 
     document.addEventListener('keydown', (e) => {
-      if (document.getElementById('fullscreenView').classList.contains('active')) {
-        if (e.key === 'Escape') closeFullscreen();
-        if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
-        if (e.key === 'ArrowLeft') prevSlide();
-      }
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
     });
+
+    function rescale() {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const bottomBarH = 70;
+      const availH = vh - bottomBarH;
+      const scaleX = (vw * 0.96) / 960;
+      const scaleY = (availH * 0.96) / 540;
+      const scale = Math.min(scaleX, scaleY);
+      const wrapper = document.querySelector('.slide-wrapper');
+      wrapper.style.transform = 'scale(' + scale + ')';
+      const bar = document.querySelector('.progress-bar');
+      bar.style.width = Math.min(960 * scale, vw * 0.9) + 'px';
+    }
+    window.addEventListener('resize', rescale);
+    rescale();
   </script>
 </body>
 </html>

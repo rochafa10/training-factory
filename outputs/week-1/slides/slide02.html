@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 02 - Agenda</title>
+  <title>Slide 02 - Your AI Journey 4-Week Overview</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,10 +20,10 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
-      padding: 32px 40px 32px 48px;
+      padding: 32px 40px 24px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -31,83 +31,114 @@
     h1 {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
-    .agenda {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px 32px;
-      flex: 1;
-    }
-    .agenda-item {
+    .grid {
       display: flex;
-      align-items: center;
-      background: #1a1a1a;
-      border-radius: 8px;
-      padding: 12px 16px;
-    }
-    .time {
-      font-size: 12px;
-      color: #e82127;
-      font-weight: bold;
-      min-width: 50px;
-    }
-    .topic {
-      font-size: 14px;
+      gap: 16px;
       flex: 1;
     }
-    .break-item {
-      background: #2a2a2a;
+    .card {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid #e0e0e0;
+      display: flex;
+      flex-direction: column;
     }
-    .break-item .topic {
-      color: #a0a0a0;
+    .card.active {
+      border: 2px solid #cc0000;
+    }
+    .card-header {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .card-title {
+      font-size: 12px;
+      color: #cc0000;
+      font-weight: bold;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .card li {
+      font-size: 12px;
+      color: #666666;
+      padding: 4px 0;
+      line-height: 1.4;
+    }
+    .card li::before {
+      content: "\2022";
+      color: #666666;
+      margin-right: 6px;
+    }
+    .card.active li::before {
+      color: #cc0000;
     }
     .footer {
-      font-size: 12px;
-      color: #a0a0a0;
+      font-size: 13px;
+      color: #666666;
+      text-align: center;
       margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Today's Agenda</h1>
-    <div class="agenda">
-      <div class="agenda-item">
-        <span class="time">10 min</span>
-        <span class="topic">Why AI Matters for Operations</span>
+    <h1>Your AI Journey &mdash; 4-Week Overview</h1>
+    <div class="grid">
+      <div class="card active">
+        <div class="card-header">Week 1</div>
+        <div class="card-title">AI Foundations &amp; Policy</div>
+        <ul>
+          <li>Tesla AI Policy</li>
+          <li>Bottle Rocket basics</li>
+          <li>Prompt engineering intro</li>
+          <li>Your first AI prompts</li>
+        </ul>
       </div>
-      <div class="agenda-item">
-        <span class="time">20 min</span>
-        <span class="topic">Tesla AI Policy Deep Dive</span>
+      <div class="card">
+        <div class="card-header">Week 2</div>
+        <div class="card-title">Advanced Prompts &amp; Data</div>
+        <ul>
+          <li>Multi-shot prompting</li>
+          <li>Data analysis with AI</li>
+          <li>Report generation</li>
+          <li>Building prompt libraries</li>
+        </ul>
       </div>
-      <div class="agenda-item">
-        <span class="time">15 min</span>
-        <span class="topic">Introduction to Bottle Rocket</span>
+      <div class="card">
+        <div class="card-header">Week 3</div>
+        <div class="card-title">Workflows &amp; Automation</div>
+        <ul>
+          <li>Multi-step AI workflows</li>
+          <li>Team prompt sharing</li>
+          <li>Process optimization</li>
+          <li>Agent design basics</li>
+        </ul>
       </div>
-      <div class="agenda-item">
-        <span class="time">10 min</span>
-        <span class="topic">Prompt Engineering Basics</span>
-      </div>
-      <div class="agenda-item break-item">
-        <span class="time">5 min</span>
-        <span class="topic">Break</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">20 min</span>
-        <span class="topic">Exercise 1: First Bottle Rocket Prompt</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">25 min</span>
-        <span class="topic">Exercise 2: Write 3 Operations Prompts</span>
-      </div>
-      <div class="agenda-item">
-        <span class="time">15 min</span>
-        <span class="topic">Exercise 3: Iterate &amp; Improve</span>
+      <div class="card">
+        <div class="card-header">Week 4</div>
+        <div class="card-title">Mastery &amp; Rollout</div>
+        <ul>
+          <li>Advanced agent creation</li>
+          <li>Team AI rollout plan</li>
+          <li>Measuring ROI</li>
+          <li>Capstone project</li>
+        </ul>
       </div>
     </div>
-    <p class="footer">Total: 120 minutes | 63% hands-on time</p>
+    <div class="footer">16 total hours of training &mdash; from zero AI experience to confident AI-powered leader</div>
   </div>
 </body>
 </html>

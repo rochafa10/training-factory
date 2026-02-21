@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 58 - See You Next Week</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .content {
+      text-align: center;
+      padding: 40px;
+    }
+    .week-label {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #cc0000;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #666666;
+      margin-bottom: 36px;
+    }
+    .reminders-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px 40px;
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .reminders-title {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .reminder-item {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .reminder-item::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .reminder-item strong {
+      color: #000000;
+    }
+    .reminder-item.warning::before {
+      content: "!";
+      color: #cc0000;
+    }
+    .footer-text {
+      font-size: 14px;
+      color: #666666;
+    }
+    .footer-text strong {
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <p class="week-label">Week 3 Complete</p>
+    <h1>See You Next Week!</h1>
+    <p class="subtitle">Week 4: Advanced Agents, Memory &amp; Project Showcase</p>
+    <div class="reminders-box">
+      <div class="reminders-title">Key Reminders</div>
+      <div class="reminder-item">Complete homework: <strong>2 agent workflows + personal project progress</strong></div>
+      <div class="reminder-item">Track <strong>time savings</strong> daily</div>
+      <div class="reminder-item">Bring <strong>personal project ready for showcase</strong></div>
+      <div class="reminder-item warning">Remember: <strong>NO Tesla data in Copilot</strong></div>
+    </div>
+    <p class="footer-text"><strong>Questions?</strong> Reach out before next session. Great work today!</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 53 - Week 3 Prompt Library</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 36px 18px 44px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+    .prompts-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      flex: 1;
+    }
+    .prompt-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .prompt-title {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .prompt-text {
+      font-size: 9px;
+      color: #666666;
+      line-height: 1.4;
+      flex: 1;
+      font-family: monospace;
+    }
+    .footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Week 3 Prompt Library - Quick Reference</h1>
+    <div class="prompts-grid">
+      <div class="prompt-card">
+        <div class="prompt-title">Voice Email</div>
+        <div class="prompt-text">"Create a professional email to [RECIPIENT] summarizing [TOPIC]. Include sections for metrics, highlights, challenges, action items."</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">Agent Project</div>
+        <div class="prompt-text">"Create a [PROJECT TYPE] for a DC with README, template, sample data, summary report, and checklist in folder '[NAME]'."</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">@workspace Search</div>
+        <div class="prompt-text">"@workspace Find all files that mention [KEYWORD]"</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">@terminal File Ops</div>
+        <div class="prompt-text">"@terminal create a folder called [NAME]"</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">Shift Handoff</div>
+        <div class="prompt-text">"Create shift handoff system with template: outgoing summary, ongoing issues, priorities, safety, staffing."</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">Labor Planning</div>
+        <div class="prompt-text">"Create weekly labor planning tool with headcount by shift, planned vs actual hours, overtime, open positions."</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">Meeting Prep Kit</div>
+        <div class="prompt-text">"Create meeting prep system with agenda template, pre-meeting checklist, notes template, follow-up email."</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">Incident Report</div>
+        <div class="prompt-text">"Create incident report system with template for date, time, location, description, root cause, corrective actions."</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">Template Add-On</div>
+        <div class="prompt-text">"Add a section to the README about [TOPIC]. Also add a column for [FIELD] in the template."</div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-title">Explain Output</div>
+        <div class="prompt-text">"@workspace Explain the structure of the file [FILENAME]"</div>
+      </div>
+    </div>
+    <div class="footer">All prompts work with <strong>Copilot Agent Mode (NO Tesla data)</strong> or adapt for Bottle Rocket</div>
+  </div>
+</body>
+</html>

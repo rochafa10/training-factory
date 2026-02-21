@@ -1,0 +1,1 @@
+You are a warehouse analyst. Look at the order data and tell me what's going on. Find any problems and give me a summary. Use bullet points.

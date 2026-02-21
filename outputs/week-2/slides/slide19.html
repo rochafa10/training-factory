@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 19 - Consistent Output Formats</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .formats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .format-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .format-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .format-icon {
+      font-size: 20px;
+      width: 36px;
+      height: 36px;
+      background: #e0e0e0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .format-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .format-prompt {
+      font-size: 12px;
+      color: #4ade80;
+      font-family: monospace;
+      background: #e0e0e0;
+      border-radius: 4px;
+      padding: 6px 8px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .format-best {
+      font-size: 11px;
+      color: #666666;
+      margin-top: auto;
+      padding-top: 8px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Getting AI to Output in Consistent Formats</h1>
+    <div class="formats-grid">
+      <div class="format-card">
+        <div class="format-header">
+          <div class="format-icon">&#x1F4CA;</div>
+          <div class="format-title">Tables</div>
+        </div>
+        <div class="format-prompt">"Present this as a table with columns for [X], [Y], [Z]"</div>
+        <div class="format-best">Best for: comparisons, data summaries, schedules</div>
+      </div>
+      <div class="format-card">
+        <div class="format-header">
+          <div class="format-icon">&#x2705;</div>
+          <div class="format-title">Checklists</div>
+        </div>
+        <div class="format-prompt">"Create a checklist with checkboxes for each step"</div>
+        <div class="format-best">Best for: SOPs, audit prep, onboarding</div>
+      </div>
+      <div class="format-card">
+        <div class="format-header">
+          <div class="format-icon">&#x1F4DD;</div>
+          <div class="format-title">Formatted Reports</div>
+        </div>
+        <div class="format-prompt">"Write an executive summary with: headline, 3 key findings, recommendation"</div>
+        <div class="format-best">Best for: leadership updates, weekly reports</div>
+      </div>
+      <div class="format-card">
+        <div class="format-header">
+          <div class="format-icon">&#x1F4C4;</div>
+          <div class="format-title">Markdown</div>
+        </div>
+        <div class="format-prompt">"Format using Markdown with headers, bold, and bullet points"</div>
+        <div class="format-best">Best for: documentation, knowledge base articles</div>
+      </div>
+    </div>
+    <div class="footer"><strong>Specify FORMAT explicitly</strong> &mdash; don't leave it to the AI to guess your preferred structure</div>
+  </div>
+</body>
+</html>

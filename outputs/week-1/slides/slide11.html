@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 11 - Bottle Rocket Overview</title>
+  <title>Slide 11 - The Two-Question Test</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -33,142 +33,102 @@
       font-weight: bold;
       margin-bottom: 24px;
     }
-    .main-content {
+    .flow {
       display: flex;
-      gap: 32px;
-      flex: 1;
-    }
-    .left-col, .right-col {
-      flex: 1;
-    }
-    .url-box {
-      background: #e82127;
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .url-box p {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    h2 {
-      font-size: 16px;
-      margin-bottom: 12px;
-      color: #e82127;
-    }
-    .steps {
-      counter-reset: step;
-    }
-    .step {
-      display: flex;
-      align-items: flex-start;
+      flex-direction: column;
       gap: 12px;
-      margin-bottom: 12px;
+      flex: 1;
     }
-    .step-num {
-      width: 28px;
-      height: 28px;
-      background: #1a1a1a;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: bold;
-      color: #e82127;
-      flex-shrink: 0;
+    .question-box {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 16px 20px;
+      border-left: 4px solid #cc0000;
     }
-    .step-text {
-      font-size: 14px;
-      line-height: 1.5;
-      padding-top: 4px;
-    }
-    .model-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .model-table th {
-      text-align: left;
+    .question-box .q-label {
       font-size: 11px;
       font-weight: bold;
       text-transform: uppercase;
-      color: #a0a0a0;
-      padding: 8px;
-      border-bottom: 1px solid #2a2a2a;
+      letter-spacing: 1px;
+      color: #cc0000;
+      margin-bottom: 4px;
     }
-    .model-table td {
-      font-size: 12px;
-      padding: 8px;
-      border-bottom: 1px solid #1a1a1a;
+    .question-box .q-text {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .answers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .answer-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 14px;
+      text-align: center;
+    }
+    .answer-card.green { border-top: 3px solid #4ade80; }
+    .answer-card.yellow { border-top: 3px solid #facc15; }
+    .answer-card.red { border-top: 3px solid #f87171; }
+    .answer-condition {
+      font-size: 11px;
+      font-weight: bold;
+      color: #666666;
+      margin-bottom: 8px;
+    }
+    .answer-action {
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .answer-card.green .answer-action { color: #4ade80; }
+    .answer-card.yellow .answer-action { color: #facc15; }
+    .answer-card.red .answer-action { color: #f87171; }
+    .answer-detail {
+      font-size: 11px;
+      color: #666666;
+      margin-top: 6px;
     }
     .footer {
       font-size: 11px;
-      color: #666;
+      color: #f87171;
       margin-top: 12px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Getting Started with Bottle Rocket</h1>
-    <div class="main-content">
-      <div class="left-col">
-        <div class="url-box">
-          <p>go.tesla.com/chat</p>
-        </div>
-        <h2>Quick Start</h2>
-        <div class="steps">
-          <div class="step">
-            <span class="step-num">1</span>
-            <span class="step-text">Open your browser</span>
-          </div>
-          <div class="step">
-            <span class="step-num">2</span>
-            <span class="step-text">Go to go.tesla.com/chat</span>
-          </div>
-          <div class="step">
-            <span class="step-num">3</span>
-            <span class="step-text">Sign in with Tesla credentials</span>
-          </div>
-          <div class="step">
-            <span class="step-num">4</span>
-            <span class="step-text">Start chatting!</span>
-          </div>
-        </div>
+    <h1>The Two-Question Test</h1>
+    <div class="flow">
+      <div class="question-box">
+        <p class="q-label">Question 1</p>
+        <p class="q-text">Is this tool listed at go.tesla.com/aitools?</p>
       </div>
-      <div class="right-col">
-        <h2>Model Selection Tips</h2>
-        <table class="model-table">
-          <thead>
-            <tr>
-              <th>Model</th>
-              <th>Best For</th>
-              <th>Speed</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Grok 4</td>
-              <td>Complex analysis</td>
-              <td>Medium</td>
-            </tr>
-            <tr>
-              <td>Claude 4.5 Sonnet</td>
-              <td>Balanced tasks</td>
-              <td>Fast</td>
-            </tr>
-            <tr>
-              <td>Gemini 2.5 Flash</td>
-              <td>Quick answers</td>
-              <td>Fastest</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="question-box">
+        <p class="q-label">Question 2</p>
+        <p class="q-text">Does my task involve Tesla Data?</p>
+      </div>
+      <div class="answers">
+        <div class="answer-card green">
+          <p class="answer-condition">YES + YES</p>
+          <p class="answer-action">Use Approved Tool</p>
+          <p class="answer-detail">Bottle Rocket, Nova,<br>IT/Employee Assist</p>
+        </div>
+        <div class="answer-card yellow">
+          <p class="answer-condition">YES + NO</p>
+          <p class="answer-action">Approved or Conditional</p>
+          <p class="answer-detail">Any listed tool is fine<br>for non-Tesla data</p>
+        </div>
+        <div class="answer-card red">
+          <p class="answer-condition">NO to Q1</p>
+          <p class="answer-action">STOP</p>
+          <p class="answer-detail">Tool is prohibited<br>for work use</p>
+        </div>
       </div>
     </div>
-    <p class="footer">Section 3 | Introduction to Bottle Rocket</p>
+    <p class="footer">Violations can result in disciplinary action up to and including termination.</p>
   </div>
 </body>
 </html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 18 - Exercise 3: Dive Deep Report Automation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 20px 28px 20px 36px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 4px 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #666666;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .scenario {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      background: #f5f5f5;
+      border-left: 3px solid #cc0000;
+      border-radius: 0 8px 8px 0;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 14px;
+      flex: 1;
+    }
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .instructions-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px;
+      flex: 1;
+    }
+    .box-title {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .instructions-list {
+      list-style: none;
+    }
+    .instructions-list li {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 5px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .instructions-list li::before {
+      content: attr(data-step);
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+      font-weight: bold;
+    }
+    .instructions-list li strong {
+      color: #000000;
+    }
+    .prompt-preview {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 9px;
+      color: #333333;
+      line-height: 1.5;
+    }
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .data-preview {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .data-title {
+      font-size: 10px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 6px;
+    }
+    .data-desc {
+      font-size: 9px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .data-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .data-tag {
+      font-size: 9px;
+      background: #e0e0e0;
+      color: #666666;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    .success-box {
+      background: #f0fdf4;
+      border: 1px solid #4ade80;
+      border-radius: 8px;
+      padding: 10px;
+      flex: 1;
+    }
+    .success-title {
+      font-size: 10px;
+      font-weight: bold;
+      color: #16a34a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .success-list {
+      list-style: none;
+    }
+    .success-list li {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 3px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .success-list li::before {
+      content: "\2610";
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+    }
+    .time-compare {
+      background: #fef3c7;
+      border: 1px solid #facc15;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+    .time-label {
+      font-size: 9px;
+      color: #92400e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .time-values {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    .time-old {
+      font-size: 12px;
+      color: #dc2626;
+      text-decoration: line-through;
+    }
+    .time-arrow {
+      font-size: 14px;
+      color: #92400e;
+    }
+    .time-new {
+      font-size: 14px;
+      font-weight: bold;
+      color: #16a34a;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Exercise 3</span>
+      <span class="time-box">25 minutes</span>
+    </div>
+    <h1>Dive Deep Report Automation</h1>
+    <div class="scenario">Use Agent Mode to automate a full dive deep report workflow.</div>
+
+    <div class="content-grid">
+      <div class="left-column">
+        <div class="instructions-box">
+          <div class="box-title">Instructions</div>
+          <ol class="instructions-list">
+            <li data-step="1.">Create <strong>sample-data.csv</strong> with provided shipment data (15 rows, two dates)</li>
+            <li data-step="2.">Open VS Code with your project folder containing the CSV</li>
+            <li data-step="3.">In Agent Mode, request: "Read sample-data.csv, identify top 3 root causes, calculate impact by customer, generate report with executive summary, root cause analysis, customer impact table, trend comparison, action items"</li>
+            <li data-step="4.">Review the agent's plan before execution</li>
+            <li data-step="5.">Iterate: "Make the action items more specific to carrier management"</li>
+          </ol>
+        </div>
+
+        <div class="prompt-preview">
+          "Read sample-data.csv, identify top 3 root causes,<br>
+          calculate impact by customer, generate report..."
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="data-preview">
+          <div class="data-title">Sample Data Preview</div>
+          <div class="data-desc">15 shipments over 2 days (Jan 20-21), mix of delivered/missed</div>
+          <div class="data-tags">
+            <span class="data-tag">carrier_delay</span>
+            <span class="data-tag">inventory_shortage</span>
+            <span class="data-tag">system_error</span>
+          </div>
+        </div>
+
+        <div class="success-box">
+          <div class="success-title">Success Criteria</div>
+          <ul class="success-list">
+            <li>Agent read the CSV file</li>
+            <li>Root cause percentages are mathematically correct</li>
+            <li>Report uses your DC context from copilot-instructions.md</li>
+            <li>Total time under 5 minutes (vs 45+ min manual)</li>
+          </ul>
+        </div>
+
+        <div class="time-compare">
+          <div class="time-label">Time Savings</div>
+          <div class="time-values">
+            <span class="time-old">45+ min manual</span>
+            <span class="time-arrow">&#8594;</span>
+            <span class="time-new">&lt; 5 min with AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

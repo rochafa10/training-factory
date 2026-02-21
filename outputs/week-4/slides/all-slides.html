@@ -2,280 +2,237 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration - All Slides</title>
+  <title>Week 4: Power Automate & Multi-Agent Orchestration</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #1a1a1a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
-      padding: 40px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 32px;
-    }
-    .subtitle {
-      text-align: center;
-      color: #a0a0a0;
-      margin-bottom: 40px;
-    }
-    .controls {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .controls button {
-      background: #e82127;
-      color: #ffffff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 14px;
-      cursor: pointer;
-      border-radius: 4px;
-      margin: 0 5px;
-    }
-    .controls button:hover {
-      background: #c91b21;
-    }
-    .controls button:disabled {
-      background: #444;
-      cursor: not-allowed;
-    }
-    .slide-counter {
-      display: inline-block;
-      margin: 0 20px;
-      font-size: 16px;
-      vertical-align: middle;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 30px;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    .slide-container {
-      background: #0a0a0a;
-      border-radius: 8px;
+      height: 100vh;
       overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.2s;
+      user-select: none;
     }
-    .slide-container:hover {
-      transform: scale(1.02);
-    }
-    .slide-wrapper {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* 16:9 */
-    }
-    .slide-wrapper iframe {
+    .slide-area {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: none;
-      pointer-events: none;
-    }
-    .slide-label {
-      padding: 12px 16px;
-      background: #2a2a2a;
-      font-size: 14px;
-    }
-    .slide-num {
-      color: #e82127;
-      font-weight: bold;
-    }
-    /* Fullscreen mode */
-    .fullscreen-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.95);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-    }
-    .fullscreen-overlay.active {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .fullscreen-slide {
+    .slide-wrapper {
+      position: relative;
       width: 960px;
       height: 540px;
-      max-width: 95vw;
-      max-height: 80vh;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+      transform-origin: center center;
     }
-    .fullscreen-slide iframe {
+    .slide-wrapper iframe {
+      width: 960px;
+      height: 540px;
+      border: none;
+      display: block;
+    }
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
       width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .fullscreen-nav {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
       display: flex;
-      gap: 15px;
+      flex-direction: column;
       align-items: center;
+      padding: 8px 0 12px 0;
+      background: linear-gradient(transparent, rgba(255, 255, 255, 0.95) 30%, #ffffff);
+      z-index: 10;
+      opacity: 1;
+      transition: opacity 0.3s;
     }
-    .fullscreen-nav button {
-      background: #e82127;
-      color: #ffffff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 4px;
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 24px;
     }
-    .fullscreen-nav button:hover {
-      background: #c91b21;
-    }
-    .close-btn {
-      position: fixed;
-      top: 20px;
-      right: 30px;
-      background: transparent;
-      border: 2px solid #ffffff;
-      color: #ffffff;
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
-      cursor: pointer;
+    .nav-btn {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #000000;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
     }
-    .keyboard-hint {
+    .nav-btn:hover {
+      background: #cc0000;
+      border-color: #cc0000;
+      color: #ffffff;
+    }
+    .nav-btn:active {
+      background: #a00000;
+    }
+    .slide-info {
+      font-size: 13px;
+      color: #666666;
+      min-width: 100px;
       text-align: center;
-      color: #666;
-      font-size: 12px;
-      margin-top: 30px;
     }
-    .final-badge {
-      background: #e82127;
-      padding: 4px 12px;
-      border-radius: 4px;
-      font-size: 11px;
-      margin-left: 10px;
-      vertical-align: middle;
+    .slide-info .current {
+      color: #000000;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .slide-title {
+      font-size: 12px;
+      color: #999999;
+      margin-top: 4px;
+      text-align: center;
+    }
+    .progress-bar {
+      height: 3px;
+      background: #f5f5f5;
+      border-radius: 2px;
+      margin-top: 6px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #cc0000;
+      transition: width 0.3s ease;
+      border-radius: 2px;
     }
   </style>
 </head>
 <body>
-  <h1>Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration <span class="final-badge">FINAL</span></h1>
-  <p class="subtitle">16 Slides | 120 Minutes | Click any slide to view fullscreen</p>
 
-  <div class="controls">
-    <button onclick="startPresentation()">Start Presentation</button>
-  </div>
-
-  <div class="grid" id="slideGrid">
-    <!-- Slides will be generated by JavaScript -->
-  </div>
-
-  <div class="fullscreen-overlay" id="fullscreenOverlay">
-    <button class="close-btn" onclick="closeFullscreen()">&times;</button>
-    <div class="fullscreen-slide">
-      <iframe id="fullscreenFrame" src=""></iframe>
-    </div>
-    <div class="fullscreen-nav">
-      <button onclick="prevSlide()">Previous</button>
-      <span class="slide-counter" id="slideCounter">1 / 16</span>
-      <button onclick="nextSlide()">Next</button>
+  <div class="slide-area">
+    <div class="slide-wrapper">
+      <iframe id="slideFrame" src="slide01.html" scrolling="no"></iframe>
     </div>
   </div>
 
-  <p class="keyboard-hint">Keyboard: Arrow keys to navigate, ESC to close fullscreen</p>
+  <div class="bottom-bar">
+    <div class="controls">
+      <button class="nav-btn" onclick="prev()" title="Previous (Left Arrow)">&#8592;</button>
+      <div class="slide-info">
+        <span class="current" id="counter">1</span> / 58
+      </div>
+      <button class="nav-btn" onclick="next()" title="Next (Right Arrow)">&#8594;</button>
+    </div>
+    <div id="titleDisplay" class="slide-title">Advanced Automation, Power Automate & Multi-Agent Orchestration</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress" style="width: 1.72%"></div>
+    </div>
+  </div>
 
   <script>
-    const totalSlides = 16;
-    let currentSlide = 1;
-
-    const slideTitles = [
-      "Title - Week 4",
-      "Session Agenda",
-      "Learning Objectives",
-      "Course Time Savings Review",
-      "What is MCP?",
-      "Exercise 1: MCP Installation",
-      "Playwright MCP Tools",
-      "MCP Policy Reminder",
-      "Exercise 2: Web Automation",
-      "Section: Multi-Agent Orchestration",
-      "Orchestration Patterns",
-      "Human-in-the-Loop",
-      "Exercise 3: Dive Deep Automation",
-      "Personal Project Workshop",
-      "Key Takeaways",
-      "Course Completion"
+    const slides = [
+      { file: 'slide01.html', title: 'Advanced Automation, Power Automate & Multi-Agent Orchestration' },
+      { file: 'slide02.html', title: 'Today\'s Agenda' },
+      { file: 'slide03.html', title: 'Section 1: Course Time Savings Review + ROI' },
+      { file: 'slide04.html', title: 'Your 4-Week AI Journey - Time Savings' },
+      { file: 'slide05.html', title: 'ROI Calculation for Your DC' },
+      { file: 'slide06.html', title: 'Section 2: Power Automate - Workflow Automation' },
+      { file: 'slide07.html', title: 'Power Automate - The Automation Platform' },
+      { file: 'slide08.html', title: 'Three Types of Power Automate Flows' },
+      { file: 'slide09.html', title: 'Flow Type Quiz' },
+      { file: 'slide10.html', title: 'Flow Type Quiz - Answers' },
+      { file: 'slide11.html', title: 'Exercise 1: Power Automate Desktop + Cloud Flows' },
+      { file: 'slide12.html', title: 'Exercise 1A: Desktop Flow Step-by-Step' },
+      { file: 'slide13.html', title: 'Exercise 1B: Cloud Flow Step-by-Step' },
+      { file: 'slide14.html', title: 'Exercise 1: Success Checklist' },
+      { file: 'slide15.html', title: 'Activity A: Flow Recording Demo' },
+      { file: 'slide16.html', title: 'Section 4: Agents That Remember (Memory & Context)' },
+      { file: 'slide17.html', title: 'The New Temp vs. The Veteran' },
+      { file: 'slide18.html', title: 'How Project Memory Works' },
+      { file: 'slide19.html', title: 'With Memory or Without Memory? Quiz' },
+      { file: 'slide20.html', title: 'Project Memory Output - Answer' },
+      { file: 'slide21.html', title: 'Break' },
+      { file: 'slide22.html', title: 'Exercise 2: Build a Persistent DC Assistant' },
+      { file: 'slide23.html', title: 'Exercise 2: copilot-instructions.md Template' },
+      { file: 'slide24.html', title: 'Exercise 2: Testing Checklist' },
+      { file: 'slide25.html', title: 'Section 6: Multi-Agent Orchestration Patterns' },
+      { file: 'slide26.html', title: 'Four Orchestration Patterns' },
+      { file: 'slide27.html', title: 'Orchestration Pattern Quiz' },
+      { file: 'slide28.html', title: 'Orchestration Pattern Quiz - Answers' },
+      { file: 'slide29.html', title: 'Sequential Pattern - Dive Deep Example' },
+      { file: 'slide30.html', title: 'Exercise 3: Dive Deep Report Automation' },
+      { file: 'slide31.html', title: 'Exercise 3: Dive Deep Prompt Template' },
+      { file: 'slide32.html', title: 'Expected Dive Deep Output Format' },
+      { file: 'slide33.html', title: 'Activity B: Quality Scoring Practice' },
+      { file: 'slide34.html', title: 'Quality Scoring - Sample Answers' },
+      { file: 'slide35.html', title: 'Break' },
+      { file: 'slide36.html', title: 'Section 8: Evaluating & Optimizing AI Agents' },
+      { file: 'slide37.html', title: 'The Quality Scorecard - 5 Dimensions' },
+      { file: 'slide38.html', title: 'Decision Framework - Which Approach?' },
+      { file: 'slide39.html', title: 'Section 9: Security Review Basics' },
+      { file: 'slide40.html', title: 'The Three Nevers' },
+      { file: 'slide41.html', title: 'Code Review Checklist for Non-Developers' },
+      { file: 'slide42.html', title: 'Approve or Reject? Quiz' },
+      { file: 'slide43.html', title: 'Security Review - Answers' },
+      { file: 'slide44.html', title: 'Exercise 4: Personal Project Showcase' },
+      { file: 'slide45.html', title: 'Exercise 4: Presentation Template' },
+      { file: 'slide46.html', title: 'Project Scoring Rubric' },
+      { file: 'slide47.html', title: 'Giving Great Peer Feedback' },
+      { file: 'slide48.html', title: 'Section 11: Continuous Learning Roadmap' },
+      { file: 'slide49.html', title: 'Your 90-Day Roadmap' },
+      { file: 'slide50.html', title: 'Final Quiz - Test Your Knowledge' },
+      { file: 'slide51.html', title: 'Final Quiz - Answer Key' },
+      { file: 'slide52.html', title: 'Complete Course Prompt Library' },
+      { file: 'slide53.html', title: 'Prompt Library Quick Reference' },
+      { file: 'slide54.html', title: 'Your AI Journey - 4 Weeks of Growth' },
+      { file: 'slide55.html', title: 'Certificate of Completion' },
+      { file: 'slide56.html', title: 'Course Graduation - Your Complete Toolkit' },
+      { file: 'slide57.html', title: 'What\'s Next? Your Post-Course Path' },
+      { file: 'slide58.html', title: 'Congratulations, Graduates!' }
     ];
 
-    // Generate grid
-    const grid = document.getElementById('slideGrid');
-    for (let i = 1; i <= totalSlides; i++) {
-      const slideNum = String(i).padStart(2, '0');
-      grid.innerHTML += `
-        <div class="slide-container" onclick="openSlide(${i})">
-          <div class="slide-wrapper">
-            <iframe src="slide${slideNum}.html" loading="lazy"></iframe>
-          </div>
-          <div class="slide-label">
-            <span class="slide-num">Slide ${i}</span> - ${slideTitles[i-1]}
-          </div>
-        </div>
-      `;
+    let current = 0;
+
+    function show(index) {
+      current = index;
+      document.getElementById('slideFrame').src = slides[current].file;
+      document.getElementById('counter').textContent = current + 1;
+      document.getElementById('titleDisplay').textContent = slides[current].title;
+      document.getElementById('progress').style.width = ((current + 1) / slides.length * 100) + '%';
     }
 
-    function openSlide(num) {
-      currentSlide = num;
-      updateFullscreen();
-      document.getElementById('fullscreenOverlay').classList.add('active');
+    function next() {
+      if (current < slides.length - 1) show(current + 1);
     }
 
-    function closeFullscreen() {
-      document.getElementById('fullscreenOverlay').classList.remove('active');
+    function prev() {
+      if (current > 0) show(current - 1);
     }
 
-    function updateFullscreen() {
-      const slideNum = String(currentSlide).padStart(2, '0');
-      document.getElementById('fullscreenFrame').src = `slide${slideNum}.html`;
-      document.getElementById('slideCounter').textContent = `${currentSlide} / ${totalSlides}`;
-    }
-
-    function nextSlide() {
-      if (currentSlide < totalSlides) {
-        currentSlide++;
-        updateFullscreen();
-      }
-    }
-
-    function prevSlide() {
-      if (currentSlide > 1) {
-        currentSlide--;
-        updateFullscreen();
-      }
-    }
-
-    function startPresentation() {
-      openSlide(1);
-    }
-
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
-      if (document.getElementById('fullscreenOverlay').classList.contains('active')) {
-        if (e.key === 'ArrowRight' || e.key === ' ') {
-          nextSlide();
-        } else if (e.key === 'ArrowLeft') {
-          prevSlide();
-        } else if (e.key === 'Escape') {
-          closeFullscreen();
-        }
-      }
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
     });
+
+    function rescale() {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const bottomBarH = 70;
+      const availH = vh - bottomBarH;
+      const scaleX = (vw * 0.96) / 960;
+      const scaleY = (availH * 0.96) / 540;
+      const scale = Math.min(scaleX, scaleY);
+      const wrapper = document.querySelector('.slide-wrapper');
+      wrapper.style.transform = 'scale(' + scale + ')';
+      const bar = document.querySelector('.progress-bar');
+      bar.style.width = Math.min(960 * scale, vw * 0.9) + 'px';
+    }
+    window.addEventListener('resize', rescale);
+    rescale();
   </script>
 </body>
 </html>

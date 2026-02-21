@@ -1,6 +1,6 @@
-# Week 2 Exercises: Prompt Engineering for Operations
+# Week 2 Exercises: Prompt Engineering & Data Analysis
 
-**Total Time:** 70 minutes (during session)
+**Total Time:** 100 minutes (during session)
 **Tools Needed:** Bottle Rocket (go.tesla.com/chat)
 **Difficulty Range:** 4-6 / 10
 
@@ -20,6 +20,9 @@
 - **Chain-of-thought prompting** - Forcing step-by-step reasoning
 - **Few-shot prompting** - Providing examples for consistent output
 - **Persona enhancement** - Adding specific expertise and traits
+- **Data analysis with AI** - Presenting data and extracting insights
+- **Structured outputs** - Controlling AI output format (tables, checklists, reports)
+- **Prompt library building** - Organizing and versioning reusable prompts
 - **Model selection** - Choosing the right model for the task
 - **Template creation** - Building reusable prompt templates
 - **Testing & refinement** - Validating templates with real data
@@ -234,7 +237,112 @@ FORMAT:
 
 ---
 
-## Exercise 3: Model Comparison Challenge
+## Exercise 3: Analyze a Sample DC Dataset
+
+**Type:** Guided Practice → Independent Analysis
+**Difficulty:** 5/10
+**Time:** 30 minutes
+**Tool:** 🟢 Bottle Rocket (Tesla Data OK)
+
+### Scenario
+
+You've been given 6 weeks of operations data from a distribution center. Leadership wants insights — trends, anomalies, and recommendations. Instead of spending 45+ minutes manually combing through a spreadsheet, you'll use AI to extract executive-ready insights in minutes.
+
+**The Dataset:**
+
+| Week | Orders | Fill Rate | Overtime Hrs | Headcount | Safety |
+|------|--------|-----------|-------------|-----------|--------|
+| Week 1 | 12,450 | 97.2% | 85 | 42 | 0 |
+| Week 2 | 13,100 | 96.8% | 110 | 42 | 1 |
+| Week 3 | 11,800 | 98.1% | 60 | 40 | 0 |
+| Week 4 | 14,200 | 94.5% | 145 | 42 | 0 |
+| Week 5 | 13,900 | 95.1% | 130 | 41 | 2 |
+| Week 6 | 15,100 | 93.8% | 160 | 43 | 1 |
+
+### Instructions
+
+1. Open Bottle Rocket at **go.tesla.com/chat**
+2. **Part A (Simple Prompt):** Paste the data with a basic question — "What do you see in this data?"
+3. Note what the AI produces (likely surface-level observations)
+4. **Part B (CoT Prompt):** Use the structured prompt below to get deeper analysis
+5. **Compare** the two outputs side by side
+6. **Part C (Your Data):** If you brought your own DC data, run the same structured prompt on it
+
+### Part A: Simple Prompt (Try This First)
+
+```
+Here's 6 weeks of DC operations data:
+
+Week 1: 12,450 orders, 97.2% fill rate, 85 OT hrs, 42 headcount, 0 safety
+Week 2: 13,100 orders, 96.8% fill rate, 110 OT hrs, 42 headcount, 1 safety
+Week 3: 11,800 orders, 98.1% fill rate, 60 OT hrs, 40 headcount, 0 safety
+Week 4: 14,200 orders, 94.5% fill rate, 145 OT hrs, 42 headcount, 0 safety
+Week 5: 13,900 orders, 95.1% fill rate, 130 OT hrs, 41 headcount, 2 safety
+Week 6: 15,100 orders, 93.8% fill rate, 160 OT hrs, 43 headcount, 1 safety
+
+What do you see in this data?
+```
+
+### Part B: Chain-of-Thought Analysis Prompt
+
+```
+ROLE: You are a distribution center operations analyst with 10 years of experience finding actionable insights in operations data.
+
+CONTEXT: Here is 6 weeks of operations data from our DC:
+
+| Week | Orders | Fill Rate | Overtime Hrs | Headcount | Safety |
+|------|--------|-----------|-------------|-----------|--------|
+| Week 1 | 12,450 | 97.2% | 85 | 42 | 0 |
+| Week 2 | 13,100 | 96.8% | 110 | 42 | 1 |
+| Week 3 | 11,800 | 98.1% | 60 | 40 | 0 |
+| Week 4 | 14,200 | 94.5% | 145 | 42 | 0 |
+| Week 5 | 13,900 | 95.1% | 130 | 41 | 2 |
+| Week 6 | 15,100 | 93.8% | 160 | 43 | 1 |
+
+TASK: Analyze this data step by step:
+1. First, identify the overall trend for each metric (improving, declining, stable)
+2. Then, find correlations between metrics (e.g., does volume affect fill rate?)
+3. Next, flag any anomalies or warning signs
+4. Finally, recommend 3 specific actions based on your analysis
+
+FORMAT:
+- Use a trend summary table first
+- Include specific numbers and percentages in your analysis
+- Highlight the most critical finding
+- Keep recommendations actionable with specific targets
+```
+
+### Part C: Use Your Own Data (Optional)
+
+If you brought data from your DC, swap out the sample dataset with your own numbers. Keep the same ROLE, TASK, and FORMAT structure — just change the CONTEXT.
+
+### What Good Output Looks Like
+
+A strong data analysis response will:
+- **Identify the inverse relationship** between orders and fill rate (as volume rises, quality drops)
+- **Flag the overtime trend** — 85 → 160 hours is an 88% increase over 6 weeks
+- **Spot the safety correlation** — incidents cluster in high-volume weeks (Weeks 2, 5, 6)
+- **Quantify the trade-off** — "Each 1,000 additional orders costs approximately 25 overtime hours and 0.5% fill rate"
+- **Recommend specific targets** — not just "reduce overtime" but "cap at 120 hours by adding 2 headcount"
+
+### Troubleshooting
+
+| Problem | Likely Cause | Solution |
+|---------|--------------|----------|
+| AI only describes the data | No "analyze" instruction | Use CoT prompt with explicit analysis steps |
+| Missing correlations | Data not in table format | Present data as a clean table, not paragraphs |
+| Recommendations too vague | No specificity requirement | Add "Include specific numbers and targets" to FORMAT |
+| AI hallucinates data | Too much interpretation requested | Add "Only use the data provided — do not invent additional data points" |
+
+### Skills Practiced
+- Presenting data to AI systems
+- Chain-of-thought for data analysis
+- Comparing simple vs. structured prompts
+- Extracting actionable insights from operations data
+
+---
+
+## Exercise 4: Model Comparison Challenge
 
 **Type:** Scenario Challenge
 **Difficulty:** 6/10
@@ -247,7 +355,7 @@ Different AI models have different strengths. In this challenge, you'll discover
 
 ### Your Task
 
-1. **Select your best template** from Exercise 2
+1. **Select your best template** from Exercise 2 or 3
 2. **Run it on your default model** (likely Claude)
 3. **Switch to a different model** and run the exact same prompt
 4. **Compare** using the worksheet below
@@ -318,16 +426,19 @@ After completing your comparison:
 After completing the exercises, consider:
 
 1. **Which technique made the biggest difference today?**
-   - Chain-of-thought? Few-shot? Enhanced personas?
+   - Chain-of-thought? Few-shot? Enhanced personas? Structured outputs?
 
 2. **Which template will you use first at work?**
    - Tomorrow? This week?
 
-3. **How confident are you switching between models?**
+3. **How did the data analysis exercise change your approach?**
+   - Will you start pasting data into AI for quick insights?
+
+4. **How confident are you switching between models?**
    - What would help you feel more confident?
 
-4. **What time savings do you expect this week?**
-   - Estimate minutes saved per task
+5. **How many prompts are in your library now?**
+   - Target: 10+ by end of this week
 
 ---
 
@@ -335,26 +446,32 @@ After completing the exercises, consider:
 
 Continue building your template library after the session:
 
-### Part 1: Complete Your 3 Operations Templates (~20 min)
+### Part 1: Build 2 More Templates (~20 min)
 
-Finalize and save templates for:
-1. **Labor Planning Template** - Include CoT reasoning, DC-specific data placeholders
-2. **Incident Analysis Template** - 5-Whys structure, system focus (not blame)
-3. **Leadership Update Template** - Enhanced persona, few-shot format examples
+Create 2 additional templates using techniques from today:
+1. **Use CoT or Few-Shot technique** — apply what you learned
+2. **Test with real DC data** — validate with actual numbers from your operations
+3. **Add to your prompt library** — save with clear naming (e.g., `weekly-overtime-analysis-v1`)
 
-### Part 2: Time Savings Tracking (~10 min daily)
+### Part 2: Prepare for Week 3 (~25 min)
+
+1. **Track time savings daily** — target 20-30 min/day savings using your templates
+2. **Bring a real dataset** from your DC to Week 3 (any spreadsheet or report you analyze regularly)
+3. **Grow your prompt library** to 10+ prompts (you should have 5-7 after today)
+
+### Part 3: Time Savings Tracking (daily)
 
 Use this log to track your actual time savings:
 
 | Task | Without AI | With AI | Saved | Notes |
 |------|------------|---------|-------|-------|
-| Labor planning | ___ min | ___ min | ___ min | |
-| Incident analysis | ___ min | ___ min | ___ min | |
-| Leadership update | ___ min | ___ min | ___ min | |
+| Data analysis | ___ min | ___ min | ___ min | |
+| Report drafting | ___ min | ___ min | ___ min | |
+| Email/comms | ___ min | ___ min | ___ min | |
 | Other: _________ | ___ min | ___ min | ___ min | |
 | **Weekly Total** | | | **___ min** | |
 
-### Part 3: Model Experimentation
+### Part 4: Model Experimentation
 
 Over the next week, try switching models when:
 - Your first output isn't quite right
@@ -371,7 +488,8 @@ Note which model worked better for each task type.
 |----------|------------|------------------|-----------|
 | Exercise 1: Chain-of-Thought | 4/10 | Guided start with template follow-up. Clear data provided. Step-by-step structure teaches technique. | ✅ |
 | Exercise 2: Build 3 Templates | 5/10 | Template-based with options. Tests technique application. Real-world use cases. Requires customization skill. | ✅ |
-| Exercise 3: Model Comparison | 6/10 | Requires critical evaluation. Builds model selection awareness. May need facilitator help with model switching. | ✅ |
+| Exercise 3: DC Dataset Analysis | 5/10 | Guided data analysis with compare-and-contrast structure. Sample data provided. Builds on CoT from Exercise 1. Optional self-data extension. | ✅ |
+| Exercise 4: Model Comparison | 6/10 | Requires critical evaluation. Builds model selection awareness. May need facilitator help with model switching. | ✅ |
 
 ---
 
@@ -379,16 +497,16 @@ Note which model worked better for each task type.
 
 | Check | Requirement | Status |
 |-------|-------------|--------|
-| Exercise count | 3+ exercises per week | ✅ 3 exercises |
+| Exercise count | 3+ exercises per week | ✅ 4 exercises |
 | Difficulty range | Within week's calibration (4-6) | ✅ Range: 4-6 |
 | Exercise mix | Matches week's ratio (50% Guided, 40% Template, 10% Challenge) | ✅ Mixed types |
 | Tool coverage | Correct tool per exercise | ✅ All Bottle Rocket |
 | Troubleshooting | 3+ issues per exercise | ✅ 4 per exercise |
-| Time realistic | Total ≤ 70 min | ✅ 70 min total |
-| Skills tracked | Reinforce + Introduce documented | ✅ 6 reinforced, 6 introduced |
+| Time realistic | Total ≤ 100 min | ✅ 100 min total (25+25+30+20) |
+| Skills tracked | Reinforce + Introduce documented | ✅ 6 reinforced, 9 introduced |
 
 ---
 
-*Exercises designed for Week 2: Prompt Engineering for Operations*
+*Exercises designed for Week 2: Prompt Engineering & Data Analysis*
 *Primary Tool: Bottle Rocket (go.tesla.com/chat)*
 *Difficulty Focus: Intermediate (4-6/10)*

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 16 - Course Completion</title>
+  <title>Slide 16 - Four Orchestration Patterns</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,167 +20,144 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px;
-      margin-left: 8px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+    .container {
+      padding: 28px 32px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     h1 {
-      font-size: 32px;
-      margin-bottom: 24px;
-    }
-    .final-assignment {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    .assignment-title {
-      font-size: 14px;
+      font-size: 26px;
       font-weight: bold;
-      color: #e82127;
+      color: #000000;
       margin-bottom: 16px;
     }
-    .assignment-items {
-      list-style: none;
+    .patterns-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 14px;
+      flex: 1;
     }
-    .assignment-items li {
-      margin-bottom: 10px;
-      font-size: 14px;
-      padding-left: 16px;
-      position: relative;
+    .pattern-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
     }
-    .assignment-items li::before {
-      content: '•';
-      position: absolute;
-      left: 0;
-      color: #e82127;
-    }
-    .showcase-prep {
-      background: #2a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-      border-left: 3px solid #e82127;
-    }
-    .showcase-title {
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-    .showcase-items {
-      list-style: none;
-      font-size: 14px;
-    }
-    .showcase-items li {
-      margin-bottom: 8px;
-    }
-    .tools-mastered {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .tools-title {
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 16px;
-    }
-    .tool-item {
+    .pattern-header {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
-      font-size: 14px;
+      gap: 10px;
+      margin-bottom: 8px;
     }
-    .tool-badge {
-      padding: 2px 8px;
-      border-radius: 4px;
+    .pattern-icon {
+      font-size: 20px;
+    }
+    .pattern-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .pattern-how {
       font-size: 11px;
-      margin-right: 10px;
+      color: #666666;
+      margin-bottom: 6px;
+      line-height: 1.4;
     }
-    .badge-green { background: #1a3a1a; color: #4ade80; }
-    .badge-yellow { background: #3a3a1a; color: #facc15; }
-    .policy-reminder {
-      background: #1a1a1a;
-      padding: 16px;
-      border-radius: 8px;
-      font-size: 12px;
-      color: #a0a0a0;
-      text-align: center;
-      margin-top: 16px;
+    .pattern-how strong {
+      color: #cc0000;
     }
-    .policy-link {
-      color: #e82127;
+    .pattern-best {
+      font-size: 10px;
+      color: #666666;
+      margin-bottom: 6px;
     }
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50px;
-      font-size: 12px;
-      color: #a0a0a0;
+    .pattern-example {
+      font-size: 10px;
+      color: #16a34a;
+      background: #f0fdf4;
+      padding: 6px 8px;
+      border-radius: 4px;
+      margin-top: auto;
+    }
+    .pattern-example strong {
+      color: #15803d;
+    }
+    .footer-bar {
+      display: flex;
+      gap: 16px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .stat-box {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 11px;
+      color: #666666;
+    }
+    .stat-box strong {
+      color: #cc0000;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Four Orchestration Patterns</h1>
 
-  <div class="content">
-    <div class="left-panel">
-      <h1>Course Completion</h1>
-
-      <div class="final-assignment">
-        <div class="assignment-title">Final Assignment</div>
-        <ul class="assignment-items">
-          <li>Complete personal project end-to-end</li>
-          <li>Document prompts and workflow</li>
-          <li>Create 1-page "how to use" guide</li>
-          <li>Calculate total time savings</li>
-        </ul>
+    <div class="patterns-grid">
+      <div class="pattern-card">
+        <div class="pattern-header">
+          <span class="pattern-icon">&#8594;</span>
+          <span class="pattern-title">Sequential</span>
+        </div>
+        <div class="pattern-how"><strong>How:</strong> Agent A then Agent B then Agent C</div>
+        <div class="pattern-best">Best for: Step-by-step processes</div>
+        <div class="pattern-example"><strong>DC Example:</strong> Dive deep - gather data, analyze, report</div>
       </div>
 
-      <div class="showcase-prep">
-        <div class="showcase-title">Prepare 3-Minute Showcase</div>
-        <ul class="showcase-items">
-          <li>1. Demo your automation</li>
-          <li>2. Share time savings calculation</li>
-          <li>3. Identify expansion opportunities</li>
-        </ul>
+      <div class="pattern-card">
+        <div class="pattern-header">
+          <span class="pattern-icon">&#8645;</span>
+          <span class="pattern-title">Parallel</span>
+        </div>
+        <div class="pattern-how"><strong>How:</strong> Agents A, B, C run simultaneously</div>
+        <div class="pattern-best">Best for: Independent subtasks</div>
+        <div class="pattern-example"><strong>DC Example:</strong> Multi-DC comparison reports</div>
+      </div>
+
+      <div class="pattern-card">
+        <div class="pattern-header">
+          <span class="pattern-icon">&#9733;</span>
+          <span class="pattern-title">Supervisor</span>
+        </div>
+        <div class="pattern-how"><strong>How:</strong> Main agent delegates to specialists</div>
+        <div class="pattern-best">Best for: Complex investigations</div>
+        <div class="pattern-example"><strong>DC Example:</strong> Incident analysis with multiple data sources</div>
+      </div>
+
+      <div class="pattern-card">
+        <div class="pattern-header">
+          <span class="pattern-icon">&#9995;</span>
+          <span class="pattern-title">Human-in-Loop</span>
+        </div>
+        <div class="pattern-how"><strong>How:</strong> Agent pauses for approval at key steps</div>
+        <div class="pattern-best">Best for: High-stakes decisions</div>
+        <div class="pattern-example"><strong>DC Example:</strong> Any task affecting Tesla operations</div>
       </div>
     </div>
 
-    <div class="right-panel">
-      <div class="tools-mastered">
-        <div class="tools-title">Tools Mastered</div>
-        <div class="tool-item">
-          <span class="tool-badge badge-green">Tesla Data OK</span>
-          <span>Bottle Rocket (expert)</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-badge badge-yellow">No Tesla Data</span>
-          <span>GitHub Copilot Agent Mode</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-badge badge-yellow">No Tesla Data</span>
-          <span>GitHub Copilot Voice Mode</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-badge badge-yellow">No Tesla Data</span>
-          <span>MCP: Playwright</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-badge badge-yellow">No Tesla Data</span>
-          <span>Multi-Agent Orchestration</span>
-        </div>
-      </div>
-
-      <div class="policy-reminder">
-        AI Policy Reference: <span class="policy-link">go.tesla.com/aitools</span>
-      </div>
+    <div class="footer-bar">
+      <div class="stat-box"><strong>72%</strong> of enterprise AI projects now use multi-agent architectures (2025)</div>
+      <div class="stat-box"><strong>76%</strong> of enterprises include human review - your judgment matters</div>
     </div>
   </div>
-
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
 </body>
 </html>

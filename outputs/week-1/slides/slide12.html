@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 12 - Section 4 Divider</title>
+  <title>Slide 12 - Policy Rapid Fire Quiz</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
-      display: flex;
     }
     .accent-bar {
       position: absolute;
@@ -21,56 +20,184 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .red-block {
-      width: 320px;
+    .container {
+      padding: 24px 24px 20px 48px;
       height: 100%;
-      background: #e82127;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 16px;
+      margin-bottom: 12px;
     }
-    .section-number {
-      font-size: 180px;
+    .badge {
+      background: #cc0000;
+      color: #000000;
+      font-size: 10px;
       font-weight: bold;
-      color: rgba(255, 255, 255, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 4px 12px;
+      border-radius: 4px;
+      flex-shrink: 0;
     }
-    .content {
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .main-content {
+      display: flex;
+      gap: 16px;
+      flex: 1;
+      min-height: 0;
+    }
+    .table-area {
+      flex: 1;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    thead th {
+      background: #e0e0e0;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666666;
+      padding: 6px 8px;
+      text-align: left;
+    }
+    tbody tr:nth-child(odd) {
+      background: #f5f5f5;
+    }
+    tbody tr:nth-child(even) {
+      background: #ebebeb;
+    }
+    tbody td {
+      font-size: 11px;
+      padding: 4px 8px;
+      line-height: 1.3;
+    }
+    td.num {
+      color: #666666;
+      width: 24px;
+      text-align: center;
+    }
+    td.tool {
+      color: #000000;
+    }
+    td.approved {
+      color: #4ade80;
+      font-weight: bold;
+    }
+    td.conditional {
+      color: #facc15;
+      font-weight: bold;
+    }
+    td.prohibited {
+      color: #f87171;
+      font-weight: bold;
+    }
+    .sidebar {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .time-box {
+      background: #cc0000;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .time-box .time {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .time-box .label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
+      margin-top: 2px;
+    }
+    .takeaway-box {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 16px;
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 40px 48px;
     }
-    .section-label {
-      font-size: 14px;
+    .takeaway-label {
+      font-size: 10px;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #a0a0a0;
-      margin-bottom: 16px;
+      letter-spacing: 1px;
+      color: #cc0000;
+      margin-bottom: 8px;
     }
-    h1 {
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 1.2;
-    }
-    .duration {
-      font-size: 14px;
-      color: #a0a0a0;
-      margin-top: 24px;
+    .takeaway-text {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-  <div class="red-block">
-    <span class="section-number">04</span>
-  </div>
-  <div class="content">
-    <p class="section-label">Section 4</p>
-    <h1>Prompt Engineering<br>Basics</h1>
-    <p class="duration">10 minutes</p>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <span class="badge">Interactive Quiz</span>
+      <h1>Policy Rapid Fire</h1>
+    </div>
+    <div class="main-content">
+      <div class="table-area">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Tool / Action</th>
+              <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">1</td><td class="tool">Bottle Rocket</td><td class="approved">Approved</td></tr>
+            <tr><td class="num">2</td><td class="tool">Grok via X app</td><td class="prohibited">Prohibited</td></tr>
+            <tr><td class="num">3</td><td class="tool">Grok via Bottle Rocket</td><td class="approved">Approved</td></tr>
+            <tr><td class="num">4</td><td class="tool">Claude.ai (website)</td><td class="prohibited">Prohibited</td></tr>
+            <tr><td class="num">5</td><td class="tool">Claude inside Bottle Rocket</td><td class="approved">Approved</td></tr>
+            <tr><td class="num">6</td><td class="tool">M365 Copilot (m365.cloud.microsoft.chat)</td><td class="approved">Approved</td></tr>
+            <tr><td class="num">7</td><td class="tool">M365 Copilot (copilot.microsoft.com)</td><td class="prohibited">Prohibited</td></tr>
+            <tr><td class="num">8</td><td class="tool">GitHub Copilot with Tesla code</td><td class="prohibited">Prohibited</td></tr>
+            <tr><td class="num">9</td><td class="tool">GitHub Copilot with generic Python</td><td class="conditional">Conditional</td></tr>
+            <tr><td class="num">10</td><td class="tool">AI meeting transcription</td><td class="prohibited">Prohibited</td></tr>
+            <tr><td class="num">11</td><td class="tool">Apple Intelligence on corp device</td><td class="prohibited">Prohibited</td></tr>
+            <tr><td class="num">12</td><td class="tool">Perplexity for generic research</td><td class="prohibited">Prohibited</td></tr>
+            <tr><td class="num">13</td><td class="tool">Nova searching Confluence</td><td class="approved">Approved</td></tr>
+            <tr><td class="num">14</td><td class="tool">Employee Assist for HR</td><td class="approved">Approved</td></tr>
+            <tr><td class="num">15</td><td class="tool">DeepSeek</td><td class="prohibited">Prohibited</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="sidebar">
+        <div class="time-box">
+          <div class="time">5 MIN</div>
+          <div class="label">rapid fire round</div>
+        </div>
+        <div class="takeaway-box">
+          <div class="takeaway-label">Key Takeaway</div>
+          <div class="takeaway-text">Same model can be <strong style="color:#000000;">Approved</strong> OR <strong style="color:#000000;">Prohibited</strong> depending on the platform.</div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

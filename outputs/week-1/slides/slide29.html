@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 29 - Week 1 Key Takeaways</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .takeaway-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      flex: 1;
+    }
+    .takeaway-card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .takeaway-num {
+      font-size: 48px;
+      font-weight: bold;
+      color: #cc0000;
+      min-width: 40px;
+      line-height: 1;
+    }
+    .takeaway-text {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer-item {
+      font-size: 11px;
+      color: #666666;
+    }
+    .footer-item strong {
+      color: #000000;
+    }
+    .footer-item.link {
+      color: #cc0000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Week 1 Key Takeaways</h1>
+    <div class="takeaway-grid">
+      <div class="takeaway-card">
+        <div class="takeaway-num">01</div>
+        <div class="takeaway-text">AI augments your expertise &mdash; it handles repetitive work while you focus on judgment and strategy</div>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-num">02</div>
+        <div class="takeaway-text">Policy is non-negotiable &mdash; Bottle Rocket for Tesla Data, the Two-Question Test is your guide, platform determines protection</div>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-num">03</div>
+        <div class="takeaway-text">ROLE + CONTEXT + TASK + FORMAT &mdash; the four-part formula transforms vague requests into actionable outputs</div>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-num">04</div>
+        <div class="takeaway-text">Iterate, verify, and use personas &mdash; your first output is a draft, not a deliverable. Check facts, refine, then use.</div>
+      </div>
+    </div>
+    <div class="footer">
+      <span class="footer-item"><strong>Homework:</strong> Build a 5-prompt library, track time savings</span>
+      <span class="footer-item"><strong>Next week:</strong> Advanced Prompt Engineering &amp; Data Analysis</span>
+      <span class="footer-item link">go.tesla.com/chat</span>
+    </div>
+  </div>
+</body>
+</html>

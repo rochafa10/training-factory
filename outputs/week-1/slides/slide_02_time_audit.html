@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Where Does Your Time Actually Go?</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 32px 16px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .big-number {
+      font-size: 72px;
+      font-weight: bold;
+      color: #cc0000;
+      line-height: 1;
+      min-width: 120px;
+    }
+    .header-text h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .header-text p {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .header-text strong { color: #000000; }
+    .source {
+      font-size: 9px;
+      color: #999999;
+      margin-top: 4px;
+    }
+    .comparison {
+      display: flex;
+      gap: 14px;
+      flex: 1;
+      min-height: 0;
+    }
+    .col {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      overflow: hidden;
+    }
+    .col.negative { border-top: 3px solid #cc0000; }
+    .col.positive { border-top: 3px solid #4ade80; }
+    .col-header {
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .col.negative .col-header { color: #cc0000; }
+    .col.positive .col-header { color: #4ade80; }
+    .stat {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .stat-num {
+      font-size: 22px;
+      font-weight: bold;
+      min-width: 56px;
+      line-height: 1;
+    }
+    .col.negative .stat-num { color: #cc0000; }
+    .col.positive .stat-num { color: #4ade80; }
+    .stat-text {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.35;
+    }
+    .stat-source {
+      font-size: 8px;
+      color: #999999;
+      margin-top: 1px;
+    }
+    .banner {
+      background: rgba(204, 0, 0, 0.06);
+      border: 1px solid rgba(204, 0, 0, 0.2);
+      border-radius: 6px;
+      padding: 8px 14px;
+      margin-top: 10px;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .banner strong { color: #000000; }
+    .banner .hl { color: #cc0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <div class="big-number">60%</div>
+      <div class="header-text">
+        <h1>Where Does Your Time Actually Go?</h1>
+        <p>Of a manager&rsquo;s week is spent on tasks that <strong>don&rsquo;t require human judgment</strong> &mdash; data gathering, formatting reports, writing routine communications, and chasing information across systems.</p>
+        <div class="source">Microsoft Work Trend Index, 2024</div>
+      </div>
+    </div>
+    <div class="comparison">
+      <div class="col negative">
+        <div class="col-header">Time Drains (Repetitive)</div>
+        <div class="stat">
+          <div class="stat-num">11 hrs</div>
+          <div>
+            <div class="stat-text">per week spent on email &mdash; reading, writing, sorting, and searching for buried info</div>
+            <div class="stat-source">McKinsey Global Institute</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8 hrs</div>
+          <div>
+            <div class="stat-text">per week gathering data from multiple systems and formatting into reports</div>
+            <div class="stat-source">Forrester Research</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5 hrs</div>
+          <div>
+            <div class="stat-text">per week on status updates, meeting prep, and predictable documentation</div>
+            <div class="stat-source">Asana Anatomy of Work Index</div>
+          </div>
+        </div>
+      </div>
+      <div class="col positive">
+        <div class="col-header">High-Value Work (What You&rsquo;re Hired For)</div>
+        <div class="stat">
+          <div class="stat-num" style="font-size:16px;line-height:1.4;">Strategic</div>
+          <div>
+            <div class="stat-text">Long-term planning, process improvements, cost optimization &mdash; the work that drives your 20% improvement goals</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" style="font-size:16px;line-height:1.4;">Leadership</div>
+          <div>
+            <div class="stat-text">Coaching your team, handling exceptions, making judgment calls that only you can make</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" style="font-size:16px;line-height:1.4;">Innovation</div>
+          <div>
+            <div class="stat-text">Identifying new opportunities, building relationships, solving unsolved problems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner"><strong>The math is simple:</strong> If AI saves you 7.5 hours per week, that&rsquo;s <span class="hl">390 hours per year</span> &mdash; nearly 10 full work weeks redirected to what actually matters.</div>
+  </div>
+</body>
+</html>

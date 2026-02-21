@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 08 - What is Tesla Data</title>
+  <title>Slide 08 - Three Tiers of AI Tools at Tesla</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,113 +20,105 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 28px 40px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
-    .main-content {
+    .grid {
       display: flex;
-      gap: 32px;
+      gap: 16px;
       flex: 1;
     }
-    .left-col {
+    .tier-card {
       flex: 1;
-    }
-    .right-col {
-      flex: 1;
-    }
-    .definition {
-      background: #1a1a1a;
-      border-radius: 8px;
+      background: #f5f5f5;
+      border-radius: 12px;
       padding: 16px;
-      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
     }
-    .definition p {
+    .tier-card.approved { border-top: 3px solid #4ade80; }
+    .tier-card.conditional { border-top: 3px solid #facc15; }
+    .tier-card.prohibited { border-top: 3px solid #f87171; }
+    .tier-header {
       font-size: 13px;
-      line-height: 1.5;
-      color: #a0a0a0;
-    }
-    h2 {
-      font-size: 16px;
-      margin-bottom: 12px;
-      color: #e82127;
-    }
-    .data-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-    .data-item {
-      background: #1a1a1a;
-      border-radius: 6px;
-      padding: 10px 12px;
-      font-size: 12px;
-    }
-    .rule-box {
-      background: #e82127;
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 16px;
-    }
-    .rule-box p {
-      font-size: 16px;
       font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 2px;
     }
-    .rule-subtext {
-      font-size: 12px;
-      color: rgba(255,255,255,0.8);
-      margin-top: 8px;
-    }
-    .footer {
+    .tier-card.approved .tier-header { color: #4ade80; }
+    .tier-card.conditional .tier-header { color: #facc15; }
+    .tier-card.prohibited .tier-header { color: #f87171; }
+    .tier-sublabel {
       font-size: 11px;
       color: #666;
-      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    .tier-items {
+      list-style: none;
+      padding: 0;
+    }
+    .tier-items li {
+      font-size: 12px;
+      color: #666666;
+      padding: 4px 0;
+      border-bottom: 1px solid #e0e0e0;
+      line-height: 1.4;
+    }
+    .tier-items li:last-child {
+      border-bottom: none;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>What is "Tesla Data"?</h1>
-    <div class="main-content">
-      <div class="left-col">
-        <div class="definition">
-          <p>Any information about Tesla, customers, employees, affiliates, or users.</p>
-        </div>
-        <h2>Examples of Tesla Data</h2>
-        <div class="data-grid">
-          <div class="data-item">Performance metrics</div>
-          <div class="data-item">KPIs</div>
-          <div class="data-item">Employee names</div>
-          <div class="data-item">Schedules</div>
-          <div class="data-item">Customer info</div>
-          <div class="data-item">Internal SOPs</div>
-          <div class="data-item">Financial data</div>
-          <div class="data-item">Proprietary code</div>
-        </div>
+    <h1>Three Tiers of AI Tools at Tesla</h1>
+    <div class="grid">
+      <div class="tier-card approved">
+        <div class="tier-header">Approved</div>
+        <div class="tier-sublabel">Tesla Data OK</div>
+        <ul class="tier-items">
+          <li>Chat.BottleRocket (go.tesla.com/chat)</li>
+          <li>IT Assist (it.bottlerocket.tesla.com)</li>
+          <li>Employee Assist (hr.bottlerocket.tesla.com)</li>
+          <li>Energy Chats (energy.bottlerocket.tesla.com)</li>
+          <li>Nabu RAG Agents (nabu.bottlerocket.tesla.com)</li>
+          <li>Nova (nova.tesla.com)</li>
+          <li>M365 Copilot Chat (corporate link only)</li>
+        </ul>
       </div>
-      <div class="right-col">
-        <div class="rule-box">
-          <p>The Simple Rule</p>
-          <p class="rule-subtext">If it came from inside Tesla,<br>it's Tesla Data. Use Bottle Rocket.</p>
-        </div>
-        <h2>When in Doubt</h2>
-        <div class="definition">
-          <p>Assume it's Tesla Data and use Bottle Rocket. This is the safe choice and keeps you compliant.</p>
-        </div>
+      <div class="tier-card conditional">
+        <div class="tier-header">Conditional</div>
+        <div class="tier-sublabel">NO Tesla Data</div>
+        <ul class="tier-items">
+          <li>GitHub Copilot (code only, no Tesla data)</li>
+          <li>GitHub Copilot CLI</li>
+          <li>Power Automate AI (no OpenAI connector)</li>
+        </ul>
+      </div>
+      <div class="tier-card prohibited">
+        <div class="tier-header">Prohibited</div>
+        <div class="tier-sublabel">Never for Work</div>
+        <ul class="tier-items">
+          <li>ChatGPT, Claude.ai, Gemini web</li>
+          <li>Perplexity, Grok via X/xAI</li>
+          <li>Apple Intelligence (corp devices)</li>
+          <li>AI meeting transcription</li>
+          <li>AI wearables (Ray-Ban Meta, etc.)</li>
+          <li>DeepSeek (China-hosted)</li>
+        </ul>
       </div>
     </div>
-    <p class="footer">Section 2 | Tesla AI Policy</p>
   </div>
 </body>
 </html>

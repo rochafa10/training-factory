@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 42 - Interactive Quiz: Approve or Reject?</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+    .accent-bar {
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+      flex-shrink: 0;
+    }
+    .container {
+      flex: 1;
+      padding: 20px 32px 16px 40px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      margin-bottom: 12px;
+    }
+    .badge {
+      display: inline-block;
+      background: #cc0000;
+      color: #ffffff;
+      padding: 5px 14px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 11px;
+      color: #666666;
+    }
+    .table-wrapper {
+      flex: 1;
+      overflow-y: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    thead tr {
+      background: #e0e0e0;
+    }
+    thead th {
+      color: #cc0000;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 6px 10px;
+      text-align: left;
+    }
+    thead th:first-child {
+      width: 30px;
+    }
+    thead th:last-child {
+      width: 80px;
+      text-align: center;
+    }
+    tbody tr:nth-child(odd) {
+      background: #f5f5f5;
+    }
+    tbody tr:nth-child(even) {
+      background: #ffffff;
+    }
+    tbody td {
+      padding: 6px 10px;
+      border: none;
+      color: #000000;
+    }
+    tbody td:first-child {
+      width: 30px;
+      color: #cc0000;
+      font-weight: bold;
+      text-align: right;
+      padding-right: 12px;
+    }
+    tbody td:last-child {
+      color: #666666;
+      text-align: center;
+      font-weight: bold;
+      width: 80px;
+    }
+    .options {
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .option {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .option.approve {
+      color: #16a34a;
+    }
+    .option.reject {
+      color: #dc2626;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <div class="badge">Interactive Quiz</div>
+      <div class="title">Approve or Reject?</div>
+      <div class="subtitle">Apply The Three Nevers to each agent action</div>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Agent Wants To...</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Read sample-data.csv from your workspace</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Delete all files in C:\temp to free up space</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Write dive-deep-report.md to your folder</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Access your email password from environment variables</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Install a Python package to process data</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Read an Excel file you created yesterday</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Upload your report to an unknown URL</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Create a new folder in your workspace</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Access files in C:\Windows\System32</td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Format numbers in your spreadsheet</td>
+            <td>?</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="options">
+      <span class="option approve">APPROVE</span>
+      <span class="option reject">REJECT</span>
+    </div>
+  </div>
+</body>
+</html>

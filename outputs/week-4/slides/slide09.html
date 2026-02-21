@@ -2,141 +2,248 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 09 - Exercise 2: Web Automation</title>
+  <title>Slide 09 - Exercise 1: Power Automate</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
     }
-    .accent-bar {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 8px;
-      height: 100%;
-      background: #e82127;
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 40px 0 40px;
+      margin-bottom: 16px;
     }
-    .content {
-      padding: 40px 50px;
-      margin-left: 8px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
     .exercise-badge {
-      background: #e82127;
-      display: inline-block;
+      background: #cc0000;
+      color: #ffffff;
       padding: 6px 14px;
       border-radius: 4px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .time-box {
+      background: #cc0000;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 0 40px;
+    }
+    .part-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .part-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .part-label {
       font-size: 12px;
+      color: #cc0000;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
-      margin-bottom: 16px;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 24px;
+    .part-time {
+      font-size: 11px;
+      color: #666666;
+      background: #ffffff;
+      padding: 4px 8px;
+      border-radius: 4px;
+      border: 1px solid #e0e0e0;
     }
-    .instructions {
+    .part-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    .task-label {
+      font-size: 10px;
+      color: #666666;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .task-text {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .steps-label {
+      font-size: 10px;
+      color: #666666;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .steps-list {
       list-style: none;
+      font-size: 12px;
+      color: #666666;
     }
-    .instructions li {
-      margin-bottom: 14px;
-      font-size: 14px;
-      padding-left: 24px;
+    .steps-list li {
+      margin-bottom: 4px;
+      padding-left: 16px;
       position: relative;
     }
-    .instructions li::before {
-      content: attr(data-step);
+    .steps-list li::before {
+      content: "";
       position: absolute;
       left: 0;
-      color: #e82127;
-      font-weight: bold;
+      top: 6px;
+      width: 6px;
+      height: 6px;
+      background: #cc0000;
+      border-radius: 50%;
     }
-    .prompt-card {
-      background: #1a1a1a;
-      padding: 20px;
+    .success-criteria {
+      background: #f0fdf4;
+      border: 1px solid #4ade80;
       border-radius: 8px;
-      margin-bottom: 20px;
+      padding: 14px;
     }
-    .prompt-label {
+    .success-title {
       font-size: 11px;
-      color: #a0a0a0;
+      color: #16a34a;
+      font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
-    .prompt-text {
-      font-size: 13px;
-      line-height: 1.5;
-      font-style: italic;
-      color: #ffffff;
+    .criteria-list {
+      list-style: none;
     }
-    .time-savings {
-      background: #1a2a1a;
-      padding: 16px;
-      border-radius: 8px;
-      border-left: 3px solid #4ade80;
-    }
-    .savings-title {
+    .criteria-list li {
       font-size: 12px;
-      color: #4ade80;
-      margin-bottom: 8px;
+      color: #666666;
+      margin-bottom: 6px;
+      padding-left: 22px;
+      position: relative;
     }
-    .savings-compare {
-      font-size: 14px;
+    .criteria-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #4ade80;
+      border-radius: 3px;
+    }
+    .prereq-note {
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      font-size: 11px;
+      color: #666666;
+    }
+    .prereq-note strong {
+      color: #000000;
     }
     .footer {
       position: absolute;
       bottom: 20px;
-      left: 50px;
+      left: 40px;
       font-size: 12px;
-      color: #a0a0a0;
+      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
+  <div class="header-row">
+    <div class="header-left">
+      <span class="exercise-badge">Exercise 1</span>
+      <h1>Power Automate &mdash; Desktop + Cloud Flows</h1>
+    </div>
+    <div class="time-box">25 minutes</div>
+  </div>
 
   <div class="content">
     <div class="left-panel">
-      <div class="exercise-badge">Exercise 2</div>
-      <h1>Web Automation with Playwright</h1>
+      <div class="part-card">
+        <div class="part-header">
+          <span class="part-label">Part A: Desktop Flow</span>
+          <span class="part-time">15 min</span>
+        </div>
+        <div class="part-title">Data Extraction + Screenshot</div>
+        <div class="task-label">Task</div>
+        <div class="task-text">Create a desktop flow that extracts data from a spreadsheet and takes a screenshot</div>
+        <div class="steps-label">Steps</div>
+        <ul class="steps-list">
+          <li>Open Power Automate Desktop</li>
+          <li>Create new flow</li>
+          <li>Add Excel actions (open, read)</li>
+          <li>Add screenshot action</li>
+          <li>Run and verify output</li>
+        </ul>
+      </div>
 
-      <ul class="instructions">
-        <li data-step="1.">Open Copilot Chat: Ctrl+Alt+I</li>
-        <li data-step="2.">Switch to Agent Mode (dropdown)</li>
-        <li data-step="3.">Enter a web automation command</li>
-        <li data-step="4.">Review the agent's plan</li>
-        <li data-step="5.">Watch tool calls execute</li>
-        <li data-step="6.">Iterate if needed</li>
-      </ul>
+      <div class="part-card" style="margin-top: 12px;">
+        <div class="part-header">
+          <span class="part-label">Part B: Cloud Flow</span>
+          <span class="part-time">10 min</span>
+        </div>
+        <div class="part-title">Scheduled Email Summary</div>
+        <div class="task-label">Task</div>
+        <div class="task-text">Create a scheduled cloud flow that sends a summary email</div>
+        <div class="steps-label">Steps</div>
+        <ul class="steps-list">
+          <li>Open Power Automate web</li>
+          <li>Create scheduled flow</li>
+          <li>Add email action with variables</li>
+          <li>Test run the flow</li>
+        </ul>
+      </div>
     </div>
 
     <div class="right-panel">
-      <div class="prompt-card">
-        <div class="prompt-label">Try This Prompt:</div>
-        <div class="prompt-text">"Navigate to https://example.com and describe what content is on the page"</div>
+      <div class="success-criteria">
+        <div class="success-title">Success Criteria</div>
+        <ul class="criteria-list">
+          <li>Desktop flow runs and extracts data</li>
+          <li>Screenshot captured successfully</li>
+          <li>Cloud flow scheduled and triggered</li>
+          <li>Email received with summary</li>
+        </ul>
       </div>
 
-      <div class="prompt-card">
-        <div class="prompt-label">Data Extraction:</div>
-        <div class="prompt-text">"Go to jsonplaceholder.typicode.com/users and extract the first 3 users with names and emails"</div>
-      </div>
-
-      <div class="time-savings">
-        <div class="savings-title">Time Savings</div>
-        <div class="savings-compare">Manual: 5-10 min → With MCP: 30 seconds</div>
+      <div class="prereq-note">
+        <strong>Prerequisites:</strong> Power Automate Desktop must be installed (pre-installed on Tesla laptops)
       </div>
     </div>
   </div>
 
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+  <p class="footer">Week 4: Advanced Automation &amp; Multi-Agent Orchestration</p>
 </body>
 </html>

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 02 - Session Agenda</title>
+  <title>Slide 02 - Agenda</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,87 +20,142 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     h1 {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+    .agenda-columns {
+      display: flex;
+      gap: 32px;
+      flex: 1;
+    }
+    .agenda-col {
+      flex: 1;
     }
     .agenda-item {
       display: flex;
+      align-items: flex-start;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .agenda-num {
+      width: 24px;
+      height: 24px;
+      background: #cc0000;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
       align-items: center;
-      margin-bottom: 12px;
-      font-size: 16px;
-    }
-    .time {
-      width: 90px;
-      color: #a0a0a0;
-      font-size: 14px;
-    }
-    .topic {
-      flex: 1;
-    }
-    .exercise {
-      color: #e82127;
+      justify-content: center;
+      font-size: 11px;
       font-weight: bold;
+      margin-right: 12px;
+      flex-shrink: 0;
     }
-    .duration-badge {
-      background: #2a2a2a;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 12px;
-      color: #a0a0a0;
+    .agenda-text {
+      flex: 1;
+      color: #000000;
+      line-height: 1.4;
+    }
+    .agenda-time {
+      color: #666666;
+      font-size: 11px;
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+    .break-item .agenda-num {
+      background: #666666;
+    }
+    .footer-note {
+      font-size: 11px;
+      color: #666666;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="content">
-    <h1>Session Agenda</h1>
-    <div class="agenda-item">
-      <span class="time">0:00</span>
-      <span class="topic">Time Savings Review</span>
-      <span class="duration-badge">10 min</span>
+  <div class="container">
+    <h1>Today's Agenda</h1>
+    <div class="agenda-columns">
+      <div class="agenda-col">
+        <div class="agenda-item">
+          <span class="agenda-num">1</span>
+          <span class="agenda-text">Time Savings Review<span class="agenda-time">(10 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">2</span>
+          <span class="agenda-text">VS Code + Copilot Setup<span class="agenda-time">(20 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">3</span>
+          <span class="agenda-text">Copilot Chat, @ Commands &amp; Voice<span class="agenda-time">(15 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">4</span>
+          <span class="agenda-text">Exercise 1: Voice + Chat Practice<span class="agenda-time">(20 min)</span></span>
+        </div>
+        <div class="agenda-item break-item">
+          <span class="agenda-num">5</span>
+          <span class="agenda-text">BREAK<span class="agenda-time">(10 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">6</span>
+          <span class="agenda-text">What Is an AI Agent?<span class="agenda-time">(20 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">7</span>
+          <span class="agenda-text">Agent Mode Deep Dive<span class="agenda-time">(15 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">8</span>
+          <span class="agenda-text">Exercise 2: Build First DC Agent<span class="agenda-time">(25 min)</span></span>
+        </div>
+      </div>
+      <div class="agenda-col">
+        <div class="agenda-item break-item">
+          <span class="agenda-num">9</span>
+          <span class="agenda-text">BREAK<span class="agenda-time">(10 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">10</span>
+          <span class="agenda-text">How AI Finds Information - RAG Lite<span class="agenda-time">(15 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">11</span>
+          <span class="agenda-text">Git Basics: Reviewing AI Changes<span class="agenda-time">(15 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">12</span>
+          <span class="agenda-text">Exercise 3: Agent Builds a Tool<span class="agenda-time">(20 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">13</span>
+          <span class="agenda-text">Hallucination, Safety &amp; Debugging<span class="agenda-time">(15 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">14</span>
+          <span class="agenda-text">Exercise 4: Spot the Mistakes<span class="agenda-time">(20 min)</span></span>
+        </div>
+        <div class="agenda-item">
+          <span class="agenda-num">15</span>
+          <span class="agenda-text">Wrap-up + Homework<span class="agenda-time">(10 min)</span></span>
+        </div>
+      </div>
     </div>
-    <div class="agenda-item">
-      <span class="time">0:10</span>
-      <span class="topic exercise">Exercise 1: VS Code + Copilot Setup</span>
-      <span class="duration-badge">15 min</span>
-    </div>
-    <div class="agenda-item">
-      <span class="time">0:25</span>
-      <span class="topic">Copilot Chat & @ Commands</span>
-      <span class="duration-badge">10 min</span>
-    </div>
-    <div class="agenda-item">
-      <span class="time">0:35</span>
-      <span class="topic exercise">Exercise 2: Voice Mode Setup</span>
-      <span class="duration-badge">15 min</span>
-    </div>
-    <div class="agenda-item">
-      <span class="time">0:55</span>
-      <span class="topic exercise">Exercise 3: Voice-Dictated Email</span>
-      <span class="duration-badge">15 min</span>
-    </div>
-    <div class="agenda-item">
-      <span class="time">1:10</span>
-      <span class="topic">Agent Mode Introduction</span>
-      <span class="duration-badge">15 min</span>
-    </div>
-    <div class="agenda-item">
-      <span class="time">1:25</span>
-      <span class="topic exercise">Exercise 4: First Agent Task</span>
-      <span class="duration-badge">20 min</span>
-    </div>
-    <div class="agenda-item">
-      <span class="time">1:45</span>
-      <span class="topic">Personal Project: Requirements</span>
-      <span class="duration-badge">15 min</span>
+    <div class="footer-note">
+      Hands-on time: ~130 min (54%) | Instruction/demo: ~90 min (38%) | Breaks: ~20 min (8%)
     </div>
   </div>
 </body>

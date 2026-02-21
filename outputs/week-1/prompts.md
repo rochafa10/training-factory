@@ -1,612 +1,591 @@
-# Week 1 Prompt Library: AI Foundations
+# Week 1 Prompt Library: AI Foundations for DC Operations
 
-This library contains reusable prompts for daily operations tasks introduced in Week 1.
+This library contains 12 ready-to-use prompts for daily distribution center operations. Every prompt uses the **ROLE + CONTEXT + TASK + FORMAT** framework taught in Week 1 and runs on **Bottle Rocket** (go.tesla.com/chat) where Tesla Data is approved.
 
 **Tool Legend:**
-- 🟢 Bottle Rocket - Tesla Data OK
-- 🟡 GitHub Copilot - No Tesla Data
+- Bottle Rocket (go.tesla.com/chat) -- Tesla Data OK
+- All models referenced below (Qwen 3 30B, Grok 4, Grok 4 Mini, Gemini 3 Pro) are available inside Bottle Rocket
+- **Tip:** Try using the **Feynman persona** for training-related prompts — it explains concepts in simple terms
+
+**How to use this library:**
+1. Copy a template into Bottle Rocket
+2. Replace every `[PLACEHOLDER]` with your real data
+3. Select the recommended model
+4. Review the output and iterate if needed
 
 ---
 
 ## Prompts Overview
 
-| # | Prompt Name | Category | Tool | Effectiveness |
-|---|-------------|----------|------|---------------|
-| 1 | Daily Standup Summary | Daily Operations | 🟢 | 9/10 |
-| 2 | Professional Email Draft | Communications | 🟢 | 8/10 |
-| 3 | Meeting Agenda Creator | Planning | 🟢 | 8/10 |
-| 4 | Performance Summary | Daily Operations | 🟢 | 8/10 |
-| 5 | Root Cause Analysis Starter | Analysis | 🟢 | 8/10 |
-| 6 | Shift Handoff Notes | Daily Operations | 🟢 | 9/10 |
+| # | Title | Category | Best Model | Time Saved |
+|---|-------|----------|------------|------------|
+| 1 | Morning Standup Talking Points | Daily Standup / Shift Handoff | Qwen 3 30B | 15 min |
+| 2 | End-of-Shift Handoff Summary | Daily Standup / Shift Handoff | Qwen 3 30B | 12 min |
+| 3 | Overnight Exception Briefing | Daily Standup / Shift Handoff | Grok 4 Mini | 10 min |
+| 4 | Vendor Escalation Email | Email Drafting | Qwen 3 30B | 12 min |
+| 5 | Leadership Status Update Email | Email Drafting | Qwen 3 30B | 15 min |
+| 6 | Team Announcement Email | Email Drafting | Grok 4 Mini | 8 min |
+| 7 | Weekly KPI Summary and Trends | Data Analysis / KPIs | Grok 4 | 20 min |
+| 8 | Overtime Spike Root Cause Analysis | Data Analysis / KPIs | Grok 4 | 25 min |
+| 9 | Safety Meeting Agenda Builder | Meeting Preparation | Qwen 3 30B | 10 min |
+| 10 | 1:1 Supervisor Discussion Prep | Meeting Preparation | Grok 4 Mini | 8 min |
+| 11 | Safety Incident Summary Report | Safety & Incident Reporting | Qwen 3 30B | 20 min |
+| 12 | New Associate Onboarding Checklist | Training & Team Development | Qwen 3 30B | 15 min |
+
+**Total estimated daily time savings (using 3-4 prompts per day): 30-45 minutes**
 
 ---
 
-## Category: Daily Operations
-
-### Prompt 1: Daily Standup Summary
-
-🟢 **Tool:** Bottle Rocket
-📋 **Category:** Daily Operations
-⏱️ **When to use:** Before morning standup to prepare talking points
-⭐ **Effectiveness:** 9/10
-
-#### Template
-
-```
-ROLE: You are an experienced operations manager at a Tesla distribution center.
-
-CONTEXT: I manage the [SHIFT] shift at the [LOCATION] DC. Yesterday we processed [NUMBER] orders with [NUMBER] associates. [HIGHLIGHT OR CHALLENGE from yesterday].
-
-TASK: Create a brief standup summary highlighting yesterday's performance and today's priorities.
-
-FORMAT: Use bullet points. Keep it under 150 words. Include:
-1) Yesterday's key metrics
-2) Key highlight or challenge
-3) Today's focus areas
-```
-
-#### Example (Filled In)
-
-```
-ROLE: You are an experienced operations manager at a Tesla distribution center.
-
-CONTEXT: I manage the morning shift at the Tampa DC. Yesterday we processed 2,847 orders with 42 associates. We had a conveyor issue from 2-4 PM that caused a 2-hour delay in outbound shipments.
-
-TASK: Create a brief standup summary highlighting yesterday's performance and today's priorities.
-
-FORMAT: Use bullet points. Keep it under 150 words. Include:
-1) Yesterday's key metrics
-2) Key highlight or challenge
-3) Today's focus areas
-```
-
-#### Sample Output
-
-> **Yesterday's Performance:**
-> - Processed 2,847 orders with 42 associates (68 orders/associate)
-> - Throughput rate on target until afternoon disruption
->
-> **Key Challenge:**
-> - Conveyor malfunction from 2-4 PM caused 2-hour outbound delay
-> - Maintenance resolved the issue; root cause was belt misalignment
-> - 127 shipments pushed to today's wave
->
-> **Today's Focus Areas:**
-> - Clear backlog of delayed shipments by 10 AM
-> - Monitor conveyor performance during peak hours
-> - Preventive check on all belt systems during lunch break
-> - Safety reminder: keep conveyor areas clear
-
-#### Customization Tips
-
-1. **For different shifts:** Change "morning shift" to your shift
-2. **For different DCs:** Replace "Tampa DC" with your location
-3. **For safety focus:** Add "Include any safety observations" to FORMAT
-4. **For metrics focus:** Add specific KPIs to include
-
-#### Iterations to Try
-
-- "Make it more concise - under 100 words"
-- "Add a section on staffing levels for today"
-- "Include yesterday's safety observations"
-- "Focus more on the recovery plan"
-
-#### Validation
-
-- **Effectiveness score:** 9/10
-- **Clarity:** 9/10 | **Completeness:** 9/10 | **Output Quality:** 9/10
-- **Duplicate check:** ✅ Unique (Week 1 foundation prompt)
+## Category 1: Daily Standup / Shift Handoff
 
 ---
 
-### Prompt 4: Performance Summary
+### Prompt 1: Morning Standup Talking Points
 
-🟢 **Tool:** Bottle Rocket
-📋 **Category:** Daily Operations
-⏱️ **When to use:** End of shift or end of week to summarize metrics
-⭐ **Effectiveness:** 8/10
+**Category:** Daily Standup / Shift Handoff
+**Best Model:** Qwen 3 30B -- strong at structured summaries with the right level of detail
+**Time Saved:** 15 min vs manual (reviewing reports, compiling notes, formatting bullet points)
 
-#### Template
-
-```
-ROLE: You are a supply chain analyst reviewing distribution center performance.
-
-CONTEXT: I need to summarize performance for [TIME PERIOD] at the [LOCATION] DC. Key metrics: Orders processed: [NUMBER], Associates on shift: [NUMBER], Overtime hours: [NUMBER], Missed shipments: [NUMBER]. [Additional context if any].
-
-TASK: Create a performance summary highlighting achievements, areas of concern, and recommendations.
-
-FORMAT:
-- Executive summary (2-3 sentences)
-- Key achievements (bullet points)
-- Areas of concern (bullet points)
-- Recommendations (numbered list)
-- Keep under 250 words total
-```
-
-#### Example (Filled In)
+**Template:**
 
 ```
-ROLE: You are a supply chain analyst reviewing distribution center performance.
+ROLE: You are an experienced distribution center operations manager preparing for a morning standup.
 
-CONTEXT: I need to summarize performance for last week at the Greenville DC. Key metrics: Orders processed: 14,250, Associates on shift: 45 average, Overtime hours: 120, Missed shipments: 8. We had one conveyor issue on Wednesday.
+CONTEXT: I am the AGM at the [LOCATION] DC. I manage [NUMBER] associates across [SHIFTS/AREAS]. Yesterday's numbers: orders processed [NUMBER], headcount on floor [NUMBER], error rate [PERCENTAGE], on-time shipment rate [PERCENTAGE]. [NOTABLE EVENT -- conveyor issue, staffing gap, volume spike, safety observation, etc.].
 
-TASK: Create a performance summary highlighting achievements, areas of concern, and recommendations.
+TASK: Create standup talking points covering yesterday's performance, the key issue and its status, and today's top 3 priorities.
 
-FORMAT:
-- Executive summary (2-3 sentences)
-- Key achievements (bullet points)
-- Areas of concern (bullet points)
-- Recommendations (numbered list)
-- Keep under 250 words total
+FORMAT: Bullet points grouped under three headers -- "Yesterday's Performance," "Key Issue," and "Today's Priorities." Keep it under 150 words. Use plain language a floor supervisor would understand immediately.
 ```
 
-#### Sample Output
+**Example (filled in):**
 
-> **Executive Summary**
-> Greenville DC processed 14,250 orders last week with strong overall throughput. However, overtime ran 15% above budget and Wednesday's equipment issue impacted our on-time shipment rate.
->
-> **Key Achievements:**
-> - Exceeded weekly order target by 5%
-> - Associate productivity at 317 orders/person/week
-> - 99.94% order accuracy maintained
->
-> **Areas of Concern:**
-> - 120 overtime hours (budget: 104 hours)
-> - 8 missed shipments (target: < 5)
-> - Conveyor reliability needs attention
->
-> **Recommendations:**
-> 1. Review staffing levels for peak days to reduce OT
-> 2. Schedule preventive maintenance for conveyor system
-> 3. Investigate root cause of missed shipments
+```
+ROLE: You are an experienced distribution center operations manager preparing for a morning standup.
 
-#### Customization Tips
+CONTEXT: I am the AGM at the Tampa DC. I manage 45 associates across morning and afternoon shifts. Yesterday's numbers: orders processed 2,847, headcount on floor 42, error rate 0.6%, on-time shipment rate 94%. Conveyor 2 jammed from 2-4 PM causing a 2-hour outbound delay and pushing 127 orders to today.
 
-1. **For weekly summaries:** Use "last week" in context
-2. **For daily summaries:** Change time period and reduce word limit
-3. **For leadership:** Add "Format for executive presentation"
-4. **For specific KPIs:** List the exact metrics you want included
+TASK: Create standup talking points covering yesterday's performance, the key issue and its status, and today's top 3 priorities.
 
-#### Iterations to Try
+FORMAT: Bullet points grouped under three headers -- "Yesterday's Performance," "Key Issue," and "Today's Priorities." Keep it under 150 words. Use plain language a floor supervisor would understand immediately.
+```
 
-- "Add comparison to previous week"
-- "Include more detail on the overtime breakdown"
-- "Make this more visual with percentages"
-- "Add a trend analysis section"
-
-#### Validation
-
-- **Effectiveness score:** 8/10
-- **Clarity:** 8/10 | **Completeness:** 9/10 | **Output Quality:** 8/10
-- **Duplicate check:** ✅ Unique
+**Tips:**
+- Paste real numbers from your shift report -- the more specific the data, the more useful the output
+- If you want the AI to flag which metrics are off-target, add your targets: "Our target is 97% on-time and <0.5% error rate"
+- Run this prompt 5 minutes before standup and spend 2 minutes editing rather than 15 minutes writing from scratch
 
 ---
 
-### Prompt 6: Shift Handoff Notes
+### Prompt 2: End-of-Shift Handoff Summary
 
-🟢 **Tool:** Bottle Rocket
-📋 **Category:** Daily Operations
-⏱️ **When to use:** End of shift to communicate with incoming shift
-⭐ **Effectiveness:** 9/10
+**Category:** Daily Standup / Shift Handoff
+**Best Model:** Qwen 3 30B -- handles multi-section structured formats well
+**Time Saved:** 12 min vs manual (writing handoff notes at end of shift)
 
-#### Template
-
-```
-ROLE: You are an operations manager preparing a shift handoff for your replacement.
-
-CONTEXT: I'm ending my [CURRENT SHIFT] shift at the [LOCATION] DC. Today's status: Orders completed: [NUMBER], Orders remaining: [NUMBER], [KEY EVENTS from today]. Equipment status: [EQUIPMENT NOTES]. Staffing issues: [ANY STAFFING NOTES].
-
-TASK: Create a clear shift handoff summary that tells the incoming manager everything they need to know.
-
-FORMAT: Use these sections:
-1) Status at handoff (2-3 bullets)
-2) In-progress items (what's still being worked on)
-3) Issues requiring attention (urgent items)
-4) Notes for incoming shift
-Keep it under 200 words. Be direct and actionable.
-```
-
-#### Example (Filled In)
+**Template:**
 
 ```
-ROLE: You are an operations manager preparing a shift handoff for your replacement.
+ROLE: You are an operations manager writing a shift handoff for the incoming manager.
 
-CONTEXT: I'm ending my morning shift at the Chicago DC. Today's status: Orders completed: 1,450, Orders remaining: 380 in queue. We had a picker no-show and borrowed one from receiving. Conveyor 3 is running slow - maintenance coming at 4 PM. Associate Maria is out tomorrow - need coverage.
+CONTEXT: I am ending my [SHIFT NAME] shift at the [LOCATION] DC. Status at handoff: orders completed [NUMBER], orders remaining in queue [NUMBER], associates still on floor [NUMBER]. Equipment status: [NOTE ANY ISSUES -- e.g., "Conveyor 3 running at reduced speed, maintenance ETA 6 PM"]. Staffing notes: [NOTE ANY CALLOUTS, BORROWED STAFF, TEMP GAPS -- e.g., "Borrowed 1 picker from receiving, returns at 5 PM. Maria out tomorrow, need coverage on Pack Line 2"]. Open items: [ANYTHING UNRESOLVED -- e.g., "Vendor trailer for PO #4521 still not arrived, ETA unknown"].
 
-TASK: Create a clear shift handoff summary that tells the incoming manager everything they need to know.
+TASK: Create a handoff summary so the incoming shift manager knows exactly what to prioritize.
 
-FORMAT: Use these sections:
-1) Status at handoff (2-3 bullets)
-2) In-progress items (what's still being worked on)
-3) Issues requiring attention (urgent items)
-4) Notes for incoming shift
-Keep it under 200 words. Be direct and actionable.
+FORMAT: Four sections -- (1) Status at Handoff, (2) In-Progress Work, (3) Issues Needing Attention (mark urgent items), (4) Notes for Next Shift. Keep under 200 words. Be direct -- no filler.
 ```
 
-#### Sample Output
+**Example (filled in):**
 
-> **Status at Handoff (2:45 PM)**
-> - 1,450 orders completed / 380 remaining in queue
-> - On track for daily target if pace maintained
-> - One picker borrowed from receiving (return by 5 PM)
->
-> **In-Progress Items**
-> - Wave 3 currently processing (estimated completion: 4:30 PM)
-> - Receiving team finishing inbound trailer #2847
->
-> **Issues Requiring Attention**
-> - ⚠️ Conveyor 3 running slow - maintenance scheduled for 4 PM
-> - Maria out tomorrow - need coverage on Pack Line 2
->
-> **Notes for Incoming Shift**
-> - Borrowed picker returns to receiving at 5 PM
-> - Check conveyor 3 after maintenance
-> - Call temp agency for Maria's coverage if needed
+```
+ROLE: You are an operations manager writing a shift handoff for the incoming manager.
 
-#### Customization Tips
+CONTEXT: I am ending my morning shift at the Chicago DC. Status at handoff: orders completed 1,450, orders remaining in queue 380, associates still on floor 38. Equipment status: Conveyor 3 running at reduced speed -- maintenance tech arriving at 4 PM. Staffing notes: Borrowed 1 picker from receiving who returns at 5 PM. Maria called out for tomorrow -- need coverage on Pack Line 2. Open items: Vendor trailer for PO #4521 from XPO still not arrived, was due at 11 AM, no updated ETA yet.
 
-1. **For urgent issues:** Add "Mark urgent items with ⚠️"
-2. **For overnight shifts:** Add "Include safety walk notes"
-3. **For complex handoffs:** Increase word limit to 300
-4. **For multiple areas:** Add section for each area
+TASK: Create a handoff summary so the incoming shift manager knows exactly what to prioritize.
 
-#### Iterations to Try
+FORMAT: Four sections -- (1) Status at Handoff, (2) In-Progress Work, (3) Issues Needing Attention (mark urgent items), (4) Notes for Next Shift. Keep under 200 words. Be direct -- no filler.
+```
 
-- "Add more detail on the equipment issue"
-- "Include safety observations from today"
-- "Make the urgent items more prominent"
-- "Add tomorrow's key priorities"
-
-#### Validation
-
-- **Effectiveness score:** 9/10
-- **Clarity:** 9/10 | **Completeness:** 9/10 | **Output Quality:** 9/10
-- **Duplicate check:** ✅ Unique
+**Tips:**
+- Fill this out in the last 15 minutes of your shift while events are fresh
+- If the incoming manager prefers a different format, just change the FORMAT section
+- Add "Include a 1-sentence overall status: green/yellow/red" if you want a quick health indicator at the top
 
 ---
 
-## Category: Communications
+### Prompt 3: Overnight Exception Briefing
 
-### Prompt 2: Professional Email Draft
+**Category:** Daily Standup / Shift Handoff
+**Best Model:** Grok 4 Mini -- fast turnaround for a quick-scan document
+**Time Saved:** 10 min vs manual (reviewing overnight logs and summarizing for day shift)
 
-🟢 **Tool:** Bottle Rocket
-📋 **Category:** Communications
-⏱️ **When to use:** When drafting emails to vendors, leadership, or team members
-⭐ **Effectiveness:** 8/10
-
-#### Template
+**Template:**
 
 ```
-ROLE: You are a professional operations manager who maintains strong relationships while being direct about issues.
+ROLE: You are a distribution center operations analyst who reviews overnight activity.
 
-CONTEXT: [DESCRIBE THE SITUATION - who, what, when, impact]. The recipient is [RECIPIENT ROLE/RELATIONSHIP]. The tone should be [professional/friendly/urgent/firm].
+CONTEXT: I am the AGM at the [LOCATION] DC arriving for the day shift. Here is what happened overnight: [PASTE OR LIST KEY EVENTS -- e.g., inbound trailers received, orders processed, equipment alerts, staffing issues, safety incidents, any vendor no-shows]. Overnight headcount was [NUMBER]. Normal overnight volume is approximately [NUMBER] orders.
 
-TASK: Draft an email that [SPECIFIC PURPOSE - inform, request, follow up, etc.].
+TASK: Summarize the overnight activity into a briefing I can scan in 60 seconds. Flag anything that is abnormal or needs my immediate attention this morning.
 
-FORMAT:
-- Subject line included
-- [TONE] tone
-- Under [WORD LIMIT] words
-- Include: [SPECIFIC ELEMENTS to include]
-- End with clear next steps
+FORMAT: Two sections -- (1) "Overnight Summary" with 4-5 bullet points covering volume, staffing, equipment, and any incidents, (2) "Needs Your Attention" listing only items that require action this morning. If nothing needs attention, say "No immediate action items." Keep under 120 words.
 ```
 
-#### Example (Filled In)
+**Example (filled in):**
 
 ```
-ROLE: You are a professional operations manager who maintains strong relationships while being direct about issues.
+ROLE: You are a distribution center operations analyst who reviews overnight activity.
 
-CONTEXT: Our vendor ABC Logistics delivered 4 hours late yesterday, causing $2,000 in overtime for my team. This is the second late delivery this month. The recipient is the vendor's account manager, Sarah Chen. The tone should be professional but firm.
+CONTEXT: I am the AGM at the Newburgh DC arriving for the day shift. Here is what happened overnight: 2 inbound trailers received and unloaded (PO #7821, PO #7834), 1,100 orders processed (target was 1,200), Dock Door 5 sensor alarm triggered at 3 AM and was reset by the night lead, 1 associate went home early with a back strain after lifting a heavy parcel incorrectly, no vendor no-shows. Overnight headcount was 18. Normal overnight volume is approximately 1,200 orders.
 
-TASK: Draft an email that addresses the late delivery issue and requests a meeting to discuss improvement.
+TASK: Summarize the overnight activity into a briefing I can scan in 60 seconds. Flag anything that is abnormal or needs my immediate attention this morning.
 
-FORMAT:
-- Subject line included
-- Professional but firm tone
-- Under 200 words
-- Include: specific dates, impact on operations, request for meeting
-- End with clear next steps
+FORMAT: Two sections -- (1) "Overnight Summary" with 4-5 bullet points covering volume, staffing, equipment, and any incidents, (2) "Needs Your Attention" listing only items that require action this morning. If nothing needs attention, say "No immediate action items." Keep under 120 words.
 ```
 
-#### Sample Output
-
-> **Subject: Delivery Performance Discussion Needed - Account #TES-2847**
->
-> Hi Sarah,
->
-> I wanted to follow up on yesterday's delivery (PO #45892) which arrived at 6:15 PM instead of the scheduled 2:00 PM.
->
-> This 4-hour delay required us to hold our evening shift, resulting in approximately $2,000 in unplanned overtime. Combined with the similar delay on January 8th, this impacts our ability to meet our own customer commitments.
->
-> I value our partnership with ABC Logistics and want to find a solution. Could we schedule a 30-minute call this week to discuss:
-> - Root cause of recent delays
-> - Preventive measures going forward
-> - Communication protocol when delays occur
->
-> I'm available Thursday or Friday afternoon. Please let me know what works for you.
->
-> Best regards,
-> [Your name]
-
-#### Customization Tips
-
-1. **For leadership updates:** Change tone to "concise and data-focused"
-2. **For team recognition:** Change tone to "warm and specific"
-3. **For escalations:** Add "Include urgency level"
-4. **For follow-ups:** Add "Reference previous communication"
-
-#### Iterations to Try
-
-- "Make this more concise - under 150 words"
-- "Soften the tone while keeping the message clear"
-- "Add more specific data points"
-- "Make the request more urgent"
-
-#### Validation
-
-- **Effectiveness score:** 8/10
-- **Clarity:** 8/10 | **Completeness:** 8/10 | **Output Quality:** 8/10
-- **Duplicate check:** ✅ Unique
+**Tips:**
+- Ask the night lead to send you bullet points by text or email so you can paste them directly into the prompt
+- If your DC uses a shift log spreadsheet, copy-paste the key rows into the CONTEXT section
+- For Mondays, expand the context to cover the full weekend
 
 ---
 
-## Category: Planning
-
-### Prompt 3: Meeting Agenda Creator
-
-🟢 **Tool:** Bottle Rocket
-📋 **Category:** Planning
-⏱️ **When to use:** Before any meeting to prepare structured agenda
-⭐ **Effectiveness:** 8/10
-
-#### Template
-
-```
-ROLE: You are an efficient operations leader who runs productive meetings.
-
-CONTEXT: I'm preparing for a [MEETING TYPE] with [ATTENDEES]. The meeting is [DURATION] long. Topics to cover: [LIST KEY TOPICS]. Goals: [WHAT WE NEED TO ACCOMPLISH].
-
-TASK: Create a meeting agenda that keeps us on track and achieves our goals.
-
-FORMAT:
-- Include time allocations for each item
-- Mark items that need decisions vs. discussion vs. FYI
-- Total time must equal [DURATION]
-- End with action items section
-```
-
-#### Example (Filled In)
-
-```
-ROLE: You are an efficient operations leader who runs productive meetings.
-
-CONTEXT: I'm preparing for a weekly safety meeting with my supervisors and leads (8 people). The meeting is 30 minutes long. Topics to cover: review last week's incidents, discuss near-miss reports, preview this week's focus area (forklift safety), assign safety observation tasks. Goals: ensure everyone knows this week's safety focus and has clear assignments.
-
-TASK: Create a meeting agenda that keeps us on track and achieves our goals.
-
-FORMAT:
-- Include time allocations for each item
-- Mark items that need decisions vs. discussion vs. FYI
-- Total time must equal 30 minutes
-- End with action items section
-```
-
-#### Sample Output
-
-> **Weekly Safety Meeting Agenda**
-> *Date: [Date] | Duration: 30 minutes | Location: Conference Room A*
->
-> **1. Opening & Review (5 min)** [FYI]
-> - Quick wins from last week
-> - Review any incidents since last meeting
->
-> **2. Near-Miss Report Review (8 min)** [Discussion]
-> - Walk through submitted reports
-> - Identify patterns or recurring issues
->
-> **3. This Week's Focus: Forklift Safety (10 min)** [FYI + Discussion]
-> - Review forklift safety checklist
-> - Discuss high-traffic areas and timing
-> - Q&A from team
->
-> **4. Safety Observation Assignments (5 min)** [Decision]
-> - Assign observation areas to each lead
-> - Set observation deadline
->
-> **5. Wrap-up & Action Items (2 min)**
-> - Recap key takeaways
-> - Confirm next meeting date
->
-> **Action Items Template:**
-> - [ ] [Person]: [Task] by [Date]
-
-#### Customization Tips
-
-1. **For 1:1 meetings:** Remove time allocations, add "discussion topics"
-2. **For longer meetings:** Add breaks every 45-60 minutes
-3. **For decision meetings:** Add "decision required" markers
-4. **For recurring meetings:** Create template to reuse weekly
-
-#### Iterations to Try
-
-- "Add more time for discussion"
-- "Make this for a 15-minute standup instead"
-- "Add pre-meeting preparation tasks"
-- "Include Zoom/Teams call-in details section"
-
-#### Validation
-
-- **Effectiveness score:** 8/10
-- **Clarity:** 8/10 | **Completeness:** 8/10 | **Output Quality:** 8/10
-- **Duplicate check:** ✅ Unique
+## Category 2: Email Drafting
 
 ---
 
-## Category: Analysis
+### Prompt 4: Vendor Escalation Email
 
-### Prompt 5: Root Cause Analysis Starter
+**Category:** Email Drafting
+**Best Model:** Qwen 3 30B -- produces professional tone with the right firmness
+**Time Saved:** 12 min vs manual (drafting, checking tone, revising)
 
-🟢 **Tool:** Bottle Rocket
-📋 **Category:** Analysis
-⏱️ **When to use:** When investigating why something went wrong
-⭐ **Effectiveness:** 8/10
-
-#### Template
+**Template:**
 
 ```
-ROLE: You are a supply chain analyst specializing in root cause analysis for distribution center operations.
+ROLE: You are a professional operations manager who is firm but maintains vendor relationships.
 
-CONTEXT: [DESCRIBE THE PROBLEM - what happened, when, impact]. We had normal [STAFFING/EQUIPMENT/ETC] conditions. [Any other relevant context].
+CONTEXT: Our vendor [VENDOR NAME] has [DESCRIBE THE ISSUE -- e.g., "delivered 4 hours late on the last 2 deliveries this month"]. The impact on our DC: [DESCRIBE IMPACT -- e.g., "$2,000 in unplanned overtime, 127 orders pushed to the next day"]. The recipient is [RECIPIENT NAME AND TITLE] at the vendor. Our account number is [ACCOUNT NUMBER]. My relationship with this vendor is [good/new/strained].
 
-TASK: Help me conduct a 5-whys root cause analysis to identify potential causes and data to investigate.
+TASK: Draft an escalation email that clearly states the problem and its impact, requests a corrective action plan, and proposes a call to discuss.
 
-FORMAT:
-1) Problem statement
-2) 5-whys analysis with at least 3 possible root causes
-3) For each possible cause, suggest data I should pull to validate
-4) Recommended next steps
+FORMAT: Include a subject line. Professional but firm tone. Under 200 words. Structure: (1) specific issue with dates, (2) operational impact, (3) what we need from them, (4) proposed next step. End with a clear call-to-action.
 ```
 
-#### Example (Filled In)
+**Example (filled in):**
 
 ```
-ROLE: You are a supply chain analyst specializing in root cause analysis for distribution center operations.
+ROLE: You are a professional operations manager who is firm but maintains vendor relationships.
 
-CONTEXT: Last week our DC had 47 missed shipments compared to an average of 12. We had normal staffing levels and no major equipment issues that I'm aware of.
+CONTEXT: Our vendor FastFreight Logistics has delivered 4+ hours late on 2 of the last 3 scheduled deliveries this month (January 14 and January 22). The impact on our DC: $3,400 in combined overtime costs, 210 orders delayed across both incidents, and our on-time shipment rate dropped to 91% for the week of January 20. The recipient is Marcus Johnson, Regional Account Manager at FastFreight. Our account number is TES-FL-0847. My relationship with this vendor is generally good but deteriorating due to these issues.
 
-TASK: Help me conduct a 5-whys root cause analysis to identify potential causes and data to investigate.
+TASK: Draft an escalation email that clearly states the problem and its impact, requests a corrective action plan, and proposes a call to discuss.
 
-FORMAT:
-1) Problem statement
-2) 5-whys analysis with at least 3 possible root causes
-3) For each possible cause, suggest data I should pull to validate
-4) Recommended next steps
+FORMAT: Include a subject line. Professional but firm tone. Under 200 words. Structure: (1) specific issue with dates, (2) operational impact, (3) what we need from them, (4) proposed next step. End with a clear call-to-action.
 ```
 
-#### Sample Output
+**Tips:**
+- Always include specific dates, dollar amounts, and order counts -- vague complaints are easy to dismiss
+- If you want a softer tone for a valued partner, change "firm" to "collaborative" in the ROLE
+- After generating, read the email aloud -- if it sounds like something you would say, it is ready to send
 
-> **Problem Statement**
-> Missed shipments increased 292% last week (47 vs. 12 average), without obvious equipment or staffing issues.
->
-> **5-Whys Analysis**
->
-> **Root Cause Path 1: Order Timing**
-> - Why missed? → Orders not picked in time
-> - Why not picked in time? → Late wave release
-> - Why late release? → System delays or changed cutoff times
-> - Why changed? → Possible carrier schedule change
-> - **Root Cause:** Carrier pickup time change not communicated
->
-> **Root Cause Path 2: Inventory**
-> - Why missed? → Items not available to ship
-> - Why not available? → Not in pick location
-> - Why not in location? → Replenishment delays
-> - Why delayed? → Receiving backlog
-> - **Root Cause:** Upstream receiving delays impacting picks
->
-> **Root Cause Path 3: Process**
-> - Why missed? → Orders deprioritized
-> - Why deprioritized? → Competing priorities
-> - Why competing? → Same-day orders added late
-> - Why added late? → Customer escalations
-> - **Root Cause:** Manual priority overrides disrupting flow
->
-> **Data to Pull:**
-> | Hypothesis | Data Needed |
-> |------------|-------------|
-> | Carrier timing | Compare carrier pickup times week-over-week |
-> | Inventory | Replenishment task completion times |
-> | Priority changes | Manual order priority overrides log |
->
-> **Recommended Next Steps:**
-> 1. Pull carrier schedule changes for last week
-> 2. Review receiving completion times by day
-> 3. Check priority override logs
+---
 
-#### Customization Tips
+### Prompt 5: Leadership Status Update Email
 
-1. **For equipment issues:** Add "Include equipment maintenance logs"
-2. **For people issues:** Focus on training, communication, workload
-3. **For systemic issues:** Request multiple weeks of data
-4. **For urgent issues:** Add "Prioritize by most likely cause"
+**Category:** Email Drafting
+**Best Model:** Qwen 3 30B -- good at concise, executive-level writing
+**Time Saved:** 15 min vs manual (structuring an update, getting the right level of detail for leadership)
 
-#### Iterations to Try
+**Template:**
 
-- "Focus more on the inventory hypothesis"
-- "Add a fourth possible root cause related to training"
-- "Create a timeline of events for investigation"
-- "Suggest interview questions for supervisors"
+```
+ROLE: You are a senior operations manager writing a status update for regional leadership.
 
-#### Validation
+CONTEXT: I am the AGM at the [LOCATION] DC reporting on [TIME PERIOD -- e.g., "this week" or "January performance"]. Key data: orders processed [NUMBER], headcount [NUMBER], overtime hours [NUMBER] (budget was [NUMBER]), missed shipments [NUMBER] (target <[NUMBER]), error rate [PERCENTAGE], on-time rate [PERCENTAGE]. [HIGHLIGHT -- one win], [CHALLENGE -- one issue and what you are doing about it]. [OPTIONAL: upcoming risk or request].
 
-- **Effectiveness score:** 8/10
-- **Clarity:** 8/10 | **Completeness:** 9/10 | **Output Quality:** 8/10
-- **Duplicate check:** ✅ Unique
+TASK: Draft a status update email to my regional director that leads with results, briefly explains the challenge, and closes with next steps.
+
+FORMAT: Include a subject line. Concise and data-driven tone -- leadership reads dozens of these. Under 250 words. Structure: (1) headline result in 1 sentence, (2) key metrics in a short table or bullet list, (3) challenge and mitigation in 2-3 sentences, (4) next steps or ask. No fluff.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are a senior operations manager writing a status update for regional leadership.
+
+CONTEXT: I am the AGM at the Tampa DC reporting on the week of January 20-24. Key data: orders processed 14,580, headcount 44 average, overtime hours 138 (budget was 104), missed shipments 9 (target <5), error rate 0.4%, on-time rate 96.2%. Highlight: we cleared a backlog of 400 carryover orders from the prior week by Wednesday with no additional temp labor. Challenge: overtime ran 33% over budget due to a conveyor outage on Tuesday that required manual sortation for 6 hours -- maintenance replaced the drive belt and the system has been stable since. Upcoming risk: February volume forecast is 12% above January, and I am requesting 4 additional temp associates for the first two weeks of February.
+
+TASK: Draft a status update email to my regional director that leads with results, briefly explains the challenge, and closes with next steps.
+
+FORMAT: Include a subject line. Concise and data-driven tone -- leadership reads dozens of these. Under 250 words. Structure: (1) headline result in 1 sentence, (2) key metrics in a short table or bullet list, (3) challenge and mitigation in 2-3 sentences, (4) next steps or ask. No fluff.
+```
+
+**Tips:**
+- Lead with the number your director cares about most -- usually on-time rate or orders processed
+- If you have a specific ask (headcount, budget, equipment), put it in the CONTEXT so the AI weaves it in naturally
+- Try the follow-up "Make it shorter -- under 150 words" if the first draft is too detailed for a quick email
+
+---
+
+### Prompt 6: Team Announcement Email
+
+**Category:** Email Drafting
+**Best Model:** Grok 4 Mini -- fast, handles straightforward communication well
+**Time Saved:** 8 min vs manual (writing, editing for clarity and tone)
+
+**Template:**
+
+```
+ROLE: You are a supportive operations manager communicating with your distribution center team.
+
+CONTEXT: I need to announce [WHAT -- e.g., "a schedule change," "a new safety procedure," "a recognition for the team," "a process update"]. The details: [PROVIDE SPECIFICS -- who is affected, what is changing, when it takes effect, why]. My team is [NUMBER] associates at the [LOCATION] DC. The tone should be [motivating/informational/urgent/appreciative].
+
+TASK: Draft an announcement that is clear, tells people exactly what they need to know, and ends with any action they need to take.
+
+FORMAT: Under 150 words. Use short paragraphs (2-3 sentences max). If there is an action item, put it on its own line in bold. Avoid corporate jargon -- write like you are talking to the team in person.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are a supportive operations manager communicating with your distribution center team.
+
+CONTEXT: I need to announce that our team hit a new weekly record of 15,200 orders processed with zero safety incidents during the week of January 13-17. The details: all 48 associates contributed, our on-time rate was 98.7%, and we did it without any overtime above budget. I want to recognize the whole team and specifically call out the pick team who maintained 99.2% accuracy. My team is 48 associates at the Greenville DC. The tone should be appreciative and energizing.
+
+TASK: Draft an announcement that is clear, tells people exactly what they need to know, and ends with any action they need to take.
+
+FORMAT: Under 150 words. Use short paragraphs (2-3 sentences max). If there is an action item, put it on its own line in bold. Avoid corporate jargon -- write like you are talking to the team in person.
+```
+
+**Tips:**
+- For schedule changes, always include the exact date the change takes effect and who to contact with questions
+- For recognition, name specific people or teams -- generic praise feels empty
+- If the announcement will be printed and posted in the break room, add "Format for a printed flyer" to get a layout-friendly version
+
+---
+
+## Category 3: Data Analysis / KPIs
+
+---
+
+### Prompt 7: Weekly KPI Summary and Trends
+
+**Category:** Data Analysis / KPIs
+**Best Model:** Grok 4 -- strongest at interpreting numbers and spotting patterns across data
+**Time Saved:** 20 min vs manual (pulling data, calculating variances, writing narrative)
+
+**Template:**
+
+```
+ROLE: You are a supply chain performance analyst reviewing distribution center KPIs.
+
+CONTEXT: Here are the weekly KPIs for the [LOCATION] DC for the week of [DATE RANGE]:
+- Orders processed: [NUMBER] (target: [NUMBER])
+- On-time shipment rate: [PERCENTAGE] (target: [PERCENTAGE])
+- Error rate: [PERCENTAGE] (target: [PERCENTAGE])
+- Headcount (avg daily): [NUMBER] (planned: [NUMBER])
+- Overtime hours: [NUMBER] (budget: [NUMBER])
+- Missed shipments: [NUMBER] (target: <[NUMBER])
+- Dock-to-stock cycle time: [NUMBER] hours (target: [NUMBER] hours)
+[OPTIONAL: Add prior week numbers for comparison]
+
+TASK: Analyze these KPIs. Identify which metrics are on target, which are off target, and what trends I should watch. Give me 2-3 actionable recommendations.
+
+FORMAT: Three sections -- (1) "Performance Snapshot" with a simple table showing each metric vs. target and a status of On Target / Watch / Off Target, (2) "Key Observations" with 3-4 bullet points explaining what the numbers mean, (3) "Recommendations" as a numbered list of 2-3 specific actions. Keep under 300 words.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are a supply chain performance analyst reviewing distribution center KPIs.
+
+CONTEXT: Here are the weekly KPIs for the Tampa DC for the week of January 20-24:
+- Orders processed: 14,580 (target: 14,000)
+- On-time shipment rate: 96.2% (target: 97%)
+- Error rate: 0.4% (target: <0.5%)
+- Headcount (avg daily): 44 (planned: 45)
+- Overtime hours: 138 (budget: 104)
+- Missed shipments: 9 (target: <5)
+- Dock-to-stock cycle time: 3.2 hours (target: 2.5 hours)
+Prior week: orders 13,900, on-time 97.8%, OT hours 96, missed shipments 3, cycle time 2.4 hours.
+
+TASK: Analyze these KPIs. Identify which metrics are on target, which are off target, and what trends I should watch. Give me 2-3 actionable recommendations.
+
+FORMAT: Three sections -- (1) "Performance Snapshot" with a simple table showing each metric vs. target and a status of On Target / Watch / Off Target, (2) "Key Observations" with 3-4 bullet points explaining what the numbers mean, (3) "Recommendations" as a numbered list of 2-3 specific actions. Keep under 300 words.
+```
+
+**Tips:**
+- Paste data directly from your Excel or reporting tool -- do not round or clean it up, the AI handles raw numbers fine
+- Adding the prior week's numbers unlocks trend analysis, which is far more valuable than a single-week snapshot
+- Follow up with "Which of these recommendations has the highest impact for the lowest effort?" to prioritize
+
+---
+
+### Prompt 8: Overtime Spike Root Cause Analysis
+
+**Category:** Data Analysis / KPIs
+**Best Model:** Grok 4 -- best at structured analytical reasoning and hypothesis generation
+**Time Saved:** 25 min vs manual (building an analysis framework, identifying factors, structuring a report)
+
+**Template:**
+
+```
+ROLE: You are a supply chain analyst specializing in labor cost analysis for distribution centers.
+
+CONTEXT: At the [LOCATION] DC, overtime hours for [TIME PERIOD] were [ACTUAL NUMBER] against a budget of [BUDGETED NUMBER] -- that is [PERCENTAGE]% over budget. What I know so far: [LIST WHAT YOU KNOW -- e.g., "staffing was at planned levels," "we had a conveyor outage on Tuesday for 6 hours," "volume was 8% above forecast," "2 associates called out on Thursday"]. What I do not know yet: [LIST UNKNOWNS -- e.g., "whether wave planning was optimized," "the breakdown of OT by shift"].
+
+TASK: Conduct a structured root cause analysis. Generate 3 possible root cause hypotheses, tell me what data to pull to validate each one, and recommend immediate actions I can take this week.
+
+FORMAT: (1) Problem statement in 1-2 sentences with the financial impact, (2) three root cause hypotheses each with a "Why" chain (3 levels deep), the data I should pull to confirm or rule it out, and a likelihood rating of High/Medium/Low, (3) "Immediate Actions" as a numbered list of 2-3 steps for this week. Keep under 350 words.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are a supply chain analyst specializing in labor cost analysis for distribution centers.
+
+CONTEXT: At the Tampa DC, overtime hours for the week of January 20-24 were 138 against a budget of 104 -- that is 33% over budget. What I know so far: average headcount was 44 against a plan of 45 (1 vacancy unfilled), we had a conveyor outage on Tuesday from 10 AM-4 PM requiring manual sortation, volume was 4% above forecast at 14,580 orders, and 2 associates called out on Thursday with no replacements available. What I do not know yet: whether wave planning was optimized around the outage, the breakdown of OT by day and shift, and whether temp agency was contacted for Thursday.
+
+TASK: Conduct a structured root cause analysis. Generate 3 possible root cause hypotheses, tell me what data to pull to validate each one, and recommend immediate actions I can take this week.
+
+FORMAT: (1) Problem statement in 1-2 sentences with the financial impact, (2) three root cause hypotheses each with a "Why" chain (3 levels deep), the data I should pull to confirm or rule it out, and a likelihood rating of High/Medium/Low, (3) "Immediate Actions" as a numbered list of 2-3 steps for this week. Keep under 350 words.
+```
+
+**Tips:**
+- Be honest in the "What I do not know yet" section -- this helps the AI focus its analysis on your real gaps
+- After getting the analysis, follow up with "Create a 1-page summary I can present to my regional director" to turn insight into communication
+- If one hypothesis jumps out, follow up with "Dig deeper into hypothesis 2 -- give me 5 specific questions to ask my supervisors"
+
+---
+
+## Category 4: Meeting Preparation
+
+---
+
+### Prompt 9: Safety Meeting Agenda Builder
+
+**Category:** Meeting Preparation
+**Best Model:** Qwen 3 30B -- good at structured, time-boxed agendas
+**Time Saved:** 10 min vs manual (building agenda, allocating time, thinking through flow)
+
+**Template:**
+
+```
+ROLE: You are an operations safety leader who runs focused, efficient safety meetings.
+
+CONTEXT: I am preparing for a [FREQUENCY -- weekly/monthly] safety meeting at the [LOCATION] DC with [ATTENDEES -- e.g., "8 supervisors and leads"]. Duration: [NUMBER] minutes. Topics to cover: [LIST TOPICS -- e.g., "review last week's incidents, discuss near-miss reports, preview this week's safety focus area (forklift safety), assign safety observation tasks"]. Goals: [WHAT WE NEED TO ACCOMPLISH -- e.g., "ensure everyone knows this week's focus and has clear observation assignments"].
+
+TASK: Build a meeting agenda with time allocations that keeps discussion productive and ends with clear action items.
+
+FORMAT: Table format with columns for Time, Topic, Type (FYI / Discussion / Decision), and Owner. Time allocations must add up to [NUMBER] minutes exactly. End with a section for action items. Keep the agenda to one page.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are an operations safety leader who runs focused, efficient safety meetings.
+
+CONTEXT: I am preparing for a weekly safety meeting at the Tampa DC with 8 supervisors and leads. Duration: 30 minutes. Topics to cover: review last week's near-miss report (forklift near-miss in aisle 7), discuss corrective action status for the back strain incident from January 22, preview this week's focus area (proper lifting technique), assign safety observation tasks for the week. Goals: close out open corrective actions, ensure everyone knows this week's safety focus, and each lead has a specific observation assignment.
+
+TASK: Build a meeting agenda with time allocations that keeps discussion productive and ends with clear action items.
+
+FORMAT: Table format with columns for Time, Topic, Type (FYI / Discussion / Decision), and Owner. Time allocations must add up to 30 minutes exactly. End with a section for action items. Keep the agenda to one page.
+```
+
+**Tips:**
+- Change the safety focus area each week to keep meetings fresh -- ask the AI "Suggest 4 weekly safety topics for a DC in February" if you need ideas
+- If your meetings run long, add "Include a 'parking lot' section for topics to defer" to the FORMAT
+- Re-use this prompt weekly by updating only the CONTEXT section with new topics and incidents
+
+---
+
+### Prompt 10: 1:1 Supervisor Discussion Prep
+
+**Category:** Meeting Preparation
+**Best Model:** Grok 4 Mini -- fast for a lightweight prep task
+**Time Saved:** 8 min vs manual (thinking through talking points, structuring the conversation)
+
+**Template:**
+
+```
+ROLE: You are a people-focused operations leader preparing for a 1:1 with a direct report.
+
+CONTEXT: I have a [DURATION]-minute 1:1 with [PERSON'S ROLE -- e.g., "my shift supervisor"]. Things going well: [LIST POSITIVES -- e.g., "their team's pick accuracy is up 2% this month," "they handled the Monday volume spike well"]. Things to address: [LIST DEVELOPMENT AREAS OR ISSUES -- e.g., "they have been late to 2 standups this week," "their team's overtime is 20% over budget"]. My goal for this conversation: [WHAT OUTCOME DO YOU WANT -- e.g., "acknowledge their wins, understand why standups were missed, agree on an improvement plan"].
+
+TASK: Create discussion talking points that start with recognition, address the issue constructively, and end with a clear agreement.
+
+FORMAT: Three sections -- (1) "Open With" (recognition points, 2-3 bullets), (2) "Discuss" (the issue, framed as curiosity not accusation, 2-3 bullets with suggested phrasing), (3) "Close With" (agreed next steps, 1-2 bullets). Keep under 150 words total.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are a people-focused operations leader preparing for a 1:1 with a direct report.
+
+CONTEXT: I have a 20-minute 1:1 with my afternoon shift supervisor, James. Things going well: his team's pick accuracy improved from 98.1% to 99.3% this month, and he handled a surprise volume spike on Monday by reorganizing his pick zones without being asked. Things to address: he has been late to the morning handoff meeting 3 times in the last 2 weeks, and his supervisor peers have noticed. My goal for this conversation: recognize his strong performance, understand what is causing the lateness, and agree on a plan so it does not continue.
+
+TASK: Create discussion talking points that start with recognition, address the issue constructively, and end with a clear agreement.
+
+FORMAT: Three sections -- (1) "Open With" (recognition points, 2-3 bullets), (2) "Discuss" (the issue, framed as curiosity not accusation, 2-3 bullets with suggested phrasing), (3) "Close With" (agreed next steps, 1-2 bullets). Keep under 150 words total.
+```
+
+**Tips:**
+- The AI will frame development feedback constructively, but always adjust the language to match how you actually talk
+- For performance improvement conversations, add "Include a question that invites their perspective on the situation" to avoid sounding one-directional
+- Never read AI-generated talking points word-for-word in a 1:1 -- use them as a framework, then have a real conversation
+
+---
+
+## Category 5: Safety & Incident Reporting
+
+---
+
+### Prompt 11: Safety Incident Summary Report
+
+**Category:** Safety & Incident Reporting
+**Best Model:** Qwen 3 30B -- thorough, accurate structure for compliance-sensitive documents
+**Time Saved:** 20 min vs manual (structuring the report, ensuring all required fields, writing clearly)
+
+**Template:**
+
+```
+ROLE: You are a safety-focused operations manager writing an incident summary for documentation and follow-up.
+
+CONTEXT: A safety incident occurred at the [LOCATION] DC on [DATE] at approximately [TIME]. What happened: [DESCRIBE THE INCIDENT -- e.g., "an associate strained their lower back while lifting a 45-lb parcel from a low shelf without using proper technique"]. People involved: [NAMES/ROLES -- or "associate" if you prefer not to name]. Immediate actions taken: [WHAT WAS DONE RIGHT AWAY -- e.g., "associate reported to first aid, ice applied, supervisor completed witness interview, associate sent home for the day"]. Severity: [minor injury / near-miss / first aid only / recordable]. Equipment or area involved: [DETAILS].
+
+TASK: Write a structured incident summary that documents what happened, the immediate response, the root cause (preliminary), and corrective actions to prevent recurrence.
+
+FORMAT: Five sections -- (1) Incident Overview (who, what, when, where in 3-4 sentences), (2) Immediate Response (numbered list of actions taken), (3) Preliminary Root Cause (2-3 contributing factors), (4) Corrective Actions (numbered list with owner and due date placeholders), (5) Follow-Up Required (any open items). Keep factual and objective -- no blame language. Under 300 words.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are a safety-focused operations manager writing an incident summary for documentation and follow-up.
+
+CONTEXT: A safety incident occurred at the Tampa DC on January 22, 2026 at approximately 2:15 PM. What happened: an associate strained their lower back while lifting a 45-lb parcel from the lowest shelf in pick zone C without bending at the knees. The associate had completed ergonomic training 3 months ago but reported they were rushing to meet wave cutoff. People involved: Associate (Pick Team, afternoon shift) and Supervisor Davis who responded. Immediate actions taken: associate self-reported to supervisor, first aid administered (ice pack), supervisor completed witness statement, associate sent home for the remainder of the shift and told to see their doctor if pain persists. Severity: first aid / recordable TBD pending follow-up. Equipment or area involved: Pick Zone C, lowest shelf level (18 inches from floor), parcel weighed 45 lbs.
+
+TASK: Write a structured incident summary that documents what happened, the immediate response, the root cause (preliminary), and corrective actions to prevent recurrence.
+
+FORMAT: Five sections -- (1) Incident Overview (who, what, when, where in 3-4 sentences), (2) Immediate Response (numbered list of actions taken), (3) Preliminary Root Cause (2-3 contributing factors), (4) Corrective Actions (numbered list with owner and due date placeholders), (5) Follow-Up Required (any open items). Keep factual and objective -- no blame language. Under 300 words.
+```
+
+**Tips:**
+- Always write incident reports the same day while details are fresh -- this prompt helps you structure quickly so you can focus on accuracy
+- The AI draft is a starting point -- verify every fact against witness statements and your own observations before submitting
+- For near-misses (no injury), change "Severity" to "near-miss" and the AI will adjust the tone and corrective actions accordingly
+- Never include associate names in the prompt if your DC policy requires anonymized reporting -- use roles instead
+
+---
+
+## Category 6: Training & Team Development
+
+---
+
+### Prompt 12: New Associate Onboarding Checklist
+
+**Category:** Training & Team Development
+**Best Model:** Qwen 3 30B -- thorough at comprehensive checklists with nothing missed
+**Time Saved:** 15 min vs manual (remembering all onboarding steps, formatting, customizing per role)
+
+**Template:**
+
+```
+ROLE: You are an experienced DC operations manager who has onboarded dozens of new associates.
+
+CONTEXT: I am onboarding a new [ROLE -- e.g., "picker," "packer," "receiver," "dock associate"] at the [LOCATION] DC. They start on [DATE]. Their shift is [SHIFT]. Their direct supervisor is [SUPERVISOR NAME]. Our DC has [NUMBER] associates total. Key areas/equipment they will use: [LIST -- e.g., "pick zones A-D, RF scanner, pallet jack, conveyor system"]. Any special notes: [e.g., "this is a rehire," "they have DC experience at another company," "they need forklift certification within 30 days"].
+
+TASK: Create a structured onboarding checklist covering their first day, first week, and first 30 days. Include safety training, systems access, buddy assignment, and performance milestones.
+
+FORMAT: Three sections -- "Day 1," "Week 1 (Days 2-5)," and "Days 6-30." Each section as a checklist with checkboxes. Include who is responsible for each item (AGM, supervisor, HR, IT, safety lead). Keep under 350 words.
+```
+
+**Example (filled in):**
+
+```
+ROLE: You are an experienced DC operations manager who has onboarded dozens of new associates.
+
+CONTEXT: I am onboarding a new picker at the Scarborough DC. They start on February 3, 2026. Their shift is morning (6 AM - 2:30 PM). Their direct supervisor is Supervisor Patel. Our DC has 42 associates total. Key areas/equipment they will use: pick zones A-D, RF scanner, electric pallet jack, and the conveyor sortation system. Special notes: they have 2 years of warehouse experience at Amazon but no Tesla-specific experience, and they need to be forklift certified within their first 30 days per our site requirement.
+
+TASK: Create a structured onboarding checklist covering their first day, first week, and first 30 days. Include safety training, systems access, buddy assignment, and performance milestones.
+
+FORMAT: Three sections -- "Day 1," "Week 1 (Days 2-5)," and "Days 6-30." Each section as a checklist with checkboxes. Include who is responsible for each item (AGM, supervisor, HR, IT, safety lead). Keep under 350 words.
+```
+
+**Tips:**
+- Save the AI-generated checklist as a template and reuse it -- just update the CONTEXT for each new hire
+- Ask the follow-up "Add a section for 60-day and 90-day milestones" if your site does extended onboarding reviews
+- If your DC has role-specific SOPs, add "Include a line item for reviewing the [SOP NAME] document" to the TASK
+- For seasonal temp onboarding where you hire 10+ at once, change the prompt to "Create a group onboarding schedule for [NUMBER] new associates starting the same day"
 
 ---
 
 ## Quick Reference Card
 
-| Task | Prompt Start | Tool | Time Savings |
-|------|-------------|------|--------------|
-| Standup prep | "ROLE: You are an experienced operations manager..." | 🟢 | ~13 min |
-| Email drafting | "ROLE: You are a professional operations manager..." | 🟢 | ~10 min |
-| Meeting agenda | "ROLE: You are an efficient operations leader..." | 🟢 | ~8 min |
-| Performance summary | "ROLE: You are a supply chain analyst..." | 🟢 | ~15 min |
-| Root cause analysis | "ROLE: You are a supply chain analyst specializing..." | 🟢 | ~20 min |
-| Shift handoff | "ROLE: You are an operations manager preparing..." | 🟢 | ~10 min |
+Copy this card and keep it at your desk. Pick the prompt that matches your task and go to go.tesla.com/chat.
+
+| Task | Prompt # | Best Model | Time Saved |
+|------|----------|------------|------------|
+| Prepare for morning standup | 1 | Qwen 3 30B | 15 min |
+| Write shift handoff notes | 2 | Qwen 3 30B | 12 min |
+| Summarize overnight activity | 3 | Grok 4 Mini | 10 min |
+| Email a vendor about a problem | 4 | Qwen 3 30B | 12 min |
+| Send leadership a status update | 5 | Qwen 3 30B | 15 min |
+| Announce something to the team | 6 | Grok 4 Mini | 8 min |
+| Analyze weekly KPIs | 7 | Grok 4 | 20 min |
+| Investigate an overtime spike | 8 | Grok 4 | 25 min |
+| Build a safety meeting agenda | 9 | Qwen 3 30B | 10 min |
+| Prepare for a 1:1 conversation | 10 | Grok 4 Mini | 8 min |
+| Document a safety incident | 11 | Qwen 3 30B | 20 min |
+| Create onboarding checklist | 12 | Qwen 3 30B | 15 min |
+
+---
+
+## Model Selection Guide
+
+Not sure which model to pick? Use this rule of thumb:
+
+| Situation | Model | Why |
+|-----------|-------|-----|
+| Analyzing numbers, finding patterns, root cause work | **Grok 4** | Strongest analytical reasoning for data-heavy tasks |
+| Writing emails, reports, structured documents | **Qwen 3 30B** | Best balance of quality, tone, and structure |
+| Quick answers, simple drafts, checklists | **Grok 4 Mini** | Fastest response time for straightforward tasks |
+| Not sure | **Qwen 3 30B** | Reliable default for most operations work |
+
+All three models are available inside Bottle Rocket at go.tesla.com/chat. Select the model from the dropdown before submitting your prompt.
 
 ---
 
 ## Tips for All Prompts
 
-1. **Be specific** - Vague prompts = vague results
-2. **Include context** - The more AI knows about your situation, the better it helps
-3. **Specify format** - Tell it exactly how you want the output structured
-4. **Iterate** - First output is rarely perfect; use follow-up prompts to refine
-5. **Verify** - Always check AI output before sending or using
+1. **Be specific** -- "Our error rate was 0.6% against a 0.5% target" beats "our error rate was high"
+2. **Include real numbers** -- The AI cannot look up your data, so paste it in. Bottle Rocket is approved for Tesla data.
+3. **Specify format** -- If you do not tell the AI how to structure the output, it will guess. Tell it exactly what you want.
+4. **Iterate** -- Your first output is a draft, not a final product. Follow up with "Make it shorter" or "Add a section on X."
+5. **Verify before using** -- AI can sound confident while being wrong. Always check facts, numbers, and names before sending.
+6. **Save your best prompts** -- When a prompt works well, save it in a document so you can reuse it tomorrow without rewriting.
 
 ---
 
-## Prompt Validation Log
+## Iteration Cheat Sheet
 
-| Prompt | Clarity | Completeness | Output Quality | Average | Pass? |
-|--------|---------|--------------|----------------|---------|-------|
-| Daily Standup Summary | 9/10 | 9/10 | 9/10 | 9/10 | ✅ |
-| Professional Email Draft | 8/10 | 8/10 | 8/10 | 8/10 | ✅ |
-| Meeting Agenda Creator | 8/10 | 8/10 | 8/10 | 8/10 | ✅ |
-| Performance Summary | 8/10 | 9/10 | 8/10 | 8/10 | ✅ |
-| Root Cause Analysis | 8/10 | 9/10 | 8/10 | 8/10 | ✅ |
-| Shift Handoff Notes | 9/10 | 9/10 | 9/10 | 9/10 | ✅ |
+When the output is not quite right, use these follow-up phrases:
 
----
-
-## Cross-Week Prompt Inventory
-
-| Prompt Name | This Week | Previous Weeks | Status |
-|-------------|-----------|----------------|--------|
-| Daily Standup Summary | ✅ New | N/A | Foundation prompt |
-| Professional Email Draft | ✅ New | N/A | Foundation prompt |
-| Meeting Agenda Creator | ✅ New | N/A | Foundation prompt |
-| Performance Summary | ✅ New | N/A | Foundation prompt |
-| Root Cause Analysis Starter | ✅ New | N/A | Foundation prompt |
-| Shift Handoff Notes | ✅ New | N/A | Foundation prompt |
-
----
-
-## Quality Checklist
-
-| Check | Requirement | Status |
-|-------|-------------|--------|
-| Prompt count | 5+ prompts per week | ✅ 6 prompts |
-| Formula adherence | All follow ROLE+CONTEXT+TASK+FORMAT | ✅ |
-| Examples | All have filled-in examples | ✅ |
-| Testing | All scored 7+ effectiveness | ✅ (avg 8.3) |
-| Deduplication | No duplicates from previous weeks | ✅ (Week 1) |
-| Tool assignment | Correct tool per prompt | ✅ All Bottle Rocket |
-| Validation log | Complete for all prompts | ✅ |
+| Problem | Follow-Up to Type |
+|---------|-------------------|
+| Too long | "Make this more concise -- under [N] words" |
+| Too formal | "Rewrite in a more conversational tone" |
+| Too vague | "Add more specific details about [topic]" |
+| Wrong structure | "Reorganize this as [bullet points / table / numbered list]" |
+| Missing something | "Add a section on [topic]" |
+| Too soft | "Make the tone more direct and action-oriented" |
+| Need to share up | "Reformat this for an executive audience" |
+| Want options | "Give me 3 alternative versions of the opening paragraph" |
 
 ---
 
 *Prompt Library created for Week 1: AI Foundations & Policy Compliance*
 *Primary Tool: Bottle Rocket (go.tesla.com/chat)*
+*All prompts use the ROLE + CONTEXT + TASK + FORMAT framework*

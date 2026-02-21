@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 17 - Exercise 3</title>
+  <title>Slide 17 - Choosing Your AI Model</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -28,174 +28,114 @@
       display: flex;
       flex-direction: column;
     }
-    .exercise-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #e82127;
-      padding: 8px 16px;
-      border-radius: 6px;
-      margin-bottom: 16px;
-      width: fit-content;
-    }
-    .exercise-badge span {
-      font-size: 14px;
-      font-weight: bold;
-    }
     h1 {
       font-size: 28px;
       font-weight: bold;
       margin-bottom: 16px;
     }
-    .subtitle {
-      font-size: 14px;
-      color: #a0a0a0;
-      margin-bottom: 24px;
+    .model-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+      flex: 1;
     }
-    .time-badge {
-      position: absolute;
-      top: 32px;
-      right: 40px;
-      background: #2a2a2a;
-      padding: 12px 20px;
+    .model-card {
+      background: #f5f5f5;
       border-radius: 8px;
+      padding: 12px;
       text-align: center;
-    }
-    .time-badge .time {
-      font-size: 28px;
-      font-weight: bold;
-      color: #e82127;
-    }
-    .time-badge .label {
-      font-size: 10px;
-      color: #a0a0a0;
-    }
-    .main-content {
       display: flex;
-      gap: 32px;
-      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
     }
-    .left-col, .right-col {
-      flex: 1;
+    .model-card.default {
+      border: 2px solid #cc0000;
     }
-    h2 {
-      font-size: 14px;
-      color: #e82127;
-      margin-bottom: 12px;
+    .model-name {
+      font-size: 13px;
+      font-weight: bold;
+      color: #000000;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    .default-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
-    th {
-      text-align: left;
+    .speed-bar {
       font-size: 11px;
       font-weight: bold;
-      color: #a0a0a0;
-      padding: 8px 10px;
-      border-bottom: 1px solid #2a2a2a;
     }
-    td {
-      font-size: 12px;
-      padding: 8px 10px;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    .tip-card {
-      background: #1a1a1a;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-    .tip-card p {
-      font-size: 12px;
-      line-height: 1.5;
-      color: #a0a0a0;
-    }
-    .sharing-box {
-      background: #2a2a2a;
-      border-radius: 8px;
-      padding: 16px;
-    }
-    .sharing-box h3 {
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-    .sharing-box ul {
-      list-style: none;
-    }
-    .sharing-box li {
-      font-size: 12px;
-      margin-bottom: 6px;
-      color: #a0a0a0;
+    .speed-fast { color: #4ade80; }
+    .speed-medium { color: #facc15; }
+    .speed-medfst { color: #4ade80; }
+    .speed-slow { color: #f87171; }
+    .model-desc {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.3;
     }
     .footer {
-      font-size: 11px;
-      color: #666;
-      margin-top: 12px;
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <div class="exercise-badge">
-      <span>EXERCISE 3</span>
-    </div>
-    <h1>Iterate &amp; Improve</h1>
-    <p class="subtitle">Your first output is a starting point, not the final product.</p>
-    <div class="time-badge">
-      <div class="time">15</div>
-      <div class="label">MINUTES</div>
-    </div>
-    <div class="main-content">
-      <div class="left-col">
-        <h2>Iteration Follow-ups</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Problem</th>
-              <th>Try This</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Too long</td>
-              <td>"Make this under 100 words"</td>
-            </tr>
-            <tr>
-              <td>Too formal</td>
-              <td>"More conversational tone"</td>
-            </tr>
-            <tr>
-              <td>Missing details</td>
-              <td>"Add a section on [topic]"</td>
-            </tr>
-            <tr>
-              <td>Wrong format</td>
-              <td>"Convert to bullet points"</td>
-            </tr>
-            <tr>
-              <td>Too generic</td>
-              <td>"Make it specific to DC ops"</td>
-            </tr>
-          </tbody>
-        </table>
+    <h1>Choosing Your AI Model</h1>
+    <div class="model-grid">
+      <div class="model-card default">
+        <span class="default-label">Default</span>
+        <span class="model-name">Qwen 3 30B</span>
+        <span class="speed-bar speed-fast">Fast</span>
+        <span class="model-desc">Daily tasks, quick answers</span>
       </div>
-      <div class="right-col">
-        <div class="tip-card">
-          <p><strong>Key Insight:</strong> Don't rewrite your whole prompt. Just tell the AI what to fix in a follow-up message.</p>
-        </div>
-        <div class="sharing-box">
-          <h3>Sharing (Last 5 min)</h3>
-          <ul>
-            <li>What prompt did you iterate on?</li>
-            <li>What follow-up did you use?</li>
-            <li>How did the output improve?</li>
-          </ul>
-        </div>
+      <div class="model-card">
+        <span class="model-name">Qwen 3 235B</span>
+        <span class="speed-bar speed-medium">Medium</span>
+        <span class="model-desc">Complex analysis, reasoning</span>
+      </div>
+      <div class="model-card">
+        <span class="model-name">OpenAI GPT OSS 120B</span>
+        <span class="speed-bar speed-medium">Medium</span>
+        <span class="model-desc">Writing, general tasks</span>
+      </div>
+      <div class="model-card">
+        <span class="model-name">Grok 4</span>
+        <span class="speed-bar speed-medium">Medium</span>
+        <span class="model-desc">Deep research, nuanced analysis</span>
+      </div>
+      <div class="model-card">
+        <span class="model-name">Grok 4 Mini</span>
+        <span class="speed-bar speed-fast">Fast</span>
+        <span class="model-desc">Quick reasoning, fast iteration</span>
+      </div>
+      <div class="model-card">
+        <span class="model-name">Grok 4 Mini (High)</span>
+        <span class="speed-bar speed-medfst">Med-Fast</span>
+        <span class="model-desc">Balanced Grok quality/speed</span>
+      </div>
+      <div class="model-card">
+        <span class="model-name">Gemini 3 Pro</span>
+        <span class="speed-bar speed-medium">Medium</span>
+        <span class="model-desc">Multimodal, image analysis</span>
+      </div>
+      <div class="model-card">
+        <span class="model-name">Gemini 2.5 Pro</span>
+        <span class="speed-bar speed-slow">Slower</span>
+        <span class="model-desc">Long docs, complex tasks</span>
       </div>
     </div>
-    <p class="footer">Practice + Sharing | Hands-On</p>
+    <div class="footer">Start with the default (Qwen 3 30B). Switch models for deeper analysis.</div>
   </div>
 </body>
 </html>

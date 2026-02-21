@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Tier 1: Sensitive Data</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 960px;
+    height: 540px;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+  .accent-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background: #f87171;
+  }
+  .container {
+    padding: 24px 32px 20px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    margin-bottom: 14px;
+  }
+  .tier-badge {
+    display: inline-block;
+    background: #f87171;
+    color: #000000;
+    padding: 5px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-size: 12px;
+    color: #666666;
+  }
+  .columns {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    min-height: 0;
+  }
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .col-header {
+    background: #e0e0e0;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f87171;
+    border-radius: 4px 4px 0 0;
+  }
+  .col-content {
+    background: #f5f5f5;
+    border-radius: 0 0 8px 8px;
+    padding: 12px;
+    flex: 1;
+  }
+  .category-name {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 2px;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .category-name:first-child {
+    margin-top: 0;
+  }
+  .category-items {
+    font-size: 10px;
+    color: #666666;
+    line-height: 1.4;
+  }
+  .footer {
+    font-size: 10px;
+    color: #999999;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <div class="tier-badge">Tier 1 — Sensitive</div>
+      <div class="title">Tier 1: Sensitive Data</div>
+      <div class="subtitle">Highest risk — never share outside Tesla secure systems</div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="col-header">Business Data</div>
+        <div class="col-content">
+          <div class="category-name">Core Information Assets</div>
+          <div class="category-items">· Trade secrets, · Source code, · Autopilot/CV code, · CAD/3D design files, · Code name projects, · M&amp;A information</div>
+
+          <div class="category-name">Non-Public Financial Data</div>
+          <div class="category-items">· Financial statements not yet publicly reported</div>
+
+          <div class="category-name">Security Business Data</div>
+          <div class="category-items">· Service secrets, · Passwords, · Encryption keys, · Device fingerprinting</div>
+
+          <div class="category-name">Energy Data</div>
+          <div class="category-items">· Tesla IP &amp; trade secrets, · Site controller &amp; Megapack SW/FW, · RTAC proprietary program</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="col-header">Personal Data</div>
+        <div class="col-content">
+          <div class="category-name">Location &amp; Government IDs</div>
+          <div class="category-items">· GPS coordinates, · SSN, · Tax ID, · Passport, · Driver's license</div>
+
+          <div class="category-name">Health &amp; Biometric</div>
+          <div class="category-items">· Employee health info, · Facial recognition, · Voice profiles, · Fingerprints</div>
+
+          <div class="category-name">Financial &amp; Transactions</div>
+          <div class="category-items">· Credit card numbers, · Bank/routing numbers, · Transaction details</div>
+
+          <div class="category-name">Behavioral &amp; Demographic</div>
+          <div class="category-items">· Customer behavior profiles, · Race, · Ethnicity, · Religion, · Sexual orientation, · Disability</div>
+
+          <div class="category-name">Background Check Data</div>
+          <div class="category-items">· Credit/background reports, · Criminal history</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Source: Tesla Data Classification &amp; Handling Policy</div>
+  </div>
+</body>
+</html>

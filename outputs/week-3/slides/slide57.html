@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 57 - Weekly Skill Checklist</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      flex: 1;
+    }
+    .checklist-column {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .column-header {
+      font-size: 13px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #cc0000;
+    }
+    .skill-item {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .skill-item::before {
+      content: "\2610";
+      position: absolute;
+      left: 0;
+      font-size: 14px;
+      color: #666666;
+    }
+    .skill-item code {
+      background: #e0e0e0;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 10px;
+    }
+    .footer {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Weekly Skill Checklist</h1>
+    <div class="checklist-grid">
+      <div class="checklist-column">
+        <div class="column-header">Voice &amp; Chat</div>
+        <div class="skill-item">Use @workspace to search project files</div>
+        <div class="skill-item">Use @terminal to execute commands</div>
+        <div class="skill-item">Use @vscode to control the editor</div>
+        <div class="skill-item">Activate voice chat with <code>Ctrl+U</code></div>
+        <div class="skill-item">Dictate content with <code>Ctrl+Alt+V</code></div>
+      </div>
+      <div class="checklist-column">
+        <div class="column-header">Agent Mode</div>
+        <div class="skill-item">Switch to Agent Mode in Copilot Chat</div>
+        <div class="skill-item">Write goal-oriented prompts</div>
+        <div class="skill-item">Recognize the ReAct pattern</div>
+        <div class="skill-item">Review and approve agent plans</div>
+        <div class="skill-item">Know when to intervene vs continue</div>
+      </div>
+      <div class="checklist-column">
+        <div class="column-header">Review &amp; Verify</div>
+        <div class="skill-item">Open Source Control (<code>Ctrl+Shift+G</code>)</div>
+        <div class="skill-item">Read a diff (green/red)</div>
+        <div class="skill-item">Stage (accept) or Discard (reject)</div>
+        <div class="skill-item">Identify hallucinations</div>
+        <div class="skill-item">Apply "trust but verify"</div>
+      </div>
+    </div>
+    <div class="footer"><strong>Check off each skill as you master it.</strong> All should be checked by end of Week 3.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24002 @@
+# Order Monitor Export - Newburgh DC 3694
+
+## Order 1
+- Created At: 01/30/2026  4:59:56 PM
+- Part: 1632802-99-F
+- Description: ASM, MX AP4 RVM UPPER CVR TRIPLE CAM
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-FL-Wesley Chapel-4980 Eagleston Blvd
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE63NF333593
+- Carrier: 
+- Is Milk Run: false
+
+## Order 2
+- Created At: 01/30/2026  4:53:02 PM
+- Part: 1137375-01-K
+- Description: ASY,HVBAT,75kWh,AWD,KELVIN,1PH,M3,RMN
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Greenville
+- Ship By Date: 02/12/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9KF442052
+- Carrier: 
+- Is Milk Run: true
+
+## Order 3
+- Created At: 01/30/2026  4:52:10 PM
+- Part: 1234422-01-B
+- Description: ASY,HVBAT,E3,AWD,1PH,M3Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: NA-US-PA-Devon
+- Ship By Date: 02/12/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE2MF187372
+- Carrier: 
+- Is Milk Run: true
+
+## Order 4
+- Created At: 01/30/2026  4:48:37 PM
+- Part: 1107679-01-H
+- Description: ASY,HV BATT,100KWH,RMN,SX
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: CA-ON-Hamilton-999 Upper Wentworth St
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCBE41MF324191
+- Carrier: 
+- Is Milk Run: false
+
+## Order 5
+- Created At: 01/30/2026  4:47:08 PM
+- Part: 2083747-00-C
+- Description: ASY,HVBAT,E3,40P,RWD,1PH,M3Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-PROD
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: CA-QC-Saint-Bruno-de-Montarville-1155 Boulevard des Promenades
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8MF988786
+- Carrier: 
+- Is Milk Run: false
+
+## Order 6
+- Created At: 01/30/2026  4:44:59 PM
+- Part: 1234422-01-B
+- Description: ASY,HVBAT,E3,AWD,1PH,M3Y
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 01/30/2026
+- Pick Type: Pallet
+- Pick Location: NB405-149-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4MF979883
+- Carrier: 
+- Is Milk Run: true
+
+## Order 7
+- Created At: 01/30/2026  4:32:39 PM
+- Part: 3488226-00-A
+- Description: WHEEL, 21X9.5J ET40, UBERTURBINE
+- Status: Pick Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB406-178-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:57:41 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF0NF550961
+- Carrier: 
+- Is Milk Run: true
+
+## Order 8
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 2097851-00-A
+- Description: Tesla Projection Lights, FR, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: David  Seif
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 9
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1977818-00-A
+- Description: TRAY, CONSOLE, BUNDLE, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: David  Seif
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 10
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Nicholas  Boren
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 11
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1634443-01-A
+- Description: BOM MODULE, MY, MUD FLAP PACKAGE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Garrett  Lima
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 12
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Guy  Goodrich
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 13
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 2097851-00-A
+- Description: Tesla Projection Lights, FR, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jamal  Gatson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 14
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Alex  amirkhanian
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 15
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: David  Alley
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 16
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Wesley  Foster
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 17
+- Created At: 01/30/2026  4:32:18 PM
+- Part: 1977818-00-A
+- Description: TRAY, CONSOLE, BUNDLE, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Wesley  Foster
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 18
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 2025108-01-A
+- Description: Tesla Projection Lights, FR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: CHAO  LIU
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 19
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1937037-55-C
+- Description: FLOOR MAT KIT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jim  Sampson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 20
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1989037-00-B
+- Description: Bed Cargo Divider 2.0
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Randall  Kreutzer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 21
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1970873-00-B
+- Description: Underseat Storage Bin Accessory
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Randall  Kreutzer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 22
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1516554-00-A
+- Description: M3, FLOOR MAT KIT END ITEM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Teresa  Maslonka
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 23
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1076731-00-B
+- Description: M3 WIPER BLADE PS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Teresa  Maslonka
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 24
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1076730-00-C
+- Description: M3 WIPER BLADE DR LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Teresa  Maslonka
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 25
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ankush  Narula
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 26
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ankush  Narula
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 27
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1518236-00-C
+- Description: MY, ROOF RACK, PHANTOM ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ankush  Narula
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 28
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Crouse
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 29
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 2013118-00-A
+- Description: Model Y Air Mattress
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Amos  Joannides
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 30
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Crouse
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 31
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 2065448-00-A
+- Description: Model Y Cooler
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Amos  Joannides
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 32
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1518236-00-C
+- Description: MY, ROOF RACK, PHANTOM ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Adam  Goodman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 33
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 2013118-00-A
+- Description: Model Y Air Mattress
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jimmy  Feerick
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 34
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: George  Stewart
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 35
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: George  Stewart
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 36
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Heather   Greene
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 37
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Matt  Woodruff
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 38
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: JOANNE  ZAKAIB
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 39
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: J  C
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 40
+- Created At: 01/30/2026  4:32:17 PM
+- Part: 1977818-00-A
+- Description: TRAY, CONSOLE, BUNDLE, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Eric  Abramovich
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 41
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 2073497-00-A
+- Description: Model Y Glass Roof Sunshade
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kyong  Kim
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 42
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 2097851-00-A
+- Description: Tesla Projection Lights, FR, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Eric  Abramovich
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 43
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Andie  Ritchie
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 44
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 2025108-01-A
+- Description: Tesla Projection Lights, FR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Pettyjohn
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 45
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Frank  Snyder
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 46
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Sean  Swift
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 47
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Alexandre  Yamada
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 48
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Alexandre  Yamada
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 49
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jared  Lopez
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 50
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 2188231-00-D
+- Description: 19 INCH CROSSFLOW WHEEL TRIM, ZANINI
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jared  Rahmanan
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 51
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ken  Janoski
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 52
+- Created At: 01/30/2026  4:32:16 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ken  Janoski
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 53
+- Created At: 01/30/2026  4:32:15 PM
+- Part: 2097841-00-A
+- Description: Door Pocket + Cupholder Liners, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: pierre  mercier
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 54
+- Created At: 01/30/2026  4:32:15 PM
+- Part: 2048569-SB-A
+- Description: Opal Model Y Trunk Storage Bins
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: pierre  mercier
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 55
+- Created At: 01/30/2026  4:32:15 PM
+- Part: 2073497-00-A
+- Description: Model Y Glass Roof Sunshade
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: pierre  mercier
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 56
+- Created At: 01/30/2026  4:32:15 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: pierre  mercier
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 57
+- Created At: 01/30/2026  4:32:15 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Hareesh  Makam
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 58
+- Created At: 01/30/2026  4:32:15 PM
+- Part: 1753940-00-D
+- Description: FLOOR MAT KIT LHD, END ITEM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bob  Bird
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 59
+- Created At: 01/30/2026  4:32:15 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ian  Hymers
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 60
+- Created At: 01/30/2026  4:32:14 PM
+- Part: 1608692-00-B
+- Description: Y 3R RH BACKPANEL ASM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-PA-Whitehall-955 Grape St
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE3MF113117
+- Carrier: 
+- Is Milk Run: false
+
+## Order 61
+- Created At: 01/30/2026  4:32:14 PM
+- Part: 1076731-00-B
+- Description: M3 WIPER BLADE PS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chandler  Cooper
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 62
+- Created At: 01/30/2026  4:32:14 PM
+- Part: 1076730-00-C
+- Description: M3 WIPER BLADE DR LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chandler  Cooper
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 63
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 2013118-00-A
+- Description: Model Y Air Mattress
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kateryna  Krasulia
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 64
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1590898-00-B
+- Description: Y 2R 7S CTR TRACK COVER ASM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: NA-US-MD-Baltimore-Owings Mills
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE8RF157561
+- Carrier: 
+- Is Milk Run: true
+
+## Order 65
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1502213-00-C
+- Description: ACOUSTIC BLANKET, AC COMPRESSOR
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BINBOX-SLOW
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB106-107-23-C
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDED3MF103518
+- Carrier: 
+- Is Milk Run: true
+
+## Order 66
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bradley  Abraham
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 67
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Saumil  Ambani
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 68
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Saumil  Ambani
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 69
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Saumil  Ambani
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 70
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 2130969-00-A
+- Description: EXT.MIRROR ASSY, EC PREM, DOM, LH MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Total Recon - Rockville
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 71
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1067348-00-C
+- Description: ASY,ADPTR,J1772-TESLA,v2.2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Joseph  Detzel
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 72
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1493410-E0-A
+- Description: MY LIFTGATE SVC E-COATED
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Total Recon - Rockville
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 73
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 2083747-00-C
+- Description: ASY,HVBAT,E3,40P,RWD,1PH,M3Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-PROD
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: CA-ON-Scarborough-1251 Tapscott Rd
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 13
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 74
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1234422-01-B
+- Description: ASY,HVBAT,E3,AWD,1PH,M3Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: CA-ON-Scarborough-1251 Tapscott Rd
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 14
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 75
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1088218-00-I
+- Description: PTC heater Dual Zone M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: NA-US-MA-Peabody-North Shore
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 76
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1671113-00-D
+- Description: AUDIO, SPEAKER, SUPER HORN, MYSP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE3TF447585
+- Carrier: 
+- Is Milk Run: true
+
+## Order 77
+- Created At: 01/30/2026  4:32:13 PM
+- Part: 1494301-00-B
+- Description: SILL PLATE, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 78
+- Created At: 01/30/2026  4:32:12 PM
+- Part: 3488227-00-A
+- Description: WHEEL, 21X10.5J ET48, UBERTURBINE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: Tesla Service Brooklyn Gowanus
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 79
+- Created At: 01/30/2026  4:32:12 PM
+- Part: 1084174-00-D
+- Description: LWR VALANCE ASM, FRT FASCIA (w/PWS), M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 80
+- Created At: 01/30/2026  4:32:12 PM
+- Part: 1027919-00-B
+- Description: AIR SUSP VALVE BLOCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 81
+- Created At: 01/30/2026  4:32:12 PM
+- Part: 3488222-00-A
+- Description: SVC WHEEL, 19x9.5J ET45, APOLLO, MODEL Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 82
+- Created At: 01/30/2026  4:32:12 PM
+- Part: 1044235-00-C
+- Description: 19 INCH GEMINI CAP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-ECOM
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 83
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1090508-00-E
+- Description: M3, SEAL, REAR, DOOR,SECONDARY, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Capital Blueprint Inc DBA: Reality Motors
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5yj3e1ebxmf917825
+- Carrier: 
+- Is Milk Run: false
+
+## Order 84
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1501256-98-M
+- Description: ASY, AC COMPRESSOR, 41CC
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-IL-Northbrook-1200 Skokie Blvd
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 85
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1083993-00-F
+- Description: MODEL 3, TAIL LAMP BRKT, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Capital Blueprint Inc DBA: Reality Motors
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5yj3e1ebxmf917825
+- Carrier: 
+- Is Milk Run: false
+
+## Order 86
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1083989-00-K
+- Description: M3 Rr Wing Bracket Assy RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Capital Blueprint Inc DBA: Reality Motors
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5yj3e1ebxmf917825
+- Carrier: 
+- Is Milk Run: false
+
+## Order 87
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1501256-98-M
+- Description: ASY, AC COMPRESSOR, 41CC
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-IL-Northbrook-1200 Skokie Blvd
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 88
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1715633-00-I
+- Description: WSHLD ASSY LHD IR ACOUSTIC (AF02)
+- Status: Pick Assigned
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-GLASS
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Collision Carle Place
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB207-155-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA0RF771871
+- Carrier: 
+- Is Milk Run: true
+
+## Order 89
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1006551-00-B
+- Description: BLT,HEX,M6x25[9.8]-M-S-02
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 90
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1500397-00-G
+- Description: HOOD LATCH DOUBLE PULL SINGLE ACTUATOR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: US-TX-The Colony-4401 Live Oak Dr
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 300
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 91
+- Created At: 01/30/2026  4:32:11 PM
+- Part: 1490406-13-D
+- Description: SUN VISOR ASSEMBLY, RH, POLAR GREY, NORTH AMERICA
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: US-MA-Springfield-365 Cadwell Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB101-172-10-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA2RF772729
+- Carrier: 
+- Is Milk Run: true
+
+## Order 92
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1091895-00-A
+- Description: SEAL,RADIAL,2.5MMX18MM,EPDM,HVBAT,M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: Tesla Service Brooklyn Gowanus
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA2JF016614
+- Carrier: 
+- Is Milk Run: true
+
+## Order 93
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1044231-99-B
+- Description: 18 INCH PINWHEEL CAP
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-ECOM
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 94
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1100382-S0-C
+- Description: BRKT ASSY - FENDER AND LAMP SUPPORT LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 95
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1081581-00-D
+- Description: WHEEL LINER,FR LH,M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 96
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1526738-00-B
+- Description: ASY, FRUNK, MODEL 3 HP
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 97
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1079743-00-E
+- Description: AUDIO,SPEAKER,WOOFER,BASE,200MM
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: US-MA-Springfield-365 Cadwell Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-147-23-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:58:05 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA1SF053347
+- Carrier: 
+- Is Milk Run: true
+
+## Order 98
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1084171-00-F
+- Description: BRKT ASM - FASCIA FRT CTR FDR LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 99
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1104540-00-B
+- Description: Bracket - Frt Whlhse Lnr Stiffnr LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 100
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1084181-00-F
+- Description: BRACKET - FASCIA SIDE TO FDR LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 101
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1916697-S0-A
+- Description: FR FASCIA UNPAINTED WITH P/A BRACKETS
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5JF101642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 102
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1084171-00-F
+- Description: BRKT ASM - FASCIA FRT CTR FDR LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 20
+- Deliver To: JPS COLLISION INC.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA3PF664634
+- Carrier: 
+- Is Milk Run: true
+
+## Order 103
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1784689-00-D
+- Description: DIFFUSER ASM, REAR FASCIA, BASE, FREMONT
+- Status: Pick Assigned
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: NA-US-MD-Baltimore-Owings Mills
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB205-155-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA2SF136981
+- Carrier: 
+- Is Milk Run: true
+
+## Order 104
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1873464-21-A
+- Description: M3 RR DR OTR BELT ASSY RH CBN BK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Eastern Auto Works
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA2SF882105
+- Carrier: 
+- Is Milk Run: false
+
+## Order 105
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1044671-00-D
+- Description: BRAKE BOOSTER AND MASTER CYL ASSY LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: NA-US-MA-Peabody-North Shore
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB0PF696319
+- Carrier: 
+- Is Milk Run: true
+
+## Order 106
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1344251-P0-B
+- Description: 18" GLIDER WHEEL COVER, POM PAD, MODEL 3
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB201-123-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8SF022094
+- Carrier: 
+- Is Milk Run: true
+
+## Order 107
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1514877-01-C
+- Description: SIDE REPEATER TRIM - CHROME AERO RIB, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 23
+- Deliver To: V & J Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1JF098215
+- Carrier: 
+- Is Milk Run: true
+
+## Order 108
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1077391-00-F
+- Description: LAMP ASY, FASCIA LAMP, SAE UP-LEVEL, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Collision Pro
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1NF156877
+- Carrier: 
+- Is Milk Run: false
+
+## Order 109
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1127502-12-C
+- Description: USS APP RADIAL, DCR, ASSY, MIDNIGHT SILV
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Collision Pro
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1NF156877
+- Carrier: 
+- Is Milk Run: false
+
+## Order 110
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1084182-00-F
+- Description: BRACKET - FASCIA SIDE TO FDR RH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Collision Pro
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1NF156877
+- Carrier: 
+- Is Milk Run: false
+
+## Order 111
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1495864-20-F
+- Description: LAMP ASY, SIDE REPEATER CAMERA, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 23
+- Deliver To: V & J Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1JF098215
+- Carrier: 
+- Is Milk Run: true
+
+## Order 112
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1084181-00-F
+- Description: BRACKET - FASCIA SIDE TO FDR LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Collision Pro
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1NF156877
+- Carrier: 
+- Is Milk Run: false
+
+## Order 113
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1006521-00-A
+- Description: RVT PUSH-PULL 8X18X20.0 (0M1M)
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Collision Pro
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 20
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1NF156877
+- Carrier: 
+- Is Milk Run: false
+
+## Order 114
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1104540-00-B
+- Description: Bracket - Frt Whlhse Lnr Stiffnr LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Collision Pro
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1NF156877
+- Carrier: 
+- Is Milk Run: false
+
+## Order 115
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1090493-00-E
+- Description: M3, Seal, Front, DOOR,SECONDARY, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 23
+- Deliver To: V & J Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1JF098215
+- Carrier: 
+- Is Milk Run: true
+
+## Order 116
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1916697-S0-A
+- Description: FR FASCIA UNPAINTED WITH P/A BRACKETS
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Collision Pro
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1NF156877
+- Carrier: 
+- Is Milk Run: false
+
+## Order 117
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1494949-00-A
+- Description: M3/MY Front T-Badge
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: VIVE - Evolve
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB3LF620930
+- Carrier: 
+- Is Milk Run: true
+
+## Order 118
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1466270-00-J
+- Description: M3 WSHLD ASSY LHD IR ACOUSTIC
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-GLASS
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: VIVE - Evolve
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB3LF620930
+- Carrier: 
+- Is Milk Run: true
+
+## Order 119
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 1081390-E0-C
+- Description: ASSEMBLY, HOOD, MODEL 3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: VIVE - Evolve
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB3LF620930
+- Carrier: 
+- Is Milk Run: true
+
+## Order 120
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 2085750-00-A
+- Description: HD/LP ASY, SAE UP-LEVEL, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: VIVE - Evolve
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB3LF620930
+- Carrier: 
+- Is Milk Run: true
+
+## Order 121
+- Created At: 01/30/2026  4:32:10 PM
+- Part: 2029538-00-C
+- Description: ASY, CHARGE PORT DOOR, NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Collision Plano
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED1TA451705
+- Carrier: 
+- Is Milk Run: false
+
+## Order 122
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1632510-00-D
+- Description: ASY, BATTERY CONTROLLER, GEN 1, MX
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-MD-Rockville-1300 Rockville Pike
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-174-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCDE57RF446181
+- Carrier: 
+- Is Milk Run: true
+
+## Order 123
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1933984-20-B
+- Description: IP, STEERING, COLUMN, GAP HIDER, LOWER, ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Chicago
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1ET5RF824324
+- Carrier: 
+- Is Milk Run: true
+
+## Order 124
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1768093-20-A
+- Description: IP, STEERING COLUMN, GAP HIDER, UPPER
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Chicago
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1ET5RF824324
+- Carrier: 
+- Is Milk Run: true
+
+## Order 125
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1915484-20-C
+- Description: M3 REAR QTR GLASS ASSY RH CBN BK
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-178-30-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB6SF910559
+- Carrier: 
+- Is Milk Run: true
+
+## Order 126
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1090494-00-E
+- Description: M3, SEAL, FRONT, DOOR,SECONDARY, RH
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-182-50-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  5:00:13 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB6SF910559
+- Carrier: 
+- Is Milk Run: true
+
+## Order 127
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1933982-20-C
+- Description: IP, STEERING COLUMN, SHROUD, LOWER, ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Chicago
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1ET5RF824324
+- Carrier: 
+- Is Milk Run: true
+
+## Order 128
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1455035-C7-D
+- Description: M3 2R SB 60 SPLIT ASSY (60) BLK CN TO NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SEAT
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-Vaughan-Woodbridge Chrislea
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB6MF053890
+- Carrier: 
+- Is Milk Run: false
+
+## Order 129
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1917244-00-B
+- Description: RR SILL PLATE, RH, FREMONT
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB110-149-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB6SF910559
+- Carrier: 
+- Is Milk Run: true
+
+## Order 130
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1044363-00-G
+- Description: DAMPER ASSY, FRONT-LEFT, COIL DM E3
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: Tesla Service Stamford
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB107-165-60-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9LF665077
+- Carrier: 
+- Is Milk Run: true
+
+## Order 131
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1518783-10-B
+- Description: ASY,REFLEX,RHS,GEN3,MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 23
+- Deliver To: V & J Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB7PF458726
+- Carrier: 
+- Is Milk Run: true
+
+## Order 132
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1495865-20-G
+- Description: LAMP ASY, SIDE REPEATER CAMERA, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 23
+- Deliver To: V & J Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB7PF458726
+- Carrier: 
+- Is Milk Run: true
+
+## Order 133
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1465392-00-A
+- Description: LBL,BLANK TIRE INFO
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VINS
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Total Recon - Laurel
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9NF189187
+- Carrier: 
+- Is Milk Run: false
+
+## Order 134
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1076891-00-B
+- Description: SVC WHEEL - 19x8.0J ET40 AERO TURBINE
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-MD-Rockville-1300 Rockville Pike
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB304-108-60-B
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  5:01:48 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E27LF354139
+- Carrier: 
+- Is Milk Run: true
+
+## Order 135
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1462927-00-C
+- Description: LBL,BLANK MFG CERTIFICATION
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VINS
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Total Recon - Laurel
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9NF189187
+- Carrier: 
+- Is Milk Run: false
+
+## Order 136
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1608691-00-B
+- Description: Y 3R LH BACKPANEL ASM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-PA-Whitehall-955 Grape St
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE3MF113117
+- Carrier: 
+- Is Milk Run: false
+
+## Order 137
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1091432-S0-E
+- Description: UPPER FENDER ATTACHMENT BRACKET - RIGHT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Total Recon - Laurel
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9NF189187
+- Carrier: 
+- Is Milk Run: false
+
+## Order 138
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1090865-S0-E
+- Description: UPPER FENDER ATTACHMENT BRACKET - LEFT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Total Recon - Laurel
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9NF189187
+- Carrier: 
+- Is Milk Run: false
+
+## Order 139
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1903544-S0-A
+- Description: PANEL, REAR QUARTER OUTER, LEFT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Total Recon - Laurel
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9NF189187
+- Carrier: 
+- Is Milk Run: false
+
+## Order 140
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1567500-10-A
+- Description: CHARGEPORT,NA,SX,P2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: US-PA-Bridgeville-1400 Brockwell St
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCAE50PF410196
+- Carrier: 
+- Is Milk Run: true
+
+## Order 141
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 2552568-00-E
+- Description: ASY,HARN,MX,FR FASCIA,BASE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service Minneapolis Golden Valley
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52TF474787
+- Carrier: 
+- Is Milk Run: false
+
+## Order 142
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1494949-00-A
+- Description: M3/MY Front T-Badge
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: CARSTAR Collision of Amherst
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC1NF324347
+- Carrier: 
+- Is Milk Run: false
+
+## Order 143
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1933983-20-A
+- Description: IP, STEERING COLUMN, SHROUD, UPPER, ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Chicago
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1ET5RF824324
+- Carrier: 
+- Is Milk Run: true
+
+## Order 144
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1655443-22-C
+- Description: LAMP ASY, CHMSL, P2S
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Julio Falcon
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E51NF476704
+- Carrier: 
+- Is Milk Run: false
+
+## Order 145
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1112140-00-B
+- Description: BOLT,PN,M5x16,[88],ZN
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Chicago
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1ET5RF824324
+- Carrier: 
+- Is Milk Run: true
+
+## Order 146
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1453381-00-A
+- Description: M3 Bodyside Lamp T-stud Gasket
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Peotter's Auto Body Inc
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8NF349939
+- Carrier: 
+- Is Milk Run: true
+
+## Order 147
+- Created At: 01/30/2026  4:32:09 PM
+- Part: 1104335-00-B
+- Description: GROMMET,8x0.5-0.9 GRIP,RUBBER,4WAY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Peotter's Auto Body Inc
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8NF349939
+- Carrier: 
+- Is Milk Run: true
+
+## Order 148
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1104926-00-B
+- Description: GROMMET,8.2x12.2,1.3 GRIP,2WAY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Peotter's Auto Body Inc
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8NF349939
+- Carrier: 
+- Is Milk Run: true
+
+## Order 149
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1090509-00-E
+- Description: M3, SEAL, REAR, DOOR,SECONDARY, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Peotter's Auto Body Inc
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8NF349939
+- Carrier: 
+- Is Milk Run: true
+
+## Order 150
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1080681-01-I
+- Description: M3 FRONT DOOR OTR BELT ASSY LH BLK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: EBBYS AUTO PAINTING AND COLLISION REPAIR INC.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8PF464575
+- Carrier: 
+- Is Milk Run: true
+
+## Order 151
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1081401-E0-D
+- Description: FENDER ASSY, LH, MODEL 3, E-COATED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: EBBYS AUTO PAINTING AND COLLISION REPAIR INC.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8PF464575
+- Carrier: 
+- Is Milk Run: true
+
+## Order 152
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1500397-00-G
+- Description: HOOD LATCH DOUBLE PULL SINGLE ACTUATOR
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB101-152-50-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 153
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1084171-00-F
+- Description: BRKT ASM - FASCIA FRT CTR FDR LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: EBBYS AUTO PAINTING AND COLLISION REPAIR INC.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8PF464575
+- Carrier: 
+- Is Milk Run: true
+
+## Order 154
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1916699-S0-A
+- Description: FR FASCIA UNPAINTED WITHOUT P/A BRACKETS
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: EBBYS AUTO PAINTING AND COLLISION REPAIR INC.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8PF464575
+- Carrier: 
+- Is Milk Run: true
+
+## Order 155
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1066927-00-E
+- Description: RSB CARPET ASSY 3R MDL X RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Tesla Tampa DC
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE50NF329038
+- Carrier: 
+- Is Milk Run: true
+
+## Order 156
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1500398-00-J
+- Description: ACTUATOR AND CABLE ASSEMBLY, HOOD LATCH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Greenville
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED7RA311845
+- Carrier: 
+- Is Milk Run: true
+
+## Order 157
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1750102-S0-B
+- Description: REAR FASCIA SVC, UNPAINTED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: C&E Auto Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E51PF510546
+- Carrier: 
+- Is Milk Run: true
+
+## Order 158
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1583991-10-D
+- Description: ASY. FRONT CONTROLLER GEN 3
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-154-60-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE6MF087940
+- Carrier: 
+- Is Milk Run: true
+
+## Order 159
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1620228-00-A
+- Description: WHEEL, 22X9.0J ET40, MACHINA, INCOGNITO
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-LA-New Orleans-2801 Tchoupitoulas Street
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE61TF478046
+- Carrier: 
+- Is Milk Run: false
+
+## Order 160
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1014963-06-A
+- Description: ASY,32A,CONVRTD,GEN2 CHRGR
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB107-143-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA4H48FF090285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 161
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1500398-00-J
+- Description: ACTUATOR AND CABLE ASSEMBLY, HOOD LATCH
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-162-40-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 162
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1008703-00-A
+- Description: SCR, M5x12,PT,TORX,ST,ZnAl
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB120-159-3-ED
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE3RA299945
+- Carrier: 
+- Is Milk Run: true
+
+## Order 163
+- Created At: 01/30/2026  4:32:08 PM
+- Part: 1821256-00-D
+- Description: ASSY, SIDE APRON RH, CYBERTRUCK
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB106-178-20-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHEDXRA042550
+- Carrier: 
+- Is Milk Run: true
+
+## Order 164
+- Created At: 01/30/2026  4:32:07 PM
+- Part: 6654322-01-B
+- Description: 1R LH SEAT ASM BLACK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SEAT
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: CSN Glen Merritt Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: LRWYGDEE7PC029107
+- Carrier: 
+- Is Milk Run: false
+
+## Order 165
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1613443-00-C
+- Description: DEFLECTOR - FASCIA FRT VALANCE LH, MS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: Prestige Collision Center
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E58SF549790
+- Carrier: 
+- Is Milk Run: true
+
+## Order 166
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1492614-00-C
+- Description: WHEEL LINER, FR RH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 167
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1109823-00-B
+- Description: BOLT,HF,M14-1.5x83,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 168
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1111533-00-A
+- Description: NUT,HF,M14-2.0,[10],ZNNI
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 169
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1111522-00-A
+- Description: BOLT,HF,M14-2.0x95,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 170
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1044451-00-F
+- Description: RR LWR AFT LINK ASSY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 171
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 2188359-10-B
+- Description: FR LWR COMP LINK ASSY, CN, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 172
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1027002-00-B
+- Description: NUT LUG M14x1.5 PC10
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-SLOW
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 20
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 173
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1188341-00-C
+- Description: FRONT LOWER LATERAL LINK ASSEMBLY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 174
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1490701-01-E
+- Description: TPMS Wheel Unit, BLE, Black
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 175
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1188236-00-A
+- Description: 21 INCH UBERTURBINE LUG NUT COVER
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 176
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 3488227-00-A
+- Description: WHEEL, 21X10.5J ET48, UBERTURBINE
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 177
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 3488226-00-A
+- Description: WHEEL, 21X9.5J ET40, UBERTURBINE
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 178
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1833849-00-A
+- Description: BLT,HHN,M125x54,[109],G0110,SM
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 179
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1044123-00-B
+- Description: DRIVEN HUB, 142mm FLANGE OD
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 180
+- Created At: 01/30/2026  4:31:57 PM
+- Part: 1530018-00-A
+- Description: BOLT,HF,M10-1.5x63,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 181
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1109263-00-B
+- Description: NUT&WSHR[SW],M14x1.5,[10],ZNFL,PTP
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 182
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1188832-00-B
+- Description: STEERING GEAR ASSY, LHD
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 15
+- Deliver To: Cranston collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEF5MF197242
+- Carrier: 
+- Is Milk Run: true
+
+## Order 183
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1420691-00-B
+- Description: PEDAL ASSY,LHD,BASE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-Toronto-1251 Tapscott Rd
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E65NF474169
+- Carrier: 
+- Is Milk Run: true
+
+## Order 184
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1047075-00-G
+- Description: RH HINGE TRIM COVER
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB116-130-30-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE58NF355998
+- Carrier: 
+- Is Milk Run: true
+
+## Order 185
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1546873-00-B
+- Description: WIRELESS CHARGER ASY
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-171-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCDE23LF280915
+- Carrier: 
+- Is Milk Run: true
+
+## Order 186
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1064501-01-B
+- Description: ASY VENT BEZL CUP HOLDR GRAPHITE
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-143-10-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCDE23LF280915
+- Carrier: 
+- Is Milk Run: true
+
+## Order 187
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1494043-00-A
+- Description: MODEL Y, RR WING BRKT, ASSY, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: CARRIAGE HOUSE COLLISION
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEFXMF267902
+- Carrier: 
+- Is Milk Run: false
+
+## Order 188
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1622236-00-A
+- Description: SKULL CAP, EXT MIRROR, RH MS P2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 18
+- Deliver To: Flower City Collision
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E54NF490094
+- Carrier: 
+- Is Milk Run: true
+
+## Order 189
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1613820-00-F
+- Description: EXT.MIRROR ASSY PREM DOM, RH MS P2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 18
+- Deliver To: Flower City Collision
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E54NF490094
+- Carrier: 
+- Is Milk Run: true
+
+## Order 190
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1461657-00-A
+- Description: BOLT,HF,M14-2.0x120,[109],ZNFL,CMAT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: CARRIAGE HOUSE COLLISION
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEFXMF267902
+- Carrier: 
+- Is Milk Run: false
+
+## Order 191
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1512876-00-B
+- Description: Restraint Control Module - universal
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Norfolk-7520 N Military Hwy
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCDE52PF381642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 192
+- Created At: 01/30/2026  4:31:56 PM
+- Part: 1288321-00-A
+- Description: FR UPR CTRL ARM ASSY, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Norfolk-7520 N Military Hwy
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE7LF033030
+- Carrier: 
+- Is Milk Run: true
+
+## Order 193
+- Created At: 01/30/2026  4:31:55 PM
+- Part: 1500397-00-G
+- Description: HOOD LATCH DOUBLE PULL SINGLE ACTUATOR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: NA-US-CA-Fremont-Service-48370 Kato
+- Ship By Date: 02/04/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E58SF549367
+- Carrier: 
+- Is Milk Run: false
+
+## Order 194
+- Created At: 01/30/2026  4:31:55 PM
+- Part: 1051554-00-K
+- Description: FALCON DOOR UPR TRM RH, ULTRASUEDE BLK
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB306-111-10-A
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:59:29 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCDE23LF280915
+- Carrier: 
+- Is Milk Run: true
+
+## Order 195
+- Created At: 01/30/2026  4:31:55 PM
+- Part: 1054149-00-G
+- Description: LOWER LATCH COVER
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB116-131-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCBE24JF112377
+- Carrier: 
+- Is Milk Run: true
+
+## Order 196
+- Created At: 01/30/2026  4:31:55 PM
+- Part: 1618882-50-B
+- Description: OIL FILTER,SYNTHETIC,3DU,NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-PA-Whitehall-955 Grape St
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE6LF049770
+- Carrier: 
+- Is Milk Run: false
+
+## Order 197
+- Created At: 01/30/2026  4:31:55 PM
+- Part: 1045890-00-E
+- Description: DOOR CLADDING ASY - RR WHEEL ARCH, LH
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: NA-US-PA-Pittsburgh-Wexford
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB112-159-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE57TF481413
+- Carrier: 
+- Is Milk Run: true
+
+## Order 198
+- Created At: 01/30/2026  4:31:55 PM
+- Part: 1856561-00-A
+- Description: HEX BUMP STOP, SELF ADJUST
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB104-144-20-B
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHEDXRA042550
+- Carrier: 
+- Is Milk Run: true
+
+## Order 199
+- Created At: 01/30/2026  4:31:54 PM
+- Part: 1288326-00-A
+- Description: FR UPR CTRL ARM ASSY, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Norfolk-7520 N Military Hwy
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE7LF033030
+- Carrier: 
+- Is Milk Run: true
+
+## Order 200
+- Created At: 01/30/2026  4:31:54 PM
+- Part: 1035290-00-G
+- Description: ASSY, FENDER GARNISH RR, LH MDL X
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Collision Carle Place
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB203-166-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE61NF341305
+- Carrier: 
+- Is Milk Run: true
+
+## Order 201
+- Created At: 01/30/2026  4:31:54 PM
+- Part: 2552584-02-B
+- Description: ASY,HARN,MDLX,FRUNK,LHD,GLOBAL LAMPS,NA
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: US-NY-White Plains-250 Tarrytown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB304-128-30-B
+- Qty: 1
+- Picked By: rpazona
+- Pick Completed At: 01/30/2026  4:53:47 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCAE53RF448315
+- Carrier: 
+- Is Milk Run: true
+
+## Order 202
+- Created At: 01/30/2026  4:31:54 PM
+- Part: 1037844-00-M
+- Description: PRIMARY HNG RH RR, LH FRT
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB110-119-30-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE58NF355998
+- Carrier: 
+- Is Milk Run: true
+
+## Order 203
+- Created At: 01/30/2026  4:31:54 PM
+- Part: 1585693-01-B
+- Description: ASY. RIGHT CONTROLLER GEN 4
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-154-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE61NF356631
+- Carrier: 
+- Is Milk Run: true
+
+## Order 204
+- Created At: 01/30/2026  4:31:54 PM
+- Part: 2462927-00-C
+- Description: VEHICLE EMISSION CONTROL INFORMATION LABEL
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VINS
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Durable Radiator & Autobody Inc
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE65NF356213
+- Carrier: 
+- Is Milk Run: true
+
+## Order 205
+- Created At: 01/30/2026  4:31:53 PM
+- Part: 1609671-00-C
+- Description: ASY,CABLE,RF,MX,FRUNK,SIDE REPEATERS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Norfolk-7520 N Military Hwy
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCDE52PF381642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 206
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1621165-70-B
+- Description: MY FD OTR BELT ASSY RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 207
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 2119535-00-A
+- Description: SECONDARY SEAL, FRONT DOOR, RH, MY, NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 208
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 2035501-ET-A
+- Description: ASSEMBLY - FRONT DOOR - RIGHT HAND
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 209
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1820735-99-D
+- Description: ASSY, SIDE REPEATER RHS, 3Y
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 210
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1621159-00-A
+- Description: MY UPPER BRIGHT TRIM RH BERLIN,AUSTIN
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 211
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1447449-00-A
+- Description: PLUG,FLUSH,25,TPV,BLK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 5
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 212
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1902378-00-A
+- Description: T-CLIP,8.2,GR1.1-1.3,Multiple Positions
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 9
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 213
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1127883-00-C
+- Description: PLUG, ROUND,36MM,1.2 GRP,TPV,BLK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 214
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1106827-00-C
+- Description: GROM,GROMMET,22x8,4x7,0.8-1 GRIP,PA66
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 9
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 215
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1006535-00-A
+- Description: PL-RIV,7.9,GR9.8-11,MLT-MT,[B]
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 216
+- Created At: 01/30/2026  4:31:49 PM
+- Part: 1006521-00-A
+- Description: RVT PUSH-PULL 8X18X20.0 (0M1M)
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: Ultimate Collision Repair -Edison
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 18
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA189119
+- Carrier: 
+- Is Milk Run: true
+
+## Order 217
+- Created At: 01/30/2026  4:31:48 PM
+- Part: 3488222-00-A
+- Description: SVC WHEEL, 19x9.5J ET45, APOLLO, MODEL Y
+- Status: Pick Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB407-171-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  5:00:06 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6RA229985
+- Carrier: 
+- Is Milk Run: true
+
+## Order 218
+- Created At: 01/30/2026  4:31:48 PM
+- Part: 2032467-S0-B
+- Description: ASSEMBLY - FRONT END MODULE BRACKET - LEFT HAND
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB107-116-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 219
+- Created At: 01/30/2026  4:31:47 PM
+- Part: 1946842-00-E
+- Description: WSHLD ASSY LHD IR ACOUSTIC TSA3+(SEKISUI AF02) (AUSTIN) (AP4)
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-GLASS
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1TF435449
+- Carrier: 
+- Is Milk Run: true
+
+## Order 220
+- Created At: 01/30/2026  4:31:47 PM
+- Part: 1507355-00-A
+- Description: PLUG,FLUSH,26X26,TPV,BLK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service Doral
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5TA444264
+- Carrier: 
+- Is Milk Run: false
+
+## Order 221
+- Created At: 01/30/2026  4:31:47 PM
+- Part: 2188675-20-F
+- Description: BRAKE BOOSTER, IDB
+- Status: Pick Assigned
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Silver Spring-2320 Broadbirch Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB105-163-40-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXTA476336
+- Carrier: 
+- Is Milk Run: true
+
+## Order 222
+- Created At: 01/30/2026  4:31:47 PM
+- Part: 1997925-00-E
+- Description: BUMPER BEAM FOAM 30g/l
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB202-115-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 223
+- Created At: 01/30/2026  4:31:43 PM
+- Part: 1835838-00-A
+- Description: ASY, FAIRING & GARNISH, FR RH, MODEL X
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-AUDIT
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: CARSHOP CHESTER SPRINGS
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7saxcde57rf448495
+- Carrier: 
+- Is Milk Run: false
+
+## Order 224
+- Created At: 01/30/2026  4:31:41 PM
+- Part: 1983888-00-D
+- Description: SIDE BRACKET ASSY, FRT FASCIA, RH
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB104-154-30-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 225
+- Created At: 01/30/2026  4:31:41 PM
+- Part: 1983889-00-D
+- Description: ASSY_GRILLE LWR_ FRT FASCIA_NON PERF
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB304-112-30-B
+- Qty: 1
+- Picked By: rpazona
+- Pick Completed At: 01/30/2026  4:58:19 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 226
+- Created At: 01/30/2026  4:31:41 PM
+- Part: 1919198-00-A
+- Description: BLT,PN,M3x9,[088],G0109,P01
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB120-171-2-DE
+- Qty: 2
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:55:50 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 227
+- Created At: 01/30/2026  4:31:40 PM
+- Part: 1930436-00-F
+- Description: FRUNK ASSEMBLY
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB406-128-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 228
+- Created At: 01/30/2026  4:31:40 PM
+- Part: 2013449-S0-F
+- Description: FRT FASCIA UPR ASSY  BASE
+- Status: Canceled
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: NA-US-DE-Wilmington
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED6TA575968
+- Carrier: 
+- Is Milk Run: true
+
+## Order 229
+- Created At: 01/30/2026  4:31:40 PM
+- Part: 1946828-75-G
+- Description: BACKLITE ASSEMBLY (FREMONT) SGS -Move Seal Outboard 1mm
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-GLASS
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9TF556617
+- Carrier: 
+- Is Milk Run: true
+
+## Order 230
+- Created At: 01/30/2026  4:31:40 PM
+- Part: 1857404-00-A
+- Description: T609 1R POWER TRACKS BRIDGE
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Totowa-545 US-46
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-111-22-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9PA026697
+- Carrier: 
+- Is Milk Run: true
+
+## Order 231
+- Created At: 01/30/2026  4:31:39 PM
+- Part: 1493090-00-A
+- Description: MY FR LICENSE PLATE BRACKET ASSY, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: James Fees
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE2PA190941
+- Carrier: 
+- Is Milk Run: false
+
+## Order 232
+- Created At: 01/30/2026  4:31:39 PM
+- Part: 1515338-00-D
+- Description: MODEL Y, COAT HOOK ASY, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-ARLINGTON-2710 S GLEBE RD
+- Ship By Date: 02/04/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED7RA335305
+- Carrier: 
+- Is Milk Run: true
+
+## Order 233
+- Created At: 01/30/2026  4:31:39 PM
+- Part: 1188368-00-H
+- Description: DAMPER ASSY FR RH,COIL E3 DM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE2PF920364
+- Carrier: 
+- Is Milk Run: true
+
+## Order 234
+- Created At: 01/30/2026  4:31:39 PM
+- Part: 1497740-00-C
+- Description: MODEL Y, ROCKER COVER LH, ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-PREPACK
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXSA364070
+- Carrier: 
+- Is Milk Run: true
+
+## Order 235
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1500675-00-B
+- Description: DOOR LATCH, REAR-RIGHT, GL1
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Total Recon - Rockville
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE2PA194889
+- Carrier: 
+- Is Milk Run: true
+
+## Order 236
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1487742-00-K
+- Description: Asy-Rear Panel
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 237
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1494045-00-E
+- Description: MODEL Y, CENTER BRKT, ASSY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 238
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1494006-00-C
+- Description: MODEL Y, REAR FASCIA, LOWER
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 239
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1497681-00-C
+- Description: LIFTGATE SEAL, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 240
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1533971-00-B
+- Description: CARBON FIBER SPOILER, MDLY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 241
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1607786-00-A
+- Description: REAR T-BADGE, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 242
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 2130970-00-A
+- Description: EXT.MIRROR ASSY, EC PREM, DOM, RH MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: WEST JOHN AUTO
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4PA029667
+- Carrier: 
+- Is Milk Run: false
+
+## Order 243
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1484849-00-B
+- Description: Dual Motor Performance Badge
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 244
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 2122264-AT-A
+- Description: MYS, BACKLIGHT ASSEMBLY AUSTIN, WITH ANTENNA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Generic
+- Part Group: NB-GLASS
+- Destination Entity Group: 
+- Deliver To: Safelite AutoGlass - 4763 Glendale
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0PF866404
+- Carrier: 
+- Is Milk Run: false
+
+## Order 245
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1493410-E0-A
+- Description: MY LIFTGATE SVC E-COATED
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9NF499587
+- Carrier: 
+- Is Milk Run: true
+
+## Order 246
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1500398-00-J
+- Description: ACTUATOR AND CABLE ASSEMBLY, HOOD LATCH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service West Bloomfield
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE7TF440896
+- Carrier: 
+- Is Milk Run: false
+
+## Order 247
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1974875-00-C
+- Description: ASY,CARRIER FR END
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB204-149-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0TA426772
+- Carrier: 
+- Is Milk Run: true
+
+## Order 248
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 2035500-ET-A
+- Description: ASSEMBLY - FRONT DOOR - LEFT HAND
+- Status: No Inventory
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE8PA158673
+- Carrier: 
+- Is Milk Run: true
+
+## Order 249
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1674736-99-D
+- Description: MY TX, A PILLAR UPPER TRIM, ASY, LH
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Totowa-545 US-46
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-127-50-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9PA026697
+- Carrier: 
+- Is Milk Run: true
+
+## Order 250
+- Created At: 01/30/2026  4:31:38 PM
+- Part: 1490701-01-E
+- Description: TPMS Wheel Unit, BLE, Black
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: bodyworks unlimited
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA210213
+- Carrier: 
+- Is Milk Run: false
+
+## Order 251
+- Created At: 01/30/2026  4:14:32 PM
+- Part: 1234422-01-B
+- Description: ASY,HVBAT,E3,AWD,1PH,M3Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-West Chester-1568 W CHESTER PIKE
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE9MF185909
+- Carrier: 
+- Is Milk Run: true
+
+## Order 252
+- Created At: 01/30/2026  4:05:58 PM
+- Part: 1234422-01-B
+- Description: ASY,HVBAT,E3,AWD,1PH,M3Y
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 7
+- Deliver To: Tesla Service Syracuse Fayetteville
+- Ship By Date: 01/30/2026
+- Pick Type: Pallet
+- Pick Location: NB405-149-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8SF012455
+- Carrier: 
+- Is Milk Run: true
+
+## Order 253
+- Created At: 01/30/2026  4:04:42 PM
+- Part: 1086755-00-K
+- Description: ASY,HV BATT,100KWH,SX
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-HVBATTERY-PROD
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-FL-Naples-4555 Radio Rd
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE26MF319285
+- Carrier: 
+- Is Milk Run: false
+
+## Order 254
+- Created At: 01/30/2026  3:35:09 PM
+- Part: 1046200-10-C
+- Description: BATTERY, 12V,AtlasBX B19, Flooded
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-DG-12/16V BATT
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: PR-PR-San Juan-1000 The Mall of San Juan Blvd.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE22JF087554
+- Carrier: 
+- Is Milk Run: false
+
+## Order 255
+- Created At: 01/30/2026  3:35:05 PM
+- Part: 1046200-10-C
+- Description: BATTERY, 12V,AtlasBX B19, Flooded
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-DG-12/16V BATT
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: PR-PR-San Juan-1000 The Mall of San Juan Blvd.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE22JF087554
+- Carrier: 
+- Is Milk Run: false
+
+## Order 256
+- Created At: 01/30/2026  3:33:28 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ken  Gottschalk
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 257
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1988713-00-B
+- Description: CHAIR, TAILGATE, ACCESSORY, CT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Roy  Roxburgh
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 258
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 2013118-00-A
+- Description: Model Y Air Mattress
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bille  Le
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 259
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1977818-00-A
+- Description: TRAY, CONSOLE, BUNDLE, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bishoi  Nageh
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 260
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: billy-jos  plourde
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 261
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 2097851-00-A
+- Description: Tesla Projection Lights, FR, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bishoi  Nageh
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 262
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1128114-00-E
+- Description: M3, ROOF, ROOF RACK, ASSY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bishoi  Nageh
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 263
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gabriel  khaitov
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 264
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Thomas  Ruder
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 265
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1974087-00-A
+- Description: HIGHLAND ALL WEATHER LINERS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bishoi  Nageh
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 266
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Thomas  Ruder
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 267
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gabriel  khaitov
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 268
+- Created At: 01/30/2026  3:33:27 PM
+- Part: 1518236-00-C
+- Description: MY, ROOF RACK, PHANTOM ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gabriel  khaitov
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 269
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1067348-00-C
+- Description: ASY,ADPTR,J1772-TESLA,v2.2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Travis  Butler
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 270
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1493064-00-B
+- Description: END ITEM, FLOOR MAT KIT, MODEL Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Travis  Butler
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 271
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Brandon  Adams
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 272
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1753940-00-D
+- Description: FLOOR MAT KIT LHD, END ITEM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Michael  MacKinnon
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 273
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1753940-00-D
+- Description: FLOOR MAT KIT LHD, END ITEM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Tanner  Johnson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 274
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1977818-00-A
+- Description: TRAY, CONSOLE, BUNDLE, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Tanner  Johnson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 275
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Tanner  Johnson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 276
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 2097851-00-A
+- Description: Tesla Projection Lights, FR, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Tanner  Johnson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 277
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ram  Vijayaraghavan
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 278
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jin Seok  Park
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 279
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1615631-00-A
+- Description: MX P2 LHD WIPER BLADE PS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chad  Polich
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 280
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jalal  Gio RECON!
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 281
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1688910-00-C
+- Description: HVAC, CABIN FILTER
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chad  Polich
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 282
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1615628-00-A
+- Description: MX P2 LHD WIPER BLADE DS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chad  Polich
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 283
+- Created At: 01/30/2026  3:33:26 PM
+- Part: 1819443-00-A
+- Description: KEY FOB TOP LEVEL ASSEMBLY, MS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Marcus  Grimes
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 284
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1634443-00-A
+- Description: BOM MODULE, MY, MUD FLAP PACKAGE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Allen  Tuch
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 285
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Michael  Colette
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 286
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1099344-10-D
+- Description: 14-50 ADAPTER
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Dimitri  Koutsogiannis
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 287
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1490750-00-B
+- Description: TPMS Wheel Unit, BLE, Silver, with Nut
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Manuel  Duran
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 288
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: James  Wiggins
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 289
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1934882-00-A
+- Description: Tire Repair Kit 3.0
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Synthia  Wilder
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 290
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: James  Wiggins
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 291
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 2013118-00-A
+- Description: Model Y Air Mattress
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Yongwoon  Han
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 292
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mary  Gardner
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 293
+- Created At: 01/30/2026  3:33:25 PM
+- Part: 1562262-00-A
+- Description: Pet Liner - MS/M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mary  Gardner
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 294
+- Created At: 01/30/2026  3:33:24 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Alex  McDonald
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 295
+- Created At: 01/30/2026  3:33:24 PM
+- Part: 1819444-00-A
+- Description: KEY FOB TOP LEVEL ASSEMBLY, MX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Alex  McDonald
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 296
+- Created At: 01/30/2026  3:33:24 PM
+- Part: 1490876-00-A
+- Description: Model X Key Band Black OS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Alex  McDonald
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 297
+- Created At: 01/30/2026  3:33:24 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Matt  Newman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 298
+- Created At: 01/30/2026  3:33:24 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: John  Duvall
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 299
+- Created At: 01/30/2026  3:33:24 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: ERIK  LECOMTE
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 300
+- Created At: 01/30/2026  3:33:24 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Rob  Becker
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 301
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mohamed  Elsamra
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 302
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Amir  Mahmoud
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 303
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 2048569-SB-A
+- Description: Opal Model Y Trunk Storage Bins
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Luis  Cabrera
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 304
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Luis  Cabrera
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 305
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 2097841-00-A
+- Description: Door Pocket + Cupholder Liners, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Luis  Cabrera
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 306
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1628227-10-C
+- Description: MY WIPER BLADE PS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Luis  Cabrera
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 307
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1628231-10-C
+- Description: MY WIPER BLADE DS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Luis  Cabrera
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 308
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1753940-00-D
+- Description: FLOOR MAT KIT LHD, END ITEM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mark  Moore
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 309
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1076730-00-C
+- Description: M3 WIPER BLADE DR LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mark  Moore
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 310
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gladys  Gonzalez
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 311
+- Created At: 01/30/2026  3:33:23 PM
+- Part: 1069533-01-B
+- Description: Model X Outdoor Car Cover
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gil  May
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 312
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1490876-00-A
+- Description: Model X Key Band Black OS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gil  May
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 313
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Theo  Theo
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 314
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Carter  Roberts
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 315
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Andre  Janjacomo Alcausa
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 316
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: Canceled
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Zian  Zhou
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 317
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1974087-00-A
+- Description: HIGHLAND ALL WEATHER LINERS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Steve  Barnhart
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 318
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 2097851-00-A
+- Description: Tesla Projection Lights, FR, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Steve  Barnhart
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 319
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Steve  Barnhart
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 320
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1977818-00-A
+- Description: TRAY, CONSOLE, BUNDLE, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Steve  Barnhart
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 321
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: mark  johnson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 322
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Sebastiano  Setticasi
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 323
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1250232-99-D
+- Description: WHEEL COVER, EVEREST 20" PREMIUM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Sebastiano  Setticasi
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 324
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Harish  Jakkilinki
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 325
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1896189-00-A
+- Description: SERVICE KIT, HEPA AND CARBON FILTERS, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Harish  Jakkilinki
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 326
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Huy  Ton
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 327
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Harish  Jakkilinki
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 328
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1034389-00-D
+- Description: WIPER BLADE, DRVR, LHD, MDLX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Josh  Angel
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 329
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Harish  Jakkilinki
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 330
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1034390-00-B
+- Description: WIPER BLADE, PASSENGER, LHD, MDL X
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Josh  Angel
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 331
+- Created At: 01/30/2026  3:33:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Melanie  Jarvis
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 332
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Michael  Lilly
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 333
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1044235-00-C
+- Description: 19 INCH GEMINI CAP
+- Status: Pick Assigned
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-ECOM
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB105-119-60-A
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXPA092482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 334
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ashley Edwards  Ashley Edwards
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 335
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1104541-00-B
+- Description: Bracket - Frt Whlhse Lnr Stiffnr RH, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Total Recon - Rockville
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 15
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 336
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1104540-00-B
+- Description: Bracket - Frt Whlhse Lnr Stiffnr LH, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Total Recon - Rockville
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 15
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 337
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1855514-00-A
+- Description: ASY, 7XXX ANKLE CATCHER , M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Total Recon - Rockville
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 338
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1777777-T2-G
+- Description: ASY,STR,48A,2PH,800HVDC,52LVDC,GFTX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service Charlotte Northlake
+- Ship By Date: 01/20/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHEDXRA038174
+- Carrier: 
+- Is Milk Run: false
+
+## Order 339
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1088218-00-I
+- Description: PTC heater Dual Zone M3
+- Status: Stage Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: NA-US-MA-Peabody-North Shore
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-128-60-B
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:17:49 PM
+- Stage Completed At: 01/30/2026  4:26:54 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EBXJF068338
+- Carrier: 
+- Is Milk Run: true
+
+## Order 340
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1006551-00-B
+- Description: BLT,HEX,M6x25[9.8]-M-S-02
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-137-60-B
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 341
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 3488227-00-A
+- Description: WHEEL, 21X10.5J ET48, UBERTURBINE
+- Status: Stage Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: Tesla Service Brooklyn Gowanus
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB304-166-60-A
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:46:24 PM
+- Stage Completed At: 01/30/2026  4:57:18 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF8PF916524
+- Carrier: 
+- Is Milk Run: true
+
+## Order 342
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1083001-00-G
+- Description: M3, LOAD FLOOR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Collision Norwalk
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA4PF518842
+- Carrier: 
+- Is Milk Run: false
+
+## Order 343
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1492611-S0-A
+- Description: SERVICE-KIT, COOLANT PUMP
+- Status: Drop Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Glen Allen-9850 W Broad St
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-163-40-B
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:23:21 PM
+- Stage Completed At: 01/30/2026  4:26:17 PM
+- Loaded At: 01/30/2026  4:33:20 PM
+- Shipped At: 
+- VIN: 7SAYGDEE1TF413838
+- Carrier: Lanter Delivery Systems
+- Is Milk Run: true
+
+## Order 344
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1084174-00-D
+- Description: LWR VALANCE ASM, FRT FASCIA (w/PWS), M3
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB307-137-10-A
+- Qty: 1
+- Picked By: rpazona
+- Pick Completed At: 01/30/2026  4:17:33 PM
+- Stage Completed At: 01/30/2026  4:20:19 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA6PF436417
+- Carrier: 
+- Is Milk Run: true
+
+## Order 345
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1027919-00-B
+- Description: AIR SUSP VALVE BLOCK
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-125-50-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:16:29 PM
+- Stage Completed At: 01/30/2026  4:25:55 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E26JF244227
+- Carrier: 
+- Is Milk Run: true
+
+## Order 346
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1494301-00-B
+- Description: SILL PLATE, MY
+- Status: Pick Assigned
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-137-21-D
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: Multiple (2)
+- Carrier: 
+- Is Milk Run: true
+
+## Order 347
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 3488222-00-A
+- Description: SVC WHEEL, 19x9.5J ET45, APOLLO, MODEL Y
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB407-171-10
+- Qty: 3
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:23:34 PM
+- Stage Completed At: 01/30/2026  4:23:40 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: Multiple (2)
+- Carrier: 
+- Is Milk Run: true
+
+## Order 348
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1770888-00-D
+- Description: BACKLITE WITH ANTENNA, NA, ACOUSTIC 2.1-1.6 STACK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-GLASS
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Silver Spring-2320 Broadbirch Dr
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 349
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1454548-00-A
+- Description: NUT,HF,M10-1.5,[10],G0110
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-147-22-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:18:58 PM
+- Stage Completed At: 01/30/2026  4:25:55 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA6PF436417
+- Carrier: 
+- Is Milk Run: true
+
+## Order 350
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1088218-00-I
+- Description: PTC heater Dual Zone M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: NA-US-MA-Peabody-North Shore
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 351
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1077570-00-D
+- Description: M3S TOW HOOK
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Collision Carle Place
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB110-178-40-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA2JF025149
+- Carrier: 
+- Is Milk Run: true
+
+## Order 352
+- Created At: 01/30/2026  3:33:21 PM
+- Part: 1027911-00-H
+- Description: AIR SUSP COMPRESSOR, WABCO Twin
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-LawrenceTownship-Princeton
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 353
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1019010-00-A
+- Description: FUSE,FAST,40A,700VAC/DC,14MM x 51MM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 354
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1081581-00-D
+- Description: WHEEL LINER,FR LH,M3
+- Status: Stage Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB205-126-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:08:14 PM
+- Stage Completed At: 01/30/2026  4:18:09 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB0JF114324
+- Carrier: 
+- Is Milk Run: true
+
+## Order 355
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1712513-00-E
+- Description: LAMP ASY, REAR FASCIA LAMP, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: SUPREME AUTO SERVICE & REPAIR
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5yj3e1ea0sf010442
+- Carrier: 
+- Is Milk Run: false
+
+## Order 356
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1712514-00-D
+- Description: LAMP ASY, REAR FASCIA LAMP, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: SUPREME AUTO SERVICE & REPAIR
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5yj3e1ea0sf010442
+- Carrier: 
+- Is Milk Run: false
+
+## Order 357
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1784689-00-D
+- Description: DIFFUSER ASM, REAR FASCIA, BASE, FREMONT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: SUPREME AUTO SERVICE & REPAIR
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5yj3e1ea0sf010442
+- Carrier: 
+- Is Milk Run: false
+
+## Order 358
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1776470-20-E
+- Description: DOOR TRIM ASSY, STD BLACK, RR LH
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: Tesla Collision Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB116-185-20-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA2RF848224
+- Carrier: 
+- Is Milk Run: true
+
+## Order 359
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 8008240-29-A
+- Description: BRAKE PAD SERVICE KIT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-LawrenceTownship-Princeton
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA3RF835594
+- Carrier: 
+- Is Milk Run: true
+
+## Order 360
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1856706-N1-E
+- Description: 1R SEATBELT, RH,  BLK, NA
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-DG
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: US-NH-Londonderry-36 Industrial Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NBDG-338-10
+- Qty: 1
+- Picked By: branvazquez
+- Pick Completed At: 01/30/2026  3:58:09 PM
+- Stage Completed At: 01/30/2026  4:01:52 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA3RF754918
+- Carrier: 
+- Is Milk Run: true
+
+## Order 361
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1857606-N1-C
+- Description: SEAT BELT LAP PRETENSIONER, RH,NA
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-DG
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: US-NH-Londonderry-36 Industrial Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NBDG-335-10
+- Qty: 1
+- Picked By: branvazquez
+- Pick Completed At: 01/30/2026  3:56:27 PM
+- Stage Completed At: 01/30/2026  4:01:52 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA3RF754918
+- Carrier: 
+- Is Milk Run: true
+
+## Order 362
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1744307-00-H
+- Description: CURTAIN A/B, RH, NA
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-DG
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: US-NH-Londonderry-36 Industrial Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NBDG-340-10
+- Qty: 1
+- Picked By: branvazquez
+- Pick Completed At: 01/30/2026  3:59:53 PM
+- Stage Completed At: 01/30/2026  4:01:52 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA3RF754918
+- Carrier: 
+- Is Milk Run: true
+
+## Order 363
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1856705-N1-E
+- Description: 1R SEATBELT, LH,  BLK, NA
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-DG
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: US-NH-Londonderry-36 Industrial Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NBDG-430-10
+- Qty: 1
+- Picked By: branvazquez
+- Pick Completed At: 01/30/2026  4:01:46 PM
+- Stage Completed At: 01/30/2026  4:01:52 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA3RF754918
+- Carrier: 
+- Is Milk Run: true
+
+## Order 364
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1109253-00-J
+- Description: LHD-ASY M3 B PILLAR APPLIQUE LH
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-115-20-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5LF785577
+- Carrier: 
+- Is Milk Run: true
+
+## Order 365
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1081401-E0-D
+- Description: FENDER ASSY, LH, MODEL 3, E-COATED
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB403-209-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:19:49 PM
+- Stage Completed At: 01/30/2026  4:23:40 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB0JF114324
+- Carrier: 
+- Is Milk Run: true
+
+## Order 366
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1502213-00-C
+- Description: ACOUSTIC BLANKET, AC COMPRESSOR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BINBOX-SLOW
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8MF852013
+- Carrier: 
+- Is Milk Run: true
+
+## Order 367
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1344811-00-C
+- Description: STEERING COLUMN ASSY,LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-PA-Whitehall-955 Grape St
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA6SF020196
+- Carrier: 
+- Is Milk Run: false
+
+## Order 368
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1081581-00-D
+- Description: WHEEL LINER,FR LH,M3
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB205-126-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:20:09 PM
+- Stage Completed At: 01/30/2026  4:30:42 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB0LF735775
+- Carrier: 
+- Is Milk Run: true
+
+## Order 369
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1077577-00-F
+- Description: TUBE (BATT), FRONT MANIFOLD, LEFT, M3
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-146-10-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB0LF735775
+- Carrier: 
+- Is Milk Run: true
+
+## Order 370
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1111523-00-B
+- Description: BOLT,HX,M8-1.25x30,[109],ZNFL,ADH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-PA-Whitehall-955 Grape St
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA6SF020196
+- Carrier: 
+- Is Milk Run: false
+
+## Order 371
+- Created At: 01/30/2026  3:33:20 PM
+- Part: 1473445-00-B
+- Description: Single Axis, 480g, Crash Accel, Perp
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-TESLA INTERNAL
+- Deliver To: US-NJ-Randolph-140 NJ-10
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB111-168-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB0PF595619
+- Carrier: 
+- Is Milk Run: true
+
+## Order 372
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1530116-00-A
+- Description: TUBE(BATT),HVBATTRETURNTO5WAYVALVE
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-135-30-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB0LF735775
+- Carrier: 
+- Is Milk Run: true
+
+## Order 373
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1910795-S0-A
+- Description: ASSEMBLY - REAR QUARTER OUTER - RIGHT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: Keri Coach Works
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4RF759909
+- Carrier: 
+- Is Milk Run: true
+
+## Order 374
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1090508-00-E
+- Description: M3, SEAL, REAR, DOOR,SECONDARY, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: Keri Coach Works
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4RF759909
+- Carrier: 
+- Is Milk Run: true
+
+## Order 375
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1751848-E0-A
+- Description: ASSEMBLY - REAR DOOR - RIGHT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: Keri Coach Works
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4RF759909
+- Carrier: 
+- Is Milk Run: true
+
+## Order 376
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1592032-00-J
+- Description: Ext Mirror Assy,ChrDel,EC,Dom,RH M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: Keri Coach Works
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4RF759909
+- Carrier: 
+- Is Milk Run: true
+
+## Order 377
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1090494-00-E
+- Description: M3, SEAL, FRONT, DOOR,SECONDARY, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: Keri Coach Works
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4RF759909
+- Carrier: 
+- Is Milk Run: true
+
+## Order 378
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1060244-00-D
+- Description: ASY, 12V CAGE, MX
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: NA-US-NJ-Paramus-43191
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB102-175-40-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE24GF013044
+- Carrier: 
+- Is Milk Run: true
+
+## Order 379
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1007471-04-J
+- Description: SUN VISOR ASY RH, DUAL LANG, PROV BLACK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service The Woodlands
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E12HF198946
+- Carrier: 
+- Is Milk Run: false
+
+## Order 380
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1629234-00-A
+- Description: WASHER PUMP JE NEXT GEN
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: US-MA-Springfield-365 Cadwell Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-165-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC5NF238619
+- Carrier: 
+- Is Milk Run: true
+
+## Order 381
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1878966-20-E
+- Description: CNSL, SLIDING DOORS, ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: NA-US-MD-Baltimore-Owings Mills
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB8SF023741
+- Carrier: 
+- Is Milk Run: true
+
+## Order 382
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1555055-00-D
+- Description: AC LINE, ASY, MFLD TO HVAC, M3 R1234yf
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: Tesla Service Stamford
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC8PF584795
+- Carrier: 
+- Is Milk Run: true
+
+## Order 383
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1081832-00-J
+- Description: DOOR HANDLE OUTER, PASSIVE, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-MD-Rockville-1300 Rockville Pike
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB9JF093733
+- Carrier: 
+- Is Milk Run: true
+
+## Order 384
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 8765432-02-B
+- Description: NV35 1R SEAT ASSEMBLY WHT LHD LH
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SEAT
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB301-132-40-A
+- Qty: 1
+- Picked By: nwinnie
+- Pick Completed At: 01/30/2026  4:22:07 PM
+- Stage Completed At: 01/30/2026  4:25:09 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1ET2RF868443
+- Carrier: 
+- Is Milk Run: true
+
+## Order 385
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1071549-00-B
+- Description: NA LIC PLATE BRKT STRUCT BASE TAPE MS2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 386
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1061912-00-C
+- Description: LICENSE PLATE BRKT STRUCTUAL BASE NA MS2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 387
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1061911-00-C
+- Description: LICENSE PLATE BRACKET SHELL, NA, MS2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 388
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1056837-00-D
+- Description: Ankle Catcher MS2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 389
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1455166-00-C
+- Description: M3 Rear Spoiler, Carbon
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 390
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1057847-00-E
+- Description: GRILLE COVER UPR, FR FASCIA MS2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 391
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1121191-00-E
+- Description: M3, Brkt, Rr Center, Assy
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 392
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1057850-00-C
+- Description: GRILLE COVER RH, FR FASCIA MS2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 393
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1056376-00-D
+- Description: LWR VALENCE, FR FASCIA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 394
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1530484-00-D
+- Description: M3 ASY RR BUMPER BEAM - EXTRUSION
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 395
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1105486-00-E
+- Description: M3 LIFTGATE HANDLE SUB ASSEMBLY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 396
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1056370-S0-A
+- Description: FR FASCIA MS2, AUTOPILOT, SVC
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Ebby's Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21JF260223
+- Carrier: 
+- Is Milk Run: true
+
+## Order 397
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1713282-00-A
+- Description: LAMP ASY, REAR LICENSE PLATE, Magna
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 398
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1077398-00-H
+- Description: LAMP ASY, REAR BODYSIDE SAE, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 399
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1484849-00-B
+- Description: Dual Motor Performance Badge
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 400
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1494950-00-A
+- Description: M3 Rear T-Badge
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 401
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1601460-E0-A
+- Description: TRUNK ASSY, MODEL 3, POWERED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EC9NF114854
+- Carrier: 
+- Is Milk Run: true
+
+## Order 402
+- Created At: 01/30/2026  3:33:19 PM
+- Part: 1054804-00-D
+- Description: Wheel Fairing RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCDE24JF128560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 403
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1780812-00-C
+- Description: Wheel Fairing, FR, RH,CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Dante Moore
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED3RA008904
+- Carrier: 
+- Is Milk Run: false
+
+## Order 404
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1116646-00-B
+- Description: BOLT&WSHR[FL],M6x27,[88],ZNNI,SMAT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Dante Moore
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED3RA008904
+- Carrier: 
+- Is Milk Run: false
+
+## Order 405
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1840321-00-A
+- Description: STD,M6x40,[88],G1009,NJ
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Dante Moore
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED3RA008904
+- Carrier: 
+- Is Milk Run: false
+
+## Order 406
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1143711-00-C
+- Description: Radio, FM/HD/XM, MS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: NA-US-CT-Milford
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E29JF244111
+- Carrier: 
+- Is Milk Run: true
+
+## Order 407
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1056380-00-C
+- Description: FOG SPEAR UPR RH, FR FASCIA, MS2
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB111-157-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 408
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1056381-00-C
+- Description: FOG SPEAR LWR RH, FRONT FASCIA MS2
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-171-22-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 409
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1622591-00-D
+- Description: MS, SOFT TRIM, PARCEL SHELF ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E28LF410816
+- Carrier: 
+- Is Milk Run: true
+
+## Order 410
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1022543-00-B
+- Description: BLT,HEX,M6-1.00X30 + PATCH
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-163-60-A
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 411
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1056379-00-C
+- Description: FOG SPEAR LWR LH, FR FASCIA MS2
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB110-177-10-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 412
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1097480-00-A
+- Description: MS PARK ASSIST RETAINER S3
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB120-149-2-CE
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 413
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1056378-00-C
+- Description: FOG SPEAR UPR LH, FR FASCIA MS2
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB117-152-20-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 414
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 2204946-00-A
+- Description: P3 STANDARD WHEEL TRIM, WHEEL SET
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Greenville
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E51TF559515
+- Carrier: 
+- Is Milk Run: true
+
+## Order 415
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1037523-00-T
+- Description: ASY,HRN,MDLS,ALL,HEADLINER
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service Duluth
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E47HF211765
+- Carrier: 
+- Is Milk Run: false
+
+## Order 416
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1097478-00-C
+- Description: MS COYOTE RETAINER II S1
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB106-183-23-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 417
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1097479-00-A
+- Description: MS PARK ASSIST RETAINER S2
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB120-147-3-BC
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 418
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1420671-00-B
+- Description: BRAKE BOOSTER ASSY,LHD,BASE
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-CA-North Hollywood-13005 Sherman Way
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E65PF521798
+- Carrier: 
+- Is Milk Run: false
+
+## Order 419
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1060345-S0-H
+- Description: BUMPER PLATE - LEFT HAND
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Collision Carle Place
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB106-185-60-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E55NF465589
+- Carrier: 
+- Is Milk Run: true
+
+## Order 420
+- Created At: 01/30/2026  3:33:18 PM
+- Part: 1567139-88-E
+- Description: ASY, ROCKER COVER, RH, MODEL S, EXT VENT
+- Status: Stage Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Totowa-545 US-46
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB403-231-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:26:28 PM
+- Stage Completed At: 01/30/2026  4:26:33 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E5XRF544925
+- Carrier: 
+- Is Milk Run: true
+
+## Order 421
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1486286-01-A
+- Description: 19 INCH TEMPEST CAP, DARK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-ECOM
+- Destination Entity Group: NB MILKRUN 27
+- Deliver To: KOLEX COLLISION CENTER
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E57PF518263
+- Carrier: 
+- Is Milk Run: true
+
+## Order 422
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 6005922-00-E
+- Description: LAMP ASY - L/Gate TAIL B/U - SAE (LH)
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: NA-US-NY-Mt. Kisco-Mt. Kisco
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-183-40-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E59NF469323
+- Carrier: 
+- Is Milk Run: true
+
+## Order 423
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 2204946-00-A
+- Description: P3 STANDARD WHEEL TRIM, WHEEL SET
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-FL-Miami Gardens-20850 Northwest 2nd Ave
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E69TF555141
+- Carrier: 
+- Is Milk Run: false
+
+## Order 424
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 6005918-00-G
+- Description: LAMP ASY - STOP/TAIL/TURN - SAE (LH)
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: NA-US-NY-Mt. Kisco-Mt. Kisco
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-117-60-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E59NF469323
+- Carrier: 
+- Is Milk Run: true
+
+## Order 425
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1585737-00-B
+- Description: MS P2 Wing Brkt Assy, LH, RR Fascia
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-130-50-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:36:12 PM
+- Stage Completed At: 01/30/2026  4:51:30 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E67NF473962
+- Carrier: 
+- Is Milk Run: true
+
+## Order 426
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1533237-S0-F
+- Description: MY WSHLD ASSY LHD IR ACSTC (no sensor)
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-GLASS
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 427
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1495245-00-C
+- Description: COMP, FR END CARRIER, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 428
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1514466-00-A
+- Description: LWR GRILLE FEM BRKT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 429
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1613579-00-D
+- Description: VALANCE, FASCIA FRT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 430
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1077391-00-F
+- Description: LAMP ASY, FASCIA LAMP, SAE UP-LEVEL, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 431
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1446114-00-B
+- Description: BOLT,HF,M10x130,STL[109],ZNFL,MAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 432
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1101560-00-A
+- Description: MX FASCIA RR ASM FOR SERVICE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-Toronto-1251 Tapscott Rd
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCBE21GF007773
+- Carrier: 
+- Is Milk Run: true
+
+## Order 433
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1494159-00-C
+- Description: MY ACTIVE GRILLE SHUTTER ASSY, NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 434
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1493759-00-A
+- Description: Grille - Frt Fascia, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 435
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1063215-00-B
+- Description: HARD COVER, EXT. DOOR HANDLE, LH
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-161-50-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:39:46 PM
+- Stage Completed At: 01/30/2026  4:51:30 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E67NF473962
+- Carrier: 
+- Is Milk Run: true
+
+## Order 436
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1494301-00-B
+- Description: SILL PLATE, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE5MF256426
+- Carrier: 
+- Is Milk Run: true
+
+## Order 437
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1505433-00-B
+- Description: ASY, ANKLE CATCHER, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 438
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1492613-00-C
+- Description: WHEEL LINER, FR LH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE5MF256426
+- Carrier: 
+- Is Milk Run: true
+
+## Order 439
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1493736-S0-A
+- Description: MY FRONT FASCIA SVC, UNPAINTED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Chantilly Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF071708
+- Carrier: 
+- Is Milk Run: true
+
+## Order 440
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1494185-98-C
+- Description: ASSY, FENDER GARNISH, FT LH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-AUDIT
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE5MF256426
+- Carrier: 
+- Is Milk Run: true
+
+## Order 441
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1613579-00-D
+- Description: VALANCE, FASCIA FRT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE5MF256426
+- Carrier: 
+- Is Milk Run: true
+
+## Order 442
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1077391-00-F
+- Description: LAMP ASY, FASCIA LAMP, SAE UP-LEVEL, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE5MF256426
+- Carrier: 
+- Is Milk Run: true
+
+## Order 443
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1508179-00-F
+- Description: ASSY, REAR BLE, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-PA-Whitehall-955 Grape St
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE6MF253678
+- Carrier: 
+- Is Milk Run: false
+
+## Order 444
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1493759-00-A
+- Description: Grille - Frt Fascia, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE5MF256426
+- Carrier: 
+- Is Milk Run: true
+
+## Order 445
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1493736-S0-A
+- Description: MY FRONT FASCIA SVC, UNPAINTED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Kenwood Auto Body - Rockville
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE5MF256426
+- Carrier: 
+- Is Milk Run: true
+
+## Order 446
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 2003660-99-H
+- Description: MY STEERING WHEEL HEATED PUR
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: Tesla Service Providence
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB118-191-60-B
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  5:01:49 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1TA631470
+- Carrier: 
+- Is Milk Run: true
+
+## Order 447
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1615883-02-A
+- Description: GLASS, EXT. MIRROR PREM DOM EC RH MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Evan Copeland
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1TA594727
+- Carrier: 
+- Is Milk Run: false
+
+## Order 448
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1035158-00-D
+- Description: AERO SHIELD, FRONT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: NA-US-MD-Baltimore-Owings Mills
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCBE2XGF005004
+- Carrier: 
+- Is Milk Run: true
+
+## Order 449
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1506885-00-H
+- Description: ASY - B-PILLAR APPLIQUE - LH, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-PA-Whitehall-955 Grape St
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEE6MF253678
+- Carrier: 
+- Is Milk Run: false
+
+## Order 450
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1614126-00-F
+- Description: MX-P2, WINDOW REGULATOR, FR LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: US-NH-Londonderry-36 Industrial Dr
+- Ship By Date: 02/09/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCDE50PF423399
+- Carrier: 
+- Is Milk Run: true
+
+## Order 451
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1494006-00-C
+- Description: MODEL Y, REAR FASCIA, LOWER
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 452
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1493636-00-A
+- Description: MODEL Y, REAR SUSPENSION AERO COVER, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 453
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1494007-00-B
+- Description: MODEL Y, REAR FASCIA, DIFFUSER
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 454
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1478378-00-A
+- Description: NUT,HF,M12-1.75,[10],ZNNI, BLACK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 455
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1063242-00-B
+- Description: BOLT,HF.M12-1.75x75,[10.9],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 456
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1188427-00-B
+- Description: RR UPR FORE LINK ASSY, CLRC
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 457
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1044451-00-F
+- Description: RR LWR AFT LINK ASSY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 458
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1288417-00-A
+- Description: RR KNUCKLE ASSY RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 459
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1896370-00-C
+- Description: NV 45 SERVICE FRONT FASCIA SKIN ASSEMBLY
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB-RDC-TESLA INTERNAL
+- Deliver To: US-NJ-Randolph-140 NJ-10
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB404-102-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED0RA052715
+- Carrier: 
+- Is Milk Run: true
+
+## Order 460
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1896372-00-C
+- Description: NV 45 SERVICE REAR FASCIA DIFFUSER SKIN ASSEMBLY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 461
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 2188391-10-A
+- Description: FUCA MOUNT, SJI, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-LawrenceTownship-Princeton
+- Ship By Date: 02/09/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE7TF370543
+- Carrier: 
+- Is Milk Run: true
+
+## Order 462
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1188771-00-A
+- Description: WHEEL SPEED SENSOR, REAR, MODEL 3,Y
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 463
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1800643-00-C
+- Description: BRACKET, BODY SIDE LH, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 464
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1044123-00-B
+- Description: DRIVEN HUB, 142mm FLANGE OD
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 465
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1684650-00-C
+- Description: BRACKET, FASCIA STEP, CENTER LH, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 466
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1494188-98-C
+- Description: RWK ASSY, FENDER GARNISH, RR RH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 467
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1896371-00-B
+- Description: NV 45 SERVICE REAR FASCIA SKIN ASSEMBLY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 468
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 2552584-00-B
+- Description: ASY,HARN,MDLX,FRUNK, LHD, NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-TN-Knoxville-216 Montvue Rd
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCDE59PF383663
+- Carrier: 
+- Is Milk Run: false
+
+## Order 469
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1117701-99-E
+- Description: TRIM CLIP,8.5MM,0.7-1.6,SEAL,POM [B]
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 470
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1806762-00-D
+- Description: REAR MARKER LAMP, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 471
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1497744-00-C
+- Description: MODEL Y, ROCKER COVER RH, ASY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 472
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1783422-00-C
+- Description: ASSY, REAR FENDER FLARE, AFT, LH, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 473
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1106827-00-C
+- Description: GROM,GROMMET,22x8,4x7,0.8-1 GRIP,PA66
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 9
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 474
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1813698-00-D
+- Description: ASSY, CARRIER REAR FENDER FLARE, AFT, LH, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 475
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1112572-00-A
+- Description: PUSH PULL RIVET, 3x7.5-8.5 GRIP, PA6
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 50
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 476
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1188832-00-B
+- Description: STEERING GEAR ASSY, LHD
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 477
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1783432-00-E
+- Description: ASSY,CARRIER REAR FENDER FLARE,FORE,LH,CT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 478
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1115558-00-A
+- Description: NUT&WSHR[SW],M24, STL[8],ZNFL,SERR
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 479
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1783420-00-C
+- Description: ASSY, REAR FENDER FLARE, FORE, LH, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 480
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1112242-00-A
+- Description: BOLT,PF,SHL[5x7]M6x17,[109],ZNNI,BLK,MAT
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Springfield-Route 22 East
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-119-60-A
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE56PF384824
+- Carrier: 
+- Is Milk Run: true
+
+## Order 481
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1111533-00-A
+- Description: NUT,HF,M14-2.0,[10],ZNNI
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 482
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1816601-00-C
+- Description: LH/RR ROCKER STEP REINFORCEMENT, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 483
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1937825-00-D
+- Description: UNIVERSAL MOBILE CONNECTOR V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: SAMUEL SIMMONS
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED0RA002722
+- Carrier: 
+- Is Milk Run: false
+
+## Order 484
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1111522-00-A
+- Description: BOLT,HF,M14-2.0x95,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 485
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1816602-00-C
+- Description: RH/RR ROCKER STEP REINFORCEMENT, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 486
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1188341-00-C
+- Description: FRONT LOWER LATERAL LINK ASSEMBLY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 487
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1816599-00-C
+- Description: RH ROCKER ASY, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 488
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1109912-00-B
+- Description: BLT,HF,M14-2.0x65,[109],ZNFL,P01
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 489
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1816597-00-C
+- Description: LH ROCKER ASY, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: Airport Rd Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED1RA052285
+- Carrier: 
+- Is Milk Run: true
+
+## Order 490
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1109263-00-B
+- Description: NUT&WSHR[SW],M14x1.5,[10],ZNFL,PTP
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 491
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1112245-00-A
+- Description: NUT,HF,M14-1.5,[10],ZNNI
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 492
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1109823-00-B
+- Description: BOLT,HF,M14-1.5x83,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 493
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 2188359-10-B
+- Description: FR LWR COMP LINK ASSY, CN, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 494
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1111145-00-A
+- Description: NUT,HF,M10-1.5,[10],ZNNI,PTP
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 495
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1064834-00-B
+- Description: BOLT,BH,M10-1.5x59,[10.9],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 496
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1114797-00-A
+- Description: BOLT,HF,M6-1x16,[58],ZNFL,SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 497
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1777777-T2-G
+- Description: ASY,STR,48A,2PH,800HVDC,52LVDC,GFTX
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: NA-US-FL-Fort Lauderdale-Federal Highway
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED6RA005933
+- Carrier: 
+- Is Milk Run: false
+
+## Order 498
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1777777-T2-G
+- Description: ASY,STR,48A,2PH,800HVDC,52LVDC,GFTX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: NA-US-CA-Santa Monica-1100 Colorado Ave v2
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED8RA005190
+- Carrier: 
+- Is Milk Run: false
+
+## Order 499
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1188316-00-F
+- Description: FR KNUCKLE, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 500
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1507801-20-E
+- Description: HVCON,PLG,300MM2,BB,CT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: NA-US-FL-Fort Lauderdale-Federal Highway
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED6RA005933
+- Carrier: 
+- Is Milk Run: false
+
+## Order 501
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 2007067	
+- Description: BOLT,BN,M6x16,[68],ZNNI,MAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 6
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 502
+- Created At: 01/30/2026  3:33:17 PM
+- Part: 1188761-00-B
+- Description: WHEEL SPEED SENSOR, FRONT, MODEL 3/Y
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 503
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1088969-00-B
+- Description: BOLT,TE,M12-1.75x45,[109],G0110[B],SMAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 504
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1833849-00-A
+- Description: BLT,HHN,M125x54,[109],G0110,SM
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 6
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 505
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1044121-00-F
+- Description: DRIVEN HUB, MODEL 3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 506
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 3488223-00-A
+- Description: SVC WHEEL, 20X9.5J ET45, INDUCTION, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 507
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1006535-00-A
+- Description: PL-RIV,7.9,GR9.8-11,MLT-MT,[B]
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 6
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 508
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1494186-98-C
+- Description: ASSY, FENDER GARNISH, FT RH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 509
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1614220-00-E
+- Description: ZF First Row Buckle
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-FL-Wesley Chapel-4980 Eagleston Blvd
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE61SF470589
+- Carrier: 
+- Is Milk Run: false
+
+## Order 510
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1472872-00-C
+- Description: M3 FRUNK-FENDER CLIP, ASY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 511
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1484170-00-A
+- Description: SEMS,[FL],HX,M6x18,[88],G1009[B],MAT,ADH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 7
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 512
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1679192-00-A
+- Description: MY TX,LIFTGATE LWR TRIM,ASY,RR SPEAKER
+- Status: Dock Stage Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB205-122-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  3:51:26 PM
+- Stage Completed At: 01/30/2026  4:04:59 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 513
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1454548-00-A
+- Description: NUT,HF,M10-1.5,[10],G0110
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 514
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1128034-00-B
+- Description: PUSH PULL RIVET,8MM,5-7 GRP,NYLON,BLK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 10
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 515
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1550160-00-A
+- Description: GLASS, PREMIUM, DOMESTIC, LH MX
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Springfield-Route 22 East
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB111-188-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE56PF384824
+- Carrier: 
+- Is Milk Run: true
+
+## Order 516
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1499151-00-C
+- Description: MODEL 3/Y, FRONT AERO SHIELD
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 517
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1613579-00-D
+- Description: VALANCE, FASCIA FRT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: Body by Cochran Castle Shannon
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE1RF042560
+- Carrier: 
+- Is Milk Run: true
+
+## Order 518
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1104284-01-K
+- Description: KEYCARD, NFC, M3 NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: NA-US-FL-Tampa-Florida Ave.-46269
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE6PF669672
+- Carrier: 
+- Is Milk Run: false
+
+## Order 519
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1490701-01-E
+- Description: TPMS Wheel Unit, BLE, Black
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: Tesla Service Brooklyn Gowanus
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB104-165-50-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE7NF365683
+- Carrier: 
+- Is Milk Run: true
+
+## Order 520
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1059752-00-C
+- Description: WARTHOG SUPPORT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE69NF330102
+- Carrier: 
+- Is Milk Run: true
+
+## Order 521
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 3488222-00-A
+- Description: SVC WHEEL, 19x9.5J ET45, APOLLO, MODEL Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 18
+- Deliver To: Flower City Collision
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEEXPF919317
+- Carrier: 
+- Is Milk Run: true
+
+## Order 522
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1094959-02-G
+- Description: MY3 DR ELEC RELEASE SW RR RH MATTE
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: US-NH-Londonderry-36 Industrial Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB120-165-3-FA
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:14:04 PM
+- Stage Completed At: 01/30/2026  4:26:33 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGAEE6SF259947
+- Carrier: 
+- Is Milk Run: true
+
+## Order 523
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1459652-00-A
+- Description: ASY,HV DMY PLUG,HC-STAK 25,2P,600V,90DEG
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: NA-US-CT-Milford
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-130-40-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:21:54 PM
+- Stage Completed At: 01/30/2026  4:26:05 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED2SF218076
+- Carrier: 
+- Is Milk Run: true
+
+## Order 524
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1500397-00-G
+- Description: HOOD LATCH DOUBLE PULL SINGLE ACTUATOR
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB101-152-50-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 525
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1492614-00-C
+- Description: WHEEL LINER, FR RH, MY
+- Status: Dock Stage Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB203-145-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  3:57:10 PM
+- Stage Completed At: 01/30/2026  4:04:59 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 526
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1619812-CN-A
+- Description: REAR APRON, HEPA, MY
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB204-132-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  3:55:18 PM
+- Stage Completed At: 01/30/2026  4:04:59 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 527
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1492616-00-A
+- Description: WHEEL LINER, RR RH, MY
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB204-171-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  3:52:34 PM
+- Stage Completed At: 01/30/2026  4:05:08 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF749787
+- Carrier: 
+- Is Milk Run: true
+
+## Order 528
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1493452-E0-B
+- Description: MY FENDER ASSEMBLY, RH SVC E-COATED
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB402-148-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:18:16 PM
+- Stage Completed At: 01/30/2026  4:18:29 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 529
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1816617-00-A
+- Description: END ITEM, RUCKET BRACKET RH, MY SP FRMNT
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB112-139-20-B
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:42:36 PM
+- Stage Completed At: 01/30/2026  4:51:30 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF749787
+- Carrier: 
+- Is Milk Run: true
+
+## Order 530
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1493410-E0-A
+- Description: MY LIFTGATE SVC E-COATED
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB407-180-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:01:27 PM
+- Stage Completed At: 01/30/2026  4:01:30 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 531
+- Created At: 01/30/2026  3:33:16 PM
+- Part: 1551936-S0-D
+- Description: LOWER WING BRACKET - RIGHT HAND
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB111-164-20-B
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:45:20 PM
+- Stage Completed At: 01/30/2026  4:51:30 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF749787
+- Carrier: 
+- Is Milk Run: true
+
+## Order 532
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1495245-00-C
+- Description: COMP, FR END CARRIER, MY
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB305-175-10-A
+- Qty: 1
+- Picked By: rpazona
+- Pick Completed At: 01/30/2026  4:37:36 PM
+- Stage Completed At: 01/30/2026  4:48:40 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 533
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1613579-00-D
+- Description: VALANCE, FASCIA FRT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0PF675808
+- Carrier: 
+- Is Milk Run: true
+
+## Order 534
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1493370-E0-A
+- Description: MY HOOD ASY COMP SVC E-COATED
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB402-209-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:16:03 PM
+- Stage Completed At: 01/30/2026  4:18:29 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 535
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1507929-00-D
+- Description: LAMP ASY, FASCIA LAMP, SAE BASE, RH
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB107-125-60-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 536
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494631-00-C
+- Description: MY, TRUNK SILL LOWER TRIM, ASY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: International Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RA262712
+- Carrier: 
+- Is Milk Run: true
+
+## Order 537
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1487742-00-K
+- Description: Asy-Rear Panel
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: International Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RA262712
+- Carrier: 
+- Is Milk Run: true
+
+## Order 538
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1487605-00-A
+- Description: FR BUMPER BEAM FOAM
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB303-174-10-B
+- Qty: 1
+- Picked By: rpazona
+- Pick Completed At: 01/30/2026  4:43:15 PM
+- Stage Completed At: 01/30/2026  4:48:40 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED9SF227972
+- Carrier: 
+- Is Milk Run: true
+
+## Order 539
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1497681-00-C
+- Description: LIFTGATE SEAL, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: International Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RA262712
+- Carrier: 
+- Is Milk Run: true
+
+## Order 540
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1493410-E0-A
+- Description: MY LIFTGATE SVC E-COATED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: International Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RA262712
+- Carrier: 
+- Is Milk Run: true
+
+## Order 541
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494006-00-C
+- Description: MODEL Y, REAR FASCIA, LOWER
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: International Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RA262712
+- Carrier: 
+- Is Milk Run: true
+
+## Order 542
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494045-00-E
+- Description: MODEL Y, CENTER BRKT, ASSY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: International Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RA262712
+- Carrier: 
+- Is Milk Run: true
+
+## Order 543
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1095338-00-D
+- Description: LHS MOUNT ASSY, 3DUF
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Totowa-545 US-46
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-112-40-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE3PA191127
+- Carrier: 
+- Is Milk Run: true
+
+## Order 544
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1487846-S0-B
+- Description: ASY - WHLHSE OUTER AND EXTN,RH - SP
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB402-234-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:05:37 PM
+- Stage Completed At: 01/30/2026  4:10:14 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF749787
+- Carrier: 
+- Is Milk Run: true
+
+## Order 545
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1506969-00-E
+- Description: MODEL Y, TL BRKT, ASSY, RH
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-119-10-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6RA263795
+- Carrier: 
+- Is Milk Run: true
+
+## Order 546
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1487840-S0-G
+- Description: ASSEMBLY - REAR PANEL SIDE - RIGHT HAND
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-132-40-B
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:37:22 PM
+- Stage Completed At: 01/30/2026  4:51:30 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF749787
+- Carrier: 
+- Is Milk Run: true
+
+## Order 547
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 2188396-10-A
+- Description: FUCA MOUNT, SJI, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-LawrenceTownship-Princeton
+- Ship By Date: 02/09/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE7TF370543
+- Carrier: 
+- Is Milk Run: true
+
+## Order 548
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1492998-00-D
+- Description: END ITEM, WHEELHOUSE INSULATOR RR RH, MY
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB204-165-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  3:54:22 PM
+- Stage Completed At: 01/30/2026  4:05:08 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF749787
+- Carrier: 
+- Is Milk Run: true
+
+## Order 549
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494006-00-C
+- Description: MODEL Y, REAR FASCIA, LOWER
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 550
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494044-00-A
+- Description: MODEL Y, RR WING BRKT, ASSY, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 551
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1484848-00-B
+- Description: Dual Motor Badge
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 552
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1607786-00-A
+- Description: REAR T-BADGE, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 553
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494187-98-C
+- Description: RWK ASSY, FENDER GARNISH, RR LH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 554
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494188-98-C
+- Description: RWK ASSY, FENDER GARNISH, RR RH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 555
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1098751-00-C
+- Description: AIR EXTRACTOR, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 556
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1518783-10-B
+- Description: ASY,REFLEX,RHS,GEN3,MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 557
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1494187-98-C
+- Description: RWK ASSY, FENDER GARNISH, RR LH, MY NA
+- Status: Dock Stage Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB204-161-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:09:59 PM
+- Stage Completed At: 01/30/2026  4:18:09 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXPA092482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 558
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 2053865-ST-A
+- Description: ASSEMBLY - REAR QUARTER OUTER - RIGHT HAND
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 559
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1106827-00-C
+- Description: GROM,GROMMET,22x8,4x7,0.8-1 GRIP,PA66
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 9
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 560
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 2053865-ST-A
+- Description: ASSEMBLY - REAR QUARTER OUTER - RIGHT HAND
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Owings Mills-9800 Reisterstown Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB402-222-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:10:06 PM
+- Stage Completed At: 01/30/2026  4:10:14 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF749787
+- Carrier: 
+- Is Milk Run: true
+
+## Order 561
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1526012-00-A
+- Description: BOLT,HF,M10-1.5x36,[109],G0410,CMAT,A02
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 562
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1057091-00-D
+- Description: BOLT&WSHR,HX,M10x30,STL[10.9],PTC,ZNFL
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6PF846531
+- Carrier: 
+- Is Milk Run: false
+
+## Order 563
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1493410-E0-A
+- Description: MY LIFTGATE SVC E-COATED
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB407-180-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:01:01 PM
+- Stage Completed At: 01/30/2026  4:01:04 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6RA263795
+- Carrier: 
+- Is Milk Run: true
+
+## Order 564
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1497496-00-E
+- Description: MY FR HINGE RH
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Collision Carle Place
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-126-10-B
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6NF462553
+- Carrier: 
+- Is Milk Run: true
+
+## Order 565
+- Created At: 01/30/2026  3:33:15 PM
+- Part: 1979445-10-D
+- Description: LAMP ASY, REAR FASCIA LAMP SAE RH  - NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6TF526751
+- Carrier: 
+- Is Milk Run: true
+
+## Order 566
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 3488222-00-A
+- Description: SVC WHEEL, 19x9.5J ET45, APOLLO, MODEL Y
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB407-171-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  4:32:59 PM
+- Stage Completed At: 01/30/2026  4:36:12 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6RF984167
+- Carrier: 
+- Is Milk Run: true
+
+## Order 567
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 2188833-00-B
+- Description: STEERING GEAR ASSY,LHD
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 28
+- Deliver To: Conestoga Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE8TF429261
+- Carrier: 
+- Is Milk Run: true
+
+## Order 568
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 2035500-ET-A
+- Description: ASSEMBLY - FRONT DOOR - LEFT HAND
+- Status: Canceled
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE8PA158673
+- Carrier: 
+- Is Milk Run: true
+
+## Order 569
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 1937550-00-D
+- Description: WHEEL LINER ASM, FR RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 28
+- Deliver To: Conestoga Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE8TF429261
+- Carrier: 
+- Is Milk Run: true
+
+## Order 570
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 1991448-00-D
+- Description: ASY - FR BUMPER BEAM
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 28
+- Deliver To: Conestoga Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE8TF429261
+- Carrier: 
+- Is Milk Run: true
+
+## Order 571
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 1812093-00-A
+- Description: M3Y GLOBAL HEADLAMP, FASCIA BRACKET, RH
+- Status: Canceled
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-166-30-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9PF868023
+- Carrier: 
+- Is Milk Run: true
+
+## Order 572
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 2130969-00-A
+- Description: EXT.MIRROR ASSY, EC PREM, DOM, LH MY
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB106-158-40-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXPA092482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 573
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 1027011-00-A
+- Description: LUG NUT CAP, MEDIUM, CHROME
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-145-22-D
+- Qty: 2
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:57:17 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXPA092482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 574
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-ECOM
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB105-127-50-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXPA092482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 575
+- Created At: 01/30/2026  3:33:14 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-ECOM
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB105-135-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXPA092482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 576
+- Created At: 01/30/2026  3:33:13 PM
+- Part: 1634443-00-A
+- Description: BOM MODULE, MY, MUD FLAP PACKAGE
+- Status: Dock Stage Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB201-183-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:11:56 PM
+- Stage Completed At: 01/30/2026  4:18:09 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXPA092482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 577
+- Created At: 01/30/2026  3:33:13 PM
+- Part: 1916704-S7-A
+- Description: MY FRT FASCIA, STEALTH GRAY - PN01
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEEXSA338889
+- Carrier: 
+- Is Milk Run: true
+
+## Order 578
+- Created At: 01/30/2026  3:33:13 PM
+- Part: 1902378-00-A
+- Description: T-CLIP,8.2,GR1.1-1.3,Multiple Positions
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 9
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF2PF756656
+- Carrier: 
+- Is Milk Run: false
+
+## Order 579
+- Created At: 01/30/2026  3:33:12 PM
+- Part: 2119534-00-A
+- Description: SECONDARY SEAL, FRONT DOOR, LH, MY, NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF2PF756656
+- Carrier: 
+- Is Milk Run: false
+
+## Order 580
+- Created At: 01/30/2026  3:33:12 PM
+- Part: 2035500-ET-A
+- Description: ASSEMBLY - FRONT DOOR - LEFT HAND
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF2PF756656
+- Carrier: 
+- Is Milk Run: false
+
+## Order 581
+- Created At: 01/30/2026  3:33:12 PM
+- Part: 1495864-20-F
+- Description: LAMP ASY, SIDE REPEATER CAMERA, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF2PF756656
+- Carrier: 
+- Is Milk Run: false
+
+## Order 582
+- Created At: 01/30/2026  3:33:12 PM
+- Part: 1077391-00-F
+- Description: LAMP ASY, FASCIA LAMP, SAE UP-LEVEL, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF2PF756656
+- Carrier: 
+- Is Milk Run: false
+
+## Order 583
+- Created At: 01/30/2026  3:33:12 PM
+- Part: 1514952-00-E
+- Description: HD/LP ASY, GLOBAL, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF2PF756656
+- Carrier: 
+- Is Milk Run: false
+
+## Order 584
+- Created At: 01/30/2026  3:33:12 PM
+- Part: 1493770-00-C
+- Description: BRKT, FASCIA SIDE TO FDR LH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Branning's Brunswick Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF2PF756656
+- Carrier: 
+- Is Milk Run: false
+
+## Order 585
+- Created At: 01/30/2026  3:33:12 PM
+- Part: 1930438-01-D
+- Description: REAR APRON ASSY - PASSIVE HOOD
+- Status: Canceled
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDET3TA626978
+- Carrier: 
+- Is Milk Run: true
+
+## Order 586
+- Created At: 01/30/2026  3:21:40 PM
+- Part: 1111111-30-H
+- Description: ASY,HV BATTERY,P2,MSX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-PROD
+- Destination Entity Group: NB MILKRUN 7
+- Deliver To: Tesla Service Syracuse Fayetteville
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E56TF554116
+- Carrier: 
+- Is Milk Run: true
+
+## Order 587
+- Created At: 01/30/2026  3:16:19 PM
+- Part: 1107679-01-E
+- Description: ASY,HV BATT,100KWH,RAVEN,RMN,SX
+- Status: No Inventory
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-PA-Mechanicsburg-6458 Carlisle Pike
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E44KF331322
+- Carrier: 
+- Is Milk Run: true
+
+## Order 588
+- Created At: 01/30/2026  3:05:28 PM
+- Part: 1107679-01-E
+- Description: ASY,HV BATT,100KWH,RAVEN,RMN,SX
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 01/30/2026
+- Pick Type: Pallet
+- Pick Location: NB405-146-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCBE25KF185114
+- Carrier: 
+- Is Milk Run: true
+
+## Order 589
+- Created At: 01/30/2026  3:02:30 PM
+- Part: 1777777-T2-G
+- Description: ASY,STR,48A,2PH,800HVDC,52LVDC,GFTX
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: NA-US-CA-Lake Forest-Arctic Ocean Drive
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB305-142-10-A
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  3:44:21 PM
+- Stage Completed At: 01/30/2026  3:57:20 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 7G2CEHED1RA006326
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 590
+- Created At: 01/30/2026  3:01:41 PM
+- Part: 1107679-01-E
+- Description: ASY,HV BATT,100KWH,RAVEN,RMN,SX
+- Status: No Inventory
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: NA-US-NJ-Paramus-43191
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE29LF243382
+- Carrier: 
+- Is Milk Run: true
+
+## Order 591
+- Created At: 01/30/2026  3:01:04 PM
+- Part: 1107679-01-A
+- Description: ASY,HV BATT,100KWH,NON-RAVEN,RMN,SX
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: NA-US-MD-Baltimore-Owings Mills
+- Ship By Date: 01/30/2026
+- Pick Type: Pallet
+- Pick Location: NB405-171-10
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E20JF284870
+- Carrier: 
+- Is Milk Run: true
+
+## Order 592
+- Created At: 01/30/2026  2:54:45 PM
+- Part: 1107679-01-G
+- Description: ASY,HV BATT,100KWH,RMN,SX
+- Status: No Inventory
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-HVBATTERY-REMAN
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Service Westbury
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE20LF299985
+- Carrier: 
+- Is Milk Run: true
+
+## Order 593
+- Created At: 01/30/2026  2:49:16 PM
+- Part: 1777777-T2-G
+- Description: ASY,STR,48A,2PH,800HVDC,52LVDC,GFTX
+- Status: Drop Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: NA-US-CA-Carlsbad
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB305-142-10-A
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  3:43:47 PM
+- Stage Completed At: 01/30/2026  3:57:17 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 7G2CEHED9RA034326
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 594
+- Created At: 01/30/2026  2:47:23 PM
+- Part: 1860489-97-C
+- Description: CIW, CANTRAIL LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-PREPACK
+- Destination Entity Group: NB MILKRUN 18
+- Deliver To: Flower City Collision
+- Ship By Date: 01/29/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED4RA046156
+- Carrier: 
+- Is Milk Run: true
+
+## Order 595
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1634443-01-A
+- Description: BOM MODULE, MY, MUD FLAP PACKAGE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Frank  Klanken
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 596
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jason  Frederick
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 597
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jason  Frederick
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 598
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1974087-00-A
+- Description: HIGHLAND ALL WEATHER LINERS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Donghwan  Kim
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 599
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Willie  Conklin
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 600
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: James  Madery
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 601
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1508484-00-B
+- Description: WC PEDESTAL, GEN2 & GEN3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ray  Solis
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 602
+- Created At: 01/30/2026  2:32:27 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Steve  Davis
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 603
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: BARRY F  WALTER
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 604
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Dunsin  Adebise
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 605
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Adiayn Gil  Customer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 606
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Yan  Chen
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 607
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Daniel  Spires
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 608
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: JJ  Even
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 609
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Johnny  C
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 610
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1516554-00-A
+- Description: M3, FLOOR MAT KIT END ITEM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: David  Schulman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 611
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: ElekproTek  Electrum
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 612
+- Created At: 01/30/2026  2:32:26 PM
+- Part: 2097841-00-A
+- Description: Door Pocket + Cupholder Liners, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Srikanth  Vadlamudi
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 613
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Adam  Boyce
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 614
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mario Luis  Zambrano Almanza
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 615
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1044235-01-C
+- Description: 19 INCH GEMINI CAP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jeff  Ward
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 616
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Étienne  Laplante
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 617
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Cell  Customer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 618
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Waheed  Abbasi
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 619
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mohiuddin  Shaik
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 620
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: ADAM  SZAMBORSKI
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 621
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Eduard  Papaj
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 622
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1934882-00-A
+- Description: Tire Repair Kit 3.0
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jeffrey  Prete
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 623
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jeffrey  Prete
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 624
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Susan  Heath
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 625
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Roshan  Patel
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 626
+- Created At: 01/30/2026  2:32:25 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kristina  Minott
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 627
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jennifer  JusticeCarter
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 628
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jennifer  JusticeCarter
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 629
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gregory  Decker
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 630
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Sandeep  Singla
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 631
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 2048569-WL-A
+- Description: Opal Model Y All-Weather Well Liner
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gregory  Decker
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 632
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gregory  Decker
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 633
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 2097841-00-A
+- Description: Door Pocket + Cupholder Liners, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Gregory  Decker
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 634
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kirandeep  Kaur
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 635
+- Created At: 01/30/2026  2:32:24 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Brion  MacPherson
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 636
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bassel  Chaghlil
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 637
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Frunk To  Trunk
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 638
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1067348-00-C
+- Description: ASY,ADPTR,J1772-TESLA,v2.2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Julie  Veldman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 639
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Waheed  Abbasi
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 640
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kenny  Wang
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 641
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kenny  Wang
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 642
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kenny  Wang
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 643
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Petri
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 644
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Eli  Levy
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 645
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1974087-00-A
+- Description: HIGHLAND ALL WEATHER LINERS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Petri
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 646
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 2013118-00-A
+- Description: Model Y Air Mattress
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Petri
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 647
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Petri
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 648
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1658682-01-B
+- Description: MY Illuminated Sill - Black
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ambrose  Pittman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 649
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ambrose  Pittman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 650
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ambrose  Pittman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 651
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 2025108-01-A
+- Description: Tesla Projection Lights, FR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ambrose  Pittman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 652
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chandrawattie  Ramsammy
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 653
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 2057199-00-A
+- Description: Frunk Lighting, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ambrose  Pittman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 654
+- Created At: 01/30/2026  2:32:23 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Karen  Maurer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 655
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jordan  Mcgehee
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 656
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 2025108-01-A
+- Description: Tesla Projection Lights, FR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Khooshi  Incorporated
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 657
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Khooshi  Incorporated
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 658
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1508484-00-B
+- Description: WC PEDESTAL, GEN2 & GEN3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Andrew  Stearns
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 659
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Andrew  Stearns
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 660
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bradley  Goembel
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 661
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Nitharsan  Kumarakulasingam
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 662
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Joe  Salama
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 663
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1974087-00-A
+- Description: HIGHLAND ALL WEATHER LINERS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Joe  Salama
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 664
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1819445-00-B
+- Description: KEY FOB TOP LEVEL ASSEMBLY, M3Y
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Joe  Salama
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 665
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Stefan  Kappe
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 666
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1987372-00-A
+- Description: Model 3 18" Snow Chain Konig CG-9 102
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Joe  Salama
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 667
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1819443-00-A
+- Description: KEY FOB TOP LEVEL ASSEMBLY, MS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chris  Mehringer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 668
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chris  Mehringer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 669
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jason  Morrison
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 670
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Joe  Darmanin
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 671
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jose  Centeno
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 672
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Ashley  Labadie
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 673
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1593777-00-A
+- Description: TESLA BRANDED TIRE TOTE - 2PC
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: WILLIAM  WATSON
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 674
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 2018066-00-B
+- Description: ASSY, MUD FLAP, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jennilynn  Harmer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 675
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Anthony   Vinciguerra
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 676
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Luanne  Neher
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 677
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Matthew  Hays
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 678
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1985666-00-B
+- Description: Cybertruck for Kids
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-CYBERTRUCK-FOR-KIDS
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Andrew  Swasey
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 679
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1819444-00-A
+- Description: KEY FOB TOP LEVEL ASSEMBLY, MX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Matthew  Hays
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 680
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Eric  Laflamme
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 681
+- Created At: 01/30/2026  2:32:22 PM
+- Part: 1521206-00-A
+- Description: TESLA BRANDED MODEL X CARGO NET
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Matthew  Hays
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 682
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Grace  Smith
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 683
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Sonia  Busnardo
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 684
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kai  Xin
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 685
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1041683-00-B
+- Description: MODEL S PANO ROOF SUNSHADES
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Miguel and Sandra  Maqueda
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 686
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1456933-00-A
+- Description: MS WIPER BLADE PACKAGED, DR LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Miguel and Sandra  Maqueda
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 687
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Lev  Sorkin
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 688
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1896189-00-A
+- Description: SERVICE KIT, HEPA AND CARBON FILTERS, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Lev  Sorkin
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 689
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1456934-00-A
+- Description: MS WIPER BLADE PACKAGED, PS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Miguel and Sandra  Maqueda
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 690
+- Created At: 01/30/2026  2:32:21 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Doriel  Hernandez
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 691
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2088984-00-A
+- Description: SS CLEANER, 32OZ REFILL BOTTLE, CT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: David  Carter
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 692
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1934882-00-A
+- Description: Tire Repair Kit 3.0
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: David  Carter
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 693
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1896189-00-A
+- Description: SERVICE KIT, HEPA AND CARBON FILTERS, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Vijayakumar  Jinugu
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 694
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Vijayakumar  Jinugu
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 695
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Oscar  Cabeza
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 696
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Oscar  Cabeza
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 697
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jordan  Tackett
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 698
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2073497-00-A
+- Description: Model Y Glass Roof Sunshade
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jordan  Tackett
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 699
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2097841-00-A
+- Description: Door Pocket + Cupholder Liners, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jordan  Tackett
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 700
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2048569-FT-A
+- Description: Opal Model Y All-Weather Frunk Liner
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jordan  Tackett
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 701
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Sean  Myers
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 702
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Brandon  Durette
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 703
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Elissa  Edwards
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 704
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Bethany  Cote
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 705
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Adam  Piro
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 706
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Cody  Harrell
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 707
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Noah  Venable
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 708
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1518236-00-C
+- Description: MY, ROOF RACK, PHANTOM ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Cody  Harrell
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 709
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1985666-00-B
+- Description: Cybertruck for Kids
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-CYBERTRUCK-FOR-KIDS
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Kaitlyn  Toma
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 710
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Noah  Venable
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 711
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1518236-00-C
+- Description: MY, ROOF RACK, PHANTOM ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: jonatan  serricchio
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 712
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Mackenzie  Jensen
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 713
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1658682-01-B
+- Description: MY Illuminated Sill - Black
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Shezad  Ismail
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 714
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: MARC  LEFLER
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 715
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Shezad  Ismail
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 716
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 1977818-00-C
+- Description: TRAY, CONSOLE, BUNDLE, M3/MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: MARC  LEFLER
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 717
+- Created At: 01/30/2026  2:32:20 PM
+- Part: 2097841-00-A
+- Description: Door Pocket + Cupholder Liners, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: VANESSA  JOHNSON
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 718
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Logan  Cunningham
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 719
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1819444-00-A
+- Description: KEY FOB TOP LEVEL ASSEMBLY, MX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chris  Mehringer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 720
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 2013118-00-A
+- Description: Model Y Air Mattress
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Charley  Sorrow
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 721
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 2057199-00-A
+- Description: Frunk Lighting, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Charley  Sorrow
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 722
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 2025108-01-A
+- Description: Tesla Projection Lights, FR
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Charley  Sorrow
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 723
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1104937-10-B
+- Description: 14-30 ADAPTER
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Korede  David
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 724
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1076731-00-B
+- Description: M3 WIPER BLADE PS LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Atul  Varma
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 725
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Chunfeng  Dai
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 726
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1076730-00-C
+- Description: M3 WIPER BLADE DR LHD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Atul  Varma
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 727
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1118556-10-B
+- Description: 10-30 ADAPTER
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Juan  Ibanez
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 728
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1897316-01-C
+- Description: ASY,HARN,BODY RIGHT,LHD,PREM,RADIO
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-173-50-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4SF877142
+- Carrier: 
+- Is Milk Run: true
+
+## Order 729
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 2048569-00-A
+- Description: Opal Model Y All-Weather Interior Liners
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Spyridon Ventouris  Spyridon Ventouris
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 730
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1027911-00-H
+- Description: AIR SUSP COMPRESSOR, WABCO Twin
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-LawrenceTownship-Princeton
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E26JF295131
+- Carrier: 
+- Is Milk Run: true
+
+## Order 731
+- Created At: 01/30/2026  2:32:19 PM
+- Part: 1044850-00-A
+- Description: TIE ROD ASSY, SERVICE
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: CA-ON-Oakville-891 Progress Ct
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-106-50-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA0KF395811
+- Carrier: 
+- Is Milk Run: false
+
+## Order 732
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1658943-00-B
+- Description: MY WIPER BLADE DR LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Danielle  Sillery
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 733
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1896189-00-A
+- Description: SERVICE KIT, HEPA AND CARBON FILTERS, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Danielle  Sillery
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 734
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Joseph Hale  Joseph Hale
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 735
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Danielle  Sillery
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 736
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1658940-00-B
+- Description: MY WIPER BLADE PS LHD, AUSTIN SP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Danielle  Sillery
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 737
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1916699-S0-A
+- Description: FR FASCIA UNPAINTED WITHOUT P/A BRACKETS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 738
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1840321-00-A
+- Description: STD,M6x40,[88],G1009,NJ
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: AE-Dubai-Dubai-Plot WE-22
+- Ship By Date: 11/30/2025
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 739
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1984913-01-B
+- Description: TPMS Wheel Unit, 1400kPA, Black
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: AE-Dubai-Dubai-Plot WE-22
+- Ship By Date: 12/11/2025
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 740
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1984913-01-B
+- Description: TPMS Wheel Unit, 1400kPA, Black
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: AE-Dubai-Dubai-Plot WE-22
+- Ship By Date: 01/29/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 741
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1852434-00-C
+- Description: HOOD LATCH, CINCH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: AE-Dubai-Dubai-Plot WE-22
+- Ship By Date: 12/18/2025
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 742
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1851440-00-B
+- Description: RH MOLDING, ROCKER FAIRING, EVEREST
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: AE-Dubai-Dubai-Plot WE-22
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 743
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1102178-00-D
+- Description: ASY, FLUID COUPLING, VDA-18, 90DEG, 70A
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-IL-Libertyville-1121 S Milwaukee Ave
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 6
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 744
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1497740-00-C
+- Description: MODEL Y, ROCKER COVER LH, ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-PREPACK
+- Destination Entity Group: NB MILKRUN 3
+- Deliver To: Total Recon - Rockville
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 745
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1770888-00-D
+- Description: BACKLITE WITH ANTENNA, NA, ACOUSTIC 2.1-1.6 STACK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-GLASS
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Silver Spring-2320 Broadbirch Dr
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8MF854117
+- Carrier: 
+- Is Milk Run: true
+
+## Order 746
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1614055-00-A
+- Description: ASSY, MXP2 ACTUATOR AND CABLE HOOD LATCH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 747
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1518783-10-B
+- Description: ASY,REFLEX,RHS,GEN3,MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB STOCK
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Center Square Motors
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 748
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1019010-00-A
+- Description: FUSE,FAST,40A,700VAC/DC,14MM x 51MM
+- Status: Dock Stage Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB117-110-20-A
+- Qty: 2
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  3:22:43 PM
+- Stage Completed At: 01/30/2026  3:37:28 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E43HF229924
+- Carrier: 
+- Is Milk Run: true
+
+## Order 749
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1655000-90-I
+- Description: ASSY,AUTOPILOT.ECU,3.0, MSX-FUSED GASKET
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-Toronto-1251 Tapscott Rd
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 750
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1088218-00-I
+- Description: PTC heater Dual Zone M3
+- Status: Stage Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: NA-US-MA-Peabody-North Shore
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-114-20-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  3:17:21 PM
+- Stage Completed At: 01/30/2026  3:36:44 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB4KF481289
+- Carrier: 
+- Is Milk Run: true
+
+## Order 751
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1916699-S0-A
+- Description: FR FASCIA UNPAINTED WITHOUT P/A BRACKETS
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB207-166-10
+- Qty: 1
+- Picked By: nwinnie
+- Pick Completed At: 01/30/2026  3:23:47 PM
+- Stage Completed At: 01/30/2026  3:45:55 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8PF624727
+- Carrier: 
+- Is Milk Run: true
+
+## Order 752
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1673553-00-D
+- Description: MY REAR QTR GLASS ASSY LH, AUSTIN
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: true
+
+## Order 753
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1006521-00-A
+- Description: RVT PUSH-PULL 8X18X20.0 (0M1M)
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Body by Cochran Cranberry
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 50
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA4RF783375
+- Carrier: 
+- Is Milk Run: false
+
+## Order 754
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1694086-00-I
+- Description: HEADLAMP ASY SAE, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Body by Cochran Cranberry
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA4RF783375
+- Carrier: 
+- Is Milk Run: false
+
+## Order 755
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1064496-00-A
+- Description: BLIND RIVET,5/32x4.5-9.0 GRIP,AL/SS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Body by Cochran Cranberry
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA4RF783375
+- Carrier: 
+- Is Milk Run: false
+
+## Order 756
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1734299-00-H
+- Description: BRACKET- FASCIA FRT CTR TO FDR LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Body by Cochran Cranberry
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA4RF783375
+- Carrier: 
+- Is Milk Run: false
+
+## Order 757
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1090508-00-E
+- Description: M3, SEAL, REAR, DOOR,SECONDARY, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: Falls Church Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA0RF856855
+- Carrier: 
+- Is Milk Run: true
+
+## Order 758
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1751848-E0-A
+- Description: ASSEMBLY - REAR DOOR - RIGHT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: Falls Church Auto Body
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA0RF856855
+- Carrier: 
+- Is Milk Run: true
+
+## Order 759
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1089085-00-F
+- Description: M3 2R SB CTR ESCUTCHEON
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-FL-Fort Myers-16180 LEE RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB120-167-2-BA
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:05:48 PM
+- Stage Completed At: 01/30/2026  4:08:08 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 5YJ3E1EA0KF337813
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 760
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 2013442-S0-G
+- Description: FRONT FASCIA BASE UNPAINTED
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Body by Cochran Cranberry
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA4RF783375
+- Carrier: 
+- Is Milk Run: false
+
+## Order 761
+- Created At: 01/30/2026  2:32:18 PM
+- Part: 1083983-S0-I
+- Description: M3 RR FASCIA UNPTD WITHOUT/PA BRKT
+- Status: Dock Stage Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: Tesla Collision Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB207-158-10
+- Qty: 1
+- Picked By: nwinnie
+- Pick Completed At: 01/30/2026  3:22:14 PM
+- Stage Completed At: 01/30/2026  3:46:14 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA6PF491692
+- Carrier: 
+- Is Milk Run: true
+
+## Order 762
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1084171-00-F
+- Description: BRKT ASM - FASCIA FRT CTR FDR LH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 763
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1089828-00-E
+- Description: M3 BASE ROCKER LOWER COVER ASSY LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Norfolk-7520 N Military Hwy
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA2LF632543
+- Carrier: 
+- Is Milk Run: true
+
+## Order 764
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1472872-00-C
+- Description: M3 FRUNK-FENDER CLIP, ASY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 765
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 2609635-00-F
+- Description: CABLE,MS,BDY RT,LHD,CAM,B-PILLS,MAIN,BUC
+- Status: Pick Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-OH-MORAINE-1927 WEST DOROTHY LANE
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB119-152-10-A
+- Qty: 1
+- Picked By: sedeming
+- Pick Completed At: 01/30/2026  4:52:26 PM
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E66PF510972
+- Carrier: 
+- Is Milk Run: false
+
+## Order 766
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1446114-00-B
+- Description: BOLT,HF,M10x130,STL[109],ZNFL,MAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 20
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 767
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1110240-00-B
+- Description: COMP, FR END CARRIER, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 768
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1066800-00-C
+- Description: ESCUTCHEON TMX 2R SBELT LH
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-MI-Grand Rapids-2919 29th St SE
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB112-119-40-A
+- Qty: 1
+- Picked By: cortezca
+- Pick Completed At: 01/30/2026  4:24:53 PM
+- Stage Completed At: 01/30/2026  4:32:46 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 5YJXCDE24LF268255
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 769
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1108647-00-H
+- Description: RADAR, SEVEN PIN PERPENDICULAR
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 770
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1108648-00-E
+- Description: BRACKET, MODEL3 RADAR Y160
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 771
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1103760-00-C
+- Description: FEM RADAR BRKT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 772
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1916697-S0-A
+- Description: FR FASCIA UNPAINTED WITH P/A BRACKETS
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 773
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1084172-00-F
+- Description: BRKT ASM - FASCIA FRT CTR TO FDR RH, M3
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 30
+- Deliver To: D&M Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7LF590693
+- Carrier: 
+- Is Milk Run: true
+
+## Order 774
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1504721-00-E
+- Description: HOSE, POWERTRAIN SUPPLY
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: CA-QC-Saint-Bruno-de-Montarville-1155 Boulevard des Promenades
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-185-10-B
+- Qty: 1
+- Picked By: sedeming
+- Pick Completed At: 01/30/2026  4:07:35 PM
+- Stage Completed At: 01/30/2026  4:22:26 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 5YJ3E1EA2NF314330
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 775
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1514877-01-C
+- Description: SIDE REPEATER TRIM - CHROME AERO RIB, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Body by Cochran Cranberry
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB2LF795816
+- Carrier: 
+- Is Milk Run: false
+
+## Order 776
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1694316-99-E
+- Description: COVER - TOW HOOK FRT FASCIA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Rovshan Mammadov
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5yj3e1ea3sf018972
+- Carrier: 
+- Is Milk Run: false
+
+## Order 777
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1739293-00-G
+- Description: OHC+PRWND
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Norfolk-7520 N Military Hwy
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5TF149645
+- Carrier: 
+- Is Milk Run: true
+
+## Order 778
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1495864-20-F
+- Description: LAMP ASY, SIDE REPEATER CAMERA, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Body by Cochran Cranberry
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB2LF795816
+- Carrier: 
+- Is Milk Run: false
+
+## Order 779
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1897345-00-B
+- Description: ASY,HARN,Headliner,PREM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: US-VA-Norfolk-7520 N Military Hwy
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA5TF149645
+- Carrier: 
+- Is Milk Run: true
+
+## Order 780
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1092290-19-D
+- Description: SKULL CAP, M3, LH, STEALTH GRAY METALLIC
+- Status: Dock Stage Complete
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Sterling-22400 Davis Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB111-182-50-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  3:26:34 PM
+- Stage Completed At: 01/30/2026  3:37:44 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA7SF070055
+- Carrier: 
+- Is Milk Run: true
+
+## Order 781
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 3067957-00-C
+- Description: ASY,HARN,FR LH DOOR,M3,LHD,PREM
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB102-177-40-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8PF624727
+- Carrier: 
+- Is Milk Run: true
+
+## Order 782
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1144387-00-B
+- Description: STABAR ASSY, FRONT, 28MM x 5.0MM
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: NA-US-DE-Wilmington
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-150-40-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDED5MF175014
+- Carrier: 
+- Is Milk Run: true
+
+## Order 783
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1562880-00-A
+- Description: M3 SPOILER TAPE
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 784
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1121191-00-E
+- Description: M3, Brkt, Rr Center, Assy
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 785
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1077390-00-F
+- Description: LAMP ASY, FASCIA LAMP, SAE BASE, RH
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB116-124-50-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8PF624727
+- Carrier: 
+- Is Milk Run: true
+
+## Order 786
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1083993-00-F
+- Description: MODEL 3, TAIL LAMP BRKT, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 787
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1083992-00-F
+- Description: MODEL 3, TAIL LAMP BRKT, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 788
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1494950-00-A
+- Description: M3 Rear T-Badge
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 789
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1514878-00-C
+- Description: SIDE REPEAT TRIM-CARBON BLK AERO RIB RH
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: US-NJ-North Brunswick-1601 Livingston Ave
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-155-30-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA8PF624727
+- Carrier: 
+- Is Milk Run: true
+
+## Order 790
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1137819-00-A
+- Description: Model 3, Rr Fascia, Diffuser,Assy(w/Tow)
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 791
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 6008620-00-B
+- Description: MOTOR - ROOF LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: US-PA-Bridgeville-1400 Brockwell St
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E47GF132482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 792
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1053571-00-G
+- Description: HD/LP ASY, SAE UP-LEVEL, RH
+- Status: Dock Stage Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-PREPACK
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB304-126-30-B
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  3:52:43 PM
+- Stage Completed At: 01/30/2026  3:57:45 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 793
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1083988-00-K
+- Description: M3 Rr Wing Bracket Assy LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 794
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1694512-00-D
+- Description: REAR TESLA CHARACTERS
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Northern Westchester Auto Body Inc.
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB3SF060163
+- Carrier: 
+- Is Milk Run: false
+
+## Order 795
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1083989-00-K
+- Description: M3 Rr Wing Bracket Assy RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 796
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1103035-00-D
+- Description: Model 3, Rr Fascia, Lower, Assy
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 797
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1714863-01-C
+- Description: POWER TRUNK HINGE LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Northern Westchester Auto Body Inc.
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB3SF060163
+- Carrier: 
+- Is Milk Run: false
+
+## Order 798
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1916698-S0-A
+- Description: REAR FASCIA UNPAINTED WITH P/A BRACKETS
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 19
+- Deliver To: North State Custom - Bedford Hills
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EA9KF310092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 799
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1878966-20-E
+- Description: CNSL, SLIDING DOORS, ASY
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB201-156-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:23:38 PM
+- Stage Completed At: 01/30/2026  4:30:48 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1RF754179
+- Carrier: 
+- Is Milk Run: true
+
+## Order 800
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1714928-E0-B
+- Description: ASSEMBLY - TRUNK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Northern Westchester Auto Body Inc.
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB3SF060163
+- Carrier: 
+- Is Milk Run: false
+
+## Order 801
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1472925-SO-D
+- Description: M3, BACKLITE, SEV ONLY PRE HEATPUMP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Generic
+- Part Group: NB-GLASS
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Safelite Autoglass - Portland Maine
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB1KF418666
+- Carrier: 
+- Is Milk Run: false
+
+## Order 802
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1494714-10-I
+- Description: HVAC MODULE ASSY
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: CA-ON-NEPEAN-530 MOTOR WORKS PRIVATE
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB303-105-10-A
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:00:34 PM
+- Stage Completed At: 01/30/2026  4:05:31 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 5YJYGDEE6MF177282
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 803
+- Created At: 01/30/2026  2:32:17 PM
+- Part: 1081583-00-D
+- Description: ASY WHEEL LINER, RR LH, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Totowa-545 US-46
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB6KF231570
+- Carrier: 
+- Is Milk Run: true
+
+## Order 804
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1530484-00-D
+- Description: M3 ASY RR BUMPER BEAM - EXTRUSION
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB305-179-10-A
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:35:52 PM
+- Stage Completed At: 01/30/2026  4:56:44 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB5LF646235
+- Carrier: 
+- Is Milk Run: true
+
+## Order 805
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1130652-02-A
+- Description: Ext Mirror Glass, Prem, Domestic, RH M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Hi Tech Auto Body Inc
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB6MF062539
+- Carrier: 
+- Is Milk Run: false
+
+## Order 806
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1776524-S0-B
+- Description: BRACKET - REAR AEROSHIELD AND HARNESS ATTACHEMENT
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Tesla Collision Boston-93771
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB303-107-10-B
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:15:10 PM
+- Stage Completed At: 01/30/2026  4:18:09 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB5LF646235
+- Carrier: 
+- Is Milk Run: true
+
+## Order 807
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1092292-00-D
+- Description: EXTERIOR MIRROR SKULL CAP, MODEL 3, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Hi Tech Auto Body Inc
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB6MF062539
+- Carrier: 
+- Is Milk Run: false
+
+## Order 808
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1495817-00-C
+- Description: LAMP ASY, REAR REFLEX, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 14
+- Deliver To: Criswell Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE4MF137555
+- Carrier: 
+- Is Milk Run: true
+
+## Order 809
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 6005918-00-G
+- Description: LAMP ASY - STOP/TAIL/TURN - SAE (LH)
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-117-60-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E15GF156172
+- Carrier: 
+- Is Milk Run: true
+
+## Order 810
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1514757-00-F
+- Description: ASY - MY TOW HITCH - NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 14
+- Deliver To: Criswell Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE4MF137555
+- Carrier: 
+- Is Milk Run: true
+
+## Order 811
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1742989-00-A
+- Description: ASY,HARN,ESP WAKE,JUMPER,M3Y
+- Status: Stage Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Silver Spring-2320 Broadbirch Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-164-10-B
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:46:54 PM
+- Stage Completed At: 01/30/2026  4:50:18 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJ3E1EB7NF272035
+- Carrier: 
+- Is Milk Run: true
+
+## Order 812
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1494045-00-E
+- Description: MODEL Y, CENTER BRKT, ASSY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 14
+- Deliver To: Criswell Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE4MF137555
+- Carrier: 
+- Is Milk Run: true
+
+## Order 813
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1034405-00-D
+- Description: FUSEBOX,MDLS,12V,FRUNK
+- Status: Pick Assigned
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: NA-US-MA-Watertown
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB104-160-10-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E21GF132265
+- Carrier: 
+- Is Milk Run: true
+
+## Order 814
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1494006-00-C
+- Description: MODEL Y, REAR FASCIA, LOWER
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 14
+- Deliver To: Criswell Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE4MF137555
+- Carrier: 
+- Is Milk Run: true
+
+## Order 815
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1487742-00-K
+- Description: Asy-Rear Panel
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 14
+- Deliver To: Criswell Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE4MF137555
+- Carrier: 
+- Is Milk Run: true
+
+## Order 816
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1808600-00-C
+- Description: TONNEAU WATER MGMT SEAL, RH,CT
+- Status: Stage Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-Cherry Hill
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB303-156-50-A
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:51:07 PM
+- Stage Completed At: 01/30/2026  4:56:59 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED7SA075012
+- Carrier: 
+- Is Milk Run: true
+
+## Order 817
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1056376-00-D
+- Description: LWR VALENCE, FR FASCIA
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB205-163-10
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:21:23 PM
+- Stage Completed At: 01/30/2026  4:31:23 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 818
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1071979-01-A
+- Description: LUGNUT CVR,TWN TURB,BLCK
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Burleighs Body Shop
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E24JF286413
+- Carrier: 
+- Is Milk Run: true
+
+## Order 819
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1620316-00-K
+- Description: FR KNUCKLE, RH, MX P2
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: NA-US-NJ-Paramus-43191
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB107-144-60-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCAE56PF396921
+- Carrier: 
+- Is Milk Run: true
+
+## Order 820
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1928317-90-A
+- Description: ASY SAIL COMPLETE RH
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-Toronto-Oakville
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB403-215-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  3:25:29 PM
+- Stage Completed At: 01/30/2026  3:29:29 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED2SA065522
+- Carrier: FedEx Express Freight
+- Is Milk Run: false
+
+## Order 821
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1053570-00-G
+- Description: HD/LP ASY, SAE UP-LEVEL, LH
+- Status: Dock Stage Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB304-147-10-B
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  3:49:49 PM
+- Stage Completed At: 01/30/2026  3:57:45 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E40JF244872
+- Carrier: 
+- Is Milk Run: true
+
+## Order 822
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 6005924-00-E
+- Description: LAMP ASY - L/Gate TAIL B/U - SAE (RH)
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 9
+- Deliver To: Tesla Service South Burlington
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-159-30-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E52NF470202
+- Carrier: 
+- Is Milk Run: true
+
+## Order 823
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1053619-S0-B
+- Description: PAINTED SIDE APPLIQUE RH KIT, SERVICE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: US-PA-Bridgeville-1400 Brockwell St
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E47GF132482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 824
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1704656-00-D
+- Description: BRACKET FASCIA FEM LH, MS
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E52NF471947
+- Carrier: 
+- Is Milk Run: true
+
+## Order 825
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 6005918-00-G
+- Description: LAMP ASY - STOP/TAIL/TURN - SAE (LH)
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 9
+- Deliver To: Tesla Service South Burlington
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-117-60-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E52NF470202
+- Carrier: 
+- Is Milk Run: true
+
+## Order 826
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 6008692-00-B
+- Description: DRIVE CABLE - LEFT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: US-PA-Bridgeville-1400 Brockwell St
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E47GF132482
+- Carrier: 
+- Is Milk Run: true
+
+## Order 827
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1420671-00-B
+- Description: BRAKE BOOSTER ASSY,LHD,BASE
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-CA-North Hollywood-13005 Sherman Way
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB116-131-10-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E65PF521798
+- Carrier: 
+- Is Milk Run: false
+
+## Order 828
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1610353-90-D
+- Description: MS, MATRIX TRICAM GLARESHIELD, UB
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-135-22-D
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E55SF551092
+- Carrier: 
+- Is Milk Run: true
+
+## Order 829
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1188316-00-F
+- Description: FR KNUCKLE, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 830
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1833849-00-A
+- Description: BLT,HHN,M125x54,[109],G0110,SM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 12
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 831
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1064834-00-B
+- Description: BOLT,BH,M10-1.5x59,[10.9],ZNFL,SMAT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 832
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1109263-00-B
+- Description: NUT&WSHR[SW],M14x1.5,[10],ZNFL,PTP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 20
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 833
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1188326-10-A
+- Description: FR UPR CTRL ARM ASSY, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 834
+- Created At: 01/30/2026  2:32:16 PM
+- Part: 1109823-00-B
+- Description: BOLT,HF,M14-1.5x83,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 835
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1112245-00-A
+- Description: NUT,HF,M14-1.5,[10],ZNNI
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 836
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 2609728-00-E
+- Description: COAX CABLE-WIDE AND INT CAM
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-OH-MORAINE-1927 WEST DOROTHY LANE
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-138-30-A
+- Qty: 1
+- Picked By: cortezca
+- Pick Completed At: 01/30/2026  4:26:41 PM
+- Stage Completed At: 01/30/2026  4:32:37 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 5YJSA1E66PF510972
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 837
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1109912-00-B
+- Description: BLT,HF,M14-2.0x65,[109],ZNFL,P01
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 838
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1567500-10-A
+- Description: CHARGEPORT,NA,SX,P2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJSA1E58NF488249
+- Carrier: 
+- Is Milk Run: true
+
+## Order 839
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1764074-00-A
+- Description: BLT,HHN,M10x87,[109],G0410,SM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 840
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 2188359-10-B
+- Description: FR LWR COMP LINK ASSY, CN, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 841
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1111145-00-A
+- Description: NUT,HF,M10-1.5,[10],ZNNI,PTP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 842
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1111543-00-A
+- Description: NUT,HF,M12-1.75,[10],ZNNI,PTP
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 843
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1188341-00-C
+- Description: FRONT LOWER LATERAL LINK ASSEMBLY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 844
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1288417-00-A
+- Description: RR KNUCKLE ASSY RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 845
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1127502-08-C
+- Description: USS APP RADIAL, DCR, ASSY, SUNSET RED
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-LawrenceTownship-Princeton
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCBE40JF089729
+- Carrier: 
+- Is Milk Run: true
+
+## Order 846
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1044451-00-F
+- Description: RR LWR AFT LINK ASSY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 847
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1111522-00-A
+- Description: BOLT,HF,M14-2.0x95,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 848
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1111533-00-A
+- Description: NUT,HF,M14-2.0,[10],ZNNI
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 849
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1082391-00-C
+- Description: ASY,HRN,MDLX,ALL,OHC,TRIPLE-CAM
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-North York-Railside
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-130-20-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE24GF008510
+- Carrier: 
+- Is Milk Run: false
+
+## Order 850
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1188427-00-B
+- Description: RR UPR FORE LINK ASSY, CLRC
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 851
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1052391-00-F
+- Description: ASY,HRN,MDLX,ALL,OHC,MONO-CAM
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-North York-Railside
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-181-21-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJXCAE24GF008510
+- Carrier: 
+- Is Milk Run: false
+
+## Order 852
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1063242-00-B
+- Description: BOLT,HF.M12-1.75x75,[10.9],ZNFL,SMAT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 853
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1478378-00-A
+- Description: NUT,HF,M12-1.75,[10],ZNNI, BLACK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 3
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 854
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1188423-00-A
+- Description: RR UPR AFT LINK ASSY, 25X19
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 855
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1494949-00-A
+- Description: M3/MY Front T-Badge
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: CARSTAR Metro Collision of Springfield
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGAEE1MF284822
+- Carrier: 
+- Is Milk Run: true
+
+## Order 856
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1111149-00-A
+- Description: BOLT,HF,M14-2.0x81,[109],ZNFL,SMAT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-BINBOX-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 857
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1044441-00-F
+- Description: RR LWR FORE LINK ASSY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 858
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1188431-00-A
+- Description: RR TOE LINK ASSY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 859
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1044406-25-C
+- Description: CAM BOLT,HW,M12-1.75x91,[109],ZNFL,SW8
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-BINBOX-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 860
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1044404-00-B
+- Description: WASHER,12x32x5,STL,ZNFL
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 861
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1111545-00-A
+- Description: NUT,HF,M12x1.75,[10],ZNNI,PTM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 862
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1493636-00-A
+- Description: MODEL Y, REAR SUSPENSION AERO COVER, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 863
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1498771-00-F
+- Description: MODEL 3/Y, REAR AERO SHIELD
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 864
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1044496-00-F
+- Description: STABAR LINK, REAR-RIGHT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 865
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1682247-00-G
+- Description: ASY,HARN,RR SUBFRAME,CT, LCK
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: Tesla Service Brooklyn Gowanus
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-129-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED7RA013393
+- Carrier: 
+- Is Milk Run: true
+
+## Order 866
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1188396-00-B
+- Description: FR STAB LINK ASSY 1PC STUD, RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 867
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1497744-00-C
+- Description: MODEL Y, ROCKER COVER RH, ASY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: General Public
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: MATTHEW RIVERA
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA039668
+- Carrier: 
+- Is Milk Run: false
+
+## Order 868
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1494186-98-C
+- Description: ASSY, FENDER GARNISH, FT RH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 869
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1492614-00-C
+- Description: WHEEL LINER, FR RH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 870
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1493452-E0-B
+- Description: MY FENDER ASSEMBLY, RH SVC E-COATED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 871
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1613579-00-D
+- Description: VALANCE, FASCIA FRT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 872
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1621592-00-A
+- Description: MX, EC REAR VIEW MIRROR, ASSY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Generic
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Safelite AutoGlass - Poughkeepsie
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE6XNF354621
+- Carrier: 
+- Is Milk Run: false
+
+## Order 873
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1495865-20-G
+- Description: LAMP ASY, SIDE REPEATER CAMERA, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 874
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1077392-00-F
+- Description: LAMP ASY, FASCIA LAMP, SAE UP-LEVEL, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 875
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 2085750-00-A
+- Description: HD/LP ASY, SAE UP-LEVEL, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 876
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1127503-11-D
+- Description: USS UPA RADIAL, DCR, ASSY, PEARL WHITE
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 877
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1493773-00-B
+- Description: BRKT - FASCIA FRT CTR FDR RH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 878
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1493772-00-B
+- Description: BRKT - FASCIA FRT CTR FDR LH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 879
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1489044-00-E
+- Description: ASY,HARN,FR LH DOOR,PREMIUM,LHD,MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-MD-Rockville-1300 Rockville Pike
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4PF708809
+- Carrier: 
+- Is Milk Run: true
+
+## Order 880
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1493736-S0-A
+- Description: MY FRONT FASCIA SVC, UNPAINTED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 5YJYGDEEXMF074916
+- Carrier: 
+- Is Milk Run: true
+
+## Order 881
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1620651-00-C
+- Description: BRAKE SHIELD, FR LH, P2 MODEL X
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-118-30-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCAE57RF439763
+- Carrier: 
+- Is Milk Run: true
+
+## Order 882
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1602352-00-F
+- Description: MSX 1R RH OB SIDESHIELD ASSY PAINTED
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-MI-Ann Arbor-3530 Jackson Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB106-154-60-B
+- Qty: 1
+- Picked By: cortezca
+- Pick Completed At: 01/30/2026  4:29:28 PM
+- Stage Completed At: 01/30/2026  4:32:28 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 7SAXCBE68PF405892
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 883
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1602351-00-F
+- Description: MSX LH OB SIDESHIELD ASSY PAINTED
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-MI-Ann Arbor-3530 Jackson Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-158-30-B
+- Qty: 1
+- Picked By: cortezca
+- Pick Completed At: 01/30/2026  4:18:43 PM
+- Stage Completed At: 01/30/2026  4:32:28 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 7SAXCBE68PF405892
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 884
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1725000-LS-F
+- Description: Supermanifold Asy
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 9
+- Deliver To: NA-US-NY-Latham
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB306-161-30-A
+- Qty: 1
+- Picked By: johnnrivera
+- Pick Completed At: 01/30/2026  4:27:23 PM
+- Stage Completed At: 01/30/2026  4:31:41 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHEDXSA064117
+- Carrier: 
+- Is Milk Run: true
+
+## Order 885
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1806762-00-D
+- Description: REAR MARKER LAMP, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 23
+- Deliver To: V & J Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED3RA012869
+- Carrier: 
+- Is Milk Run: true
+
+## Order 886
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1896372-00-C
+- Description: NV 45 SERVICE REAR FASCIA DIFFUSER SKIN ASSEMBLY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 23
+- Deliver To: V & J Auto Body
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED3RA012869
+- Carrier: 
+- Is Milk Run: true
+
+## Order 887
+- Created At: 01/30/2026  2:32:15 PM
+- Part: 1807545-00-E
+- Description: PRIMARY SEAL FRONT, LH, CT
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: NA-US-MA-Peabody-North Shore
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB304-187-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED3SA072463
+- Carrier: 
+- Is Milk Run: true
+
+## Order 888
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1044911-00-D
+- Description: AIR SUSP COMPRESSOR
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: US-MA-Dedham-820 Boston Providence Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-105-30-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE69TF483477
+- Carrier: 
+- Is Milk Run: true
+
+## Order 889
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1840321-00-A
+- Description: STD,M6x40,[88],G1009,NJ
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: NA-US-DE-Wilmington
+- Ship By Date: 02/06/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHED7SA070747
+- Carrier: 
+- Is Milk Run: true
+
+## Order 890
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1815597-00-G
+- Description: ASY - BED BRACKET LOWER LH
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-CA-Fremont-40445 Albrae St
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-141-60-B
+- Qty: 1
+- Picked By: cortezca
+- Pick Completed At: 01/30/2026  4:21:20 PM
+- Stage Completed At: 01/30/2026  4:32:41 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: 7G2CEHED5RA002943
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 891
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1495594-00-A
+- Description: SKULL CAP, EXT.MIRROR, RH MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 892
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1473445-00-A
+- Description: MS CRASH ACCEL , Front Bumper PAS6e
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-SLOW
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 893
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 2130970-00-A
+- Description: EXT.MIRROR ASSY, EC PREM, DOM, RH MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 894
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1056770-00-A
+- Description: WASHER LEVEL SENSOR
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 895
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1044235-00-C
+- Description: 19 INCH GEMINI CAP
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-ECOM
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 896
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1629234-00-A
+- Description: WASHER PUMP JE NEXT GEN
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 897
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1777777-T2-G
+- Description: ASY,STR,48A,2PH,800HVDC,52LVDC,GFTX
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service Charlotte Northlake
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB305-142-10-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHEDXRA038174
+- Carrier: 
+- Is Milk Run: false
+
+## Order 898
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1617114-00-B
+- Description: WASHER TANK SUB-ASSEMBLY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 899
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1608094-00-F
+- Description: ASY, FAIRING & GARNISH, FR LH, MODEL X
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-AUDIT
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 900
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 2095526-S0-A
+- Description: ASSEMBLY - LOWER FENDER BRACKET - RIGHT HAND
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 901
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1492614-00-C
+- Description: WHEEL LINER, FR RH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 902
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1054430-11-D
+- Description: EXT MIRR SKULL CAP-LH  MX-Pearl WT-PPSW
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: US-MA-Dedham-820 Boston Providence Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-102-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE69TF483477
+- Carrier: 
+- Is Milk Run: true
+
+## Order 903
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1608095-00-F
+- Description: ASY, FAIRING & GARNISH, FR RH, MODEL X
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 904
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1494186-98-C
+- Description: ASSY, FENDER GARNISH, FT RH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 905
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1493452-E0-B
+- Description: MY FENDER ASSEMBLY, RH SVC E-COATED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 906
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1494949-00-A
+- Description: M3/MY Front T-Badge
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 907
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1614049-00-A
+- Description: HOOD STRIKER, MX P2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 908
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1493370-E0-A
+- Description: MY HOOD ASY COMP SVC E-COATED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 909
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1500397-00-G
+- Description: HOOD LATCH DOUBLE PULL SINGLE ACTUATOR
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 910
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1613579-00-D
+- Description: VALANCE, FASCIA FRT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 911
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1610729-00-B
+- Description: COMP, FR END CARRIER, MX
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 912
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1495093-00-C
+- Description: UPPER LEG SUPPORT, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 913
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1588188-02-A
+- Description: BRKT - FASCIA LAMP LH2, MXP2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 914
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1617912-00-C
+- Description: LAMP BRKT, MXP2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 915
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1588188-01-A
+- Description: BRKT - FASCIA LAMP LH1, MXP2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 916
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1495245-00-C
+- Description: COMP, FR END CARRIER, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-REPLEN
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 917
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1495866-22-C
+- Description: LAMP ASY, SIDE REPEATER CAMERA, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 918
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1621194-00-C
+- Description: P2X SAE LAMP ASY, FRONT FASCIA, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 919
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1600869-00-C
+- Description: AC LINE ASY, PENTA, R134A, MX
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 6
+- Deliver To: NA-US-NJ-LawrenceTownship-Princeton
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB111-101-50-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCAE58NF360032
+- Carrier: 
+- Is Milk Run: true
+
+## Order 920
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1034314-00-G
+- Description: HD/LP ASY, SAE UP-LEVEL, LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 921
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1077392-00-F
+- Description: LAMP ASY, FASCIA LAMP, SAE UP-LEVEL, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 922
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 2525002-11-E
+- Description: USS, UPA, RADIAL, PEARL WHITE
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 923
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 2085750-00-A
+- Description: HD/LP ASY, SAE UP-LEVEL, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 924
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1487605-00-A
+- Description: FR BUMPER BEAM FOAM
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 925
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 2525001-09-D
+- Description: USS, APA, RADIAL, DEEP BLACK, GRAINED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 926
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1505433-00-B
+- Description: ASY, ANKLE CATCHER, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 927
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1493771-00-C
+- Description: BRKT, FASCIA SIDE TO FDR RH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 928
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1015346-00-B
+- Description: Molex 33481-0201
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 929
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1850346-00-E
+- Description: CYBERTRUCK, CONSOLE, ARMREST, INNER, ASY
+- Status: Canceled
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: US-PA-Bridgeville-1400 Brockwell St
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7G2CEHEE3SA062184
+- Carrier: 
+- Is Milk Run: true
+
+## Order 930
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1608411-00-A
+- Description: FR BUMPER BEAM FOAM, MODEL X
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 931
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1608630-00-A
+- Description: ASY, FR BUMPER SYSTEM, MX
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 932
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1588186-00-C
+- Description: DUCT - FASCIA FRT SIDE LH, MXP2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 933
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1493773-00-B
+- Description: BRKT - FASCIA FRT CTR FDR RH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 934
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1095793-00-B
+- Description: MX2 FASCIA FENDER BRKT LH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 935
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1493736-S0-C
+- Description: MY FRONT FASCIA SVC, UNPAINTED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: NOVA Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PA106580
+- Carrier: 
+- Is Milk Run: true
+
+## Order 936
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1850081-00-A
+- Description: VALENCE SUB ASSEMBLY, FRONT FASCIA, MXP2
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-PREPACK
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 937
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1588184-S0-B
+- Description: FRONT FASCIA UNPAINTED
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-FASCIA
+- Destination Entity Group: NB MILKRUN 12
+- Deliver To: Wagner Certified Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE52NF330031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 938
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1620311-00-K
+- Description: FR KNUCKLE, LH, MX P2
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 33
+- Deliver To: US-NJ-Englewood-45 Cedar Ln
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB107-124-60-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCAE57RF439763
+- Carrier: 
+- Is Milk Run: true
+
+## Order 939
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1615868-00-E
+- Description: Inductive Charger w/ BLE/NFC MS/MX
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 10
+- Deliver To: US-MA-Dedham-820 Boston Providence Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB109-174-20-A
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCBE68PF399348
+- Carrier: 
+- Is Milk Run: true
+
+## Order 940
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1820734-99-D
+- Description: ASSY, SIDE REPEATER LHS, 3Y
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 28
+- Deliver To: 3-D Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0PA142631
+- Carrier: 
+- Is Milk Run: true
+
+## Order 941
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1493773-00-B
+- Description: BRKT - FASCIA FRT CTR FDR RH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 28
+- Deliver To: 3-D Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0PA142631
+- Carrier: 
+- Is Milk Run: true
+
+## Order 942
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1493772-00-B
+- Description: BRKT - FASCIA FRT CTR FDR LH, MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BINBOX-FAST
+- Destination Entity Group: NB MILKRUN 28
+- Deliver To: 3-D Collision Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE0PA142631
+- Carrier: 
+- Is Milk Run: true
+
+## Order 943
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1420985-00-B
+- Description: ANC BODY BRACKET, FR, LH
+- Status: Drop Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Tesla Service Duluth
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB120-135-3-DC
+- Qty: 1
+- Picked By: sedeming
+- Pick Completed At: 01/30/2026  3:42:34 PM
+- Stage Completed At: 01/30/2026  4:21:30 PM
+- Loaded At: 01/30/2026  4:59:49 PM
+- Shipped At: 
+- VIN: 7SAXCBE64NF344165
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 944
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1462927-00-C
+- Description: LBL,BLANK MFG CERTIFICATION
+- Status: Pack Complete
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VINS
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: Arlington Collision Center
+- Ship By Date: 01/31/2026
+- Pick Type: Tote
+- Pick Location: NB-VIN-LABELS
+- Qty: 1
+- Picked By: haramirez
+- Pick Completed At: 01/30/2026  2:58:13 PM
+- Stage Completed At: 01/30/2026  2:58:21 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF874059
+- Carrier: 
+- Is Milk Run: true
+
+## Order 945
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1504590-S0-B
+- Description: ASSY - FEM BRACKT - RH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: Arlington Collision Center
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF874059
+- Carrier: 
+- Is Milk Run: true
+
+## Order 946
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1494185-98-C
+- Description: ASSY, FENDER GARNISH, FT LH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-AUDIT
+- Destination Entity Group: NB MILKRUN 27
+- Deliver To: Koons Collision Repair Center
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RF193989
+- Carrier: 
+- Is Milk Run: true
+
+## Order 947
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1514466-00-A
+- Description: LWR GRILLE FEM BRKT, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 2
+- Deliver To: Arlington Collision Center
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5PF874059
+- Carrier: 
+- Is Milk Run: true
+
+## Order 948
+- Created At: 01/30/2026  2:32:14 PM
+- Part: 1102178-00-D
+- Description: ASY, FLUID COUPLING, VDA-18, 90DEG, 70A
+- Status: Canceled
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-STORE-FAST
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: US-IL-Bloomington-420 Olympia Dr
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE8PF617686
+- Carrier: 
+- Is Milk Run: false
+
+## Order 949
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1044454-00-B
+- Description: RR SUS CABJ
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-144-60-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA098624
+- Carrier: 
+- Is Milk Run: true
+
+## Order 950
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1104284-01-K
+- Description: KEYCARD, NFC, M3 NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB MILKRUN 17
+- Deliver To: Mobile Service Stafford
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE7NF427696
+- Carrier: 
+- Is Milk Run: true
+
+## Order 951
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 2135279-00-B
+- Description: LIFTGATE POWER STRUT, LH (NA)
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: NA-US-CT-Milford
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1TA444195
+- Carrier: 
+- Is Milk Run: true
+
+## Order 952
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 2035500-ET-A
+- Description: ASSEMBLY - FRONT DOOR - LEFT HAND
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Lee's Garage inc.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE6TF445894
+- Carrier: 
+- Is Milk Run: false
+
+## Order 953
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1477160-00-C
+- Description: AUDIO,WOOFER,200 MM, FRONT DOOR, MSXP2
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-PA-Mechanicsburg-6458 Carlisle Pike
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAXCDE51RF441932
+- Carrier: 
+- Is Milk Run: true
+
+## Order 954
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1934344-ET-A
+- Description: ASSEMBLY - FENDER - LEFT HAND
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 27
+- Deliver To: Dulles Coach Works
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED0TA499065
+- Carrier: 
+- Is Milk Run: true
+
+## Order 955
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 2035500-ET-A
+- Description: ASSEMBLY - FRONT DOOR - LEFT HAND
+- Status: Canceled
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB MILKRUN 5
+- Deliver To: US-PA-King Of Prussia-499 S HENDERSON RD
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE8PA158673
+- Carrier: 
+- Is Milk Run: true
+
+## Order 956
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1081038-04-G
+- Description: WINDOW SWITCH PASS - BLK ANO
+- Status: Drop Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: NA-US-PA-Pittsburgh-Wexford
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB106-130-60-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  3:28:28 PM
+- Stage Completed At: 01/30/2026  3:37:21 PM
+- Loaded At: 01/30/2026  3:55:38 PM
+- Shipped At: 
+- VIN: 7SAYGDEE3TF566799
+- Carrier: Lanter Delivery Systems
+- Is Milk Run: true
+
+## Order 957
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1963538-T4-B
+- Description: SKL CAP, EXT. MIRR, LH SIERRA BLACK PBSB
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: NA-US-CT-Milford
+- Ship By Date: 02/04/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDET2TA612120
+- Carrier: 
+- Is Milk Run: true
+
+## Order 958
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1509014-S0-A
+- Description: MY ASY,EXTN RR WHEELHOUSE, RH SVC E-COAT
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 35
+- Deliver To: Dream Team Collision
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED4SF272169
+- Carrier: 
+- Is Milk Run: true
+
+## Order 959
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1932678-00-D
+- Description: RR WING BRACKET ASSY, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Beach Auto Collision, Inc.
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDED6TF437267
+- Carrier: 
+- Is Milk Run: false
+
+## Order 960
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 2015527-00-A
+- Description: WASHER PUMP DUAL OUTLET JE
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-STORE-SLOW
+- Destination Entity Group: NB-GDC-INTERNATIONAL
+- Deliver To: NA-CA-ON-Toronto-1251 Tapscott Rd
+- Ship By Date: 02/04/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: XP7YGDEE6TB712737
+- Carrier: 
+- Is Milk Run: true
+
+## Order 961
+- Created At: 01/30/2026  2:32:13 PM
+- Part: 1946828-75-G
+- Description: BACKLITE ASSEMBLY (FREMONT) SGS -Move Seal Outboard 1mm
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Generic
+- Part Group: NB-GLASS
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Safelite Autoglass - Hauppauge
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9TF556617
+- Carrier: 
+- Is Milk Run: false
+
+## Order 962
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 2135280-00-B
+- Description: LIFTGATE POWER STRUT, RH (NA)
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 11
+- Deliver To: NA-US-CT-Milford
+- Ship By Date: 02/05/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1TA444195
+- Carrier: 
+- Is Milk Run: true
+
+## Order 963
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1044454-00-B
+- Description: RR SUS CABJ
+- Status: Pick Released
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB108-144-60-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE1PA098624
+- Carrier: 
+- Is Milk Run: true
+
+## Order 964
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 2029538-00-C
+- Description: ASY, CHARGE PORT DOOR, NA
+- Status: Stage Completed
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 4
+- Deliver To: US-MD-Silver Spring-2320 Broadbirch Dr
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB114-161-20-A
+- Qty: 1
+- Picked By: sandovalmig
+- Pick Completed At: 01/30/2026  4:40:59 PM
+- Stage Completed At: 01/30/2026  4:50:18 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE2TF531557
+- Carrier: 
+- Is Milk Run: true
+
+## Order 965
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1104284-01-K
+- Description: KEYCARD, NFC, M3 NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BodyShop Non-Tab
+- Part Group: NB-VNA-STORE-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: CarMax - 6018 Norwood
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9PF831294
+- Carrier: 
+- Is Milk Run: false
+
+## Order 966
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1465392-00-A
+- Description: LBL,BLANK TIRE INFO
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VINS
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Collision Carle Place
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB-VIN-LABELS
+- Qty: 1
+- Picked By: haramirez
+- Pick Completed At: 01/30/2026  2:56:44 PM
+- Stage Completed At: 01/30/2026  2:56:47 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF6NF514031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 967
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1494188-98-C
+- Description: RWK ASSY, FENDER GARNISH, RR RH, MY NA
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Moppert Brothers of South Jersey
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5NF310019
+- Carrier: 
+- Is Milk Run: true
+
+## Order 968
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1551936-S0-D
+- Description: LOWER WING BRACKET - RIGHT HAND
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Moppert Brothers of South Jersey
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5NF310019
+- Carrier: 
+- Is Milk Run: true
+
+## Order 969
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 2053865-ST-A
+- Description: ASSEMBLY - REAR QUARTER OUTER - RIGHT HAND
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Moppert Brothers of South Jersey
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5NF310019
+- Carrier: 
+- Is Milk Run: true
+
+## Order 970
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1502087-00-D
+- Description: LAMP ASY, BODYSIDE GLOBAL, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Moppert Brothers of South Jersey
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5NF310019
+- Carrier: 
+- Is Milk Run: true
+
+## Order 971
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1490405-02-C
+- Description: SUNVISOR ASY, LH PROVIDENCE, NA, SHWT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB-RDC-TESLA INTERNAL
+- Deliver To: US-NJ-Randolph-140 NJ-10
+- Ship By Date: 02/02/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE4RA221853
+- Carrier: 
+- Is Milk Run: true
+
+## Order 972
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1518783-10-B
+- Description: ASY,REFLEX,RHS,GEN3,MY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Moppert Brothers of South Jersey
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5NF310019
+- Carrier: 
+- Is Milk Run: true
+
+## Order 973
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1940027-70-F
+- Description: DOOR TRIM, SPEAKER GRILLE ASSY, FR LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB-GDC-DOMESTIC
+- Deliver To: Parts Distribution Center Greenville
+- Ship By Date: 02/03/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDET4TA622700
+- Carrier: 
+- Is Milk Run: true
+
+## Order 974
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1494044-00-A
+- Description: MODEL Y, RR WING BRKT, ASSY, RH
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-FAST
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Moppert Brothers of South Jersey
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5NF310019
+- Carrier: 
+- Is Milk Run: true
+
+## Order 975
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1494045-00-E
+- Description: MODEL Y, CENTER BRKT, ASSY
+- Status: New
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-SMALLPARCEL
+- Destination Entity Group: NB MILKRUN 13
+- Deliver To: Moppert Brothers of South Jersey
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5NF310019
+- Carrier: 
+- Is Milk Run: true
+
+## Order 976
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1462927-00-C
+- Description: LBL,BLANK MFG CERTIFICATION
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VINS
+- Destination Entity Group: NB MILKRUN 31
+- Deliver To: Tesla Collision Carle Place
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB-VIN-LABELS
+- Qty: 1
+- Picked By: haramirez
+- Pick Completed At: 01/30/2026  2:56:31 PM
+- Stage Completed At: 01/30/2026  2:56:47 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF6NF514031
+- Carrier: 
+- Is Milk Run: true
+
+## Order 977
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1553067-00-A
+- Description: COVER, WIPER ARM NUT, CHINA, SHB
+- Status: Pick Released
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-MED
+- Destination Entity Group: NB MILKRUN 32
+- Deliver To: US-NY-Nesconset-1000 Nesconset Hwy
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB113-186-20-B
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE5TF558736
+- Carrier: 
+- Is Milk Run: true
+
+## Order 978
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 2188228-00-A
+- Description: WHEEL 21x9.5 ET40, Arachnid 2.0, PRIME
+- Status: Pack Complete
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-WHEELS
+- Destination Entity Group: NB MILKRUN 1
+- Deliver To: US-VA-Vienna-8500 Tyco Rd
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB407-127-10
+- Qty: 1
+- Picked By: mwinnie
+- Pick Completed At: 01/30/2026  3:37:28 PM
+- Stage Completed At: 01/30/2026  3:37:32 PM
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDET5TA612208
+- Carrier: 
+- Is Milk Run: true
+
+## Order 979
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1493410-E0-A
+- Description: MY LIFTGATE SVC E-COATED
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-BULK-PALLET
+- Destination Entity Group: NB MILKRUN 34
+- Deliver To: US-NJ-Paramus-404 Sette Dr
+- Ship By Date: 02/09/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEF9PF859542
+- Carrier: 
+- Is Milk Run: true
+
+## Order 980
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1733794-10-E
+- Description: MID B-PILLAR, ASSY, LH
+- Status: Drop Completed
+- Hot Call: true
+- Vehicle Off Road: true
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-INTERNATIONAL
+- Deliver To: CA-QC-Laval-3755 Autoroute des Laurentides
+- Ship By Date: 01/30/2026
+- Pick Type: Tote
+- Pick Location: NB115-115-20-A
+- Qty: 1
+- Picked By: sedeming
+- Pick Completed At: 01/30/2026  3:48:31 PM
+- Stage Completed At: 01/30/2026  4:17:46 PM
+- Loaded At: 01/30/2026  4:59:46 PM
+- Shipped At: 
+- VIN: LRW3E7EB0RC086775
+- Carrier: UNITED PARCEL SERVICES
+- Is Milk Run: false
+
+## Order 981
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1494185-98-C
+- Description: ASSY, FENDER GARNISH, FT LH, MY NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-AUDIT
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Northern Westchester Auto Body Inc.
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9NF436447
+- Carrier: 
+- Is Milk Run: false
+
+## Order 982
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1495864-20-F
+- Description: LAMP ASY, SIDE REPEATER CAMERA, LH
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Northern Westchester Auto Body Inc.
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9NF436447
+- Carrier: 
+- Is Milk Run: false
+
+## Order 983
+- Created At: 01/30/2026  2:32:12 PM
+- Part: 1493451-E0-B
+- Description: MY FENDER ASSEMBLY, LH SVC E-COATED
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: BODYSHOP TAB VIN
+- Part Group: NB-BULK-FLOOR
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Northern Westchester Auto Body Inc.
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDEE9NF436447
+- Carrier: 
+- Is Milk Run: false
+
+## Order 984
+- Created At: 01/30/2026  2:32:11 PM
+- Part: 1490701-01-E
+- Description: TPMS Wheel Unit, BLE, Black
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Service
+- Part Group: NB-VNA-RACK-SLOW
+- Destination Entity Group: NB MILKRUN 36
+- Deliver To: NA-US-PA-Pittsburgh-Wexford
+- Ship By Date: 02/04/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 4
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 7SAYGDET5TA600642
+- Carrier: 
+- Is Milk Run: true
+
+## Order 985
+- Created At: 01/30/2026  2:29:06 PM
+- Part: 1420611-00-D
+- Description: BRAKE ROTOR, FRONT, MODEL S, IRON 380MM
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: Generic
+- Part Group: NB-BULKRACK-MED
+- Destination Entity Group: NB-RDC-NON MILK RUN
+- Deliver To: Kyle  Archibald
+- Ship By Date: 01/30/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 986
+- Created At: 01/30/2026  1:32:47 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: William  Martin
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 987
+- Created At: 01/30/2026  1:32:47 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Jaehyun  Veenstra
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 988
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1989037-00-B
+- Description: Bed Cargo Divider 2.0
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Rodney  Burnett
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 989
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Rodney  Burnett
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 990
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1991254-00-A
+- Description: Mobile Connector Bundle, V2L, NA
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Barbara  bell
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 991
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Timothy  Keith
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 992
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 2097851-00-A
+- Description: Tesla Projection Lights, FR, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Aishani  Customer
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 993
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1568648-00-D
+- Description: PAINT PROTECTION FILM, KIT, M3
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Daniel  Tatman
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 994
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 2018066-00-B
+- Description: ASSY, MUD FLAP, CYBERTRUCK
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Danny  Britt
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 995
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Lenny  Caruso
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 996
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1819444-00-A
+- Description: KEY FOB TOP LEVEL ASSEMBLY, MX
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: un  colon
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 997
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1734411-52-G
+- Description: UNIVERSAL WC, TESLA, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM-FLOOR
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Graham  Hentschel
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 998
+- Created At: 01/30/2026  1:32:46 PM
+- Part: 1131087-01-K
+- Description: KEYCARD, SLEEVE ASY, NFC, M3, NXP P71
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Vincent  Surace
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 999
+- Created At: 01/30/2026  1:32:45 PM
+- Part: 1107681-00-C
+- Description: HVAC, COMBINATION FILTER, M3, MY
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: NB-ECOM
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Andrew  Nguyen
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 2
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+
+## Order 1000
+- Created At: 01/30/2026  1:32:45 PM
+- Part: 1517085-42-F
+- Description: WC, NA, PACKAGED, 24FT
+- Status: New
+- Hot Call: false
+- Vehicle Off Road: false
+- Request Type: AccessoriesDirect
+- Part Group: BULK-PICK-3694
+- Destination Entity Group: NB-RDC-ECOM
+- Deliver To: Grea  Penilla
+- Ship By Date: 01/31/2026
+- Pick Type: 
+- Pick Location: 
+- Qty: 1
+- Picked By: 
+- Pick Completed At: 
+- Stage Completed At: 
+- Loaded At: 
+- Shipped At: 
+- VIN: 
+- Carrier: 
+- Is Milk Run: false
+

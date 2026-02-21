@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 39 - Exercise 3 Template</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 960px; height: 540px;
+      overflow: hidden;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #000000;
+    }
+    .slide {
+      width: 960px; height: 540px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #cc0000;
+    }
+    .header {
+      padding: 20px 30px 10px 30px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000000;
+    }
+    .content-area {
+      flex: 1;
+      display: flex;
+      gap: 20px;
+      padding: 0 30px 0 30px;
+      overflow: hidden;
+    }
+    .left-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .code-block {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 11px;
+      line-height: 1.6;
+      color: #666666;
+      flex: 1;
+      overflow: hidden;
+      white-space: pre-wrap;
+    }
+    .code-block .string {
+      color: #000000;
+    }
+    .code-block .label {
+      color: #cc0000;
+      font-weight: 700;
+    }
+    .code-block .number {
+      color: #60a5fa;
+    }
+    .right-col {
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tip-box {
+      background: rgba(204, 0, 0, 0.06);
+      border: 1px solid rgba(204, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .tip-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .tip-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .tip-text code {
+      background: #e0e0e0;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Consolas', monospace;
+      color: #cc0000;
+      font-size: 10px;
+    }
+    .info-bar {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 12px 30px 16px 30px;
+      margin-top: 10px;
+    }
+    .info-pill {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 5px 14px;
+      font-size: 10px;
+      color: #666666;
+    }
+    .info-pill strong {
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="header">
+    <span class="badge">Exercise 3 Template</span>
+    <span class="title">Shift Handoff Agent Prompt</span>
+  </div>
+  <div class="content-area">
+    <div class="left-col">
+      <div class="code-block"><span class="string">"Create a shift handoff system in a folder called
+'shift-handoff'. Include:
+
+<span class="number">1.</span> A handoff template in markdown that captures:
+   - Outgoing shift summary (what happened)
+   - Ongoing issues (what's still in progress)
+   - Incoming priorities (what to focus on next)
+   - Safety notes
+   - Staffing for the next shift
+
+<span class="number">2.</span> A filled-in sample handoff from a morning shift
+   to an afternoon shift at a distribution center.
+   Use realistic but generic content — no Tesla data.
+
+<span class="number">3.</span> A README that explains how managers should use
+   this system and when to fill it out."</span></div>
+    </div>
+    <div class="right-col">
+      <div class="tip-box">
+        <div class="tip-title">After Agent Completes</div>
+        <div class="tip-text">Open Source Control <code>Ctrl+Shift+G</code> to review all files the agent created. Click each file to see the full diff view.</div>
+      </div>
+    </div>
+  </div>
+  <div class="info-bar">
+    <span class="info-pill"><strong>Tool:</strong> Copilot Agent Mode</span>
+    <span class="info-pill"><strong>Time:</strong> 20 min total</span>
+    <span class="info-pill"><strong>Policy:</strong> NO Tesla Data</span>
+  </div>
+</div>
+</body>
+</html>

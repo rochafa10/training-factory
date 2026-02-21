@@ -2,136 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 17 - Homework & Next Week</title>
+  <title>Slide 17 - Section 6 Divider</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
     }
-    .accent-bar {
+    .section-block {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
+      width: 320px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
+    }
+    .section-content {
+      margin-left: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 40px;
     }
     h1 {
-      font-size: 32px;
+      font-size: 40px;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin-bottom: 16px;
+      line-height: 1.2;
     }
-    .two-col {
-      display: flex;
-      gap: 30px;
-    }
-    .col {
-      flex: 1;
-    }
-    .section-title {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #e82127;
-      margin-bottom: 12px;
-    }
-    .homework-card {
-      background: #1a1a1a;
-      padding: 18px;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    .homework-title {
-      font-size: 15px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-    .homework-desc {
-      font-size: 13px;
-      color: #a0a0a0;
-      line-height: 1.4;
-    }
-    .time-badge {
-      display: inline-block;
-      background: #2a2a2a;
-      padding: 3px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      color: #a0a0a0;
-      margin-top: 8px;
-    }
-    .next-week {
-      background: #1a1a1a;
-      padding: 18px;
-      border-radius: 8px;
-    }
-    .next-week ul {
-      list-style: none;
-    }
-    .next-week li {
-      font-size: 14px;
-      padding: 6px 0;
-      padding-left: 20px;
-      position: relative;
-    }
-    .next-week li::before {
-      content: "->";
-      position: absolute;
-      left: 0;
-      color: #e82127;
-    }
-    .footer {
-      position: absolute;
-      bottom: 30px;
-      left: 58px;
-      right: 50px;
-      font-size: 13px;
-      color: #a0a0a0;
-      text-align: center;
+    .duration {
+      font-size: 16px;
+      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="content">
-    <h1>Homework & Next Week</h1>
-    <div class="two-col">
-      <div class="col">
-        <p class="section-title">Homework (45 min)</p>
-        <div class="homework-card">
-          <p class="homework-title">Voice Mode Mastery</p>
-          <p class="homework-desc">Draft 3 work items using only voice: shift handoff, meeting agenda, analysis template</p>
-          <span class="time-badge">20 min</span>
-        </div>
-        <div class="homework-card">
-          <p class="homework-title">Personal Project Setup</p>
-          <p class="homework-desc">Use Agent Mode to complete your project folder with detailed README</p>
-          <span class="time-badge">25 min</span>
-        </div>
-      </div>
-      <div class="col">
-        <p class="section-title">Next Week: Week 4</p>
-        <div class="next-week">
-          <ul>
-            <li>Install MCP tools (Playwright, file system)</li>
-            <li>Build multi-agent workflows</li>
-            <li>Complete personal projects</li>
-            <li>Present your automation</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div class="section-block">
+    <span class="section-number">06</span>
   </div>
-  <p class="footer">Next Week: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+  <div class="section-content">
+    <h1>Agent Mode Deep Dive</h1>
+    <p class="duration">15 minutes</p>
+  </div>
 </body>
 </html>

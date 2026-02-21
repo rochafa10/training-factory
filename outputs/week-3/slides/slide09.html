@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 09 - Voice-Dictated Email</title>
+  <title>Slide 09 - The @ Commands</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,111 +20,115 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .exercise-badge {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-      background: #e82127;
-      color: #ffffff;
-      padding: 8px 16px;
-      border-radius: 4px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .content {
-      padding: 40px 50px 40px 50px;
-      margin-left: 8px;
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     h1 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .scenario {
-      background: #1a1a1a;
-      padding: 16px 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      font-size: 14px;
-      color: #a0a0a0;
-    }
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
-    .step {
-      background: #1a1a1a;
-      padding: 16px;
-      border-radius: 8px;
-    }
-    .step-num {
-      color: #e82127;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-    .step-text {
-      font-size: 13px;
-      line-height: 1.4;
-    }
-    .savings {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
-    }
-    .savings-item {
-      text-align: center;
-    }
-    .savings-value {
       font-size: 28px;
       font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
     }
-    .old { color: #f87171; }
-    .new { color: #4ade80; }
-    .savings-label {
+    .command-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .command-card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .command-name {
+      font-size: 22px;
+      font-weight: bold;
+      color: #cc0000;
+      font-family: monospace;
+      margin-bottom: 12px;
+    }
+    .command-desc {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .command-example {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+    }
+    .example-label {
+      font-size: 10px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .example-text {
       font-size: 12px;
-      color: #a0a0a0;
+      color: #000000;
+      font-style: italic;
+    }
+    .best-for {
+      font-size: 11px;
+      color: #4ade80;
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer {
+      font-size: 13px;
+      color: #666666;
+      text-align: center;
+      padding-top: 16px;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="exercise-badge">Exercise 3</div>
-  <div class="content">
-    <h1>Voice-Dictated Email Draft</h1>
-    <div class="scenario">Draft a performance update email to your regional director using only your voice.</div>
-    <div class="steps-grid">
-      <div class="step">
-        <p class="step-num">Step 1-2</p>
-        <p class="step-text">Open Copilot Chat<br>Press Ctrl+U for voice</p>
+  <div class="container">
+    <h1>The @ Commands - Your AI Specialists</h1>
+    <div class="command-grid">
+      <div class="command-card">
+        <div class="command-name">@workspace</div>
+        <div class="command-desc">Searches your entire project folder</div>
+        <div class="command-example">
+          <div class="example-label">Example</div>
+          <div class="example-text">"Find all files that mention inventory"</div>
+        </div>
+        <div class="best-for">Best for: project navigation, file search</div>
       </div>
-      <div class="step">
-        <p class="step-num">Step 3</p>
-        <p class="step-text">Say: "Create a professional email summarizing DC performance with placeholders for metrics"</p>
+      <div class="command-card">
+        <div class="command-name">@terminal</div>
+        <div class="command-desc">Generates and runs terminal commands</div>
+        <div class="command-example">
+          <div class="example-label">Example</div>
+          <div class="example-text">"Create a new folder called reports"</div>
+        </div>
+        <div class="best-for">Best for: file operations, automation</div>
       </div>
-      <div class="step">
-        <p class="step-num">Step 4-5</p>
-        <p class="step-text">Review output<br>Iterate with voice:<br>"Make it more concise"</p>
+      <div class="command-card">
+        <div class="command-name">@vscode</div>
+        <div class="command-desc">Controls VS Code settings and features</div>
+        <div class="command-example">
+          <div class="example-label">Example</div>
+          <div class="example-text">"Change to dark theme"</div>
+        </div>
+        <div class="best-for">Best for: editor customization, shortcuts</div>
       </div>
     </div>
-    <div class="savings">
-      <div class="savings-item">
-        <p class="savings-value old">5-10 min</p>
-        <p class="savings-label">Traditional typing</p>
-      </div>
-      <div class="savings-item">
-        <p class="savings-value new">2-3 min</p>
-        <p class="savings-label">Voice + Copilot</p>
-      </div>
-      <div class="savings-item">
-        <p class="savings-value new">3-7 min</p>
-        <p class="savings-label">Saved per email</p>
-      </div>
-    </div>
+    <div class="footer">Each @ command talks to a different specialist. Direct your questions.</div>
   </div>
 </body>
 </html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 32 - RAG Tools You Already Use</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      flex: 1;
+    }
+    .rag-card {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #4ade80;
+    }
+    .card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #4ade80;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 1.2;
+    }
+    .card-content {
+      flex: 1;
+    }
+    .card-item {
+      font-size: 11px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .card-item::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+    }
+    .card-item strong {
+      color: #000000;
+    }
+    .example-box {
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-top: 10px;
+    }
+    .example-label {
+      font-size: 9px;
+      color: #cc0000;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .example-text {
+      font-size: 10px;
+      color: #000000;
+      font-family: 'Consolas', monospace;
+    }
+    .callout {
+      background: #f0fdf4;
+      border: 2px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .callout-text {
+      font-size: 13px;
+      color: #000000;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>RAG Tools You Already Use</h1>
+    <div class="cards-grid">
+      <div class="rag-card">
+        <div class="card-header">
+          <div class="card-icon">&#128206;</div>
+          <div class="card-title">Bottle Rocket<br>File Upload</div>
+        </div>
+        <div class="card-content">
+          <div class="card-item">Upload CSV, ask questions about data</div>
+          <div class="card-item"><strong>Grounded in:</strong> Your uploaded file</div>
+        </div>
+        <div class="example-box">
+          <div class="example-label">Example</div>
+          <div class="example-text">"Which shift is understaffed?"</div>
+        </div>
+      </div>
+      <div class="rag-card">
+        <div class="card-header">
+          <div class="card-icon">&#128269;</div>
+          <div class="card-title">Copilot<br>@workspace</div>
+        </div>
+        <div class="card-content">
+          <div class="card-item">Points AI at your project files</div>
+          <div class="card-item"><strong>Grounded in:</strong> Your project folder</div>
+        </div>
+        <div class="example-box">
+          <div class="example-label">Example</div>
+          <div class="example-text">"What does the README say?"</div>
+        </div>
+      </div>
+      <div class="rag-card">
+        <div class="card-header">
+          <div class="card-icon">&#129302;</div>
+          <div class="card-title">Agent Mode<br>with Files</div>
+        </div>
+        <div class="card-content">
+          <div class="card-item">Agent reads files to inform its work</div>
+          <div class="card-item"><strong>Grounded in:</strong> Workspace context</div>
+        </div>
+        <div class="example-box">
+          <div class="example-label">Example</div>
+          <div class="example-text">Agent reads template to generate matching sample</div>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="callout-text">Every time you upload a file or point AI at documents, you're doing RAG.</div>
+    </div>
+    <div class="footer">Want accurate answers? Feed AI your data. Don't trust it to know your DC.</div>
+  </div>
+</body>
+</html>

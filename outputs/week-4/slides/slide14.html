@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 14 - Personal Project Workshop</title>
+  <title>Slide 14 - Exercise 2: Build a Persistent DC Assistant</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,159 +20,194 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
-    .content {
-      padding: 40px 50px;
-      margin-left: 8px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+    .container {
+      padding: 24px 32px 24px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 24px;
-    }
-    .checklist {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    .checklist-title {
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 16px;
-      color: #e82127;
-    }
-    .checklist-items {
-      list-style: none;
-    }
-    .checklist-items li {
+    .header {
       display: flex;
       align-items: center;
-      margin-bottom: 12px;
-      font-size: 14px;
-    }
-    .checkbox {
-      width: 18px;
-      height: 18px;
-      border: 2px solid #4ade80;
-      border-radius: 3px;
-      margin-right: 12px;
-    }
-    .enhancement {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .enhancement-title {
-      font-size: 14px;
-      font-weight: bold;
+      gap: 16px;
       margin-bottom: 16px;
     }
-    .enhancement-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .enhancement-item {
-      background: #2a2a2a;
-      padding: 12px;
-      border-radius: 6px;
-      font-size: 13px;
-      text-align: center;
-    }
-    .time-doc {
-      background: #2a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-      border-left: 3px solid #e82127;
-    }
-    .time-doc-title {
-      font-size: 14px;
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 11px;
       font-weight: bold;
+      padding: 4px 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #666666;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
       margin-bottom: 12px;
     }
-    .time-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      margin-bottom: 8px;
-      color: #a0a0a0;
+    .scenario {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 16px;
+      padding: 10px 14px;
+      background: #f5f5f5;
+      border-left: 3px solid #cc0000;
+      border-radius: 0 8px 8px 0;
     }
-    .time-input {
-      background: #1a1a1a;
-      border: 1px solid #3a3a3a;
-      padding: 4px 8px;
-      border-radius: 4px;
-      color: #ffffff;
-      width: 80px;
-      text-align: right;
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      flex: 1;
     }
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50px;
+    .instructions-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .box-title {
       font-size: 12px;
-      color: #a0a0a0;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .instructions-list {
+      list-style: none;
+    }
+    .instructions-list li {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 6px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .instructions-list li::before {
+      content: attr(data-step);
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+      font-weight: bold;
+    }
+    .instructions-list li strong {
+      color: #000000;
+    }
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .template-box {
+      background: #e0e0e0;
+      border-radius: 8px;
+      padding: 12px;
+      flex: 1;
+    }
+    .template-title {
+      font-size: 11px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+    .template-code {
+      font-family: monospace;
+      font-size: 10px;
+      color: #333333;
+      line-height: 1.6;
+    }
+    .success-box {
+      background: #f0fdf4;
+      border: 1px solid #4ade80;
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .success-title {
+      font-size: 11px;
+      font-weight: bold;
+      color: #16a34a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .success-list {
+      list-style: none;
+    }
+    .success-list li {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 4px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .success-list li::before {
+      content: "\2610";
+      position: absolute;
+      left: 0;
+      color: #4ade80;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-
-  <div class="content">
-    <div class="left-panel">
-      <h1>Personal Project Workshop</h1>
-
-      <div class="checklist">
-        <div class="checklist-title">Today's Goals</div>
-        <ul class="checklist-items">
-          <li><span class="checkbox"></span> End-to-end workflow functional</li>
-          <li><span class="checkbox"></span> At least one iteration complete</li>
-          <li><span class="checkbox"></span> Time savings documented</li>
-        </ul>
-      </div>
-
-      <div class="enhancement">
-        <div class="enhancement-title">Enhancement Ideas</div>
-        <div class="enhancement-grid">
-          <div class="enhancement-item">Add voice input</div>
-          <div class="enhancement-item">File operations</div>
-          <div class="enhancement-item">Web data</div>
-          <div class="enhancement-item">Multi-step workflow</div>
-        </div>
-      </div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Exercise 2</span>
+      <span class="time-box">25 minutes</span>
     </div>
+    <h1>Build a Persistent DC Assistant</h1>
+    <div class="scenario">Create a project memory file for your DC and compare output quality with vs. without context.</div>
 
-    <div class="right-panel">
-      <div class="time-doc">
-        <div class="time-doc-title">Document Your Savings</div>
-        <div class="time-row">
-          <span>Task Before AI:</span>
-          <span class="time-input">___ min</span>
+    <div class="content-grid">
+      <div class="instructions-box">
+        <div class="box-title">Instructions</div>
+        <ol class="instructions-list">
+          <li data-step="1.">In VS Code, create folder: <strong>.github/</strong></li>
+          <li data-step="2.">Create file: <strong>copilot-instructions.md</strong></li>
+          <li data-step="3.">Fill in the template with YOUR DC information (site name, team size, KPIs, terminology)</li>
+          <li data-step="4.">Test A: Temporarily rename file to .bak, open new chat, ask: "Write a dive deep on 15% increase in missed shipments"</li>
+          <li data-step="5.">Test B: Rename back, open NEW chat, ask the exact same question</li>
+          <li data-step="6.">Compare the output quality - specificity, KPI references, format, actionability</li>
+        </ol>
+      </div>
+
+      <div class="right-column">
+        <div class="template-box">
+          <div class="template-title">Template Snippet</div>
+          <div class="template-code">
+            Site: [Your DC]<br>
+            Team: [X] associates<br>
+            KPIs: shipment accuracy, OTD<br>
+            Terminology: NABU, SHP, CPT
+          </div>
         </div>
-        <div class="time-row">
-          <span>Task With AI:</span>
-          <span class="time-input">___ min</span>
-        </div>
-        <div class="time-row">
-          <span>Savings Per Use:</span>
-          <span class="time-input">___ min</span>
-        </div>
-        <div class="time-row">
-          <span>Uses Per Week:</span>
-          <span class="time-input">___</span>
-        </div>
-        <div class="time-row" style="padding-top: 12px; border-top: 1px solid #3a2a2a; color: #4ade80;">
-          <span>Weekly Savings:</span>
-          <span class="time-input">___ min</span>
+
+        <div class="success-box">
+          <div class="success-title">Success Criteria</div>
+          <ul class="success-list">
+            <li>Created .github/copilot-instructions.md</li>
+            <li>Customized with actual DC information</li>
+            <li>Observed measurable quality difference between Test A and Test B</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
 </body>
 </html>

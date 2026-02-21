@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 37 - The Quality Scorecard - 5 Dimensions</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 32px 16px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 16px;
+    }
+    .cards-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .dimension-card {
+      flex: 1;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+    }
+    .dimension-icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .dimension-name {
+      font-size: 14px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 8px;
+    }
+    .dimension-question {
+      font-size: 10px;
+      color: #666666;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .dimension-score {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+    }
+    .scoring-guide {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 16px 20px;
+      flex: 1;
+    }
+    .guide-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .guide-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+    .guide-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .guide-score {
+      font-size: 14px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 4px;
+      min-width: 50px;
+      text-align: center;
+    }
+    .score-excellent {
+      background: #4ade80;
+      color: #000000;
+    }
+    .score-good {
+      background: #a3e635;
+      color: #000000;
+    }
+    .score-fair {
+      background: #facc15;
+      color: #000000;
+    }
+    .score-poor {
+      background: #f87171;
+      color: #ffffff;
+    }
+    .guide-text {
+      font-size: 11px;
+      color: #666666;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 10px;
+      font-size: 11px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Quality Scorecard - 5 Dimensions</h1>
+    <div class="cards-row">
+      <div class="dimension-card">
+        <div class="dimension-icon">&#9989;</div>
+        <div class="dimension-name">Accuracy</div>
+        <div class="dimension-question">Are the facts, numbers, and logic correct?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-icon">&#128203;</div>
+        <div class="dimension-name">Completeness</div>
+        <div class="dimension-question">Does it cover everything you asked for?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-icon">&#128196;</div>
+        <div class="dimension-name">Format</div>
+        <div class="dimension-question">Is it structured the way you need it?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-icon">&#9889;</div>
+        <div class="dimension-name">Speed</div>
+        <div class="dimension-question">Did it save significant time vs. manual?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+      <div class="dimension-card">
+        <div class="dimension-icon">&#128640;</div>
+        <div class="dimension-name">Usability</div>
+        <div class="dimension-question">Can you use it as-is, or needs editing?</div>
+        <div class="dimension-score">Score: 1-5</div>
+      </div>
+    </div>
+    <div class="scoring-guide">
+      <div class="guide-title">Scoring Guide</div>
+      <div class="guide-items">
+        <div class="guide-item">
+          <span class="guide-score score-excellent">25/25</span>
+          <span class="guide-text">Ready to use immediately</span>
+        </div>
+        <div class="guide-item">
+          <span class="guide-score score-good">20-24</span>
+          <span class="guide-text">Minor edits needed (sweet spot)</span>
+        </div>
+        <div class="guide-item">
+          <span class="guide-score score-fair">15-19</span>
+          <span class="guide-text">Significant editing - refine your prompt</span>
+        </div>
+        <div class="guide-item">
+          <span class="guide-score score-poor">&lt;15</span>
+          <span class="guide-text">Re-prompt or switch approach</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Rate every important output on these five dimensions</div>
+  </div>
+</body>
+</html>

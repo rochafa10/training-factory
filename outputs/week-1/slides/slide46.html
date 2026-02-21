@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Slide 46 - Policy Rapid Fire Answers</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 960px; height: 540px;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  .slide {
+    width: 960px; height: 540px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .accent-bar {
+    position: absolute;
+    left: 0; top: 0;
+    width: 8px; height: 100%;
+    background: #cc0000;
+  }
+  .header {
+    padding: 12px 30px 4px 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .badge {
+    background: #cc0000;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .subtitle {
+    padding: 2px 30px 6px 30px;
+    font-size: 10px;
+    color: #666666;
+    font-style: italic;
+  }
+  .table-wrap {
+    flex: 1;
+    padding: 0 30px 10px 30px;
+    overflow: hidden;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  thead th {
+    background: #e0e0e0;
+    color: #666666;
+    font-weight: 700;
+    text-align: left;
+    padding: 4px 8px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid #333;
+  }
+  thead th:first-child { width: 28px; text-align: center; }
+  thead th:last-child { width: 110px; text-align: center; }
+  tbody tr:nth-child(odd) { background: #f5f5f5; }
+  tbody tr:nth-child(even) { background: #ffffff; }
+  tbody td {
+    padding: 3px 8px;
+    color: #000000;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 1.25;
+  }
+  tbody td:first-child {
+    text-align: center;
+    color: #666;
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .answer {
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .approved { color: #4ade80; }
+  .conditional { color: #facc15; }
+  .prohibited { color: #f87171; }
+  .ok { color: #666666; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="header">
+    <span class="badge">Answer Key</span>
+    <span class="title">Policy Rapid Fire &mdash; Answers</span>
+  </div>
+  <div class="subtitle">Green = Approved &nbsp;&bull;&nbsp; Yellow = Conditional &nbsp;&bull;&nbsp; Red = Prohibited</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tool or Action</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Bottle Rocket</td><td class="answer approved">Approved</td></tr>
+        <tr><td>2</td><td>Grok via X app</td><td class="answer prohibited">Prohibited</td></tr>
+        <tr><td>3</td><td>Grok via Bottle Rocket</td><td class="answer approved">Approved</td></tr>
+        <tr><td>4</td><td>Claude.ai (website)</td><td class="answer prohibited">Prohibited</td></tr>
+        <tr><td>5</td><td>Claude inside Bottle Rocket</td><td class="answer approved">Approved</td></tr>
+        <tr><td>6</td><td>M365 Copilot Chat (m365.cloud.microsoft.chat)</td><td class="answer approved">Approved</td></tr>
+        <tr><td>7</td><td>M365 Copilot Chat (copilot.microsoft.com)</td><td class="answer prohibited">Prohibited</td></tr>
+        <tr><td>8</td><td>GitHub Copilot with Tesla code</td><td class="answer prohibited">Prohibited</td></tr>
+        <tr><td>9</td><td>GitHub Copilot with generic Python code</td><td class="answer conditional">Conditional</td></tr>
+        <tr><td>10</td><td>AI meeting transcription</td><td class="answer prohibited">Prohibited</td></tr>
+        <tr><td>11</td><td>Apple Intelligence on personal iPhone at work</td><td class="answer ok">OK</td></tr>
+        <tr><td>12</td><td>Perplexity AI for generic research</td><td class="answer prohibited">Prohibited</td></tr>
+        <tr><td>13</td><td>Nova searching Confluence</td><td class="answer approved">Approved</td></tr>
+        <tr><td>14</td><td>Employee Assist for HR questions</td><td class="answer approved">Approved</td></tr>
+        <tr><td>15</td><td>DeepSeek (China-hosted)</td><td class="answer prohibited">Prohibited</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

@@ -2,96 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 03 - Learning Objectives</title>
+  <title>Slide 03 - Section 1 Divider</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
     }
-    .accent-bar {
+    .section-block {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8px;
+      width: 320px;
       height: 100%;
-      background: #e82127;
-    }
-    .content {
-      padding: 40px 50px;
-      margin-left: 8px;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 40px;
-    }
-    .objectives {
-      list-style: none;
-    }
-    .objectives li {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
-    .number {
-      background: #e82127;
-      color: #ffffff;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
+      background: #cc0000;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    .section-number {
+      font-size: 180px;
       font-weight: bold;
-      font-size: 18px;
-      margin-right: 20px;
-      flex-shrink: 0;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
     }
-    .text {
-      font-size: 20px;
-      line-height: 1.4;
-      padding-top: 5px;
+    .section-content {
+      margin-left: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 40px;
     }
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50px;
-      font-size: 12px;
-      color: #a0a0a0;
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .duration {
+      font-size: 16px;
+      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-
-  <div class="content">
-    <h1>Learning Objectives</h1>
-
-    <ul class="objectives">
-      <li>
-        <span class="number">1</span>
-        <span class="text">Install and configure MCP tools (Playwright, file system)</span>
-      </li>
-      <li>
-        <span class="number">2</span>
-        <span class="text">Build multi-agent workflows that coordinate complex tasks</span>
-      </li>
-      <li>
-        <span class="number">3</span>
-        <span class="text">Create automations that integrate with local files</span>
-      </li>
-      <li>
-        <span class="number">4</span>
-        <span class="text">Complete and present personal AI project</span>
-      </li>
-    </ul>
+  <div class="section-block">
+    <span class="section-number">01</span>
   </div>
-
-  <p class="footer">Week 4: Advanced Automation, MCPs & Multi-Agent Orchestration</p>
+  <div class="section-content">
+    <h1>Course Time Savings<br>Review + ROI</h1>
+    <p class="duration">15 minutes</p>
+  </div>
 </body>
 </html>

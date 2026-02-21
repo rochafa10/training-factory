@@ -37,7 +37,81 @@
       "Bash(del \"agents\\\\04-slide-designer.md\")",
       "Bash(del \"agents\\\\05-exercise-designer.md\")",
       "Bash(del \"agents\\\\06-prompt-librarian.md\")",
-      "Bash(del \"agents\\\\07-quality-reviewer.md\")"
+      "Bash(del \"agents\\\\07-quality-reviewer.md\")",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(powershell -c \"[console]::beep\\(800,300\\)\")",
+      "Bash(powershell -c \"\\(New-Object Media.SoundPlayer ''C:\\\\Windows\\\\Media\\\\notify.wav''\\).PlaySync\\(\\)\")",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_tabs",
+      "mcp__plugin_playwright_playwright__browser_select_option",
+      "mcp__plugin_playwright_playwright__browser_wait_for",
+      "Bash(curl:*)",
+      "mcp__plugin_playwright_playwright__browser_press_key",
+      "Bash(powershell:*)",
+      "mcp__plugin_playwright_playwright__browser_run_code",
+      "mcp__plugin_playwright_playwright__browser_file_upload",
+      "Bash(git clone:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(where:*)",
+      "Bash(node --version:*)",
+      "Bash(where npm:*)",
+      "Bash(npm --version:*)",
+      "mcp__plugin_playwright_playwright__browser_fill_form",
+      "mcp__plugin_playwright_playwright__browser_type",
+      "Bash(copy \"C:\\\\Users\\\\farocha\\\\OneDrive - Tesla\\\\Documents\\\\Training Factory\\\\.playwright-mcp\\\\ai-tiers.png\" \"C:\\\\Users\\\\farocha\\\\OneDrive - Tesla\\\\Documents\\\\Training Factory\\\\outputs\\\\week-1\\\\slides\\\\screenshots\\\\ai-tiers.png\")",
+      "mcp__plugin_playwright_playwright__browser_close",
+      "Bash(powershell.exe -Command \"Remove-Item -Recurse -Force ''C:\\\\Users\\\\farocha\\\\AppData\\\\Local\\\\ms-playwright\\\\mcp-chrome-4200a40'' -ErrorAction SilentlyContinue; Write-Host ''Done''\")",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "Bash(npx:*)",
+      "Bash(cmd /c \"dir /B\")",
+      "Bash(cmd /c \"dir /B /S\")",
+      "mcp__plugin_playwright_playwright__browser_install",
+      "Bash(powershell.exe -Command \"Remove-Item -Recurse -Force ''C:\\\\Users\\\\farocha\\\\AppData\\\\Local\\\\ms-playwright\\\\mcp-chrome-4200a40'' -ErrorAction SilentlyContinue; Write-Host ''Cleaned''\")",
+      "Bash(taskkill:*)",
+      "Bash(tasklist:*)",
+      "Bash(powershell.exe -Command \"Get-NetTCPConnection -LocalPort 8765 -ErrorAction SilentlyContinue | Select-Object -First 1 State\")",
+      "WebFetch(domain:www.tesla.com)",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Users\\\\farocha\\\\OneDrive - Tesla\\\\Documents\\\\Training Factory\\\\outputs\\\\week-1\\\\slides\\\\slide00.html''\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Users\\\\farocha\\\\OneDrive - Tesla\\\\Documents\\\\Training Factory\\\\outputs\\\\week-1\\\\slides\\\\*.html'' | Measure-Object | Select-Object -ExpandProperty Count\")",
+      "Bash(powershell.exe -Command \"$dir = ''C:\\\\Users\\\\farocha\\\\OneDrive - Tesla\\\\Documents\\\\Training Factory\\\\outputs\\\\week-1\\\\slides''; $files = Get-ChildItem ''$dir\\\\*.html''; foreach \\($f in $files\\) { $c = Get-Content $f.FullName -Raw; $c = $c -replace ''#e82127'', ''#cc0000''; $c = $c -replace ''rgba\\\\\\(232,\\\\s*33,\\\\s*39,'', ''rgba\\(204, 0, 0,''; $c = $c -replace ''#0a0a0a'', ''#000000''; $c = $c -replace ''#a0a0a0'', ''#cccccc''; $c = $c -replace ''#2a2a2a'', ''#333333''; Set-Content $f.FullName $c -NoNewline }; Write-Output ''Done: 5 color replacements across all files''\")",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\farocha\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-farocha-OneDrive---Tesla-Documents-Training-Factory\\\\f80a79d8-e24c-4e06-8814-f0abe0d22414\\\\scratchpad\\\\brand-fix.ps1\")",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command \"Get-ChildItem ''C:\\\\Users\\\\farocha\\\\OneDrive - Tesla\\\\Documents\\\\Training Factory\\\\outputs\\\\week-1\\\\slides\\\\*.html'' | Select-String -Pattern ''#555[^0-9a-fA-F]'' | Select-Object -First 20 Filename, LineNumber, Line\")",
+      "WebFetch(domain:learn.interviewkickstart.com)",
+      "WebFetch(domain:www.globenewswire.com)",
+      "WebFetch(domain:interviewkickstart.com)",
+      "Bash(start python -m http.server 8081)",
+      "Bash(timeout:*)",
+      "Bash(ping:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(forfiles:*)",
+      "Bash(del \"C:\\\\Users\\\\farocha\\\\OneDrive - Tesla\\\\Documents\\\\Training Factory\\\\outputs\\\\week-2\\\\slides\\\\Week2-Slides.pdf\")"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -c \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\notify.wav').PlaySync()\""
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -c \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\chimes.wav').PlaySync()\""
+          }
+        ]
+      }
     ]
   }
 }

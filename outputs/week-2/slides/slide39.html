@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Slide 39 - Getting AI to Output in Consistent Formats</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 960px; height: 540px;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  .slide {
+    width: 960px; height: 540px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .accent-bar {
+    position: absolute;
+    left: 0; top: 0;
+    width: 8px; height: 100%;
+    background: #cc0000;
+  }
+  .header {
+    padding: 24px 32px 16px 32px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 32px 20px 32px;
+  }
+  .card {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .card-icon {
+    width: 36px;
+    height: 36px;
+    background: #cc0000;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .card-prompt {
+    font-size: 11px;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  .card-best {
+    font-size: 11px;
+    color: #333333;
+    line-height: 1.4;
+    margin-top: auto;
+  }
+  .card-best strong {
+    color: #cc0000;
+  }
+  .footer {
+    padding: 12px 32px;
+    font-size: 12px;
+    color: #666666;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="header">
+    <div class="title">Getting AI to Output in Consistent Formats</div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">T</div>
+        <div class="card-title">Tables</div>
+      </div>
+      <div class="card-prompt">"Present this as a table with columns for [X], [Y], [Z]"</div>
+      <div class="card-best"><strong>Best for:</strong> Comparisons, data summaries, schedules, KPI tracking</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">C</div>
+        <div class="card-title">Checklists</div>
+      </div>
+      <div class="card-prompt">"Create a checklist with checkboxes for each step"</div>
+      <div class="card-best"><strong>Best for:</strong> SOPs, audit prep, onboarding, quality control</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">R</div>
+        <div class="card-title">Formatted Reports</div>
+      </div>
+      <div class="card-prompt">"Write an executive summary with: headline, 3 key findings, recommendation"</div>
+      <div class="card-best"><strong>Best for:</strong> Leadership updates, weekly reports, incident summaries</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon">M</div>
+        <div class="card-title">Markdown</div>
+      </div>
+      <div class="card-prompt">"Format using Markdown with headers, bold, and bullet points"</div>
+      <div class="card-best"><strong>Best for:</strong> Documentation, knowledge base articles, procedures</div>
+    </div>
+  </div>
+  <div class="footer">Specify FORMAT explicitly &mdash; don't leave it to the AI to guess</div>
+</div>
+</body>
+</html>

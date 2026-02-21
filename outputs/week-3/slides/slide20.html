@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 20 - Exercise 2: Build Your First DC Agent</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .badge {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 4px;
+      letter-spacing: 1px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 6px 12px;
+      font-size: 12px;
+      color: #666666;
+      margin-left: auto;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .main-content {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .prompt-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .prompt-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .prompt-text {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+      font-family: monospace;
+    }
+    .instructions-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .instructions-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .instructions-list {
+      list-style: none;
+    }
+    .instructions-list li {
+      font-size: 12px;
+      color: #666666;
+      padding: 5px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .step-num {
+      background: #cc0000;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .right-col {
+      width: 280px;
+    }
+    .success-box {
+      background: #f0fdf4;
+      border: 2px solid #4ade80;
+      border-radius: 8px;
+      padding: 16px;
+      height: 100%;
+    }
+    .success-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #16a34a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .success-list {
+      list-style: none;
+    }
+    .success-list li {
+      font-size: 12px;
+      color: #666666;
+      padding: 8px 0;
+      border-bottom: 1px solid #dcfce7;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .success-list li:last-child {
+      border-bottom: none;
+    }
+    .checkbox {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #4ade80;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .footer {
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">EXERCISE 2</span>
+      <span class="time-box">25 minutes</span>
+    </div>
+    <h1>Build Your First DC Agent</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="prompt-box">
+          <div class="prompt-label">Goal Prompt</div>
+          <div class="prompt-text">"Create a weekly labor planning tool for a distribution center. Include: (1) README explaining the tool, (2) markdown template for weekly labor data with headcount by shift, planned vs actual hours, overtime, open positions, (3) sample data file with realistic numbers, (4) summary report analyzing the sample, (5) weekly review checklist. Put all in folder 'labor-planning'."</div>
+        </div>
+        <div class="instructions-box">
+          <div class="instructions-label">Instructions</div>
+          <ul class="instructions-list">
+            <li><span class="step-num">1</span>Enter Agent Mode (mode selector in Copilot Chat)</li>
+            <li><span class="step-num">2</span>Type or dictate the goal prompt</li>
+            <li><span class="step-num">3</span>Watch the agent plan, create, and verify</li>
+            <li><span class="step-num">4</span>Review each file before approving</li>
+            <li><span class="step-num">5</span>Iterate: "Add a column for temp workers"</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="success-box">
+          <div class="success-label">Success Criteria</div>
+          <ul class="success-list">
+            <li><span class="checkbox"></span>Agent created 5 files in labor-planning folder</li>
+            <li><span class="checkbox"></span>Reviewed all files for accuracy</li>
+            <li><span class="checkbox"></span>Successfully iterated with follow-up request</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><strong>Policy reminder:</strong> NO Tesla data in Copilot &mdash; use placeholders like [INSERT METRICS]</div>
+  </div>
+</body>
+</html>

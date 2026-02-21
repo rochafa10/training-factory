@@ -2,273 +2,237 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Week 3: GitHub Copilot, Voice Mode & Agent Fundamentals - All Slides</title>
+  <title>Week 3: VS Code, Agents & How AI Thinks</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #1a1a1a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
-      padding: 40px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 32px;
-    }
-    .subtitle {
-      text-align: center;
-      color: #a0a0a0;
-      margin-bottom: 40px;
-    }
-    .controls {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .controls button {
-      background: #e82127;
-      color: #ffffff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 14px;
-      cursor: pointer;
-      border-radius: 4px;
-      margin: 0 5px;
-    }
-    .controls button:hover {
-      background: #c91b21;
-    }
-    .controls button:disabled {
-      background: #444;
-      cursor: not-allowed;
-    }
-    .slide-counter {
-      display: inline-block;
-      margin: 0 20px;
-      font-size: 16px;
-      vertical-align: middle;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 30px;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    .slide-container {
-      background: #0a0a0a;
-      border-radius: 8px;
+      height: 100vh;
       overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.2s;
+      user-select: none;
     }
-    .slide-container:hover {
-      transform: scale(1.02);
-    }
-    .slide-wrapper {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* 16:9 */
-    }
-    .slide-wrapper iframe {
+    .slide-area {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: none;
-      pointer-events: none;
-    }
-    .slide-label {
-      padding: 12px 16px;
-      background: #2a2a2a;
-      font-size: 14px;
-    }
-    .slide-num {
-      color: #e82127;
-      font-weight: bold;
-    }
-    /* Fullscreen mode */
-    .fullscreen-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.95);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-    }
-    .fullscreen-overlay.active {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .fullscreen-slide {
+    .slide-wrapper {
+      position: relative;
       width: 960px;
       height: 540px;
-      max-width: 95vw;
-      max-height: 80vh;
-    }
-    .fullscreen-slide iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .fullscreen-nav {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    .fullscreen-nav button {
-      background: #e82127;
-      color: #ffffff;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      cursor: pointer;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
       border-radius: 4px;
+      overflow: hidden;
+      transform-origin: center center;
     }
-    .fullscreen-nav button:hover {
-      background: #c91b21;
+    .slide-wrapper iframe {
+      width: 960px;
+      height: 540px;
+      border: none;
+      display: block;
     }
-    .close-btn {
+    .bottom-bar {
       position: fixed;
-      top: 20px;
-      right: 30px;
-      background: transparent;
-      border: 2px solid #ffffff;
-      color: #ffffff;
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
-      cursor: pointer;
-      border-radius: 50%;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 8px 0 12px 0;
+      background: linear-gradient(transparent, rgba(255, 255, 255, 0.95) 30%, #ffffff);
+      z-index: 10;
+      opacity: 1;
+      transition: opacity 0.3s;
     }
-    .keyboard-hint {
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-btn {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #000000;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .nav-btn:hover {
+      background: #cc0000;
+      border-color: #cc0000;
+      color: #ffffff;
+    }
+    .nav-btn:active {
+      background: #a00000;
+    }
+    .slide-info {
+      font-size: 13px;
+      color: #666666;
+      min-width: 100px;
       text-align: center;
-      color: #666;
+    }
+    .slide-info .current {
+      color: #000000;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .slide-title {
       font-size: 12px;
-      margin-top: 30px;
+      color: #999999;
+      margin-top: 4px;
+      text-align: center;
+    }
+    .progress-bar {
+      height: 3px;
+      background: #f5f5f5;
+      border-radius: 2px;
+      margin-top: 6px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #cc0000;
+      transition: width 0.3s ease;
+      border-radius: 2px;
     }
   </style>
 </head>
 <body>
-  <h1>Week 3: GitHub Copilot, Voice Mode & Agent Fundamentals</h1>
-  <p class="subtitle">17 Slides | 120 Minutes | Click any slide to view fullscreen</p>
 
-  <div class="controls">
-    <button onclick="startPresentation()">Start Presentation</button>
-  </div>
-
-  <div class="grid" id="slideGrid">
-    <!-- Slides will be generated by JavaScript -->
-  </div>
-
-  <div class="fullscreen-overlay" id="fullscreenOverlay">
-    <button class="close-btn" onclick="closeFullscreen()">&times;</button>
-    <div class="fullscreen-slide">
-      <iframe id="fullscreenFrame" src=""></iframe>
-    </div>
-    <div class="fullscreen-nav">
-      <button onclick="prevSlide()">Previous</button>
-      <span class="slide-counter" id="slideCounter">1 / 17</span>
-      <button onclick="nextSlide()">Next</button>
+  <div class="slide-area">
+    <div class="slide-wrapper">
+      <iframe id="slideFrame" src="slide01.html" scrolling="no"></iframe>
     </div>
   </div>
 
-  <p class="keyboard-hint">Keyboard: Arrow keys to navigate, ESC to close fullscreen</p>
+  <div class="bottom-bar">
+    <div class="controls">
+      <button class="nav-btn" onclick="prev()" title="Previous (Left Arrow)">&#8592;</button>
+      <div class="slide-info">
+        <span class="current" id="counter">1</span> / 58
+      </div>
+      <button class="nav-btn" onclick="next()" title="Next (Right Arrow)">&#8594;</button>
+    </div>
+    <div id="titleDisplay" class="slide-title">VS Code, Agents & How AI Thinks</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress" style="width: 1.72%"></div>
+    </div>
+  </div>
 
   <script>
-    const totalSlides = 17;
-    let currentSlide = 1;
-
-    const slideTitles = [
-      "Title - Week 3",
-      "Session Agenda",
-      "Learning Objectives",
-      "Time Savings Review",
-      "VS Code + Copilot Setup",
-      "@ Commands Overview",
-      "Copilot vs Bottle Rocket",
-      "Voice Mode Setup",
-      "Voice-Dictated Email",
-      "Agent Mode Introduction",
-      "Plan-Execute-Iterate Loop",
-      "Agent Mode Capabilities",
-      "Terminal Command Approval",
-      "First Agent Task",
-      "Personal Project",
-      "Key Takeaways",
-      "Homework & Next Week"
+    const slides = [
+      { file: 'slide01.html', title: 'VS Code, Agents & How AI Thinks' },
+      { file: 'slide02.html', title: 'Today\'s Agenda' },
+      { file: 'slide03.html', title: 'Section 1: Time Savings Review' },
+      { file: 'slide04.html', title: 'Weeks 1-2 Wins - Celebrating Progress' },
+      { file: 'slide05.html', title: 'Section 2: VS Code + Copilot Setup' },
+      { file: 'slide06.html', title: 'Setup Checklist - 6 Steps' },
+      { file: 'slide07.html', title: 'Troubleshooting Common Issues' },
+      { file: 'slide08.html', title: 'Section 3: Copilot Chat, @ Commands & Voice Mode' },
+      { file: 'slide09.html', title: 'The @ Commands - Your AI Specialists' },
+      { file: 'slide10.html', title: 'Copilot Chat vs. Bottle Rocket' },
+      { file: 'slide11.html', title: 'Voice Mode - 3-5x Faster Than Typing' },
+      { file: 'slide12.html', title: 'Exercise 1: Voice + Chat Practice' },
+      { file: 'slide13.html', title: 'Exercise 1: Prompt Templates' },
+      { file: 'slide14.html', title: 'Section 5: What Is an AI Agent?' },
+      { file: 'slide15.html', title: 'Chat vs. Agent - The Big Difference' },
+      { file: 'slide16.html', title: 'Chat or Agent Mode? Quiz' },
+      { file: 'slide17.html', title: 'Chat or Agent Mode? - Answers' },
+      { file: 'slide18.html', title: 'The ReAct Pattern - How Agents Think' },
+      { file: 'slide19.html', title: 'Activity A: Watch the Agent Think' },
+      { file: 'slide20.html', title: 'When to Use Chat vs. Agent' },
+      { file: 'slide21.html', title: 'Section 6: Agent Mode Deep Dive' },
+      { file: 'slide22.html', title: 'The Agent Mindset - Goal, Not Steps' },
+      { file: 'slide23.html', title: 'Terminal Command Approval - Safety First' },
+      { file: 'slide24.html', title: 'Exercise 2: Build Your First DC Agent' },
+      { file: 'slide25.html', title: 'Exercise 2: DC Agent Builder Template' },
+      { file: 'slide26.html', title: 'Expected Folder Structure' },
+      { file: 'slide27.html', title: 'Section 8: How AI Finds Information - RAG Lite' },
+      { file: 'slide28.html', title: 'Why AI "Makes Things Up"' },
+      { file: 'slide29.html', title: 'The Solution: Ground AI in Real Data (RAG)' },
+      { file: 'slide30.html', title: 'Grounded or Hallucinated? Quiz' },
+      { file: 'slide31.html', title: 'Grounded or Hallucinated? - Answers' },
+      { file: 'slide32.html', title: 'RAG Tools You Already Use' },
+      { file: 'slide33.html', title: 'Activity B: Upload and Query Demo' },
+      { file: 'slide34.html', title: 'Section 9: Git Basics - Reviewing AI Changes' },
+      { file: 'slide35.html', title: 'Reading a Diff - Before vs. After' },
+      { file: 'slide36.html', title: 'Git Diff Color Legend' },
+      { file: 'slide37.html', title: 'Common Diff Patterns' },
+      { file: 'slide38.html', title: 'Exercise 3: Agent Builds a Tool + Git Review' },
+      { file: 'slide39.html', title: 'Exercise 3: Shift Handoff Agent Prompt' },
+      { file: 'slide40.html', title: 'Git Review Checklist' },
+      { file: 'slide41.html', title: 'Section 11: Hallucination, Safety & Debugging' },
+      { file: 'slide42.html', title: 'Three Types of AI Mistakes' },
+      { file: 'slide43.html', title: 'Identify the Error Type Quiz' },
+      { file: 'slide44.html', title: 'Error Types - Answers' },
+      { file: 'slide45.html', title: 'The Verification Framework' },
+      { file: 'slide46.html', title: 'Activity C: Verification Drill' },
+      { file: 'slide47.html', title: 'Exercise 4: Spot the Mistakes' },
+      { file: 'slide48.html', title: 'Hallucination Hunt: Email Draft' },
+      { file: 'slide49.html', title: 'Hallucination Hunt: Data Analysis' },
+      { file: 'slide50.html', title: 'Hallucination Hunt: Agent Report' },
+      { file: 'slide51.html', title: 'Spot the Mistakes - Answer Key' },
+      { file: 'slide52.html', title: 'Week 3 Key Takeaways' },
+      { file: 'slide53.html', title: 'Week 3 Prompt Library - Quick Reference' },
+      { file: 'slide54.html', title: 'Homework & Next Week Preview' },
+      { file: 'slide55.html', title: 'Week 4 Preview - What\'s Coming' },
+      { file: 'slide56.html', title: 'Time Savings Tracker - Week 3' },
+      { file: 'slide57.html', title: 'Weekly Skill Checklist' },
+      { file: 'slide58.html', title: 'See You Next Week!' }
     ];
 
-    // Generate grid
-    const grid = document.getElementById('slideGrid');
-    for (let i = 1; i <= totalSlides; i++) {
-      const slideNum = String(i).padStart(2, '0');
-      grid.innerHTML += `
-        <div class="slide-container" onclick="openSlide(${i})">
-          <div class="slide-wrapper">
-            <iframe src="slide${slideNum}.html" loading="lazy"></iframe>
-          </div>
-          <div class="slide-label">
-            <span class="slide-num">Slide ${i}</span> - ${slideTitles[i-1]}
-          </div>
-        </div>
-      `;
+    let current = 0;
+
+    function show(index) {
+      current = index;
+      document.getElementById('slideFrame').src = slides[current].file;
+      document.getElementById('counter').textContent = current + 1;
+      document.getElementById('titleDisplay').textContent = slides[current].title;
+      document.getElementById('progress').style.width = ((current + 1) / slides.length * 100) + '%';
     }
 
-    function openSlide(num) {
-      currentSlide = num;
-      updateFullscreen();
-      document.getElementById('fullscreenOverlay').classList.add('active');
+    function next() {
+      if (current < slides.length - 1) show(current + 1);
     }
 
-    function closeFullscreen() {
-      document.getElementById('fullscreenOverlay').classList.remove('active');
+    function prev() {
+      if (current > 0) show(current - 1);
     }
 
-    function updateFullscreen() {
-      const slideNum = String(currentSlide).padStart(2, '0');
-      document.getElementById('fullscreenFrame').src = `slide${slideNum}.html`;
-      document.getElementById('slideCounter').textContent = `${currentSlide} / ${totalSlides}`;
-    }
-
-    function nextSlide() {
-      if (currentSlide < totalSlides) {
-        currentSlide++;
-        updateFullscreen();
-      }
-    }
-
-    function prevSlide() {
-      if (currentSlide > 1) {
-        currentSlide--;
-        updateFullscreen();
-      }
-    }
-
-    function startPresentation() {
-      openSlide(1);
-    }
-
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
-      if (document.getElementById('fullscreenOverlay').classList.contains('active')) {
-        if (e.key === 'ArrowRight' || e.key === ' ') {
-          nextSlide();
-        } else if (e.key === 'ArrowLeft') {
-          prevSlide();
-        } else if (e.key === 'Escape') {
-          closeFullscreen();
-        }
-      }
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
     });
+
+    function rescale() {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const bottomBarH = 70;
+      const availH = vh - bottomBarH;
+      const scaleX = (vw * 0.96) / 960;
+      const scaleY = (availH * 0.96) / 540;
+      const scale = Math.min(scaleX, scaleY);
+      const wrapper = document.querySelector('.slide-wrapper');
+      wrapper.style.transform = 'scale(' + scale + ')';
+      const bar = document.querySelector('.progress-bar');
+      bar.style.width = Math.min(960 * scale, vw * 0.9) + 'px';
+    }
+    window.addEventListener('resize', rescale);
+    rescale();
   </script>
 </body>
 </html>

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 14 - Before and After</title>
+  <title>Slide 14 - Gray Zones</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -20,7 +20,7 @@
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     .container {
       padding: 32px 40px 24px 48px;
@@ -29,111 +29,86 @@
       flex-direction: column;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
-    .comparison {
-      display: flex;
-      gap: 24px;
-      flex: 1;
-    }
-    .column {
-      flex: 1;
+    .cards {
       display: flex;
       flex-direction: column;
+      gap: 8px;
+      flex: 1;
     }
-    .column-header {
+    .gray-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+    .gray-card .quote {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .gray-card .quote::before {
+      content: "\201C";
+      color: #cc0000;
+    }
+    .gray-card .quote::after {
+      content: "\201D";
+      color: #cc0000;
+    }
+    .gray-card .explanation {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .callout {
+      background: #e0e0e0;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 10px;
       display: flex;
       align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
+      gap: 12px;
     }
-    .badge-bad {
-      background: #f87171;
-      padding: 4px 12px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
+    .callout-icon {
+      font-size: 20px;
+      flex-shrink: 0;
     }
-    .badge-good {
-      background: #4ade80;
-      padding: 4px 12px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-      color: #0a0a0a;
-    }
-    .column-title {
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .code-block {
-      background: #1a1a1a;
-      border-radius: 8px;
-      padding: 16px;
-      flex: 1;
-      overflow: hidden;
-    }
-    .code-block pre {
-      font-family: 'Consolas', monospace;
-      font-size: 11px;
-      line-height: 1.5;
-      color: #a0a0a0;
-      white-space: pre-wrap;
-    }
-    .highlight {
-      color: #e82127;
-      font-weight: bold;
-    }
-    .footer {
-      font-size: 11px;
-      color: #666;
-      margin-top: 12px;
+    .callout-text {
+      font-size: 13px;
+      color: #000000;
+      line-height: 1.4;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Before vs. After: The Formula in Action</h1>
-    <div class="comparison">
-      <div class="column">
-        <div class="column-header">
-          <span class="badge-bad">BEFORE</span>
-          <span class="column-title">Vague Prompt</span>
-        </div>
-        <div class="code-block">
-          <pre>Help me with standup prep</pre>
-        </div>
+    <h1>Gray Zones &mdash; It&rsquo;s Trickier Than You Think</h1>
+    <div class="cards">
+      <div class="gray-card">
+        <div class="quote">I anonymized the data first</div>
+        <div class="explanation">Removing names doesn&rsquo;t make Tesla Data non-Tesla. Overtime patterns and staffing ratios from inside Tesla are still Tesla Data.</div>
       </div>
-      <div class="column">
-        <div class="column-header">
-          <span class="badge-good">AFTER</span>
-          <span class="column-title">Structured Prompt</span>
-        </div>
-        <div class="code-block">
-          <pre><span class="highlight">ROLE:</span> You are an experienced operations
-manager at a distribution center.
-
-<span class="highlight">CONTEXT:</span> I manage the morning shift at
-the Tampa DC. Yesterday we processed
-2,847 orders with 42 associates. We had
-a conveyor issue from 2-4 PM.
-
-<span class="highlight">TASK:</span> Create a brief standup summary
-highlighting yesterday's performance
-and today's priorities.
-
-<span class="highlight">FORMAT:</span> Use bullet points. Under 150
-words. Include:
-1) Yesterday's key metrics
-2) Main issue and resolution
-3) Today's focus areas</pre>
-        </div>
+      <div class="gray-card">
+        <div class="quote">It&rsquo;s my personal phone, on my own time</div>
+        <div class="explanation">The policy follows the DATA, not the clock or the device.</div>
+      </div>
+      <div class="gray-card">
+        <div class="quote">I only shared the AI output</div>
+        <div class="explanation">AI output containing Tesla Data must be handled like any Tesla Data.</div>
+      </div>
+      <div class="gray-card">
+        <div class="quote">I used Bottle Rocket first, then polished in Claude.ai</div>
+        <div class="explanation">Two-step workarounds add risk for zero benefit. Bottle Rocket runs Claude models &mdash; just refine there.</div>
       </div>
     </div>
-    <p class="footer">Section 4 | Prompt Engineering Basics</p>
+    <div class="callout">
+      <span class="callout-icon">&#9432;</span>
+      <span class="callout-text">When in doubt: use Bottle Rocket, keep it in approved channels, and ask.</span>
+    </div>
   </div>
 </body>
 </html>
