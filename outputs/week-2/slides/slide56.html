@@ -1,38 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 56 - What Is a Diff?</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
-.intro { font-size: 16px; color: #a0a0a0; margin-bottom: 16px; }
-.color-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-.color-swatch { width: 16px; height: 16px; border-radius: 3px; }
-.color-swatch.green { background: #4ade80; }
-.color-swatch.red { background: #f87171; }
-.color-label { font-size: 16px; color: #e5e5e5; }
-.example { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; margin-top: 20px; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.8; }
-.diff-red { color: #f87171; text-decoration: line-through; }
-.diff-green { color: #4ade80; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 56 - What Is a Diff?</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 6px; }
+    .subtitle { font-size: 14px; color: #a0a0a0; margin-bottom: 20px; }
+    .explanation { font-size: 14px; color: #e5e5e5; line-height: 1.6; margin-bottom: 18px; }
+    .diff-editor {
+      background: #1a1a1a;
+      border-radius: 8px;
+      overflow: hidden;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .editor-titlebar {
+      background: #2a2a2a;
+      padding: 8px 14px;
+      font-size: 12px;
+      color: #a0a0a0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .editor-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot-red { background: #f87171; }
+    .dot-yellow { background: #facc15; }
+    .dot-green { background: #4ade80; }
+    .diff-lines {
+      padding: 14px 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .diff-line {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 14px;
+      padding: 6px 18px 6px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .diff-line.context {
+      color: #a0a0a0;
+    }
+    .diff-line.removed {
+      background: rgba(248, 113, 113, 0.12);
+      border-left: 4px solid #f87171;
+    }
+    .diff-line.removed .sign { color: #f87171; font-weight: bold; }
+    .diff-line.removed .text { color: #f87171; }
+    .diff-line.added {
+      background: rgba(74, 222, 128, 0.12);
+      border-left: 4px solid #4ade80;
+    }
+    .diff-line.added .sign { color: #4ade80; font-weight: bold; }
+    .diff-line.added .text { color: #4ade80; }
+    .line-num {
+      color: #555;
+      font-size: 12px;
+      min-width: 24px;
+      text-align: right;
+    }
+    .sign { min-width: 12px; }
+    .legend {
+      display: flex;
+      gap: 28px;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .legend-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+    }
+    .swatch-red { background: rgba(248, 113, 113, 0.25); border: 2px solid #f87171; }
+    .swatch-green { background: rgba(74, 222, 128, 0.25); border: 2px solid #4ade80; }
+    .legend-text { color: #a0a0a0; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>What Is a Diff? ("Track Changes" for Code)</h1>
-  <p class="intro">When an agent modifies a file, VS Code shows exactly what changed using colors:</p>
-  <div class="color-row"><span class="color-swatch green"></span><span class="color-label"><strong>Green lines</strong> = new content that was ADDED</span></div>
-  <div class="color-row"><span class="color-swatch red"></span><span class="color-label"><strong>Red lines</strong> = old content that was REMOVED</span></div>
-  <div class="color-row"><span class="color-swatch red"></span><span class="color-swatch green"></span><span class="color-label"><strong>Red + Green together</strong> = content was CHANGED</span></div>
-  <div class="example">
-    <div class="diff-red">- Orders processed: 2,500</div>
-    <div class="diff-green">+ Orders processed: 2,800</div>
-    <div class="diff-green">+ Quality rate: 99.1%</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>What Is a Diff?</h1>
+    <div class="subtitle">"Track Changes" for Code</div>
+    <div class="explanation">When an agent modifies a file, VS Code shows what changed using colors:</div>
+
+    <div class="diff-editor">
+      <div class="editor-titlebar">
+        <span class="editor-dot dot-red"></span>
+        <span class="editor-dot dot-yellow"></span>
+        <span class="editor-dot dot-green"></span>
+        weekly-report.md &mdash; Diff View
+      </div>
+      <div class="diff-lines">
+        <div class="diff-line context">
+          <span class="line-num">3</span>
+          <span class="sign">&nbsp;</span>
+          <span class="text">  Site: Newburgh NY</span>
+        </div>
+        <div class="diff-line context">
+          <span class="line-num">4</span>
+          <span class="sign">&nbsp;</span>
+          <span class="text">  Week: Feb 17 - Feb 21</span>
+        </div>
+        <div class="diff-line removed">
+          <span class="line-num">5</span>
+          <span class="sign">-</span>
+          <span class="text">  Orders processed: 2,500</span>
+        </div>
+        <div class="diff-line added">
+          <span class="line-num">5</span>
+          <span class="sign">+</span>
+          <span class="text">  Orders processed: 2,800</span>
+        </div>
+        <div class="diff-line added">
+          <span class="line-num">6</span>
+          <span class="sign">+</span>
+          <span class="text">  Quality rate: 99.1%</span>
+        </div>
+        <div class="diff-line context">
+          <span class="line-num">7</span>
+          <span class="sign">&nbsp;</span>
+          <span class="text">  Safety incidents: 0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-swatch swatch-red"></div>
+        <span class="legend-text">Red = Removed</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch swatch-green"></div>
+        <span class="legend-text">Green = Added</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-text" style="color: #e5e5e5;">Both on same line = Changed</span>
+      </div>
+    </div>
   </div>
-</div>
 </body>
 </html>

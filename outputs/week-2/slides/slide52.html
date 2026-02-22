@@ -1,39 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 52 - Exercise: Step 3 - Compare Before vs After</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 24px 40px 20px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
-.steps { background: #1a1a1a; border-radius: 12px; padding: 14px 18px; margin-bottom: 14px; }
-.step { display: flex; gap: 12px; margin-bottom: 8px; font-size: 16px; color: #e5e5e5; }
-.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
-.expected { background: #2a1010; border: 1px solid #f87171; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
-.expected-label { font-size: 11px; font-weight: 700; color: #f87171; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.expected-text { font-size: 14px; color: #e5e5e5; }
-.takeaway { background: #1a1a1a; border-left: 4px solid #4ade80; border-radius: 8px; padding: 12px 16px; font-size: 15px; color: #e5e5e5; }
-.takeaway strong { color: #4ade80; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 52 - Step 3: Compare Before vs After</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 20px 40px 16px 48px; height: 100%; display: flex; flex-direction: column; }
+    .badge { display: inline-block; background: #e82127; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 10px; align-self: flex-start; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 14px; }
+    .do-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .do-this-box {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+    }
+    .step-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .step-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #e5e5e5; line-height: 1.4; }
+    .step-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: #e82127;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-list li strong { color: #ffffff; }
+    .result-card {
+      background: #1a1a1a;
+      border-top: 4px solid #f87171;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+    }
+    .result-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #f87171;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+    }
+    .result-text { font-size: 13px; color: #a0a0a0; line-height: 1.5; }
+    .result-text .quote {
+      font-family: 'Consolas', 'Courier New', monospace;
+      color: #f87171;
+      font-style: italic;
+    }
+    .point-box {
+      background: #1a1a1a;
+      border-left: 4px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: auto;
+    }
+    .point-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #4ade80;
+      letter-spacing: 1.5px;
+      margin-bottom: 4px;
+    }
+    .point-text { font-size: 14px; color: #e5e5e5; line-height: 1.5; }
+    .point-text strong { color: #ffffff; }
+    .comparison {
+      display: flex;
+      gap: 16px;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+    .comp-item {
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: #2a2a2a;
+    }
+    .comp-without { color: #f87171; }
+    .comp-with { color: #4ade80; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 5 -- Step 3</div>
-  <h1>Compare Before vs After</h1>
-  <div class="steps">
-    <div class="step"><span class="step-num">1.</span> Switch from Agent Mode back to <strong>Chat mode</strong> (use mode dropdown)</div>
-    <div class="step"><span class="step-num">2.</span> Type the same weather question in Chat mode</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Exercise 5 &mdash; Step 3</div>
+    <h1>Step 3: Compare Before vs After</h1>
+
+    <div class="do-this-label">Do This</div>
+    <div class="do-this-box">
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <span>Switch from <strong>Agent Mode</strong> back to <strong>Chat mode</strong> (use the mode dropdown)</span>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <span>Type the <strong>same weather question</strong> in Chat mode</span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="result-card">
+      <div class="result-label">Expected Result</div>
+      <div class="result-text">Chat mode refuses: <span class="quote">&ldquo;I can&rsquo;t browse the internet&rdquo;</span> or gives outdated info</div>
+    </div>
+
+    <div class="point-box">
+      <div class="point-label">The Point</div>
+      <div class="point-text"><strong>MCP is what gives the agent real capabilities.</strong></div>
+      <div class="comparison">
+        <div class="comp-item comp-without">Without MCP: limited to files</div>
+        <div class="comp-item comp-with">With MCP: can interact with the outside world</div>
+      </div>
+    </div>
   </div>
-  <div class="expected">
-    <div class="expected-label">Expected result</div>
-    <div class="expected-text">Chat mode refuses ("I can't browse the internet") or gives outdated info</div>
-  </div>
-  <div class="takeaway"><strong>The point:</strong> Without MCP, limited to files on your computer. With MCP, can interact with the outside world.</div>
-</div>
 </body>
 </html>

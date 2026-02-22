@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 64 - Review What Changed (The Diff)</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-ul { list-style: none; padding: 0; }
-li { font-size: 17px; color: #e5e5e5; padding: 10px 0 10px 20px; border-left: 3px solid #e82127; margin-bottom: 10px; }
-li strong { color: #ffffff; }
-.question { background: #1a1a1a; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 16px; color: #facc15; text-align: center; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 64 - Review What Changed (The Diff)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 16px; }
+    .steps { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .step-card {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .step-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: #2a2a2a;
+      border: 2px solid #4ade80;
+      color: #4ade80;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .step-text { font-size: 13px; color: #e5e5e5; line-height: 1.5; }
+    .step-text strong { color: #ffffff; }
+    .step-text .green { color: #4ade80; font-weight: bold; }
+    .step-text .red { color: #f87171; font-weight: bold; }
+    .questions-box {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 6px;
+    }
+    .questions-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #e82127;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+    .question-item {
+      font-size: 13px;
+      color: #e5e5e5;
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
+    .question-item:last-child { margin-bottom: 0; }
+    .transition-text {
+      margin-top: auto;
+      font-size: 13px;
+      color: #a0a0a0;
+      font-style: italic;
+      padding-top: 8px;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Review What Changed (The Diff)</h1>
-  <ul>
-    <li>Look at the file in VS Code -- <strong>colored markers</strong> in the left margin (green = added, red = removed)</li>
-    <li>Click the <strong>Source Control</strong> icon in the left sidebar (branch/fork icon)</li>
-    <li>Click the changed file to see the <strong>full diff</strong></li>
-    <li>Can you identify the <strong>new code</strong> for your requested feature?</li>
-  </ul>
-  <div class="question">Did the agent change anything you did NOT ask for?</div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Review What Changed (The Diff)</h1>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-icon">1</div>
+        <div class="step-text">Look at the file in VS Code &mdash; colored markers in the left margin (<span class="green">green = added</span>, <span class="red">red = removed</span>)</div>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">2</div>
+        <div class="step-text">Click the <strong>Source Control</strong> icon in the left sidebar (branch/fork icon)</div>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">3</div>
+        <div class="step-text">Click the <strong>changed file</strong> to see the full diff</div>
+      </div>
+    </div>
+
+    <div class="questions-box">
+      <div class="questions-label">Two Questions to Ask Yourself</div>
+      <div class="question-item">&bull; &ldquo;Can you identify the new code for your requested feature?&rdquo;</div>
+      <div class="question-item">&bull; &ldquo;Did the agent change anything you did NOT ask for?&rdquo;</div>
+    </div>
+
+    <div class="transition-text">The agent did great work. But what happens when it doesn&rsquo;t?</div>
+  </div>
 </body>
 </html>

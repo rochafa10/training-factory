@@ -1,31 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 08 - Section 3: Exercise 1</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.section-block { position: absolute; left: 0; top: 0; width: 320px; height: 100%; background: #e82127; display: flex; align-items: center; justify-content: center; }
-.section-number { font-size: 180px; font-weight: 700; color: rgba(255,255,255,0.15); }
-.section-content { margin-left: 360px; display: flex; flex-direction: column; justify-content: center; height: 100%; padding-right: 40px; }
-.section-content h1 { font-size: 36px; font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
-.duration { font-size: 18px; color: #a0a0a0; }
-.activity { font-size: 16px; color: #a0a0a0; margin-top: 8px; }
-.parts { font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 12px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 08 - Exercise 1: CoT + Data Analysis Sprint</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; z-index: 2; }
+    .layout { display: flex; height: 100%; }
+    .left-block {
+      width: 320px;
+      background: #e82127;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      position: relative;
+    }
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(255,255,255,0.15);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1;
+    }
+    .section-label {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.7);
+      position: relative;
+      z-index: 1;
+      margin-bottom: 8px;
+    }
+    .right-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 48px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .meta-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+    .meta-tag {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border-radius: 4px;
+      background: #1a1a1a;
+      color: #a0a0a0;
+    }
+    .meta-tag span { color: #ffffff; }
+    .parts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .part-item {
+      font-size: 14px;
+      color: #e5e5e5;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .part-bullet {
+      width: 6px;
+      height: 6px;
+      background: #e82127;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .part-time {
+      color: #a0a0a0;
+      font-size: 12px;
+      margin-left: 4px;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="section-block">
-  <span class="section-number">03</span>
-</div>
-<div class="section-content">
-  <h1>Exercise 1: CoT + Data Analysis Sprint</h1>
-  <p class="duration">30 minutes</p>
-  <p class="activity">Hands-On in Bottle Rocket</p>
-  <p class="parts">Part A: See the Difference (15 min) | Part B: Your Own Data (15 min)</p>
-</div>
+  <div class="accent-bar"></div>
+  <div class="layout">
+    <div class="left-block">
+      <div class="section-number">03</div>
+      <div class="section-label">Section</div>
+    </div>
+    <div class="right-content">
+      <h1>Exercise 1: CoT + Data Analysis Sprint</h1>
+      <div class="meta-row">
+        <div class="meta-tag"><span>30 min</span></div>
+        <div class="meta-tag">Hands-On in <span>Bottle Rocket</span></div>
+      </div>
+      <div class="parts">
+        <div class="part-item">
+          <div class="part-bullet"></div>
+          Part A: See the Difference <span class="part-time">(15 min)</span>
+        </div>
+        <div class="part-item">
+          <div class="part-bullet"></div>
+          Part B: Your Own Data <span class="part-time">(15 min)</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

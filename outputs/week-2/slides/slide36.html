@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 36 - Exercise: Setup - Switch to Agent Mode</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 24px 40px 20px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
-.policy-bar { background: #2a1010; border: 1px solid #e82127; border-radius: 6px; padding: 10px 14px; margin-bottom: 14px; font-size: 13px; color: #f87171; font-weight: 700; }
-.steps { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; }
-.step { display: flex; gap: 12px; margin-bottom: 10px; font-size: 16px; color: #e5e5e5; }
-.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 36 - Setup: Switch to Agent Mode</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    .badge { display: inline-block; background: #e82127; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 12px; align-self: flex-start; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 16px; }
+    .policy-box {
+      background: #1a1a1a;
+      border: 2px solid #facc15;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .policy-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: rgba(250, 204, 21, 0.15);
+      border: 2px solid #facc15;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #facc15;
+      font-weight: bold;
+    }
+    .policy-text { font-size: 13px; color: #facc15; line-height: 1.5; }
+    .policy-text strong { color: #facc15; }
+    .do-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .do-this-box { background: #1a1a1a; border-left: 4px solid #e82127; border-radius: 8px; padding: 14px 18px; flex: 1; }
+    .step-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .step-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #e5e5e5; line-height: 1.5; }
+    .step-num {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      background: #e82127;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-list li strong { color: #ffffff; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 4 -- Setup</div>
-  <h1>Switch to Agent Mode</h1>
-  <div class="policy-bar">&#9888; POLICY REMINDER: Use generic data only -- no Tesla metrics, employee names, or internal processes</div>
-  <div class="steps">
-    <div class="step"><span class="step-num">1.</span> Open Copilot Chat panel (<strong>Ctrl+Shift+I</strong>)</div>
-    <div class="step"><span class="step-num">2.</span> Click the mode dropdown at the top</div>
-    <div class="step"><span class="step-num">3.</span> Change from "Chat" to <strong>"Agent"</strong></div>
-    <div class="step"><span class="step-num">4.</span> Make sure model is set to <strong>Claude Opus 4.5</strong> (or Claude Sonnet 4)</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Exercise 4 &mdash; Setup</div>
+    <h1>Setup: Switch to Agent Mode</h1>
+
+    <div class="policy-box">
+      <div class="policy-icon">!</div>
+      <div class="policy-text"><strong>POLICY REMINDER:</strong> Use generic data only &mdash; no Tesla metrics, employee names, or internal processes</div>
+    </div>
+
+    <div class="do-this-label">Do This</div>
+    <div class="do-this-box">
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <span>Open Copilot Chat panel (<strong>Ctrl+Shift+I</strong>)</span>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <span>Click the <strong>mode dropdown</strong> at the top</span>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <span>Change from <strong>&ldquo;Chat&rdquo;</strong> to <strong>&ldquo;Agent&rdquo;</strong></span>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <span>Make sure model is set to <strong>Claude Opus 4.5</strong> (or Claude Sonnet 4)</span>
+        </li>
+      </ol>
+    </div>
   </div>
-</div>
 </body>
 </html>

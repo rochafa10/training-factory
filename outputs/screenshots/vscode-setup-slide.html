@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Setting Up VS Code</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 960px; height: 540px;
+    background: #0a0a0a;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+  }
+
+  .slide {
+    width: 960px; height: 540px;
+    display: flex;
+    flex-direction: column;
+    padding: 36px 48px 28px;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .red-accent {
+    width: 4px;
+    height: 32px;
+    background: #e82127;
+    border-radius: 2px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #a0a0a0;
+    margin-left: auto;
+    background: #1a1a1a;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+  }
+
+  .content-area {
+    display: flex;
+    gap: 28px;
+    flex: 1;
+  }
+
+  .screenshot-panel {
+    flex: 1.3;
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screenshot-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #333;
+  }
+
+  .screenshot-label {
+    font-size: 10px;
+    color: #666;
+    text-align: center;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  .steps-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step {
+    background: #1a1a1a;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+    padding: 14px 16px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .step-number {
+    width: 28px;
+    height: 28px;
+    background: #e82127;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .step-content h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .step-content p {
+    font-size: 12px;
+    color: #a0a0a0;
+    line-height: 1.4;
+  }
+
+  .step-content code {
+    background: #2a2a2a;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: #4ade80;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #1a1a1a;
+  }
+
+  .footer-left {
+    font-size: 11px;
+    color: #555;
+  }
+
+  .footer-right {
+    font-size: 11px;
+    color: #555;
+  }
+
+  .footer-right span {
+    color: #e82127;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="top-bar">
+    <div class="red-accent"></div>
+    <h1>Setting Up VS Code</h1>
+    <div class="subtitle">Week 3 · GitHub Copilot & Development Tools</div>
+  </div>
+
+  <div class="content-area">
+    <div class="screenshot-panel">
+      <img src="vscode-ui-overview.png" alt="VS Code user interface overview">
+      <div class="screenshot-label">SOURCE: code.visualstudio.com/docs/getstarted</div>
+    </div>
+
+    <div class="steps-panel">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Download & Install</h3>
+          <p>Get VS Code from <code>code.visualstudio.com</code>. Small download (&lt;200 MB), runs on Windows, Mac, Linux.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Open a Folder</h3>
+          <p><code>File → Open Folder</code> to create a workspace. VS Code remembers your layout per folder.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Explore the Interface</h3>
+          <p><strong>Activity Bar</strong> (left) switches views. <strong>Editor</strong> (center) for code. <strong>Terminal</strong> (bottom) for commands.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Install Extensions</h3>
+          <p>Search the marketplace for <code>Python</code>, <code>GitHub Copilot</code>, and other tools you need.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Command Palette</h3>
+          <p>Press <code>Ctrl+Shift+P</code> to access any command. This is your power shortcut.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">Screenshot captured via Playwright from official VS Code docs</div>
+    <div class="footer-right"><span>Tesla</span> · AI Training for Operations Leaders</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 77 - Five Things to Remember from Today</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container {
+      padding: 24px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .takeaways {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .takeaway-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .takeaway-num {
+      font-size: 32px;
+      font-weight: bold;
+      color: #e82127;
+      min-width: 40px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .takeaway-text {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 1.4;
+      padding-top: 4px;
+    }
+    .takeaway-text .emphasis {
+      color: #facc15;
+      font-weight: bold;
+    }
+    .bottom-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: 8px;
+    }
+    .chart-img {
+      width: 220px;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #2a2a2a;
+    }
+    .chart-label {
+      font-size: 10px;
+      color: #a0a0a0;
+      text-align: center;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Five Things to Remember from Today</h1>
+    <div class="takeaways">
+      <div class="takeaway-row">
+        <div class="takeaway-num">1</div>
+        <div class="takeaway-text"><span class="emphasis">CoT + Few-Shot + Persona</span> upgrade your prompts from good to great &mdash; always add &ldquo;step by step&rdquo; for complex analysis</div>
+      </div>
+      <div class="takeaway-row">
+        <div class="takeaway-num">2</div>
+        <div class="takeaway-text"><span class="emphasis">Agents DO work, chat SUGGESTS work</span> &mdash; that is the fundamental difference</div>
+      </div>
+      <div class="takeaway-row">
+        <div class="takeaway-num">3</div>
+        <div class="takeaway-text"><span class="emphasis">MCP tools give agents new skills</span> &mdash; like installing apps on a phone</div>
+      </div>
+      <div class="takeaway-row">
+        <div class="takeaway-num">4</div>
+        <div class="takeaway-text"><span class="emphasis">Check the output, not the count</span> &mdash; an agent that says &ldquo;Done!&rdquo; may have cut corners. Always verify the actual work.</div>
+      </div>
+      <div class="takeaway-row">
+        <div class="takeaway-num">5</div>
+        <div class="takeaway-text"><span class="emphasis">Specific instructions + right-sized tasks</span> &mdash; break big jobs into small batches with checkpoints</div>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div>
+        <img src="../images/skill-progression--chart.png" alt="Skill Progression Chart" class="chart-img">
+        <div class="chart-label">Your Skill Progression</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

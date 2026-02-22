@@ -1,25 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 57 - Diagram: The Review Workflow</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 20px 48px 20px 56px; text-align: center; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
-img { max-width: 100%; max-height: 380px; border-radius: 8px; }
-.rule { background: #1a1a1a; border-left: 4px solid #e82127; border-radius: 8px; padding: 10px 16px; margin-top: 12px; font-size: 14px; color: #e5e5e5; text-align: left; }
-.rule strong { color: #e82127; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 57 - The Review Workflow</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 24px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 14px; }
+    .two-col {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+      align-items: stretch;
+    }
+    .col-image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .col-image img {
+      max-width: 100%;
+      max-height: 340px;
+      border-radius: 8px;
+      display: block;
+    }
+    .col-steps {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .step-num {
+      background: #e82127;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-text {
+      font-size: 14px;
+      color: #e5e5e5;
+      line-height: 1.5;
+      padding-top: 3px;
+    }
+    .step-text .green { color: #4ade80; }
+    .step-text .red { color: #f87171; }
+    .key-rule {
+      background: #1a1a1a;
+      border-left: 4px solid #facc15;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 10px;
+    }
+    .key-rule-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #facc15;
+      margin-bottom: 4px;
+    }
+    .key-rule-text {
+      font-size: 13px;
+      color: #e5e5e5;
+      line-height: 1.5;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>The Review Workflow</h1>
-  <img src="../images/agent-workflow--slide-embed.png" alt="Agent proposes changes, you review the diff (green = added, red = removed), you accept or reject, if you reject you give specific feedback">
-  <div class="rule"><strong>Key rule:</strong> Never accept changes you do not understand. Ask: "Explain what you changed and why."</div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Review Workflow</h1>
+    <div class="two-col">
+      <div class="col-image">
+        <img src="../images/agent-workflow--slide-embed.png" alt="Agent review workflow diagram">
+      </div>
+      <div class="col-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Agent proposes changes (shows you the plan)</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">You review the diff (<span class="green">green</span> = added, <span class="red">red</span> = removed)</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">You accept or reject</div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text">If you reject, tell the agent what to do differently</div>
+        </div>
+      </div>
+    </div>
+    <div class="key-rule">
+      <div class="key-rule-label">Key Rule</div>
+      <div class="key-rule-text">"Never accept changes you do not understand. Ask: 'Explain what you changed and why.'"</div>
+    </div>
+  </div>
 </body>
 </html>

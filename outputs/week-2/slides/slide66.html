@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 66 - Exercise: Part A - Vague Instructions</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 12px; }
-h1 { font-size: 26px; font-weight: 700; margin-bottom: 16px; }
-.type-this { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 4px solid #e82127; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; text-align: center; }
-.type-label { font-size: 11px; font-weight: 700; color: #e82127; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-.prompt-text { font-size: 28px; color: #e5e5e5; font-family: 'Courier New', monospace; }
-.what-happens { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; }
-.what-label { font-size: 11px; font-weight: 700; color: #facc15; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-.what-text { font-size: 16px; color: #e5e5e5; }
-.lesson { font-size: 16px; color: #a0a0a0; text-align: center; font-style: italic; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 66 - The Root Cause Framework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .content { padding: 32px 40px 24px 40px; margin-left: 8px; }
+    .subtitle { font-size: 13px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+    h1 { font-size: 26px; font-weight: bold; color: #ffffff; margin-bottom: 6px; }
+    .intro { font-size: 13px; color: #a0a0a0; margin-bottom: 16px; }
+    .steps { display: flex; flex-direction: column; gap: 8px; }
+    .step-card {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: #1a1a1a; border-radius: 8px; padding: 10px 16px;
+    }
+    .step-num {
+      flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%;
+      background: #e82127; display: flex; align-items: center; justify-content: center;
+      font-size: 15px; font-weight: bold; color: #ffffff; margin-top: 1px;
+    }
+    .step-body { flex: 1; }
+    .step-label { font-size: 14px; font-weight: bold; color: #ffffff; margin-bottom: 2px; }
+    .step-desc { font-size: 12px; color: #a0a0a0; line-height: 1.4; }
+    .step-example { font-size: 11px; color: #e5e5e5; font-style: italic; margin-top: 2px; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 7 -- Part A</div>
-  <h1>What Happens with Vague Instructions</h1>
-  <div class="type-this">
-    <div class="type-label">Type This in Copilot Agent Mode</div>
-    <div class="prompt-text">"Make it better."</div>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <div class="subtitle">Agent Quality Control</div>
+    <h1>The Root Cause Framework</h1>
+    <p class="intro">When an agent says "Done!" but the work is wrong, follow these 5 steps:</p>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-label">NOTICE</div>
+          <div class="step-desc">Compare what you asked for vs what you got</div>
+          <div class="step-example">"I asked for slides with graphics, but I see only text"</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-label">INVESTIGATE</div>
+          <div class="step-desc">Look at the actual output, not just the summary</div>
+          <div class="step-example">"Open the files. Read them. Check if images load."</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-label">DIAGNOSE</div>
+          <div class="step-desc">Ask: why did the agent miss? Was the instruction unclear? Task too big? Skipped steps?</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-label">FIX</div>
+          <div class="step-desc">Give a corrected, specific instruction</div>
+          <div class="step-example">"Break into batches of 5. Validate each visually before moving on."</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-label">PREVENT</div>
+          <div class="step-desc">Change the process: smaller batches + quality checks at each step</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="what-happens">
-    <div class="what-label">What will happen</div>
-    <div class="what-text">Agent either asks clarifying questions (good) or makes random assumptions and changes things (common)</div>
-  </div>
-  <p class="lesson">"Make it better" is not useful feedback -- for an agent OR for a team member</p>
-</div>
 </body>
 </html>

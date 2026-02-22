@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 16 - Template Success Check</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-.checklist { list-style: none; padding: 0; }
-.checklist li { font-size: 18px; color: #e5e5e5; padding: 10px 0 10px 20px; margin-bottom: 10px; position: relative; }
-.checklist li::before { content: "\2713"; color: #4ade80; font-weight: 700; position: absolute; left: 0; }
-.transition { background: #1a1a1a; border-radius: 8px; padding: 16px 20px; margin-top: 24px; font-size: 16px; color: #a0a0a0; text-align: center; font-style: italic; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 16 - Template Success Check</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 30px; font-weight: bold; margin-bottom: 36px; }
+    .checklist { list-style: none; display: flex; flex-direction: column; gap: 20px; flex: 1; }
+    .checklist li { display: flex; align-items: flex-start; gap: 14px; font-size: 15px; line-height: 1.5; color: #e5e5e5; }
+    .check-icon { flex-shrink: 0; width: 28px; height: 28px; background: rgba(74, 222, 128, 0.15); border: 2px solid #4ade80; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #4ade80; font-weight: bold; }
+    .transition { position: absolute; bottom: 24px; left: 48px; right: 40px; font-size: 13px; color: #a0a0a0; font-style: italic; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Template Success Check</h1>
-  <ul class="checklist">
-    <li>Uses at least one Week 2 technique (CoT, Few-Shot, or enhanced persona)</li>
-    <li>Has [PLACEHOLDERS] for variable data</li>
-    <li>Tested and produces work-ready output</li>
-    <li>Save it to your prompt library -- you will use it this week</li>
-  </ul>
-  <div class="transition">Take 10 minutes. When we come back, everything changes -- we go from chatting with AI to commanding AI agents.</div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Template Success Check</h1>
+    <ul class="checklist">
+      <li>
+        <div class="check-icon">&#10003;</div>
+        <span>Uses at least one Week 2 technique (CoT, Few-Shot, or enhanced persona)</span>
+      </li>
+      <li>
+        <div class="check-icon">&#10003;</div>
+        <span>Has [PLACEHOLDERS] for variable data</span>
+      </li>
+      <li>
+        <div class="check-icon">&#10003;</div>
+        <span>Tested and produces work-ready output</span>
+      </li>
+      <li>
+        <div class="check-icon">&#10003;</div>
+        <span>Save it to your prompt library &mdash; you will use it this week</span>
+      </li>
+    </ul>
+  </div>
+  <div class="transition">Take 10 minutes. When we come back, everything changes.</div>
 </body>
 </html>

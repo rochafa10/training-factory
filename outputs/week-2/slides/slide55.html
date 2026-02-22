@@ -1,32 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 55 - Reading an Agent's Plan</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
-.intro { font-size: 16px; color: #a0a0a0; margin-bottom: 16px; }
-.plan-step { background: #1a1a1a; border-radius: 8px; padding: 10px 16px; margin-bottom: 8px; font-size: 15px; color: #e5e5e5; font-family: 'Courier New', monospace; border-left: 3px solid #4ade80; }
-.responses-label { font-size: 13px; font-weight: 700; color: #e82127; text-transform: uppercase; letter-spacing: 1px; margin: 16px 0 10px; }
-.response { background: #1a1a1a; border-radius: 6px; padding: 8px 14px; margin-bottom: 6px; font-size: 14px; color: #e5e5e5; display: inline-block; margin-right: 8px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 55 - Reading an Agent's Plan</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 24px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 6px; }
+    .subtitle { font-size: 13px; color: #a0a0a0; margin-bottom: 16px; }
+    .plan-area { flex: 1; display: flex; gap: 20px; }
+    .plan-col { flex: 3; display: flex; flex-direction: column; gap: 8px; }
+    .response-col { flex: 2; display: flex; flex-direction: column; gap: 8px; }
+    .col-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #a0a0a0;
+      margin-bottom: 4px;
+    }
+    .plan-item {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border-left: 3px solid #4a9eed;
+    }
+    .plan-icon {
+      font-size: 14px;
+      flex-shrink: 0;
+      width: 20px;
+      text-align: center;
+      margin-top: 1px;
+    }
+    .plan-text {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 12px;
+      color: #e5e5e5;
+      line-height: 1.5;
+    }
+    .plan-num {
+      color: #4a9eed;
+      font-weight: bold;
+      margin-right: 4px;
+    }
+    .response-badge {
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+    }
+    .response-yes {
+      background: rgba(74, 222, 128, 0.12);
+      border: 2px solid #4ade80;
+    }
+    .response-partial {
+      background: rgba(250, 204, 21, 0.10);
+      border: 2px solid #facc15;
+    }
+    .response-no {
+      background: rgba(232, 33, 39, 0.10);
+      border: 2px solid #e82127;
+    }
+    .response-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-green { background: #4ade80; }
+    .dot-yellow { background: #facc15; }
+    .dot-red { background: #e82127; }
+    .response-text { font-size: 13px; line-height: 1.4; }
+    .response-yes .response-text { color: #4ade80; }
+    .response-partial .response-text { color: #facc15; }
+    .response-no .response-text { color: #e82127; }
+    .response-quote {
+      font-size: 12px;
+      color: #a0a0a0;
+      font-style: italic;
+      margin-top: 2px;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Reading an Agent's Plan</h1>
-  <p class="intro">Before an agent acts, it tells you what it plans to do. Read it like a to-do list:</p>
-  <div class="plan-step">"I will create a new file called dashboard.html"</div>
-  <div class="plan-step">"I will modify template.html to add a totals row"</div>
-  <div class="plan-step">"I will run the command open dashboard.html to preview it"</div>
-  <p class="responses-label">Your responses:</p>
-  <span class="response">"Yes, go ahead"</span>
-  <span class="response">"Do step 1 but skip step 3"</span>
-  <span class="response">"No, instead do X"</span>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Reading an Agent&rsquo;s Plan</h1>
+    <div class="subtitle">Before an agent acts, it tells you what it plans to do. Read it like a to-do list:</div>
+
+    <div class="plan-area">
+      <div class="plan-col">
+        <div class="col-label">Agent&rsquo;s Plan</div>
+        <div class="plan-item">
+          <div class="plan-icon">&#128196;</div>
+          <div class="plan-text"><span class="plan-num">1.</span> I will create a new file called <strong>dashboard.html</strong></div>
+        </div>
+        <div class="plan-item">
+          <div class="plan-icon">&#9998;</div>
+          <div class="plan-text"><span class="plan-num">2.</span> I will modify <strong>template.html</strong> to add a totals row</div>
+        </div>
+        <div class="plan-item">
+          <div class="plan-icon">&#9654;</div>
+          <div class="plan-text"><span class="plan-num">3.</span> I will run the command <strong>open dashboard.html</strong> to preview it</div>
+        </div>
+      </div>
+
+      <div class="response-col">
+        <div class="col-label">Your Response</div>
+        <div class="response-badge response-yes">
+          <div class="response-dot dot-green"></div>
+          <div>
+            <div class="response-text">&ldquo;Yes, go ahead&rdquo;</div>
+            <div class="response-quote">Approve all steps</div>
+          </div>
+        </div>
+        <div class="response-badge response-partial">
+          <div class="response-dot dot-yellow"></div>
+          <div>
+            <div class="response-text">&ldquo;Do step 1 but skip step 3&rdquo;</div>
+            <div class="response-quote">Selective approval</div>
+          </div>
+        </div>
+        <div class="response-badge response-no">
+          <div class="response-dot dot-red"></div>
+          <div>
+            <div class="response-text">&ldquo;No, instead do X&rdquo;</div>
+            <div class="response-quote">Redirect the agent</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 28 - Exercise: Step 4 - Select Claude Opus 4.5 Model</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 24px 40px 20px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
-.steps { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; margin-bottom: 14px; }
-.step { display: flex; gap: 12px; margin-bottom: 8px; font-size: 16px; color: #e5e5e5; }
-.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
-.info-box { background: #1a1a1a; border-radius: 8px; padding: 14px 18px; border-left: 4px solid #e82127; }
-.info-item { font-size: 14px; color: #e5e5e5; margin-bottom: 6px; }
-.info-item strong { color: #ffffff; }
-.info-note { font-size: 13px; color: #a0a0a0; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 28 - Step 4: Select Claude Opus 4.5 Model</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    .header-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+    .badge { background: #e82127; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
+    h1 { font-size: 26px; font-weight: bold; line-height: 1.2; }
+    .do-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .do-this-box { background: #1a1a1a; border-left: 4px solid #e82127; border-radius: 8px; padding: 14px 18px; }
+    .step-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .step-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #e5e5e5; line-height: 1.5; }
+    .step-num {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      background: #e82127;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fallback { margin-top: 12px; padding-top: 10px; border-top: 1px solid #2a2a2a; font-size: 13px; color: #a0a0a0; line-height: 1.4; }
+    .fallback strong { color: #facc15; }
+    .info-box { margin-top: 16px; background: #2a2a2a; border-radius: 8px; padding: 14px 18px; }
+    .info-title { font-size: 13px; font-weight: bold; color: #4ade80; margin-bottom: 8px; }
+    .info-text { font-size: 13px; color: #e5e5e5; line-height: 1.5; }
+    .info-text strong { color: #ffffff; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 3 -- Step 4</div>
-  <h1>Select Claude Opus 4.5 Model</h1>
-  <div class="steps">
-    <div class="step"><span class="step-num">1.</span> Click the Copilot chat icon in the left sidebar (speech bubble)</div>
-    <div class="step"><span class="step-num">2.</span> Find the model dropdown at the top of the chat panel</div>
-    <div class="step"><span class="step-num">3.</span> Select <strong>"Claude Opus 4.5"</strong></div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <div class="badge">Exercise 3 &mdash; Step 4</div>
+      <h1>Select Claude Opus 4.5 Model</h1>
+    </div>
+
+    <div class="do-this-label">Do This</div>
+    <div class="do-this-box">
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <span>Click the <strong>Copilot chat icon</strong> in the left sidebar (speech bubble)</span>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <span>Find the <strong>model dropdown</strong> at the top of the chat panel</span>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <span>Select <strong>&ldquo;Claude Opus 4.5&rdquo;</strong></span>
+        </li>
+      </ol>
+
+      <div class="fallback">
+        <strong>Fallback:</strong> If you do not see Claude Opus 4.5, select <strong>Claude Sonnet 4</strong>.
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">Why Claude Opus 4.5?</div>
+      <div class="info-text">
+        Best model for <strong>planning and executing multi-step tasks</strong>.
+        Uses 3 premium requests per message (you get 300/month).
+      </div>
+    </div>
   </div>
-  <div class="info-box">
-    <div class="info-item">If you do not see Claude Opus 4.5, select <strong>Claude Sonnet 4</strong></div>
-    <div class="info-item"><strong>Why Claude Opus 4.5?</strong> Best model for planning and executing multi-step tasks -- exactly what Agent Mode needs</div>
-    <div class="info-note">Uses 3 premium requests per message (you get 300/month)</div>
-  </div>
-</div>
 </body>
 </html>

@@ -1,39 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 25 - Exercise: Step 1 - Download VS Code</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 24px 40px 20px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
-.steps { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; margin-bottom: 14px; }
-.step { display: flex; gap: 12px; margin-bottom: 8px; font-size: 16px; color: #e5e5e5; }
-.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
-.success-box { background: #0a2a0a; border: 1px solid #4ade80; border-radius: 8px; padding: 12px 16px; }
-.success-label { font-size: 11px; font-weight: 700; color: #4ade80; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.success-text { font-size: 14px; color: #e5e5e5; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 25 - Step 1: Download VS Code</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 24px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    .badge {
+      display: inline-block;
+      background: #e82127;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 4px 16px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      align-self: flex-start;
+    }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .steps-label {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #e82127;
+      margin-bottom: 10px;
+    }
+    .type-this-box {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .step-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .step-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #e5e5e5; line-height: 1.5; }
+    .step-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: #2a2a2a;
+      border: 2px solid #e82127;
+      color: #e82127;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .url { color: #4ade80; font-weight: bold; }
+    .success-check {
+      background: rgba(74, 222, 128, 0.08);
+      border: 1px solid rgba(74, 222, 128, 0.3);
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-top: auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .success-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: rgba(74, 222, 128, 0.15);
+      border: 2px solid #4ade80;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .success-text { font-size: 13px; color: #4ade80; line-height: 1.5; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 3 -- Step 1</div>
-  <h1>Download VS Code</h1>
-  <div class="steps">
-    <div class="step"><span class="step-num">1.</span> Open your browser</div>
-    <div class="step"><span class="step-num">2.</span> Go to <strong>code.visualstudio.com</strong></div>
-    <div class="step"><span class="step-num">3.</span> Click the big blue "Download" button</div>
-    <div class="step"><span class="step-num">4.</span> Run the installer -- accept all defaults, click "Next"</div>
-    <div class="step"><span class="step-num">5.</span> When finished, open VS Code</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Exercise 3 &mdash; Step 1</div>
+    <h1>Step 1: Download VS Code</h1>
+    <div class="steps-label">Do This</div>
+    <div class="type-this-box">
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <span>Open your browser</span>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <span>Go to <span class="url">code.visualstudio.com</span></span>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <span>Click the big blue <strong>"Download"</strong> button</span>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <span>Run the installer &mdash; accept all defaults, click <strong>"Next"</strong></span>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <span>When finished, open VS Code</span>
+        </li>
+      </ol>
+    </div>
+    <div class="success-check">
+      <div class="success-icon">&#10003;</div>
+      <div class="success-text">You should see: A dark-themed editor with a Welcome tab</div>
+    </div>
   </div>
-  <div class="success-box">
-    <div class="success-label">You should see</div>
-    <div class="success-text">A dark-themed editor with a "Welcome" tab</div>
-  </div>
-</div>
 </body>
 </html>

@@ -1,35 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 24 - Policy Reminder</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 20px; }
-.warning-box { background: #2a1010; border: 2px solid #e82127; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
-.warning-title { font-size: 22px; font-weight: 700; color: #e82127; margin-bottom: 12px; }
-ul { list-style: none; padding: 0; }
-li { font-size: 16px; color: #e5e5e5; padding: 8px 0 8px 20px; border-left: 3px solid #e82127; margin-bottom: 8px; }
-li strong { color: #f87171; }
-.reference { font-size: 14px; color: #a0a0a0; margin-top: 16px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 24 - POLICY REMINDER -- Read This Aloud</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 24px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    .warning-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .warning-icon {
+      width: 36px;
+      height: 36px;
+      background: #f87171;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #0a0a0a;
+      flex-shrink: 0;
+    }
+    h1 { font-size: 26px; font-weight: bold; color: #f87171; }
+    .warning-card {
+      background: #1a1a1a;
+      border: 2px solid #f87171;
+      border-radius: 8px;
+      padding: 20px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .policy-item { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #e5e5e5; line-height: 1.55; }
+    .policy-icon {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #f87171;
+      border-radius: 50%;
+      margin-top: 7px;
+    }
+    .conditional-badge {
+      display: inline-block;
+      background: #facc15;
+      color: #0a0a0a;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 3px 10px;
+      border-radius: 3px;
+    }
+    .no-data {
+      color: #f87171;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .approved-tool { color: #4ade80; font-weight: bold; }
+    .reference { font-size: 12px; color: #a0a0a0; margin-top: auto; }
+    .reference a { color: #a0a0a0; text-decoration: underline; }
+    .top-stripe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: repeating-linear-gradient(90deg, #f87171 0px, #f87171 20px, #facc15 20px, #facc15 40px);
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>POLICY REMINDER -- Read This Aloud</h1>
-  <div class="warning-box">
-    <div class="warning-title">&#9888; GitHub Copilot is CONDITIONALLY Approved</div>
-    <ul>
-      <li><strong>NO Tesla data</strong> in Copilot -- ever. No metrics, employee names, vendor details, internal processes</li>
-      <li>Use <strong>generic or fictional data</strong> for all Copilot exercises today</li>
-      <li><strong>Bottle Rocket</strong> (go.tesla.com/chat) remains the tool for Tesla data</li>
-    </ul>
+  <div class="top-stripe"></div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="warning-header">
+      <div class="warning-icon">!</div>
+      <h1>POLICY REMINDER &mdash; Read This Aloud</h1>
+    </div>
+    <div class="warning-card">
+      <div class="policy-item">
+        <div class="policy-icon"></div>
+        <span>GitHub Copilot is <span class="conditional-badge">Conditionally Approved</span> at Tesla</span>
+      </div>
+      <div class="policy-item">
+        <div class="policy-icon"></div>
+        <span class="no-data">NO Tesla data in Copilot &mdash; ever. No metrics, employee names, vendor details, internal processes.</span>
+      </div>
+      <div class="policy-item">
+        <div class="policy-icon"></div>
+        <span>Use <strong>generic or fictional data</strong> for all Copilot exercises today</span>
+      </div>
+      <div class="policy-item">
+        <div class="policy-icon"></div>
+        <span><span class="approved-tool">Bottle Rocket</span> (go.tesla.com/chat) remains the tool for Tesla data</span>
+      </div>
+      <div class="policy-item">
+        <div class="policy-icon"></div>
+        <span>Reference: <strong>go.tesla.com/aitools</strong></span>
+      </div>
+    </div>
   </div>
-  <p class="reference">Reference: go.tesla.com/aitools</p>
-</div>
 </body>
 </html>

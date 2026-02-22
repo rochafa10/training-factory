@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 76 - Share Results + Key Takeaways + Homework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .layout {
+      display: flex;
+      height: 100%;
+    }
+    .left {
+      width: 320px;
+      background: #e82127;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 30px;
+    }
+    .section-num {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(255,255,255,0.15);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .section-label {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.7);
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 50px;
+    }
+    .right h1 {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.15;
+      margin-bottom: 28px;
+    }
+    .duration-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .duration-item {
+      background: #1a1a1a;
+      border-radius: 6px;
+      padding: 12px 18px;
+      text-align: center;
+    }
+    .duration-label {
+      font-size: 11px;
+      color: #a0a0a0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .duration-time {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .total {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #a0a0a0;
+    }
+    .total strong {
+      color: #e82127;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="layout">
+    <div class="left">
+      <div class="section-num">14</div>
+      <div class="section-label">Section</div>
+    </div>
+    <div class="right">
+      <h1>Share Results + Key Takeaways + Homework</h1>
+      <div class="duration-row">
+        <div class="duration-item">
+          <div class="duration-label">Show &amp; Tell</div>
+          <div class="duration-time">12 min</div>
+        </div>
+        <div class="duration-item">
+          <div class="duration-label">Takeaways</div>
+          <div class="duration-time">3 min</div>
+        </div>
+        <div class="duration-item">
+          <div class="duration-label">Homework</div>
+          <div class="duration-time">5 min</div>
+        </div>
+      </div>
+      <div class="total">Total: <strong>20 minutes</strong></div>
+    </div>
+  </div>
+</body>
+</html>

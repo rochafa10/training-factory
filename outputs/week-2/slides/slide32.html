@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 32 - Diagram: GitHub Copilot Three Modes</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 20px 48px 20px 56px; text-align: center; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
-img { max-width: 100%; max-height: 420px; border-radius: 8px; }
-.caption { font-size: 12px; color: #a0a0a0; margin-top: 8px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 32 - GitHub Copilot: Three Modes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 20px 36px 16px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 12px; }
+    .diagram-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .diagram-area img {
+      max-height: 240px;
+      max-width: 860px;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+    .modes {
+      display: flex;
+      gap: 14px;
+      flex: 1;
+    }
+    .mode-card {
+      flex: 1;
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 12px 14px;
+      border-top: 3px solid;
+      display: flex;
+      flex-direction: column;
+    }
+    .mode-chat { border-top-color: #4a9eed; }
+    .mode-edit { border-top-color: #facc15; }
+    .mode-agent { border-top-color: #4ade80; }
+    .mode-name {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .mode-chat .mode-name { color: #4a9eed; }
+    .mode-edit .mode-name { color: #facc15; }
+    .mode-agent .mode-name { color: #4ade80; }
+    .mode-shortcut {
+      font-size: 11px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      color: #a0a0a0;
+      margin-bottom: 8px;
+      background: #2a2a2a;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      align-self: flex-start;
+    }
+    .mode-desc {
+      font-size: 12px;
+      color: #e5e5e5;
+      line-height: 1.5;
+    }
+    .caption {
+      text-align: center;
+      font-size: 12px;
+      color: #a0a0a0;
+      margin-top: 10px;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>GitHub Copilot: Three Modes</h1>
-  <img src="../images/copilot-three-modes--slide-embed.png" alt="Three Copilot modes: Chat (ask questions, get text), Edit (point at code, request changes), Agent (describe a goal, agent plans and builds)">
-  <p class="caption">Autonomy increases left to right: Chat &lt; Edit &lt; Agent</p>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>GitHub Copilot: Three Modes</h1>
+    <div class="diagram-area">
+      <img src="../images/copilot-three-modes--slide-embed.png" alt="Copilot Three Modes diagram">
+    </div>
+    <div class="modes">
+      <div class="mode-card mode-chat">
+        <div class="mode-name">Chat Mode</div>
+        <div class="mode-shortcut">Ctrl+Shift+I</div>
+        <div class="mode-desc">Ask questions, get text answers. Like Bottle Rocket.</div>
+      </div>
+      <div class="mode-card mode-edit">
+        <div class="mode-name">Edit Mode</div>
+        <div class="mode-shortcut">Select &gt; Right-click</div>
+        <div class="mode-desc">Point at something, ask for targeted changes.</div>
+      </div>
+      <div class="mode-card mode-agent">
+        <div class="mode-name">Agent Mode</div>
+        <div class="mode-shortcut">Mode dropdown &gt; Agent</div>
+        <div class="mode-desc">Describe a goal, agent plans and builds.</div>
+      </div>
+    </div>
+    <div class="caption">Autonomy increases left to right: Chat &lt; Edit &lt; Agent</div>
+  </div>
 </body>
 </html>

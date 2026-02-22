@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 48 - Section 10: Exercise 5</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.section-block { position: absolute; left: 0; top: 0; width: 320px; height: 100%; background: #e82127; display: flex; align-items: center; justify-content: center; }
-.section-number { font-size: 180px; font-weight: 700; color: rgba(255,255,255,0.15); }
-.section-content { margin-left: 360px; display: flex; flex-direction: column; justify-content: center; height: 100%; padding-right: 40px; }
-.section-content h1 { font-size: 34px; font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
-.duration { font-size: 18px; color: #a0a0a0; }
-.activity { font-size: 16px; color: #a0a0a0; margin-top: 8px; }
-.parts { font-size: 13px; color: rgba(255,255,255,0.8); margin-top: 12px; line-height: 1.4; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 48 - Section 10 Divider: Exercise 5</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .red-block {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 100%;
+      background: #e82127;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
+    }
+    .right-content {
+      position: absolute;
+      left: 320px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 50px 50px 60px;
+    }
+    .section-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #e82127;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .meta {
+      font-size: 16px;
+      color: #a0a0a0;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .meta .duration {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .activity-detail {
+      font-size: 13px;
+      color: #a0a0a0;
+      margin-bottom: 24px;
+    }
+    .policy-reminder {
+      background: #1a1a1a;
+      border: 2px solid #facc15;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #facc15;
+      line-height: 1.5;
+    }
+    .policy-reminder strong {
+      color: #facc15;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="section-block">
-  <span class="section-number">10</span>
-</div>
-<div class="section-content">
-  <h1>Exercise 5: Install &amp; Use First MCP Skill</h1>
-  <p class="duration">25 minutes</p>
-  <p class="activity">Hands-On (VS Code + MCP)</p>
-  <p class="parts">Install: 5 min | First task: 10 min | Compare: 5 min | Discuss: 5 min</p>
-</div>
+  <div class="red-block">
+    <div class="section-number">10</div>
+  </div>
+  <div class="right-content">
+    <div class="section-label">Section 10</div>
+    <h1>Exercise 5: Install &amp; Use<br>First MCP Skill</h1>
+    <div class="meta">
+      <span class="duration">25 minutes</span>
+    </div>
+    <div class="activity-detail">Install: 5 min &nbsp;|&nbsp; First task: 10 min &nbsp;|&nbsp; Compare: 5 min &nbsp;|&nbsp; Discuss: 5 min</div>
+    <div class="policy-reminder">
+      <strong>&#9888; Policy Reminder:</strong> Visit only public websites. Do NOT navigate to Tesla internal sites.
+    </div>
+  </div>
 </body>
 </html>

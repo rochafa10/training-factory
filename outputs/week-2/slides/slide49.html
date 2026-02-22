@@ -1,38 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 49 - Exercise: Step 1 - Install Playwright MCP</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 22px 40px 18px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
-.steps { background: #1a1a1a; border-radius: 12px; padding: 14px 18px; margin-bottom: 12px; }
-.step { display: flex; gap: 12px; margin-bottom: 7px; font-size: 15px; color: #e5e5e5; }
-.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
-.command-box { background: #2a2a2a; border-radius: 6px; padding: 10px 14px; font-family: 'Courier New', monospace; font-size: 14px; color: #4ade80; margin-top: 4px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 49 - Step 1: Install Playwright MCP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 24px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    .exercise-badge {
+      display: inline-block;
+      background: #e82127;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 4px 16px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      align-self: flex-start;
+    }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 18px; }
+    .do-this-box {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 16px 20px;
+      flex: 1;
+    }
+    .do-this-label {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #e82127;
+      margin-bottom: 12px;
+    }
+    .steps {
+      list-style: none;
+      counter-reset: step;
+    }
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #e5e5e5;
+      line-height: 1.5;
+    }
+    .steps li::before {
+      content: counter(step);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 24px;
+      height: 24px;
+      background: #2a2a2a;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+    .steps li strong { color: #ffffff; }
+    .code-box {
+      margin-top: 14px;
+      background: #2a2a2a;
+      border: 1px solid #3a3a3a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 15px;
+      color: #4ade80;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .copy-hint {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #a0a0a0;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 5 -- Step 1</div>
-  <h1>Install Playwright MCP</h1>
-  <div class="steps">
-    <div class="step"><span class="step-num">1.</span> Press <strong>Ctrl+Shift+P</strong> to open Command Palette</div>
-    <div class="step"><span class="step-num">2.</span> Type: <strong>MCP: Add Server</strong></div>
-    <div class="step"><span class="step-num">3.</span> Choose "Command (stdio)"</div>
-    <div class="step"><span class="step-num">4.</span> Command:</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Exercise 5 -- Step 1</div>
+    <h1>Step 1: Install Playwright MCP</h1>
+    <div class="do-this-box">
+      <div class="do-this-label">Do This</div>
+      <ol class="steps">
+        <li>Press <strong>Ctrl+Shift+P</strong> to open Command Palette</li>
+        <li>Type: <strong>MCP: Add Server</strong></li>
+        <li>Choose <strong>"Command (stdio)"</strong></li>
+        <li>Enter the command shown below</li>
+        <li>Name: <strong>playwright</strong></li>
+        <li>Save to: <strong>User Settings</strong></li>
+        <li>Click <strong>"Allow"</strong> when asked to trust the server</li>
+      </ol>
+      <div class="code-box">
+        <span>npx -y @anthropic-ai/mcp-playwright</span>
+        <span class="copy-hint">Copy this command</span>
+      </div>
+    </div>
   </div>
-  <div class="command-box">npx -y @anthropic-ai/mcp-playwright</div>
-  <div class="steps" style="margin-top: 12px;">
-    <div class="step"><span class="step-num">5.</span> Name: <strong>playwright</strong></div>
-    <div class="step"><span class="step-num">6.</span> Save to: <strong>User Settings</strong></div>
-    <div class="step"><span class="step-num">7.</span> Click "Allow" when asked to trust the server</div>
-  </div>
-</div>
 </body>
 </html>

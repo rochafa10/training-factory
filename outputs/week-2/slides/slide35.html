@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 35 - Section 8: Exercise 4</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.section-block { position: absolute; left: 0; top: 0; width: 320px; height: 100%; background: #e82127; display: flex; align-items: center; justify-content: center; }
-.section-number { font-size: 180px; font-weight: 700; color: rgba(255,255,255,0.15); }
-.section-content { margin-left: 360px; display: flex; flex-direction: column; justify-content: center; height: 100%; padding-right: 40px; }
-.section-content h1 { font-size: 34px; font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
-.duration { font-size: 18px; color: #a0a0a0; }
-.activity { font-size: 16px; color: #a0a0a0; margin-top: 8px; }
-.parts { font-size: 13px; color: rgba(255,255,255,0.8); margin-top: 12px; line-height: 1.4; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 35 - Section 8 Divider: Exercise 4</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .red-block {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 100%;
+      background: #e82127;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
+    }
+    .right-content {
+      position: absolute;
+      left: 320px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 50px 48px 60px;
+    }
+    .section-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #e82127;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .meta {
+      font-size: 16px;
+      color: #a0a0a0;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .meta .duration {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .breakdown {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .breakdown-item {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 12px;
+      color: #e5e5e5;
+      white-space: nowrap;
+    }
+    .breakdown-item .time {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="section-block">
-  <span class="section-number">08</span>
-</div>
-<div class="section-content">
-  <h1>Exercise 4: Your First Agent Mode Task</h1>
-  <p class="duration">25 minutes</p>
-  <p class="activity">Hands-On with Copilot Agent Mode</p>
-  <p class="parts">Setup: 2 min | Run agent: 10 min | Review: 5 min | Iterate: 5 min | Discussion: 3 min</p>
-</div>
+  <div class="red-block">
+    <div class="section-number">08</div>
+  </div>
+  <div class="right-content">
+    <div class="section-label">Section 8</div>
+    <h1>Exercise 4: Your First Agent Mode Task</h1>
+    <div class="meta">
+      <span class="duration">25 minutes</span>
+    </div>
+    <div class="breakdown">
+      <div class="breakdown-item">Setup: <span class="time">2 min</span></div>
+      <div class="breakdown-item">Run agent: <span class="time">10 min</span></div>
+      <div class="breakdown-item">Review: <span class="time">5 min</span></div>
+      <div class="breakdown-item">Iterate: <span class="time">5 min</span></div>
+      <div class="breakdown-item">Discussion: <span class="time">3 min</span></div>
+    </div>
+  </div>
 </body>
 </html>

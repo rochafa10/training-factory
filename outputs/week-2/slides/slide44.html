@@ -1,46 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 44 - The Phone Analogy</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 20px; }
-.columns { display: flex; gap: 24px; }
-.column { flex: 1; background: #1a1a1a; border-radius: 12px; padding: 18px; }
-.column.left { border-top: 3px solid #a0a0a0; }
-.column.right { border-top: 3px solid #4ade80; }
-.col-header { font-size: 16px; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px; }
-.left .col-header { color: #a0a0a0; }
-.right .col-header { color: #4ade80; }
-.row { margin-bottom: 10px; font-size: 14px; color: #e5e5e5; display: flex; align-items: baseline; gap: 8px; }
-.row-label { color: #a0a0a0; font-size: 12px; min-width: 80px; }
-.row-value { color: #e5e5e5; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 44 - The Phone Analogy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .comparison { display: flex; gap: 24px; flex: 1; }
+    .column {
+      flex: 1;
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .column-phone { border-top: 3px solid #a0a0a0; }
+    .column-agent { border-top: 3px solid #4ade80; }
+    .column-header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    .column-phone .column-header { color: #a0a0a0; }
+    .column-agent .column-header { color: #4ade80; }
+    .rows { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .row {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .row-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #666;
+    }
+    .row-text {
+      font-size: 13px;
+      line-height: 1.4;
+      color: #e5e5e5;
+    }
+    .column-phone .row-text { color: #a0a0a0; }
+    .column-agent .row-text { color: #e5e5e5; }
+    .column-agent .row-label { color: #4ade80; opacity: 0.6; }
+    .arrow-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 36px;
+    }
+    .arrow { font-size: 24px; color: #e82127; font-weight: bold; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>The Phone Analogy</h1>
-  <div class="columns">
-    <div class="column left">
-      <div class="col-header">Your Phone</div>
-      <div class="row"><span class="row-label">Out of the box:</span><span class="row-value">Calls, texts, camera</span></div>
-      <div class="row"><span class="row-label">+ Google Maps:</span><span class="row-value">It can navigate</span></div>
-      <div class="row"><span class="row-label">+ Banking app:</span><span class="row-value">It can check balances</span></div>
-      <div class="row"><span class="row-label">+ Slack:</span><span class="row-value">It can message your team</span></div>
-    </div>
-    <div class="column right">
-      <div class="col-header">Your AI Agent</div>
-      <div class="row"><span class="row-label">Out of the box:</span><span class="row-value">Read files, write files, run commands</span></div>
-      <div class="row"><span class="row-label">+ Playwright:</span><span class="row-value">It can browse websites</span></div>
-      <div class="row"><span class="row-label">+ Database:</span><span class="row-value">It can query databases</span></div>
-      <div class="row"><span class="row-label">+ API MCP:</span><span class="row-value">It can connect to services</span></div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Phone Analogy</h1>
+    <div class="comparison">
+      <div class="column column-phone">
+        <div class="column-header">Your Phone</div>
+        <div class="rows">
+          <div class="row">
+            <div class="row-label">Out of the box</div>
+            <div class="row-text">Calls, texts, camera</div>
+          </div>
+          <div class="row">
+            <div class="row-label">Install Google Maps</div>
+            <div class="row-text">It can navigate</div>
+          </div>
+          <div class="row">
+            <div class="row-label">Install Banking App</div>
+            <div class="row-text">It can check balances</div>
+          </div>
+          <div class="row">
+            <div class="row-label">Install Slack</div>
+            <div class="row-text">It can message your team</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-col">
+        <div class="arrow">&#9654;</div>
+      </div>
+      <div class="column column-agent">
+        <div class="column-header">Your AI Agent</div>
+        <div class="rows">
+          <div class="row">
+            <div class="row-label">Out of the box</div>
+            <div class="row-text">Read files, write files, run commands</div>
+          </div>
+          <div class="row">
+            <div class="row-label">Install Playwright MCP</div>
+            <div class="row-text">It can browse websites</div>
+          </div>
+          <div class="row">
+            <div class="row-label">Install Database MCP</div>
+            <div class="row-text">It can query databases</div>
+          </div>
+          <div class="row">
+            <div class="row-label">Install API MCP</div>
+            <div class="row-text">It can connect to services</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>

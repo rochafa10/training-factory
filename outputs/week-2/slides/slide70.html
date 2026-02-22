@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 70 - The Fix Workflow</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-.fix-step { background: #1a1a1a; border-radius: 8px; padding: 12px 18px; margin-bottom: 10px; display: flex; align-items: baseline; gap: 16px; }
-.fix-num { font-size: 24px; font-weight: 700; color: #e82127; min-width: 32px; }
-.fix-text { font-size: 16px; color: #e5e5e5; }
-.fix-text strong { color: #ffffff; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 70 - Part A: What Happens with Vague Instructions</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .content { padding: 28px 40px 24px 40px; margin-left: 8px; }
+    .badge {
+      display: inline-block; background: #e82127; color: #ffffff; text-transform: uppercase;
+      font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px;
+      letter-spacing: 1px; margin-bottom: 12px;
+    }
+    h1 { font-size: 24px; font-weight: bold; color: #ffffff; margin-bottom: 18px; }
+    .type-this-box {
+      background: #1a1a1a; border-left: 4px solid #e82127; padding: 20px 24px;
+      border-radius: 8px; margin-bottom: 20px; text-align: center;
+    }
+    .type-this-label {
+      font-size: 11px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .type-this-text {
+      font-size: 28px; font-weight: bold; color: #ffffff; font-style: italic;
+    }
+    .outcomes-label {
+      font-size: 13px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .outcomes { display: flex; gap: 16px; margin-bottom: 20px; }
+    .outcome-card {
+      flex: 1; background: #1a1a1a; border-radius: 8px; padding: 14px 18px;
+      border-top: 3px solid;
+    }
+    .outcome-card.good { border-top-color: #4ade80; }
+    .outcome-card.common { border-top-color: #facc15; }
+    .outcome-label {
+      font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 6px; font-weight: bold;
+    }
+    .outcome-card.good .outcome-label { color: #4ade80; }
+    .outcome-card.common .outcome-label { color: #facc15; }
+    .outcome-text { font-size: 13px; color: #e5e5e5; line-height: 1.4; }
+    .outcome-quote { font-size: 12px; color: #a0a0a0; font-style: italic; margin-top: 6px; }
+    .lesson-box {
+      background: #2a2a2a; border-radius: 8px; padding: 12px 20px;
+      border-left: 4px solid #e82127;
+    }
+    .lesson-label { font-size: 11px; color: #e82127; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; font-weight: bold; }
+    .lesson-text { font-size: 14px; color: #ffffff; font-weight: bold; line-height: 1.4; }
+    .lesson-text em { color: #a0a0a0; font-weight: normal; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>The Fix Workflow</h1>
-  <div class="fix-step"><span class="fix-num">1</span><span class="fix-text"><strong>Identify</strong> -- What is wrong? ("The page scrolls -- it's too tall")</span></div>
-  <div class="fix-step"><span class="fix-num">2</span><span class="fix-text"><strong>Tell the agent specifically</strong> -- "Reduce the padding, make cards smaller, remove the footer, fit within 500px"</span></div>
-  <div class="fix-step"><span class="fix-num">3</span><span class="fix-text"><strong>Watch the agent fix it</strong> -- review the new version</span></div>
-  <div class="fix-step"><span class="fix-num">4</span><span class="fix-text"><strong>Check the diff</strong> -- what did the agent change?</span></div>
-  <div class="fix-step"><span class="fix-num">5</span><span class="fix-text"><strong>If still wrong, be even more specific</strong> -- include exact numbers: "Each card must be exactly 80px tall"</span></div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <div class="badge">Exercise 7 -- Part A</div>
+    <h1>Part A: What Happens with Vague Instructions</h1>
+    <div class="type-this-box">
+      <div class="type-this-label">Type This in Bottle Rocket</div>
+      <div class="type-this-text">"Make it better."</div>
+    </div>
+    <div class="outcomes-label">What Will Happen?</div>
+    <div class="outcomes">
+      <div class="outcome-card good">
+        <div class="outcome-label">Option A (Good Behavior)</div>
+        <div class="outcome-text">Agent asks clarifying questions</div>
+        <div class="outcome-quote">"What would you like me to improve?"</div>
+      </div>
+      <div class="outcome-card common">
+        <div class="outcome-label">Option B (Common Behavior)</div>
+        <div class="outcome-text">Agent makes random assumptions and changes things without asking</div>
+      </div>
+    </div>
+    <div class="lesson-box">
+      <div class="lesson-label">The Lesson</div>
+      <div class="lesson-text">"Make it better" is not useful feedback -- <em>for an agent OR for a team member.</em></div>
+    </div>
+  </div>
 </body>
 </html>

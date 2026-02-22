@@ -1,40 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 07 - The Formula Upgrade</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 28px; }
-.formula-row { display: flex; gap: 24px; margin-bottom: 24px; }
-.formula-card { flex: 1; background: #1a1a1a; border-radius: 12px; padding: 20px; }
-.formula-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
-.week1-label { color: #a0a0a0; }
-.week2-label { color: #e82127; }
-.formula-text { font-size: 16px; color: #e5e5e5; line-height: 1.5; }
-.arrow { display: flex; align-items: center; justify-content: center; font-size: 32px; color: #e82127; padding: 0 8px; }
-.summary { font-size: 16px; color: #a0a0a0; text-align: center; margin-top: 16px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 07 - The Formula Upgrade</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .comparison { display: flex; gap: 20px; flex: 1; align-items: stretch; }
+    .formula-box {
+      flex: 1;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .formula-old {
+      background: #1a1a1a;
+      border: 1px solid #333;
+    }
+    .formula-new {
+      background: #1a1a1a;
+      border: 2px solid #e82127;
+    }
+    .formula-label {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+    .formula-old .formula-label { color: #a0a0a0; }
+    .formula-new .formula-label { color: #e82127; }
+    .formula-parts { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .part {
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .formula-old .part {
+      background: #2a2a2a;
+      color: #a0a0a0;
+    }
+    .formula-new .part {
+      background: #2a2a2a;
+      color: #ffffff;
+    }
+    .part-name {
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+    .formula-new .part-name { color: #e82127; }
+    .formula-old .part-name { color: #666; }
+    .part-detail { font-size: 12px; }
+    .arrow-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 48px;
+    }
+    .arrow {
+      font-size: 32px;
+      color: #e82127;
+      font-weight: bold;
+    }
+    .footer-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #a0a0a0;
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>The Formula Upgrade</h1>
-  <div class="formula-row">
-    <div class="formula-card">
-      <div class="formula-label week1-label">Week 1 Formula</div>
-      <div class="formula-text">ROLE + CONTEXT + TASK + FORMAT</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Formula Upgrade</h1>
+    <div class="comparison">
+      <div class="formula-box formula-old">
+        <div class="formula-label">Week 1 Formula</div>
+        <div class="formula-parts">
+          <div class="part">
+            <div class="part-name">Role</div>
+            <div class="part-detail">Generic role assignment</div>
+          </div>
+          <div class="part">
+            <div class="part-name">Context</div>
+            <div class="part-detail">Background information</div>
+          </div>
+          <div class="part">
+            <div class="part-name">Task</div>
+            <div class="part-detail">What to do</div>
+          </div>
+          <div class="part">
+            <div class="part-name">Format</div>
+            <div class="part-detail">How to present output</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-col">
+        <div class="arrow">&#9654;</div>
+      </div>
+      <div class="formula-box formula-new">
+        <div class="formula-label">Week 2 Upgrade</div>
+        <div class="formula-parts">
+          <div class="part">
+            <div class="part-name">Enhanced Role</div>
+            <div class="part-detail">Specific expertise + years of experience</div>
+          </div>
+          <div class="part">
+            <div class="part-name">Context</div>
+            <div class="part-detail">Background information</div>
+          </div>
+          <div class="part">
+            <div class="part-name">Structured Task + CoT</div>
+            <div class="part-detail">Numbered steps force reasoning</div>
+          </div>
+          <div class="part">
+            <div class="part-name">Format + Examples</div>
+            <div class="part-detail">Few-shot examples of desired output</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="arrow">&rarr;</div>
-    <div class="formula-card" style="border: 1px solid #e82127;">
-      <div class="formula-label week2-label">Week 2 Upgrade</div>
-      <div class="formula-text">ENHANCED ROLE + CONTEXT + STRUCTURED TASK (with CoT) + FORMAT (with examples)</div>
-    </div>
+    <div class="footer-note">The same four pieces &mdash; just stronger versions of each</div>
   </div>
-  <p class="summary">The same four pieces -- just stronger versions of each</p>
-</div>
 </body>
 </html>

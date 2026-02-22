@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 30 - Troubleshooting Common Issues</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 20px; }
-.issue { background: #1a1a1a; border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; display: flex; gap: 16px; align-items: baseline; }
-.issue-problem { font-size: 14px; font-weight: 700; color: #f87171; min-width: 240px; }
-.issue-fix { font-size: 14px; color: #e5e5e5; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 30 - Troubleshooting Common Issues</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 16px; }
+    .issues-grid { display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .issue-card { background: #1a1a1a; border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 16px; }
+    .issue-problem { flex: 1; font-size: 13px; line-height: 1.4; }
+    .issue-label { color: #f87171; font-weight: bold; }
+    .issue-desc { color: #a0a0a0; }
+    .arrow { color: #a0a0a0; font-size: 18px; flex-shrink: 0; }
+    .issue-fix { flex: 1; font-size: 13px; color: #4ade80; line-height: 1.4; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Troubleshooting Common Issues</h1>
-  <div class="issue">
-    <span class="issue-problem">"Sign in" keeps looping</span>
-    <span class="issue-fix">Clear browser cookies, try incognito window</span>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Troubleshooting Common Issues</h1>
+    <div class="issues-grid">
+      <div class="issue-card">
+        <div class="issue-problem">
+          <span class="issue-label">&ldquo;Sign in&rdquo; keeps looping</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+        <div class="issue-fix">Clear browser cookies, try incognito window</div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-problem">
+          <span class="issue-label">Extension not showing</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+        <div class="issue-fix">Close and reopen VS Code</div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-problem">
+          <span class="issue-label">&ldquo;You don&rsquo;t have access to Copilot&rdquo;</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+        <div class="issue-fix">Verify GitHub subscription with facilitator</div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-problem">
+          <span class="issue-label">Chat not responding</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+        <div class="issue-fix">Check internet, try a different model</div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-problem">
+          <span class="issue-label">Model dropdown empty</span>
+        </div>
+        <span class="arrow">&rarr;</span>
+        <div class="issue-fix">Update VS Code (Help &gt; Check for Updates)</div>
+      </div>
+    </div>
   </div>
-  <div class="issue">
-    <span class="issue-problem">Extension not showing</span>
-    <span class="issue-fix">Close and reopen VS Code</span>
-  </div>
-  <div class="issue">
-    <span class="issue-problem">"You don't have access to Copilot"</span>
-    <span class="issue-fix">Verify GitHub subscription with facilitator</span>
-  </div>
-  <div class="issue">
-    <span class="issue-problem">Chat not responding</span>
-    <span class="issue-fix">Check internet, try a different model</span>
-  </div>
-  <div class="issue">
-    <span class="issue-problem">Model dropdown empty</span>
-    <span class="issue-fix">Update VS Code (Help &gt; Check for Updates)</span>
-  </div>
-</div>
 </body>
 </html>

@@ -1,29 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 47 - Types of MCP Skills</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-.skill { background: #1a1a1a; border-radius: 8px; padding: 12px 18px; margin-bottom: 10px; display: flex; align-items: baseline; gap: 16px; }
-.skill-name { font-size: 16px; font-weight: 700; color: #e82127; min-width: 110px; }
-.skill-desc { font-size: 15px; color: #e5e5e5; }
-.stat { font-size: 14px; color: #4ade80; text-align: center; margin-top: 20px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 47 - Types of MCP Skills</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 16px;
+      flex: 1;
+    }
+    .skill-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .skill-icon {
+      font-size: 28px;
+      margin-bottom: 2px;
+    }
+    .skill-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .skill-desc {
+      font-size: 13px;
+      color: #a0a0a0;
+      line-height: 1.5;
+    }
+    .skill-example {
+      font-size: 13px;
+      color: #e5e5e5;
+      line-height: 1.4;
+      font-style: italic;
+    }
+    .bottom-stat {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 14px;
+      color: #a0a0a0;
+    }
+    .bottom-stat strong {
+      color: #e82127;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Types of MCP Skills</h1>
-  <div class="skill"><span class="skill-name">Playwright</span><span class="skill-desc">Browse any website -- pull data from public dashboards</span></div>
-  <div class="skill"><span class="skill-name">Filesystem</span><span class="skill-desc">Organize files and folders -- create folder structures</span></div>
-  <div class="skill"><span class="skill-name">Memory</span><span class="skill-desc">Remember facts between sessions -- store your DC's target KPIs</span></div>
-  <div class="skill"><span class="skill-name">Fetch</span><span class="skill-desc">Connect to web services -- pull data from APIs</span></div>
-  <p class="stat">28% of Fortune 500 companies already use MCP</p>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Types of MCP Skills</h1>
+    <div class="grid">
+      <div class="skill-card">
+        <div class="skill-icon">&#127760;</div>
+        <div class="skill-name">Playwright</div>
+        <div class="skill-desc">Browse any website</div>
+        <div class="skill-example">Pull data from public dashboards</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#128193;</div>
+        <div class="skill-name">Filesystem</div>
+        <div class="skill-desc">Organize files and folders</div>
+        <div class="skill-example">Create folder structures automatically</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#129504;</div>
+        <div class="skill-name">Memory</div>
+        <div class="skill-desc">Remember facts between sessions</div>
+        <div class="skill-example">Store your DC's target KPIs</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&#128279;</div>
+        <div class="skill-name">Fetch</div>
+        <div class="skill-desc">Connect to web services</div>
+        <div class="skill-example">Pull data from APIs</div>
+      </div>
+    </div>
+    <div class="bottom-stat">
+      <strong>28%</strong> of Fortune 500 companies already use MCP
+    </div>
+  </div>
 </body>
 </html>

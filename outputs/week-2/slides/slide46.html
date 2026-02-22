@@ -1,40 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 46 - Before MCP vs After MCP</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-.scenario { background: #1a1a1a; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
-.scenario-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
-.scenario-label.without { color: #f87171; }
-.scenario-label.with { color: #4ade80; }
-.dialog { font-size: 15px; color: #e5e5e5; margin-bottom: 6px; }
-.dialog .you { color: #a0a0a0; font-weight: 700; }
-.dialog .agent { color: #e82127; font-weight: 700; }
-.dialog .response { font-style: italic; }
-.takeaway { font-size: 16px; color: #a0a0a0; text-align: center; margin-top: 20px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 46 - Before MCP vs After MCP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 24px; }
+    .cards { display: flex; gap: 24px; flex: 1; }
+    .card {
+      flex: 1;
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-without { border-top: 4px solid #f87171; }
+    .card-with { border-top: 4px solid #4ade80; }
+    .card-label {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+    .label-without { color: #f87171; }
+    .label-with { color: #4ade80; }
+    .msg {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .msg-role {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #a0a0a0;
+      min-width: 48px;
+      padding-top: 2px;
+    }
+    .msg-text {
+      font-size: 14px;
+      color: #e5e5e5;
+      line-height: 1.5;
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 10px 14px;
+      flex: 1;
+    }
+    .msg-fail .msg-text { color: #f87171; }
+    .msg-success .msg-text { color: #4ade80; }
+    .icon-result {
+      font-size: 18px;
+      margin-left: 6px;
+    }
+    .bottom-emphasis {
+      margin-top: auto;
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #e5e5e5;
+      line-height: 1.5;
+    }
+    .bottom-emphasis strong { color: #ffffff; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Before MCP vs After MCP</h1>
-  <div class="scenario">
-    <div class="scenario-label without">Without Playwright MCP</div>
-    <div class="dialog"><span class="you">You:</span> "Check the weather for Tampa FL"</div>
-    <div class="dialog"><span class="agent">Agent:</span> <span class="response">"I can't access the internet."</span></div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Before MCP vs After MCP</h1>
+    <div class="cards">
+      <div class="card card-without">
+        <div class="card-label label-without">Without Playwright MCP</div>
+        <div class="msg">
+          <div class="msg-role">You:</div>
+          <div class="msg-text">"Check the weather for Tampa FL"</div>
+        </div>
+        <div class="msg msg-fail">
+          <div class="msg-role">Agent:</div>
+          <div class="msg-text">"I can't access the internet." <span class="icon-result">&#10060;</span></div>
+        </div>
+      </div>
+      <div class="card card-with">
+        <div class="card-label label-with">With Playwright MCP</div>
+        <div class="msg">
+          <div class="msg-role">You:</div>
+          <div class="msg-text">"Check the weather for Tampa FL"</div>
+        </div>
+        <div class="msg msg-success">
+          <div class="msg-role">Agent:</div>
+          <div class="msg-text">Opens weather.com, reads the forecast, reports:<br><strong style="color:#ffffff;">"Tampa FL: 78&#176;F, partly cloudy"</strong> <span class="icon-result">&#10003;</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-emphasis">
+      <strong>The same agent, the same question</strong> -- but with a new skill, it can actually do the job.
+    </div>
   </div>
-  <div class="scenario">
-    <div class="scenario-label with">With Playwright MCP Installed</div>
-    <div class="dialog"><span class="you">You:</span> "Check the weather for Tampa FL"</div>
-    <div class="dialog"><span class="agent">Agent:</span> <span class="response">Opens weather.com, reads forecast, reports: "Tampa FL: 78 degrees, partly cloudy"</span></div>
-  </div>
-  <p class="takeaway">Same agent, same question -- but with a new skill, it can actually do the job.</p>
-</div>
 </body>
 </html>

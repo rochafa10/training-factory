@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 51 - Exercise: Step 2 - Use the New Skill</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 22px 40px 18px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
-.type-this { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 4px solid #e82127; border-radius: 8px; padding: 12px 18px; margin-bottom: 12px; }
-.type-label { font-size: 11px; font-weight: 700; color: #e82127; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.prompt-text { font-size: 15px; color: #e5e5e5; font-family: 'Courier New', monospace; line-height: 1.5; }
-.what-happens { background: #1a1a1a; border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; }
-.what-label { font-size: 11px; font-weight: 700; color: #4ade80; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.what-text { font-size: 14px; color: #e5e5e5; }
-.alt { font-size: 13px; color: #a0a0a0; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 51 - Step 2: Use the New Skill</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 20px 40px 16px 48px; height: 100%; display: flex; flex-direction: column; }
+    .badge { display: inline-block; background: #e82127; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 10px; align-self: flex-start; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 12px; }
+    .type-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #e82127; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .type-this-box {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+    }
+    .type-this-text {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 13px;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    .flow-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 8px; }
+    .flow-steps { display: flex; gap: 10px; flex: 1; align-items: stretch; }
+    .flow-step {
+      flex: 1;
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .flow-step-num {
+      width: 24px;
+      height: 24px;
+      background: #2a2a2a;
+      border: 2px solid #4ade80;
+      color: #4ade80;
+      font-size: 11px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+    }
+    .flow-step-icon { font-size: 22px; margin-bottom: 4px; }
+    .flow-step-text { font-size: 12px; color: #e5e5e5; line-height: 1.4; }
+    .flow-step-text strong { color: #4ade80; }
+    .flow-arrow {
+      position: absolute;
+      right: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #a0a0a0;
+      font-size: 16px;
+      z-index: 1;
+    }
+    .fallback {
+      margin-top: auto;
+      font-size: 12px;
+      color: #a0a0a0;
+      padding-top: 8px;
+    }
+    .fallback strong { color: #a0a0a0; font-weight: bold; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 5 -- Step 2</div>
-  <h1>Use the New Skill</h1>
-  <div class="type-this">
-    <div class="type-label">Type This in Copilot Agent Mode</div>
-    <div class="prompt-text">"Go to weather.com and tell me the current weather forecast for Tampa, Florida. Include the temperature, conditions, and the 5-day outlook."</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Exercise 5 &mdash; Step 2</div>
+    <h1>Step 2: Use the New Skill</h1>
+
+    <div class="type-label">Type This</div>
+    <div class="type-this-box">
+      <div class="type-this-text">Go to weather.com and tell me the current weather forecast for Tampa, Florida. Include the temperature, conditions, and the 5-day outlook.</div>
+    </div>
+
+    <div class="flow-label">What Will Happen</div>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="flow-step-num">1</div>
+        <div class="flow-step-icon">&#128268;</div>
+        <div class="flow-step-text">Agent asks to open a browser<br><strong>Click &ldquo;Allow&rdquo;</strong></div>
+        <div class="flow-arrow">&rarr;</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">2</div>
+        <div class="flow-step-icon">&#127760;</div>
+        <div class="flow-step-text">Agent navigates to weather.com</div>
+        <div class="flow-arrow">&rarr;</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">3</div>
+        <div class="flow-step-icon">&#128196;</div>
+        <div class="flow-step-text">Agent reads the page content</div>
+        <div class="flow-arrow">&rarr;</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">4</div>
+        <div class="flow-step-icon">&#9989;</div>
+        <div class="flow-step-text">Agent reports back with the forecast</div>
+      </div>
+    </div>
+
+    <div class="fallback"><strong>Fallback:</strong> If weather.com doesn&rsquo;t work, try: time.is or news.ycombinator.com</div>
   </div>
-  <div class="what-happens">
-    <div class="what-label">What will happen</div>
-    <div class="what-text">Agent asks to open a browser &gt; click "Allow" &gt; agent navigates to weather.com &gt; reads the page &gt; reports back</div>
-  </div>
-  <p class="alt">If weather.com does not work, try: "Go to time.is and tell me the time in each US time zone"</p>
-</div>
 </body>
 </html>

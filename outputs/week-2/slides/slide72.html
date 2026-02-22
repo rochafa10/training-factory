@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 72 - Section 14: Share Results + Takeaways + Homework</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.section-block { position: absolute; left: 0; top: 0; width: 320px; height: 100%; background: #e82127; display: flex; align-items: center; justify-content: center; }
-.section-number { font-size: 180px; font-weight: 700; color: rgba(255,255,255,0.15); }
-.section-content { margin-left: 360px; display: flex; flex-direction: column; justify-content: center; height: 100%; padding-right: 40px; }
-.section-content h1 { font-size: 36px; font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
-.duration { font-size: 18px; color: #a0a0a0; }
-.activity { font-size: 16px; color: #a0a0a0; margin-top: 8px; }
-.parts { font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 12px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 72 - The Lesson: Specific Beats Vague</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 32px 40px 28px 48px; height: 100%; display: flex; flex-direction: column; }
+    .subtitle { font-size: 13px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 24px; }
+    .comparison { display: flex; gap: 20px; margin-bottom: 28px; flex: 1; }
+    .card {
+      flex: 1;
+      border-radius: 10px;
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card-bad {
+      background: #1a1a1a;
+      border: 2px solid #f87171;
+    }
+    .card-good {
+      background: #1a1a1a;
+      border: 2px solid #4ade80;
+    }
+    .card-icon { font-size: 36px; margin-bottom: 12px; }
+    .card-icon-bad { color: #f87171; }
+    .card-icon-good { color: #4ade80; }
+    .card-prompt { font-size: 16px; font-weight: bold; margin-bottom: 10px; line-height: 1.3; }
+    .card-bad .card-prompt { color: #f87171; }
+    .card-good .card-prompt { color: #4ade80; }
+    .card-result { font-size: 13px; color: #a0a0a0; line-height: 1.4; }
+    .card-label {
+      font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+    .card-bad .card-label { color: #f87171; }
+    .card-good .card-label { color: #4ade80; }
+    .bottom-insight {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 14px 20px;
+      border-left: 4px solid #e82127;
+    }
+    .bottom-insight p { font-size: 14px; color: #e5e5e5; line-height: 1.5; }
+    .bottom-insight strong { color: #ffffff; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="section-block">
-  <span class="section-number">14</span>
-</div>
-<div class="section-content">
-  <h1>Share Results + Key Takeaways + Homework</h1>
-  <p class="duration">20 minutes</p>
-  <p class="activity">Peer Discussion</p>
-  <p class="parts">Show &amp; tell: 12 min | Takeaways: 3 min | Homework: 5 min</p>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="subtitle">Key Principle</div>
+    <h1>The Lesson: Specific Beats Vague</h1>
+
+    <div class="comparison">
+      <div class="card card-bad">
+        <div class="card-label">Vague Result</div>
+        <div class="card-icon card-icon-bad">&#x2717;</div>
+        <div class="card-prompt">&ldquo;Make it better&rdquo;</div>
+        <div class="card-result">Agent guesses what you want. Random changes. Unpredictable output. You waste time undoing it.</div>
+      </div>
+      <div class="card card-good">
+        <div class="card-label">Specific Result</div>
+        <div class="card-icon card-icon-good">&#x2713;</div>
+        <div class="card-prompt">&ldquo;Add a dropdown with three options&rdquo;</div>
+        <div class="card-result">Agent does exactly that. One change. Correct result. Done in seconds.</div>
+      </div>
+    </div>
+
+    <div class="bottom-insight">
+      <p>This is true for agents <strong>AND</strong> for the people on your team. <strong>Specific feedback gets specific fixes &mdash; every time.</strong></p>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,31 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 10 - Exercise: Part A, Step 2 - The CoT Prompt</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 22px 40px 18px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
-.type-this { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 4px solid #e82127; border-radius: 8px; padding: 12px 18px; margin-bottom: 10px; }
-.type-label { font-size: 11px; font-weight: 700; color: #e82127; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.prompt-text { font-size: 14px; color: #e5e5e5; font-family: 'Courier New', monospace; line-height: 1.5; }
-.note { font-size: 13px; color: #a0a0a0; margin-top: 8px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 10 - Part A, Step 2: The CoT Prompt</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 20px 36px 16px 48px; height: 100%; display: flex; flex-direction: column; }
+    .badge {
+      display: inline-block;
+      background: #e82127;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      align-self: flex-start;
+    }
+    h1 { font-size: 24px; font-weight: bold; margin-bottom: 12px; }
+    .type-this-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #e82127;
+      margin-bottom: 5px;
+    }
+    .type-this-box {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #e5e5e5;
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .prompt-line {
+      margin-bottom: 4px;
+    }
+    .prompt-line:last-child { margin-bottom: 0; }
+    .persona { color: #4ade80; font-style: italic; }
+    .instruction { color: #ffffff; }
+    .step { color: #e5e5e5; padding-left: 12px; }
+    .format-note { color: #facc15; font-style: italic; }
+    .data-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #a0a0a0;
+      margin-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+    thead th {
+      background: #1a1a1a;
+      color: #a0a0a0;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+      text-align: left;
+      border-bottom: 2px solid #e82127;
+    }
+    tbody td {
+      padding: 4px 10px;
+      color: #e5e5e5;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    tbody tr:nth-child(even) td { background: #111; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .compare-note {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #a0a0a0;
+      font-style: italic;
+      text-align: center;
+    }
+    .compare-note span { color: #4ade80; font-weight: bold; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 1 -- Part A, Step 2</div>
-  <h1>The CoT Prompt</h1>
-  <div class="type-this">
-    <div class="type-label">Type This in Bottle Rocket</div>
-    <div class="prompt-text">"You are a distribution center operations analyst with 10 years of experience.<br><br>Analyze this week's DC performance step by step:<br>1. Calculate daily orders-per-associate ratio<br>2. Identify best and worst efficiency day<br>3. Look for pattern between headcount and safety incidents<br>4. Recommend two specific actions for next week<br><br>Format: table for daily breakdown, then bullet points for findings"</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Exercise 1 &mdash; Part A, Step 2</div>
+    <h1>The CoT Prompt</h1>
+    <div class="type-this-label">Type This in Bottle Rocket</div>
+    <div class="type-this-box">
+      <div class="prompt-line persona">"You are a distribution center operations analyst with 10 years of experience."</div>
+      <div class="prompt-line instruction">"Analyze this week's DC performance step by step:"</div>
+      <div class="prompt-line step">1. Calculate daily orders-per-associate ratio</div>
+      <div class="prompt-line step">2. Identify best and worst efficiency day</div>
+      <div class="prompt-line step">3. Look for pattern between headcount and safety incidents</div>
+      <div class="prompt-line step">4. Recommend two specific actions for next week</div>
+      <div class="prompt-line format-note">"Format: table for daily breakdown, then bullet points for findings"</div>
+    </div>
+    <div class="data-label">Same Data as Step 1</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th class="num">Orders</th>
+          <th class="num">Associates</th>
+          <th class="num">Safety Incidents</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Monday</td><td class="num">2,400</td><td class="num">45</td><td class="num">2</td></tr>
+        <tr><td>Tuesday</td><td class="num">2,100</td><td class="num">42</td><td class="num">0</td></tr>
+        <tr><td>Wednesday</td><td class="num">2,800</td><td class="num">48</td><td class="num">1</td></tr>
+        <tr><td>Thursday</td><td class="num">2,600</td><td class="num">44</td><td class="num">0</td></tr>
+        <tr><td>Friday</td><td class="num">3,100</td><td class="num">50</td><td class="num">3</td></tr>
+      </tbody>
+    </table>
+    <div class="compare-note">Compare this response to Step 1 &mdash; <span>notice the difference</span></div>
   </div>
-  <p class="note">Use the same data from Step 1. Compare the quality of output.</p>
-</div>
 </body>
 </html>

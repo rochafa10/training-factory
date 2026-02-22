@@ -1,35 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 62 - Exercise: Test It in Your Browser</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 24px 40px 20px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
-.steps { background: #1a1a1a; border-radius: 12px; padding: 14px 18px; }
-.step { display: flex; gap: 12px; margin-bottom: 8px; font-size: 15px; color: #e5e5e5; }
-.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
-.note { font-size: 13px; color: #a0a0a0; margin-top: 12px; border-left: 3px solid #facc15; padding-left: 12px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 62 - Test It in Your Browser</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 16px 40px 14px 48px; height: 100%; display: flex; flex-direction: column; }
+    .badge { display: inline-block; background: #e82127; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 8px; align-self: flex-start; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 10px; }
+    .do-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 5px; }
+    .do-this-box {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 10px;
+    }
+    .step-list { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .step-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #e5e5e5; line-height: 1.4; }
+    .step-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: #e82127;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-list li strong { color: #ffffff; }
+    .troubleshoot-box {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-top: auto;
+    }
+    .troubleshoot-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #a0a0a0;
+      letter-spacing: 1.5px;
+      margin-bottom: 5px;
+    }
+    .troubleshoot-text {
+      font-size: 12px;
+      color: #a0a0a0;
+      line-height: 1.5;
+    }
+    .troubleshoot-text .prompt {
+      font-family: 'Consolas', 'Courier New', monospace;
+      color: #e5e5e5;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 6 -- Test</div>
-  <h1>Test It in Your Browser</h1>
-  <div class="steps">
-    <div class="step"><span class="step-num">1.</span> Find the HTML file in VS Code file explorer (left sidebar)</div>
-    <div class="step"><span class="step-num">2.</span> Right-click &gt; "Open in Default Browser"</div>
-    <div class="step"><span class="step-num">3.</span> Test: Enter "Weekly KPI Report", without AI: <strong>45 min</strong>, with AI: <strong>15 min</strong></div>
-    <div class="step"><span class="step-num">4.</span> Click submit -- does it show "30 minutes saved"?</div>
-    <div class="step"><span class="step-num">5.</span> Add 2-3 more entries</div>
-    <div class="step"><span class="step-num">6.</span> Check: running total updates? Chart shows?</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Exercise 6 &mdash; Test</div>
+    <h1>Test It in Your Browser</h1>
+
+    <div class="do-this-label">Do This</div>
+    <div class="do-this-box">
+      <ol class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <span>Find the HTML file in VS Code <strong>file explorer</strong> (left sidebar)</span>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <span>Right-click &gt; <strong>&ldquo;Open in Default Browser&rdquo;</strong></span>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <span>Test: Enter <strong>&ldquo;Weekly KPI Report&rdquo;</strong>, without AI: <strong>45 min</strong>, with AI: <strong>15 min</strong></span>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <span>Click submit &mdash; does it show <strong>&ldquo;30 minutes saved&rdquo;</strong>?</span>
+        </li>
+        <li>
+          <div class="step-num">5</div>
+          <span>Add <strong>2&ndash;3 more entries</strong></span>
+        </li>
+        <li>
+          <div class="step-num">6</div>
+          <span>Check: <strong>running total updates</strong>? <strong>Chart shows</strong>?</span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="troubleshoot-box">
+      <div class="troubleshoot-label">Troubleshoot</div>
+      <div class="troubleshoot-text">Dashboard looks blank? Tell the agent: <span class="prompt">&ldquo;The dashboard doesn&rsquo;t display correctly. Check for JavaScript errors and fix them.&rdquo;</span></div>
+    </div>
   </div>
-  <p class="note">If the dashboard looks blank, tell the agent: "The dashboard doesn't display correctly. Check for JavaScript errors and fix them."</p>
-</div>
 </body>
 </html>

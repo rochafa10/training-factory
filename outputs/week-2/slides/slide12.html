@@ -1,45 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 12 - Exercise: Part B - Your Own 6-Week Data Analysis</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 20px 40px 16px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
-.type-this { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 4px solid #e82127; border-radius: 8px; padding: 10px 16px; margin-bottom: 10px; }
-.type-label { font-size: 11px; font-weight: 700; color: #e82127; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.prompt-text { font-size: 13px; color: #e5e5e5; font-family: 'Courier New', monospace; line-height: 1.4; }
-.data-label { font-size: 12px; font-weight: 700; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-.data-table th { text-align: left; color: #a0a0a0; padding: 3px 6px; border-bottom: 1px solid #2a2a2a; font-size: 10px; text-transform: uppercase; }
-.data-table td { color: #e5e5e5; padding: 3px 6px; border-bottom: 1px solid #1a1a1a; }
-.trend-up { color: #f87171; }
-.trend-down { color: #4ade80; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 12 - Part B: Your Own 6-Week Data Analysis</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    .header-row { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+    .badge { background: #e82127; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
+    h1 { font-size: 28px; font-weight: bold; line-height: 1.2; }
+    .type-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .type-this-box { background: #1a1a1a; border-left: 4px solid #e82127; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
+    .type-line { font-size: 12.5px; color: #e5e5e5; line-height: 1.55; margin-bottom: 4px; font-family: 'Consolas', 'Courier New', monospace; }
+    .type-line:last-child { margin-bottom: 0; }
+    .data-section { display: flex; gap: 20px; flex: 1; }
+    .data-table-wrap { flex: 1; }
+    .data-label { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1px; margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; }
+    th { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 0.5px; padding: 5px 8px; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    td { font-size: 12.5px; color: #e5e5e5; padding: 5px 8px; border-bottom: 1px solid #1a1a1a; }
+    .trend-up { color: #f87171; }
+    .trend-down { color: #f87171; }
+    .trend-rise { color: #4ade80; }
+    .format-box { background: #1a1a1a; border-radius: 8px; padding: 12px 16px; }
+    .format-label { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1px; margin-bottom: 8px; }
+    .format-item { font-size: 12px; color: #e5e5e5; line-height: 1.6; padding-left: 12px; position: relative; }
+    .format-item::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background: #e82127; border-radius: 50%; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 1 -- Part B</div>
-  <h1>Your Own 6-Week Data Analysis</h1>
-  <div class="type-this">
-    <div class="type-label">Type This in Bottle Rocket</div>
-    <div class="prompt-text">"You are a senior operations analyst specializing in DC performance trends. Analyze this 6-week data step by step: 1) Identify trend for each metric 2) Find correlations 3) Flag outlier weeks 4) Provide 3 action items ranked by impact"</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <div class="badge">Exercise 1 &mdash; Part B</div>
+      <h1>Your Own 6-Week Data Analysis</h1>
+    </div>
+
+    <div class="type-this-label">Type This in Bottle Rocket</div>
+    <div class="type-this-box">
+      <div class="type-line">"You are a senior operations analyst specializing in DC performance trends."</div>
+      <div class="type-line">"Analyze this 6-week data step by step: 1) Identify trend for each metric</div>
+      <div class="type-line">2) Find correlations 3) Flag outlier weeks 4) Provide 3 action items</div>
+      <div class="type-line">ranked by impact"</div>
+    </div>
+
+    <div class="data-section">
+      <div class="data-table-wrap">
+        <div class="data-label">6-Week Performance Data</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Wk 1</th>
+              <th>Wk 6</th>
+              <th>Trend</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Orders</td>
+              <td>14,200</td>
+              <td>16,000</td>
+              <td class="trend-rise">&#9650; Rising</td>
+            </tr>
+            <tr>
+              <td>Fill Rate</td>
+              <td>97.2%</td>
+              <td>94.8%</td>
+              <td class="trend-down">&#9660; Dropping</td>
+            </tr>
+            <tr>
+              <td>Overtime</td>
+              <td>180 hrs</td>
+              <td>310 hrs</td>
+              <td class="trend-up">&#9650; Spiking</td>
+            </tr>
+            <tr>
+              <td>Headcount</td>
+              <td>48</td>
+              <td>44</td>
+              <td class="trend-down">&#9660; Declining</td>
+            </tr>
+            <tr>
+              <td>Safety</td>
+              <td>1 inc.</td>
+              <td>4 inc.</td>
+              <td class="trend-up">&#9650; Rising</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="format-box">
+        <div class="format-label">Expected Output Format</div>
+        <div class="format-item">Trend summary table</div>
+        <div class="format-item">Detailed correlation analysis</div>
+        <div class="format-item">Ranked action items with specifics</div>
+      </div>
+    </div>
   </div>
-  <p class="data-label">Paste this 6-week data:</p>
-  <table class="data-table">
-    <tr><th>Week</th><th>Orders</th><th>Fill Rate</th><th>OT Hours</th><th>Headcount</th><th>Safety</th></tr>
-    <tr><td>1</td><td>14,200</td><td>97.2%</td><td>180</td><td>48</td><td>1</td></tr>
-    <tr><td>2</td><td>14,600</td><td>96.8%</td><td>200</td><td>47</td><td>1</td></tr>
-    <tr><td>3</td><td>15,100</td><td>96.1%</td><td>230</td><td>46</td><td>2</td></tr>
-    <tr><td>4</td><td>15,400</td><td>95.5%</td><td>260</td><td>45</td><td>2</td></tr>
-    <tr><td>5</td><td>15,800</td><td>95.0%</td><td>290</td><td>45</td><td>3</td></tr>
-    <tr><td>6</td><td>16,000</td><td>94.8%</td><td>310</td><td>44</td><td>4</td></tr>
-  </table>
-</div>
 </body>
 </html>

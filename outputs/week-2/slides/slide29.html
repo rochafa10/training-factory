@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 29 - Exercise: Step 5 - Verify</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 24px 40px 20px 48px; }
-.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
-h1 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
-.type-this { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 4px solid #e82127; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; }
-.type-label { font-size: 11px; font-weight: 700; color: #e82127; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-.prompt-text { font-size: 15px; color: #e5e5e5; font-family: 'Courier New', monospace; line-height: 1.5; }
-.success-box { background: #0a2a0a; border: 1px solid #4ade80; border-radius: 8px; padding: 12px 16px; margin-bottom: 12px; }
-.success-label { font-size: 11px; font-weight: 700; color: #4ade80; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.success-text { font-size: 14px; color: #e5e5e5; }
-.checklist { list-style: none; padding: 0; margin-top: 10px; }
-.checklist li { font-size: 14px; color: #a0a0a0; padding: 4px 0 4px 20px; position: relative; }
-.checklist li::before { content: "\2713"; color: #4ade80; font-weight: 700; position: absolute; left: 0; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 29 - Step 5: Verify -- Send Your First Message</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    .header-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+    .badge { background: #e82127; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
+    h1 { font-size: 26px; font-weight: bold; line-height: 1.2; }
+    .type-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .type-this-box { background: #1a1a1a; border-left: 4px solid #e82127; border-radius: 8px; padding: 14px 18px; margin-bottom: 18px; }
+    .type-text { font-size: 14px; color: #e5e5e5; line-height: 1.6; font-family: 'Consolas', 'Courier New', monospace; }
+    .checks-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 8px; }
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+    .check-list li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: #4ade80; line-height: 1.4; }
+    .check-icon { font-size: 16px; font-weight: bold; flex-shrink: 0; }
+    .success-banner { background: #1a1a1a; border-radius: 8px; padding: 14px 18px; text-align: center; border: 1px solid #4ade80; }
+    .success-text { font-size: 16px; font-weight: bold; color: #4ade80; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <div class="exercise-badge">Exercise 3 -- Step 5</div>
-  <h1>Verify -- Send Your First Message</h1>
-  <div class="type-this">
-    <div class="type-label">Type This in Copilot Chat</div>
-    <div class="prompt-text">"Hello! I'm an operations manager at a distribution center. Can you tell me three ways AI can help with daily shift planning?"</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <div class="badge">Exercise 3 &mdash; Step 5</div>
+      <h1>Verify &mdash; Send Your First Message</h1>
+    </div>
+
+    <div class="type-this-label">Type This</div>
+    <div class="type-this-box">
+      <div class="type-text">&ldquo;Hello! I'm an operations manager at a distribution center. Can you tell me three ways AI can help with daily shift planning?&rdquo;</div>
+    </div>
+
+    <div class="checks-label">What to Check</div>
+    <ul class="check-list">
+      <li><span class="check-icon">&#10003;</span> You got a response (not an error)</li>
+      <li><span class="check-icon">&#10003;</span> The response is relevant to operations</li>
+      <li><span class="check-icon">&#10003;</span> The chat panel shows the conversation</li>
+    </ul>
+
+    <div class="success-banner">
+      <div class="success-text">Setup complete! You now have a working AI agent.</div>
+    </div>
   </div>
-  <div class="success-box">
-    <div class="success-label">You should see</div>
-    <div class="success-text">A friendly response listing three practical suggestions</div>
-  </div>
-  <ul class="checklist">
-    <li>You got a response (not an error)</li>
-    <li>The response is relevant</li>
-    <li>The chat panel shows the conversation</li>
-  </ul>
-</div>
 </body>
 </html>

@@ -1,32 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 40 - What Just Happened</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-ul { list-style: none; padding: 0; }
-li { font-size: 17px; color: #e5e5e5; padding: 10px 0 10px 20px; border-left: 3px solid #e82127; margin-bottom: 10px; }
-li strong { color: #ffffff; }
-.comparison { background: #1a1a1a; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 15px; color: #a0a0a0; border-left: 4px solid #4ade80; }
-.comparison strong { color: #4ade80; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 40 - What Just Happened</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 22px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 18px; }
+    .reflections { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .reflection-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 14px;
+      color: #e5e5e5;
+      line-height: 1.5;
+    }
+    .check-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: rgba(74, 222, 128, 0.12);
+      border: 2px solid #4ade80;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #4ade80;
+      font-weight: bold;
+      margin-top: 1px;
+    }
+    .reflection-item strong { color: #ffffff; }
+    .comparison-box {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .compare-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .compare-old { color: #a0a0a0; }
+    .compare-arrow { color: #e82127; font-size: 18px; font-weight: bold; }
+    .compare-new { color: #4ade80; font-weight: bold; }
+    .bottom-emphasis {
+      margin-top: auto;
+      background: linear-gradient(90deg, rgba(232, 33, 39, 0.15), rgba(232, 33, 39, 0.03));
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 14px 20px;
+    }
+    .bottom-emphasis-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      letter-spacing: 0.3px;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>What Just Happened</h1>
-  <ul>
-    <li>You described what you wanted in <strong>plain English</strong></li>
-    <li>The agent <strong>planned, built, and delivered</strong> a working file</li>
-    <li>You reviewed it and asked for changes -- just like working with a <strong>team member</strong></li>
-    <li>The whole process took <strong>minutes, not hours</strong></li>
-  </ul>
-  <div class="comparison"><strong>Comparison:</strong> Exercise 2 took 10 min for a text template. The agent built an interactive tool in less time.</div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>What Just Happened</h1>
+
+    <div class="reflections">
+      <div class="reflection-item">
+        <div class="check-icon">&#10003;</div>
+        <span>You described what you wanted in <strong>plain English</strong></span>
+      </div>
+      <div class="reflection-item">
+        <div class="check-icon">&#10003;</div>
+        <span>The agent <strong>planned, built, and delivered</strong> a working file</span>
+      </div>
+      <div class="reflection-item">
+        <div class="check-icon">&#10003;</div>
+        <span>You reviewed it and asked for changes &mdash; <strong>just like working with a team member</strong></span>
+      </div>
+      <div class="reflection-item">
+        <div class="check-icon">&#10003;</div>
+        <span>The whole process took <strong>minutes, not hours</strong></span>
+      </div>
+
+      <div class="comparison-box">
+        <div class="compare-item">
+          <span class="compare-old">Exercise 2: 10 min for a text template</span>
+        </div>
+        <div class="compare-arrow">&rarr;</div>
+        <div class="compare-item">
+          <span class="compare-new">Agent: interactive tool in less time</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-emphasis">
+      <div class="bottom-emphasis-text">You just went from chatting with AI to commanding AI.</div>
+    </div>
+  </div>
 </body>
 </html>

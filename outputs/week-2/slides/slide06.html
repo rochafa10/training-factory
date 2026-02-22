@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 06 - Three Techniques That Level Up Your Prompts</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 20px; }
-.technique { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; border-left: 4px solid #e82127; }
-.technique-name { font-size: 18px; font-weight: 700; color: #e82127; margin-bottom: 6px; }
-.technique-desc { font-size: 14px; color: #e5e5e5; line-height: 1.4; }
-.technique-stat { font-size: 12px; color: #4ade80; margin-top: 4px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 06 - Three Techniques That Level Up Your Prompts</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 24px; }
+    .cards { display: flex; flex-direction: column; gap: 12px; flex: 1; }
+    .card {
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 6px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      flex: 1;
+    }
+    .card-number {
+      background: #e82127;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: bold;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .card-body { flex: 1; }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .card-technique {
+      font-size: 12px;
+      color: #a0a0a0;
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #e5e5e5;
+      line-height: 1.45;
+    }
+    .stat {
+      color: #4ade80;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Three Techniques That Level Up Your Prompts</h1>
-  <div class="technique">
-    <div class="technique-name">Chain-of-Thought (CoT)</div>
-    <div class="technique-desc">Force step-by-step reasoning. Add "Analyze step by step." AI shows its work: calculations, logic, conclusions.</div>
-    <div class="technique-stat">20-40% accuracy improvement</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Three Techniques That Level Up Your Prompts</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="card-number">1</div>
+        <div class="card-body">
+          <div class="card-title">Chain-of-Thought (CoT)</div>
+          <div class="card-technique">Force step-by-step reasoning</div>
+          <div class="card-desc">
+            Add "Analyze step by step." to any prompt. Forces the AI to show its work instead of jumping to conclusions.
+            <span class="stat">20&ndash;40% accuracy improvement</span> on complex analysis tasks.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-number">2</div>
+        <div class="card-body">
+          <div class="card-title">Few-Shot</div>
+          <div class="card-technique">Teach by example</div>
+          <div class="card-desc">
+            Show 2&ndash;3 examples of the exact output format you want. The AI pattern-matches your examples.
+            <span class="stat">2&ndash;5 examples is the sweet spot</span> &mdash; more than that gives diminishing returns.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-number">3</div>
+        <div class="card-body">
+          <div class="card-title">Enhanced Persona</div>
+          <div class="card-technique">Assign specific expertise</div>
+          <div class="card-desc">
+            "You are a warehouse safety specialist with 10 years of experience."
+            Activates domain-specific language and deeper analysis than a generic role.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="technique">
-    <div class="technique-name">Few-Shot</div>
-    <div class="technique-desc">Teach by example. Show 2-3 examples of the exact output format you want. AI learns your pattern and replicates it.</div>
-    <div class="technique-stat">2-5 examples is the sweet spot</div>
-  </div>
-  <div class="technique">
-    <div class="technique-name">Enhanced Persona</div>
-    <div class="technique-desc">Assign specific expertise. "You are a warehouse safety specialist with 10 years of experience." More specific = better output.</div>
-  </div>
-</div>
 </body>
 </html>

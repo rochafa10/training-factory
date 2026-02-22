@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 33 - Which Mode to Use When</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-.mode-row { background: #1a1a1a; border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; display: flex; align-items: baseline; gap: 16px; }
-.trigger { font-size: 16px; color: #e5e5e5; font-style: italic; flex: 1; }
-.action { font-size: 16px; color: #e82127; font-weight: 700; min-width: 120px; text-align: right; }
-.rule { background: #1a1a1a; border-left: 4px solid #4ade80; border-radius: 8px; padding: 14px 18px; margin-top: 20px; font-size: 16px; color: #e5e5e5; }
-.rule strong { color: #4ade80; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 33 - Which Mode to Use When</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 22px; }
+    .flow-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+    .flow-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .trigger-box {
+      width: 380px;
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #e5e5e5;
+      line-height: 1.4;
+      flex-shrink: 0;
+    }
+    .trigger-box .quote {
+      font-style: italic;
+      color: #ffffff;
+    }
+    .arrow {
+      font-size: 22px;
+      color: #e82127;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .mode-pill {
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .pill-chat { background: rgba(74, 158, 237, 0.15); color: #4a9eed; border: 1px solid #4a9eed; }
+    .pill-edit { background: rgba(250, 204, 21, 0.12); color: #facc15; border: 1px solid #facc15; }
+    .pill-agent { background: rgba(74, 222, 128, 0.12); color: #4ade80; border: 1px solid #4ade80; }
+    .rule-box {
+      margin-top: auto;
+      background: #1a1a1a;
+      border-left: 4px solid #e82127;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #e5e5e5;
+      line-height: 1.5;
+    }
+    .rule-box strong {
+      color: #ffffff;
+    }
+    .rule-box .chat-hl { color: #4a9eed; font-weight: bold; }
+    .rule-box .agent-hl { color: #4ade80; font-weight: bold; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Which Mode to Use When</h1>
-  <div class="mode-row"><span class="trigger">"I have a question about..."</span><span class="action">Use Chat</span></div>
-  <div class="mode-row"><span class="trigger">"Change this specific thing in this file..."</span><span class="action">Use Edit</span></div>
-  <div class="mode-row"><span class="trigger">"Build me a..." / "Create a..." / "Set up a..."</span><span class="action">Use Agent</span></div>
-  <div class="rule"><strong>Rule of thumb:</strong> If the result is text, use Chat. If the result is a file, use Agent.</div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Which Mode to Use When</h1>
+    <div class="flow-rows">
+      <div class="flow-row">
+        <div class="trigger-box"><span class="quote">"I have a question about..."</span></div>
+        <div class="arrow">&#9654;</div>
+        <div class="mode-pill pill-chat">Chat</div>
+      </div>
+      <div class="flow-row">
+        <div class="trigger-box"><span class="quote">"Change this specific thing in this file..."</span></div>
+        <div class="arrow">&#9654;</div>
+        <div class="mode-pill pill-edit">Edit</div>
+      </div>
+      <div class="flow-row">
+        <div class="trigger-box"><span class="quote">"Build me a..." / "Create a..." / "Set up a..."</span></div>
+        <div class="arrow">&#9654;</div>
+        <div class="mode-pill pill-agent">Agent</div>
+      </div>
+    </div>
+    <div class="rule-box">
+      <strong>Rule of thumb:</strong> If the result is <span class="chat-hl">TEXT</span>, use Chat. If the result is a <span class="agent-hl">FILE</span>, use Agent.
+    </div>
+  </div>
 </body>
 </html>

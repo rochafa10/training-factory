@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 58 - How to Undo</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 32px 40px 24px 48px; }
-h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
-.undo-method { background: #1a1a1a; border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; display: flex; align-items: baseline; gap: 16px; }
-.undo-key { font-size: 16px; font-weight: 700; color: #e82127; font-family: 'Courier New', monospace; min-width: 200px; }
-.undo-desc { font-size: 16px; color: #e5e5e5; }
-.key-message { background: #0a2a0a; border: 1px solid #4ade80; border-radius: 8px; padding: 16px 20px; margin-top: 24px; text-align: center; font-size: 18px; color: #4ade80; font-weight: 700; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 58 - How to Undo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .cards {
+      display: flex;
+      gap: 16px;
+      flex: 1;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px 18px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card-num {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #e82127;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 1.3;
+    }
+    .card-shortcut {
+      background: #2a2a2a;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #a0a0a0;
+      line-height: 1.5;
+    }
+    .card-icon {
+      font-size: 28px;
+      margin-bottom: 2px;
+    }
+    .key-message {
+      margin-top: 18px;
+      background: linear-gradient(90deg, rgba(74, 222, 128, 0.12) 0%, rgba(74, 222, 128, 0.04) 100%);
+      border-left: 4px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px 20px;
+      text-align: center;
+    }
+    .key-message-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #4ade80;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>How to Undo</h1>
-  <div class="undo-method"><span class="undo-key">Ctrl+Z</span><span class="undo-desc">Undo the last change (works in any file)</span></div>
-  <div class="undo-method"><span class="undo-key">Tell the agent</span><span class="undo-desc">"Undo those changes" or "Revert that file"</span></div>
-  <div class="undo-method"><span class="undo-key">Source Control panel</span><span class="undo-desc">Click the undo icon next to any changed file</span></div>
-  <div class="key-message">You can always undo. Nothing is permanent.</div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>How to Undo</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="card-num">Method 1</div>
+        <div class="card-icon">&#9000;</div>
+        <div class="card-title">Keyboard Shortcut</div>
+        <div class="card-shortcut">Ctrl + Z</div>
+        <div class="card-desc">Undo the last change. Works in any file, any time.</div>
+      </div>
+      <div class="card">
+        <div class="card-num">Method 2</div>
+        <div class="card-icon">&#128172;</div>
+        <div class="card-title">Tell the Agent</div>
+        <div class="card-shortcut" style="font-size: 13px; letter-spacing: 0;">"Undo those changes"</div>
+        <div class="card-desc">Or say: "Revert that file." The agent will reverse its own edits.</div>
+      </div>
+      <div class="card">
+        <div class="card-num">Method 3</div>
+        <div class="card-icon">&#128260;</div>
+        <div class="card-title">Source Control Panel</div>
+        <div class="card-shortcut" style="font-size: 13px; letter-spacing: 0;">Click &#8634; next to file</div>
+        <div class="card-desc">VS Code Source Control panel: click the undo icon next to any changed file.</div>
+      </div>
+    </div>
+    <div class="key-message">
+      <div class="key-message-text">You can always undo. Nothing is permanent.</div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 19 - Chat vs Agent: The Core Difference</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 20px; }
-.columns { display: flex; gap: 24px; }
-.column { flex: 1; background: #1a1a1a; border-radius: 12px; padding: 20px; }
-.column.left { border-top: 3px solid #a0a0a0; }
-.column.right { border-top: 3px solid #4ade80; }
-.col-header { font-size: 16px; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px; }
-.left .col-header { color: #a0a0a0; }
-.right .col-header { color: #4ade80; }
-.row { margin-bottom: 10px; }
-.row-label { font-size: 11px; color: #a0a0a0; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
-.row-value { font-size: 14px; color: #e5e5e5; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 19 - Chat vs Agent: The Core Difference</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .columns { display: flex; gap: 24px; flex: 1; }
+    .column { flex: 1; background: #1a1a1a; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; }
+    .column-header { font-size: 15px; font-weight: bold; padding-bottom: 12px; margin-bottom: 14px; }
+    .col-left .column-header { border-top: 3px solid #a0a0a0; padding-top: 12px; }
+    .col-right .column-header { border-top: 3px solid #4ade80; padding-top: 12px; }
+    .row { display: flex; margin-bottom: 10px; font-size: 13px; line-height: 1.45; }
+    .row-label { color: #a0a0a0; width: 80px; flex-shrink: 0; font-weight: bold; }
+    .row-value { color: #e5e5e5; }
+    .col-right .row-value { color: #4ade80; }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Chat vs Agent -- The Core Difference</h1>
-  <div class="columns">
-    <div class="column left">
-      <div class="col-header">Chat / Bottle Rocket</div>
-      <div class="row"><div class="row-label">You say</div><div class="row-value">"Write me a report"</div></div>
-      <div class="row"><div class="row-label">AI does</div><div class="row-value">Writes text in the chat window</div></div>
-      <div class="row"><div class="row-label">Output</div><div class="row-value">Text you copy-paste</div></div>
-      <div class="row"><div class="row-label">Steps</div><div class="row-value">One response</div></div>
-      <div class="row"><div class="row-label">Autonomy</div><div class="row-value">None -- you do everything</div></div>
-    </div>
-    <div class="column right">
-      <div class="col-header">Agent / Copilot Agent Mode</div>
-      <div class="row"><div class="row-label">You say</div><div class="row-value">"Build me a reporting tool"</div></div>
-      <div class="row"><div class="row-label">AI does</div><div class="row-value">Creates files, writes code, runs commands</div></div>
-      <div class="row"><div class="row-label">Output</div><div class="row-value">Working files on your computer</div></div>
-      <div class="row"><div class="row-label">Steps</div><div class="row-value">Multiple steps, asks for approval</div></div>
-      <div class="row"><div class="row-label">Autonomy</div><div class="row-value">High -- agent plans and executes</div></div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Chat vs Agent &mdash; The Core Difference</h1>
+    <div class="columns">
+      <div class="column col-left">
+        <div class="column-header">Chat / Bottle Rocket</div>
+        <div class="row"><span class="row-label">You say:</span><span class="row-value">"Write me a report"</span></div>
+        <div class="row"><span class="row-label">AI does:</span><span class="row-value">Writes text in the chat window</span></div>
+        <div class="row"><span class="row-label">Output:</span><span class="row-value">Text you copy-paste</span></div>
+        <div class="row"><span class="row-label">Steps:</span><span class="row-value">One response</span></div>
+        <div class="row"><span class="row-label">Autonomy:</span><span class="row-value">None &mdash; you do everything</span></div>
+      </div>
+      <div class="column col-right">
+        <div class="column-header">Agent / Copilot Agent Mode</div>
+        <div class="row"><span class="row-label">You say:</span><span class="row-value">"Build me a reporting tool"</span></div>
+        <div class="row"><span class="row-label">AI does:</span><span class="row-value">Creates files, writes code, runs commands</span></div>
+        <div class="row"><span class="row-label">Output:</span><span class="row-value">Working files on your computer</span></div>
+        <div class="row"><span class="row-label">Steps:</span><span class="row-value">Multiple steps, asks for your approval</span></div>
+        <div class="row"><span class="row-label">Autonomy:</span><span class="row-value">High &mdash; agent plans and executes</span></div>
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>

@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 65 - Section 13: Exercise 7</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.section-block { position: absolute; left: 0; top: 0; width: 320px; height: 100%; background: #e82127; display: flex; align-items: center; justify-content: center; }
-.section-number { font-size: 180px; font-weight: 700; color: rgba(255,255,255,0.15); }
-.section-content { margin-left: 360px; display: flex; flex-direction: column; justify-content: center; height: 100%; padding-right: 40px; }
-.section-content h1 { font-size: 34px; font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
-.duration { font-size: 18px; color: #a0a0a0; }
-.activity { font-size: 16px; color: #a0a0a0; margin-top: 8px; }
-.parts { font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 12px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 65 - Section 13: When Agents Don't Deliver</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .red-block {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 100%;
+      background: #e82127;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
+    }
+    .right-content {
+      position: absolute;
+      left: 320px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 50px 50px 60px;
+    }
+    .section-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #e82127;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .meta {
+      font-size: 16px;
+      color: #a0a0a0;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .meta .duration {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .activity-detail {
+      font-size: 13px;
+      color: #a0a0a0;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="section-block">
-  <span class="section-number">13</span>
-</div>
-<div class="section-content">
-  <h1>Exercise 7: Debug &amp; Redirect an Agent</h1>
-  <p class="duration">25 minutes</p>
-  <p class="activity">Hands-On with Copilot Agent Mode</p>
-  <p class="parts">Part A: Vague Instructions (10 min) | Part B: Catch a Mistake (15 min)</p>
-</div>
+  <div class="red-block">
+    <div class="section-number">13</div>
+  </div>
+  <div class="right-content">
+    <div class="section-label">Section 13</div>
+    <h1>When Agents<br>Don&rsquo;t Deliver</h1>
+    <div class="meta">
+      <span class="duration">5 minutes</span> &nbsp;|&nbsp; Concept Intro
+    </div>
+    <div class="activity-detail">Real-world case study &mdash; root-cause analysis</div>
+  </div>
 </body>
 </html>
