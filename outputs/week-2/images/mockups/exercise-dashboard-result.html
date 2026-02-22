@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Dashboard Result - Browser View</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; overflow: hidden; font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
+
+.browser-bar { height: 36px; background: #1a1a1a; display: flex; align-items: center; padding: 0 12px; gap: 8px; border-bottom: 1px solid #333; }
+.browser-dots { display: flex; gap: 5px; }
+.browser-dots span { width: 10px; height: 10px; border-radius: 50%; }
+.browser-dots span:nth-child(1) { background: #ff5f57; }
+.browser-dots span:nth-child(2) { background: #febc2e; }
+.browser-dots span:nth-child(3) { background: #28c840; }
+.browser-url { flex: 1; margin-left: 8px; background: #2a2a2a; border-radius: 4px; height: 24px; display: flex; align-items: center; padding: 0 10px; font-size: 11px; color: #888; }
+.browser-url .lock { color: #28c840; margin-right: 6px; font-size: 10px; }
+
+.dashboard { padding: 16px 20px; height: 504px; overflow: hidden; }
+
+.dash-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.dash-title { font-size: 18px; font-weight: 700; color: #ffffff; }
+.dash-title .accent { color: #e82127; }
+.dash-date { font-size: 11px; color: #666; }
+
+.top-row { display: flex; gap: 12px; margin-bottom: 14px; }
+
+.summary-card { background: #1a1a1a; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #e82127; flex: 1; }
+.summary-card.green { border-left-color: #16a34a; }
+.summary-card.blue { border-left-color: #3b82f6; }
+.summary-label { font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.summary-value { font-size: 22px; font-weight: 700; color: #fff; }
+.summary-value .unit { font-size: 12px; color: #888; font-weight: 400; margin-left: 2px; }
+.summary-sub { font-size: 10px; color: #666; margin-top: 2px; }
+
+.content-area { display: flex; gap: 14px; }
+
+.table-section { flex: 1.2; }
+.chart-section { flex: 1; }
+
+.section-title { font-size: 12px; font-weight: 600; color: #ccc; margin-bottom: 8px; }
+
+.data-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.data-table th { background: #1a1a1a; color: #888; text-align: left; padding: 6px 8px; border-bottom: 1px solid #333; font-weight: 500; font-size: 10px; text-transform: uppercase; }
+.data-table td { padding: 5px 8px; border-bottom: 1px solid #1a1a1a; color: #ccc; }
+.data-table tr:hover { background: #1a1a1a; }
+.saved-positive { color: #16a34a; font-weight: 600; }
+
+.form-row { display: flex; gap: 6px; margin-top: 8px; }
+.form-input { background: #1a1a1a; border: 1px solid #333; border-radius: 4px; padding: 5px 8px; color: #888; font-size: 10px; flex: 1; font-family: 'Segoe UI', sans-serif; }
+.form-btn { background: #e82127; color: white; border: none; border-radius: 4px; padding: 5px 12px; font-size: 10px; cursor: pointer; font-weight: 600; }
+
+.chart-area { background: #1a1a1a; border-radius: 8px; padding: 12px; height: 200px; position: relative; }
+.chart-bars { display: flex; align-items: flex-end; gap: 10px; height: 150px; padding: 0 8px; }
+.chart-bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.chart-bar { width: 100%; border-radius: 3px 3px 0 0; min-height: 4px; }
+.chart-bar.mon { height: 45px; background: linear-gradient(180deg, #e82127, #b81a1f); }
+.chart-bar.tue { height: 70px; background: linear-gradient(180deg, #e82127, #b81a1f); }
+.chart-bar.wed { height: 55px; background: linear-gradient(180deg, #e82127, #b81a1f); }
+.chart-bar.thu { height: 90px; background: linear-gradient(180deg, #e82127, #b81a1f); }
+.chart-bar.fri { height: 110px; background: linear-gradient(180deg, #e82127, #b81a1f); }
+.chart-bar-label { font-size: 9px; color: #666; margin-top: 4px; }
+.chart-bar-value { font-size: 9px; color: #e82127; margin-bottom: 2px; font-weight: 600; }
+.chart-y-axis { position: absolute; left: 4px; top: 12px; height: 150px; display: flex; flex-direction: column; justify-content: space-between; }
+.chart-y-label { font-size: 8px; color: #555; }
+</style>
+</head>
+<body>
+<div class="browser-bar">
+  <div class="browser-dots"><span></span><span></span><span></span></div>
+  <div class="browser-url">
+    <span class="lock">&#128274;</span>
+    file:///C:/Users/manager/Desktop/time-savings-dashboard.html
+  </div>
+</div>
+<div class="dashboard">
+  <div class="dash-header">
+    <div class="dash-title"><span class="accent">AI</span> Time Savings Dashboard</div>
+    <div class="dash-date">Week of Feb 17 - Feb 21, 2026</div>
+  </div>
+
+  <div class="top-row">
+    <div class="summary-card">
+      <div class="summary-label">Weekly Total Saved</div>
+      <div class="summary-value">4.7<span class="unit">hrs</span></div>
+      <div class="summary-sub">282 minutes across 8 tasks</div>
+    </div>
+    <div class="summary-card green">
+      <div class="summary-label">Avg. Time Saved per Task</div>
+      <div class="summary-value">35<span class="unit">min</span></div>
+      <div class="summary-sub">52% average reduction</div>
+    </div>
+    <div class="summary-card blue">
+      <div class="summary-label">Tasks Logged</div>
+      <div class="summary-value">8</div>
+      <div class="summary-sub">5 days tracked this week</div>
+    </div>
+  </div>
+
+  <div class="content-area">
+    <div class="table-section">
+      <div class="section-title">Recent Entries</div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Task</th>
+            <th>Without AI</th>
+            <th>With AI</th>
+            <th>Saved</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feb 21</td>
+            <td>Shift report</td>
+            <td>45 min</td>
+            <td>12 min</td>
+            <td class="saved-positive">33 min</td>
+          </tr>
+          <tr>
+            <td>Feb 21</td>
+            <td>Email to regional</td>
+            <td>30 min</td>
+            <td>8 min</td>
+            <td class="saved-positive">22 min</td>
+          </tr>
+          <tr>
+            <td>Feb 20</td>
+            <td>KPI analysis</td>
+            <td>60 min</td>
+            <td>15 min</td>
+            <td class="saved-positive">45 min</td>
+          </tr>
+          <tr>
+            <td>Feb 20</td>
+            <td>Meeting agenda</td>
+            <td>25 min</td>
+            <td>5 min</td>
+            <td class="saved-positive">20 min</td>
+          </tr>
+          <tr>
+            <td>Feb 19</td>
+            <td>Incident report</td>
+            <td>40 min</td>
+            <td>10 min</td>
+            <td class="saved-positive">30 min</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="form-row">
+        <input class="form-input" placeholder="Date" style="flex:0.6;">
+        <input class="form-input" placeholder="Task name">
+        <input class="form-input" placeholder="Mins w/o AI" style="flex:0.6;">
+        <input class="form-input" placeholder="Mins w/ AI" style="flex:0.6;">
+        <button class="form-btn">+ Add</button>
+      </div>
+    </div>
+    <div class="chart-section">
+      <div class="section-title">Daily Savings (minutes)</div>
+      <div class="chart-area">
+        <div class="chart-y-axis">
+          <div class="chart-y-label">120</div>
+          <div class="chart-y-label">90</div>
+          <div class="chart-y-label">60</div>
+          <div class="chart-y-label">30</div>
+          <div class="chart-y-label">0</div>
+        </div>
+        <div class="chart-bars">
+          <div class="chart-bar-group">
+            <div class="chart-bar-value">33</div>
+            <div class="chart-bar mon"></div>
+            <div class="chart-bar-label">Mon</div>
+          </div>
+          <div class="chart-bar-group">
+            <div class="chart-bar-value">52</div>
+            <div class="chart-bar tue"></div>
+            <div class="chart-bar-label">Tue</div>
+          </div>
+          <div class="chart-bar-group">
+            <div class="chart-bar-value">42</div>
+            <div class="chart-bar wed"></div>
+            <div class="chart-bar-label">Wed</div>
+          </div>
+          <div class="chart-bar-group">
+            <div class="chart-bar-value">65</div>
+            <div class="chart-bar thu"></div>
+            <div class="chart-bar-label">Thu</div>
+          </div>
+          <div class="chart-bar-group">
+            <div class="chart-bar-value">90</div>
+            <div class="chart-bar fri"></div>
+            <div class="chart-bar-label">Fri</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

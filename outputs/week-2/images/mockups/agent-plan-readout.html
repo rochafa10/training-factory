@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agent Plan Readout - Slide 55</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 32px 48px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 24px; }
+  .content { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+  .terminal { background: #1e1e1e; border-radius: 10px; overflow: hidden; flex: 1; display: flex; flex-direction: column; }
+  .terminal-bar { background: #2d2d2d; padding: 8px 16px; display: flex; align-items: center; gap: 8px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-red { background: #ff5f57; }
+  .dot-yellow { background: #febc2e; }
+  .dot-green { background: #28c840; }
+  .terminal-title { color: #888; font-size: 12px; margin-left: 8px; font-family: 'Consolas', 'Courier New', monospace; }
+  .terminal-body { padding: 20px 24px; flex: 1; font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; line-height: 1.8; }
+  .line { display: flex; align-items: flex-start; gap: 8px; }
+  .line-agent { color: #60a5fa; }
+  .line-label { color: #888; font-size: 12px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+  .check { color: #22c55e; }
+  .pending { color: #666; }
+  .spinner { color: #f59e0b; }
+  .step-text { color: #e5e5e5; }
+  .step-text.done { color: #a0a0a0; }
+  .divider { border: none; border-top: 1px solid #333; margin: 12px 0; }
+  .response-area { display: flex; gap: 12px; padding: 0; }
+  .response-btn { padding: 10px 24px; border-radius: 8px; font-size: 13px; font-weight: 600; border: 2px solid; cursor: pointer; font-family: Arial, Helvetica, sans-serif; }
+  .btn-approve { background: #f0fdf4; border-color: #16a34a; color: #16a34a; }
+  .btn-modify { background: #fffbeb; border-color: #b45309; color: #b45309; }
+  .btn-stop { background: #fef2f2; border-color: #dc2626; color: #dc2626; }
+  .response-label { font-size: 12px; font-weight: 700; color: #666; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .response-hint { font-size: 11px; color: #999; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">Reading an Agent's Plan</div>
+  <div class="subtitle">Always review what the agent intends to do before it does it</div>
+  <div class="content">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">Copilot Agent &mdash; Building shift dashboard</span>
+      </div>
+      <div class="terminal-body">
+        <div class="line-label">&#129302; Agent's Plan</div>
+        <div class="line">
+          <span class="check">&#10003;</span>
+          <span class="step-text done">1. I will create <strong>dashboard.html</strong> with the basic structure</span>
+        </div>
+        <div class="line">
+          <span class="check">&#10003;</span>
+          <span class="step-text done">2. I will add an input form for task name and associate count</span>
+        </div>
+        <div class="line">
+          <span class="spinner">&#9675;</span>
+          <span class="step-text">3. I will add time calculation logic (hours per task)</span>
+        </div>
+        <div class="line">
+          <span class="pending">&#9675;</span>
+          <span class="step-text" style="color:#666;">4. I will run a preview command to verify the layout</span>
+        </div>
+        <div class="line">
+          <span class="pending">&#9675;</span>
+          <span class="step-text" style="color:#666;">5. I will add export-to-CSV functionality</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="response-label">Your response options</div>
+      <div class="response-area">
+        <div class="response-btn btn-approve">&#10003; "Looks good, continue"</div>
+        <div class="response-btn btn-modify">&#9998; "Change step 3 to use minutes instead"</div>
+        <div class="response-btn btn-stop">&#10005; "Stop &mdash; wrong approach"</div>
+      </div>
+      <div class="response-hint">Tip: Intervene early. It's easier to redirect an agent before it builds the wrong thing.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

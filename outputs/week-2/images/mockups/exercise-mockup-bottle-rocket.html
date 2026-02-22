@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exercise Mockup - Bottle Rocket - Slide 09</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; display: flex; }
+  /* Sidebar */
+  .sidebar { width: 220px; background: #1a1a1a; display: flex; flex-direction: column; padding: 16px 14px; flex-shrink: 0; }
+  .sidebar-brand { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #333; }
+  .brand-icon { width: 28px; height: 28px; background: #cc0000; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; font-weight: 700; }
+  .brand-name { color: #fff; font-size: 14px; font-weight: 700; }
+  .brand-sub { color: #888; font-size: 10px; }
+  .sidebar-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 8px; margin-top: 12px; }
+  .sidebar-item { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 6px; margin-bottom: 2px; color: #aaa; font-size: 12px; cursor: pointer; }
+  .sidebar-item:hover, .sidebar-item.active { background: #2a2a2a; color: #fff; }
+  .sidebar-item .dot { width: 8px; height: 8px; border-radius: 50%; background: #444; flex-shrink: 0; }
+  .sidebar-item.active .dot { background: #cc0000; }
+  .sidebar-bottom { margin-top: auto; padding-top: 12px; border-top: 1px solid #333; }
+  .sidebar-url { font-size: 10px; color: #555; word-break: break-all; }
+
+  /* Main chat area */
+  .main { flex: 1; display: flex; flex-direction: column; background: #fafafa; }
+  .topbar { background: #fff; border-bottom: 1px solid #eee; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+  .topbar-title { font-size: 14px; font-weight: 600; color: #333; }
+  .topbar-badge { font-size: 10px; background: #e5e5e5; color: #666; padding: 2px 8px; border-radius: 10px; }
+  .chat-area { flex: 1; padding: 20px 24px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+
+  .msg { display: flex; gap: 10px; max-width: 85%; }
+  .msg-user { align-self: flex-end; flex-direction: row-reverse; }
+  .msg-ai { align-self: flex-start; }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; font-weight: 700; }
+  .avatar-user { background: #e0e0e0; color: #666; }
+  .avatar-ai { background: #cc0000; color: #fff; }
+  .bubble { padding: 12px 16px; border-radius: 12px; font-size: 13px; line-height: 1.5; }
+  .bubble-user { background: #333; color: #fff; border-bottom-right-radius: 4px; }
+  .bubble-ai { background: #fff; border: 1px solid #e0e0e0; color: #333; border-bottom-left-radius: 4px; }
+  .data-block { background: #f5f5f5; border: 1px solid #e0e0e0; border-radius: 6px; padding: 8px 12px; font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; color: #555; margin: 8px 0; line-height: 1.6; white-space: pre; }
+
+  .input-bar { background: #fff; border-top: 1px solid #eee; padding: 12px 20px; display: flex; align-items: center; gap: 10px; }
+  .input-field { flex: 1; padding: 10px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 13px; color: #999; background: #fafafa; }
+  .send-btn { width: 36px; height: 36px; background: #cc0000; border: none; border-radius: 8px; color: #fff; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+
+  .problem-callout { position: absolute; bottom: 80px; right: 24px; background: #fef2f2; border: 2px solid #dc2626; border-radius: 8px; padding: 10px 16px; max-width: 260px; }
+  .callout-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: #dc2626; margin-bottom: 4px; }
+  .callout-text { font-size: 12px; color: #333; line-height: 1.4; }
+  .main-wrapper { position: relative; flex: 1; display: flex; flex-direction: column; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon">BR</div>
+      <div>
+        <div class="brand-name">Bottle Rocket</div>
+        <div class="brand-sub">Tesla AI Assistant</div>
+      </div>
+    </div>
+    <div class="sidebar-label">Recent chats</div>
+    <div class="sidebar-item active"><span class="dot"></span>DC Order Analysis</div>
+    <div class="sidebar-item"><span class="dot"></span>Shift schedule help</div>
+    <div class="sidebar-item"><span class="dot"></span>Pick rate report</div>
+    <div class="sidebar-item"><span class="dot"></span>Safety compliance</div>
+    <div class="sidebar-bottom">
+      <div class="sidebar-url">go.tesla.com/chat</div>
+    </div>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="topbar">
+      <div class="topbar-title">DC Order Analysis</div>
+      <div class="topbar-badge">Bottle Rocket v2</div>
+    </div>
+
+    <div class="chat-area">
+      <div class="msg msg-user">
+        <div class="avatar avatar-user">AG</div>
+        <div class="bubble bubble-user">
+          What do you see in this data?
+          <div class="data-block">Mon: 1,247 orders
+Tue: 1,102 orders
+Wed: 643 orders
+Thu: 1,189 orders
+Fri: 1,356 orders</div>
+        </div>
+      </div>
+
+      <div class="msg msg-ai">
+        <div class="avatar avatar-ai">BR</div>
+        <div class="bubble bubble-ai">
+          I can see your data shows daily order counts for a work week. The numbers vary from day to day, with some days being higher and others lower. Wednesday appears to have fewer orders than other days. Overall, this looks like a typical week of operations. Would you like me to help with anything else?
+        </div>
+      </div>
+    </div>
+
+    <div class="input-bar">
+      <div class="input-field">Type your message...</div>
+      <div class="send-btn">&#9654;</div>
+    </div>
+
+    <div class="problem-callout">
+      <div class="callout-label">&#9888; Problem</div>
+      <div class="callout-text">Vague prompt = vague response. No specific analysis, no anomaly detection, no actionable insight. <strong>This is Week 1 level.</strong></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

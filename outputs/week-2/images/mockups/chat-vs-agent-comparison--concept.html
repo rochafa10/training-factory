@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Chat vs Agent Comparison</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; background: #ffffff; }
+
+.container { padding: 28px 36px 24px; height: 100%; display: flex; flex-direction: column; }
+
+.title { font-size: 26px; font-weight: 700; color: #000000; text-align: center; margin-bottom: 4px; }
+.subtitle { font-size: 14px; color: #666666; text-align: center; margin-bottom: 20px; }
+
+/* Question bar */
+.question-bar {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+}
+.question-icon {
+  width: 36px;
+  height: 36px;
+  background: #cc0000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.question-body { flex: 1; }
+.question-label { font-size: 10px; color: #999; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; }
+.question-text { font-size: 14px; color: #000; font-weight: 600; margin-top: 2px; }
+
+/* Split panels */
+.panels { display: flex; gap: 20px; flex: 1; }
+
+.panel {
+  flex: 1;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat mode panel */
+.panel-chat {
+  background: #fef2f2;
+  border: 2px solid #fecaca;
+}
+.panel-chat .panel-badge { background: #dc2626; }
+
+/* Agent mode panel */
+.panel-agent {
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+}
+.panel-agent .panel-badge { background: #16a34a; }
+
+.panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.panel-badge {
+  padding: 4px 12px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.panel-mode { font-size: 15px; font-weight: 700; color: #000; }
+
+/* Status indicator */
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.status-icon-fail {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fecaca;
+  border: 2px solid #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #dc2626;
+  flex-shrink: 0;
+}
+.status-icon-pass {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #dcfce7;
+  border: 2px solid #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #16a34a;
+  flex-shrink: 0;
+}
+.status-label-fail { font-size: 13px; color: #dc2626; font-weight: 700; }
+.status-label-pass { font-size: 13px; color: #16a34a; font-weight: 700; }
+
+/* Response bubble */
+.response-bubble {
+  flex: 1;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+}
+.panel-chat .response-bubble {
+  background: #ffffff;
+  border: 1px solid #fecaca;
+}
+.panel-agent .response-bubble {
+  background: #ffffff;
+  border: 1px solid #bbf7d0;
+}
+.response-bubble .highlight { font-weight: 600; color: #000; }
+.response-bubble .tool-badge {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0 2px;
+}
+.response-bubble .result {
+  display: block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #f0fdf4;
+  border-radius: 6px;
+  border-left: 3px solid #16a34a;
+  font-weight: 600;
+  color: #166534;
+}
+.response-bubble .limitation {
+  display: block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #fef2f2;
+  border-radius: 6px;
+  border-left: 3px solid #dc2626;
+  color: #991b1b;
+  font-style: italic;
+}
+
+/* Bottom subtitle */
+.bottom-bar {
+  margin-top: 14px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.bottom-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.bottom-text .accent { color: #cc0000; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="title">Same Question, Different Capabilities</div>
+  <div class="subtitle">See how Chat Mode and Agent Mode handle the same real-world request</div>
+
+  <!-- Question -->
+  <div class="question-bar">
+    <div class="question-icon">?</div>
+    <div class="question-body">
+      <div class="question-label">Your Question</div>
+      <div class="question-text">"What's the current weather forecast for our Tampa DC today?"</div>
+    </div>
+  </div>
+
+  <!-- Split panels -->
+  <div class="panels">
+    <!-- Chat Mode -->
+    <div class="panel panel-chat">
+      <div class="panel-header">
+        <div class="panel-badge">&#10007;</div>
+        <div class="panel-mode">Chat Mode</div>
+      </div>
+      <div class="status-row">
+        <div class="status-icon-fail">&#10007;</div>
+        <div class="status-label-fail">Cannot complete this task</div>
+      </div>
+      <div class="response-bubble">
+        I can't browse the internet or access real-time data. As of my last training update, I don't have current weather information.
+        <span class="limitation">I can suggest checking weather.com or your local forecast app for today's Tampa weather.</span>
+      </div>
+    </div>
+
+    <!-- Agent Mode -->
+    <div class="panel panel-agent">
+      <div class="panel-header">
+        <div class="panel-badge">&#10003;</div>
+        <div class="panel-mode">Agent Mode</div>
+      </div>
+      <div class="status-row">
+        <div class="status-icon-pass">&#10003;</div>
+        <div class="status-label-pass">Task completed successfully</div>
+      </div>
+      <div class="response-bubble">
+        I'll use the <span class="tool-badge">&#127760; browser tool</span> to check the current forecast...
+        <br><br>
+        Searching weather.com for Tampa, FL...
+        <span class="result">Current Tampa forecast: 78&#176;F, Partly Cloudy. High of 82&#176;F. No rain expected. Good conditions for outdoor loading operations.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="bottom-text">The <span class="accent">agent</span> uses tools to get real answers — the chatbot can only apologize.</div>
+  </div>
+</div>
+</body>
+</html>

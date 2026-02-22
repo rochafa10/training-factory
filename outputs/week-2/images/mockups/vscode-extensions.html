@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #1e1e1e; color: #cccccc; font-family: 'Segoe UI', sans-serif; display: flex; overflow: hidden; }
+.sidebar { width: 48px; background: #333333; display: flex; flex-direction: column; align-items: center; padding-top: 8px; gap: 16px; }
+.sidebar-icon { width: 28px; height: 28px; background: #555; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #999; }
+.sidebar-icon.active { background: #1e1e1e; border-left: 2px solid #007acc; color: #fff; }
+.ext-panel { width: 260px; background: #252526; border-right: 1px solid #3c3c3c; display: flex; flex-direction: column; }
+.ext-header { padding: 8px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #999; border-bottom: 1px solid #3c3c3c; }
+.search-box { margin: 8px; padding: 6px 10px; background: #3c3c3c; border: 1px solid #555; border-radius: 4px; color: #fff; font-size: 13px; }
+.ext-item { display: flex; padding: 10px 12px; gap: 10px; border-bottom: 1px solid #2a2a2a; cursor: pointer; }
+.ext-item.selected { background: #094771; }
+.ext-icon { width: 42px; height: 42px; border-radius: 4px; flex-shrink: 0; }
+.ext-icon.copilot { background: linear-gradient(135deg, #000, #1a1a2e); display: flex; align-items: center; justify-content: center; }
+.ext-icon.copilot::after { content: '🤖'; font-size: 24px; }
+.ext-info { flex: 1; min-width: 0; }
+.ext-name { font-size: 13px; font-weight: 600; color: #fff; }
+.ext-desc { font-size: 11px; color: #999; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ext-meta { font-size: 10px; color: #777; margin-top: 4px; }
+.ext-meta span { margin-right: 8px; }
+.main-area { flex: 1; display: flex; flex-direction: column; }
+.ext-detail-header { padding: 16px 24px; display: flex; gap: 16px; align-items: flex-start; border-bottom: 1px solid #3c3c3c; }
+.ext-detail-icon { width: 64px; height: 64px; border-radius: 8px; background: linear-gradient(135deg, #000, #1a1a2e); display: flex; align-items: center; justify-content: center; font-size: 36px; }
+.ext-detail-info h2 { font-size: 20px; color: #fff; font-weight: 600; }
+.ext-detail-info .publisher { font-size: 13px; color: #4fc1ff; margin-top: 4px; }
+.ext-detail-info .stats { font-size: 12px; color: #999; margin-top: 6px; }
+.ext-detail-info .stats span { margin-right: 12px; }
+.install-btn { margin-top: 10px; padding: 6px 20px; background: #007acc; color: #fff; border: none; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; display: inline-block; }
+.ext-detail-body { padding: 20px 24px; flex: 1; overflow: hidden; }
+.ext-detail-body h3 { font-size: 16px; color: #fff; margin-bottom: 12px; }
+.ext-detail-body p { font-size: 13px; line-height: 1.6; color: #ccc; margin-bottom: 12px; }
+.callout { position: absolute; display: flex; align-items: center; gap: 6px; }
+.callout-num { background: #cc0000; color: #fff; width: 24px; height: 24px; border-radius: 50%; font-weight: bold; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+.callout-text { background: rgba(0,0,0,0.85); padding: 4px 10px; border-radius: 4px; font-size: 12px; color: #fff; white-space: nowrap; }
+</style></head><body>
+<div class="sidebar">
+  <div class="sidebar-icon">📄</div>
+  <div class="sidebar-icon">🔍</div>
+  <div class="sidebar-icon">🔀</div>
+  <div class="sidebar-icon">▶</div>
+  <div class="sidebar-icon active">⊞</div>
+</div>
+<div class="ext-panel">
+  <div class="ext-header">Extensions</div>
+  <input class="search-box" value="GitHub Copilot" readonly>
+  <div class="ext-item selected">
+    <div class="ext-icon copilot"></div>
+    <div class="ext-info">
+      <div class="ext-name">GitHub Copilot</div>
+      <div class="ext-desc">Your AI pair programmer</div>
+      <div class="ext-meta"><span>GitHub</span><span>⭐ 4.5</span><span>25M+</span></div>
+    </div>
+  </div>
+  <div class="ext-item">
+    <div class="ext-icon" style="background:#2d2d30;display:flex;align-items:center;justify-content:center;font-size:20px;">💬</div>
+    <div class="ext-info">
+      <div class="ext-name">GitHub Copilot Chat</div>
+      <div class="ext-desc">Chat with Copilot in VS Code</div>
+      <div class="ext-meta"><span>GitHub</span><span>⭐ 4.3</span><span>18M+</span></div>
+    </div>
+  </div>
+</div>
+<div class="main-area">
+  <div class="ext-detail-header">
+    <div class="ext-detail-icon">🤖</div>
+    <div class="ext-detail-info">
+      <h2>GitHub Copilot</h2>
+      <div class="publisher">GitHub</div>
+      <div class="stats"><span>★★★★½</span><span>25,432,891 installs</span><span>v1.245.0</span></div>
+      <button class="install-btn">Install</button>
+    </div>
+  </div>
+  <div class="ext-detail-body">
+    <h3>Your AI pair programmer</h3>
+    <p>GitHub Copilot provides autocomplete-style suggestions, chat assistance, and agent mode capabilities directly in VS Code. Powered by Claude, GPT-4, and Gemini models.</p>
+    <p>Features: Code completions, Chat Mode (Ctrl+Shift+I), Edit Mode, Agent Mode for autonomous multi-step tasks.</p>
+  </div>
+</div>
+<div class="callout" style="top: 60px; left: 280px;"><div class="callout-num">1</div><div class="callout-text">Search for "GitHub Copilot"</div></div>
+<div class="callout" style="top: 130px; left: 120px;"><div class="callout-num">2</div><div class="callout-text">Click first result</div></div>
+<div class="callout" style="top: 230px; left: 520px;"><div class="callout-num">3</div><div class="callout-text">Click Install</div></div>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #1e1e1e; color: #cccccc; font-family: 'Consolas', 'Courier New', monospace; overflow: hidden; }
+.titlebar { height: 30px; background: #323233; display: flex; align-items: center; padding: 0 12px; font-size: 12px; color: #999; font-family: 'Segoe UI', sans-serif; }
+.tab-bar { height: 35px; background: #252526; display: flex; align-items: center; border-bottom: 1px solid #3c3c3c; }
+.tab { padding: 0 16px; height: 100%; display: flex; align-items: center; font-size: 12px; color: #999; font-family: 'Segoe UI', sans-serif; border-right: 1px solid #3c3c3c; }
+.tab.active { background: #1e1e1e; color: #fff; }
+.diff-header { height: 28px; background: #2d2d30; display: flex; align-items: center; padding: 0 16px; font-size: 11px; color: #999; font-family: 'Segoe UI', sans-serif; justify-content: space-between; }
+.diff-container { display: flex; height: calc(100% - 93px); }
+.diff-side { flex: 1; overflow: hidden; }
+.diff-side.left { border-right: 1px solid #3c3c3c; }
+.line { display: flex; height: 22px; align-items: center; font-size: 13px; }
+.line-num { width: 45px; text-align: right; padding-right: 12px; color: #555; font-size: 12px; flex-shrink: 0; }
+.line-content { flex: 1; padding-left: 8px; white-space: pre; }
+.line.deleted { background: rgba(220, 38, 38, 0.15); }
+.line.deleted .line-content { color: #f87171; }
+.line.added { background: rgba(22, 163, 74, 0.15); }
+.line.added .line-content { color: #4ade80; }
+.line.unchanged .line-content { color: #999; }
+.callout { position: absolute; display: flex; align-items: center; gap: 6px; z-index: 20; }
+.callout-num { background: #cc0000; color: #fff; width: 24px; height: 24px; border-radius: 50%; font-weight: bold; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.callout-text { background: rgba(0,0,0,0.85); padding: 4px 10px; border-radius: 4px; font-size: 12px; color: #fff; white-space: nowrap; font-family: 'Segoe UI', sans-serif; }
+</style></head><body>
+<div class="titlebar">VS Code — Diff View</div>
+<div class="tab-bar">
+  <div class="tab active">dashboard.html (Working Tree)</div>
+  <div class="tab">shift-summary.html</div>
+</div>
+<div class="diff-header">
+  <span>dashboard.html — Original ↔ Modified</span>
+  <span>3 additions, 1 deletion</span>
+</div>
+<div class="diff-container">
+  <div class="diff-side left">
+    <div class="line unchanged"><span class="line-num">12</span><span class="line-content">&lt;h1&gt;Daily Time Savings Dashboard&lt;/h1&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">13</span><span class="line-content">&lt;div class="form-section"&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">14</span><span class="line-content">  &lt;input id="task" placeholder="Task name"&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">15</span><span class="line-content">  &lt;input id="without" type="number" placeholder="Min without AI"&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">16</span><span class="line-content">  &lt;input id="with" type="number" placeholder="Min with AI"&gt;</span></div>
+    <div class="line deleted"><span class="line-num">17</span><span class="line-content">  &lt;button onclick="addEntry()"&gt;Add Entry&lt;/button&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">18</span><span class="line-content">&lt;/div&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">19</span><span class="line-content">&lt;div class="entries"&gt;&lt;/div&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">20</span><span class="line-content">&lt;div class="chart"&gt;&lt;/div&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">21</span><span class="line-content"></span></div>
+    <div class="line unchanged"><span class="line-num">22</span><span class="line-content"></span></div>
+    <div class="line unchanged"><span class="line-num">23</span><span class="line-content"></span></div>
+  </div>
+  <div class="diff-side">
+    <div class="line unchanged"><span class="line-num">12</span><span class="line-content">&lt;h1&gt;Daily Time Savings Dashboard&lt;/h1&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">13</span><span class="line-content">&lt;div class="form-section"&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">14</span><span class="line-content">  &lt;input id="task" placeholder="Task name"&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">15</span><span class="line-content">  &lt;input id="without" type="number" placeholder="Min without AI"&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">16</span><span class="line-content">  &lt;input id="with" type="number" placeholder="Min with AI"&gt;</span></div>
+    <div class="line added"><span class="line-num">17</span><span class="line-content">  &lt;button onclick="addEntry()"&gt;Add Entry&lt;/button&gt;</span></div>
+    <div class="line added"><span class="line-num">18</span><span class="line-content">  &lt;button onclick="exportCSV()"&gt;Export CSV&lt;/button&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">19</span><span class="line-content">&lt;/div&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">20</span><span class="line-content">&lt;div class="entries"&gt;&lt;/div&gt;</span></div>
+    <div class="line added"><span class="line-num">21</span><span class="line-content">&lt;div class="weekly-goal"&gt;</span></div>
+    <div class="line added"><span class="line-num">22</span><span class="line-content">  &lt;div class="progress-bar"&gt;72/120 min&lt;/div&gt;</span></div>
+    <div class="line added"><span class="line-num">23</span><span class="line-content">&lt;/div&gt;</span></div>
+    <div class="line unchanged"><span class="line-num">24</span><span class="line-content">&lt;div class="chart"&gt;&lt;/div&gt;</span></div>
+  </div>
+</div>
+<div class="callout" style="top: 250px; left: 60px;"><div class="callout-num">1</div><div class="callout-text">Red = removed line</div></div>
+<div class="callout" style="top: 250px; right: 60px;"><div class="callout-num">2</div><div class="callout-text">Green = added lines</div></div>
+<div class="callout" style="top: 50px; right: 100px;"><div class="callout-num">3</div><div class="callout-text">3 additions, 1 deletion</div></div>
+</body></html>

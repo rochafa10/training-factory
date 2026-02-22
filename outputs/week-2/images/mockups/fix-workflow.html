@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fix Workflow - Slide 74</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 32px 40px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 28px; }
+  .workflow { flex: 1; display: flex; align-items: center; justify-content: center; }
+  .steps { display: flex; align-items: flex-start; gap: 0; }
+  .step { display: flex; flex-direction: column; align-items: center; width: 140px; }
+  .step-circle { width: 52px; height: 52px; background: #cc0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+  .step-name { font-size: 14px; font-weight: 700; color: #000; text-align: center; margin-bottom: 6px; line-height: 1.2; }
+  .step-desc { font-size: 11px; color: #666; text-align: center; line-height: 1.4; }
+  .arrow { display: flex; align-items: center; justify-content: center; width: 36px; padding-top: 0; margin-top: 14px; }
+  .arrow svg { width: 32px; height: 20px; }
+  .loop-container { display: flex; flex-direction: column; align-items: center; margin-top: 20px; }
+  .loop-arrow { margin-top: 16px; }
+  .loop-label { font-size: 11px; color: #cc0000; font-weight: 600; text-align: center; margin-top: 4px; }
+  .footer-tip { margin-top: auto; padding: 12px 20px; background: #f5f5f5; border-left: 4px solid #cc0000; border-radius: 0 8px 8px 0; font-size: 13px; color: #555; }
+  .footer-tip strong { color: #cc0000; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">The Fix Workflow</div>
+  <div class="subtitle">5 steps to correct any AI agent mistake</div>
+  <div class="workflow">
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-circle">1</div>
+        <div class="step-name">Identify</div>
+        <div class="step-desc">Spot what's wrong in the output</div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">2</div>
+        <div class="step-name">Tell Agent</div>
+        <div class="step-desc">Describe the specific error clearly</div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">3</div>
+        <div class="step-name">Watch Fix</div>
+        <div class="step-desc">Let the agent apply its correction</div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">4</div>
+        <div class="step-name">Check Diff</div>
+        <div class="step-desc">Review what actually changed</div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#d4d4d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="step">
+        <div class="step-circle">5</div>
+        <div class="step-name">Still Wrong?</div>
+        <div class="step-desc">Be more specific and go back to step 2</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Loop arrow from step 5 back to step 2 -->
+  <svg width="880" height="48" viewBox="0 0 880 48" style="margin: -8px auto 0 auto; display: block;">
+    <path d="M740 4 C740 36, 200 36, 200 4" stroke="#cc0000" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+    <path d="M204 12 L200 2 L196 12" stroke="#cc0000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="470" y="42" text-anchor="middle" fill="#cc0000" font-family="Arial" font-size="12" font-weight="600">Iterate until correct</text>
+  </svg>
+
+  <div class="footer-tip"><strong>Remember:</strong> Each iteration should include MORE specific language. "Make it better" wastes cycles. "Change the header color to #cc0000" gets it done.</div>
+</div>
+</body>
+</html>

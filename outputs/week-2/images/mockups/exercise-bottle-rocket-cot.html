@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Bottle Rocket CoT Exercise</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; background: #e8e8e8; }
+
+/* Browser Chrome */
+.browser { width: 960px; height: 540px; display: flex; flex-direction: column; background: #ffffff; }
+.browser-toolbar { background: #f0f0f0; border-bottom: 1px solid #d0d0d0; padding: 8px 12px; display: flex; align-items: center; gap: 10px; }
+.browser-dots { display: flex; gap: 6px; }
+.browser-dots span { width: 12px; height: 12px; border-radius: 50%; }
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+.browser-nav { display: flex; align-items: center; gap: 6px; margin-left: 4px; }
+.nav-btn { width: 28px; height: 28px; background: none; border: none; color: #666; font-size: 16px; cursor: default; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+.url-bar { flex: 1; background: #ffffff; border: 1px solid #d0d0d0; border-radius: 20px; padding: 6px 14px; font-size: 13px; color: #333; display: flex; align-items: center; gap: 6px; }
+.url-lock { color: #16a34a; font-size: 12px; }
+.url-text { color: #333; }
+
+/* Tesla header bar */
+.tesla-header { background: #cc0000; height: 6px; width: 100%; }
+.app-header { background: #ffffff; border-bottom: 1px solid #e0e0e0; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+.app-logo { display: flex; align-items: center; gap: 10px; }
+.app-logo-icon { font-size: 22px; font-weight: 800; color: #cc0000; letter-spacing: 2px; }
+.app-logo-divider { width: 1px; height: 24px; background: #d0d0d0; }
+.app-logo-text { font-size: 16px; font-weight: 600; color: #333; }
+.app-nav { display: flex; gap: 16px; }
+.app-nav span { font-size: 12px; color: #666; padding: 4px 10px; border-radius: 4px; cursor: default; }
+.app-nav span.active { background: #f5f5f5; color: #000; font-weight: 600; }
+
+/* Chat Area */
+.chat-area { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.chat-messages { flex: 1; padding: 16px 24px; overflow: hidden; display: flex; flex-direction: column; gap: 12px; }
+
+.msg { display: flex; gap: 10px; max-width: 85%; }
+.msg.user { align-self: flex-end; flex-direction: row-reverse; }
+.msg.ai { align-self: flex-start; }
+
+.msg-avatar { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: #fff; flex-shrink: 0; }
+.msg.user .msg-avatar { background: #cc0000; }
+.msg.ai .msg-avatar { background: #333; font-size: 11px; }
+
+.msg-bubble { padding: 12px 16px; border-radius: 12px; font-size: 13px; line-height: 1.55; }
+.msg.user .msg-bubble { background: #fef2f2; border: 1px solid #fecaca; color: #1a1a1a; border-radius: 12px 12px 4px 12px; }
+.msg.ai .msg-bubble { background: #f5f5f5; border: 1px solid #e0e0e0; color: #1a1a1a; border-radius: 12px 12px 12px 4px; }
+
+.msg-bubble strong { color: #cc0000; font-weight: 700; }
+.msg-bubble .step { margin: 6px 0 2px 0; font-weight: 600; color: #000; }
+.msg-bubble .step-detail { margin-left: 16px; color: #444; }
+.typing-indicator { display: inline-flex; gap: 4px; margin-top: 4px; }
+.typing-indicator span { width: 6px; height: 6px; background: #999; border-radius: 50%; animation: blink 1.4s infinite both; }
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes blink { 0%, 80%, 100% { opacity: 0.3; } 40% { opacity: 1; } }
+
+/* Input area */
+.chat-input { padding: 12px 24px 16px; border-top: 1px solid #e0e0e0; background: #fff; }
+.input-row { display: flex; align-items: center; gap: 8px; background: #f5f5f5; border: 1px solid #d0d0d0; border-radius: 24px; padding: 8px 16px; }
+.input-row input { flex: 1; border: none; background: none; font-size: 13px; color: #999; outline: none; }
+.input-row .send-btn { width: 32px; height: 32px; background: #cc0000; border: none; border-radius: 50%; color: #fff; font-size: 16px; cursor: default; display: flex; align-items: center; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="browser">
+  <!-- Browser toolbar -->
+  <div class="browser-toolbar">
+    <div class="browser-dots">
+      <span class="dot-red"></span>
+      <span class="dot-yellow"></span>
+      <span class="dot-green"></span>
+    </div>
+    <div class="browser-nav">
+      <div class="nav-btn">&larr;</div>
+      <div class="nav-btn">&rarr;</div>
+      <div class="nav-btn">&#8635;</div>
+    </div>
+    <div class="url-bar">
+      <span class="url-lock">&#128274;</span>
+      <span class="url-text">go.tesla.com/chat</span>
+    </div>
+  </div>
+
+  <!-- Tesla accent bar -->
+  <div class="tesla-header"></div>
+
+  <!-- App header -->
+  <div class="app-header">
+    <div class="app-logo">
+      <span class="app-logo-icon">TESLA</span>
+      <span class="app-logo-divider"></span>
+      <span class="app-logo-text">Bottle Rocket</span>
+    </div>
+    <div class="app-nav">
+      <span class="active">Chat</span>
+      <span>History</span>
+      <span>Help</span>
+    </div>
+  </div>
+
+  <!-- Chat -->
+  <div class="chat-area">
+    <div class="chat-messages">
+      <!-- User message -->
+      <div class="msg user">
+        <div class="msg-avatar">JM</div>
+        <div class="msg-bubble">
+          You are a DC operations analyst with 10 years experience. Analyze this week's DC performance step by step:<br><br>
+          1. Calculate daily orders-per-associate ratio<br>
+          2. Identify the trend direction (improving, declining, flat)<br>
+          3. Flag any day where ratio drops below 45<br>
+          4. Recommend one specific action for next week<br><br>
+          Data: Mon 2,340 orders / 48 associates, Tue 2,180 / 46, Wed 2,510 / 50, Thu 2,050 / 47, Fri 2,420 / 49
+        </div>
+      </div>
+
+      <!-- AI response -->
+      <div class="msg ai">
+        <div class="msg-avatar">BR</div>
+        <div class="msg-bubble">
+          <div class="step">Step 1: Daily Orders-per-Associate Ratio</div>
+          <div class="step-detail">
+            Mon: 2,340 / 48 = <strong>48.8</strong> &nbsp;|&nbsp;
+            Tue: 2,180 / 46 = <strong>47.4</strong> &nbsp;|&nbsp;
+            Wed: 2,510 / 50 = <strong>50.2</strong><br>
+            Thu: 2,050 / 47 = <strong>43.6</strong> &nbsp;|&nbsp;
+            Fri: 2,420 / 49 = <strong>49.4</strong>
+          </div>
+          <div class="step" style="margin-top: 8px;">Step 2: Trend Analysis</div>
+          <div class="step-detail">
+            The overall trend is <strong>slightly volatile</strong> — mid-week peak on Wed (50.2) followed by a notable dip Thu (43.6), then recovery Fri (49.4). Week average: 47.9.
+          </div>
+          <div class="step" style="margin-top: 8px;">Step 3: Below-Threshold Flag</div>
+          <div class="step-detail">
+            &#9888;&#65039; <strong>Thursday: 43.6</strong> — fell below the 45 threshold. This correlates with...
+          </div>
+          <div class="typing-indicator"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input">
+      <div class="input-row">
+        <input type="text" value="Ask Bottle Rocket anything..." disabled>
+        <div class="send-btn">&#9654;</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

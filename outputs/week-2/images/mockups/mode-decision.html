@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mode Decision - Slide 33</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 36px 48px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 32px; }
+  .flow-container { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+  .flow-row { display: flex; align-items: center; gap: 0; }
+  .trigger-box { width: 260px; background: #f5f5f5; border: 2px solid #e0e0e0; border-radius: 10px; padding: 16px 20px; flex-shrink: 0; }
+  .trigger-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 4px; }
+  .trigger-text { font-size: 15px; font-weight: 600; color: #333; }
+  .arrow-segment { width: 80px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .arrow-segment svg { width: 60px; height: 24px; }
+  .mode-box { flex: 1; border-radius: 10px; padding: 16px 24px; display: flex; align-items: center; gap: 16px; }
+  .mode-chat { background: #eff6ff; border: 2px solid #2563eb; }
+  .mode-edit { background: #fffbeb; border: 2px solid #b45309; }
+  .mode-agent { background: #f0fdf4; border: 2px solid #16a34a; }
+  .mode-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; flex-shrink: 0; }
+  .mode-chat .mode-icon { background: #2563eb; }
+  .mode-edit .mode-icon { background: #b45309; }
+  .mode-agent .mode-icon { background: #16a34a; }
+  .mode-info { flex: 1; }
+  .mode-name { font-size: 18px; font-weight: 700; }
+  .mode-chat .mode-name { color: #2563eb; }
+  .mode-edit .mode-name { color: #b45309; }
+  .mode-agent .mode-name { color: #16a34a; }
+  .mode-desc { font-size: 13px; color: #555; margin-top: 2px; }
+  .mode-example { font-size: 11px; color: #888; font-style: italic; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">Which Mode Do I Use?</div>
+  <div class="subtitle">Match your intent to the right Copilot mode</div>
+  <div class="flow-container">
+
+    <div class="flow-row">
+      <div class="trigger-box">
+        <div class="trigger-label">You're thinking...</div>
+        <div class="trigger-text">"I have a question..."</div>
+      </div>
+      <div class="arrow-segment">
+        <svg viewBox="0 0 60 24"><path d="M0 12H48" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/><path d="M44 6L52 12L44 18" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="mode-box mode-chat">
+        <div class="mode-icon">&#128172;</div>
+        <div class="mode-info">
+          <div class="mode-name">Chat Mode</div>
+          <div class="mode-desc">Ask questions, get explanations, brainstorm ideas</div>
+          <div class="mode-example">"Explain pick-rate calculation" / "What does this error mean?"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-row">
+      <div class="trigger-box">
+        <div class="trigger-label">You're thinking...</div>
+        <div class="trigger-text">"Change this specific thing..."</div>
+      </div>
+      <div class="arrow-segment">
+        <svg viewBox="0 0 60 24"><path d="M0 12H48" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/><path d="M44 6L52 12L44 18" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="mode-box mode-edit">
+        <div class="mode-icon">&#9998;</div>
+        <div class="mode-info">
+          <div class="mode-name">Edit Mode</div>
+          <div class="mode-desc">Modify highlighted code, refactor a section, fix a bug</div>
+          <div class="mode-example">"Add error handling here" / "Change this to use a dropdown"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-row">
+      <div class="trigger-box">
+        <div class="trigger-label">You're thinking...</div>
+        <div class="trigger-text">"Build me a..."</div>
+      </div>
+      <div class="arrow-segment">
+        <svg viewBox="0 0 60 24"><path d="M0 12H48" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/><path d="M44 6L52 12L44 18" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="mode-box mode-agent">
+        <div class="mode-icon">&#9881;</div>
+        <div class="mode-info">
+          <div class="mode-name">Agent Mode</div>
+          <div class="mode-desc">Multi-step tasks: create files, run commands, build features</div>
+          <div class="mode-example">"Build a shift dashboard" / "Create a report from this CSV"</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

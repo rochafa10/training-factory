@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #1e1e1e; color: #cccccc; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
+.titlebar { height: 30px; background: #323233; display: flex; align-items: center; padding: 0 12px; font-size: 12px; color: #999; }
+.main { display: flex; height: 510px; }
+.sidebar { width: 48px; background: #333333; display: flex; flex-direction: column; align-items: center; padding-top: 8px; gap: 16px; }
+.sidebar-icon { width: 28px; height: 28px; background: #555; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #999; }
+.sidebar-icon.active { background: #1e1e1e; border-left: 2px solid #007acc; color: #fff; }
+.chat-panel { width: 360px; background: #1e1e1e; border-right: 1px solid #3c3c3c; display: flex; flex-direction: column; }
+.chat-header { padding: 10px 14px; border-bottom: 1px solid #3c3c3c; display: flex; align-items: center; justify-content: space-between; }
+.chat-header-left { display: flex; align-items: center; gap: 8px; }
+.chat-title { font-size: 13px; font-weight: 600; color: #fff; }
+.model-dropdown { position: relative; }
+.model-btn { padding: 4px 12px; background: #3c3c3c; border: 1px solid #555; border-radius: 4px; color: #fff; font-size: 12px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.model-btn::after { content: '▾'; font-size: 10px; color: #999; }
+.model-menu { position: absolute; top: 28px; left: 0; background: #2d2d30; border: 1px solid #555; border-radius: 6px; width: 280px; padding: 4px 0; z-index: 10; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+.model-item { padding: 8px 14px; font-size: 12px; color: #ccc; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.model-item:hover { background: #094771; }
+.model-item.selected { background: #094771; color: #fff; }
+.model-item .check { color: #4fc1ff; font-weight: bold; }
+.model-item .cost { font-size: 10px; color: #999; }
+.model-group { padding: 6px 14px 4px; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #777; }
+.separator { height: 1px; background: #3c3c3c; margin: 4px 0; }
+.chat-messages { flex: 1; padding: 16px; overflow: hidden; }
+.msg { margin-bottom: 14px; }
+.msg-user { font-size: 12px; color: #4fc1ff; font-weight: 600; margin-bottom: 4px; }
+.msg-bot { font-size: 12px; color: #69d4aa; font-weight: 600; margin-bottom: 4px; }
+.msg-text { font-size: 13px; line-height: 1.5; color: #ddd; }
+.editor-area { flex: 1; background: #1e1e1e; display: flex; align-items: center; justify-content: center; }
+.editor-placeholder { font-size: 14px; color: #555; text-align: center; }
+.callout { position: absolute; display: flex; align-items: center; gap: 6px; z-index: 20; }
+.callout-num { background: #cc0000; color: #fff; width: 24px; height: 24px; border-radius: 50%; font-weight: bold; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.callout-text { background: rgba(0,0,0,0.85); padding: 4px 10px; border-radius: 4px; font-size: 12px; color: #fff; white-space: nowrap; }
+</style></head><body>
+<div class="titlebar">VS Code — Copilot Chat</div>
+<div class="main">
+<div class="sidebar">
+  <div class="sidebar-icon">📄</div>
+  <div class="sidebar-icon">🔍</div>
+  <div class="sidebar-icon">🔀</div>
+  <div class="sidebar-icon active">💬</div>
+  <div class="sidebar-icon">⊞</div>
+</div>
+<div class="chat-panel">
+  <div class="chat-header">
+    <div class="chat-header-left">
+      <div class="chat-title">Copilot Chat</div>
+    </div>
+    <div class="model-dropdown">
+      <div class="model-btn">Claude Opus 4.5</div>
+      <div class="model-menu">
+        <div class="model-group">Premium Models</div>
+        <div class="model-item selected"><span>✓ Claude Opus 4.5</span><span class="cost">3 req/msg</span></div>
+        <div class="model-item"><span>Claude Sonnet 4</span><span class="cost">1 req/msg</span></div>
+        <div class="model-item"><span>GPT-4o</span><span class="cost">1 req/msg</span></div>
+        <div class="model-item"><span>Gemini 2.5 Pro</span><span class="cost">1 req/msg</span></div>
+        <div class="separator"></div>
+        <div class="model-group">Fast Models</div>
+        <div class="model-item"><span>Claude Haiku 4.5</span><span class="cost">free</span></div>
+        <div class="model-item"><span>GPT-4o Mini</span><span class="cost">free</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="chat-messages">
+    <div class="msg"><div class="msg-user">You</div><div class="msg-text">Hello! I'm an operations manager at a distribution center.</div></div>
+    <div class="msg"><div class="msg-bot">Copilot (Claude Opus 4.5)</div><div class="msg-text">Hello! I'd be happy to help with your distribution center operations. What can I assist you with today?</div></div>
+  </div>
+</div>
+<div class="editor-area">
+  <div class="editor-placeholder">Welcome to VS Code<br><br>Open a folder or file to get started</div>
+</div>
+</div>
+<div class="callout" style="top: 44px; right: 380px;"><div class="callout-num">1</div><div class="callout-text">Click model dropdown</div></div>
+<div class="callout" style="top: 100px; right: 340px;"><div class="callout-num">2</div><div class="callout-text">Select Claude Opus 4.5</div></div>
+</body></html>

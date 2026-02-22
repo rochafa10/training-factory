@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Iteration Cycle Concept</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; background: #ffffff; }
+
+.container { padding: 24px 36px 20px; height: 100%; display: flex; flex-direction: column; align-items: center; }
+
+.title { font-size: 26px; font-weight: 700; color: #000000; text-align: center; margin-bottom: 4px; }
+.subtitle { font-size: 14px; color: #666666; text-align: center; margin-bottom: 20px; }
+
+/* Cycle area */
+.cycle-area {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center label */
+.center-label {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #cc0000 0%, #a00000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 4px 24px rgba(204, 0, 0, 0.3);
+}
+.center-icon { font-size: 28px; color: #fff; margin-bottom: 4px; }
+.center-text { font-size: 14px; font-weight: 700; color: #fff; text-align: center; line-height: 1.2; }
+
+/* Step nodes positioned in a circle */
+.step-node {
+  position: absolute;
+  width: 165px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 12px 14px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+  z-index: 5;
+}
+.step-node.active {
+  border-color: #cc0000;
+  box-shadow: 0 2px 12px rgba(204, 0, 0, 0.12);
+}
+
+.step-num {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #cc0000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.step-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+}
+.step-desc {
+  font-size: 10px;
+  color: #666;
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+/* SVG arrows layer */
+.arrows-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Positions for 6 nodes in an ellipse */
+/* Node 1: top center */
+.node-1 { top: 10px; left: 50%; transform: translateX(-50%); }
+/* Node 2: top right */
+.node-2 { top: 75px; right: 30px; }
+/* Node 3: bottom right */
+.node-3 { bottom: 55px; right: 30px; }
+/* Node 4: bottom center */
+.node-4 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+/* Node 5: bottom left */
+.node-5 { bottom: 55px; left: 30px; }
+/* Node 6: top left */
+.node-6 { top: 75px; left: 30px; }
+
+/* Bottom tip */
+.tip-bar {
+  margin-top: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.tip-icon { font-size: 18px; color: #cc0000; }
+.tip-text { font-size: 12px; color: #333; line-height: 1.4; }
+.tip-text strong { color: #000; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="title">The Iteration Cycle</div>
+  <div class="subtitle">Great results come from refining, not from the first attempt</div>
+
+  <div class="cycle-area">
+    <!-- SVG arrows -->
+    <svg class="arrows-layer" viewBox="0 0 888 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Curved arrows connecting nodes in a cycle -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#cc0000" />
+        </marker>
+      </defs>
+      <!-- 1 to 2 -->
+      <path d="M 530 50 Q 650 30 720 80" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6,4" />
+      <!-- 2 to 3 -->
+      <path d="M 760 155 Q 780 220 760 260" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6,4" />
+      <!-- 3 to 4 -->
+      <path d="M 700 320 Q 620 360 530 340" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6,4" />
+      <!-- 4 to 5 -->
+      <path d="M 360 340 Q 280 360 200 320" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6,4" />
+      <!-- 5 to 6 -->
+      <path d="M 130 260 Q 110 220 130 155" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6,4" />
+      <!-- 6 to 1 -->
+      <path d="M 195 80 Q 260 30 360 50" stroke="#cc0000" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="6,4" />
+    </svg>
+
+    <!-- Center label -->
+    <div class="center-label">
+      <div class="center-icon">&#128260;</div>
+      <div class="center-text">Continuous<br>Improvement</div>
+    </div>
+
+    <!-- Step nodes -->
+    <div class="step-node active node-1">
+      <div class="step-num">1</div>
+      <div class="step-title">Build</div>
+      <div class="step-desc">Give the agent a clear prompt and let it generate output</div>
+    </div>
+
+    <div class="step-node node-2">
+      <div class="step-num">2</div>
+      <div class="step-title">Review</div>
+      <div class="step-desc">Read the full output carefully before reacting</div>
+    </div>
+
+    <div class="step-node node-3">
+      <div class="step-num">3</div>
+      <div class="step-title">Identify Issues</div>
+      <div class="step-desc">Note what's wrong, missing, or could be better</div>
+    </div>
+
+    <div class="step-node node-4">
+      <div class="step-num">4</div>
+      <div class="step-title">Give Specific Feedback</div>
+      <div class="step-desc">Tell the agent exactly what to change and why</div>
+    </div>
+
+    <div class="step-node node-5">
+      <div class="step-num">5</div>
+      <div class="step-title">Agent Fixes</div>
+      <div class="step-desc">The agent revises based on your precise instructions</div>
+    </div>
+
+    <div class="step-node node-6">
+      <div class="step-num">6</div>
+      <div class="step-title">Review Again</div>
+      <div class="step-desc">Check improvements and decide: ship it or iterate again</div>
+    </div>
+  </div>
+
+  <div class="tip-bar">
+    <div class="tip-icon">&#128161;</div>
+    <div class="tip-text"><strong>Pro tip:</strong> Most AGMs get great results by the 2nd or 3rd iteration. Each round of specific feedback gets you 80% closer to perfect.</div>
+  </div>
+</div>
+</body>
+</html>

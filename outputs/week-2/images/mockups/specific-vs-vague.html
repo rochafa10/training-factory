@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Specific vs Vague - Slide 72</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 32px 48px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 24px; }
+  .panels { display: flex; gap: 28px; flex: 1; }
+  .panel { flex: 1; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .panel-vague { border: 3px solid #dc2626; }
+  .panel-specific { border: 3px solid #16a34a; }
+  .panel-header { padding: 12px 20px; color: #fff; font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .panel-vague .panel-header { background: #dc2626; }
+  .panel-specific .panel-header { background: #16a34a; }
+  .panel-body { padding: 20px; flex: 1; display: flex; flex-direction: column; gap: 12px; background: #fafafa; }
+  .instruction-box { background: #fff; border: 2px dashed #d0d0d0; border-radius: 8px; padding: 16px 18px; text-align: center; }
+  .panel-vague .instruction-box { border-color: #fca5a5; }
+  .panel-specific .instruction-box { border-color: #86efac; }
+  .instruction-text { font-size: 18px; font-weight: 700; color: #333; }
+  .instruction-text.vague { color: #dc2626; font-style: italic; }
+  .instruction-text.specific { color: #16a34a; }
+  .arrow-down { text-align: center; font-size: 24px; color: #ccc; }
+  .panel-vague .arrow-down { color: #dc2626; }
+  .panel-specific .arrow-down { color: #16a34a; }
+  .result-box { flex: 1; border-radius: 8px; padding: 16px 18px; }
+  .result-bad { background: #fef2f2; border: 1px solid #fca5a5; }
+  .result-good { background: #f0fdf4; border: 1px solid #86efac; }
+  .result-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .result-bad .result-label { color: #dc2626; }
+  .result-good .result-label { color: #16a34a; }
+  .result-item { font-size: 13px; color: #555; margin-bottom: 6px; display: flex; align-items: flex-start; gap: 6px; line-height: 1.4; }
+  .icon-bad { color: #dc2626; font-weight: 700; }
+  .icon-good { color: #16a34a; font-weight: 700; }
+  .mockup-dropdown { margin-top: 8px; background: #fff; border: 2px solid #16a34a; border-radius: 6px; padding: 8px 12px; font-size: 13px; color: #333; }
+  .mockup-dropdown .option { padding: 4px 0; border-bottom: 1px solid #f0f0f0; }
+  .mockup-dropdown .option:last-child { border-bottom: none; }
+  .mockup-dropdown .option.selected { font-weight: 700; color: #16a34a; }
+  .verdict { font-size: 12px; font-weight: 700; text-align: center; padding: 6px; border-radius: 6px; margin-top: auto; }
+  .verdict-bad { background: #fef2f2; color: #dc2626; }
+  .verdict-good { background: #f0fdf4; color: #16a34a; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">Vague vs. Specific Instructions</div>
+  <div class="subtitle">Precision in your prompt = precision in the result</div>
+  <div class="panels">
+
+    <div class="panel panel-vague">
+      <div class="panel-header"><span>&#10005;</span> Vague</div>
+      <div class="panel-body">
+        <div class="instruction-box">
+          <div class="instruction-text vague">"Make it better"</div>
+        </div>
+        <div class="arrow-down">&#9660;</div>
+        <div class="result-box result-bad">
+          <div class="result-label">What the agent does</div>
+          <div class="result-item"><span class="icon-bad">&#63;</span> Changes the font size randomly</div>
+          <div class="result-item"><span class="icon-bad">&#63;</span> Adds colors you didn't want</div>
+          <div class="result-item"><span class="icon-bad">&#63;</span> Rewrites text you liked</div>
+          <div class="result-item"><span class="icon-bad">&#63;</span> Moves things around</div>
+          <div class="result-item"><span class="icon-bad">&#63;</span> "Better" is subjective -- it guesses</div>
+        </div>
+        <div class="verdict verdict-bad">&#128694; Wastes time. Requires multiple retries.</div>
+      </div>
+    </div>
+
+    <div class="panel panel-specific">
+      <div class="panel-header"><span>&#10003;</span> Specific</div>
+      <div class="panel-body">
+        <div class="instruction-box">
+          <div class="instruction-text specific">"Add a dropdown with three options: Bottle Rocket, Copilot Chat, Copilot Agent"</div>
+        </div>
+        <div class="arrow-down">&#9660;</div>
+        <div class="result-box result-good">
+          <div class="result-label">What the agent does</div>
+          <div class="result-item"><span class="icon-good">&#10003;</span> Creates exactly one dropdown element</div>
+          <div class="result-item"><span class="icon-good">&#10003;</span> Adds exactly three options</div>
+          <div class="mockup-dropdown">
+            <div class="option selected">&#9660; Select AI Tool</div>
+            <div class="option">&nbsp;&nbsp;&nbsp;Bottle Rocket</div>
+            <div class="option">&nbsp;&nbsp;&nbsp;Copilot Chat</div>
+            <div class="option">&nbsp;&nbsp;&nbsp;Copilot Agent</div>
+          </div>
+        </div>
+        <div class="verdict verdict-good">&#9989; Done in one shot. Exactly what you asked for.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

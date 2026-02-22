@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phone Analogy - Slide 44</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 32px 48px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 24px; }
+  .columns { display: flex; gap: 32px; flex: 1; }
+  .col { flex: 1; display: flex; flex-direction: column; }
+  .col-header { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-radius: 10px 10px 0 0; }
+  .col-left .col-header { background: #f5f5f5; border: 2px solid #e0e0e0; border-bottom: none; }
+  .col-right .col-header { background: #fef2f2; border: 2px solid #cc0000; border-bottom: none; }
+  .col-icon { font-size: 28px; }
+  .col-title { font-size: 20px; font-weight: 700; color: #000; }
+  .rows { flex: 1; display: flex; flex-direction: column; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-left: 2px solid #e0e0e0; border-right: 2px solid #e0e0e0; border-bottom: 1px solid #f0f0f0; }
+  .col-right .row { border-left-color: #cc0000; border-right-color: #cc0000; }
+  .row:last-child { border-bottom: 2px solid #e0e0e0; border-radius: 0 0 10px 10px; }
+  .col-right .row:last-child { border-bottom-color: #cc0000; }
+  .row-icon { width: 36px; height: 36px; background: #f5f5f5; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .col-right .row-icon { background: #fef2f2; }
+  .row-content { flex: 1; }
+  .row-label { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 0.5px; }
+  .row-value { font-size: 14px; font-weight: 600; color: #333; }
+  .row-type { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 2px 8px; border-radius: 4px; }
+  .built-in { background: #e5e5e5; color: #666; }
+  .installed { background: #dcfce7; color: #16a34a; }
+  .arrow-col { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 48px; flex-shrink: 0; gap: 0; padding-top: 48px; }
+  .arrow-row { height: 70.5px; display: flex; align-items: center; justify-content: center; }
+  .arrow-row svg { width: 32px; height: 20px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">MCP = Apps for Your AI</div>
+  <div class="subtitle">Just like your phone, AI agents get more powerful with each tool you install</div>
+  <div class="columns">
+    <div class="col col-left">
+      <div class="col-header">
+        <span class="col-icon">&#128241;</span>
+        <span class="col-title">Your Phone</span>
+      </div>
+      <div class="rows">
+        <div class="row">
+          <div class="row-icon">&#128222;</div>
+          <div class="row-content">
+            <div class="row-label">Built-in</div>
+            <div class="row-value">Calls, Texts, Camera</div>
+          </div>
+          <span class="row-type built-in">Built-in</span>
+        </div>
+        <div class="row">
+          <div class="row-icon">&#128506;</div>
+          <div class="row-content">
+            <div class="row-label">Install app</div>
+            <div class="row-value">Google Maps</div>
+          </div>
+          <span class="row-type installed">Installed</span>
+        </div>
+        <div class="row">
+          <div class="row-icon">&#127974;</div>
+          <div class="row-content">
+            <div class="row-label">Install app</div>
+            <div class="row-value">Banking App</div>
+          </div>
+          <span class="row-type installed">Installed</span>
+        </div>
+        <div class="row" style="border-bottom: 2px solid #e0e0e0; border-radius: 0 0 10px 10px;">
+          <div class="row-icon">&#128172;</div>
+          <div class="row-content">
+            <div class="row-label">Install app</div>
+            <div class="row-value">Slack</div>
+          </div>
+          <span class="row-type installed">Installed</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow-col">
+      <div class="arrow-row"><svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#cc0000" stroke-width="2" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="arrow-row"><svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#cc0000" stroke-width="2" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="arrow-row"><svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#cc0000" stroke-width="2" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="arrow-row"><svg viewBox="0 0 32 20"><path d="M0 10H24" stroke="#cc0000" stroke-width="2" stroke-linecap="round"/><path d="M20 4L28 10L20 16" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+
+    <div class="col col-right">
+      <div class="col-header">
+        <span class="col-icon">&#129302;</span>
+        <span class="col-title">Your AI Agent</span>
+      </div>
+      <div class="rows">
+        <div class="row">
+          <div class="row-icon">&#128196;</div>
+          <div class="row-content">
+            <div class="row-label">Built-in</div>
+            <div class="row-value">Read & Write Files</div>
+          </div>
+          <span class="row-type built-in">Built-in</span>
+        </div>
+        <div class="row">
+          <div class="row-icon">&#127760;</div>
+          <div class="row-content">
+            <div class="row-label">Install MCP</div>
+            <div class="row-value">Playwright (Browser)</div>
+          </div>
+          <span class="row-type installed">MCP</span>
+        </div>
+        <div class="row">
+          <div class="row-icon">&#128451;</div>
+          <div class="row-content">
+            <div class="row-label">Install MCP</div>
+            <div class="row-value">Database Access</div>
+          </div>
+          <span class="row-type installed">MCP</span>
+        </div>
+        <div class="row" style="border-bottom: 2px solid #cc0000; border-radius: 0 0 10px 10px;">
+          <div class="row-icon">&#128279;</div>
+          <div class="row-content">
+            <div class="row-label">Install MCP</div>
+            <div class="row-value">API Connector</div>
+          </div>
+          <span class="row-type installed">MCP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

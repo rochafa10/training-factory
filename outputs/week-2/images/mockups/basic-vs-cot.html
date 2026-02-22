@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Basic vs CoT Prompt - Slide 11</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 32px 40px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 24px; }
+  .columns { display: flex; gap: 28px; flex: 1; }
+  .panel { flex: 1; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; border: 2px solid #e0e0e0; }
+  .panel-header { padding: 12px 20px; color: #fff; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+  .panel-left .panel-header { background: #dc2626; }
+  .panel-right .panel-header { background: #16a34a; }
+  .panel-body { padding: 16px 20px; flex: 1; background: #fafafa; }
+  .prompt-box { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 14px; margin-bottom: 12px; }
+  .prompt-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 6px; }
+  .prompt-text { font-size: 13px; color: #333; line-height: 1.5; font-style: italic; }
+  .output-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 8px; margin-top: 4px; }
+  .output-box { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 14px; flex: 1; }
+  .output-text { font-size: 12.5px; color: #333; line-height: 1.6; }
+  .output-text.vague { color: #888; }
+  .step { margin-bottom: 6px; font-size: 12px; color: #333; }
+  .step-num { display: inline-block; background: #16a34a; color: #fff; width: 18px; height: 18px; border-radius: 50%; text-align: center; line-height: 18px; font-size: 10px; font-weight: 700; margin-right: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 11px; }
+  th { background: #f0f0f0; padding: 4px 8px; text-align: left; font-weight: 700; border: 1px solid #e0e0e0; }
+  td { padding: 4px 8px; border: 1px solid #e0e0e0; }
+  .insight { font-size: 11px; color: #16a34a; font-weight: 600; margin-top: 6px; }
+  .x-icon { font-size: 18px; }
+  .check-icon { font-size: 18px; }
+  .panel-left { border-color: #dc2626; }
+  .panel-right { border-color: #16a34a; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">Basic Prompt vs. Chain-of-Thought</div>
+  <div class="subtitle">The same question, dramatically different results</div>
+  <div class="columns">
+    <div class="panel panel-left">
+      <div class="panel-header"><span class="x-icon">&#10005;</span> Basic Prompt</div>
+      <div class="panel-body">
+        <div class="prompt-box">
+          <div class="prompt-label">You typed</div>
+          <div class="prompt-text">"Analyze this week's order data"</div>
+        </div>
+        <div class="output-label">AI Response</div>
+        <div class="output-box">
+          <div class="output-text vague">
+            Orders varied throughout the week. Monday had the highest volume. Some days were busier than others. Overall the week was fairly typical.<br><br>
+            There were some fluctuations in the data. You might want to look at staffing levels to see if they correlate.<br><br>
+            <span style="color:#bbb; font-style:italic;">...generic, no actionable insights</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-right">
+      <div class="panel-header"><span class="check-icon">&#10003;</span> Chain-of-Thought Prompt</div>
+      <div class="panel-body">
+        <div class="prompt-box">
+          <div class="prompt-label">You typed</div>
+          <div class="prompt-text">"Step 1: Find the daily trend. Step 2: Flag anomalies. Step 3: Correlate with staffing."</div>
+        </div>
+        <div class="output-label">AI Response</div>
+        <div class="output-box">
+          <div class="step"><span class="step-num">1</span><strong>Daily Trend Identified</strong></div>
+          <table>
+            <tr><th>Day</th><th>Orders</th><th>Status</th></tr>
+            <tr><td>Mon</td><td>1,247</td><td style="color:#16a34a;">&#9650; Peak</td></tr>
+            <tr><td>Tue</td><td>1,102</td><td>Normal</td></tr>
+            <tr><td>Wed</td><td>643</td><td style="color:#dc2626;">&#9660; Anomaly</td></tr>
+          </table>
+          <div class="step"><span class="step-num">2</span><strong>Anomaly:</strong> Wed drop = conveyor outage 10am-2pm</div>
+          <div class="step"><span class="step-num">3</span><strong>Correlation:</strong> Staffing was at 95% Wed</div>
+          <div class="insight">&#9654; Root cause: equipment, not staffing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

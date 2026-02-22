@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Copilot Mode Switch Exercise</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; background: #1e1e1e; }
+
+.vscode { width: 960px; height: 540px; display: flex; flex-direction: column; }
+
+/* Title bar */
+.titlebar { height: 30px; background: #323233; display: flex; align-items: center; padding: 0 12px; gap: 8px; }
+.titlebar-dots { display: flex; gap: 6px; }
+.titlebar-dots span { width: 12px; height: 12px; border-radius: 50%; }
+.dot-r { background: #ff5f57; }
+.dot-y { background: #ffbd2e; }
+.dot-g { background: #28c840; }
+.titlebar-text { flex: 1; text-align: center; font-size: 12px; color: #999; }
+
+/* Main layout */
+.main { flex: 1; display: flex; overflow: hidden; }
+
+/* Activity bar */
+.activitybar { width: 48px; background: #333333; display: flex; flex-direction: column; align-items: center; padding-top: 8px; gap: 16px; }
+.activity-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #888; border-radius: 6px; }
+.activity-icon.active { color: #fff; border-left: 2px solid #fff; }
+.activity-spacer { flex: 1; }
+.copilot-icon { color: #c792ea !important; }
+
+/* Sidebar */
+.sidebar { width: 220px; background: #252526; border-right: 1px solid #3c3c3c; }
+.sidebar-header { padding: 10px 14px; font-size: 11px; font-weight: 600; color: #bbb; text-transform: uppercase; letter-spacing: 0.5px; }
+.sidebar-tree { padding: 0 8px; }
+.tree-item { padding: 4px 8px; font-size: 12px; color: #ccc; border-radius: 4px; display: flex; align-items: center; gap: 6px; }
+.tree-folder { color: #dcb67a; font-size: 10px; }
+.tree-file { color: #519aba; font-size: 10px; }
+
+/* Editor area */
+.editor-area { flex: 1; display: flex; flex-direction: column; }
+.editor-tabs { height: 35px; background: #252526; display: flex; align-items: center; border-bottom: 1px solid #3c3c3c; }
+.tab { height: 35px; padding: 0 14px; display: flex; align-items: center; gap: 6px; font-size: 12px; color: #888; border-right: 1px solid #3c3c3c; }
+.tab.active { background: #1e1e1e; color: #fff; border-top: 1px solid #007acc; margin-top: -1px; }
+
+.editor-content { flex: 1; display: flex; }
+
+/* Code pane */
+.code-pane { flex: 1; background: #1e1e1e; padding: 16px; }
+.code-line { font-family: 'Consolas', 'Courier New', monospace; font-size: 12px; line-height: 1.7; color: #d4d4d4; white-space: pre; }
+.code-line .ln { color: #555; display: inline-block; width: 30px; text-align: right; margin-right: 16px; }
+.code-cm { color: #6a9955; }
+.code-num { color: #b5cea8; }
+
+/* Chat panel */
+.chat-panel { width: 380px; background: #1e1e1e; border-left: 1px solid #3c3c3c; display: flex; flex-direction: column; position: relative; }
+.chat-header { padding: 10px 14px; background: #252526; border-bottom: 1px solid #3c3c3c; display: flex; align-items: center; justify-content: space-between; }
+.chat-header-left { display: flex; align-items: center; gap: 8px; }
+.chat-header-icon { font-size: 16px; color: #c792ea; }
+.chat-header-title { font-size: 13px; color: #ccc; font-weight: 600; }
+
+/* Mode selector trigger */
+.mode-selector-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #333;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #ccc;
+  cursor: default;
+  border: 1px solid #555;
+}
+.mode-selector-trigger .arrow { font-size: 8px; color: #888; }
+
+/* Dropdown overlay */
+.dropdown-overlay {
+  position: absolute;
+  top: 44px;
+  left: 14px;
+  width: 280px;
+  background: #2d2d2d;
+  border: 1px solid #454545;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  z-index: 100;
+  overflow: hidden;
+}
+.dropdown-title {
+  padding: 10px 14px 6px;
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.dropdown-item {
+  padding: 10px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: default;
+  position: relative;
+}
+.dropdown-item:hover { background: #094771; }
+.dropdown-item.selected { background: #094771; }
+.dropdown-item-indicator {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 2px 2px 0;
+}
+.dropdown-item.selected .dropdown-item-indicator { background: #007acc; }
+.dropdown-item-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.icon-ask { background: #1a3a4a; color: #4fc1ff; }
+.icon-edit { background: #2a3a1a; color: #89d185; }
+.icon-agent { background: #2d1b4e; color: #c792ea; }
+.dropdown-item-body { flex: 1; }
+.dropdown-item-name { font-size: 13px; color: #fff; font-weight: 600; margin-bottom: 2px; }
+.dropdown-item-desc { font-size: 11px; color: #999; line-height: 1.4; }
+.dropdown-item-check { color: #007acc; font-size: 14px; font-weight: 700; margin-top: 4px; }
+
+/* Finger pointer cursor */
+.pointer-cursor {
+  position: absolute;
+  top: 148px;
+  left: 245px;
+  font-size: 28px;
+  z-index: 200;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+  transform: rotate(-10deg);
+}
+
+/* Chat body placeholder */
+.chat-body { flex: 1; display: flex; align-items: center; justify-content: center; }
+.chat-placeholder { text-align: center; color: #555; }
+.chat-placeholder-icon { font-size: 40px; margin-bottom: 8px; color: #444; }
+.chat-placeholder-text { font-size: 13px; }
+
+.chat-input-area { padding: 10px 14px; border-top: 1px solid #3c3c3c; }
+.chat-input-box { background: #2a2a2a; border: 1px solid #3c3c3c; border-radius: 8px; padding: 8px 12px; display: flex; align-items: center; gap: 8px; }
+.chat-input-text { font-size: 12px; color: #666; flex: 1; }
+.chat-send { font-size: 14px; color: #555; }
+
+/* Status bar */
+.statusbar { height: 22px; background: #007acc; display: flex; align-items: center; padding: 0 10px; gap: 14px; }
+.status-item { font-size: 11px; color: #fff; display: flex; align-items: center; gap: 4px; }
+.statusbar-right { margin-left: auto; display: flex; gap: 14px; }
+
+/* Callout annotation */
+.callout {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  background: #cc0000;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 200;
+  box-shadow: 0 4px 12px rgba(204, 0, 0, 0.4);
+}
+.callout::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cc0000;
+}
+</style>
+</head>
+<body>
+<div class="vscode">
+  <!-- Title bar -->
+  <div class="titlebar">
+    <div class="titlebar-dots">
+      <span class="dot-r"></span>
+      <span class="dot-y"></span>
+      <span class="dot-g"></span>
+    </div>
+    <div class="titlebar-text">dc-operations - Visual Studio Code</div>
+  </div>
+
+  <div class="main">
+    <!-- Activity bar -->
+    <div class="activitybar">
+      <div class="activity-icon active">&#128196;</div>
+      <div class="activity-icon">&#128269;</div>
+      <div class="activity-icon">&#9394;</div>
+      <div class="activity-icon">&#9654;</div>
+      <div class="activity-spacer"></div>
+      <div class="activity-icon copilot-icon">&#9733;</div>
+      <div class="activity-icon">&#9881;</div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">Explorer</div>
+      <div class="sidebar-tree">
+        <div class="tree-item"><span class="tree-folder">&#9660;</span> dc-operations</div>
+        <div class="tree-item" style="padding-left: 24px;"><span class="tree-file">&#9632;</span> shift-planning.md</div>
+        <div class="tree-item" style="padding-left: 24px;"><span class="tree-file">&#9632;</span> headcount-tracker.csv</div>
+        <div class="tree-item" style="padding-left: 24px;"><span class="tree-file">&#9632;</span> daily-metrics.csv</div>
+      </div>
+    </div>
+
+    <!-- Editor area -->
+    <div class="editor-area">
+      <div class="editor-tabs">
+        <div class="tab active">&#128196; shift-planning.md</div>
+      </div>
+
+      <div class="editor-content">
+        <!-- Code pane -->
+        <div class="code-pane">
+          <div class="code-line"><span class="ln">1</span><span class="code-cm"># Shift Planning Template</span></div>
+          <div class="code-line"><span class="ln">2</span></div>
+          <div class="code-line"><span class="ln">3</span><span class="code-cm">## Monday Shift</span></div>
+          <div class="code-line"><span class="ln">4</span>- Start: <span class="code-num">6:00 AM</span></div>
+          <div class="code-line"><span class="ln">5</span>- Associates: <span class="code-num">48</span></div>
+          <div class="code-line"><span class="ln">6</span>- Expected orders: <span class="code-num">2,400</span></div>
+          <div class="code-line"><span class="ln">7</span></div>
+          <div class="code-line"><span class="ln">8</span><span class="code-cm">## Tuesday Shift</span></div>
+          <div class="code-line"><span class="ln">9</span>- Start: <span class="code-num">6:00 AM</span></div>
+          <div class="code-line"><span class="ln">10</span>- Associates: <span class="code-num">46</span></div>
+        </div>
+
+        <!-- Chat panel with dropdown -->
+        <div class="chat-panel">
+          <div class="chat-header">
+            <div class="chat-header-left">
+              <span class="chat-header-icon">&#9733;</span>
+              <span class="chat-header-title">Copilot</span>
+            </div>
+            <div class="mode-selector-trigger">
+              Agent <span class="arrow">&#9660;</span>
+            </div>
+          </div>
+
+          <!-- Dropdown -->
+          <div class="dropdown-overlay">
+            <div class="dropdown-title">Chat Mode</div>
+
+            <div class="dropdown-item">
+              <div class="dropdown-item-indicator"></div>
+              <div class="dropdown-item-icon icon-ask">&#9993;</div>
+              <div class="dropdown-item-body">
+                <div class="dropdown-item-name">Ask</div>
+                <div class="dropdown-item-desc">Quick questions about your code, docs, or general topics</div>
+              </div>
+            </div>
+
+            <div class="dropdown-item">
+              <div class="dropdown-item-indicator"></div>
+              <div class="dropdown-item-icon icon-edit">&#9998;</div>
+              <div class="dropdown-item-body">
+                <div class="dropdown-item-name">Edit</div>
+                <div class="dropdown-item-desc">Modify code in your editor with inline suggestions</div>
+              </div>
+            </div>
+
+            <div class="dropdown-item selected">
+              <div class="dropdown-item-indicator"></div>
+              <div class="dropdown-item-icon icon-agent">&#9733;</div>
+              <div class="dropdown-item-body">
+                <div class="dropdown-item-name">Agent</div>
+                <div class="dropdown-item-desc">Autonomous multi-step tasks — creates files, runs code, browses the web</div>
+              </div>
+              <div class="dropdown-item-check">&#10003;</div>
+            </div>
+          </div>
+
+          <!-- Pointer cursor -->
+          <div class="pointer-cursor">&#128070;</div>
+
+          <!-- Callout -->
+          <div class="callout">Select "Agent" for autonomous tasks</div>
+
+          <div class="chat-body">
+            <div class="chat-placeholder">
+              <div class="chat-placeholder-icon">&#9733;</div>
+              <div class="chat-placeholder-text">Select a mode to get started</div>
+            </div>
+          </div>
+
+          <div class="chat-input-area">
+            <div class="chat-input-box">
+              <span class="chat-input-text">Ask Copilot or type / for commands</span>
+              <span class="chat-send">&#9654;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Status bar -->
+  <div class="statusbar">
+    <div class="status-item">&#9432; main</div>
+    <div class="status-item">&#10003; 0 problems</div>
+    <div class="statusbar-right">
+      <div class="status-item">Markdown</div>
+      <div class="status-item">UTF-8</div>
+      <div class="status-item">&#9733; Copilot</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

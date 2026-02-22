@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Agent Watch Steps Concept</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; background: #ffffff; }
+
+.container { padding: 28px 48px 20px; height: 100%; display: flex; flex-direction: column; }
+
+.header { margin-bottom: 20px; }
+.title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 4px; }
+.subtitle { font-size: 14px; color: #666666; }
+
+.steps { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+
+.step-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.step-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #cc0000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(204, 0, 0, 0.25);
+}
+
+.step-card {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-left: 4px solid #cc0000;
+  min-height: 70px;
+}
+
+.step-icon {
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+  border: 1px solid #e0e0e0;
+}
+
+.step-body { flex: 1; }
+.step-action {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.step-action .what { color: #333; font-weight: 400; }
+.step-action .do {
+  display: inline-block;
+  background: #cc0000;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 6px;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+.step-desc {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+/* Connector line between steps */
+.connector {
+  width: 2px;
+  height: 10px;
+  background: #cc0000;
+  margin-left: 21px;
+  opacity: 0.4;
+}
+
+/* Bottom tip */
+.tip-bar {
+  margin-top: 14px;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.tip-icon { font-size: 18px; color: #cc0000; }
+.tip-text { font-size: 12px; color: #333; line-height: 1.4; }
+.tip-text strong { color: #cc0000; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="title">Watching the Agent Work: 4 Key Moments</div>
+    <div class="subtitle">Pay attention at each step to stay in control</div>
+  </div>
+
+  <div class="steps">
+    <!-- Step 1 -->
+    <div class="step-row">
+      <div class="step-number">1</div>
+      <div class="step-card">
+        <div class="step-icon">&#128221;</div>
+        <div class="step-body">
+          <div class="step-action">Agent writes a plan <span class="do">READ IT</span></div>
+          <div class="step-desc">Review the plan before the agent starts executing. Make sure it matches your intent.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"></div>
+
+    <!-- Step 2 -->
+    <div class="step-row">
+      <div class="step-number">2</div>
+      <div class="step-card">
+        <div class="step-icon">&#9989;</div>
+        <div class="step-body">
+          <div class="step-action">Agent asks to create a file <span class="do">CLICK ACCEPT</span></div>
+          <div class="step-desc">The agent needs your permission. Read the filename and purpose before accepting.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"></div>
+
+    <!-- Step 3 -->
+    <div class="step-row">
+      <div class="step-number">3</div>
+      <div class="step-card">
+        <div class="step-icon">&lt;/&gt;</div>
+        <div class="step-body">
+          <div class="step-action">Agent writes code <span class="do">LET IT FINISH</span></div>
+          <div class="step-desc">Don't interrupt mid-generation. Wait for the full output, then review the result.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="connector"></div>
+
+    <!-- Step 4 -->
+    <div class="step-row">
+      <div class="step-number">4</div>
+      <div class="step-card">
+        <div class="step-icon">&#9654;</div>
+        <div class="step-body">
+          <div class="step-action">Agent asks to run a command <span class="do">CLICK ALLOW</span></div>
+          <div class="step-desc">Check what command it wants to run. Only allow commands you understand.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-bar">
+    <div class="tip-icon">&#9888;</div>
+    <div class="tip-text"><strong>Key principle:</strong> You are always the decision-maker. The agent proposes, you approve. Never auto-accept without reading.</div>
+  </div>
+</div>
+</body>
+</html>

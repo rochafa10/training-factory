@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #1e1e1e; color: #cccccc; font-family: 'Segoe UI', sans-serif; overflow: hidden; position: relative; }
+.titlebar { height: 30px; background: #323233; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #999; }
+.editor { height: 510px; display: flex; align-items: flex-start; justify-content: center; padding-top: 20px; }
+.overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); }
+.palette { position: absolute; top: 50px; left: 50%; transform: translateX(-50%); width: 580px; background: #252526; border: 1px solid #3c3c3c; border-radius: 8px; box-shadow: 0 12px 40px rgba(0,0,0,0.6); overflow: hidden; z-index: 10; }
+.palette-input { width: 100%; padding: 10px 16px; background: #3c3c3c; border: none; color: #fff; font-size: 14px; outline: none; }
+.palette-input::placeholder { color: #999; }
+.palette-results { max-height: 300px; overflow: hidden; }
+.palette-item { padding: 8px 16px; font-size: 13px; color: #ccc; cursor: pointer; display: flex; align-items: center; gap: 10px; }
+.palette-item:hover { background: #094771; }
+.palette-item.selected { background: #094771; color: #fff; }
+.palette-item .icon { font-size: 16px; width: 20px; text-align: center; }
+.palette-item .label { flex: 1; }
+.palette-item .label em { font-style: normal; color: #4fc1ff; font-weight: 600; }
+.palette-item .shortcut { font-size: 11px; color: #777; font-family: monospace; }
+.separator { height: 1px; background: #3c3c3c; margin: 2px 0; }
+.category { padding: 6px 16px; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #777; background: #2a2a2a; }
+.callout { position: absolute; display: flex; align-items: center; gap: 6px; z-index: 20; }
+.callout-num { background: #cc0000; color: #fff; width: 24px; height: 24px; border-radius: 50%; font-weight: bold; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.callout-text { background: rgba(0,0,0,0.85); padding: 4px 10px; border-radius: 4px; font-size: 12px; color: #fff; white-space: nowrap; }
+</style></head><body>
+<div class="titlebar">VS Code — Command Palette</div>
+<div class="editor"></div>
+<div class="overlay"></div>
+<div class="palette">
+  <input class="palette-input" value="> MCP: Add Server" readonly>
+  <div class="palette-results">
+    <div class="palette-item selected">
+      <span class="icon">🔌</span>
+      <span class="label"><em>MCP: Add Server</em></span>
+    </div>
+    <div class="palette-item">
+      <span class="icon">📋</span>
+      <span class="label">MCP: List Servers</span>
+    </div>
+    <div class="palette-item">
+      <span class="icon">🔄</span>
+      <span class="label">MCP: Restart Server</span>
+    </div>
+    <div class="palette-item">
+      <span class="icon">❌</span>
+      <span class="label">MCP: Remove Server</span>
+    </div>
+    <div class="separator"></div>
+    <div class="category">Recently Used</div>
+    <div class="palette-item">
+      <span class="icon">⚙</span>
+      <span class="label">Preferences: Open Settings</span>
+      <span class="shortcut">Ctrl+,</span>
+    </div>
+  </div>
+</div>
+<div class="callout" style="top: 30px; left: 200px;"><div class="callout-num">1</div><div class="callout-text">Ctrl+Shift+P opens Command Palette</div></div>
+<div class="callout" style="top: 65px; right: 160px;"><div class="callout-num">2</div><div class="callout-text">Type "MCP: Add Server"</div></div>
+<div class="callout" style="top: 108px; right: 120px;"><div class="callout-num">3</div><div class="callout-text">Press Enter</div></div>
+</body></html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Root Cause Framework - Slide 66</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 32px 48px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 28px; }
+  .process { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 0; padding: 0 40px; }
+  .step-row { display: flex; align-items: center; gap: 20px; }
+  .step-circle { width: 52px; height: 52px; background: #cc0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; font-weight: 700; flex-shrink: 0; }
+  .step-content { flex: 1; }
+  .step-name { font-size: 18px; font-weight: 700; color: #000; }
+  .step-desc { font-size: 13px; color: #666; margin-top: 2px; }
+  .connector { display: flex; align-items: center; padding-left: 24px; height: 28px; }
+  .connector-line { width: 4px; height: 28px; background: #d4d4d4; border-radius: 2px; }
+  .step-badge { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 2px 10px; border-radius: 10px; background: #fee2e2; color: #cc0000; margin-left: auto; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">Root-Cause Debugging Framework</div>
+  <div class="subtitle">When an AI agent goes wrong, follow these 5 steps to fix it</div>
+  <div class="process">
+
+    <div class="step-row">
+      <div class="step-circle">1</div>
+      <div class="step-content">
+        <div class="step-name">NOTICE</div>
+        <div class="step-desc">Something doesn't look right in the output. Trust your instinct.</div>
+      </div>
+      <div class="step-badge">Observe</div>
+    </div>
+    <div class="connector"><div class="connector-line"></div></div>
+
+    <div class="step-row">
+      <div class="step-circle">2</div>
+      <div class="step-content">
+        <div class="step-name">INVESTIGATE</div>
+        <div class="step-desc">Ask the agent: "Show me what you did and why you did it."</div>
+      </div>
+      <div class="step-badge">Gather data</div>
+    </div>
+    <div class="connector"><div class="connector-line"></div></div>
+
+    <div class="step-row">
+      <div class="step-circle">3</div>
+      <div class="step-content">
+        <div class="step-name">DIAGNOSE</div>
+        <div class="step-desc">Was it a bad prompt, wrong context, missing data, or tool limitation?</div>
+      </div>
+      <div class="step-badge">Find cause</div>
+    </div>
+    <div class="connector"><div class="connector-line"></div></div>
+
+    <div class="step-row">
+      <div class="step-circle">4</div>
+      <div class="step-content">
+        <div class="step-name">FIX</div>
+        <div class="step-desc">Rewrite the prompt, add missing context, or try a different approach.</div>
+      </div>
+      <div class="step-badge">Take action</div>
+    </div>
+    <div class="connector"><div class="connector-line"></div></div>
+
+    <div class="step-row">
+      <div class="step-circle">5</div>
+      <div class="step-content">
+        <div class="step-name">PREVENT</div>
+        <div class="step-desc">Save the working prompt. Add it to your playbook so it doesn't happen again.</div>
+      </div>
+      <div class="step-badge">Systematize</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

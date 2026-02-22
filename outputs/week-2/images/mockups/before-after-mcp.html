@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Before/After MCP - Slide 46</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 960px; height: 540px; background: #ffffff; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+  .slide { width: 960px; height: 540px; padding: 32px 48px; display: flex; flex-direction: column; }
+  .title { font-size: 26px; font-weight: 700; color: #000000; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666666; margin-bottom: 28px; }
+  .panels { display: flex; gap: 32px; flex: 1; }
+  .panel { flex: 1; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .panel-before { border: 3px solid #dc2626; }
+  .panel-after { border: 3px solid #16a34a; }
+  .panel-header { padding: 14px 20px; color: #fff; font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .panel-before .panel-header { background: #dc2626; }
+  .panel-after .panel-header { background: #16a34a; }
+  .panel-body { padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 16px; background: #fafafa; }
+  .chat-bubble { padding: 14px 18px; border-radius: 12px; font-size: 14px; line-height: 1.5; max-width: 90%; }
+  .user-bubble { background: #e0e0e0; color: #333; align-self: flex-end; border-bottom-right-radius: 4px; }
+  .ai-bubble { background: #fff; border: 1px solid #e0e0e0; color: #333; align-self: flex-start; border-bottom-left-radius: 4px; }
+  .panel-before .ai-bubble { border-color: #fca5a5; background: #fef2f2; }
+  .panel-after .ai-bubble { border-color: #86efac; background: #f0fdf4; }
+  .bubble-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 4px; }
+  .error-icon { color: #dc2626; font-weight: 700; font-size: 16px; margin-right: 4px; }
+  .success-icon { color: #16a34a; font-weight: 700; font-size: 16px; margin-right: 4px; }
+  .step-list { margin: 6px 0 0 4px; }
+  .step-item { font-size: 13px; color: #333; margin-bottom: 4px; display: flex; align-items: flex-start; gap: 6px; }
+  .step-check { color: #16a34a; font-weight: 700; }
+  .result-box { background: #dcfce7; border: 1px solid #86efac; border-radius: 8px; padding: 10px 14px; margin-top: 4px; }
+  .result-value { font-size: 18px; font-weight: 700; color: #16a34a; }
+  .result-detail { font-size: 12px; color: #555; }
+  .x-big { font-size: 48px; color: #dc2626; text-align: center; margin: 8px 0; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="title">Before and After MCP</div>
+  <div class="subtitle">Model Context Protocol turns "I can't" into "I just did"</div>
+  <div class="panels">
+
+    <div class="panel panel-before">
+      <div class="panel-header"><span>&#10005;</span> Before MCP</div>
+      <div class="panel-body">
+        <div>
+          <div class="bubble-label">You ask</div>
+          <div class="chat-bubble user-bubble">"What's the weather forecast for our Tampa DC today?"</div>
+        </div>
+        <div>
+          <div class="bubble-label">AI responds</div>
+          <div class="chat-bubble ai-bubble">
+            <span class="error-icon">&#9888;</span>
+            <strong>I can't access the internet.</strong><br><br>
+            I don't have the ability to browse websites or check real-time information. I can only work with text you provide to me directly.
+          </div>
+        </div>
+        <div class="x-big">&#128683;</div>
+      </div>
+    </div>
+
+    <div class="panel panel-after">
+      <div class="panel-header"><span>&#10003;</span> After MCP</div>
+      <div class="panel-body">
+        <div>
+          <div class="bubble-label">You ask</div>
+          <div class="chat-bubble user-bubble">"What's the weather forecast for our Tampa DC today?"</div>
+        </div>
+        <div>
+          <div class="bubble-label">AI responds (using Playwright MCP)</div>
+          <div class="chat-bubble ai-bubble">
+            <div class="step-list">
+              <div class="step-item"><span class="step-check">&#10003;</span> Opened weather.com</div>
+              <div class="step-item"><span class="step-check">&#10003;</span> Searched Tampa, FL forecast</div>
+              <div class="step-item"><span class="step-check">&#10003;</span> Read current conditions</div>
+            </div>
+            <div class="result-box">
+              <div class="result-value">Tampa FL: 78&#176;F</div>
+              <div class="result-detail">Partly cloudy. High of 82&#176;F. 10% chance of rain. Humidity 65%.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
