@@ -1,6 +1,6 @@
 # Slide Plan — Week 2: Advanced Prompts & Your First Agent
 
-**Total slides:** 75
+**Total slides:** 79
 **Source:** outputs/week-2/content.md
 **Dimensions:** 960x540px (16:9)
 **Theme:** Tesla dark (#0a0a0a background, #e82127 accent red, #ffffff text)
@@ -891,6 +891,62 @@
 ## Slide 65
 - **Type:** divider
 - **Section:** 13
+- **Title:** When Agents Don't Deliver
+- **Content:**
+  - Duration: 5 minutes
+  - Activity: Concept Intro (with real-world case study)
+- **Notes:** Transition from Exercise 6: "The agent did great work. But what happens when it doesn't?" This section teaches the root cause analysis framework before they practice it in Exercise 7.
+
+---
+
+## Slide 66
+- **Type:** content
+- **Section:** 13
+- **Title:** The Root Cause Framework
+- **Content:**
+  - When an agent says "Done!" but the work is wrong, follow these 5 steps:
+  - 1. NOTICE -- Compare what you asked for vs what you got
+  - 2. INVESTIGATE -- Look at the actual output, not just the summary
+  - 3. DIAGNOSE -- Why did the agent miss? (unclear instructions? task too big? skipped steps?)
+  - 4. FIX -- Give a corrected, specific instruction
+  - 5. PREVENT -- Change the process: smaller batches + quality checks at each step
+- **Notes:** This is the same framework used for managing people. Walk through each step slowly. The "Investigate" step is where most people fail -- they trust the status update instead of checking the work.
+
+---
+
+## Slide 67
+- **Type:** content
+- **Section:** 13
+- **Title:** Real Case Study: The 75-Slide Problem
+- **Content:**
+  - Task: "Generate 75 slides with professional graphics and branded visuals"
+  - Agent reported: "Done! 75 slides created and committed."
+  - Reality: All 75 slides were plain text on black backgrounds. Zero graphics. Zero visuals.
+  - Root cause: Task was too big. Agent spent all its capacity writing text and never got to the quality steps.
+  - Fix: Break into batches of 5. Validate each batch visually BEFORE moving to the next.
+  - Lesson: Quality inspection at each station, not end of line.
+- **Notes:** This actually happened during the creation of this training. The parallel to DC operations is exact: quality checks happen at each station in the fulfillment line, not in one big batch at shipping. Ask: "Has anyone had a team member say 'done!' when the work wasn't right?"
+
+---
+
+## Slide 68
+- **Type:** content
+- **Section:** 13
+- **Title:** Managing Agents = Managing People
+- **Content:**
+  - "Check the work, not the status update" → Check the output, not the "Done!" message
+  - Break big projects into milestones with reviews → Break big tasks into small batches with validation
+  - Quality inspection at each station, not end of line → Validate each piece BEFORE moving to the next
+  - "Show me, don't tell me" → Open the files and verify visually
+  - Give specific feedback when quality is off → Give specific instructions when redirecting
+  - Coach to prevent repeat mistakes → Adjust the process AND the prompt
+- **Notes:** This table is the takeaway from the concept section. If AGMs say "this is just like managing my team" -- they got it. Transition: "Now let's practice this framework."
+
+---
+
+## Slide 69
+- **Type:** divider
+- **Section:** 13b
 - **Title:** Exercise 7: Debug & Redirect an Agent
 - **Content:**
   - Duration: 25 minutes
@@ -900,9 +956,9 @@
 
 ---
 
-## Slide 66
+## Slide 70
 - **Type:** exercise
-- **Section:** 13
+- **Section:** 13b
 - **Title:** Part A: What Happens with Vague Instructions
 - **Content:**
   - TYPE THIS in Copilot Agent Mode:
@@ -913,9 +969,9 @@
 
 ---
 
-## Slide 67
+## Slide 71
 - **Type:** exercise
-- **Section:** 13
+- **Section:** 13b
 - **Title:** Now Redirect with Specific Instructions
 - **Content:**
   - TYPE THIS in Copilot Agent Mode:
@@ -925,9 +981,9 @@
 
 ---
 
-## Slide 68
+## Slide 72
 - **Type:** content
-- **Section:** 13
+- **Section:** 13b
 - **Title:** The Lesson: Specific Beats Vague
 - **Content:**
   - "Make it better" = vague result
@@ -938,9 +994,9 @@
 
 ---
 
-## Slide 69
+## Slide 73
 - **Type:** exercise
-- **Section:** 13
+- **Section:** 13b
 - **Title:** Part B: Catch and Fix a Mistake
 - **Content:**
   - TYPE THIS in Copilot Agent Mode:
@@ -951,9 +1007,9 @@
 
 ---
 
-## Slide 70
+## Slide 74
 - **Type:** content
-- **Section:** 13
+- **Section:** 13b
 - **Title:** The Fix Workflow
 - **Content:**
   - 1. Identify -- What is wrong? ("The page scrolls -- it's too tall")
@@ -965,9 +1021,9 @@
 
 ---
 
-## Slide 71
+## Slide 75
 - **Type:** exercise
-- **Section:** 13
+- **Section:** 13b
 - **Title:** Challenge: Week-Over-Week Comparison
 - **Content:**
   - If the agent got it right on the first try, add this challenge:
@@ -978,7 +1034,7 @@
 
 ---
 
-## Slide 72
+## Slide 76
 - **Type:** divider
 - **Section:** 14
 - **Title:** Share Results + Key Takeaways + Homework
@@ -990,7 +1046,7 @@
 
 ---
 
-## Slide 73
+## Slide 77
 - **Type:** takeaway
 - **Section:** 14
 - **Title:** Five Things to Remember from Today
@@ -998,14 +1054,14 @@
   - 1. CoT + Few-Shot + Persona upgrade your prompts from good to great -- always add "step by step" for complex analysis
   - 2. Agents DO work, chat SUGGESTS work -- that is the fundamental difference
   - 3. MCP tools give agents new skills -- like installing apps on a phone
-  - 4. You stay in control -- agents plan, you approve. You can always reject, redirect, or undo.
-  - 5. Specific instructions = specific results -- the #1 rule for agents
+  - 4. Check the output, not the count -- an agent that says "Done!" may have cut corners. Always verify the actual work.
+  - 5. Specific instructions + right-sized tasks -- break big jobs into small batches with checkpoints
 - **Chart:** skill-progression--chart.png
 - **Notes:** Read each takeaway aloud. Pause after #5 -- it is the most important lesson.
 
 ---
 
-## Slide 74
+## Slide 78
 - **Type:** content
 - **Section:** 14
 - **Title:** Homework (45 min over the week)
@@ -1019,7 +1075,7 @@
 
 ---
 
-## Slide 75
+## Slide 79
 - **Type:** title
 - **Section:** 14
 - **Title:** Week 3 Preview: Voice Mode & Advanced Agents
@@ -1052,9 +1108,10 @@
 | 10 | Exercise 5: MCP | 6 | 48-53 |
 | 11 | Git Basics | 5 | 54-58 |
 | 12 | Exercise 6: Build | 6 | 59-64 |
-| 13 | Exercise 7: Debug | 7 | 65-71 |
-| 14 | Takeaways + Homework | 4 | 72-75 |
-| **TOTAL** | | **75** | |
+| 13 | Root Cause Analysis | 4 | 65-68 |
+| 13b | Exercise 7: Debug | 7 | 69-75 |
+| 14 | Takeaways + Homework | 4 | 76-79 |
+| **TOTAL** | | **79** | |
 
 ## Available Visual Assets
 
@@ -1066,7 +1123,7 @@
 - `agent-workflow--slide-embed.png` -- Used in Slide 57
 
 ### Charts (from images/)
-- `time-savings--chart.png` -- Used in Slide 74
-- `skill-progression--chart.png` -- Used in Slide 73
+- `time-savings--chart.png` -- Used in Slide 78
+- `skill-progression--chart.png` -- Used in Slide 77
 
 ### All diagram/chart references verified against outputs/week-2/images/ directory listing.
