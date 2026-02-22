@@ -69,7 +69,7 @@ When the slide plan specifies **Type: Teaching Diagram** or **Type: Canonical Di
 After rendering ALL slides in a batch:
 1. Count how many slides contain an `<img>` tag
 2. Report the visual density percentage
-3. **If below 30%, flag which content slides could benefit from a visual asset**
+3. **If below 50%, flag which content slides could benefit from a visual asset**
 
 ### Visual Testing Protocol
 
@@ -510,7 +510,7 @@ Before delivering slides/, verify ALL items pass:
 | Sequential naming | slide01, slide02, etc. | [ ] |
 | Accessibility | Semantic HTML, contrast | [ ] |
 | Diagram embeds | All image paths resolve | [ ] |
-| **Visual density** | **≥30% of slides contain an image** | [ ] |
+| **Visual density** | **≥50% of slides contain an image** | [ ] |
 | **Screenshot slides** | **All Screenshot-type slides have a captured PNG** | [ ] |
 | **Chart slides** | **All Chart-type slides have an AntV or pre-rendered PNG** | [ ] |
 
@@ -524,7 +524,7 @@ Before delivering slides/, verify ALL items pass:
 - Diagram image path doesn't resolve
 - **Screenshot-type slide rendered as text-only (must have a captured image)**
 - **Chart-type slide rendered as text-only (must have a chart image)**
-- **Visual density below 30%**
+- **Visual density below 50%**
 
 ---
 

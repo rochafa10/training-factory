@@ -289,7 +289,7 @@ Generate `slide-plan.md` with this structure:
 
 ## Visual Asset Density Rules (MANDATORY)
 
-At least **30% of all slides** must contain a visual asset (diagram, chart, screenshot, or infographic). Text-only slides are acceptable for exercises and short content, but concept slides, comparisons, and overviews should always have a visual.
+At least **50% of all slides** must contain a visual asset (diagram, chart, screenshot, or infographic). Text-only slides are acceptable for exercises and short content, but concept slides, comparisons, and overviews should always have a visual.
 
 ### When to Assign Visual Types
 
@@ -328,7 +328,7 @@ For any slide with numbers, percentages, or data comparisons, plan a Chart slide
 5. **Callout descriptions for teaching diagrams** — describe what each callout highlights (Agent 07 positions them)
 6. **Exercise slides reference exercises.md** — include the exercise number and key details
 7. **Statistics need source attribution** — include the source for every number in grid slides
-8. **Visual density** — at least 30% of slides must specify a visual asset type (Screenshot, Chart, Diagram, or Infographic)
+8. **Visual density** — at least 50% of slides must specify a visual asset type (Screenshot, Chart, Diagram, or Infographic)
 9. **Setup/UI slides must be Screenshots** — any slide showing what a tool looks like must use Playwright capture
 
 ---
@@ -346,7 +346,7 @@ Before delivering slide-plan.md, verify ALL items pass:
 | Type variety | Not all slides same type | [ ] |
 | Callout descriptions | Teaching diagrams have callout text | [ ] |
 | Source attribution | Grid cards have sources | [ ] |
-| **Visual density** | **≥30% of slides have a visual asset** | [ ] |
+| **Visual density** | **≥50% of slides have a visual asset** | [ ] |
 | **Screenshot coverage** | **All UI/setup slides specify Screenshot type** | [ ] |
 
 ### FAIL CONDITIONS (must revise before output):
@@ -354,7 +354,7 @@ Before delivering slide-plan.md, verify ALL items pass:
 - Any slide has more than 6 bullet points
 - Diagram reference points to non-existent file
 - Missing callout descriptions for teaching diagram slides
-- **Visual asset density below 30%**
+- **Visual asset density below 50%**
 - **UI/setup slide planned as Content instead of Screenshot**
 
 ---
