@@ -86,7 +86,7 @@ Six blocking checkpoints between agents. Full validation criteria are in `agents
 
 Slides are the only HTML output. Each slide is a standalone HTML file at 960x540px (16:9).
 
-**Tesla color palette:** background `#0a0a0a`, cards `#1a1a1a`/`#2a2a2a`, accent red `#e82127`, text `#ffffff`/`#a0a0a0`, success `#4ade80`, warning `#facc15`, error `#f87171`
+**Tesla color palette (light theme — matches Week 1):** background `#ffffff`, cards `#f5f5f5`/`#eeeeee`, accent red `#cc0000`, text `#000000`/`#666666`, success `#16a34a`, warning `#ca8a04`, error `#dc2626`
 
 The base template and all slide type HTML templates are in `agents/07-slide-renderer.md`. Use Playwright (`browser_navigate` + `browser_snapshot`) to validate each slide visually.
 

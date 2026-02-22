@@ -45,7 +45,7 @@ You are a Slide Planner creating a structured blueprint for a Tesla corporate tr
 | `> **Scenario:**` | Example | Walk-through format |
 | `### Common Mistakes` | Comparison | Good vs Bad, two-column |
 | Statistics / metrics | Grid | 2×3 or 2×4 cards with numbers |
-| Data trends / comparisons | Chart | AntV Chart PNG with Tesla dark theme |
+| Data trends / comparisons | Chart | AntV Chart PNG with Tesla light palette |
 | `## Key Takeaways` | Summary | 3-4 numbered items |
 | Week summary / overview | Infographic | Canva-generated branded visual |
 | Tool UI reference / "what it looks like" | Screenshot | Playwright-captured PNG of live tool or web page |
@@ -131,11 +131,15 @@ When a slide references a diagram, specify which style variant to use:
 
 ## Slide Count Guidelines
 
-| Week Content | Estimated Slides |
-|--------------|------------------|
-| 3 sections × 3-4 slides | 9-12 content slides |
-| + Title, Agenda, Summary | + 3 slides |
-| **Total per week** | **12-15 slides** |
+Slide count depends on the week's activity level. Exercise-heavy weeks need more slides.
+
+| Week Type | Estimated Slides |
+|-----------|------------------|
+| Concept-heavy (mostly lecture) | 15-25 slides |
+| Balanced (concept + exercises) | 30-50 slides |
+| Exercise-heavy (≥70% hands-on) | 50-80 slides |
+
+Each exercise step should be its own slide. Each concept should have at most 1 slide of text + 1 slide of visual.
 
 ---
 
@@ -283,6 +287,38 @@ Generate `slide-plan.md` with this structure:
 
 ---
 
+## Visual Asset Density Rules (MANDATORY)
+
+At least **30% of all slides** must contain a visual asset (diagram, chart, screenshot, or infographic). Text-only slides are acceptable for exercises and short content, but concept slides, comparisons, and overviews should always have a visual.
+
+### When to Assign Visual Types
+
+| Slide Content | Required Visual Type | Tool |
+|---------------|---------------------|------|
+| Tool UI walkthrough (VS Code, Copilot, browser) | **Screenshot** | Playwright captures the real UI |
+| Data, statistics, metrics, trends | **Chart** | AntV Chart MCP with Tesla light palette |
+| Conceptual framework, process, architecture | **Teaching Diagram** | Nano-banana or Excalidraw |
+| Decision tree, flowchart, comparison | **Teaching Diagram** | Nano-banana |
+| Week summary, key framework, branded overview | **Infographic** | Canva MCP with Tesla brand |
+| Before/after, side-by-side concept | **Comparison + Diagram** | Nano-banana or HTML |
+| Setup steps showing exact UI | **Screenshot** | Playwright navigates to real URL and captures |
+
+### Screenshot Planning
+
+For any slide that says "click this", "you should see", or "go to [URL]", plan a Screenshot slide type. Specify:
+- **Source:** The URL or tool being captured (e.g., "code.visualstudio.com", "VS Code Extensions panel")
+- **Annotations:** Numbered callouts pointing to the UI elements the learner should find
+- Agent 07 will use Playwright `browser_navigate` + `browser_take_screenshot` to capture
+
+### Chart Planning
+
+For any slide with numbers, percentages, or data comparisons, plan a Chart slide type. Specify:
+- **ChartType:** bar, line, pie, radar, column
+- **Data:** The actual data values to chart
+- Agent 07 will use AntV Chart MCP if the chart doesn't already exist in images/
+
+---
+
 ## Planning Rules
 
 1. **One main idea per slide** — if a concept needs more space, split into multiple slides
@@ -292,6 +328,8 @@ Generate `slide-plan.md` with this structure:
 5. **Callout descriptions for teaching diagrams** — describe what each callout highlights (Agent 07 positions them)
 6. **Exercise slides reference exercises.md** — include the exercise number and key details
 7. **Statistics need source attribution** — include the source for every number in grid slides
+8. **Visual density** — at least 30% of slides must specify a visual asset type (Screenshot, Chart, Diagram, or Infographic)
+9. **Setup/UI slides must be Screenshots** — any slide showing what a tool looks like must use Playwright capture
 
 ---
 
@@ -301,7 +339,6 @@ Before delivering slide-plan.md, verify ALL items pass:
 
 | Check | Requirement | Status |
 |-------|-------------|--------|
-| Slide count | 12-15 slides | [ ] |
 | Content coverage | All content.md sections mapped | [ ] |
 | Bullet limits | No slide exceeds 6 bullets | [ ] |
 | One idea per slide | No overloaded slides | [ ] |
@@ -309,13 +346,16 @@ Before delivering slide-plan.md, verify ALL items pass:
 | Type variety | Not all slides same type | [ ] |
 | Callout descriptions | Teaching diagrams have callout text | [ ] |
 | Source attribution | Grid cards have sources | [ ] |
+| **Visual density** | **≥30% of slides have a visual asset** | [ ] |
+| **Screenshot coverage** | **All UI/setup slides specify Screenshot type** | [ ] |
 
 ### FAIL CONDITIONS (must revise before output):
 - Content.md section has no corresponding slide
 - Any slide has more than 6 bullet points
 - Diagram reference points to non-existent file
-- Slide count outside 12-15 range
 - Missing callout descriptions for teaching diagram slides
+- **Visual asset density below 30%**
+- **UI/setup slide planned as Content instead of Screenshot**
 
 ---
 

@@ -22,11 +22,54 @@ Generate individual HTML files in `outputs/week-N/slides/`:
 |------|---------|-------------|
 | **Playwright** `browser_navigate` | Load slide for testing | After creating each slide |
 | **Playwright** `browser_snapshot` | Capture accessibility tree | Verify content structure |
-| **Playwright** `browser_take_screenshot` | Visual record | Document slide appearance |
+| **Playwright** `browser_take_screenshot` | Capture UI screenshots for slides | When slide plan specifies type `Screenshot` |
 | **Canva MCP** | Generate branded infographics | When slide plan specifies type `Infographic` |
 | **AntV Chart MCP** | Generate inline data charts | When slide plan specifies type `Chart` (if not pre-rendered by Agent 05) |
 
 See `tools/visual-tools.md` for full tool reference.
+
+### Visual Asset Generation Rules (MANDATORY)
+
+These rules define WHEN and HOW to generate visual assets for slides. **Do not render a slide as text-only if the slide plan specifies a visual type.**
+
+#### Rule 1: Screenshot Slides
+When the slide plan specifies **Type: Screenshot**:
+1. Use Playwright `browser_navigate` to go to the specified URL or tool
+2. Use Playwright `browser_take_screenshot` to capture the UI
+3. Save to `outputs/week-N/images/{name}--screenshot.png`
+4. Embed the screenshot in the slide HTML with annotation callouts
+5. **If the URL is inaccessible** (e.g., requires login), create a realistic HTML mockup of the UI, serve it locally, and screenshot that instead
+
+#### Rule 2: Chart Slides
+When the slide plan specifies **Type: Chart**:
+1. Check if the chart already exists in `outputs/week-N/images/{name}--chart.png`
+2. If it exists, embed it directly
+3. If it does NOT exist, use **AntV Chart MCP** to generate it:
+   - Use `light` theme (white background)
+   - Tesla accent color `#cc0000` for primary data series
+   - Save the PNG to `outputs/week-N/images/{name}--chart.png`
+4. Embed the chart image in the slide HTML
+
+#### Rule 3: Infographic Slides
+When the slide plan specifies **Type: Infographic**:
+1. Use **Canva MCP** `generate-design-structured` with:
+   - Dimensions: 960x540
+   - Tesla brand: white background, `#cc0000` accent, `#000000` text
+   - Content elements from the slide plan
+2. Export to `outputs/week-N/images/{name}--infographic.png`
+3. Embed full-bleed in the slide HTML
+
+#### Rule 4: Diagram Slides
+When the slide plan specifies **Type: Teaching Diagram** or **Type: Canonical Diagram**:
+1. Check if the diagram image exists in `outputs/week-N/images/`
+2. If it exists, embed it with callouts as specified in the plan
+3. If it does NOT exist, flag it — do not render a text-only substitute
+
+#### Rule 5: Visual Density Check
+After rendering ALL slides in a batch:
+1. Count how many slides contain an `<img>` tag
+2. Report the visual density percentage
+3. **If below 30%, flag which content slides could benefit from a visual asset**
 
 ### Visual Testing Protocol
 
@@ -54,7 +97,7 @@ browser_take_screenshot({ "filename": "week-N-slideNN.png" })
 |-------|----------|---------------|
 | Dimensions | 960×540px | Check body width/height in snapshot |
 | Accent bar | 8px red bar left | Look for .accent-bar element |
-| Background | #0a0a0a | Verify body background |
+| Background | #ffffff | Verify body background |
 | Text readable | White on dark | Check text elements visible |
 | Bullet count | ≤6 | Count list items in snapshot |
 
@@ -73,12 +116,13 @@ You are a Slide Renderer converting structured slide plans into polished HTML pr
 
 **Dimensions:** 960px × 540px per slide
 
-**Colors:**
-- Background: `#0a0a0a`
-- Cards: `#1a1a1a`, `#2a2a2a`
-- Accent: `#e82127` (Tesla red)
-- Text: `#ffffff` (primary), `#a0a0a0` (secondary)
-- Success: `#4ade80`, Warning: `#facc15`, Error: `#f87171`
+**Colors (light theme — must match Week 1):**
+- Background: `#ffffff`
+- Cards: `#f5f5f5`, `#eeeeee`
+- Accent: `#cc0000` (Tesla red)
+- Text: `#000000` (primary), `#333333` (secondary), `#666666` (muted)
+- Success: `#16a34a`, Warning: `#ca8a04`, Error: `#dc2626`
+- Card borders: `#e0e0e0`
 
 **Typography:**
 - Headlines: Arial Bold, 32-48px
@@ -107,8 +151,8 @@ Every slide starts from this template:
     body {
       width: 960px;
       height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
       position: relative;
       overflow: hidden;
@@ -119,7 +163,7 @@ Every slide starts from this template:
       top: 0;
       width: 8px;
       height: 100%;
-      background: #e82127;
+      background: #cc0000;
     }
     /* Add slide-specific styles */
   </style>
@@ -150,10 +194,10 @@ Every slide starts from this template:
   </div>
 </body>
 ```
-- `.week-label`: 14px bold uppercase, letter-spacing 3px, color #e82127
+- `.week-label`: 14px bold uppercase, letter-spacing 3px, color #cc0000
 - `h1`: 48px bold, margin-bottom 16px
-- `.subtitle`: 24px, color #a0a0a0
-- `.meta`: 14px, color #a0a0a0
+- `.subtitle`: 24px, color #666666
+- `.meta`: 14px, color #666666
 
 ### Type: Divider
 ```html
@@ -166,7 +210,7 @@ Every slide starts from this template:
   <p class="duration">[Duration from plan]</p>
 </div>
 ```
-- `.section-block`: width 320px, height 100%, background #e82127, position absolute
+- `.section-block`: width 320px, height 100%, background #cc0000, position absolute
 - `.section-number`: 180px font-size, color rgba(255,255,255,0.15)
 - `.section-content`: margin-left 360px, vertically centered
 - `h1`: 40px bold
@@ -184,7 +228,7 @@ Every slide starts from this template:
 ```
 - `.container`: padding 32px 40px 24px 48px
 - `h1`: 32px bold
-- Card variant: wrap content in `.card` with background #1a1a1a, border-radius 12px, padding 24px
+- Card variant: wrap content in `.card` with background #f5f5f5, border-radius 12px, padding 24px
 
 ### Type: Comparison
 ```html
@@ -203,7 +247,7 @@ Every slide starts from this template:
 </div>
 ```
 - `.columns`: display flex, gap 24px
-- `.column`: flex 1, background #1a1a1a, border-radius 12px, padding 24px
+- `.column`: flex 1, background #f5f5f5, border-radius 12px, padding 24px
 - Left column: border-top 3px solid #4ade80 (good)
 - Right column: border-top 3px solid #f87171 (bad)
 
@@ -222,9 +266,9 @@ Every slide starts from this template:
 </div>
 ```
 - `.stats-grid`: display grid, grid-template-columns repeat(3, 1fr), gap 24px
-- `.stat-card`: background #1a1a1a, border-radius 12px, padding 24px, text-align center
-- `.stat-number`: 48px bold, color #e82127
-- `.stat-label`: 14px, color #a0a0a0
+- `.stat-card`: background #f5f5f5, border-radius 12px, padding 24px, text-align center
+- `.stat-number`: 48px bold, color #cc0000
+- `.stat-label`: 14px, color #666666
 - `.source`: 10px, color #666
 
 ### Type: Exercise
@@ -246,9 +290,9 @@ Every slide starts from this template:
   </div>
 </div>
 ```
-- `.exercise-badge`: background #e82127, color white, padding 4px 16px, font-size 12px bold uppercase
+- `.exercise-badge`: background #cc0000, color white, padding 4px 16px, font-size 12px bold uppercase
 - `.main-content`: display flex, gap 32px
-- `.time-box`: background #1a1a1a, padding 12px, text-align center, border-radius 8px
+- `.time-box`: background #f5f5f5, padding 12px, text-align center, border-radius 8px
 
 ### Type: Summary
 ```html
@@ -264,7 +308,7 @@ Every slide starts from this template:
 </div>
 ```
 - `.takeaway`: display flex, align-items center, gap 16px, margin-bottom 16px
-- `.takeaway-number`: 32px bold, color #e82127, min-width 40px
+- `.takeaway-number`: 32px bold, color #cc0000, min-width 40px
 
 ### Type: Canonical Diagram
 ```html
@@ -276,7 +320,7 @@ Every slide starts from this template:
   </div>
 </div>
 ```
-- `.canonical-badge`: position absolute, top 24px, right 40px, background #1a1a1a, border 1px solid #e82127, color #e82127, font-size 10px, padding 4px 12px
+- `.canonical-badge`: position absolute, top 24px, right 40px, background #f5f5f5, border 1px solid #cc0000, color #cc0000, font-size 10px, padding 4px 12px
 - `.canonical-diagram`: max-width 100%, max-height 400px
 
 ### Type: Teaching Diagram
@@ -296,8 +340,8 @@ Every slide starts from this template:
 ```
 - `.diagram-with-callouts`: position relative
 - `.callout`: position absolute, display flex, align-items center, gap 8px
-- `.callout-number`: background #e82127, color white, 24px circle, font-weight bold, 14px
-- `.callout-text`: background rgba(26,26,26,0.9), padding 4px 8px, border-radius 4px, 12px, white-space nowrap
+- `.callout-number`: background #cc0000, color white, 24px circle, font-weight bold, 14px
+- `.callout-text`: background rgba(0,0,0,0.75), padding 4px 8px, border-radius 4px, 12px, white-space nowrap
 - Position callouts based on plan hints; adjust as needed for readability
 
 ### Type: Failure Mode
@@ -329,7 +373,7 @@ Every slide starts from this template:
 ```
 - `.chart-container`: display flex, justify-content center, padding 16px 40px
 - `.chart-image`: max-width 100%, max-height 380px, border-radius 8px
-- `.chart-caption`: text-align center, font-size 12px, color #a0a0a0, margin-top 8px
+- `.chart-caption`: text-align center, font-size 12px, color #666666, margin-top 8px
 
 **Note:** Chart images are pre-rendered by Agent 05 using AntV Chart MCP with Tesla dark theme. If the chart PNG doesn't exist yet, use AntV Chart MCP to generate it inline.
 
@@ -346,7 +390,7 @@ Every slide starts from this template:
 
 **Canva workflow for infographic slides:**
 1. Use Canva MCP `create_design` with dimensions 960x540
-2. Apply Tesla brand: background #0a0a0a, accent #e82127, text #ffffff
+2. Apply Tesla brand: background #ffffff, accent #cc0000, text #000000
 3. Add content elements from slide plan (title, key points, icons)
 4. Export as PNG to `outputs/week-N/images/{name}--infographic.png`
 5. Embed in slide HTML with full-bleed layout
@@ -368,10 +412,10 @@ Every slide starts from this template:
 </div>
 ```
 - `.screenshot-container`: position relative, display flex, justify-content center, padding 8px 40px
-- `.screenshot-image`: max-width 100%, max-height 380px, border-radius 8px, border 1px solid #2a2a2a
+- `.screenshot-image`: max-width 100%, max-height 380px, border-radius 8px, border 1px solid #eeeeee
 - `.screenshot-callout`: position absolute, display flex, align-items center, gap 6px
-- `.callout-number`: background #e82127, color white, width 22px, height 22px, border-radius 50%, font-weight bold, font-size 13px, display flex, align-items center, justify-content center
-- `.callout-text`: background rgba(26,26,26,0.9), padding 4px 8px, border-radius 4px, font-size 11px, white-space nowrap
+- `.callout-number`: background #cc0000, color white, width 22px, height 22px, border-radius 50%, font-weight bold, font-size 13px, display flex, align-items center, justify-content center
+- `.callout-text`: background rgba(0,0,0,0.75), padding 4px 8px, border-radius 4px, font-size 11px, white-space nowrap
 - `.screenshot-source`: text-align center, font-size 10px, color #666, margin-top 4px
 
 **Playwright capture workflow for Screenshot slides:**
@@ -404,7 +448,7 @@ Use relative paths from the slides/ directory:
 <img src="../images/[name]--infographic.png" alt="[description]" style="max-width: 100%; max-height: 540px;">
 
 <!-- Playwright Screenshot (live tool/web capture) -->
-<img src="../images/[name]--screenshot.png" alt="[description]" style="max-width: 100%; max-height: 380px; border: 1px solid #2a2a2a; border-radius: 8px;">
+<img src="../images/[name]--screenshot.png" alt="[description]" style="max-width: 100%; max-height: 380px; border: 1px solid #eeeeee; border-radius: 8px;">
 ```
 
 ---
@@ -466,15 +510,21 @@ Before delivering slides/, verify ALL items pass:
 | Sequential naming | slide01, slide02, etc. | [ ] |
 | Accessibility | Semantic HTML, contrast | [ ] |
 | Diagram embeds | All image paths resolve | [ ] |
+| **Visual density** | **≥30% of slides contain an image** | [ ] |
+| **Screenshot slides** | **All Screenshot-type slides have a captured PNG** | [ ] |
+| **Chart slides** | **All Chart-type slides have an AntV or pre-rendered PNG** | [ ] |
 
 ### FAIL CONDITIONS (must fix before output):
 - Slide in plan not rendered to HTML
 - Any slide fails Playwright dimension check
 - Missing accent bar on any slide
 - More than 6 bullet points on any slide
-- Non-Tesla colors used
+- Non-Tesla colors used (must use light theme palette)
 - Broken HTML rendering
 - Diagram image path doesn't resolve
+- **Screenshot-type slide rendered as text-only (must have a captured image)**
+- **Chart-type slide rendered as text-only (must have a chart image)**
+- **Visual density below 30%**
 
 ---
 
