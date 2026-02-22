@@ -354,8 +354,9 @@ All five sub-gates must pass:
 
 ### Automated Checks
 ```
-# Slide testing:
-browser_navigate({ "url": "file:///path/to/slide01.html" })
+# Slide testing (serve over HTTP — Playwright blocks file:// URLs):
+# python -m http.server 8787 --directory outputs/week-N/slides
+browser_navigate({ "url": "http://localhost:8787/slide01.html" })
 browser_snapshot({})
 
 # Prompt deduplication:

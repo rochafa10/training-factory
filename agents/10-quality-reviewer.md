@@ -45,9 +45,14 @@ You are a Quality Reviewer ensuring training content meets Tesla standards throu
 
 For EACH HTML slide in `outputs/week-N/slides/`, run Playwright tests:
 
+```bash
+# Serve slides over HTTP (Playwright blocks file:// URLs)
+python -m http.server 8787 --directory outputs/week-N/slides &
+```
+
 ```javascript
-// Navigate to slide
-browser_navigate({ "url": "file:///[full-path]/outputs/week-N/slides/slideNN.html" })
+// Navigate to slide via HTTP
+browser_navigate({ "url": "http://localhost:8787/slideNN.html" })
 
 // Capture accessibility snapshot
 browser_snapshot({})

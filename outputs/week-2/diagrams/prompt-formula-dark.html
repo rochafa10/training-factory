@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Prompt Engineering Formula</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 960px;
+    height: 540px;
+    background: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  }
+
+  /* 8px Tesla red accent bar */
+  .accent-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background: #e82127;
+  }
+
+  .content {
+    padding: 28px 48px 28px 56px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .header {
+    margin-bottom: 28px;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-top: 4px;
+  }
+
+  /* Flow row */
+  .flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 14px;
+  }
+
+  .box {
+    width: 170px;
+    height: 88px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    flex-shrink: 0;
+  }
+  .box .step-num {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 2px;
+  }
+  .box .step-label {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .box.role    { background: #1e3a5f; border-color: #4a9eed; }
+  .box.context { background: #5c3d1a; border-color: #f59e0b; }
+  .box.task    { background: #1a4d2e; border-color: #22c55e; }
+  .box.format  { background: #2d1b69; border-color: #8b5cf6; }
+
+  .arrow-wrap {
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .arrow {
+    width: 28px;
+    height: 2px;
+    background: #a0a0a0;
+    position: relative;
+  }
+  .arrow::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-left: 7px solid #a0a0a0;
+  }
+
+  /* Descriptions */
+  .descriptions {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .desc {
+    width: 170px;
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    flex-shrink: 0;
+    color: #e5e5e5;
+  }
+  .desc:not(:last-child) { margin-right: 44px; }
+  .desc.role    { color: #7bb8f0; }
+  .desc.context { color: #f0c060; }
+  .desc.task    { color: #6ee09a; }
+  .desc.format  { color: #b89aef; }
+
+  /* Example box */
+  .example {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-left: 3px solid #e82127;
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin: auto 20px 0;
+  }
+  .example-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #e82127;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .example-text {
+    font-size: 13.5px;
+    color: #e5e5e5;
+    line-height: 1.5;
+  }
+  .example-text .hl-role    { color: #7bb8f0; font-weight: 600; }
+  .example-text .hl-context { color: #f0c060; font-weight: 600; }
+  .example-text .hl-task    { color: #6ee09a; font-weight: 600; }
+  .example-text .hl-format  { color: #b89aef; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="content">
+    <div class="header">
+      <div class="title">Prompt Engineering Formula</div>
+      <div class="subtitle">The 4-part structure for effective AI prompts</div>
+    </div>
+
+    <div class="flow">
+      <div class="box role">
+        <span class="step-num">Step 1</span>
+        <span class="step-label">ROLE</span>
+      </div>
+      <div class="arrow-wrap"><div class="arrow"></div></div>
+      <div class="box context">
+        <span class="step-num">Step 2</span>
+        <span class="step-label">CONTEXT</span>
+      </div>
+      <div class="arrow-wrap"><div class="arrow"></div></div>
+      <div class="box task">
+        <span class="step-num">Step 3</span>
+        <span class="step-label">TASK</span>
+      </div>
+      <div class="arrow-wrap"><div class="arrow"></div></div>
+      <div class="box format">
+        <span class="step-num">Step 4</span>
+        <span class="step-label">FORMAT</span>
+      </div>
+    </div>
+
+    <div class="descriptions">
+      <div class="desc role">"Act as a..."</div>
+      <div class="desc context">"Given that..."</div>
+      <div class="desc task">"Please do..."</div>
+      <div class="desc format">"Return as..."</div>
+    </div>
+
+    <div class="example">
+      <div class="example-label">Example Prompt</div>
+      <div class="example-text">
+        "<span class="hl-role">You are an operations analyst</span> at a Tesla distribution center.
+        <span class="hl-context">Given last month's shipping data</span>,
+        <span class="hl-task">identify the top 3 bottlenecks</span>
+        and <span class="hl-format">return a bulleted list with recommended actions</span>."
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "training-factory-agent-04",
+  "elements": [
+    {"type":"rectangle","id":"r1","x":60,"y":140,"width":160,"height":80,"backgroundColor":"#a5d8ff","fillStyle":"solid","roundness":{"type":3},"strokeColor":"#4a9eed","strokeWidth":2,"label":{"text":"ROLE","fontSize":22}},
+    {"type":"arrow","id":"a1","x":220,"y":180,"width":60,"height":0,"points":[[0,0],[60,0]],"strokeColor":"#1e1e1e","strokeWidth":2,"endArrowhead":"arrow","startBinding":{"elementId":"r1","fixedPoint":[1,0.5]},"endBinding":{"elementId":"r2","fixedPoint":[0,0.5]}},
+    {"type":"rectangle","id":"r2","x":280,"y":140,"width":160,"height":80,"backgroundColor":"#fff3bf","fillStyle":"solid","roundness":{"type":3},"strokeColor":"#f59e0b","strokeWidth":2,"label":{"text":"CONTEXT","fontSize":22}},
+    {"type":"arrow","id":"a2","x":440,"y":180,"width":60,"height":0,"points":[[0,0],[60,0]],"strokeColor":"#1e1e1e","strokeWidth":2,"endArrowhead":"arrow","startBinding":{"elementId":"r2","fixedPoint":[1,0.5]},"endBinding":{"elementId":"r3","fixedPoint":[0,0.5]}},
+    {"type":"rectangle","id":"r3","x":500,"y":140,"width":160,"height":80,"backgroundColor":"#b2f2bb","fillStyle":"solid","roundness":{"type":3},"strokeColor":"#22c55e","strokeWidth":2,"label":{"text":"TASK","fontSize":22}},
+    {"type":"arrow","id":"a3","x":660,"y":180,"width":60,"height":0,"points":[[0,0],[60,0]],"strokeColor":"#1e1e1e","strokeWidth":2,"endArrowhead":"arrow","startBinding":{"elementId":"r3","fixedPoint":[1,0.5]},"endBinding":{"elementId":"r4","fixedPoint":[0,0.5]}},
+    {"type":"rectangle","id":"r4","x":720,"y":140,"width":160,"height":80,"backgroundColor":"#d0bfff","fillStyle":"solid","roundness":{"type":3},"strokeColor":"#8b5cf6","strokeWidth":2,"label":{"text":"FORMAT","fontSize":22}},
+    {"type":"text","id":"title","x":220,"y":30,"text":"Prompt Engineering Formula","fontSize":26,"strokeColor":"#1e1e1e"},
+    {"type":"text","id":"subtitle","x":235,"y":65,"text":"The 4-part structure for effective AI prompts","fontSize":16,"strokeColor":"#757575"},
+    {"type":"text","id":"d1","x":72,"y":240,"text":"\"Act as a...\"","fontSize":16,"strokeColor":"#4a9eed"},
+    {"type":"text","id":"d2","x":282,"y":240,"text":"\"Given that...\"","fontSize":16,"strokeColor":"#f59e0b"},
+    {"type":"text","id":"d3","x":510,"y":240,"text":"\"Please do...\"","fontSize":16,"strokeColor":"#22c55e"},
+    {"type":"text","id":"d4","x":722,"y":240,"text":"\"Return as...\"","fontSize":16,"strokeColor":"#8b5cf6"},
+    {"type":"rectangle","id":"exBox","x":120,"y":320,"width":700,"height":120,"backgroundColor":"#d3f9d8","fillStyle":"solid","roundness":{"type":3},"strokeColor":"#22c55e","strokeWidth":1,"opacity":40},
+    {"type":"text","id":"exLabel","x":130,"y":330,"text":"Example","fontSize":18,"strokeColor":"#15803d"},
+    {"type":"text","id":"exText","x":130,"y":360,"text":"\"You are an operations analyst at a Tesla distribution center.\nGiven last month's shipping data, identify the top 3 bottlenecks\nand return a bulleted list with recommended actions.\"","fontSize":16,"strokeColor":"#1e1e1e"}
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

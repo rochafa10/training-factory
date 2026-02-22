@@ -44,6 +44,20 @@ Use the Excalidraw MCP to create a new diagram file at outputs/week-2/diagrams/p
 - Blue fill (#4dabf7) for agent-type nodes
 ```
 
+**Known Limitations (tested 2026-02-22):**
+
+| Feature | Status | Details |
+|---------|--------|---------|
+| `create_view` (in-chat preview) | Works | Great for iterating on structure with draw-on animation |
+| `export_to_excalidraw` (shareable URL) | **Broken for text** | Shapes and arrows render, but ALL text is stripped — labels, titles, descriptions all lost |
+| `save_checkpoint` / `read_checkpoint` | Works | Preserves in-chat state between create_view calls |
+
+**Role in pipeline:** Excalidraw MCP is a **design and preview tool**, not a rendering tool. Use it for:
+- In-chat structural iteration with `create_view` (fast feedback)
+- Saving canonical `.excalidraw` JSON files (structural source-of-truth)
+
+**Do NOT use** `export_to_excalidraw` → Playwright screenshot for production rendering. Agent 05 renders diagrams via Gemini HTML + Playwright screenshot pipeline instead.
+
 ---
 
 ### 2. Draw.io MCP
@@ -96,28 +110,27 @@ Max tokens: 8192
 
 ---
 
-### 4. Gemini Image Generation
+### 4. Gemini Image Generation (nano-banana)
 
-**Purpose:** Generate styled diagram images directly using Gemini's image generation capabilities.
+**Purpose:** Generate styled infographics, diagrams, and polished visual assets directly as PNG images using Gemini's native image generation.
 
-**When to use:** Agent 05 — fallback option when HTML/SVG rendering produces insufficient quality, or for artistic whiteboard-style variants.
+**When to use:** Agent 05 — for infographics, artistic whiteboard-style variants, or when HTML/SVG rendering produces insufficient quality. Also usable by Agent 07 for high-impact slide visuals.
 
 **Configuration:**
 ```
-Model: gemini-2.0-flash-exp (image generation capable)
-Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent
-Response modality: Include "image" in response_modalities
+Model: nano-banana-pro-preview (primary)
+Fallbacks: gemini-2.0-flash-exp-image-generation, gemini-2.5-flash-image, gemini-3-pro-image-preview
+Endpoint: https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent
+Response modality: Include "IMAGE" in responseModalities
 ```
 
 **API call structure:**
 ```bash
-curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent" \
+curl -k -X POST "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent" \
   -H "Content-Type: application/json" \
   -H "x-goog-api-key: ${GEMINI_API_KEY}" \
   -d '{
-    "contents": [{
-      "parts": [{"text": "PROMPT_HERE"}]
-    }],
+    "contents": [{"parts": [{"text": "PROMPT_HERE"}]}],
     "generationConfig": {
       "temperature": 0.2,
       "responseModalities": ["TEXT", "IMAGE"]
@@ -125,9 +138,18 @@ curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0
   }'
 ```
 
-**Risk:** Higher structural drift than Approach B. Always validate against `diagram-contracts.json`.
+**Note:** Use `-k` flag for SSL on Windows. Save response to file, then extract image:
+```python
+import json, base64
+data = json.load(open("gemini-response.json"))
+for part in data["candidates"][0]["content"]["parts"]:
+    if "inlineData" in part:
+        open("output.png", "wb").write(base64.b64decode(part["inlineData"]["data"]))
+```
 
-**Best for:** Whiteboard-style diagrams where artistic feel matters more than pixel-perfect structure.
+**Risk:** Higher structural drift than Approach B for technical diagrams. Always validate against `diagram-contracts.json`.
+
+**Best for:** Infographics, comparison visuals, polished summary graphics, whiteboard-style diagrams where artistic quality matters.
 
 ---
 
@@ -192,10 +214,24 @@ curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0
 - `browser_click` / `browser_type` — Interact with web pages to reach the right state before capturing
 
 #### Use Case A: Slide/Diagram Validation
+
+**Important:** Playwright blocks `file://` URLs. Serve HTML over HTTP instead:
+
+```bash
+# Start a local server (run in background)
+python -m http.server 8787 --directory outputs/week-N/images/temp &
+```
+
 ```javascript
-browser_navigate({ "url": "file:///path/to/slide.html" })
+// Navigate via HTTP and screenshot
+browser_navigate({ "url": "http://localhost:8787/slide.html" })
 browser_snapshot({})  // Check structure
 browser_take_screenshot({ "filename": "screenshot.png" })  // Save visual
+```
+
+**Alternative** — use `browser_run_code` for viewport control + screenshot in one call:
+```javascript
+browser_run_code({ "code": "async (page) => { await page.setViewportSize({ width: 960, height: 540 }); await page.goto('http://localhost:8787/diagram.html'); await page.screenshot({ path: 'outputs/week-N/images/diagram--slide-embed.png', type: 'png' }); }" })
 ```
 
 #### Use Case B: Capturing Live Web Content for Slides
@@ -305,6 +341,54 @@ browser_take_screenshot({ "filename": "outputs/week-N/images/bottle-rocket-ui--s
 | 06 Slide Planner | Memory MCP | Reference chart/infographic/screenshot assets in plan |
 | 07 Slide Renderer | Playwright, Canva MCP, AntV Chart (inline) | Infographic slides → Canva; screenshots → Playwright capture |
 | 10 Quality Reviewer | Playwright | Visual regression checks |
+
+---
+
+## Tesla Diagram Brand Guidelines
+
+Diagrams are embedded in Tesla dark-theme slides (`#0a0a0a` background). Diagram palettes must match the slide context.
+
+### Slide-Embed Palette (DEFAULT — for dark slides)
+
+Use this for any diagram that will appear in a slide.
+
+**Background:** `#0a0a0a` (matches slide) or transparent
+
+| Element | Fill | Border/Stroke | Text |
+|---------|------|---------------|------|
+| Agent node | `#1e3a5f` (dark blue) | `#4a9eed` (bright blue) | `#ffffff` |
+| Tool node | `#1a4d2e` (dark green) | `#22c55e` (bright green) | `#ffffff` |
+| Memory node | `#2d1b69` (dark purple) | `#8b5cf6` (bright purple) | `#ffffff` |
+| Guardrail node | `#5c3d1a` (dark orange) | `#f59e0b` (bright amber) | `#ffffff` |
+| User node | `#5c4d1a` (dark yellow) | `#ffd43b` (bright yellow) | `#ffffff` |
+| Data node | `#1a3a5c` (dark teal) | `#4dabf7` (bright blue) | `#ffffff` |
+| Decision node | `#3d3520` (dark cream) | `#fab005` (bright gold) | `#ffffff` |
+| Error node | `#5c1a1a` (dark red) | `#f87171` (bright red) | `#ffffff` |
+| Arrows/edges | — | `#ffffff` or `#a0a0a0` | `#e5e5e5` (labels) |
+| Accent | — | `#e82127` (Tesla red) | — |
+
+**Typography on dark:** Arial/Helvetica, minimum 14px. Title text `#ffffff`, body/labels `#e5e5e5`, secondary `#a0a0a0`. Never use text darker than `#a0a0a0` on dark backgrounds.
+
+### Light-Background Palette (for whiteboard/handouts)
+
+Use for exercise handouts and workshop materials printed on paper.
+
+**Background:** `#faf9f7` (warm off-white) or `#ffffff`
+
+Existing Excalidraw pastel palette applies:
+- Agent: `#4dabf7`, Tool: `#69db7c`, Memory: `#da77f2`, Guardrail: `#ffa94d`
+- Text: `#1e1e1e` (dark), secondary: `#757575`
+
+### Which Palette to Use
+
+| Output Target | Palette | Style Variant |
+|--------------|---------|---------------|
+| Slide HTML (960x540 dark) | Slide-embed | `--slide-embed` |
+| Standalone documentation | Light-background | `--minimal` |
+| Exercise handouts | Light-background | `--whiteboard` |
+| Navigation/gallery | Slide-embed | `--thumbnail` |
+
+**Default: slide-embed** — most diagrams end up in slides.
 
 ---
 

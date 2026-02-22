@@ -13,13 +13,14 @@ GEMINI_API_KEY=your-key-here
 
 ## Rendering Approaches
 
-### Approach A: Gemini Image Generation (Imagen 3)
+### Approach A: Gemini Image Generation (nano-banana)
 
-Use Gemini to generate styled diagram images directly.
+Use Gemini's native image generation to produce styled diagrams and infographics directly as PNG images.
 
-**API Endpoint:** `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict`
+**Model:** `nano-banana-pro-preview` (primary), `gemini-2.0-flash-exp-image-generation` (fallback)
+**API Endpoint:** `https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent`
 
-**Best for:** Whiteboard style, artistic variants
+**Best for:** Infographics, polished comparison visuals, artistic whiteboard variants
 
 **Risk:** May drift from exact structure (mitigate with strong prompts)
 
@@ -82,31 +83,73 @@ curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0
 
 ### Step 3: Save HTML and Screenshot with Playwright
 
+Playwright blocks `file://` URLs. Serve the generated HTML over HTTP:
+
+```bash
+# Start local server (run in background)
+python -m http.server 8787 --directory outputs/week-N/images/temp &
+```
+
 ```javascript
-// Using Playwright MCP
-browser_navigate({ "url": "file:///path/to/generated-diagram.html" })
+// Using Playwright MCP — navigate via HTTP
+browser_navigate({ "url": "http://localhost:8787/orchestration--whiteboard.html" })
 browser_take_screenshot({ "filename": "orchestration--whiteboard.png" })
+```
+
+```bash
+# Kill server after rendering
+pkill -f "python -m http.server 8787"
 ```
 
 ---
 
-## Implementation: Approach A (Image Generation)
+## Implementation: Approach A (nano-banana Image Generation)
 
-### For Imagen 3 (if available)
+### API Call
 
 ```bash
-curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict" \
+curl -k -X POST "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent" \
   -H "Content-Type: application/json" \
   -H "x-goog-api-key: ${GEMINI_API_KEY}" \
   -d '{
-    "instances": [{
-      "prompt": "Technical diagram showing: [DESCRIPTION FROM CONTRACT]. Style: whiteboard sketch with hand-drawn lines on warm white background. Labels must read exactly: [EXACT LABELS]. No additional text."
-    }],
-    "parameters": {
-      "sampleCount": 1
+    "contents": [{"parts": [{"text": "YOUR_PROMPT_HERE"}]}],
+    "generationConfig": {
+      "temperature": 0.2,
+      "responseModalities": ["TEXT", "IMAGE"]
     }
   }'
 ```
+
+**Note:** Use `-k` flag for SSL on Windows environments.
+
+### Response Handling
+
+The response contains base64-encoded image data. Extract and save:
+
+```python
+import json, base64
+with open("gemini-response.json") as f:
+    data = json.load(f)
+for candidate in data.get("candidates", []):
+    for part in candidate.get("content", {}).get("parts", []):
+        if "inlineData" in part:
+            img = base64.b64decode(part["inlineData"]["data"])
+            with open("output.png", "wb") as f:
+                f.write(img)
+```
+
+### Fallback Models (if nano-banana is unavailable)
+
+1. `gemini-2.0-flash-exp-image-generation` — same API pattern
+2. `gemini-2.5-flash-image` — same API pattern
+3. `gemini-3-pro-image-preview` — same API pattern
+
+### Practical Workflow
+
+1. Write prompt to a JSON request file (`tools/gemini-request.json`)
+2. `curl -k -s -X POST ... -d @tools/gemini-request.json -o tools/gemini-response.json`
+3. Extract image with Python base64 decode
+4. Validate against diagram contracts
 
 ---
 

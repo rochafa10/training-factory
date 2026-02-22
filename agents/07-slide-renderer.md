@@ -32,9 +32,14 @@ See `tools/visual-tools.md` for full tool reference.
 
 For EACH slide generated, run this validation:
 
+```bash
+# Serve slides over HTTP (Playwright blocks file:// URLs)
+python -m http.server 8787 --directory outputs/week-N/slides &
+```
+
 ```javascript
-// Step 1: Navigate to slide
-browser_navigate({ "url": "file:///[full-path]/outputs/week-N/slides/slideNN.html" })
+// Step 1: Navigate to slide via HTTP
+browser_navigate({ "url": "http://localhost:8787/slideNN.html" })
 
 // Step 2: Capture snapshot for verification
 browser_snapshot({})

@@ -66,7 +66,7 @@ The visual system uses multiple complementary tools. See `tools/visual-tools.md`
 
 **Rendering (Agent 05):**
 - **Gemini API** (`gemini-2.0-flash`): Renders styled PNGs in 3 variants (`--whiteboard`, `--minimal`, `--thumbnail`) constrained by contracts
-- **Gemini Image Gen** (`gemini-2.0-flash-exp`): Fallback for artistic whiteboard variants with direct image generation
+- **Gemini Image Gen** (`nano-banana-pro-preview`): Native image generation for infographics, comparison visuals, and artistic whiteboard variants
 - **AntV Chart MCP**: Data-driven charts (bar, line, pie, radar) with Tesla dark theme → `--chart.png`
 
 **Slide visuals (Agent 07):**

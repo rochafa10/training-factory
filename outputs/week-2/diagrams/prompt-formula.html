@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Prompt Engineering Formula</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 960px;
+    height: 540px;
+    background: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 40px;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: #757575;
+    margin-bottom: 36px;
+  }
+
+  /* Flow row */
+  .flow {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 12px;
+  }
+
+  .box {
+    width: 160px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e1e1e;
+    border: 2px solid;
+    flex-shrink: 0;
+  }
+  .box.role    { background: #a5d8ff; border-color: #4a9eed; }
+  .box.context { background: #fff3bf; border-color: #f59e0b; }
+  .box.task    { background: #b2f2bb; border-color: #22c55e; }
+  .box.format  { background: #d0bfff; border-color: #8b5cf6; }
+
+  .arrow {
+    width: 48px;
+    height: 2px;
+    background: #1e1e1e;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .arrow::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left: 8px solid #1e1e1e;
+  }
+
+  /* Descriptions */
+  .descriptions {
+    display: flex;
+    gap: 0;
+    margin-bottom: 28px;
+    width: 100%;
+    max-width: 816px;
+  }
+  .desc {
+    width: 160px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    flex-shrink: 0;
+  }
+  .desc:not(:last-child) { margin-right: 48px; }
+  .desc.role    { color: #2b7bc0; }
+  .desc.context { color: #c47e08; }
+  .desc.task    { color: #18944a; }
+  .desc.format  { color: #6d44c4; }
+
+  /* Example box */
+  .example {
+    background: #d3f9d8;
+    border: 1.5px solid #22c55e;
+    border-radius: 12px;
+    padding: 16px 24px;
+    width: 100%;
+    max-width: 780px;
+    opacity: 0.85;
+  }
+  .example-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #15803d;
+    margin-bottom: 8px;
+  }
+  .example-text {
+    font-size: 14.5px;
+    color: #1e1e1e;
+    line-height: 1.55;
+  }
+  .example-text .highlight-role    { color: #2b7bc0; font-weight: 600; }
+  .example-text .highlight-context { color: #c47e08; font-weight: 600; }
+  .example-text .highlight-task    { color: #18944a; font-weight: 600; }
+  .example-text .highlight-format  { color: #6d44c4; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="title">Prompt Engineering Formula</div>
+  <div class="subtitle">The 4-part structure for effective AI prompts</div>
+
+  <div class="flow">
+    <div class="box role">ROLE</div>
+    <div class="arrow"></div>
+    <div class="box context">CONTEXT</div>
+    <div class="arrow"></div>
+    <div class="box task">TASK</div>
+    <div class="arrow"></div>
+    <div class="box format">FORMAT</div>
+  </div>
+
+  <div class="descriptions">
+    <div class="desc role">"Act as a..."</div>
+    <div class="desc context">"Given that..."</div>
+    <div class="desc task">"Please do..."</div>
+    <div class="desc format">"Return as..."</div>
+  </div>
+
+  <div class="example">
+    <div class="example-label">Example</div>
+    <div class="example-text">
+      "<span class="highlight-role">You are an operations analyst</span> at a Tesla distribution center.
+      <span class="highlight-context">Given last month's shipping data</span>,
+      <span class="highlight-task">identify the top 3 bottlenecks</span>
+      and <span class="highlight-format">return a bulleted list with recommended actions</span>."
+    </div>
+  </div>
+</body>
+</html>

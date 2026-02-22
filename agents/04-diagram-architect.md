@@ -51,6 +51,11 @@ create_entities({
 
 Use the Excalidraw MCP server to create and manipulate `.excalidraw` files programmatically. This is preferred over writing raw JSON because it validates element structure, handles ID generation, and ensures schema compliance.
 
+**Excalidraw MCP role in the pipeline:**
+- `create_view` — In-chat preview with draw-on animation. Use for rapid structural iteration.
+- Saving `.excalidraw` JSON — Canonical structural source-of-truth for Agent 05 rendering.
+- **Do NOT** use `export_to_excalidraw` for rendering. It strips all text (labels, titles, descriptions — only shapes/arrows survive). Agent 05 handles all visual rendering via Gemini HTML + Playwright screenshots.
+
 **When to use Excalidraw MCP:**
 - All architecture diagrams, concept maps, and reference models
 - Any diagram where nodes represent components/agents/tools

@@ -3,6 +3,10 @@
 ## Purpose
 Convert Excalidraw canonical diagrams into high-polish visual variants using Gemini. Acts as a **renderer only** - cannot invent, add, or remove structural elements.
 
+## Important: Excalidraw MCP Export Limitation
+
+Excalidraw MCP `.excalidraw` files are structural source-of-truth only. **Do NOT** use `export_to_excalidraw` to render diagrams — it strips all text (labels, titles, descriptions). Always render via the Gemini HTML + Playwright screenshot pipeline described below.
+
 ## Input Required
 - Excalidraw files from `outputs/week-N/diagrams/*.excalidraw`
 - Diagram contracts from `outputs/week-N/diagrams/diagram-contracts.json`
@@ -42,16 +46,46 @@ Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-fla
 Temperature: 0.1
 ```
 
-**Gemini Image Generation (Fallback — Approach A):**
+**Gemini Image Generation (Fallback — Approach A, via nano-banana):**
 ```
 API Key: Same GEMINI_API_KEY
-Model: gemini-2.0-flash-exp (image generation capable)
-Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent
+Model: nano-banana-pro-preview (native image generation)
+Endpoint: https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent
 Response modalities: ["TEXT", "IMAGE"]
 Temperature: 0.2
 ```
 
+**Alternative image gen models (if nano-banana is unavailable):**
+- `gemini-2.0-flash-exp-image-generation`
+- `gemini-2.5-flash-image`
+- `gemini-3-pro-image-preview`
+
+**API call pattern:**
+```bash
+curl -k -X POST "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent" \
+  -H "Content-Type: application/json" \
+  -H "x-goog-api-key: ${GEMINI_API_KEY}" \
+  -d '{
+    "contents": [{"parts": [{"text": "YOUR_PROMPT_HERE"}]}],
+    "generationConfig": {
+      "temperature": 0.2,
+      "responseModalities": ["TEXT", "IMAGE"]
+    }
+  }'
+```
+
+**Response handling:** The image is returned as base64 in `candidates[0].content.parts[].inlineData.data`. Decode and save as PNG:
+```python
+import json, base64
+data = json.load(open("response.json"))
+for part in data["candidates"][0]["content"]["parts"]:
+    if "inlineData" in part:
+        img = base64.b64decode(part["inlineData"]["data"])
+        open("output.png", "wb").write(img)
+```
+
 Use the image generation model when:
+- Infographics, polished comparison visuals, or artistic diagrams are needed
 - Whiteboard-style variants need a more artistic, hand-drawn feel
 - HTML/SVG rendering produces insufficient visual quality
 - Always validate output against `diagram-contracts.json`
@@ -227,6 +261,37 @@ dimensions: 400x300px
 use_case: Navigation, previews, galleries
 ```
 
+### Style: Slide-Embed (DEFAULT for slides)
+
+```yaml
+name: slide-embed
+description: Designed for Tesla dark-theme slides (960x540)
+background: "#0a0a0a" (matches slide background)
+stroke_style: "solid" (clean, precise)
+fill_style: "solid" (dark saturated colors with bright borders)
+font: "Arial" or "Helvetica"
+shadows: subtle (2px, rgba(0,0,0,0.3))
+borders: 2px, bright accent colors
+colors:
+  nodes:
+    agent: fill #1e3a5f, border #4a9eed
+    tool: fill #1a4d2e, border #22c55e
+    memory: fill #2d1b69, border #8b5cf6
+    guardrail: fill #5c3d1a, border #f59e0b
+    user: fill #5c4d1a, border #ffd43b
+    data: fill #1a3a5c, border #4dabf7
+    decision: fill #3d3520, border #fab005
+    error: fill #5c1a1a, border #f87171
+  edges: white (#ffffff) or light gray (#a0a0a0)
+  labels: white (#ffffff), secondary #e5e5e5
+  accent: Tesla red (#e82127) for emphasis
+text_size: standard (16px body, 20px titles min)
+dimensions: 880x420px (fits 960x540 slide with 40px padding)
+use_case: Primary — most diagrams are embedded in dark slides
+```
+
+**Tesla brand compliance:** This style uses the full Tesla slide palette from Agent 07. See `tools/visual-tools.md` → "Tesla Diagram Brand Guidelines" for the complete color reference.
+
 ---
 
 ## Output Naming Convention
@@ -236,10 +301,11 @@ use_case: Navigation, previews, galleries
 ```
 
 Examples:
+- `orchestration--slide-embed.png` (default for slides)
 - `orchestration--whiteboard.png`
 - `orchestration--minimal.png`
 - `orchestration--thumbnail.png`
-- `tool-contracts--whiteboard.png`
+- `tool-contracts--slide-embed.png`
 - `failure-retry--minimal.png`
 
 ---
@@ -255,7 +321,7 @@ For each `.excalidraw` or `.drawio` file:
    ↓
 3. Query Memory MCP for any terminology verification
    ↓
-4. For each style (whiteboard, minimal, thumbnail):
+4. For each style (slide-embed, whiteboard, minimal, thumbnail):
    a. Build Gemini prompt with locked structure
    b. Call Gemini API → get styled HTML/SVG
       (or use Gemini Image Gen for artistic whiteboard variants)
@@ -371,24 +437,51 @@ Overall: Readable at small size
 Dimensions: 400x300px
 ```
 
+**Slide-Embed (DEFAULT):**
+```
+Background: #0a0a0a (Tesla dark, matches slide)
+Strokes: 2px, clean, bright accent colors
+Fill: Dark saturated colors (agent #1e3a5f, tool #1a4d2e, memory #2d1b69, guardrail #5c3d1a, error #5c1a1a)
+Borders: Bright accents (agent #4a9eed, tool #22c55e, memory #8b5cf6, guardrail #f59e0b, error #f87171)
+Font: Arial, clean sans-serif
+Shadows: Subtle 2px
+Edges: White (#ffffff) or light gray (#a0a0a0)
+Labels: White (#ffffff), secondary #e5e5e5
+Accent: Tesla red #e82127 for emphasis
+Overall: Seamless integration with Tesla dark-theme slides
+Dimensions: 880x420px (fits 960x540 slide with padding)
+```
+
 ---
 
 ## Playwright Screenshot Step
 
-After Gemini generates HTML:
+After Gemini generates HTML, serve it over HTTP (Playwright blocks `file://` URLs):
+
+```bash
+# Start a local server in the background
+python -m http.server 8787 --directory outputs/week-N/images/temp &
+```
 
 ```javascript
-// Save HTML to temp file
-// outputs/week-N/images/temp/{diagram}--{style}.html
-
-// Navigate and screenshot
+// Navigate via HTTP and screenshot
 browser_navigate({
-  "url": "file:///[full-path]/outputs/week-N/images/temp/orchestration--whiteboard.html"
+  "url": "http://localhost:8787/orchestration--whiteboard.html"
 })
 
 browser_take_screenshot({
   "filename": "outputs/week-N/images/orchestration--whiteboard.png"
 })
+```
+
+**For precise viewport control** (e.g., 960x540 for slide-embed), use `browser_run_code`:
+```javascript
+browser_run_code({ "code": "async (page) => { await page.setViewportSize({ width: 960, height: 540 }); await page.goto('http://localhost:8787/diagram--slide-embed.html'); await page.screenshot({ path: 'outputs/week-N/images/diagram--slide-embed.png', type: 'png' }); }" })
+```
+
+**Kill the server** after rendering is complete:
+```bash
+pkill -f "python -m http.server 8787"
 ```
 
 ---
@@ -492,7 +585,7 @@ Before delivering images, verify:
 
 | Check | Requirement | Status |
 |-------|-------------|--------|
-| All diagrams rendered | 3 styles each | [ ] |
+| All diagrams rendered | 4 styles each (slide-embed, whiteboard, minimal, thumbnail) | [ ] |
 | All charts rendered | AntV chart entries in contract | [ ] |
 | Contract compliance | 100% node/edge match | [ ] |
 | Label accuracy | Exact match to source | [ ] |
@@ -524,9 +617,10 @@ Agent 07 (Slide Renderer) can embed rendered images:
 ```
 
 Recommended usage:
-- **Minimal** style for most slides
-- **Thumbnail** for navigation/overview slides
+- **Slide-embed** style for most slides (dark background, Tesla brand colors)
+- **Minimal** for standalone documentation and light-background handouts
 - **Whiteboard** for exercise/workshop slides
+- **Thumbnail** for navigation/overview slides
 
 ---
 
