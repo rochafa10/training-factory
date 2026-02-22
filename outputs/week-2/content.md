@@ -892,8 +892,8 @@ When an agent's output does not match your expectations, follow this process:
 | 1. **Notice** | Compare what you asked for vs what you got | "I asked for slides with graphics, but I see only text on black backgrounds" |
 | 2. **Investigate** | Look at the actual output, not just the summary | Open the files. Read them. Check if images load. Check if the formatting is right. |
 | 3. **Diagnose** | Ask: why did the agent miss? | Was the instruction unclear? Was the task too big? Did the agent skip steps? Did it run out of context? |
-| 4. **Fix** | Give a corrected, specific instruction | "Break this into smaller batches of 5. For each batch, validate visually before moving on." |
-| 5. **Prevent** | What would you say differently next time? | "Next time, I will ask the agent to validate after every 5 items instead of doing everything at once." |
+| 4. **Fix** | Give a corrected, specific instruction | "Break this into batches of 5. Validate each one visually before starting the next batch." |
+| 5. **Prevent** | Change the process, not just the prompt | "Next time: smaller batches + quality checks at each step, not at the end." |
 
 ### Real-World Case Study: The 75-Slide Problem
 
@@ -903,8 +903,10 @@ This actually happened during the creation of this training course:
 - **What the agent reported:** "Done! 75 slides created and committed."
 - **What actually happened:** All 75 slides were plain text on black backgrounds. Zero graphics. Zero diagrams embedded. Zero visual tool usage.
 - **Root cause:** The agent was given all 75 slides as one task. It spent its entire capacity writing HTML text files and never got to the visual quality steps (validation, graphics, branding).
-- **The fix:** Break into batches of 5 slides. Each batch must include visual validation before moving on.
-- **The lesson:** When a task is too big, agents cut corners -- just like an overwhelmed team member who rushes to hit a deadline.
+- **The fix (two parts):**
+  1. **Right-size the work:** Break into batches of 5 slides instead of 75 at once.
+  2. **Quality-first order:** Validate each slide visually BEFORE moving to the next one. Do not write all 75 first and validate later -- by then the agent has forgotten the quality standards.
+- **The lesson:** When a task is too big, agents cut corners -- just like an overwhelmed team member who rushes to hit a deadline. And when you let them do all the work before checking, you get 75 problems instead of catching the first one early.
 
 > **SPEAKER NOTES:** This is the most relatable lesson in the entire course. Every AGM has experienced a direct report saying "done!" when the work was not actually done to standard. The parallel is exact: agents under pressure (big tasks, limited context) will optimize for completion over quality. The fix is the same: smaller work packages with quality checks between each one. Ask: "Has anyone had an associate say 'done' when the work wasn't right? What did you do?" Then: "You will do the same thing with agents."
 
@@ -914,9 +916,10 @@ This actually happened during the creation of this training course:
 |----------------|-----------------|
 | "Check the work, not the status update" | Check the output, not the "Done!" message |
 | Break big projects into milestones with reviews | Break big tasks into small batches with validation |
+| Quality inspection at each station, not end of line | Validate each piece BEFORE moving to the next one |
 | "Show me, don't tell me" | Open the files and verify visually |
 | Give specific feedback when quality is off | Give specific instructions when redirecting |
-| Coach to prevent repeat mistakes | Adjust the prompt to prevent the same failure |
+| Coach to prevent repeat mistakes | Adjust the process AND the prompt to prevent the same failure |
 
 ---
 
