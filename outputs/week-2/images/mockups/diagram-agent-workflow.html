@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Agent Workflow: From Instruction to Output</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 960px; height: 540px; overflow: hidden;
+  background: #ffffff; font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.title { font-size: 22px; font-weight: bold; color: #000000; text-align: center; margin-top: 14px; }
+.subtitle { font-size: 13px; color: #666666; text-align: center; margin-top: 3px; }
+
+.flow-area {
+  position: absolute; top: 70px; left: 0; width: 960px; height: 380px;
+}
+
+.node {
+  position: absolute; border-radius: 10px; border: 2px solid;
+  text-align: center; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 4px 6px;
+}
+.node-label { font-size: 11px; font-weight: bold; color: #000000; line-height: 1.3; }
+.node-sub { font-size: 9px; color: #666666; margin-top: 1px; }
+.node-step { font-size: 9px; color: #999; margin-bottom: 1px; }
+
+.node-user { background: #fef9c3; border-color: #ca8a04; }
+.node-agent { background: #e0f2fe; border-color: #3b82f6; }
+.node-tool { background: #dcfce7; border-color: #16a34a; }
+.node-memory { background: #f3e8ff; border-color: #9333ea; }
+.node-data { background: #f0f4f8; border-color: #94a3b8; }
+.node-decision { background: #fff7ed; border-color: #ea580c; }
+
+.diamond-wrap {
+  position: absolute;
+}
+.diamond {
+  width: 78px; height: 78px;
+  transform: rotate(45deg);
+  border-radius: 5px; border: 2px solid #ea580c;
+  background: #fff7ed;
+}
+.diamond-content {
+  transform: rotate(-45deg);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  width: 100%; height: 100%;
+}
+
+.bottom-note {
+  position: absolute; bottom: 12px; left: 0; width: 100%;
+  text-align: center; font-size: 11px; color: #666666;
+}
+.bottom-note strong { color: #000; }
+
+.key-box {
+  position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 16px; font-size: 10px; color: #666;
+}
+.key-item { display: flex; align-items: center; gap: 4px; }
+.key-swatch { width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid; }
+</style>
+</head>
+<body>
+<div class="title">Agent Workflow: From Instruction to Output</div>
+<div class="subtitle">You stay in control at every step</div>
+
+<div class="flow-area">
+  <svg width="960" height="380" style="position:absolute; top:0; left:0;">
+    <defs>
+      <marker id="arrGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0,0 8,3 0,6" fill="#333"/>
+      </marker>
+      <marker id="arrRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0,0 8,3 0,6" fill="#cc0000"/>
+      </marker>
+    </defs>
+
+    <!-- Step 1 → 2: Instruction → Plans -->
+    <line x1="112" y1="105" x2="148" y2="105" stroke="#333" stroke-width="2" marker-end="url(#arrGray)"/>
+
+    <!-- Step 2 → 3: Plans → Approve? -->
+    <line x1="262" y1="105" x2="304" y2="105" stroke="#333" stroke-width="2" marker-end="url(#arrGray)"/>
+
+    <!-- Step 3 → 4: Approve → Execute (Yes) -->
+    <line x1="392" y1="105" x2="438" y2="105" stroke="#333" stroke-width="2" marker-end="url(#arrGray)"/>
+    <text x="406" y="95" font-size="10" fill="#16a34a" font-weight="bold" font-family="Arial">Yes</text>
+
+    <!-- Step 4 → 5: Execute → Checks -->
+    <line x1="548" y1="105" x2="588" y2="105" stroke="#333" stroke-width="2" marker-end="url(#arrGray)"/>
+
+    <!-- Step 5 → 6: Checks → Review -->
+    <line x1="698" y1="105" x2="738" y2="105" stroke="#333" stroke-width="2" marker-end="url(#arrGray)"/>
+
+    <!-- Step 6 → 7: Review → Done -->
+    <line x1="848" y1="105" x2="888" y2="105" stroke="#333" stroke-width="2" marker-end="url(#arrGray)"/>
+    <text x="848" y="95" font-size="9" fill="#16a34a" font-weight="bold" font-family="Arial">Done!</text>
+
+    <!-- Feedback loop 1: Approve "No" → back to Instruction (top arc) -->
+    <path d="M 348,62 L 348,30 Q 348,15 333,15 L 82,15 Q 67,15 67,30 L 67,62"
+          fill="none" stroke="#cc0000" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrRed)"/>
+    <text x="200" y="11" font-size="9" fill="#cc0000" font-family="Arial" text-anchor="middle" font-weight="bold">No &mdash; redirect</text>
+
+    <!-- Feedback loop 2: Review → back to Instruction (bottom arc) -->
+    <path d="M 793,148 L 793,230 Q 793,250 773,250 L 87,250 Q 67,250 67,230 L 67,148"
+          fill="none" stroke="#cc0000" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrRed)"/>
+    <text x="420" y="268" font-size="9" fill="#cc0000" font-family="Arial" text-anchor="middle" font-weight="bold">"Change this..." &mdash; give feedback</text>
+  </svg>
+
+  <!-- Node 1: You Give an Instruction -->
+  <div class="node node-user" style="left: 18px; top: 68px; width: 94px; height: 74px;">
+    <div class="node-step">1</div>
+    <div class="node-label">You Give an Instruction</div>
+  </div>
+
+  <!-- Node 2: Agent Plans -->
+  <div class="node node-agent" style="left: 150px; top: 68px; width: 112px; height: 74px;">
+    <div class="node-step">2</div>
+    <div class="node-label">Agent Plans</div>
+    <div class="node-sub">Breaks goal into steps</div>
+  </div>
+
+  <!-- Node 3: You Approve? (diamond) -->
+  <div class="diamond-wrap" style="left: 309px; top: 66px;">
+    <div class="diamond">
+      <div class="diamond-content">
+        <div class="node-label" style="font-size: 10px;">You<br>Approve?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Node 4: Agent Executes -->
+  <div class="node node-tool" style="left: 440px; top: 68px; width: 108px; height: 74px;">
+    <div class="node-step">4</div>
+    <div class="node-label">Agent Executes</div>
+    <div class="node-sub">Creates files & runs tools</div>
+  </div>
+
+  <!-- Node 5: Agent Checks -->
+  <div class="node node-memory" style="left: 590px; top: 68px; width: 108px; height: 74px;">
+    <div class="node-step">5</div>
+    <div class="node-label">Agent Checks</div>
+    <div class="node-sub">Self-healing</div>
+  </div>
+
+  <!-- Node 6: You Review -->
+  <div class="node node-user" style="left: 740px; top: 68px; width: 108px; height: 74px;">
+    <div class="node-step">6</div>
+    <div class="node-label">You Review the Output</div>
+  </div>
+
+  <!-- Node 7: Done! -->
+  <div class="node node-data" style="left: 890px; top: 78px; width: 60px; height: 54px;">
+    <div class="node-step">7</div>
+    <div class="node-label">Done!</div>
+  </div>
+</div>
+
+<!-- Key -->
+<div class="key-box">
+  <div class="key-item"><div class="key-swatch" style="background:#fef9c3; border-color:#ca8a04;"></div> You (human)</div>
+  <div class="key-item"><div class="key-swatch" style="background:#e0f2fe; border-color:#3b82f6;"></div> Agent (AI)</div>
+  <div class="key-item"><div class="key-swatch" style="background:#dcfce7; border-color:#16a34a;"></div> Action (tool)</div>
+  <div class="key-item"><div class="key-swatch" style="background:#f3e8ff; border-color:#9333ea;"></div> Check (review)</div>
+  <div class="key-item"><div class="key-swatch" style="background:#fff7ed; border-color:#ea580c;"></div> Decision</div>
+  <div class="key-item"><svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="#cc0000" stroke-width="2" stroke-dasharray="4,3"/></svg> Feedback loop</div>
+</div>
+
+<div class="bottom-note"><strong>Key:</strong> You approve every major step — you are always in control</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>GitHub Copilot: Three Modes</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 960px; height: 540px; overflow: hidden;
+  background: #ffffff; font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.title { font-size: 23px; font-weight: bold; color: #000000; text-align: center; margin-top: 14px; }
+.subtitle { font-size: 13px; color: #666666; text-align: center; margin-top: 3px; }
+
+.modes { display: flex; justify-content: center; gap: 18px; margin-top: 12px; padding: 0 24px; }
+
+.mode-card {
+  width: 290px; border-radius: 12px; border: 2px solid;
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.mode-header {
+  padding: 10px 12px; text-align: center; color: #ffffff;
+}
+.mode-header h3 { font-size: 15px; font-weight: bold; margin-bottom: 2px; }
+.mode-shortcut {
+  display: inline-block; background: rgba(255,255,255,0.25);
+  border-radius: 4px; padding: 2px 8px; font-size: 10px;
+  font-family: 'Consolas', 'Courier New', monospace; color: #ffffff;
+}
+.mode-body { padding: 12px 14px; flex: 1; }
+
+.mode-desc { font-size: 11px; color: #333; margin-bottom: 8px; line-height: 1.4; }
+.mode-example {
+  background: #f5f5f5; border-radius: 6px; padding: 8px 10px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 10px; color: #333; margin-bottom: 8px;
+  border-left: 3px solid #ccc; line-height: 1.4;
+}
+.mode-output { font-size: 10px; color: #666; margin-bottom: 6px; }
+.mode-output strong { color: #333; }
+.mode-use { font-size: 10px; color: #666; font-style: italic; }
+.mode-use strong { color: #333; font-style: normal; }
+
+/* Colors */
+.mode-chat .mode-header { background: #3b82f6; }
+.mode-chat { border-color: #3b82f6; }
+.mode-chat .mode-example { border-left-color: #3b82f6; }
+
+.mode-edit .mode-header { background: #ea580c; }
+.mode-edit { border-color: #ea580c; }
+.mode-edit .mode-example { border-left-color: #ea580c; }
+
+.mode-agent .mode-header { background: #16a34a; }
+.mode-agent { border-color: #16a34a; }
+.mode-agent .mode-example { border-left-color: #16a34a; }
+
+/* Bottom autonomy bar */
+.autonomy-bar {
+  position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 6px;
+}
+.autonomy-track {
+  width: 500px; height: 8px; border-radius: 4px;
+  background: linear-gradient(to right, #3b82f6, #ea580c, #16a34a);
+  opacity: 0.5;
+}
+.autonomy-label-left { font-size: 10px; color: #999; }
+.autonomy-label-right { font-size: 10px; color: #333; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="title">GitHub Copilot: Three Modes</div>
+<div class="subtitle">Three levels of help — from questions to building</div>
+
+<div class="modes">
+  <!-- Chat Mode -->
+  <div class="mode-card mode-chat">
+    <div class="mode-header">
+      <h3>Chat Mode</h3>
+      <span class="mode-shortcut">Ctrl + Shift + I</span>
+    </div>
+    <div class="mode-body">
+      <div class="mode-desc">Ask questions about code, get explanations, and brainstorm ideas. Copilot answers — you decide what to do.</div>
+      <div class="mode-example">"What does this formula do?"<br><br>"How do I filter by date in Excel?"</div>
+      <div class="mode-output"><strong>Output:</strong> Text answers in the chat panel</div>
+      <div class="mode-use"><strong>Use when:</strong> You need to understand something before acting</div>
+    </div>
+  </div>
+
+  <!-- Edit Mode -->
+  <div class="mode-card mode-edit">
+    <div class="mode-header">
+      <h3>Edit Mode</h3>
+      <span class="mode-shortcut">Select &gt; Right-click</span>
+    </div>
+    <div class="mode-body">
+      <div class="mode-desc">Select code or text, then ask Copilot to change it. You see a diff preview and approve each edit.</div>
+      <div class="mode-example">"Make this table sort by date descending"<br><br>"Add error handling to this section"</div>
+      <div class="mode-output"><strong>Output:</strong> Inline diff — accept or reject</div>
+      <div class="mode-use"><strong>Use when:</strong> You know exactly what to change</div>
+    </div>
+  </div>
+
+  <!-- Agent Mode -->
+  <div class="mode-card mode-agent">
+    <div class="mode-header">
+      <h3>Agent Mode</h3>
+      <span class="mode-shortcut">Mode dropdown &gt; Agent</span>
+    </div>
+    <div class="mode-body">
+      <div class="mode-desc">Describe a goal. The agent plans, executes, and iterates — creating files, running commands, and self-correcting.</div>
+      <div class="mode-example">"Build a shift schedule template that calculates overtime automatically"</div>
+      <div class="mode-output"><strong>Output:</strong> Working files on your PC</div>
+      <div class="mode-use"><strong>Use when:</strong> You want to delegate a multi-step task</div>
+    </div>
+  </div>
+</div>
+
+<!-- Autonomy bar -->
+<div class="autonomy-bar">
+  <span class="autonomy-label-left">Less autonomy</span>
+  <div class="autonomy-track"></div>
+  <span class="autonomy-label-right">More autonomy &rarr;</span>
+</div>
+
+</body>
+</html>

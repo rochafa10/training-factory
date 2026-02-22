@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>The Plan-Execute-Iterate Loop</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 960px; height: 540px; overflow: hidden;
+  background: #ffffff; font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.title { font-size: 23px; font-weight: bold; color: #000000; text-align: center; margin-top: 16px; }
+.subtitle { font-size: 13px; color: #666666; text-align: center; margin-top: 4px; }
+
+.flow-area {
+  position: absolute; top: 80px; left: 0; width: 960px; height: 340px;
+}
+
+/* Nodes */
+.node {
+  position: absolute; border-radius: 10px; border: 2px solid;
+  text-align: center; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.node-label { font-size: 12px; font-weight: bold; color: #000000; }
+.node-sub { font-size: 10px; color: #666666; margin-top: 2px; max-width: 105px; }
+.node-num { font-size: 10px; color: #999999; margin-bottom: 1px; }
+
+.node-user { background: #fef9c3; border-color: #ca8a04; }
+.node-agent { background: #e0f2fe; border-color: #3b82f6; }
+.node-tool { background: #dcfce7; border-color: #16a34a; }
+.node-memory { background: #f3e8ff; border-color: #9333ea; }
+.node-data { background: #f0f4f8; border-color: #94a3b8; }
+.node-decision { background: #fff7ed; border-color: #ea580c; }
+
+/* Decision diamond shape */
+.diamond {
+  width: 84px; height: 84px;
+  transform: rotate(45deg);
+  border-radius: 6px;
+}
+.diamond-content {
+  transform: rotate(-45deg);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  width: 100%; height: 100%;
+}
+
+.bottom-note {
+  position: absolute; bottom: 14px; left: 0; width: 100%;
+  text-align: center; font-size: 11px; color: #666666; font-style: italic;
+}
+</style>
+</head>
+<body>
+<div class="title">The Plan-Execute-Iterate Loop</div>
+<div class="subtitle">How agents work — like delegating to a capable new hire</div>
+
+<div class="flow-area">
+  <svg width="960" height="340" style="position:absolute; top:0; left:0;">
+    <!-- Arrow: Task → Plan -->
+    <line x1="108" y1="120" x2="150" y2="120" stroke="#333" stroke-width="2"/>
+    <polygon points="150,120 142,115 142,125" fill="#333"/>
+
+    <!-- Arrow: Plan → Approve -->
+    <line x1="270" y1="120" x2="315" y2="120" stroke="#333" stroke-width="2"/>
+    <polygon points="315,120 307,115 307,125" fill="#333"/>
+
+    <!-- Arrow: Approve → Execute (Yes) -->
+    <line x1="402" y1="120" x2="450" y2="120" stroke="#333" stroke-width="2"/>
+    <polygon points="450,120 442,115 442,125" fill="#333"/>
+    <text x="418" y="110" font-size="10" fill="#16a34a" font-weight="bold" font-family="Arial">Yes</text>
+
+    <!-- Arrow: Execute → Check -->
+    <line x1="570" y1="120" x2="618" y2="120" stroke="#333" stroke-width="2"/>
+    <polygon points="618,120 610,115 610,125" fill="#333"/>
+
+    <!-- Arrow: Check → Done -->
+    <line x1="738" y1="120" x2="790" y2="120" stroke="#333" stroke-width="2"/>
+    <polygon points="790,120 782,115 782,125" fill="#333"/>
+    <text x="764" y="108" font-size="9" fill="#16a34a" font-weight="bold" font-family="Arial" text-anchor="middle">Looks good!</text>
+
+    <!-- Feedback loop: Check → Plan (curved, below) -->
+    <path d="M 678,170 L 678,240 Q 678,260 658,260 L 230,260 Q 210,260 210,240 L 210,170"
+          fill="none" stroke="#cc0000" stroke-width="2" stroke-dasharray="6,4"/>
+    <polygon points="210,170 205,180 215,180" fill="#cc0000"/>
+    <text x="420" y="280" font-size="10" fill="#cc0000" font-family="Arial" text-anchor="middle" font-weight="bold">Needs changes? Give feedback</text>
+  </svg>
+
+  <!-- Node: You Give a Task -->
+  <div class="node node-user" style="left: 14px; top: 82px; width: 94px; height: 76px;">
+    <div class="node-label">You Give a Task</div>
+  </div>
+
+  <!-- Node: 1. Plan -->
+  <div class="node node-agent" style="left: 152px; top: 74px; width: 118px; height: 92px;">
+    <div class="node-num">1.</div>
+    <div class="node-label">Plan</div>
+    <div class="node-sub">Agent writes down what it will do</div>
+  </div>
+
+  <!-- Node: You Approve? (diamond) -->
+  <div style="position: absolute; left: 316px; top: 78px; width: 84px; height: 84px;">
+    <div class="diamond node-decision">
+      <div class="diamond-content">
+        <div class="node-label" style="font-size: 11px;">You<br>Approve?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Node: 2. Execute -->
+  <div class="node node-tool" style="left: 452px; top: 74px; width: 118px; height: 92px;">
+    <div class="node-num">2.</div>
+    <div class="node-label">Execute</div>
+    <div class="node-sub">Agent creates files, writes code, runs commands</div>
+  </div>
+
+  <!-- Node: 3. Check -->
+  <div class="node node-memory" style="left: 620px; top: 74px; width: 118px; height: 92px;">
+    <div class="node-num">3.</div>
+    <div class="node-label">Check</div>
+    <div class="node-sub">You review the output. Is it right?</div>
+  </div>
+
+  <!-- Node: Task Complete -->
+  <div class="node node-data" style="left: 792px; top: 82px; width: 150px; height: 76px;">
+    <svg width="28" height="28" style="margin-bottom: 2px;">
+      <circle cx="14" cy="14" r="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <polyline points="8,14 12,18 20,10" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="node-label">Task Complete</div>
+  </div>
+</div>
+
+<div class="bottom-note">The feedback loop is what makes agents powerful — they learn from your corrections in real time</div>
+
+</body>
+</html>
