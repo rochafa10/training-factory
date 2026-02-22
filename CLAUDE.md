@@ -107,7 +107,7 @@ Include this context when running any agent:
 | Agent | Tools |
 |-------|-------|
 | 01 Curriculum Architect | WebSearch, perplexity_research, Memory MCP |
-| 02 Research Agent | perplexity_research (primary), perplexity_search (verification), WebSearch |
+| 02 Research Agent | perplexity_research (primary), perplexity_search (verification), WebSearch, Playwright (content capture) |
 | 03 Content Writer | Memory MCP (terminology consistency) |
 | 04 Diagram Architect | Excalidraw MCP (canonical diagrams), Draw.io MCP (flowcharts/swim-lanes), Memory MCP (label verification) |
 | 05 Diagram Renderer | Gemini API (styled HTML/SVG), Gemini Image Gen (artistic variants), AntV Chart MCP (data charts), Playwright (screenshots), Memory MCP |

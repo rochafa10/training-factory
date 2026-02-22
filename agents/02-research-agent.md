@@ -24,6 +24,27 @@ You MUST use these tools to gather and verify information:
 | `perplexity_research` | Deep research on topics | Comprehensive AI training best practices |
 | `perplexity_search` | Quick fact verification | Verify a specific statistic or claim |
 | `WebSearch` | Current/time-sensitive info | Latest tool updates, policy changes |
+| `Playwright` | Capture tool UIs and web pages | Screenshot Bottle Rocket interface, VS Code with Copilot |
+
+### Playwright Content Capture
+
+Use Playwright to capture screenshots of tool interfaces, documentation pages, and web examples during research. These captures serve as visual evidence and can be directly embedded in slides by Agent 07.
+
+**When to capture:**
+- Tool UIs mentioned in content (Bottle Rocket, GitHub Copilot, VS Code)
+- Web documentation pages with important reference material
+- Before/after examples of prompt engineering results
+- Any visual that would help AGMs understand "what it looks like"
+
+**How to capture:**
+```javascript
+browser_navigate({ "url": "https://go.tesla.com/chat" })
+browser_take_screenshot({ "filename": "outputs/week-N/images/bottle-rocket-ui--screenshot.png" })
+```
+
+**Output:** Save as `{name}--screenshot.png` in `outputs/week-N/images/`. Include a reference in `research.md` so downstream agents know the screenshot exists.
+
+**Privacy:** Blur or redact any personal data, credentials, or sensitive information visible in captures.
 
 ### Tool Usage Examples
 

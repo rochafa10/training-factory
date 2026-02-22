@@ -48,6 +48,7 @@ You are a Slide Planner creating a structured blueprint for a Tesla corporate tr
 | Data trends / comparisons | Chart | AntV Chart PNG with Tesla dark theme |
 | `## Key Takeaways` | Summary | 3-4 numbered items |
 | Week summary / overview | Infographic | Canva-generated branded visual |
+| Tool UI reference / "what it looks like" | Screenshot | Playwright-captured PNG of live tool or web page |
 | Exercise reference | Exercise | Red badge, instructions, tips |
 | Canonical diagram reference | Canonical Diagram | Excalidraw SVG with "CANONICAL MODEL" badge |
 | Teaching diagram reference | Teaching Diagram | Gemini PNG (--minimal) with numbered callouts |
@@ -103,6 +104,12 @@ You are a Slide Planner creating a structured blueprint for a Tesla corporate tr
 - Use for: week summary slides, key takeaway visuals, course overview
 - Only use when standard HTML templates cannot achieve the required visual impact
 
+### 14. Screenshot
+- Embed Playwright-captured PNG (`--screenshot` variant). Live tool UI or web page capture.
+- Use for: showing what a tool actually looks like, before/after demos, real interface orientation
+- Specify the source URL or tool being captured, and any annotations/callouts
+- Captures are taken by Agent 07 using Playwright MCP at render time, or pre-captured by Agent 02 during research
+
 ---
 
 ## Diagram Style Selection
@@ -118,6 +125,7 @@ When a slide references a diagram, specify which style variant to use:
 | Error handling | Whiteboard | `../images/{name}--whiteboard.png` |
 | Statistics / metrics | AntV Chart | `../images/{name}--chart.png` |
 | Visual summary | Canva Infographic | `../images/{name}--infographic.png` |
+| Tool UI / web capture | Playwright Screenshot | `../images/{name}--screenshot.png` |
 
 ---
 
@@ -236,6 +244,18 @@ Generate `slide-plan.md` with this structure:
 ---
 
 ## Slide 10
+- **Type:** Screenshot
+- **Title:** [What we're looking at]
+- **Image:** ../images/[name]--screenshot.png
+- **Source:** [URL or tool name being captured]
+- **Annotations:**
+  1. [Callout description] (position hint: [area])
+  2. [Callout description] (position hint: [area])
+- **Note:** Captured via Playwright MCP. Redact any sensitive data before embedding.
+
+---
+
+## Slide 11
 - **Type:** Exercise
 - **Badge:** Exercise [N]
 - **Title:** [Exercise title]

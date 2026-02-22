@@ -177,24 +177,53 @@ curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0
 
 ### 6. Playwright MCP
 
-**Purpose:** Browser automation for screenshotting HTML to PNG and validating slide rendering.
+**Purpose:** Browser automation for three use cases: (A) screenshotting HTML to PNG, (B) validating slide rendering, and (C) capturing live web content for slides.
 
 **When to use:**
+- Agent 02 — capture screenshots of tool UIs, documentation pages, or web examples for research evidence
 - Agent 05 — screenshot Gemini-generated HTML diagrams
-- Agent 07 — validate every slide HTML file
+- Agent 07 — validate every slide HTML file AND capture live web content for Screenshot slides
 - Agent 10 — spot-check visual quality
 
 **Key operations:**
-- `browser_navigate` — Load HTML file
+- `browser_navigate` — Load any URL (local file or web page)
 - `browser_snapshot` — Capture accessibility tree for structural validation
 - `browser_take_screenshot` — Save visual as PNG
+- `browser_click` / `browser_type` — Interact with web pages to reach the right state before capturing
 
-**Standard validation sequence:**
+#### Use Case A: Slide/Diagram Validation
 ```javascript
 browser_navigate({ "url": "file:///path/to/slide.html" })
 browser_snapshot({})  // Check structure
 browser_take_screenshot({ "filename": "screenshot.png" })  // Save visual
 ```
+
+#### Use Case B: Capturing Live Web Content for Slides
+Navigate to a tool UI, documentation page, or web example, interact to show the relevant state, then screenshot for embedding in slides.
+
+```javascript
+// Example: Capture Bottle Rocket UI
+browser_navigate({ "url": "https://go.tesla.com/chat" })
+// Interact if needed to show relevant state
+browser_take_screenshot({ "filename": "outputs/week-N/images/bottle-rocket-ui--screenshot.png" })
+```
+
+**Best capture targets for this course:**
+| Content | URL / Source | Use In |
+|---------|-------------|--------|
+| Bottle Rocket chat interface | `go.tesla.com/chat` | Week 1 — "What It Looks Like" slides |
+| GitHub Copilot suggestions | VS Code with Copilot active | Week 3 — agent mode demos |
+| VS Code workspace | Local VS Code screenshot | Week 3 — IDE orientation |
+| Prompt engineering examples | Tool output screenshots | Week 2 — before/after prompts |
+| Policy documentation | Internal Tesla policy pages | Week 1 — policy tier reference |
+
+**Output naming:** `{name}--screenshot.png` in `outputs/week-N/images/`
+
+**Screenshot guidelines:**
+- Capture at consistent dimensions (1280x720 or 960x540 for direct slide embed)
+- Crop or annotate to highlight the relevant area
+- Blur or redact any sensitive/personal data before embedding
+- Add a thin border (#2a2a2a, 1px) for screenshots on dark slide backgrounds
 
 ---
 
@@ -264,15 +293,17 @@ browser_take_screenshot({ "filename": "screenshot.png" })  // Save visual
 | Data chart/graph | AntV Chart MCP | `--chart.png` |
 | Infographic | Canva MCP | `--infographic.png` |
 | Artistic/sketch visual | Gemini Image Gen | `--whiteboard.png` |
+| Live tool UI / web page | Playwright MCP | `--screenshot.png` |
 
 ### By Agent
 
 | Agent | Primary Tools | When to Escalate |
 |-------|--------------|------------------|
+| 02 Research Agent | Perplexity, WebSearch, Playwright (content capture) | Capture tool UIs and web pages as research evidence |
 | 04 Diagram Architect | Excalidraw MCP, Draw.io MCP, Memory MCP | Complex swim-lanes → Draw.io |
 | 05 Diagram Renderer | Gemini API, Playwright, AntV Chart, Memory MCP | Data viz → AntV; artistic → Gemini Image Gen |
-| 06 Slide Planner | Memory MCP | Reference chart/infographic assets in plan |
-| 07 Slide Renderer | Playwright, Canva MCP, AntV Chart (inline) | Infographic slides → Canva; inline charts → AntV |
+| 06 Slide Planner | Memory MCP | Reference chart/infographic/screenshot assets in plan |
+| 07 Slide Renderer | Playwright, Canva MCP, AntV Chart (inline) | Infographic slides → Canva; screenshots → Playwright capture |
 | 10 Quality Reviewer | Playwright | Visual regression checks |
 
 ---
@@ -288,6 +319,7 @@ All visual outputs go in `outputs/week-N/images/`:
 | `{name}--thumbnail.png` | Gemini render | `orchestration--thumbnail.png` |
 | `{name}--chart.png` | AntV Chart | `time-savings--chart.png` |
 | `{name}--infographic.png` | Canva | `week-summary--infographic.png` |
+| `{name}--screenshot.png` | Playwright capture | `bottle-rocket-ui--screenshot.png` |
 | `{name}.drawio` | Draw.io MCP | `agm-workflow.drawio` (in diagrams/) |
 
 ---

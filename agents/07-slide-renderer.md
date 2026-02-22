@@ -346,6 +346,36 @@ Every slide starts from this template:
 4. Export as PNG to `outputs/week-N/images/{name}--infographic.png`
 5. Embed in slide HTML with full-bleed layout
 
+### Type: Screenshot
+```html
+<div class="slide-content">
+  <h2>[Title from plan]</h2>
+  <div class="screenshot-container">
+    <img src="[Screenshot image path from plan]" alt="[Title]" class="screenshot-image">
+    <!-- Annotation callouts from plan -->
+    <div class="screenshot-callout" style="top: [Y]px; left: [X]px;">
+      <span class="callout-number">①</span>
+      <span class="callout-text">[Annotation text from plan]</span>
+    </div>
+    <!-- Repeat per annotation -->
+  </div>
+  <p class="screenshot-source">[Source URL or tool name]</p>
+</div>
+```
+- `.screenshot-container`: position relative, display flex, justify-content center, padding 8px 40px
+- `.screenshot-image`: max-width 100%, max-height 380px, border-radius 8px, border 1px solid #2a2a2a
+- `.screenshot-callout`: position absolute, display flex, align-items center, gap 6px
+- `.callout-number`: background #e82127, color white, width 22px, height 22px, border-radius 50%, font-weight bold, font-size 13px, display flex, align-items center, justify-content center
+- `.callout-text`: background rgba(26,26,26,0.9), padding 4px 8px, border-radius 4px, font-size 11px, white-space nowrap
+- `.screenshot-source`: text-align center, font-size 10px, color #666, margin-top 4px
+
+**Playwright capture workflow for Screenshot slides:**
+1. Use `browser_navigate` to load the target URL
+2. Optionally interact (`browser_click`, `browser_type`) to reach the desired UI state
+3. Use `browser_take_screenshot` to save as `outputs/week-N/images/{name}--screenshot.png`
+4. If the screenshot already exists (pre-captured by Agent 02), skip capture and embed directly
+5. Blur or redact any sensitive/personal data visible in the capture
+
 ---
 
 ## Embedding Diagrams
@@ -367,6 +397,9 @@ Use relative paths from the slides/ directory:
 
 <!-- Canva Infographic (branded visual) -->
 <img src="../images/[name]--infographic.png" alt="[description]" style="max-width: 100%; max-height: 540px;">
+
+<!-- Playwright Screenshot (live tool/web capture) -->
+<img src="../images/[name]--screenshot.png" alt="[description]" style="max-width: 100%; max-height: 380px; border: 1px solid #2a2a2a; border-radius: 8px;">
 ```
 
 ---
