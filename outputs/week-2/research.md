@@ -253,12 +253,15 @@ GitHub Copilot in VS Code offers three distinct interaction modes. Understanding
 - **MCP integration:** Can use external tools (Playwright, file system, APIs) via MCP servers
 
 **Key Research Findings:**
-- Agent Mode was introduced in VS Code 1.99 (July 2025) — *Source: GitHub Newsroom*
+- Agent Mode was announced February 2025 (preview), GA by mid-2025 — *Source: VS Code Blog, GitHub Newsroom*
+- Agent mode "monitors the correctness of code edits and terminal command output and iterates to remediate issues" — self-healing — *Source: VS Code Blog*
 - Agent mode always consumes premium requests, even for simple tasks — *Source: 4sysops*
 - Agent mode determines which files to change, suggests terminal commands, and iterates until done — *Source: GitHub Docs*
-- As of February 2026, Agent Mode has split into "Copilot Coding Agent" alongside third-party agents (Claude, OpenAI Codex) — *Source: SmartScope*
+- Supported models include Claude Sonnet 4/4.5, Claude Opus 4.5/4.6, GPT-5 mini, Gemini 2.5 Pro — *Source: GitHub Docs*
+- 4.7 million paid Copilot users as of early 2026 — *Source: GitHub*
+- As of February 2026, Copilot includes "Coding Agent" alongside third-party agents (Claude, OpenAI Codex) — *Source: SmartScope*
 
-**Source:** [GitHub Copilot Features](https://docs.github.com/en/copilot/get-started/features), [GitHub Newsroom - Agent Mode](https://github.com/newsroom/press-releases/agent-mode), [4sysops - Agent Mode vs Ask and Edit](https://4sysops.com/archives/github-copilot-agent-mode-vs-ask-and-edit-mode-in-vs-code/), [Microsoft Learn - Copilot Chat Modes](https://learn.microsoft.com/en-us/shows/visual-studio-code/ask-edit-and-agent-in-depth-overview-of-github-copilot-chat-modes)
+**Source:** [VS Code Blog - Introducing Agent Mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode), [GitHub Copilot Features](https://docs.github.com/en/copilot/get-started/features), [GitHub Newsroom - Agent Mode](https://github.com/newsroom/press-releases/agent-mode), [4sysops - Agent Mode vs Ask and Edit](https://4sysops.com/archives/github-copilot-agent-mode-vs-ask-and-edit-mode-in-vs-code/), [GitHub Docs - Supported Models](https://docs.github.com/en/copilot/reference/ai-models/supported-models)
 
 ---
 
@@ -727,7 +730,8 @@ FORMAT:
 | MCP servers (November 2024 → 2026) | ~100 → 10,000+ | MCP Manager, Pento | Yes |
 | MCP monthly SDK downloads | 97M+ | Pento | Yes |
 | Fortune 500 MCP adoption | 28% | Guptadeepak.com | Yes |
-| Copilot Agent Mode release | VS Code 1.99, July 2025 | GitHub Newsroom | Yes |
+| Copilot Agent Mode release | Preview Feb 2025, GA mid-2025 | VS Code Blog, GitHub Newsroom | Yes |
+| Copilot paid users | 4.7 million | GitHub | Yes |
 | Copilot default model changed to | GPT-4.1 | Visual Studio Magazine | Yes |
 
 ---
@@ -757,7 +761,7 @@ FORMAT:
 | 19 | MCP grew to 10,000+ servers in 1 year | MCP Manager, Pento | WebSearch | Feb 2026 | Verified |
 | 20 | 97M+ monthly MCP SDK downloads | Pento | WebSearch | Feb 2026 | Verified |
 | 21 | 28% Fortune 500 MCP adoption | Guptadeepak.com | WebSearch | Feb 2026 | Verified |
-| 22 | Copilot Agent Mode in VS Code 1.99 (July 2025) | GitHub Newsroom | WebSearch | Feb 2026 | Verified |
+| 22 | Copilot Agent Mode preview Feb 2025, GA mid-2025 | VS Code Blog, GitHub Newsroom | WebSearch | Feb 2026 | Verified |
 | 23 | Copilot supports Claude Opus 4.5 (3x multiplier) | SmartScope, Visual Studio Magazine | WebSearch | Feb 2026 | Verified |
 | 24 | Copilot default model changed to GPT-4.1 | Visual Studio Magazine | WebSearch | Feb 2026 | Verified |
 | 25 | MCP donated to Agentic AI Foundation (Linux Foundation) | Anthropic Official | WebSearch | Feb 2026 | Verified |
@@ -867,13 +871,27 @@ FORMAT:
 
 50. **Deloitte.** "The State of AI in the Enterprise - 2026 AI Report." [https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-generative-ai-in-enterprise.html](https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-generative-ai-in-enterprise.html)
 
+51. **VS Code Blog.** "Introducing GitHub Copilot Agent Mode (Preview)." February 2025. [https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
+
+52. **GitHub Docs.** "Supported AI Models for Copilot." [https://docs.github.com/en/copilot/reference/ai-models/supported-models](https://docs.github.com/en/copilot/reference/ai-models/supported-models)
+
+53. **OpenAI.** "A Practical Guide to Building AI Agents." [https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
+
+54. **Google.** "Agents Whitepaper." September 2024. [https://www.kaggle.com/whitepaper-agents](https://www.kaggle.com/whitepaper-agents)
+
+55. **IBM.** "What Are AI Agents?" [https://www.ibm.com/think/topics/ai-agents](https://www.ibm.com/think/topics/ai-agents)
+
+56. **Anthropic.** "Introducing the Model Context Protocol." November 2024. [https://www.anthropic.com/news/model-context-protocol](https://www.anthropic.com/news/model-context-protocol)
+
+57. **Atlassian.** "What Is Version Control." [https://www.atlassian.com/git/tutorials/what-is-version-control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+
 ---
 
 ## Quality Gate Checklist
 
 | Check | Requirement | Status |
 |-------|-------------|--------|
-| Sources cited | Minimum 5 unique sources | ✅ 50+ sources |
+| Sources cited | Minimum 5 unique sources | ✅ 57 sources |
 | Statistics verified | 100% have documented sources | ✅ All verified |
 | Recency | All AI tool info from 2024+ | ✅ 2025–2026 data |
 | Tool accuracy | Features verified against official docs | ✅ Verified |
@@ -885,5 +903,5 @@ FORMAT:
 ---
 
 *Research completed: January–February 2026*
-*Primary Sources: 50+*
+*Primary Sources: 57*
 *Verification Rate: 100%*
