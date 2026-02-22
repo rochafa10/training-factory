@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 46 - Before MCP vs After MCP</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 32px 40px 24px 48px; }
+h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
+.scenario { background: #1a1a1a; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+.scenario-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.scenario-label.without { color: #f87171; }
+.scenario-label.with { color: #4ade80; }
+.dialog { font-size: 15px; color: #e5e5e5; margin-bottom: 6px; }
+.dialog .you { color: #a0a0a0; font-weight: 700; }
+.dialog .agent { color: #e82127; font-weight: 700; }
+.dialog .response { font-style: italic; }
+.takeaway { font-size: 16px; color: #a0a0a0; text-align: center; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="container">
+  <h1>Before MCP vs After MCP</h1>
+  <div class="scenario">
+    <div class="scenario-label without">Without Playwright MCP</div>
+    <div class="dialog"><span class="you">You:</span> "Check the weather for Tampa FL"</div>
+    <div class="dialog"><span class="agent">Agent:</span> <span class="response">"I can't access the internet."</span></div>
+  </div>
+  <div class="scenario">
+    <div class="scenario-label with">With Playwright MCP Installed</div>
+    <div class="dialog"><span class="you">You:</span> "Check the weather for Tampa FL"</div>
+    <div class="dialog"><span class="agent">Agent:</span> <span class="response">Opens weather.com, reads forecast, reports: "Tampa FL: 78 degrees, partly cloudy"</span></div>
+  </div>
+  <p class="takeaway">Same agent, same question -- but with a new skill, it can actually do the job.</p>
+</div>
+</body>
+</html>

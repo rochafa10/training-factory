@@ -1,106 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Slide 06 - Plan Execute Iterate</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      width: 960px; height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-      position: relative;
-    }
-    .accent-bar {
-      position: absolute; left: 0; top: 0;
-      width: 8px; height: 100%;
-      background: #e82127;
-    }
-    .container {
-      padding: 32px 40px;
-      height: 100%;
-      display: flex; flex-direction: column;
-    }
-    h1 { font-size: 28px; margin-bottom: 32px; }
-    .flow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 32px;
-    }
-    .step {
-      width: 200px;
-      background: #1a1a1a;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-    .step-num {
-      width: 36px; height: 36px;
-      background: #e82127;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 16px; font-weight: bold;
-      margin: 0 auto 12px;
-    }
-    .step-title {
-      font-size: 18px; font-weight: bold;
-      margin-bottom: 8px;
-    }
-    .step-desc {
-      font-size: 12px; color: #a0a0a0;
-      line-height: 1.4;
-    }
-    .arrow {
-      font-size: 24px; color: #e82127;
-    }
-    .you-control {
-      background: #1a1a1a;
-      border: 2px solid #4ade80;
-      border-radius: 12px;
-      padding: 20px 32px;
-      text-align: center;
-      margin-top: auto;
-    }
-    .you-control-title {
-      font-size: 16px; font-weight: bold;
-      color: #4ade80; margin-bottom: 8px;
-    }
-    .you-control-desc {
-      font-size: 13px; color: #a0a0a0;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Slide 06 - Three Techniques That Level Up Your Prompts</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 28px 40px 24px 48px; }
+h1 { font-size: 28px; font-weight: 700; margin-bottom: 20px; }
+.technique { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; border-left: 4px solid #e82127; }
+.technique-name { font-size: 18px; font-weight: 700; color: #e82127; margin-bottom: 6px; }
+.technique-desc { font-size: 14px; color: #e5e5e5; line-height: 1.4; }
+.technique-stat { font-size: 12px; color: #4ade80; margin-top: 4px; }
+</style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="container">
-    <h1>How Agents Work: Plan &rarr; Execute &rarr; Iterate</h1>
-    <div class="flow">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-title">Plan</div>
-        <div class="step-desc">Agent reads your request and creates a step-by-step plan</div>
-      </div>
-      <div class="arrow">&rarr;</div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-title">Execute</div>
-        <div class="step-desc">Agent creates files, writes code, runs commands</div>
-      </div>
-      <div class="arrow">&rarr;</div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-title">Iterate</div>
-        <div class="step-desc">You review output, give feedback, agent adjusts</div>
-      </div>
-    </div>
-    <div class="you-control">
-      <div class="you-control-title">You Stay in Control</div>
-      <div class="you-control-desc">Agents ask before taking action. You approve every step. You can pause, redirect, or undo at any time.</div>
-    </div>
+<div class="accent-bar"></div>
+<div class="container">
+  <h1>Three Techniques That Level Up Your Prompts</h1>
+  <div class="technique">
+    <div class="technique-name">Chain-of-Thought (CoT)</div>
+    <div class="technique-desc">Force step-by-step reasoning. Add "Analyze step by step." AI shows its work: calculations, logic, conclusions.</div>
+    <div class="technique-stat">20-40% accuracy improvement</div>
   </div>
+  <div class="technique">
+    <div class="technique-name">Few-Shot</div>
+    <div class="technique-desc">Teach by example. Show 2-3 examples of the exact output format you want. AI learns your pattern and replicates it.</div>
+    <div class="technique-stat">2-5 examples is the sweet spot</div>
+  </div>
+  <div class="technique">
+    <div class="technique-name">Enhanced Persona</div>
+    <div class="technique-desc">Assign specific expertise. "You are a warehouse safety specialist with 10 years of experience." More specific = better output.</div>
+  </div>
+</div>
 </body>
 </html>

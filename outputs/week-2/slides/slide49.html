@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 49 - Exercise: Step 1 - Install Playwright MCP</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 22px 40px 18px 48px; }
+.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
+h1 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+.steps { background: #1a1a1a; border-radius: 12px; padding: 14px 18px; margin-bottom: 12px; }
+.step { display: flex; gap: 12px; margin-bottom: 7px; font-size: 15px; color: #e5e5e5; }
+.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
+.command-box { background: #2a2a2a; border-radius: 6px; padding: 10px 14px; font-family: 'Courier New', monospace; font-size: 14px; color: #4ade80; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="container">
+  <div class="exercise-badge">Exercise 5 -- Step 1</div>
+  <h1>Install Playwright MCP</h1>
+  <div class="steps">
+    <div class="step"><span class="step-num">1.</span> Press <strong>Ctrl+Shift+P</strong> to open Command Palette</div>
+    <div class="step"><span class="step-num">2.</span> Type: <strong>MCP: Add Server</strong></div>
+    <div class="step"><span class="step-num">3.</span> Choose "Command (stdio)"</div>
+    <div class="step"><span class="step-num">4.</span> Command:</div>
+  </div>
+  <div class="command-box">npx -y @anthropic-ai/mcp-playwright</div>
+  <div class="steps" style="margin-top: 12px;">
+    <div class="step"><span class="step-num">5.</span> Name: <strong>playwright</strong></div>
+    <div class="step"><span class="step-num">6.</span> Save to: <strong>User Settings</strong></div>
+    <div class="step"><span class="step-num">7.</span> Click "Allow" when asked to trust the server</div>
+  </div>
+</div>
+</body>
+</html>

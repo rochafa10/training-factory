@@ -1,137 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Slide 02 - Today's Journey</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      width: 960px; height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-      position: relative;
-    }
-    .accent-bar {
-      position: absolute; left: 0; top: 0;
-      width: 8px; height: 100%;
-      background: #e82127;
-    }
-    .container {
-      padding: 32px 40px;
-      height: 100%;
-      display: flex; flex-direction: column;
-    }
-    h1 { font-size: 28px; margin-bottom: 24px; }
-    .timeline {
-      display: flex; flex-direction: column;
-      gap: 6px; flex: 1;
-    }
-    .phase {
-      display: flex; align-items: center;
-      gap: 16px; padding: 8px 16px;
-      border-radius: 8px;
-    }
-    .phase-active { background: #1a1a1a; }
-    .phase-break { opacity: 0.4; }
-    .time {
-      font-size: 12px; color: #a0a0a0;
-      width: 80px; flex-shrink: 0;
-    }
-    .dot {
-      width: 10px; height: 10px;
-      border-radius: 50%; flex-shrink: 0;
-    }
-    .dot-prompt { background: #e82127; }
-    .dot-agent { background: #4ade80; }
-    .dot-mcp { background: #facc15; }
-    .dot-debug { background: #818cf8; }
-    .dot-break { background: #a0a0a0; }
-    .label { font-size: 14px; }
-    .tag {
-      font-size: 10px; padding: 2px 8px;
-      border-radius: 4px; margin-left: auto;
-    }
-    .tag-ho { background: #e82127; color: #fff; }
-    .tag-ci { background: #2a2a2a; color: #a0a0a0; }
-    .footer {
-      font-size: 12px; color: #a0a0a0;
-      padding-top: 12px; border-top: 1px solid #2a2a2a;
-      display: flex; justify-content: space-between;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Slide 02 - Today's Agenda</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 28px 40px 24px 48px; }
+h1 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
+.agenda-item { display: flex; align-items: baseline; padding: 5px 0; font-size: 14px; color: #e5e5e5; }
+.time { color: #e82127; font-weight: 700; min-width: 56px; font-size: 13px; }
+.dash { color: #a0a0a0; margin: 0 8px; }
+.duration { color: #a0a0a0; font-size: 12px; margin-left: 6px; }
+.break-item { color: #a0a0a0; font-style: italic; }
+</style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="container">
-    <h1>Today's Journey</h1>
-    <div class="timeline">
-      <div class="phase phase-active">
-        <span class="time">0:00</span>
-        <span class="dot dot-prompt"></span>
-        <span class="label">Homework Review &amp; Wins</span>
-        <span class="tag tag-ho">10 min</span>
-      </div>
-      <div class="phase phase-active">
-        <span class="time">0:10</span>
-        <span class="dot dot-prompt"></span>
-        <span class="label">Advanced Prompting &mdash; CoT + Data Sprint</span>
-        <span class="tag tag-ho">45 min</span>
-      </div>
-      <div class="phase phase-break">
-        <span class="time">0:55</span>
-        <span class="dot dot-break"></span>
-        <span class="label">Break</span>
-        <span class="tag tag-ci">10 min</span>
-      </div>
-      <div class="phase phase-active">
-        <span class="time">1:05</span>
-        <span class="dot dot-agent"></span>
-        <span class="label">What Is an Agent? + VS Code Setup</span>
-        <span class="tag tag-ho">30 min</span>
-      </div>
-      <div class="phase phase-active">
-        <span class="time">1:35</span>
-        <span class="dot dot-agent"></span>
-        <span class="label">First Agent Mode Task</span>
-        <span class="tag tag-ho">25 min</span>
-      </div>
-      <div class="phase phase-break">
-        <span class="time">2:00</span>
-        <span class="dot dot-break"></span>
-        <span class="label">Break</span>
-        <span class="tag tag-ci">10 min</span>
-      </div>
-      <div class="phase phase-active">
-        <span class="time">2:10</span>
-        <span class="dot dot-mcp"></span>
-        <span class="label">MCP Skills + Install First Skill</span>
-        <span class="tag tag-ho">30 min</span>
-      </div>
-      <div class="phase phase-active">
-        <span class="time">2:40</span>
-        <span class="dot dot-mcp"></span>
-        <span class="label">Agent Builds a Real Tool</span>
-        <span class="tag tag-ho">35 min</span>
-      </div>
-      <div class="phase phase-active">
-        <span class="time">3:15</span>
-        <span class="dot dot-debug"></span>
-        <span class="label">Debug &amp; Redirect an Agent</span>
-        <span class="tag tag-ho">25 min</span>
-      </div>
-      <div class="phase phase-active">
-        <span class="time">3:40</span>
-        <span class="dot dot-prompt"></span>
-        <span class="label">Share Results + Homework</span>
-        <span class="tag tag-ho">20 min</span>
-      </div>
-    </div>
-    <div class="footer">
-      <span>7 hands-on exercises</span>
-      <span>81% hands-on | 10% concept | 8% breaks</span>
-    </div>
-  </div>
+<div class="accent-bar"></div>
+<div class="container">
+  <h1>Today's Agenda</h1>
+  <div class="agenda-item"><span class="time">0:00</span><span class="dash">--</span> Homework Review &amp; Wins <span class="duration">(10 min)</span></div>
+  <div class="agenda-item"><span class="time">0:10</span><span class="dash">--</span> Advanced Prompting: CoT, Few-Shot, Persona <span class="duration">(5 min)</span></div>
+  <div class="agenda-item"><span class="time">0:15</span><span class="dash">--</span> Exercise 1: Data Analysis Sprint <span class="duration">(30 min)</span></div>
+  <div class="agenda-item"><span class="time">0:45</span><span class="dash">--</span> Exercise 2: Template Speed Build <span class="duration">(10 min)</span></div>
+  <div class="agenda-item break-item"><span class="time">0:55</span><span class="dash">--</span> BREAK <span class="duration">(10 min)</span></div>
+  <div class="agenda-item"><span class="time">1:05</span><span class="dash">--</span> What Is an AI Agent? <span class="duration">(5 min)</span></div>
+  <div class="agenda-item"><span class="time">1:10</span><span class="dash">--</span> Exercise 3: VS Code + Copilot Setup <span class="duration">(20 min)</span></div>
+  <div class="agenda-item"><span class="time">1:30</span><span class="dash">--</span> Copilot Modes: Chat vs Edit vs Agent <span class="duration">(5 min)</span></div>
+  <div class="agenda-item"><span class="time">1:35</span><span class="dash">--</span> Exercise 4: Your First Agent Mode Task <span class="duration">(25 min)</span></div>
+  <div class="agenda-item break-item"><span class="time">2:00</span><span class="dash">--</span> BREAK <span class="duration">(10 min)</span></div>
+  <div class="agenda-item"><span class="time">2:10</span><span class="dash">--</span> MCP: Giving Agents Skills <span class="duration">(5 min)</span></div>
+  <div class="agenda-item"><span class="time">2:15</span><span class="dash">--</span> Exercise 5: Install First MCP Skill <span class="duration">(25 min)</span></div>
+  <div class="agenda-item"><span class="time">2:40</span><span class="dash">--</span> Reading Agent Plans &amp; Git Basics <span class="duration">(5 min)</span></div>
+  <div class="agenda-item"><span class="time">2:45</span><span class="dash">--</span> Exercise 6: Agent Builds a Real Tool <span class="duration">(30 min)</span></div>
+  <div class="agenda-item"><span class="time">3:15</span><span class="dash">--</span> Exercise 7: Debug &amp; Redirect an Agent <span class="duration">(25 min)</span></div>
+  <div class="agenda-item"><span class="time">3:40</span><span class="dash">--</span> Takeaways + Homework <span class="duration">(20 min)</span></div>
+</div>
 </body>
 </html>

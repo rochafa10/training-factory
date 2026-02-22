@@ -1,93 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Slide 05 - Chat vs Agent</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      width: 960px; height: 540px;
-      background: #0a0a0a;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-      position: relative;
-    }
-    .accent-bar {
-      position: absolute; left: 0; top: 0;
-      width: 8px; height: 100%;
-      background: #e82127;
-    }
-    .container {
-      padding: 32px 40px;
-      height: 100%;
-      display: flex; flex-direction: column;
-    }
-    h1 { font-size: 28px; margin-bottom: 24px; }
-    .comparison {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px; flex: 1;
-    }
-    .col {
-      background: #1a1a1a;
-      border-radius: 12px;
-      padding: 24px;
-    }
-    .col-chat { border-top: 4px solid #a0a0a0; }
-    .col-agent { border-top: 4px solid #4ade80; }
-    .col-title {
-      font-size: 20px; font-weight: bold;
-      margin-bottom: 16px;
-    }
-    .col-chat .col-title { color: #a0a0a0; }
-    .col-agent .col-title { color: #4ade80; }
-    .row {
-      display: flex; justify-content: space-between;
-      padding: 8px 0;
-      border-bottom: 1px solid #2a2a2a;
-      font-size: 13px;
-    }
-    .row:last-child { border-bottom: none; }
-    .row-label { color: #a0a0a0; }
-    .row-value { text-align: right; }
-    .analogy {
-      background: #1a1a1a;
-      border-radius: 8px;
-      padding: 16px 24px;
-      margin-top: 16px;
-      text-align: center;
-      font-size: 14px;
-      color: #a0a0a0;
-    }
-    .analogy strong { color: #e82127; }
-  </style>
+<meta charset="UTF-8">
+<title>Slide 05 - Section 2: Advanced Prompting Techniques</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.section-block { position: absolute; left: 0; top: 0; width: 320px; height: 100%; background: #e82127; display: flex; align-items: center; justify-content: center; }
+.section-number { font-size: 180px; font-weight: 700; color: rgba(255,255,255,0.15); }
+.section-content { margin-left: 360px; display: flex; flex-direction: column; justify-content: center; height: 100%; padding-right: 40px; }
+.section-content h1 { font-size: 40px; font-weight: 700; margin-bottom: 16px; }
+.duration { font-size: 18px; color: #a0a0a0; }
+.activity { font-size: 16px; color: #a0a0a0; margin-top: 8px; }
+</style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="container">
-    <h1>Chat vs Agent: The Key Difference</h1>
-    <div class="comparison">
-      <div class="col col-chat">
-        <div class="col-title">Chat (Bottle Rocket)</div>
-        <div class="row"><span class="row-label">You say</span><span class="row-value">"Write me a report"</span></div>
-        <div class="row"><span class="row-label">AI does</span><span class="row-value">Writes text in chat</span></div>
-        <div class="row"><span class="row-label">Output</span><span class="row-value">Text you copy-paste</span></div>
-        <div class="row"><span class="row-label">Steps</span><span class="row-value">One response</span></div>
-        <div class="row"><span class="row-label">Autonomy</span><span class="row-value">None</span></div>
-      </div>
-      <div class="col col-agent">
-        <div class="col-title">Agent (Copilot Agent Mode)</div>
-        <div class="row"><span class="row-label">You say</span><span class="row-value">"Build me a tool"</span></div>
-        <div class="row"><span class="row-label">AI does</span><span class="row-value">Creates files, runs commands</span></div>
-        <div class="row"><span class="row-label">Output</span><span class="row-value">Working files on your PC</span></div>
-        <div class="row"><span class="row-label">Steps</span><span class="row-value">Multi-step with approval</span></div>
-        <div class="row"><span class="row-label">Autonomy</span><span class="row-value">High (you approve)</span></div>
-      </div>
-    </div>
-    <div class="analogy">
-      <strong>Analogy:</strong> Chat = asking a colleague for advice. Agent = delegating a task to a capable assistant.
-    </div>
-  </div>
+<div class="accent-bar"></div>
+<div class="section-block">
+  <span class="section-number">02</span>
+</div>
+<div class="section-content">
+  <h1>Advanced Prompting Techniques</h1>
+  <p class="duration">5 minutes</p>
+  <p class="activity">90 seconds per technique</p>
+</div>
 </body>
 </html>
