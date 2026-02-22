@@ -30,41 +30,30 @@ tool-contracts--thumbnail.png
 
 | Tool | Purpose | When to Use |
 |------|---------|-------------|
-| **Gemini API** (code gen) | Generate styled HTML/SVG | Primary: for each diagram style |
-| **Gemini Image Gen** | Generate diagram images directly | Fallback: artistic whiteboard variants |
-| **AntV Chart MCP** | Generate data charts (bar, line, pie, radar) | When content.md includes statistics or metrics |
-| **Playwright** | Screenshot HTML to PNG | After Gemini generates HTML |
+| **Gemini Image Gen** (nano-banana) | Render all diagram variants | Primary: for every diagram × style combination |
+| **AntV Chart MCP** | Generate data charts (column, bar, pie, radar, line) | When content.md includes statistics or metrics |
+| **Playwright** | Validate rendered images | Spot-check visual quality |
 | `Memory MCP` (search_nodes) | Verify terminology | Before rendering labels |
 
 ### API Configuration
 
-**Gemini Code Generation (Primary — Approach B):**
+**Gemini Image Generation (nano-banana) — Primary Renderer:**
 ```
 API Key: Load from .env file (GEMINI_API_KEY)
-Model: gemini-2.0-flash (for code generation)
-Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
-Temperature: 0.1
-```
-
-**Gemini Image Generation (Fallback — Approach A, via nano-banana):**
-```
-API Key: Same GEMINI_API_KEY
-Model: nano-banana-pro-preview (native image generation)
+Model: nano-banana-pro-preview
 Endpoint: https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent
 Response modalities: ["TEXT", "IMAGE"]
 Temperature: 0.2
 ```
 
-**Alternative image gen models (if nano-banana is unavailable):**
-- `gemini-2.0-flash-exp-image-generation`
+**Fallback models (if nano-banana is unavailable):**
 - `gemini-2.5-flash-image`
 - `gemini-3-pro-image-preview`
 
 **API call pattern:**
 ```bash
-curl -k -X POST "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent" \
+curl -k -s "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent?key=${GEMINI_API_KEY}" \
   -H "Content-Type: application/json" \
-  -H "x-goog-api-key: ${GEMINI_API_KEY}" \
   -d '{
     "contents": [{"parts": [{"text": "YOUR_PROMPT_HERE"}]}],
     "generationConfig": {
@@ -74,21 +63,18 @@ curl -k -X POST "https://generativelanguage.googleapis.com/v1beta/models/nano-ba
   }'
 ```
 
-**Response handling:** The image is returned as base64 in `candidates[0].content.parts[].inlineData.data`. Decode and save as PNG:
+**Response handling:** The image is returned as base64 JPEG in `candidates[0].content.parts[].inlineData.data`. Decode and save:
 ```python
-import json, base64
-data = json.load(open("response.json"))
+import json, base64, sys
+data = json.load(sys.stdin)
 for part in data["candidates"][0]["content"]["parts"]:
     if "inlineData" in part:
-        img = base64.b64decode(part["inlineData"]["data"])
-        open("output.png", "wb").write(img)
+        open("output.png", "wb").write(base64.b64decode(part["inlineData"]["data"]))
 ```
 
-Use the image generation model when:
-- Infographics, polished comparison visuals, or artistic diagrams are needed
-- Whiteboard-style variants need a more artistic, hand-drawn feel
-- HTML/SVG rendering produces insufficient visual quality
-- Always validate output against `diagram-contracts.json`
+**Output format:** JPEG (no transparency). Fine for dark-bg slides.
+
+**Important:** The Gemini MCP's `gemini_chat` tool CANNOT return images — always use direct curl API.
 
 See `tools/gemini-renderer.md` and `tools/visual-tools.md` for full documentation.
 
@@ -172,30 +158,26 @@ Before calling Gemini, extract and lock the structure:
 }
 ```
 
-### Step 2: Gemini Render Prompt Template
+### Step 2: Nano-banana Render Prompt Template
 
 ```
-You are a diagram renderer. Your job is to STYLIZE, not DESIGN.
+Generate an image: A {style_description} diagram showing {diagram_title}.
 
-LOCKED STRUCTURE (DO NOT MODIFY):
+STRUCTURE (render EXACTLY):
 - Nodes: {nodes_list}
 - Edges: {edges_list}
-- Labels: {exact_labels}
+- Labels (use EXACTLY as written): {exact_labels}
+
+STYLE:
+{style_specifications}
 
 CONSTRAINTS:
-- Do NOT add any nodes not in the list above
-- Do NOT remove any nodes from the list above
 - Use EXACTLY these labels (character-for-character)
-- Maintain ALL connections shown in edges
+- Include ALL nodes and edges listed above
+- Do NOT add any nodes, edges, or text not listed above
+- Do NOT paraphrase or abbreviate labels
 
-STYLE: {style_name}
-- Whiteboard: Hand-drawn feel, sketch-like lines, warm white background
-- Minimal: Clean vectors, lots of whitespace, monochrome with one accent
-- Thumbnail: Bold, high contrast, readable at 200x150px
-
-OUTPUT: PNG image at {dimensions}
-
-Generate the styled diagram now.
+Dimensions: {width}x{height} landscape orientation.
 ```
 
 ### Step 3: Validation
@@ -330,17 +312,14 @@ For each `.excalidraw` or `.drawio` file:
 3. Query Memory MCP for any terminology verification
    ↓
 4. For each style (slide-embed, whiteboard, minimal, thumbnail):
-   a. Build Gemini prompt with locked structure
-   b. Call Gemini API → get styled HTML/SVG
-      (or use Gemini Image Gen for artistic whiteboard variants)
-   c. Save HTML to temp file
-   d. Playwright screenshot → PNG
-   e. Validate against contract
-   f. Save as {name}--{style}.png
+   a. Build nano-banana prompt with locked structure + style specs
+   b. Call Gemini API (nano-banana) → get image as base64 JPEG
+   c. Decode and save as {name}--{style}.png
+   d. Validate against contract (all nodes, edges, labels present)
    ↓
 5. For chart entries in diagram-contracts.json:
-   a. Use AntV Chart MCP with Tesla theme
-   b. Export as {name}--chart.png
+   a. Use AntV Chart MCP with Tesla dark theme
+   b. Download URL → save as {name}--chart.png
    ↓
 6. Log results in render-log.md
 ```
@@ -352,145 +331,88 @@ For each `.excalidraw` or `.drawio` file:
 ### API Call Structure
 
 ```bash
-curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent" \
+curl -k -s "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent?key=${GEMINI_API_KEY}" \
   -H "Content-Type: application/json" \
-  -H "x-goog-api-key: ${GEMINI_API_KEY}" \
   -d '{
-    "contents": [{
-      "parts": [{"text": "PROMPT_HERE"}]
-    }],
+    "contents": [{"parts": [{"text": "PROMPT_HERE"}]}],
     "generationConfig": {
-      "temperature": 0.1,
-      "maxOutputTokens": 8192
+      "temperature": 0.2,
+      "responseModalities": ["TEXT", "IMAGE"]
     }
-  }'
+  }' | python -c "
+import json, sys, base64
+data = json.load(sys.stdin)
+for part in data[\"candidates\"][0][\"content\"][\"parts\"]:
+    if \"inlineData\" in part:
+        with open(\"OUTPUT_PATH\", \"wb\") as f:
+            f.write(base64.b64decode(part[\"inlineData\"][\"data\"]))
+"
 ```
-
-**Temperature: 0.1** - Low temperature for deterministic, consistent output.
 
 ### Master Render Prompt
 
 ```
-You are a technical diagram renderer. Your ONLY job is to convert structure to styled HTML/SVG.
+Generate an image: A {{STYLE_DESCRIPTION}} diagram showing {{DIAGRAM_TITLE}}.
 
-## LOCKED STRUCTURE (DO NOT MODIFY)
+STRUCTURE (render EXACTLY):
+- Nodes: {{NODES_FROM_CONTRACT}}
+- Edges: {{EDGES_FROM_CONTRACT}}
+- Labels (use EXACTLY as written): {{LABELS_FROM_CONTRACT}}
 
-Nodes:
-{{NODES_FROM_CONTRACT}}
-
-Edges:
-{{EDGES_FROM_CONTRACT}}
-
-Labels (use EXACTLY as written):
-{{LABELS_FROM_CONTRACT}}
-
-## STYLE: {{STYLE_NAME}}
-
+STYLE:
 {{STYLE_SPECIFICATIONS}}
 
-## OUTPUT REQUIREMENTS
+CONSTRAINTS:
+- Use EXACTLY these labels (character-for-character)
+- Include ALL nodes and edges listed above
+- Do NOT add any nodes, edges, or text not listed above
+- Do NOT paraphrase or abbreviate labels
 
-1. Generate a complete HTML document
-2. Use inline SVG for the diagram
-3. Dimensions: {{DIMENSIONS}}
-4. Include ALL nodes listed above
-5. Include ALL edges listed above
-6. Use EXACTLY the labels provided (character-for-character)
-
-## CRITICAL CONSTRAINTS
-
-- DO NOT add any nodes not in the list
-- DO NOT add any edges not in the list
-- DO NOT add explanatory text
-- DO NOT paraphrase or abbreviate labels
-- DO NOT add decorative elements that look like nodes
-
-Output ONLY the HTML code, no explanation.
+Dimensions: {{WIDTH}}x{{HEIGHT}} landscape orientation.
 ```
 
-### Per-Style Specifications
+### Per-Style Prompt Specifications
+
+**Slide-Embed (DEFAULT):**
+```
+Dark-themed diagram on near-black background (#0a0a0a).
+Node fills: dark saturated colors (blue #1e3a5f, green #1a4d2e, purple #2d1b69, orange #5c3d1a).
+Node borders: bright accents (blue #4a9eed, green #22c55e, purple #8b5cf6, orange #f59e0b).
+White text labels (#ffffff). Clean solid strokes. Tesla red #e82127 for emphasis.
+Professional corporate training style. 880x420 landscape.
+```
 
 **Whiteboard:**
 ```
-Background: #faf9f7 (warm off-white)
-Strokes: 2-3px, slightly rough/wavy (use SVG filters)
-Fill: Hachure pattern or light solid
-Font: Comic Sans MS or similar hand-drawn
-Node shadows: 4px offset, soft blur
-Overall: Collaborative whiteboard feel
-Dimensions: 1200x800px
+Hand-drawn whiteboard style on warm off-white background (#faf9f7).
+Slightly rough/wavy strokes, hachure or cross-hatch fills, hand-drawn font feel.
+Soft shadows. Pastel node colors. Dark gray edges (#495057). Dark charcoal labels (#212529).
+Collaborative brainstorming feel. 1200x800 landscape.
 ```
 
 **Minimal:**
 ```
-Background: #ffffff (pure white)
-Strokes: 1-2px, clean vectors
-Fill: Solid flat colors
-Font: Helvetica, Arial, or Inter
-Node shadows: None or 1px subtle
-Accent: Tesla red #e82127 for emphasis only
-Overall: Professional slide deck
-Dimensions: 1600x900px
+Clean professional diagram on pure white background (#ffffff).
+Solid flat colors, clean vector strokes (1-2px), Helvetica/Arial font.
+No shadows. Muted professional palette. Tesla red #e82127 for accent only.
+Corporate slide deck style. 1600x900 landscape.
 ```
 
 **Thumbnail:**
 ```
-Background: #0a0a0a (Tesla dark)
-Strokes: 3-4px, bold
-Fill: Bright, saturated colors
-Font: Arial Bold, 150% size
-Shadows: None
-Labels: White text, high contrast
-Overall: Readable at small size
-Dimensions: 400x300px
-```
-
-**Slide-Embed (DEFAULT):**
-```
-Background: #0a0a0a (Tesla dark, matches slide)
-Strokes: 2px, clean, bright accent colors
-Fill: Dark saturated colors (agent #1e3a5f, tool #1a4d2e, memory #2d1b69, guardrail #5c3d1a, error #5c1a1a)
-Borders: Bright accents (agent #4a9eed, tool #22c55e, memory #8b5cf6, guardrail #f59e0b, error #f87171)
-Font: Arial, clean sans-serif
-Shadows: Subtle 2px
-Edges: White (#ffffff) or light gray (#a0a0a0)
-Labels: White (#ffffff), secondary #e5e5e5
-Accent: Tesla red #e82127 for emphasis
-Overall: Seamless integration with Tesla dark-theme slides
-Dimensions: 880x420px (fits 960x540 slide with padding)
+High-contrast diagram on dark background (#0a0a0a).
+Bold thick strokes (3-4px), bright saturated fills, large labels (150% size).
+White text (#ffffff). No shadows. Readable at small size.
+400x300 landscape.
 ```
 
 ---
 
-## Playwright Screenshot Step
+## No Playwright Needed for Diagrams
 
-After Gemini generates HTML, serve it over HTTP (Playwright blocks `file://` URLs):
-
-```bash
-# Start a local server in the background
-python -m http.server 8787 --directory outputs/week-N/images/temp &
-```
-
-```javascript
-// Navigate via HTTP and screenshot
-browser_navigate({
-  "url": "http://localhost:8787/orchestration--whiteboard.html"
-})
-
-browser_take_screenshot({
-  "filename": "outputs/week-N/images/orchestration--whiteboard.png"
-})
-```
-
-**For precise viewport control** (e.g., 960x540 for slide-embed), use `browser_run_code`:
-```javascript
-browser_run_code({ "code": "async (page) => { await page.setViewportSize({ width: 960, height: 540 }); await page.goto('http://localhost:8787/diagram--slide-embed.html'); await page.screenshot({ path: 'outputs/week-N/images/diagram--slide-embed.png', type: 'png' }); }" })
-```
-
-**Kill the server** after rendering is complete:
-```bash
-pkill -f "python -m http.server 8787"
-```
+Nano-banana generates images directly — no HTML → HTTP server → screenshot chain required. Playwright is only used by other agents:
+- Agent 07: Validating rendered slide HTML
+- Agent 10: Spot-checking visual quality
 
 ---
 
@@ -530,59 +452,51 @@ Generate `outputs/week-N/images/render-log.md`:
 
 ---
 
-## Gemini Prompt Examples
+## Nano-banana Prompt Examples
 
-### Whiteboard Style Prompt
-
-```
-You are rendering a diagram in whiteboard style.
-
-LOCKED STRUCTURE - DO NOT MODIFY:
-Nodes:
-1. "Planner Agent" (agent type, blue family)
-2. "Executor Agent" (agent type, blue family)
-3. "Playwright MCP" (tool type, green family)
-4. "User" (user type, yellow family)
-
-Edges:
-1. User → Planner Agent (labeled: "request")
-2. Planner Agent → Executor Agent (labeled: "task steps")
-3. Executor Agent → Playwright MCP (labeled: "tool call")
-4. Playwright MCP → Executor Agent (labeled: "result")
-
-STYLE REQUIREMENTS:
-- Background: warm off-white (#faf9f7)
-- Lines: slightly wobbly, hand-drawn feel
-- Fill: hachure/cross-hatching pattern
-- Font: hand-drawn style
-- Shadows: soft, 4px offset
-- Overall feel: collaborative whiteboard session
-
-OUTPUT: 1200x800 PNG
-
-CRITICAL: Use EXACTLY these labels. Do not paraphrase or abbreviate.
-```
-
-### Minimal Style Prompt
+### Slide-Embed Style (DEFAULT)
 
 ```
-You are rendering a diagram in minimal corporate style.
+Generate an image: A dark-themed diagram showing Multi-Agent Orchestration Flow.
 
-LOCKED STRUCTURE - DO NOT MODIFY:
-[same nodes and edges]
+STRUCTURE (render EXACTLY):
+- Nodes: "Planner Agent" (blue), "Executor Agent" (blue), "Playwright MCP" (green), "User" (yellow)
+- Edges: User → Planner Agent ("request"), Planner → Executor ("task steps"), Executor → Playwright ("tool call"), Playwright → Executor ("result")
+- Labels: use EXACTLY as written above
 
-STYLE REQUIREMENTS:
-- Background: pure white (#ffffff)
-- Lines: clean, precise vectors
-- Fill: solid flat colors
-- Font: Helvetica or Inter, clean sans-serif
-- No shadows or minimal (1px)
-- Use Tesla red (#e82127) sparingly for emphasis
-- Overall feel: professional slide deck
+STYLE:
+Dark background (#0a0a0a). Node fills: dark saturated colors (blue #1e3a5f, green #1a4d2e, yellow #5c4d1a).
+Node borders: bright accents (#4a9eed, #22c55e, #ffd43b). White text labels (#ffffff).
+Clean solid strokes. Tesla red #e82127 for emphasis. Professional corporate training style.
 
-OUTPUT: 1600x900 PNG (16:9 ratio)
+CONSTRAINTS:
+- Use EXACTLY these labels (character-for-character)
+- Include ALL nodes and edges
+- Do NOT add any elements not listed above
 
-CRITICAL: Use EXACTLY these labels. Do not paraphrase or abbreviate.
+Dimensions: 880x420 landscape.
+```
+
+### Whiteboard Style
+
+```
+Generate an image: A hand-drawn whiteboard diagram showing Multi-Agent Orchestration Flow.
+
+STRUCTURE (render EXACTLY):
+- Nodes: "Planner Agent", "Executor Agent", "Playwright MCP", "User"
+- Edges: User → Planner Agent ("request"), Planner → Executor ("task steps"), Executor → Playwright ("tool call"), Playwright → Executor ("result")
+- Labels: use EXACTLY as written above
+
+STYLE:
+Warm off-white background (#faf9f7). Hand-drawn feel with slightly rough/wavy strokes.
+Hachure or cross-hatch fills. Pastel node colors. Soft shadows. Dark gray edges (#495057).
+Dark charcoal labels (#212529). Collaborative brainstorming feel.
+
+CONSTRAINTS:
+- Use EXACTLY these labels. Do not paraphrase or abbreviate.
+- Include ALL nodes and edges listed above.
+
+Dimensions: 1200x800 landscape.
 ```
 
 ---

@@ -8,8 +8,7 @@ Complete guide to all MCP-connected visual tools available in the training facto
 |------|-----------|-------------|---------|
 | Excalidraw MCP | `@cmd8/excalidraw-mcp` | Create/edit canonical diagrams | Agent 04 |
 | Draw.io MCP | `drawio-mcp` | Process flowcharts, org charts | Agent 04 |
-| Gemini API | `gemini-2.0-flash` | Render styled HTML/SVG from structure | Agent 05 |
-| Gemini Image Gen | `gemini-2.0-flash-exp` | Generate diagram images directly | Agent 05 (fallback) |
+| Gemini Image Gen | `nano-banana-pro-preview` | Render all diagram variants (primary renderer) | Agent 05 |
 | AntV Chart MCP | `mcp-server-chart` | Data charts (bar, line, pie, radar) | Agent 05, 07 |
 | Playwright MCP | `@playwright/mcp` | Screenshot HTML to PNG, validate slides | Agent 05, 07, 10 |
 | Canva MCP | `@canva/cli mcp` | Branded infographics, polished visuals | Agent 07 |
@@ -56,7 +55,7 @@ Use the Excalidraw MCP to create a new diagram file at outputs/week-2/diagrams/p
 - In-chat structural iteration with `create_view` (fast feedback)
 - Saving canonical `.excalidraw` JSON files (structural source-of-truth)
 
-**Do NOT use** `export_to_excalidraw` → Playwright screenshot for production rendering. Agent 05 renders diagrams via Gemini HTML + Playwright screenshot pipeline instead.
+**Do NOT use** `export_to_excalidraw` for production rendering (strips all text). Agent 05 renders diagrams via Gemini nano-banana image generation instead.
 
 ---
 
@@ -79,7 +78,7 @@ Use the Excalidraw MCP to create a new diagram file at outputs/week-2/diagrams/p
 **Integration with pipeline:**
 - Output `.drawio` files alongside `.excalidraw` files in `outputs/week-N/diagrams/`
 - Add entries to `diagram-contracts.json` with `"format": "drawio"`
-- Agent 05 renders Draw.io diagrams the same way (extract structure → Gemini style → Playwright screenshot)
+- Agent 05 renders Draw.io diagrams the same way (extract structure → Gemini nano-banana image gen)
 
 **Example:**
 ```
@@ -91,44 +90,26 @@ Use the Draw.io MCP to create a swim-lane diagram showing the AGM workflow:
 
 ---
 
-### 3. Gemini API (Code Generation)
+### 3. Gemini Image Gen (nano-banana) — Primary Diagram Renderer
 
-**Purpose:** Convert locked diagram structures into styled HTML/SVG for screenshot rendering.
+**Purpose:** Generate all diagram variants (slide-embed, whiteboard, minimal, thumbnail) as images using Gemini's native image generation. This is the **primary and only** rendering tool for diagrams.
 
-**When to use:** Agent 05 — primary rendering approach (Approach B in `tools/gemini-renderer.md`).
-
-**Configuration:**
-```
-Model: gemini-2.0-flash
-Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
-API Key: .env → GEMINI_API_KEY
-Temperature: 0.1
-Max tokens: 8192
-```
-
-**Three style variants:** whiteboard, minimal, thumbnail (see Agent 05 for specs).
-
----
-
-### 4. Gemini Image Generation (nano-banana)
-
-**Purpose:** Generate styled infographics, diagrams, and polished visual assets directly as PNG images using Gemini's native image generation.
-
-**When to use:** Agent 05 — for infographics, artistic whiteboard-style variants, or when HTML/SVG rendering produces insufficient quality. Also usable by Agent 07 for high-impact slide visuals.
+**When to use:** Agent 05 — for ALL diagram rendering (conceptual, process, architecture, infographic, comparison).
 
 **Configuration:**
 ```
-Model: nano-banana-pro-preview (primary)
-Fallbacks: gemini-2.0-flash-exp-image-generation, gemini-2.5-flash-image, gemini-3-pro-image-preview
+Model: nano-banana-pro-preview
+Fallbacks: gemini-2.5-flash-image, gemini-3-pro-image-preview
 Endpoint: https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent
-Response modality: Include "IMAGE" in responseModalities
+API Key: .env → GEMINI_API_KEY
+Temperature: 0.2
+Response modality: ["TEXT", "IMAGE"]
 ```
 
-**API call structure:**
+**API call:**
 ```bash
-curl -k -X POST "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent" \
+curl -k -s "https://generativelanguage.googleapis.com/v1beta/models/nano-banana-pro-preview:generateContent?key=${GEMINI_API_KEY}" \
   -H "Content-Type: application/json" \
-  -H "x-goog-api-key: ${GEMINI_API_KEY}" \
   -d '{
     "contents": [{"parts": [{"text": "PROMPT_HERE"}]}],
     "generationConfig": {
@@ -138,18 +119,24 @@ curl -k -X POST "https://generativelanguage.googleapis.com/v1beta/models/nano-ba
   }'
 ```
 
-**Note:** Use `-k` flag for SSL on Windows. Save response to file, then extract image:
+**Note:** Use `-k` flag for SSL on Windows. Extract image from response:
 ```python
-import json, base64
-data = json.load(open("gemini-response.json"))
+import json, base64, sys
+data = json.load(sys.stdin)
 for part in data["candidates"][0]["content"]["parts"]:
     if "inlineData" in part:
         open("output.png", "wb").write(base64.b64decode(part["inlineData"]["data"]))
 ```
 
-**Risk:** Higher structural drift than Approach B for technical diagrams. Always validate against `diagram-contracts.json`.
+**Output format:** JPEG (no transparency). Fine for dark-bg slides since background is `#0a0a0a`.
 
-**Best for:** Infographics, comparison visuals, polished summary graphics, whiteboard-style diagrams where artistic quality matters.
+**Strengths:**
+- Labels are 100% accurate (no content rewriting)
+- Single API call → image (no HTML/server/screenshot chain)
+- Tesla-branded with good visual polish
+- Follows color and style directions well
+
+**Always validate** against `diagram-contracts.json` for node/edge completeness.
 
 ---
 
@@ -334,12 +321,12 @@ browser_take_screenshot({ "filename": "outputs/week-N/images/bottle-rocket-ui--s
 
 | Need | Tool | Output |
 |------|------|--------|
-| Architecture diagram | Excalidraw MCP → Gemini | `.excalidraw` → `--minimal.png` |
-| Process flowchart | Draw.io MCP → Gemini | `.drawio` → `--minimal.png` |
-| Swim-lane workflow | Draw.io MCP → Gemini | `.drawio` → `--whiteboard.png` |
+| Architecture diagram | Excalidraw MCP → nano-banana | `.excalidraw` → `--slide-embed.png` |
+| Process flowchart | Draw.io MCP → nano-banana | `.drawio` → `--slide-embed.png` |
+| Swim-lane workflow | Draw.io MCP → nano-banana | `.drawio` → `--whiteboard.png` |
+| Infographic / comparison | nano-banana | `--slide-embed.png` |
 | Data chart/graph | AntV Chart MCP | `--chart.png` |
-| Infographic | Canva MCP | `--infographic.png` |
-| Artistic/sketch visual | Gemini Image Gen | `--whiteboard.png` |
+| Title/cover slide visual | Canva MCP | `--infographic.png` |
 | Live tool UI / web page | Playwright MCP | `--screenshot.png` |
 
 ### By Agent
@@ -348,7 +335,7 @@ browser_take_screenshot({ "filename": "outputs/week-N/images/bottle-rocket-ui--s
 |-------|--------------|------------------|
 | 02 Research Agent | Perplexity, WebSearch, Playwright (content capture) | Capture tool UIs and web pages as research evidence |
 | 04 Diagram Architect | Excalidraw MCP, Draw.io MCP, Memory MCP | Complex swim-lanes → Draw.io |
-| 05 Diagram Renderer | Gemini API, Playwright, AntV Chart, Memory MCP | Data viz → AntV; artistic → Gemini Image Gen |
+| 05 Diagram Renderer | Gemini nano-banana, AntV Chart, Memory MCP | All diagrams → nano-banana; data viz → AntV |
 | 06 Slide Planner | Memory MCP | Reference chart/infographic/screenshot assets in plan |
 | 07 Slide Renderer | Playwright, Canva MCP, AntV Chart (inline) | Infographic slides → Canva; screenshots → Playwright capture |
 | 10 Quality Reviewer | Playwright | Visual regression checks |

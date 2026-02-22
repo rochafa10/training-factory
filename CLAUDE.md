@@ -65,9 +65,8 @@ The visual system uses multiple complementary tools. See `tools/visual-tools.md`
 - **Draw.io MCP**: Process flowcharts, swim-lane diagrams, org charts — produces `*.drawio` XML with auto-layout
 
 **Rendering (Agent 05):**
-- **Gemini API** (`gemini-2.0-flash`): Renders styled PNGs in 3 variants (`--whiteboard`, `--minimal`, `--thumbnail`) constrained by contracts
-- **Gemini Image Gen** (`nano-banana-pro-preview`): Native image generation for infographics, comparison visuals, and artistic whiteboard variants
-- **AntV Chart MCP**: Data-driven charts (bar, line, pie, radar) with Tesla dark theme → `--chart.png`
+- **Gemini Image Gen** (`nano-banana-pro-preview`): Primary renderer — generates all diagram variants (slide-embed, whiteboard, minimal, thumbnail) via direct curl API. Accurate labels, Tesla-branded, single API call → JPEG
+- **AntV Chart MCP**: Data-driven charts (column, bar, pie, radar, line) with Tesla dark theme → `--chart.png`
 
 **Slide visuals (Agent 07):**
 - **Canva MCP**: Branded infographics for high-impact summary slides → `--infographic.png`
@@ -110,7 +109,7 @@ Include this context when running any agent:
 | 02 Research Agent | perplexity_research (primary), perplexity_search (verification), WebSearch, Playwright (content capture) |
 | 03 Content Writer | Memory MCP (terminology consistency) |
 | 04 Diagram Architect | Excalidraw MCP (canonical diagrams), Draw.io MCP (flowcharts/swim-lanes), Memory MCP (label verification) |
-| 05 Diagram Renderer | Gemini API (styled HTML/SVG), Gemini Image Gen (artistic variants), AntV Chart MCP (data charts), Playwright (screenshots), Memory MCP |
+| 05 Diagram Renderer | Gemini Image Gen via nano-banana (all diagram renders), AntV Chart MCP (data charts), Playwright (validation), Memory MCP |
 | 06 Slide Planner | Memory MCP (optional, cross-week consistency) |
 | 07 Slide Renderer | Playwright (browser_navigate, browser_snapshot, browser_take_screenshot), Canva MCP (infographics), AntV Chart MCP (inline charts) |
 | 08 Exercise Designer | perplexity_reason (validation), Memory MCP (skill tracking) |
