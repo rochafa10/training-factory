@@ -155,39 +155,50 @@ for part in data["candidates"][0]["content"]["parts"]:
 
 ### 5. AntV Chart MCP
 
-**Purpose:** Generate data-driven charts (bar, line, pie, radar, gauge) as PNG images.
+**Purpose:** Generate data-driven charts as hosted PNG images via dedicated chart tools.
 
 **When to use:**
 - Agent 05 — render data visualizations referenced in content.md
-- Agent 07 — embed inline charts in slide HTML
+- Agent 07 — embed inline charts in slide HTML (if not pre-rendered by Agent 05)
 
-**Key operations:**
-- `bindData` — Load dataset for charting
-- `bindChart` — Configure chart type and visual encoding
-- `exportChart` — Export as PNG at specified dimensions
-
-**Supported chart types:**
-| Type | Best For | Example Use |
+**Available chart tools** (each is a separate MCP tool call):
+| Tool | Best For | Example Use |
 |------|----------|-------------|
-| Bar | Comparisons | "Time saved per task" |
-| Line | Trends over time | "AI adoption curve" |
-| Pie | Proportions | "Tool usage distribution" |
-| Radar | Multi-dimension scores | "Skill assessment spider" |
-| Gauge | Single metric | "Confidence level" |
-| Heatmap | Matrix data | "Task × Tool effectiveness" |
+| `generate_column_chart` | Vertical bar comparisons | "AI Tool Adoption by Site" |
+| `generate_bar_chart` | Horizontal comparisons | "Time saved per task" |
+| `generate_line_chart` | Trends over time | "AI adoption curve" |
+| `generate_pie_chart` | Proportions (set `innerRadius: 0.6` for donut) | "Training time allocation" |
+| `generate_radar_chart` | Multi-dimension scores | "AGM Skill Assessment" |
+| `generate_area_chart` | Cumulative trends | "Productivity gains over weeks" |
+| `generate_dual_axes_chart` | Combined bar + line | "Usage count vs satisfaction" |
+| `generate_funnel_chart` | Stage drop-off | "Prompt refinement funnel" |
+| `generate_word_cloud_chart` | Term frequency | "Most-used AI terms" |
 
-**Tesla theme configuration:**
-```json
-{
-  "theme": {
-    "backgroundColor": "#0a0a0a",
-    "colors": ["#e82127", "#4ade80", "#facc15", "#4dabf7", "#da77f2"],
-    "textColor": "#ffffff",
-    "gridColor": "#2a2a2a",
-    "fontFamily": "Arial, sans-serif"
-  }
+**Tesla dark theme configuration (apply to all charts):**
+```
+theme: "dark"
+width: 880
+height: 420
+style: {
+  palette: ["#e82127", "#4a9eed", "#22c55e", "#f59e0b", "#8b5cf6"],
+  backgroundColor: "#0a0a0a"
 }
 ```
+
+**Known behavior:** The `"dark"` theme applies its own dark background (~`#141414`). Setting `backgroundColor: "#0a0a0a"` in style may be partially overridden by the theme — the result is close but not pixel-identical to `#0a0a0a`. For slide embedding this is visually acceptable.
+
+**Output format:** Each tool returns a **hosted PNG URL** (e.g. `https://mdn.alipayobjects.com/...`). You must download it:
+```bash
+curl -s -k -o "outputs/week-N/images/{name}--chart.png" "<URL>"
+```
+
+**Data format:** Each chart type has its own data schema:
+- Column/bar: `[{ category: "Label", value: 10, group: "Series" }]`
+- Line/area: `[{ time: "2024", value: 10, group: "Series" }]`
+- Pie: `[{ category: "Label", value: 10 }]`
+- Radar: `[{ name: "Dimension", value: 10, group: "Series" }]`
+
+**Labels are 100% accurate** — no content rewriting (unlike Canva).
 
 **Output naming:** `{chart-name}--chart.png` in `outputs/week-N/images/`
 
@@ -430,10 +441,11 @@ When using Draw.io or AntV Chart, extend `diagram-contracts.json` with format-sp
 {
   "filename": "time-savings--chart.png",
   "format": "antv-chart",
-  "chartType": "bar",
+  "chartType": "column",
+  "tool": "generate_column_chart",
   "title": "Time Savings by Task",
   "week": 2,
   "dataSource": "research.md Section 3.2",
-  "dimensions": { "width": 800, "height": 500 }
+  "dimensions": { "width": 880, "height": 420 }
 }
 ```

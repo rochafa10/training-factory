@@ -94,31 +94,39 @@ See `tools/gemini-renderer.md` and `tools/visual-tools.md` for full documentatio
 
 ### AntV Chart MCP
 
-Use `mcp-server-chart` to generate data-driven visualizations when content.md includes statistics, metrics, or comparative data.
+Use AntV Chart MCP tools to generate data-driven visualizations when content.md includes statistics, metrics, or comparative data. Each chart type has its own dedicated tool.
 
-**Supported chart types:** bar, line, pie, radar, gauge, heatmap
+**Chart tool selection:**
+| Data Pattern | Tool | Data Format |
+|---|---|---|
+| Compare categories | `generate_column_chart` or `generate_bar_chart` | `[{ category, value, group? }]` |
+| Trend over time | `generate_line_chart` or `generate_area_chart` | `[{ time, value, group? }]` |
+| Part-of-whole | `generate_pie_chart` (set `innerRadius: 0.6` for donut) | `[{ category, value }]` |
+| Multi-dimension | `generate_radar_chart` | `[{ name, value, group? }]` |
+| Bar + line combo | `generate_dual_axes_chart` | `{ categories, series }` |
 
-**Tesla theme (apply to all charts):**
-```json
-{
-  "theme": {
-    "backgroundColor": "#0a0a0a",
-    "colors": ["#e82127", "#4ade80", "#facc15", "#4dabf7", "#da77f2"],
-    "textColor": "#ffffff",
-    "gridColor": "#2a2a2a",
-    "fontFamily": "Arial, sans-serif"
-  }
+**Tesla dark theme (apply to ALL charts):**
+```
+theme: "dark"
+width: 880
+height: 420
+style: {
+  palette: ["#e82127", "#4a9eed", "#22c55e", "#f59e0b", "#8b5cf6"],
+  backgroundColor: "#0a0a0a"
 }
 ```
 
-**Output naming:** `{chart-name}--chart.png` in `outputs/week-N/images/`
+**Output is a hosted URL** — download it after generation:
+```bash
+curl -s -k -o "outputs/week-N/images/{name}--chart.png" "<RETURNED_URL>"
+```
 
 **Contract integration:** Add entries to `diagram-contracts.json`:
 ```json
 {
   "filename": "time-savings--chart.png",
   "format": "antv-chart",
-  "chartType": "bar",
+  "chartType": "column",
   "title": "Time Savings by Task",
   "dataSource": "research.md Section 3.2"
 }
