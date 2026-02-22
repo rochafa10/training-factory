@@ -872,7 +872,55 @@ Make sure you are in **Agent Mode** with **Claude Opus 4.5** (or Claude Sonnet 4
 
 ---
 
-## Section 13: Exercise 7 -- Debug & Redirect an Agent
+## Section 13: When Agents Don't Deliver -- Root Cause Analysis
+
+**Duration:** 5 minutes
+**Activity:** Concept Intro (with real-world case study)
+
+### Content
+
+Sometimes an agent says "Done!" but the work is not what you expected. The output exists, but the quality is wrong. This happens more than you might think -- and it is the #1 skill gap between someone who uses AI occasionally and someone who manages AI effectively.
+
+**The key insight:** Check the output, not just the count. An agent that creates 75 files is not the same as an agent that creates 75 *good* files.
+
+### The Root Cause Framework (5 Steps)
+
+When an agent's output does not match your expectations, follow this process:
+
+| Step | What You Do | Example |
+|------|-------------|---------|
+| 1. **Notice** | Compare what you asked for vs what you got | "I asked for slides with graphics, but I see only text on black backgrounds" |
+| 2. **Investigate** | Look at the actual output, not just the summary | Open the files. Read them. Check if images load. Check if the formatting is right. |
+| 3. **Diagnose** | Ask: why did the agent miss? | Was the instruction unclear? Was the task too big? Did the agent skip steps? Did it run out of context? |
+| 4. **Fix** | Give a corrected, specific instruction | "Break this into smaller batches of 5. For each batch, validate visually before moving on." |
+| 5. **Prevent** | What would you say differently next time? | "Next time, I will ask the agent to validate after every 5 items instead of doing everything at once." |
+
+### Real-World Case Study: The 75-Slide Problem
+
+This actually happened during the creation of this training course:
+
+- **The task:** Generate 75 presentation slides with professional graphics, diagrams, and branded visuals
+- **What the agent reported:** "Done! 75 slides created and committed."
+- **What actually happened:** All 75 slides were plain text on black backgrounds. Zero graphics. Zero diagrams embedded. Zero visual tool usage.
+- **Root cause:** The agent was given all 75 slides as one task. It spent its entire capacity writing HTML text files and never got to the visual quality steps (validation, graphics, branding).
+- **The fix:** Break into batches of 5 slides. Each batch must include visual validation before moving on.
+- **The lesson:** When a task is too big, agents cut corners -- just like an overwhelmed team member who rushes to hit a deadline.
+
+> **SPEAKER NOTES:** This is the most relatable lesson in the entire course. Every AGM has experienced a direct report saying "done!" when the work was not actually done to standard. The parallel is exact: agents under pressure (big tasks, limited context) will optimize for completion over quality. The fix is the same: smaller work packages with quality checks between each one. Ask: "Has anyone had an associate say 'done' when the work wasn't right? What did you do?" Then: "You will do the same thing with agents."
+
+### The Management Parallel
+
+| Managing People | Managing Agents |
+|----------------|-----------------|
+| "Check the work, not the status update" | Check the output, not the "Done!" message |
+| Break big projects into milestones with reviews | Break big tasks into small batches with validation |
+| "Show me, don't tell me" | Open the files and verify visually |
+| Give specific feedback when quality is off | Give specific instructions when redirecting |
+| Coach to prevent repeat mistakes | Adjust the prompt to prevent the same failure |
+
+---
+
+## Section 13b: Exercise 7 -- Debug & Redirect an Agent
 
 **Duration:** 25 minutes
 **Activity:** Hands-On (Copilot Agent Mode)
@@ -880,7 +928,7 @@ Make sure you are in **Agent Mode** with **Claude Opus 4.5** (or Claude Sonnet 4
 
 ### Content
 
-Agents make mistakes -- just like people. This exercise teaches you how to catch problems, redirect the agent, and undo when needed. The key lesson: **agents need clear instructions, just like the associates on your team.**
+Now practice the root cause framework. Agents make mistakes -- just like people. This exercise teaches you how to catch problems, diagnose why they happened, redirect the agent, and prevent it next time. The key lesson: **agents need clear instructions AND right-sized tasks, just like the associates on your team.**
 
 ### Part A: What Happens with Vague Instructions (10 min)
 
@@ -1019,8 +1067,8 @@ Five things to remember from today:
 1. **CoT + Few-Shot + Persona** upgrade your prompts from good to great -- always add "step by step" for complex analysis
 2. **Agents DO work, chat SUGGESTS work** -- that is the fundamental difference between Bottle Rocket and Copilot Agent Mode
 3. **MCP tools give agents new skills** -- like installing apps on a phone. Playwright lets agents browse websites. More tools are coming.
-4. **You stay in control** -- agents plan, you approve. You can always reject, redirect, or undo.
-5. **Specific instructions = specific results** -- this is the #1 rule for agents. "Make it better" fails. "Add a totals row to the bottom of the table" works.
+4. **Check the output, not the count** -- an agent that says "Done!" may have cut corners. Always verify the actual work, not the status update.
+5. **Specific instructions + right-sized tasks** -- break big jobs into small batches with checkpoints. "Make it better" fails. "Add a totals row to the bottom of the table" works.
 
 **Week 2 Skills Summary:**
 
@@ -1033,6 +1081,7 @@ Five things to remember from today:
 | Agent Mode basics (plan-approve-review) | Exercise 4 |
 | MCP tool installation (Playwright) | Exercise 5 |
 | Multi-step agent builds (dashboard) | Exercise 6 |
+| Root cause analysis (Notice → Investigate → Diagnose → Fix → Prevent) | Section 13 concept + Exercise 7 |
 | Agent debugging and redirection | Exercise 7 |
 
 **Homework (5 min):**
