@@ -2,70 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 10 - Section 3 Divider</title>
+  <title>Slide 10 - Key Takeaways</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      width: 960px;
-      height: 540px;
-      background: #ffffff;
-      color: #000000;
+      width: 960px; height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
       font-family: Arial, sans-serif;
-      position: relative;
       overflow: hidden;
+      position: relative;
     }
-    .section-block {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 320px;
+    .accent-bar {
+      position: absolute; left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px;
       height: 100%;
-      background: #cc0000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; flex-direction: column;
     }
-    .section-number {
-      font-size: 180px;
-      font-weight: bold;
-      color: rgba(255, 255, 255, 0.15);
-      line-height: 1;
+    h1 { font-size: 28px; margin-bottom: 24px; }
+    .takeaways {
+      display: flex; flex-direction: column;
+      gap: 12px; flex: 1;
     }
-    .section-content {
-      margin-left: 360px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100%;
-      padding: 40px;
+    .takeaway {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: flex; align-items: center; gap: 16px;
     }
-    .section-label {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #666666;
-      margin-bottom: 16px;
+    .ta-num {
+      width: 32px; height: 32px;
+      background: #e82127;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: bold;
+      flex-shrink: 0;
     }
-    h1 {
-      font-size: 40px;
-      font-weight: bold;
-      margin-bottom: 16px;
-      line-height: 1.2;
+    .ta-text { font-size: 15px; line-height: 1.4; }
+    .ta-text strong { color: #4ade80; }
+    .next-week {
+      background: #1a1a1a;
+      border-top: 4px solid #e82127;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 16px;
+      text-align: center;
     }
-    .duration {
-      font-size: 16px;
-      color: #666666;
-    }
+    .nw-title { font-size: 16px; font-weight: bold; margin-bottom: 8px; }
+    .nw-desc { font-size: 13px; color: #a0a0a0; }
   </style>
 </head>
 <body>
-  <div class="section-block">
-    <span class="section-number">03</span>
-  </div>
-  <div class="section-content">
-    <div class="section-label">Section 3</div>
-    <h1>Operations Use Cases</h1>
-    <p class="duration">Five high-impact areas where AI saves significant time</p>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Key Takeaways</h1>
+    <div class="takeaways">
+      <div class="takeaway">
+        <div class="ta-num">1</div>
+        <div class="ta-text"><strong>CoT + Few-Shot + Persona</strong> upgrade your prompts from good to great</div>
+      </div>
+      <div class="takeaway">
+        <div class="ta-num">2</div>
+        <div class="ta-text"><strong>Agents DO work</strong>, chat SUGGESTS work &mdash; that's the fundamental difference</div>
+      </div>
+      <div class="takeaway">
+        <div class="ta-num">3</div>
+        <div class="ta-text"><strong>MCP tools give agents skills</strong> &mdash; like installing apps on a phone</div>
+      </div>
+      <div class="takeaway">
+        <div class="ta-num">4</div>
+        <div class="ta-text"><strong>You stay in control</strong> &mdash; agents plan, you approve every step</div>
+      </div>
+      <div class="takeaway">
+        <div class="ta-num">5</div>
+        <div class="ta-text"><strong>Specific = better</strong> &mdash; same rule as prompting, higher stakes with agents</div>
+      </div>
+    </div>
+    <div class="next-week">
+      <div class="nw-title">Next Week: Going Deeper</div>
+      <div class="nw-desc">Voice Mode &bull; Advanced Agent workflows &bull; Multi-skill configurations &bull; Building complex tools</div>
+    </div>
   </div>
 </body>
 </html>

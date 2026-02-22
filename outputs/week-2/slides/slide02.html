@@ -2,150 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 02 - Agenda</title>
+  <title>Slide 02 - Today's Journey</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      width: 960px;
-      height: 540px;
-      background: #ffffff;
-      color: #000000;
+      width: 960px; height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
       font-family: Arial, sans-serif;
-      position: relative;
       overflow: hidden;
+      position: relative;
     }
     .accent-bar {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 8px;
-      height: 100%;
-      background: #cc0000;
+      position: absolute; left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #e82127;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 32px 40px;
       height: 100%;
-      display: flex;
-      flex-direction: column;
+      display: flex; flex-direction: column;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 16px;
+    h1 { font-size: 28px; margin-bottom: 24px; }
+    .timeline {
+      display: flex; flex-direction: column;
+      gap: 6px; flex: 1;
     }
-    .content-area {
-      display: flex;
-      gap: 28px;
-      flex: 1;
+    .phase {
+      display: flex; align-items: center;
+      gap: 16px; padding: 8px 16px;
+      border-radius: 8px;
     }
-    .agenda-col {
-      flex: 1;
+    .phase-active { background: #1a1a1a; }
+    .phase-break { opacity: 0.4; }
+    .time {
+      font-size: 12px; color: #a0a0a0;
+      width: 80px; flex-shrink: 0;
     }
-    .agenda-list {
-      list-style: none;
-      padding: 0;
-      counter-reset: agenda;
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%; flex-shrink: 0;
     }
-    .agenda-list li {
-      counter-increment: agenda;
-      font-size: 12px;
-      color: #666666;
-      padding: 4px 0 4px 28px;
-      position: relative;
-      line-height: 1.5;
+    .dot-prompt { background: #e82127; }
+    .dot-agent { background: #4ade80; }
+    .dot-mcp { background: #facc15; }
+    .dot-debug { background: #818cf8; }
+    .dot-break { background: #a0a0a0; }
+    .label { font-size: 14px; }
+    .tag {
+      font-size: 10px; padding: 2px 8px;
+      border-radius: 4px; margin-left: auto;
     }
-    .agenda-list li::before {
-      content: counter(agenda);
-      position: absolute;
-      left: 0;
-      font-size: 12px;
-      font-weight: bold;
-      color: #cc0000;
-      min-width: 18px;
-    }
-    .agenda-list li.break-item {
-      color: #666666;
-      font-style: italic;
-    }
-    .exercise-badge {
-      background: #cc0000;
-      color: #000000;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-left: 6px;
-    }
-    .right-col {
-      width: 200px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .stat-card {
-      background: #f5f5f5;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-    .stat-number {
-      font-size: 36px;
-      font-weight: bold;
-      display: block;
-      margin-bottom: 4px;
-    }
-    .stat-number.red { color: #cc0000; }
-    .stat-number.black { color: #000000; }
-    .stat-label {
-      font-size: 12px;
-      color: #666666;
-    }
+    .tag-ho { background: #e82127; color: #fff; }
+    .tag-ci { background: #2a2a2a; color: #a0a0a0; }
     .footer {
-      margin-top: auto;
-      padding-top: 12px;
-      border-top: 1px solid #e0e0e0;
-      font-size: 12px;
-      color: #666666;
-      text-align: center;
+      font-size: 12px; color: #a0a0a0;
+      padding-top: 12px; border-top: 1px solid #2a2a2a;
+      display: flex; justify-content: space-between;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Today's Agenda</h1>
-    <div class="content-area">
-      <div class="agenda-col">
-        <ol class="agenda-list">
-          <li>Homework Review + Time Savings Check-in (15 min)</li>
-          <li>Advanced Prompting Techniques (15 min)</li>
-          <li>Chain-of-Thought Analysis <span class="exercise-badge">Ex 1</span> (25 min)</li>
-          <li>Operations Use Cases Overview (10 min)</li>
-          <li class="break-item">BREAK (10 min)</li>
-          <li>Build 3 Operations Templates <span class="exercise-badge">Ex 2</span> (25 min)</li>
-          <li>Data Analysis with AI (25 min)</li>
-          <li>Analyze a Sample DC Dataset <span class="exercise-badge">Ex 3</span> (30 min)</li>
-          <li class="break-item">BREAK (10 min)</li>
-          <li>Structured Outputs (15 min)</li>
-          <li>Build Your Prompt Library (20 min)</li>
-          <li>Model Comparison Challenge <span class="exercise-badge">Ex 4</span> (20 min)</li>
-          <li>Share, Takeaways &amp; Homework (20 min)</li>
-        </ol>
+    <h1>Today's Journey</h1>
+    <div class="timeline">
+      <div class="phase phase-active">
+        <span class="time">0:00</span>
+        <span class="dot dot-prompt"></span>
+        <span class="label">Homework Review &amp; Wins</span>
+        <span class="tag tag-ho">10 min</span>
       </div>
-      <div class="right-col">
-        <div class="stat-card">
-          <span class="stat-number red">135 min</span>
-          <span class="stat-label">Hands-on (56%)</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number black">105 min</span>
-          <span class="stat-label">Instruction (44%)</span>
-        </div>
+      <div class="phase phase-active">
+        <span class="time">0:10</span>
+        <span class="dot dot-prompt"></span>
+        <span class="label">Advanced Prompting &mdash; CoT + Data Sprint</span>
+        <span class="tag tag-ho">45 min</span>
+      </div>
+      <div class="phase phase-break">
+        <span class="time">0:55</span>
+        <span class="dot dot-break"></span>
+        <span class="label">Break</span>
+        <span class="tag tag-ci">10 min</span>
+      </div>
+      <div class="phase phase-active">
+        <span class="time">1:05</span>
+        <span class="dot dot-agent"></span>
+        <span class="label">What Is an Agent? + VS Code Setup</span>
+        <span class="tag tag-ho">30 min</span>
+      </div>
+      <div class="phase phase-active">
+        <span class="time">1:35</span>
+        <span class="dot dot-agent"></span>
+        <span class="label">First Agent Mode Task</span>
+        <span class="tag tag-ho">25 min</span>
+      </div>
+      <div class="phase phase-break">
+        <span class="time">2:00</span>
+        <span class="dot dot-break"></span>
+        <span class="label">Break</span>
+        <span class="tag tag-ci">10 min</span>
+      </div>
+      <div class="phase phase-active">
+        <span class="time">2:10</span>
+        <span class="dot dot-mcp"></span>
+        <span class="label">MCP Skills + Install First Skill</span>
+        <span class="tag tag-ho">30 min</span>
+      </div>
+      <div class="phase phase-active">
+        <span class="time">2:40</span>
+        <span class="dot dot-mcp"></span>
+        <span class="label">Agent Builds a Real Tool</span>
+        <span class="tag tag-ho">35 min</span>
+      </div>
+      <div class="phase phase-active">
+        <span class="time">3:15</span>
+        <span class="dot dot-debug"></span>
+        <span class="label">Debug &amp; Redirect an Agent</span>
+        <span class="tag tag-ho">25 min</span>
+      </div>
+      <div class="phase phase-active">
+        <span class="time">3:40</span>
+        <span class="dot dot-prompt"></span>
+        <span class="label">Share Results + Homework</span>
+        <span class="tag tag-ho">20 min</span>
       </div>
     </div>
-    <div class="footer">Total: 240 minutes (4 hours) &mdash; 2 breaks included</div>
+    <div class="footer">
+      <span>7 hands-on exercises</span>
+      <span>81% hands-on | 10% concept | 8% breaks</span>
+    </div>
   </div>
 </body>
 </html>

@@ -26,6 +26,8 @@ Generate Excalidraw files in `outputs/week-N/diagrams/`:
 |------|---------|-------------|
 | `Memory MCP` (search_nodes) | Retrieve terminology | Before creating labels, verify exact terms |
 | `Memory MCP` (create_entities) | Store diagram terms | After creating new visual elements |
+| `Excalidraw MCP` | Create/edit `.excalidraw` files programmatically | Primary tool for all canonical diagrams |
+| `Draw.io MCP` | Create `.drawio` flowcharts and swim-lane diagrams | When content requires process flows, org charts, or multi-actor swim-lanes |
 
 ### Tool Usage Examples
 
@@ -44,6 +46,50 @@ create_entities({
   }]
 })
 ```
+
+### Excalidraw MCP
+
+Use the Excalidraw MCP server to create and manipulate `.excalidraw` files programmatically. This is preferred over writing raw JSON because it validates element structure, handles ID generation, and ensures schema compliance.
+
+**When to use Excalidraw MCP:**
+- All architecture diagrams, concept maps, and reference models
+- Any diagram where nodes represent components/agents/tools
+
+### Draw.io MCP
+
+Use the Draw.io MCP server for diagrams that benefit from Draw.io's layout engine — especially process flows, swim-lane diagrams, and hierarchical org charts.
+
+**When to use Draw.io MCP instead of Excalidraw:**
+- Process flowcharts with many decision branches (Draw.io handles auto-layout better)
+- Swim-lane diagrams with multiple actors (e.g., AGM → Bottle Rocket → Policy Layer)
+- Org charts or hierarchies with container grouping
+
+**Output format:** `.drawio` XML files in `outputs/week-N/diagrams/` alongside `.excalidraw` files.
+
+**Contract integration:** Add entries to `diagram-contracts.json` with `"format": "drawio"`:
+```json
+{
+  "filename": "agm-workflow.drawio",
+  "format": "drawio",
+  "title": "AGM Daily Workflow",
+  "week": 2,
+  "nodes": [...],
+  "edges": [...],
+  "swimLanes": ["AGM", "Bottle Rocket", "Policy Layer"]
+}
+```
+
+### Tool Selection Guide
+
+| Content Pattern | Use This Tool | Rationale |
+|----------------|---------------|-----------|
+| Agent architecture, component map | Excalidraw MCP | Canonical node/edge structure |
+| Multi-step process with decisions | Draw.io MCP | Better auto-layout for complex flows |
+| Multi-actor workflow | Draw.io MCP (swim-lanes) | Native swim-lane support |
+| Concept hierarchy / org chart | Draw.io MCP | Container grouping |
+| Simple relationship diagram | Excalidraw MCP | Lightweight, fast |
+
+See `tools/visual-tools.md` for full tool reference.
 
 ---
 

@@ -2,62 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 03 - Section 1 Divider</title>
+  <title>Slide 03 - Advanced Prompting</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      width: 960px;
-      height: 540px;
-      background: #ffffff;
-      color: #000000;
+      width: 960px; height: 540px;
+      background: #0a0a0a;
+      color: #ffffff;
       font-family: Arial, sans-serif;
-      position: relative;
       overflow: hidden;
+      position: relative;
     }
-    .section-block {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 320px;
+    .accent-bar {
+      position: absolute; left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #e82127;
+    }
+    .container {
+      padding: 32px 40px;
       height: 100%;
-      background: #cc0000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; flex-direction: column;
     }
-    .section-number {
-      font-size: 180px;
+    h1 { font-size: 28px; margin-bottom: 24px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px; flex: 1;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px;
+      border-top: 4px solid #e82127;
+    }
+    .card-title {
+      font-size: 18px; font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .card-desc {
+      font-size: 13px; color: #a0a0a0;
+      line-height: 1.5; margin-bottom: 16px;
+    }
+    .card-use {
+      font-size: 12px; color: #e82127;
       font-weight: bold;
-      color: rgba(255, 255, 255, 0.15);
-      line-height: 1;
     }
-    .section-content {
-      margin-left: 360px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100%;
-      padding: 40px;
+    .formula {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 16px 24px;
+      margin-top: 16px;
+      text-align: center;
     }
-    h1 {
-      font-size: 40px;
+    .formula-old {
+      font-size: 13px; color: #a0a0a0;
+      text-decoration: line-through;
+      margin-bottom: 8px;
+    }
+    .formula-new {
+      font-size: 15px; color: #4ade80;
       font-weight: bold;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-    .duration {
-      font-size: 16px;
-      color: #666666;
     }
   </style>
 </head>
 <body>
-  <div class="section-block">
-    <span class="section-number">01</span>
-  </div>
-  <div class="section-content">
-    <h1>Homework Review</h1>
-    <p class="duration">15 minutes</p>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Three Upgrades to Your Prompts</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="card-title">Chain-of-Thought</div>
+        <div class="card-desc">Force step-by-step reasoning. Number your analysis steps. AI shows its work.</div>
+        <div class="card-use">Best for: Analysis, root cause, planning</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Few-Shot</div>
+        <div class="card-desc">Show 2-3 examples of the output you want. AI replicates your pattern.</div>
+        <div class="card-use">Best for: Reports, handoffs, comms</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Enhanced Persona</div>
+        <div class="card-desc">Add years of experience + "known for" traits. More specific = better output.</div>
+        <div class="card-use">Best for: Emails, analysis, docs</div>
+      </div>
+    </div>
+    <div class="formula">
+      <div class="formula-old">Week 1: ROLE + CONTEXT + TASK + FORMAT</div>
+      <div class="formula-new">Week 2: ENHANCED ROLE + CONTEXT + STRUCTURED TASK (CoT) + FORMAT (examples)</div>
+    </div>
   </div>
 </body>
 </html>
