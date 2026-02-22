@@ -1,41 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 02 - Today's Agenda</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.container { padding: 28px 40px 24px 48px; }
-h1 { font-size: 28px; font-weight: 700; margin-bottom: 16px; }
-.agenda-item { display: flex; align-items: baseline; padding: 5px 0; font-size: 14px; color: #e5e5e5; }
-.time { color: #e82127; font-weight: 700; min-width: 56px; font-size: 13px; }
-.dash { color: #a0a0a0; margin: 0 8px; }
-.duration { color: #a0a0a0; font-size: 12px; margin-left: 6px; }
-.break-item { color: #a0a0a0; font-style: italic; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 02 - Today's Agenda</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    .container {
+      padding: 28px 40px 24px 48px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .agenda {
+      list-style: none;
+    }
+    .agenda li {
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 4px 0;
+      display: flex;
+      align-items: baseline;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .agenda li:last-child {
+      border-bottom: none;
+    }
+    .time {
+      color: #e82127;
+      font-weight: bold;
+      min-width: 48px;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+    }
+    .description {
+      flex: 1;
+      color: #ffffff;
+      margin-left: 12px;
+    }
+    .duration {
+      color: #a0a0a0;
+      font-size: 11px;
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+    .break-row {
+      background: #1a1a1a;
+      border-radius: 4px;
+      margin: 2px 0;
+    }
+    .break-row .description {
+      color: #a0a0a0;
+      font-style: italic;
+    }
+    .exercise-label {
+      color: #4ade80;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="container">
-  <h1>Today's Agenda</h1>
-  <div class="agenda-item"><span class="time">0:00</span><span class="dash">--</span> Homework Review &amp; Wins <span class="duration">(10 min)</span></div>
-  <div class="agenda-item"><span class="time">0:10</span><span class="dash">--</span> Advanced Prompting: CoT, Few-Shot, Persona <span class="duration">(5 min)</span></div>
-  <div class="agenda-item"><span class="time">0:15</span><span class="dash">--</span> Exercise 1: Data Analysis Sprint <span class="duration">(30 min)</span></div>
-  <div class="agenda-item"><span class="time">0:45</span><span class="dash">--</span> Exercise 2: Template Speed Build <span class="duration">(10 min)</span></div>
-  <div class="agenda-item break-item"><span class="time">0:55</span><span class="dash">--</span> BREAK <span class="duration">(10 min)</span></div>
-  <div class="agenda-item"><span class="time">1:05</span><span class="dash">--</span> What Is an AI Agent? <span class="duration">(5 min)</span></div>
-  <div class="agenda-item"><span class="time">1:10</span><span class="dash">--</span> Exercise 3: VS Code + Copilot Setup <span class="duration">(20 min)</span></div>
-  <div class="agenda-item"><span class="time">1:30</span><span class="dash">--</span> Copilot Modes: Chat vs Edit vs Agent <span class="duration">(5 min)</span></div>
-  <div class="agenda-item"><span class="time">1:35</span><span class="dash">--</span> Exercise 4: Your First Agent Mode Task <span class="duration">(25 min)</span></div>
-  <div class="agenda-item break-item"><span class="time">2:00</span><span class="dash">--</span> BREAK <span class="duration">(10 min)</span></div>
-  <div class="agenda-item"><span class="time">2:10</span><span class="dash">--</span> MCP: Giving Agents Skills <span class="duration">(5 min)</span></div>
-  <div class="agenda-item"><span class="time">2:15</span><span class="dash">--</span> Exercise 5: Install First MCP Skill <span class="duration">(25 min)</span></div>
-  <div class="agenda-item"><span class="time">2:40</span><span class="dash">--</span> Reading Agent Plans &amp; Git Basics <span class="duration">(5 min)</span></div>
-  <div class="agenda-item"><span class="time">2:45</span><span class="dash">--</span> Exercise 6: Agent Builds a Real Tool <span class="duration">(30 min)</span></div>
-  <div class="agenda-item"><span class="time">3:15</span><span class="dash">--</span> Exercise 7: Debug &amp; Redirect an Agent <span class="duration">(25 min)</span></div>
-  <div class="agenda-item"><span class="time">3:40</span><span class="dash">--</span> Takeaways + Homework <span class="duration">(20 min)</span></div>
-</div>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Today's Agenda</h1>
+    <ul class="agenda">
+      <li>
+        <span class="time">0:00</span>
+        <span class="description">Homework Review &amp; Wins</span>
+        <span class="duration">10 min</span>
+      </li>
+      <li>
+        <span class="time">0:10</span>
+        <span class="description">Advanced Prompting: CoT, Few-Shot, Persona</span>
+        <span class="duration">5 min</span>
+      </li>
+      <li>
+        <span class="time">0:15</span>
+        <span class="description"><span class="exercise-label">Exercise 1:</span> Data Analysis Sprint</span>
+        <span class="duration">30 min</span>
+      </li>
+      <li>
+        <span class="time">0:45</span>
+        <span class="description"><span class="exercise-label">Exercise 2:</span> Template Speed Build</span>
+        <span class="duration">10 min</span>
+      </li>
+      <li class="break-row">
+        <span class="time">0:55</span>
+        <span class="description">BREAK</span>
+        <span class="duration">10 min</span>
+      </li>
+      <li>
+        <span class="time">1:05</span>
+        <span class="description">What Is an AI Agent?</span>
+        <span class="duration">5 min</span>
+      </li>
+      <li>
+        <span class="time">1:10</span>
+        <span class="description"><span class="exercise-label">Exercise 3:</span> VS Code + Copilot Setup</span>
+        <span class="duration">20 min</span>
+      </li>
+      <li>
+        <span class="time">1:30</span>
+        <span class="description">Copilot Modes: Chat vs Edit vs Agent</span>
+        <span class="duration">5 min</span>
+      </li>
+      <li>
+        <span class="time">1:35</span>
+        <span class="description"><span class="exercise-label">Exercise 4:</span> Your First Agent Mode Task</span>
+        <span class="duration">25 min</span>
+      </li>
+      <li class="break-row">
+        <span class="time">2:00</span>
+        <span class="description">BREAK</span>
+        <span class="duration">10 min</span>
+      </li>
+      <li>
+        <span class="time">2:10</span>
+        <span class="description">MCP: Giving Agents Skills</span>
+        <span class="duration">5 min</span>
+      </li>
+      <li>
+        <span class="time">2:15</span>
+        <span class="description"><span class="exercise-label">Exercise 5:</span> Install First MCP Skill</span>
+        <span class="duration">25 min</span>
+      </li>
+      <li>
+        <span class="time">2:40</span>
+        <span class="description">Reading Agent Plans &amp; Git Basics</span>
+        <span class="duration">5 min</span>
+      </li>
+      <li>
+        <span class="time">2:45</span>
+        <span class="description"><span class="exercise-label">Exercise 6:</span> Agent Builds a Real Tool</span>
+        <span class="duration">30 min</span>
+      </li>
+      <li>
+        <span class="time">3:15</span>
+        <span class="description"><span class="exercise-label">Exercise 7:</span> Debug &amp; Redirect an Agent</span>
+        <span class="duration">25 min</span>
+      </li>
+      <li>
+        <span class="time">3:40</span>
+        <span class="description">Takeaways + Homework</span>
+        <span class="duration">20 min</span>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>

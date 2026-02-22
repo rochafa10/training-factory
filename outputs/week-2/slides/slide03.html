@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Slide 03 - Section 1: Homework Review & Wins</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
-.section-block { position: absolute; left: 0; top: 0; width: 320px; height: 100%; background: #e82127; display: flex; align-items: center; justify-content: center; }
-.section-number { font-size: 180px; font-weight: 700; color: rgba(255,255,255,0.15); }
-.section-content { margin-left: 360px; display: flex; flex-direction: column; justify-content: center; height: 100%; padding-right: 40px; }
-.section-content h1 { font-size: 40px; font-weight: 700; margin-bottom: 16px; }
-.duration { font-size: 18px; color: #a0a0a0; }
-.activity { font-size: 16px; color: #a0a0a0; margin-top: 8px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Slide 03 - Section 1 Divider: Homework Review & Wins</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .red-block {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 100%;
+      background: #e82127;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
+    }
+    .right-content {
+      position: absolute;
+      left: 320px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 60px 60px 60px;
+    }
+    .section-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #e82127;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    .meta {
+      font-size: 16px;
+      color: #a0a0a0;
+      line-height: 1.6;
+    }
+    .meta .duration {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<div class="accent-bar"></div>
-<div class="section-block">
-  <span class="section-number">01</span>
-</div>
-<div class="section-content">
-  <h1>Homework Review &amp; Wins</h1>
-  <p class="duration">10 minutes</p>
-  <p class="activity">Peer Sharing</p>
-</div>
+  <div class="red-block">
+    <div class="section-number">01</div>
+  </div>
+  <div class="right-content">
+    <div class="section-label">Section 1</div>
+    <h1>Homework Review &amp; Wins</h1>
+    <div class="meta">
+      <span class="duration">10 minutes</span><br>
+      Peer Sharing
+    </div>
+  </div>
 </body>
 </html>
