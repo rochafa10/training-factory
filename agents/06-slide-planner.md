@@ -21,6 +21,8 @@ Generate `outputs/week-N/slides/slide-plan.md` (Markdown format)
 
 No other tools required. This agent makes content decisions only — no rendering, no Playwright.
 
+**Note:** When planning slides, you may reference visual assets from additional tools (AntV charts, Canva infographics). See `tools/visual-tools.md` for the full inventory of available visual outputs.
+
 ---
 
 ## Instructions
@@ -43,7 +45,9 @@ You are a Slide Planner creating a structured blueprint for a Tesla corporate tr
 | `> **Scenario:**` | Example | Walk-through format |
 | `### Common Mistakes` | Comparison | Good vs Bad, two-column |
 | Statistics / metrics | Grid | 2×3 or 2×4 cards with numbers |
+| Data trends / comparisons | Chart | AntV Chart PNG with Tesla dark theme |
 | `## Key Takeaways` | Summary | 3-4 numbered items |
+| Week summary / overview | Infographic | Canva-generated branded visual |
 | Exercise reference | Exercise | Red badge, instructions, tips |
 | Canonical diagram reference | Canonical Diagram | Excalidraw SVG with "CANONICAL MODEL" badge |
 | Teaching diagram reference | Teaching Diagram | Gemini PNG (--minimal) with numbered callouts |
@@ -89,6 +93,16 @@ You are a Slide Planner creating a structured blueprint for a Tesla corporate tr
 - Embed Gemini PNG (`--whiteboard` variant). Highlight error path with red overlay and callouts.
 - Use for: troubleshooting sections, error handling explanations
 
+### 12. Chart
+- Embed AntV Chart PNG (`--chart` variant). Data visualization with Tesla dark theme.
+- Use for: statistics slides, metric comparisons, trend data from research.md
+- Specify chart type (bar, line, pie, radar) and data reference
+
+### 13. Infographic
+- Embed Canva-generated PNG (`--infographic` variant). Branded visual summary.
+- Use for: week summary slides, key takeaway visuals, course overview
+- Only use when standard HTML templates cannot achieve the required visual impact
+
 ---
 
 ## Diagram Style Selection
@@ -102,6 +116,8 @@ When a slide references a diagram, specify which style variant to use:
 | Exercise / workshop | Whiteboard | `../images/{name}--whiteboard.png` |
 | Navigation / overview | Thumbnail | `../images/{name}--thumbnail.png` |
 | Error handling | Whiteboard | `../images/{name}--whiteboard.png` |
+| Statistics / metrics | AntV Chart | `../images/{name}--chart.png` |
+| Visual summary | Canva Infographic | `../images/{name}--infographic.png` |
 
 ---
 
@@ -201,6 +217,25 @@ Generate `slide-plan.md` with this structure:
 ---
 
 ## Slide 08
+- **Type:** Chart
+- **Title:** [Chart title]
+- **ChartType:** [bar|line|pie|radar]
+- **Image:** ../images/[name]--chart.png
+- **DataRef:** [Section of research.md or content.md containing the data]
+- **Caption:** [Brief description of what the chart shows]
+
+---
+
+## Slide 09
+- **Type:** Infographic
+- **Title:** [Infographic title]
+- **Image:** ../images/[name]--infographic.png
+- **ContentRef:** [Section of content.md being summarized]
+- **Note:** Only use for high-impact summary visuals (week overview, key framework)
+
+---
+
+## Slide 10
 - **Type:** Exercise
 - **Badge:** Exercise [N]
 - **Title:** [Exercise title]

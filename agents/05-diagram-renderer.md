@@ -26,19 +26,69 @@ tool-contracts--thumbnail.png
 
 | Tool | Purpose | When to Use |
 |------|---------|-------------|
-| **Gemini API** | Generate styled HTML/SVG | For each diagram style |
+| **Gemini API** (code gen) | Generate styled HTML/SVG | Primary: for each diagram style |
+| **Gemini Image Gen** | Generate diagram images directly | Fallback: artistic whiteboard variants |
+| **AntV Chart MCP** | Generate data charts (bar, line, pie, radar) | When content.md includes statistics or metrics |
 | **Playwright** | Screenshot HTML to PNG | After Gemini generates HTML |
 | `Memory MCP` (search_nodes) | Verify terminology | Before rendering labels |
 
 ### API Configuration
 
+**Gemini Code Generation (Primary — Approach B):**
 ```
 API Key: Load from .env file (GEMINI_API_KEY)
 Model: gemini-2.0-flash (for code generation)
 Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+Temperature: 0.1
 ```
 
-See `tools/gemini-renderer.md` for full API documentation.
+**Gemini Image Generation (Fallback — Approach A):**
+```
+API Key: Same GEMINI_API_KEY
+Model: gemini-2.0-flash-exp (image generation capable)
+Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent
+Response modalities: ["TEXT", "IMAGE"]
+Temperature: 0.2
+```
+
+Use the image generation model when:
+- Whiteboard-style variants need a more artistic, hand-drawn feel
+- HTML/SVG rendering produces insufficient visual quality
+- Always validate output against `diagram-contracts.json`
+
+See `tools/gemini-renderer.md` and `tools/visual-tools.md` for full documentation.
+
+### AntV Chart MCP
+
+Use `mcp-server-chart` to generate data-driven visualizations when content.md includes statistics, metrics, or comparative data.
+
+**Supported chart types:** bar, line, pie, radar, gauge, heatmap
+
+**Tesla theme (apply to all charts):**
+```json
+{
+  "theme": {
+    "backgroundColor": "#0a0a0a",
+    "colors": ["#e82127", "#4ade80", "#facc15", "#4dabf7", "#da77f2"],
+    "textColor": "#ffffff",
+    "gridColor": "#2a2a2a",
+    "fontFamily": "Arial, sans-serif"
+  }
+}
+```
+
+**Output naming:** `{chart-name}--chart.png` in `outputs/week-N/images/`
+
+**Contract integration:** Add entries to `diagram-contracts.json`:
+```json
+{
+  "filename": "time-savings--chart.png",
+  "format": "antv-chart",
+  "chartType": "bar",
+  "title": "Time Savings by Task",
+  "dataSource": "research.md Section 3.2"
+}
+```
 
 ### Critical Constraint
 **Gemini is NOT allowed to:**
@@ -196,7 +246,7 @@ Examples:
 
 ## Rendering Pipeline
 
-For each `.excalidraw` file:
+For each `.excalidraw` or `.drawio` file:
 
 ```
 1. Read diagram-contracts.json for this diagram
@@ -208,12 +258,17 @@ For each `.excalidraw` file:
 4. For each style (whiteboard, minimal, thumbnail):
    a. Build Gemini prompt with locked structure
    b. Call Gemini API → get styled HTML/SVG
+      (or use Gemini Image Gen for artistic whiteboard variants)
    c. Save HTML to temp file
    d. Playwright screenshot → PNG
    e. Validate against contract
    f. Save as {name}--{style}.png
    ↓
-5. Log results in render-log.md
+5. For chart entries in diagram-contracts.json:
+   a. Use AntV Chart MCP with Tesla theme
+   b. Export as {name}--chart.png
+   ↓
+6. Log results in render-log.md
 ```
 
 ---
@@ -438,10 +493,12 @@ Before delivering images, verify:
 | Check | Requirement | Status |
 |-------|-------------|--------|
 | All diagrams rendered | 3 styles each | [ ] |
+| All charts rendered | AntV chart entries in contract | [ ] |
 | Contract compliance | 100% node/edge match | [ ] |
 | Label accuracy | Exact match to source | [ ] |
 | Style adherence | Matches specifications | [ ] |
-| File naming | {name}--{style}.png format | [ ] |
+| File naming | {name}--{style}.png / {name}--chart.png | [ ] |
+| Tesla theme on charts | Dark background, brand colors | [ ] |
 | Render log | Complete and accurate | [ ] |
 
 ### FAIL CONDITIONS (must re-render):
@@ -451,6 +508,7 @@ Before delivering images, verify:
 - Wrong style applied
 - Incorrect dimensions
 - Missing render log entry
+- Chart uses non-Tesla colors
 
 ---
 

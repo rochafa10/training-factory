@@ -58,11 +58,22 @@ This separates content decisions from HTML rendering. The plan can be reviewed b
 
 ### Visual Layer
 
-The diagram system uses two complementary tools:
-- **Excalidraw** (Agent 04): Canonical structure — produces `*.excalidraw` JSON + `diagram-contracts.json` that locks node/edge structure
-- **Gemini API** (Agent 05): Renders styled PNGs in 3 variants (`--whiteboard`, `--minimal`, `--thumbnail`) constrained by the contracts
+The visual system uses multiple complementary tools. See `tools/visual-tools.md` for the complete reference.
 
-The contract file prevents structural drift between the canonical diagram and rendered outputs. Gemini API config is in `.env` (key: `GEMINI_API_KEY`, model: `gemini-2.0-flash`). See `tools/gemini-renderer.md` for the rendering protocol.
+**Diagram creation (Agent 04):**
+- **Excalidraw MCP**: Canonical structure — produces `*.excalidraw` JSON + `diagram-contracts.json` that locks node/edge structure
+- **Draw.io MCP**: Process flowcharts, swim-lane diagrams, org charts — produces `*.drawio` XML with auto-layout
+
+**Rendering (Agent 05):**
+- **Gemini API** (`gemini-2.0-flash`): Renders styled PNGs in 3 variants (`--whiteboard`, `--minimal`, `--thumbnail`) constrained by contracts
+- **Gemini Image Gen** (`gemini-2.0-flash-exp`): Fallback for artistic whiteboard variants with direct image generation
+- **AntV Chart MCP**: Data-driven charts (bar, line, pie, radar) with Tesla dark theme → `--chart.png`
+
+**Slide visuals (Agent 07):**
+- **Canva MCP**: Branded infographics for high-impact summary slides → `--infographic.png`
+- **Figma MCP**: Read-only reference for Tesla brand compliance
+
+The contract file prevents structural drift between canonical diagrams and rendered outputs. Gemini API config is in `.env` (key: `GEMINI_API_KEY`). See `tools/gemini-renderer.md` for the rendering protocol.
 
 ### Quality Gates
 
@@ -98,13 +109,15 @@ Include this context when running any agent:
 | 01 Curriculum Architect | WebSearch, perplexity_research, Memory MCP |
 | 02 Research Agent | perplexity_research (primary), perplexity_search (verification), WebSearch |
 | 03 Content Writer | Memory MCP (terminology consistency) |
-| 04 Diagram Architect | Memory MCP (label verification) |
-| 05 Diagram Renderer | Gemini API via perplexity_reason, Playwright (screenshots), Memory MCP |
+| 04 Diagram Architect | Excalidraw MCP (canonical diagrams), Draw.io MCP (flowcharts/swim-lanes), Memory MCP (label verification) |
+| 05 Diagram Renderer | Gemini API (styled HTML/SVG), Gemini Image Gen (artistic variants), AntV Chart MCP (data charts), Playwright (screenshots), Memory MCP |
 | 06 Slide Planner | Memory MCP (optional, cross-week consistency) |
-| 07 Slide Renderer | Playwright (browser_navigate, browser_snapshot, browser_take_screenshot) |
+| 07 Slide Renderer | Playwright (browser_navigate, browser_snapshot, browser_take_screenshot), Canva MCP (infographics), AntV Chart MCP (inline charts) |
 | 08 Exercise Designer | perplexity_reason (validation), Memory MCP (skill tracking) |
 | 09 Prompt Librarian | perplexity_reason (test effectiveness, min 7/10), Memory MCP (deduplication) |
 | 10 Quality Reviewer | Playwright, WebSearch, perplexity_search, Memory MCP |
+
+See `tools/visual-tools.md` for full tool reference including selection guides and output naming conventions.
 
 ## Update Workflow (Edit-and-Cascade)
 
