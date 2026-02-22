@@ -1,0 +1,240 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "training-factory-agent-04",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 200,
+      "y": 30,
+      "text": "The Plan-Execute-Iterate Loop",
+      "fontSize": 26,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "x": 170,
+      "y": 62,
+      "text": "How agents work — like delegating to a capable new hire",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "ellipse",
+      "id": "user-input",
+      "x": 100,
+      "y": 140,
+      "width": 200,
+      "height": 70,
+      "backgroundColor": "#ffd43b",
+      "fillStyle": "solid",
+      "strokeColor": "#f59f00",
+      "strokeWidth": 2,
+      "label": { "text": "You Give a Task", "fontSize": 16, "fontFamily": 1 }
+    },
+    {
+      "type": "arrow",
+      "id": "arrow-to-plan",
+      "x": 300,
+      "y": 175,
+      "width": 80,
+      "height": 0,
+      "points": [[0, 0], [80, 0]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "user-input", "fixedPoint": [1, 0.5] },
+      "endBinding": { "elementId": "plan", "fixedPoint": [0, 0.5] }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "plan",
+      "x": 380,
+      "y": 120,
+      "width": 160,
+      "height": 70,
+      "backgroundColor": "#4dabf7",
+      "fillStyle": "solid",
+      "strokeColor": "#1971c2",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "1. Plan", "fontSize": 18, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "plan-desc",
+      "x": 385,
+      "y": 195,
+      "text": "Agent writes down\nwhat it will do",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-plan-approve",
+      "x": 540,
+      "y": 155,
+      "width": 80,
+      "height": 0,
+      "points": [[0, 0], [80, 0]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "plan", "fixedPoint": [1, 0.5] },
+      "endBinding": { "elementId": "approve", "fixedPoint": [0, 0.5] }
+    },
+    {
+      "type": "diamond",
+      "id": "approve",
+      "x": 620,
+      "y": 115,
+      "width": 140,
+      "height": 80,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#fab005",
+      "strokeWidth": 2,
+      "label": { "text": "You Approve?", "fontSize": 14, "fontFamily": 1 }
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-approve-execute",
+      "x": 690,
+      "y": 195,
+      "width": 0,
+      "height": 80,
+      "points": [[0, 0], [0, 80]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "approve", "fixedPoint": [0.5, 1] },
+      "endBinding": { "elementId": "execute", "fixedPoint": [0.5, 0] },
+      "label": { "text": "Yes", "fontSize": 12 }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "execute",
+      "x": 610,
+      "y": 280,
+      "width": 160,
+      "height": 70,
+      "backgroundColor": "#69db7c",
+      "fillStyle": "solid",
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "2. Execute", "fontSize": 18, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "execute-desc",
+      "x": 615,
+      "y": 355,
+      "text": "Agent creates files,\nwrites code, runs commands",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-execute-check",
+      "x": 610,
+      "y": 315,
+      "width": -80,
+      "height": 0,
+      "points": [[0, 0], [-80, 0]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "execute", "fixedPoint": [0, 0.5] },
+      "endBinding": { "elementId": "check", "fixedPoint": [1, 0.5] }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "check",
+      "x": 380,
+      "y": 280,
+      "width": 160,
+      "height": 70,
+      "backgroundColor": "#da77f2",
+      "fillStyle": "solid",
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "3. Check", "fontSize": 18, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "check-desc",
+      "x": 385,
+      "y": 355,
+      "text": "You review the output.\nIs it right?",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-check-iterate",
+      "x": 380,
+      "y": 300,
+      "width": -60,
+      "height": -145,
+      "points": [[0, 0], [-60, 0], [-60, -145], [0, -145]],
+      "strokeColor": "#5c940d",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "check", "fixedPoint": [0, 0.5] },
+      "endBinding": { "elementId": "plan", "fixedPoint": [0, 0.5] },
+      "label": { "text": "Needs changes?\nGive feedback", "fontSize": 11 }
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-check-done",
+      "x": 460,
+      "y": 350,
+      "width": 0,
+      "height": 60,
+      "points": [[0, 0], [0, 60]],
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "check", "fixedPoint": [0.5, 1] },
+      "endBinding": { "elementId": "done", "fixedPoint": [0.5, 0] },
+      "label": { "text": "Looks good!", "fontSize": 12 }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "done",
+      "x": 390,
+      "y": 415,
+      "width": 140,
+      "height": 50,
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Task Complete", "fontSize": 16, "fontFamily": 1 }
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

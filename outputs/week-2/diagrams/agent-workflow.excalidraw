@@ -1,0 +1,348 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "training-factory-agent-04",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 180,
+      "y": 20,
+      "text": "Agent Workflow: From Instruction to Output",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "x": 205,
+      "y": 50,
+      "text": "You stay in control at every step",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "ellipse",
+      "id": "step-1",
+      "x": 50,
+      "y": 110,
+      "width": 180,
+      "height": 65,
+      "backgroundColor": "#ffd43b",
+      "fillStyle": "solid",
+      "strokeColor": "#f59f00",
+      "strokeWidth": 2,
+      "label": { "text": "You Give\nan Instruction", "fontSize": 15, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "step-1-num",
+      "x": 55,
+      "y": 95,
+      "text": "1",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#f59f00"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-1-2",
+      "x": 230,
+      "y": 142,
+      "width": 50,
+      "height": 0,
+      "points": [[0, 0], [50, 0]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-1", "fixedPoint": [1, 0.5] },
+      "endBinding": { "elementId": "step-2", "fixedPoint": [0, 0.5] }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "step-2",
+      "x": 280,
+      "y": 110,
+      "width": 150,
+      "height": 65,
+      "backgroundColor": "#4dabf7",
+      "fillStyle": "solid",
+      "strokeColor": "#1971c2",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Agent Plans", "fontSize": 16, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "step-2-num",
+      "x": 285,
+      "y": 95,
+      "text": "2",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1971c2"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-2-3",
+      "x": 430,
+      "y": 142,
+      "width": 50,
+      "height": 0,
+      "points": [[0, 0], [50, 0]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-2", "fixedPoint": [1, 0.5] },
+      "endBinding": { "elementId": "step-3", "fixedPoint": [0, 0.5] }
+    },
+
+    {
+      "type": "diamond",
+      "id": "step-3",
+      "x": 480,
+      "y": 100,
+      "width": 150,
+      "height": 85,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#fab005",
+      "strokeWidth": 2,
+      "label": { "text": "You Approve?", "fontSize": 14, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "step-3-num",
+      "x": 485,
+      "y": 87,
+      "text": "3",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#fab005"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-3-reject",
+      "x": 555,
+      "y": 100,
+      "width": 0,
+      "height": -40,
+      "points": [[0, 0], [0, -40]],
+      "strokeColor": "#e03131",
+      "strokeWidth": 1,
+      "strokeStyle": "dotted",
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-3", "fixedPoint": [0.5, 0] },
+      "label": { "text": "No → redirect", "fontSize": 11 }
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-3-4",
+      "x": 555,
+      "y": 185,
+      "width": 0,
+      "height": 50,
+      "points": [[0, 0], [0, 50]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-3", "fixedPoint": [0.5, 1] },
+      "endBinding": { "elementId": "step-4", "fixedPoint": [0.5, 0] },
+      "label": { "text": "Yes", "fontSize": 12 }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "step-4",
+      "x": 480,
+      "y": 240,
+      "width": 150,
+      "height": 65,
+      "backgroundColor": "#69db7c",
+      "fillStyle": "solid",
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Agent Executes", "fontSize": 16, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "step-4-num",
+      "x": 485,
+      "y": 225,
+      "text": "4",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#2f9e44"
+    },
+    {
+      "type": "text",
+      "id": "step-4-desc",
+      "x": 480,
+      "y": 310,
+      "text": "Creates files, writes code,\nruns commands",
+      "fontSize": 11,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-4-5",
+      "x": 480,
+      "y": 272,
+      "width": -50,
+      "height": 0,
+      "points": [[0, 0], [-50, 0]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-4", "fixedPoint": [0, 0.5] },
+      "endBinding": { "elementId": "step-5", "fixedPoint": [1, 0.5] }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "step-5",
+      "x": 280,
+      "y": 240,
+      "width": 150,
+      "height": 65,
+      "backgroundColor": "#da77f2",
+      "fillStyle": "solid",
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Agent Checks", "fontSize": 16, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "step-5-num",
+      "x": 285,
+      "y": 225,
+      "text": "5",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#9c36b5"
+    },
+    {
+      "type": "text",
+      "id": "step-5-desc",
+      "x": 280,
+      "y": 310,
+      "text": "Self-healing: agent spots\nand fixes its own errors",
+      "fontSize": 11,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-5-6",
+      "x": 280,
+      "y": 272,
+      "width": -50,
+      "height": 0,
+      "points": [[0, 0], [-50, 0]],
+      "strokeColor": "#495057",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-5", "fixedPoint": [0, 0.5] },
+      "endBinding": { "elementId": "step-6", "fixedPoint": [1, 0.5] }
+    },
+
+    {
+      "type": "ellipse",
+      "id": "step-6",
+      "x": 50,
+      "y": 240,
+      "width": 180,
+      "height": 65,
+      "backgroundColor": "#ffd43b",
+      "fillStyle": "solid",
+      "strokeColor": "#f59f00",
+      "strokeWidth": 2,
+      "label": { "text": "You Review\nthe Output", "fontSize": 15, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "step-6-num",
+      "x": 55,
+      "y": 225,
+      "text": "6",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#f59f00"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-iterate",
+      "x": 140,
+      "y": 240,
+      "width": 0,
+      "height": -65,
+      "points": [[0, 0], [0, -65]],
+      "strokeColor": "#5c940d",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-6", "fixedPoint": [0.5, 0] },
+      "endBinding": { "elementId": "step-1", "fixedPoint": [0.5, 1] },
+      "label": { "text": "\"Change this...\"", "fontSize": 11 }
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-6-done",
+      "x": 140,
+      "y": 305,
+      "width": 0,
+      "height": 50,
+      "points": [[0, 0], [0, 50]],
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "step-6", "fixedPoint": [0.5, 1] },
+      "endBinding": { "elementId": "done", "fixedPoint": [0.5, 0] },
+      "label": { "text": "Looks good!", "fontSize": 12 }
+    },
+
+    {
+      "type": "rectangle",
+      "id": "done",
+      "x": 70,
+      "y": 360,
+      "width": 140,
+      "height": 45,
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Done!", "fontSize": 16, "fontFamily": 1 }
+    },
+
+    {
+      "type": "text",
+      "id": "key-msg",
+      "x": 200,
+      "y": 420,
+      "text": "Key: You approve every major step — you are always in control",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1971c2"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "training-factory-agent-04",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 180,
+      "y": 25,
+      "text": "GitHub Copilot: Three Modes",
+      "fontSize": 26,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "x": 195,
+      "y": 57,
+      "text": "Three levels of help — from questions to building",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+
+    {
+      "type": "rectangle",
+      "id": "chat-col",
+      "x": 50,
+      "y": 90,
+      "width": 220,
+      "height": 360,
+      "backgroundColor": "#edf2ff",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "opacity": 25
+    },
+    {
+      "type": "rectangle",
+      "id": "chat-box",
+      "x": 80,
+      "y": 105,
+      "width": 160,
+      "height": 60,
+      "backgroundColor": "#4dabf7",
+      "fillStyle": "solid",
+      "strokeColor": "#1971c2",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Chat Mode", "fontSize": 18, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "chat-shortcut",
+      "x": 95,
+      "y": 175,
+      "text": "Ctrl+Shift+I",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#1971c2"
+    },
+    {
+      "type": "text",
+      "id": "chat-desc",
+      "x": 65,
+      "y": 200,
+      "text": "Ask questions,\nget answers",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "id": "chat-example",
+      "x": 65,
+      "y": 255,
+      "text": "\"How do I calculate\novertime cost per\nassociate?\"",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "chat-output",
+      "x": 75,
+      "y": 330,
+      "width": 170,
+      "height": 40,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#339af0",
+      "strokeWidth": 1,
+      "roundness": { "type": 3 },
+      "label": { "text": "Text in chat panel", "fontSize": 13, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "chat-when",
+      "x": 70,
+      "y": 385,
+      "text": "Use when: you need\ninformation or ideas",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#4a9eed"
+    },
+
+    {
+      "type": "rectangle",
+      "id": "edit-col",
+      "x": 290,
+      "y": 90,
+      "width": 220,
+      "height": 360,
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "opacity": 25
+    },
+    {
+      "type": "rectangle",
+      "id": "edit-box",
+      "x": 320,
+      "y": 105,
+      "width": 160,
+      "height": 60,
+      "backgroundColor": "#ffa94d",
+      "fillStyle": "solid",
+      "strokeColor": "#e8590c",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Edit Mode", "fontSize": 18, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "edit-shortcut",
+      "x": 330,
+      "y": 175,
+      "text": "Select > Right-click",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#e8590c"
+    },
+    {
+      "type": "text",
+      "id": "edit-desc",
+      "x": 305,
+      "y": 200,
+      "text": "Point at something,\nask for changes",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "id": "edit-example",
+      "x": 305,
+      "y": 255,
+      "text": "\"Make this table sort\nby date instead of\nname\"",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "edit-output",
+      "x": 315,
+      "y": 330,
+      "width": 170,
+      "height": 40,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#fab005",
+      "strokeWidth": 1,
+      "roundness": { "type": 3 },
+      "label": { "text": "File changes directly", "fontSize": 13, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "edit-when",
+      "x": 310,
+      "y": 385,
+      "text": "Use when: you know\nexactly what to change",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#f59e0b"
+    },
+
+    {
+      "type": "rectangle",
+      "id": "agent-col",
+      "x": 530,
+      "y": 90,
+      "width": 220,
+      "height": 360,
+      "backgroundColor": "#ebfbee",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "opacity": 25
+    },
+    {
+      "type": "rectangle",
+      "id": "agent-box",
+      "x": 560,
+      "y": 105,
+      "width": 160,
+      "height": 60,
+      "backgroundColor": "#69db7c",
+      "fillStyle": "solid",
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "label": { "text": "Agent Mode", "fontSize": 18, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "agent-shortcut",
+      "x": 565,
+      "y": 175,
+      "text": "Mode dropdown > Agent",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#2f9e44"
+    },
+    {
+      "type": "text",
+      "id": "agent-desc",
+      "x": 545,
+      "y": 200,
+      "text": "Describe a goal,\nagent plans and builds",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "text",
+      "id": "agent-example",
+      "x": 545,
+      "y": 255,
+      "text": "\"Build me a dashboard\nthat tracks weekly\nKPIs\"",
+      "fontSize": 13,
+      "fontFamily": 1,
+      "strokeColor": "#757575"
+    },
+    {
+      "type": "rectangle",
+      "id": "agent-output",
+      "x": 555,
+      "y": 330,
+      "width": 170,
+      "height": 40,
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 1,
+      "roundness": { "type": 3 },
+      "label": { "text": "Working files on PC", "fontSize": 13, "fontFamily": 1 }
+    },
+    {
+      "type": "text",
+      "id": "agent-when",
+      "x": 550,
+      "y": 385,
+      "text": "Use when: you want\nsomething BUILT",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#22c55e"
+    },
+
+    {
+      "type": "arrow",
+      "id": "arrow-progression-1",
+      "x": 270,
+      "y": 135,
+      "width": 20,
+      "height": 0,
+      "points": [[0, 0], [20, 0]],
+      "strokeColor": "#868e96",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "arrow-progression-2",
+      "x": 510,
+      "y": 135,
+      "width": 20,
+      "height": 0,
+      "points": [[0, 0], [20, 0]],
+      "strokeColor": "#868e96",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "text",
+      "id": "progression-label",
+      "x": 250,
+      "y": 460,
+      "text": "More autonomy  ─────────────────────>",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#868e96"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

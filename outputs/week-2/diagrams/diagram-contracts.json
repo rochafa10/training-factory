@@ -1,0 +1,614 @@
+{
+  "week": 2,
+  "generatedBy": "agent-04-diagram-architect",
+  "diagrams": [
+    {
+      "filename": "prompts-vs-agents.excalidraw",
+      "format": "excalidraw",
+      "title": "Prompts vs AI Agents",
+      "contentSection": "Section 5: What Is an AI Agent?",
+      "nodes": [
+        {
+          "id": "prompt-user",
+          "label": "You Type a Prompt",
+          "type": "user",
+          "description": "Human types a single question or request"
+        },
+        {
+          "id": "prompt-ai",
+          "label": "AI Responds",
+          "type": "agent",
+          "description": "AI gives one text response"
+        },
+        {
+          "id": "prompt-output",
+          "label": "You Copy-Paste",
+          "type": "data",
+          "description": "User manually takes the text and uses it"
+        },
+        {
+          "id": "agent-user",
+          "label": "You Describe a Goal",
+          "type": "user",
+          "description": "Human describes a multi-step objective"
+        },
+        {
+          "id": "agent-plan",
+          "label": "Agent Plans",
+          "type": "agent",
+          "description": "Agent creates a step-by-step plan"
+        },
+        {
+          "id": "agent-execute",
+          "label": "Agent Executes",
+          "type": "tool",
+          "description": "Agent creates files, writes code, runs commands"
+        },
+        {
+          "id": "agent-output",
+          "label": "Working Files on Your PC",
+          "type": "data",
+          "description": "Real files created on the user's computer"
+        }
+      ],
+      "edges": [
+        {
+          "from": "prompt-user",
+          "to": "prompt-ai",
+          "label": "one question",
+          "type": "data_flow"
+        },
+        {
+          "from": "prompt-ai",
+          "to": "prompt-output",
+          "label": "text only",
+          "type": "data_flow"
+        },
+        {
+          "from": "agent-user",
+          "to": "agent-plan",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "agent-plan",
+          "to": "agent-execute",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "agent-execute",
+          "to": "agent-plan",
+          "label": "iterate",
+          "type": "feedback"
+        }
+      ],
+      "labels": [
+        "Prompts vs AI Agents",
+        "Two ways to work with AI — and why agents change everything",
+        "Prompts (Chat)",
+        "Agents (Copilot)",
+        "You Type a Prompt",
+        "AI Responds",
+        "You Copy-Paste",
+        "You Describe a Goal",
+        "Agent Plans",
+        "Agent Executes",
+        "Working Files on Your PC",
+        "one question",
+        "text only",
+        "iterate"
+      ],
+      "constraints": {
+        "allowedColors": ["#ffd43b", "#4dabf7", "#a5d8ff", "#69db7c"],
+        "maxNodes": 7,
+        "layoutDirection": "top-to-bottom"
+      }
+    },
+    {
+      "filename": "plan-execute-iterate.excalidraw",
+      "format": "excalidraw",
+      "title": "The Plan-Execute-Iterate Loop",
+      "contentSection": "Section 5: What Is an AI Agent? — The Plan-Execute-Iterate Loop",
+      "nodes": [
+        {
+          "id": "user-input",
+          "label": "You Give a Task",
+          "type": "user",
+          "description": "Human describes what they want done"
+        },
+        {
+          "id": "plan",
+          "label": "1. Plan",
+          "type": "agent",
+          "description": "Agent reads request and creates a step-by-step plan"
+        },
+        {
+          "id": "approve",
+          "label": "You Approve?",
+          "type": "decision",
+          "description": "Human reviews the plan and approves or redirects"
+        },
+        {
+          "id": "execute",
+          "label": "2. Execute",
+          "type": "tool",
+          "description": "Agent carries out each step: creating files, writing code, running commands"
+        },
+        {
+          "id": "check",
+          "label": "3. Check",
+          "type": "memory",
+          "description": "Human reviews the output — is it right?"
+        },
+        {
+          "id": "done",
+          "label": "Task Complete",
+          "type": "data",
+          "description": "Task is finished and accepted"
+        }
+      ],
+      "edges": [
+        {
+          "from": "user-input",
+          "to": "plan",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "plan",
+          "to": "approve",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "approve",
+          "to": "execute",
+          "label": "Yes",
+          "type": "data_flow"
+        },
+        {
+          "from": "execute",
+          "to": "check",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "check",
+          "to": "plan",
+          "label": "Needs changes? Give feedback",
+          "type": "feedback"
+        },
+        {
+          "from": "check",
+          "to": "done",
+          "label": "Looks good!",
+          "type": "data_flow"
+        }
+      ],
+      "labels": [
+        "The Plan-Execute-Iterate Loop",
+        "How agents work — like delegating to a capable new hire",
+        "You Give a Task",
+        "1. Plan",
+        "You Approve?",
+        "2. Execute",
+        "3. Check",
+        "Task Complete",
+        "Yes",
+        "Needs changes? Give feedback",
+        "Looks good!",
+        "Agent writes down what it will do",
+        "Agent creates files, writes code, runs commands",
+        "You review the output. Is it right?"
+      ],
+      "constraints": {
+        "allowedColors": ["#ffd43b", "#4dabf7", "#fff3bf", "#69db7c", "#da77f2", "#b2f2bb"],
+        "maxNodes": 6,
+        "layoutDirection": "left-to-right"
+      }
+    },
+    {
+      "filename": "mcp-architecture.excalidraw",
+      "format": "excalidraw",
+      "title": "MCP: Giving Agents New Skills",
+      "contentSection": "Section 9: MCP Tools — Giving Agents Skills",
+      "nodes": [
+        {
+          "id": "agent-before",
+          "label": "AI Agent",
+          "type": "agent",
+          "description": "Agent without MCP — limited to reading/writing files"
+        },
+        {
+          "id": "files-before",
+          "label": "Read/Write Files",
+          "type": "data",
+          "description": "The only capability before MCP"
+        },
+        {
+          "id": "blocked-browser",
+          "label": "No Browser",
+          "type": "error",
+          "description": "Cannot access the internet"
+        },
+        {
+          "id": "blocked-data",
+          "label": "No Web Data",
+          "type": "error",
+          "description": "Cannot pull live data from websites"
+        },
+        {
+          "id": "agent-after",
+          "label": "AI Agent",
+          "type": "agent",
+          "description": "Agent with MCP — connected to multiple skills"
+        },
+        {
+          "id": "mcp-playwright",
+          "label": "Playwright",
+          "type": "tool",
+          "description": "Browse any website — pull data from public dashboards"
+        },
+        {
+          "id": "mcp-filesystem",
+          "label": "Filesystem",
+          "type": "tool",
+          "description": "Organize files and folders"
+        },
+        {
+          "id": "mcp-memory",
+          "label": "Memory",
+          "type": "tool",
+          "description": "Remember facts between sessions"
+        },
+        {
+          "id": "mcp-fetch",
+          "label": "Fetch",
+          "type": "tool",
+          "description": "Connect to web services and APIs"
+        }
+      ],
+      "edges": [
+        {
+          "from": "agent-before",
+          "to": "files-before",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "agent-after",
+          "to": "mcp-playwright",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "agent-after",
+          "to": "mcp-filesystem",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "agent-after",
+          "to": "mcp-memory",
+          "label": "",
+          "type": "control_flow"
+        },
+        {
+          "from": "agent-after",
+          "to": "mcp-fetch",
+          "label": "",
+          "type": "control_flow"
+        }
+      ],
+      "labels": [
+        "MCP: Giving Agents New Skills",
+        "Like installing apps on your phone",
+        "BEFORE MCP",
+        "AFTER MCP",
+        "AI Agent",
+        "Read/Write Files",
+        "No Browser",
+        "No Web Data",
+        "Playwright",
+        "Filesystem",
+        "Memory",
+        "Fetch",
+        "Each tool = a new skill",
+        "\"I can't access the internet.\"",
+        "\"Tampa FL: 78 degrees, partly cloudy.\""
+      ],
+      "constraints": {
+        "allowedColors": ["#4dabf7", "#a5d8ff", "#ffc9c9", "#69db7c"],
+        "maxNodes": 9,
+        "layoutDirection": "top-to-bottom"
+      }
+    },
+    {
+      "filename": "copilot-three-modes.excalidraw",
+      "format": "excalidraw",
+      "title": "GitHub Copilot: Three Modes",
+      "contentSection": "Section 7: Copilot Modes — Chat vs Edit vs Agent",
+      "nodes": [
+        {
+          "id": "chat-box",
+          "label": "Chat Mode",
+          "type": "agent",
+          "description": "Sidebar Q&A — ask questions, get text answers"
+        },
+        {
+          "id": "chat-output",
+          "label": "Text in chat panel",
+          "type": "data",
+          "description": "Output is text you read and copy"
+        },
+        {
+          "id": "edit-box",
+          "label": "Edit Mode",
+          "type": "guardrail",
+          "description": "Select text, ask for targeted changes"
+        },
+        {
+          "id": "edit-output",
+          "label": "File changes directly",
+          "type": "data",
+          "description": "Output is direct changes to a file you accept or reject"
+        },
+        {
+          "id": "agent-box",
+          "label": "Agent Mode",
+          "type": "tool",
+          "description": "Describe a goal, agent plans and builds autonomously"
+        },
+        {
+          "id": "agent-output",
+          "label": "Working files on PC",
+          "type": "data",
+          "description": "Output is multiple files created, code written, commands run"
+        }
+      ],
+      "edges": [
+        {
+          "from": "chat-box",
+          "to": "edit-box",
+          "label": "",
+          "type": "control_flow"
+        },
+        {
+          "from": "edit-box",
+          "to": "agent-box",
+          "label": "",
+          "type": "control_flow"
+        }
+      ],
+      "labels": [
+        "GitHub Copilot: Three Modes",
+        "Three levels of help — from questions to building",
+        "Chat Mode",
+        "Ctrl+Shift+I",
+        "Ask questions, get answers",
+        "\"How do I calculate overtime cost per associate?\"",
+        "Text in chat panel",
+        "Use when: you need information or ideas",
+        "Edit Mode",
+        "Select > Right-click",
+        "Point at something, ask for changes",
+        "\"Make this table sort by date instead of name\"",
+        "File changes directly",
+        "Use when: you know exactly what to change",
+        "Agent Mode",
+        "Mode dropdown > Agent",
+        "Describe a goal, agent plans and builds",
+        "\"Build me a dashboard that tracks weekly KPIs\"",
+        "Working files on PC",
+        "Use when: you want something BUILT",
+        "More autonomy  ─────────────────────>"
+      ],
+      "constraints": {
+        "allowedColors": ["#4dabf7", "#a5d8ff", "#ffa94d", "#fff3bf", "#69db7c", "#b2f2bb"],
+        "maxNodes": 6,
+        "layoutDirection": "left-to-right"
+      }
+    },
+    {
+      "filename": "agent-workflow.excalidraw",
+      "format": "excalidraw",
+      "title": "Agent Workflow: From Instruction to Output",
+      "contentSection": "Section 8: Exercise 4 + Section 11: Reading Agent Plans & Git Basics",
+      "nodes": [
+        {
+          "id": "step-1",
+          "label": "You Give an Instruction",
+          "type": "user",
+          "description": "Human describes what they want in plain English"
+        },
+        {
+          "id": "step-2",
+          "label": "Agent Plans",
+          "type": "agent",
+          "description": "Agent reads request and creates a step-by-step plan"
+        },
+        {
+          "id": "step-3",
+          "label": "You Approve?",
+          "type": "decision",
+          "description": "Human reviews the plan — approve, partial approve, or redirect"
+        },
+        {
+          "id": "step-4",
+          "label": "Agent Executes",
+          "type": "tool",
+          "description": "Agent creates files, writes code, runs commands"
+        },
+        {
+          "id": "step-5",
+          "label": "Agent Checks",
+          "type": "memory",
+          "description": "Self-healing: agent spots and fixes its own errors"
+        },
+        {
+          "id": "step-6",
+          "label": "You Review the Output",
+          "type": "user",
+          "description": "Human reviews what the agent built — accept, iterate, or undo"
+        },
+        {
+          "id": "done",
+          "label": "Done!",
+          "type": "data",
+          "description": "Task complete — working output on your computer"
+        }
+      ],
+      "edges": [
+        {
+          "from": "step-1",
+          "to": "step-2",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "step-2",
+          "to": "step-3",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "step-3",
+          "to": "step-4",
+          "label": "Yes",
+          "type": "data_flow"
+        },
+        {
+          "from": "step-3",
+          "to": "step-1",
+          "label": "No → redirect",
+          "type": "error_path"
+        },
+        {
+          "from": "step-4",
+          "to": "step-5",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "step-5",
+          "to": "step-6",
+          "label": "",
+          "type": "data_flow"
+        },
+        {
+          "from": "step-6",
+          "to": "step-1",
+          "label": "\"Change this...\"",
+          "type": "feedback"
+        },
+        {
+          "from": "step-6",
+          "to": "done",
+          "label": "Looks good!",
+          "type": "data_flow"
+        }
+      ],
+      "labels": [
+        "Agent Workflow: From Instruction to Output",
+        "You stay in control at every step",
+        "You Give an Instruction",
+        "Agent Plans",
+        "You Approve?",
+        "Agent Executes",
+        "Agent Checks",
+        "You Review the Output",
+        "Done!",
+        "Yes",
+        "No → redirect",
+        "\"Change this...\"",
+        "Looks good!",
+        "Creates files, writes code, runs commands",
+        "Self-healing: agent spots and fixes its own errors",
+        "Key: You approve every major step — you are always in control"
+      ],
+      "constraints": {
+        "allowedColors": ["#ffd43b", "#4dabf7", "#fff3bf", "#69db7c", "#da77f2", "#b2f2bb"],
+        "maxNodes": 7,
+        "layoutDirection": "left-to-right"
+      }
+    },
+    {
+      "filename": "legend.excalidraw",
+      "format": "excalidraw",
+      "title": "Diagram Legend — Week 2",
+      "contentSection": "Cross-week legend",
+      "nodes": [
+        {
+          "id": "legend-agent",
+          "label": "Agent / AI",
+          "type": "agent",
+          "description": "AI agents and models — blue rectangle"
+        },
+        {
+          "id": "legend-tool",
+          "label": "Tool / Action",
+          "type": "tool",
+          "description": "MCP tools, actions, execution — green rounded rectangle"
+        },
+        {
+          "id": "legend-user",
+          "label": "User / You",
+          "type": "user",
+          "description": "Human actors — yellow ellipse"
+        },
+        {
+          "id": "legend-data",
+          "label": "Data / Output",
+          "type": "data",
+          "description": "Input/output data — light blue rectangle"
+        },
+        {
+          "id": "legend-decision",
+          "label": "Decision",
+          "type": "decision",
+          "description": "Branch points — cream diamond"
+        },
+        {
+          "id": "legend-memory",
+          "label": "Check / Review",
+          "type": "memory",
+          "description": "Review and evaluation — purple rectangle"
+        },
+        {
+          "id": "legend-guardrail",
+          "label": "Guardrail",
+          "type": "guardrail",
+          "description": "Policy constraints — orange rectangle"
+        },
+        {
+          "id": "legend-error",
+          "label": "Error / Blocked",
+          "type": "error",
+          "description": "Error states and blocked capabilities — red rectangle"
+        }
+      ],
+      "edges": [],
+      "labels": [
+        "Diagram Legend — Week 2",
+        "Agent / AI",
+        "Tool / Action",
+        "User / You",
+        "Data / Output",
+        "Decision",
+        "Check / Review",
+        "Guardrail",
+        "Error / Blocked",
+        "Data / control flow",
+        "Feedback / iteration loop",
+        "Error / rejection path",
+        "Optional / secondary path"
+      ],
+      "constraints": {
+        "allowedColors": ["#4dabf7", "#69db7c", "#ffd43b", "#a5d8ff", "#fff3bf", "#da77f2", "#ffa94d", "#ffc9c9"],
+        "maxNodes": 8,
+        "layoutDirection": "left-to-right"
+      }
+    }
+  ]
+}
