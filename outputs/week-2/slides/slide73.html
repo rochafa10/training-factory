@@ -5,35 +5,35 @@
   <title>Slide 73 - Part B: Catch and Fix a Mistake</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
     .container { padding: 16px 40px 14px 48px; height: 100%; display: flex; flex-direction: column; }
-    .badge { display: inline-block; background: #e82127; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 6px; align-self: flex-start; }
+    .badge { display: inline-block; background: #cc0000; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 6px; align-self: flex-start; }
     h1 { font-size: 24px; font-weight: bold; margin-bottom: 8px; }
-    .type-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 4px; }
+    .type-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1.5px; margin-bottom: 4px; }
     .type-this-box {
-      background: #1a1a1a;
-      border-left: 4px solid #e82127;
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
       border-radius: 8px;
       padding: 10px 16px;
       margin-bottom: 8px;
     }
-    .type-this-box p { font-size: 12px; color: #e5e5e5; line-height: 1.45; }
+    .type-this-box p { font-size: 12px; color: #333333; line-height: 1.45; }
     .type-this-box p + p { margin-top: 6px; }
-    .watch-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #facc15; letter-spacing: 1.5px; margin-bottom: 5px; }
+    .watch-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #b45309; letter-spacing: 1.5px; margin-bottom: 5px; }
     .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
     .watch-item {
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 6px;
       padding: 8px 12px;
       display: flex;
       align-items: center;
       gap: 8px;
       font-size: 12px;
-      color: #e5e5e5;
-      border: 1px solid #2a2a2a;
+      color: #333333;
+      border: 1px solid #eeeeee;
     }
-    .watch-icon { color: #facc15; font-size: 14px; flex-shrink: 0; }
+    .watch-icon { color: #b45309; font-size: 14px; flex-shrink: 0; }
   </style>
 </head>
 <body>
@@ -45,7 +45,7 @@
     <div class="type-label">Type This</div>
     <div class="type-this-box">
       <p>Build a one-page HTML summary of a fictional DC&rsquo;s weekly KPIs. Data: 14,200 orders, 97.2% fill rate, 180 overtime hrs, 48 headcount, 1 safety incident, 3 complaints.</p>
-      <p>Requirements: Everything fits on ONE screen (max 500px height), large easy-to-read numbers, dark theme (#0a0a0a bg, #e82127 accent), each KPI in its own card.</p>
+      <p>Requirements: Everything fits on ONE screen (max 500px height), large easy-to-read numbers, dark theme (#0a0a0a bg, #cc0000 accent), each KPI in its own card.</p>
     </div>
 
     <div class="watch-label">Watch for These Issues</div>

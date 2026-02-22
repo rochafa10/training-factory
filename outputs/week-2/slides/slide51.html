@@ -5,15 +5,15 @@
   <title>Slide 51 - Step 2: Use the New Skill</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
     .container { padding: 20px 40px 16px 48px; height: 100%; display: flex; flex-direction: column; }
-    .badge { display: inline-block; background: #e82127; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 10px; align-self: flex-start; }
+    .badge { display: inline-block; background: #cc0000; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 10px; align-self: flex-start; }
     h1 { font-size: 26px; font-weight: bold; margin-bottom: 12px; }
-    .type-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #e82127; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .type-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #cc0000; letter-spacing: 1.5px; margin-bottom: 6px; }
     .type-this-box {
-      background: #1a1a1a;
-      border-left: 4px solid #e82127;
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
       border-radius: 8px;
       padding: 14px 18px;
       margin-bottom: 14px;
@@ -21,14 +21,14 @@
     .type-this-text {
       font-family: 'Consolas', 'Courier New', monospace;
       font-size: 13px;
-      color: #ffffff;
+      color: #000000;
       line-height: 1.6;
     }
-    .flow-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 8px; }
+    .flow-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1.5px; margin-bottom: 8px; }
     .flow-steps { display: flex; gap: 10px; flex: 1; align-items: stretch; }
     .flow-step {
       flex: 1;
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 8px;
       padding: 10px 12px;
       display: flex;
@@ -40,9 +40,9 @@
     .flow-step-num {
       width: 24px;
       height: 24px;
-      background: #2a2a2a;
-      border: 2px solid #4ade80;
-      color: #4ade80;
+      background: #eeeeee;
+      border: 2px solid #16a34a;
+      color: #16a34a;
       font-size: 11px;
       font-weight: bold;
       border-radius: 50%;
@@ -52,24 +52,24 @@
       margin-bottom: 6px;
     }
     .flow-step-icon { font-size: 22px; margin-bottom: 4px; }
-    .flow-step-text { font-size: 12px; color: #e5e5e5; line-height: 1.4; }
-    .flow-step-text strong { color: #4ade80; }
+    .flow-step-text { font-size: 12px; color: #333333; line-height: 1.4; }
+    .flow-step-text strong { color: #16a34a; }
     .flow-arrow {
       position: absolute;
       right: -14px;
       top: 50%;
       transform: translateY(-50%);
-      color: #a0a0a0;
+      color: #666666;
       font-size: 16px;
       z-index: 1;
     }
     .fallback {
       margin-top: auto;
       font-size: 12px;
-      color: #a0a0a0;
+      color: #666666;
       padding-top: 8px;
     }
-    .fallback strong { color: #a0a0a0; font-weight: bold; }
+    .fallback strong { color: #666666; font-weight: bold; }
   </style>
 </head>
 <body>

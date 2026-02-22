@@ -5,26 +5,26 @@
   <title>Slide 60 - TYPE THIS: Build a Dashboard</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
     .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
     .header-row { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
-    .badge { background: #e82127; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
+    .badge { background: #cc0000; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
     h1 { font-size: 24px; font-weight: bold; line-height: 1.2; }
     .prereq {
       font-size: 12px;
-      color: #a0a0a0;
+      color: #666666;
       margin-bottom: 10px;
       padding: 6px 12px;
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 6px;
       display: inline-block;
     }
-    .prereq strong { color: #facc15; }
-    .type-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #e82127; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .prereq strong { color: #b45309; }
+    .type-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #cc0000; letter-spacing: 1.5px; margin-bottom: 6px; }
     .type-this-box {
-      background: #1a1a1a;
-      border-left: 4px solid #e82127;
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
       border-radius: 8px;
       padding: 14px 18px;
       flex: 1;
@@ -35,11 +35,11 @@
     .prompt-text {
       font-family: 'Consolas', 'Courier New', monospace;
       font-size: 12.5px;
-      color: #e5e5e5;
+      color: #333333;
       line-height: 1.7;
     }
     .prompt-text .main-request {
-      color: #ffffff;
+      color: #000000;
       font-weight: bold;
       margin-bottom: 6px;
       display: block;
@@ -49,19 +49,19 @@
       display: block;
       margin-bottom: 2px;
     }
-    .prompt-text .req-num { color: #e82127; font-weight: bold; }
-    .prompt-text .highlight { color: #facc15; }
+    .prompt-text .req-num { color: #cc0000; font-weight: bold; }
+    .prompt-text .highlight { color: #b45309; }
     .bottom-note {
       margin-top: 10px;
       padding-top: 10px;
-      border-top: 1px solid #2a2a2a;
+      border-top: 1px solid #eeeeee;
     }
     .note-text {
       font-size: 12px;
-      color: #a0a0a0;
+      color: #666666;
       line-height: 1.5;
     }
-    .note-text strong { color: #4ade80; }
+    .note-text strong { color: #16a34a; }
   </style>
 </head>
 <body>
@@ -82,7 +82,7 @@
         <span class="req-item"><span class="req-num">2)</span> Automatic calculation of time saved</span>
         <span class="req-item"><span class="req-num">3)</span> Running weekly total</span>
         <span class="req-item"><span class="req-num">4)</span> Bar chart showing daily savings</span>
-        <span class="req-item"><span class="req-num">5)</span> Dark background <span class="highlight">#0a0a0a</span> with red accent <span class="highlight">#e82127</span></span>
+        <span class="req-item"><span class="req-num">5)</span> Dark background <span class="highlight">#0a0a0a</span> with red accent <span class="highlight">#cc0000</span></span>
         <span class="req-item"><span class="req-num">6)</span> Save data in browser's local storage"</span>
       </div>
 

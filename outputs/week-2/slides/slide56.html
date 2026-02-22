@@ -5,14 +5,14 @@
   <title>Slide 56 - What Is a Diff?</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
     .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
     h1 { font-size: 28px; font-weight: bold; margin-bottom: 6px; }
-    .subtitle { font-size: 14px; color: #a0a0a0; margin-bottom: 20px; }
-    .explanation { font-size: 14px; color: #e5e5e5; line-height: 1.6; margin-bottom: 18px; }
+    .subtitle { font-size: 14px; color: #666666; margin-bottom: 20px; }
+    .explanation { font-size: 14px; color: #333333; line-height: 1.6; margin-bottom: 18px; }
     .diff-editor {
-      background: #1a1a1a;
+      background: #f5f5f5;
       border-radius: 8px;
       overflow: hidden;
       flex: 1;
@@ -20,10 +20,10 @@
       flex-direction: column;
     }
     .editor-titlebar {
-      background: #2a2a2a;
+      background: #eeeeee;
       padding: 8px 14px;
       font-size: 12px;
-      color: #a0a0a0;
+      color: #666666;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -34,9 +34,9 @@
       border-radius: 50%;
       display: inline-block;
     }
-    .dot-red { background: #f87171; }
-    .dot-yellow { background: #facc15; }
-    .dot-green { background: #4ade80; }
+    .dot-red { background: #dc2626; }
+    .dot-yellow { background: #b45309; }
+    .dot-green { background: #16a34a; }
     .diff-lines {
       padding: 14px 0;
       flex: 1;
@@ -53,20 +53,20 @@
       gap: 12px;
     }
     .diff-line.context {
-      color: #a0a0a0;
+      color: #666666;
     }
     .diff-line.removed {
       background: rgba(248, 113, 113, 0.12);
-      border-left: 4px solid #f87171;
+      border-left: 4px solid #dc2626;
     }
-    .diff-line.removed .sign { color: #f87171; font-weight: bold; }
-    .diff-line.removed .text { color: #f87171; }
+    .diff-line.removed .sign { color: #dc2626; font-weight: bold; }
+    .diff-line.removed .text { color: #dc2626; }
     .diff-line.added {
       background: rgba(74, 222, 128, 0.12);
-      border-left: 4px solid #4ade80;
+      border-left: 4px solid #16a34a;
     }
-    .diff-line.added .sign { color: #4ade80; font-weight: bold; }
-    .diff-line.added .text { color: #4ade80; }
+    .diff-line.added .sign { color: #16a34a; font-weight: bold; }
+    .diff-line.added .text { color: #16a34a; }
     .line-num {
       color: #555;
       font-size: 12px;
@@ -90,9 +90,9 @@
       height: 14px;
       border-radius: 3px;
     }
-    .swatch-red { background: rgba(248, 113, 113, 0.25); border: 2px solid #f87171; }
-    .swatch-green { background: rgba(74, 222, 128, 0.25); border: 2px solid #4ade80; }
-    .legend-text { color: #a0a0a0; }
+    .swatch-red { background: rgba(248, 113, 113, 0.25); border: 2px solid #dc2626; }
+    .swatch-green { background: rgba(74, 222, 128, 0.25); border: 2px solid #16a34a; }
+    .legend-text { color: #666666; }
   </style>
 </head>
 <body>
@@ -153,7 +153,7 @@
         <span class="legend-text">Green = Added</span>
       </div>
       <div class="legend-item">
-        <span class="legend-text" style="color: #e5e5e5;">Both on same line = Changed</span>
+        <span class="legend-text" style="color: #333333;">Both on same line = Changed</span>
       </div>
     </div>
   </div>

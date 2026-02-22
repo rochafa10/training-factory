@@ -5,29 +5,29 @@
   <title>Slide 12 - Part B: Your Own 6-Week Data Analysis</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
     .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
     .header-row { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
-    .badge { background: #e82127; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
+    .badge { background: #cc0000; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
     h1 { font-size: 28px; font-weight: bold; line-height: 1.2; }
-    .type-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1.5px; margin-bottom: 6px; }
-    .type-this-box { background: #1a1a1a; border-left: 4px solid #e82127; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
-    .type-line { font-size: 12.5px; color: #e5e5e5; line-height: 1.55; margin-bottom: 4px; font-family: 'Consolas', 'Courier New', monospace; }
+    .type-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .type-this-box { background: #f5f5f5; border-left: 4px solid #cc0000; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
+    .type-line { font-size: 12.5px; color: #333333; line-height: 1.55; margin-bottom: 4px; font-family: 'Consolas', 'Courier New', monospace; }
     .type-line:last-child { margin-bottom: 0; }
     .data-section { display: flex; gap: 20px; flex: 1; }
     .data-table-wrap { flex: 1; }
-    .data-label { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1px; margin-bottom: 8px; }
+    .data-label { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1px; margin-bottom: 8px; }
     table { width: 100%; border-collapse: collapse; }
-    th { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 0.5px; padding: 5px 8px; text-align: left; border-bottom: 1px solid #2a2a2a; }
-    td { font-size: 12.5px; color: #e5e5e5; padding: 5px 8px; border-bottom: 1px solid #1a1a1a; }
-    .trend-up { color: #f87171; }
-    .trend-down { color: #f87171; }
-    .trend-rise { color: #4ade80; }
-    .format-box { background: #1a1a1a; border-radius: 8px; padding: 12px 16px; }
-    .format-label { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1px; margin-bottom: 8px; }
-    .format-item { font-size: 12px; color: #e5e5e5; line-height: 1.6; padding-left: 12px; position: relative; }
-    .format-item::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background: #e82127; border-radius: 50%; }
+    th { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 0.5px; padding: 5px 8px; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    td { font-size: 12.5px; color: #333333; padding: 5px 8px; border-bottom: 1px solid #e0e0e0; }
+    .trend-up { color: #dc2626; }
+    .trend-down { color: #dc2626; }
+    .trend-rise { color: #16a34a; }
+    .format-box { background: #f5f5f5; border-radius: 8px; padding: 12px 16px; }
+    .format-label { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1px; margin-bottom: 8px; }
+    .format-item { font-size: 12px; color: #333333; line-height: 1.6; padding-left: 12px; position: relative; }
+    .format-item::before { content: ''; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; background: #cc0000; border-radius: 50%; }
   </style>
 </head>
 <body>
