@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 71 - Exercise: Challenge - Week-Over-Week Comparison</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 22px 40px 18px 48px; }
+.exercise-badge { display: inline-block; background: #facc15; color: #0a0a0a; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
+h1 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
+.intro { font-size: 14px; color: #a0a0a0; margin-bottom: 10px; }
+.type-this { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 4px solid #facc15; border-radius: 8px; padding: 10px 16px; margin-bottom: 10px; }
+.type-label { font-size: 11px; font-weight: 700; color: #facc15; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.prompt-text { font-size: 14px; color: #e5e5e5; font-family: 'Courier New', monospace; line-height: 1.4; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+.data-table th { text-align: left; color: #a0a0a0; padding: 3px 6px; border-bottom: 1px solid #2a2a2a; font-size: 10px; text-transform: uppercase; }
+.data-table td { color: #e5e5e5; padding: 3px 6px; border-bottom: 1px solid #1a1a1a; }
+.good { color: #4ade80; }
+.bad { color: #f87171; }
+.constraint { font-size: 13px; color: #facc15; margin-top: 8px; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="container">
+  <div class="exercise-badge">Stretch Challenge</div>
+  <h1>Week-Over-Week Comparison</h1>
+  <p class="intro">If the agent got it right on the first try, add this challenge:</p>
+  <div class="type-this">
+    <div class="type-label">Type This</div>
+    <div class="prompt-text">"Add a second row of cards showing week-over-week change. Green arrows for improvement, red arrows for decline."</div>
+  </div>
+  <table class="data-table">
+    <tr><th>KPI</th><th>This Week</th><th>Last Week</th><th>Change</th></tr>
+    <tr><td>Orders</td><td>14,200</td><td>13,800</td><td class="bad">+2.9%</td></tr>
+    <tr><td>Fill Rate</td><td>97.2%</td><td>96.5%</td><td class="good">+0.7%</td></tr>
+    <tr><td>Overtime</td><td>180 hrs</td><td>210 hrs</td><td class="good">-14.3%</td></tr>
+    <tr><td>Headcount</td><td>48</td><td>46</td><td class="good">+4.3%</td></tr>
+    <tr><td>Safety</td><td>1</td><td>2</td><td class="good">-50%</td></tr>
+    <tr><td>Complaints</td><td>3</td><td>5</td><td class="good">-40%</td></tr>
+  </table>
+  <p class="constraint">Still must fit on one screen without scrolling!</p>
+</div>
+</body>
+</html>

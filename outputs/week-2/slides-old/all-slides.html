@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 2: Advanced Prompts, Data Analysis & Automation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+    }
+    .slide-area {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide-wrapper {
+      position: relative;
+      width: 960px;
+      height: 540px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+      transform-origin: center center;
+    }
+    .slide-wrapper iframe {
+      width: 960px;
+      height: 540px;
+      border: none;
+      display: block;
+    }
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 8px 0 12px 0;
+      background: linear-gradient(transparent, rgba(255, 255, 255, 0.95) 30%, #ffffff);
+      z-index: 10;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-btn {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      color: #000000;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .nav-btn:hover {
+      background: #cc0000;
+      border-color: #cc0000;
+      color: #ffffff;
+    }
+    .nav-btn:active {
+      background: #a00000;
+    }
+    .slide-info {
+      font-size: 13px;
+      color: #666666;
+      min-width: 100px;
+      text-align: center;
+    }
+    .slide-info .current {
+      color: #000000;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .slide-title {
+      font-size: 12px;
+      color: #999999;
+      margin-top: 4px;
+      text-align: center;
+    }
+    .progress-bar {
+      height: 3px;
+      background: #f5f5f5;
+      border-radius: 2px;
+      margin-top: 6px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #cc0000;
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide-area">
+    <div class="slide-wrapper">
+      <iframe id="slideFrame" src="slide01.html" scrolling="no"></iframe>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="controls">
+      <button class="nav-btn" onclick="prev()" title="Previous (Left Arrow)">&#8592;</button>
+      <div class="slide-info">
+        <span class="current" id="counter">1</span> / 57
+      </div>
+      <button class="nav-btn" onclick="next()" title="Next (Right Arrow)">&#8594;</button>
+    </div>
+    <div id="titleDisplay" class="slide-title">Prompt Engineering & Data Analysis</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress" style="width: 1.75%"></div>
+    </div>
+  </div>
+
+  <script>
+    const slides = [
+      { file: 'slide01.html', title: 'Prompt Engineering & Data Analysis' },
+      { file: 'slide02.html', title: 'Today\'s Agenda' },
+      { file: 'slide03.html', title: 'Section 1: Homework Review + Time Savings' },
+      { file: 'slide04.html', title: 'Week 1 Wins - What Worked?' },
+      { file: 'slide05.html', title: 'Section 2: Advanced Prompting Techniques' },
+      { file: 'slide06.html', title: 'Chain-of-Thought (CoT) Prompting' },
+      { file: 'slide07.html', title: 'Few-Shot Prompting - Teach by Example' },
+      { file: 'slide08.html', title: 'Persona-Based Prompting - Expert on Demand' },
+      { file: 'slide09.html', title: 'The Power Stack - Combine All Three' },
+      { file: 'slide10.html', title: 'Technique Quiz' },
+      { file: 'slide11.html', title: 'Technique Quiz - Answers' },
+      { file: 'slide12.html', title: 'Exercise 1: Chain-of-Thought Analysis' },
+      { file: 'slide13.html', title: 'Exercise 1: CoT Prompt Template' },
+      { file: 'slide14.html', title: 'Activity A: Prompt Comparison' },
+      { file: 'slide15.html', title: 'What Good CoT Output Looks Like' },
+      { file: 'slide16.html', title: 'Section 3: Operations Use Cases' },
+      { file: 'slide17.html', title: 'Five High-Impact Use Cases' },
+      { file: 'slide18.html', title: 'Exercise 2: Build 3 Operations Templates' },
+      { file: 'slide19.html', title: 'Exercise 2: KPI Dashboard Template' },
+      { file: 'slide20.html', title: 'Exercise 2: Vendor Communication Template' },
+      { file: 'slide21.html', title: 'Exercise 2: Safety 5-Whys Template' },
+      { file: 'slide22.html', title: 'Section 4: Power Automate Preview' },
+      { file: 'slide23.html', title: 'Three Types of Power Automate Flows' },
+      { file: 'slide24.html', title: 'From Manual Prompts to Automated Workflows' },
+      { file: 'slide25.html', title: 'Break' },
+      { file: 'slide26.html', title: 'Section 5: Data Analysis with AI' },
+      { file: 'slide27.html', title: 'How to Present Data to AI' },
+      { file: 'slide28.html', title: 'Data Analysis Quiz' },
+      { file: 'slide29.html', title: 'Data Analysis Quiz - Answers' },
+      { file: 'slide30.html', title: 'From Raw Numbers to Executive Insights' },
+      { file: 'slide31.html', title: 'Exercise 3: Analyze a Sample DC Dataset' },
+      { file: 'slide32.html', title: 'Sample DC Dataset - Weekly Operations' },
+      { file: 'slide33.html', title: 'Exercise 3: Data Analysis Template' },
+      { file: 'slide34.html', title: 'Activity B: Model Comparison Demo' },
+      { file: 'slide35.html', title: 'Hallucination Hunt: Find the 3 Errors' },
+      { file: 'slide36.html', title: 'Hallucination Hunt - Answers' },
+      { file: 'slide37.html', title: 'Break' },
+      { file: 'slide38.html', title: 'Section 6: Structured Outputs' },
+      { file: 'slide39.html', title: 'Getting AI to Output in Consistent Formats' },
+      { file: 'slide40.html', title: 'Output Format Quiz' },
+      { file: 'slide41.html', title: 'Output Format Quiz - Answers' },
+      { file: 'slide42.html', title: 'Template Output Patterns' },
+      { file: 'slide43.html', title: 'Section 7: Building Your Prompt Library' },
+      { file: 'slide44.html', title: 'Organizing Prompts by Use Case' },
+      { file: 'slide45.html', title: 'Workshop: Build Your Prompt Playbook' },
+      { file: 'slide46.html', title: 'Activity C: Template Structure Guide' },
+      { file: 'slide47.html', title: 'Prompt Library Quick Reference' },
+      { file: 'slide48.html', title: 'Section 8: Model Comparison Challenge' },
+      { file: 'slide49.html', title: 'Model Selection Guide' },
+      { file: 'slide50.html', title: 'Exercise 4: Model Comparison Challenge' },
+      { file: 'slide51.html', title: 'Model Comparison Scorecard' },
+      { file: 'slide52.html', title: 'Model Selection Decision Tree' },
+      { file: 'slide53.html', title: 'Share & Discuss - Cross-DC Templates' },
+      { file: 'slide54.html', title: 'Week 2 Key Takeaways - Part 1' },
+      { file: 'slide55.html', title: 'Week 2 Key Takeaways - Part 2' },
+      { file: 'slide56.html', title: 'Homework & Time Tracking' },
+      { file: 'slide57.html', title: 'Next Week Preview - Developer Tools' }
+    ];
+
+    let current = 0;
+
+    function show(index) {
+      current = index;
+      document.getElementById('slideFrame').src = slides[current].file;
+      document.getElementById('counter').textContent = current + 1;
+      document.getElementById('titleDisplay').textContent = slides[current].title;
+      document.getElementById('progress').style.width = ((current + 1) / slides.length * 100) + '%';
+    }
+
+    function next() {
+      if (current < slides.length - 1) show(current + 1);
+    }
+
+    function prev() {
+      if (current > 0) show(current - 1);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+    });
+
+    function rescale() {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const bottomBarH = 70;
+      const availH = vh - bottomBarH;
+      const scaleX = (vw * 0.96) / 960;
+      const scaleY = (availH * 0.96) / 540;
+      const scale = Math.min(scaleX, scaleY);
+      const wrapper = document.querySelector('.slide-wrapper');
+      wrapper.style.transform = 'scale(' + scale + ')';
+      const bar = document.querySelector('.progress-bar');
+      bar.style.width = Math.min(960 * scale, vw * 0.9) + 'px';
+    }
+    window.addEventListener('resize', rescale);
+    rescale();
+  </script>
+</body>
+</html>

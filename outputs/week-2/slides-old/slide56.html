@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=960, height=540">
+  <title>Slide 56 - Homework and Time Tracking</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 960px; height: 540px;
+      overflow: hidden;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #000000;
+    }
+    .slide {
+      width: 960px; height: 540px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 32px 16px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .columns {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .column-header {
+      font-size: 12px;
+      font-weight: 700;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #cc0000;
+    }
+    .homework-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      flex: 1;
+    }
+    .homework-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+    .homework-item:last-child {
+      margin-bottom: 0;
+    }
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #cc0000;
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .homework-text {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .homework-text strong {
+      color: #000000;
+    }
+    .time-badge {
+      font-size: 10px;
+      background: rgba(204, 0, 0, 0.1);
+      color: #cc0000;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 4px;
+    }
+    .tracking-box {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 14px;
+      flex: 1;
+    }
+    .tracking-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+    .tracking-table th {
+      background: #e0e0e0;
+      padding: 8px 6px;
+      text-align: left;
+      font-weight: 600;
+      color: #666666;
+    }
+    .tracking-table td {
+      padding: 8px 6px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .tracking-table tbody tr:nth-child(odd) {
+      background: #ffffff;
+    }
+    .tracking-table tbody tr:last-child {
+      background: rgba(74, 222, 128, 0.1);
+      font-weight: 700;
+    }
+    .tracking-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .input-cell {
+      background: #ffffff;
+      border: 1px dashed #ccc;
+      min-width: 40px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 14px;
+      margin-top: auto;
+      font-size: 11px;
+      color: #666666;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Homework &amp; Time Tracking</h1>
+    <div class="columns">
+      <div class="column">
+        <div class="column-header">Homework <span class="time-badge">~45 min</span></div>
+        <div class="homework-box">
+          <div class="homework-item">
+            <span class="checkbox"></span>
+            <span class="homework-text"><strong>Build 2 additional operations templates</strong> using CoT or Few-Shot techniques</span>
+          </div>
+          <div class="homework-item">
+            <span class="checkbox"></span>
+            <span class="homework-text"><strong>Track time savings daily</strong> (target: 20-30 min/day)</span>
+          </div>
+          <div class="homework-item">
+            <span class="checkbox"></span>
+            <span class="homework-text"><strong>Bring a real dataset</strong> from your DC to Week 3 for analysis</span>
+          </div>
+          <div class="homework-item">
+            <span class="checkbox"></span>
+            <span class="homework-text"><strong>Continue building prompt library</strong> (target: 10+ prompts)</span>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-header">Time Savings Log (Week 2)</div>
+        <div class="tracking-box">
+          <table class="tracking-table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Without AI</th>
+                <th>With AI</th>
+                <th>Saved</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Labor planning</td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+              </tr>
+              <tr>
+                <td>Incident analysis</td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+              </tr>
+              <tr>
+                <td>Leadership update</td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+              </tr>
+              <tr>
+                <td>Data analysis</td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+                <td class="input-cell"></td>
+              </tr>
+              <tr>
+                <td>Weekly Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span><strong>Next Week:</strong> VS Code, GitHub Copilot &amp; Agent Mode</span>
+      <span><strong>Bottle Rocket:</strong> go.tesla.com/chat</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

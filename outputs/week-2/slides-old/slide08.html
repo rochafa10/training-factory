@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 08 - Persona Prompting</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .technique-badge {
+      background: #cc0000;
+      color: #000000;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .comparison {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .definition {
+      background: #f5f5f5;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+    }
+    .definition-label {
+      font-size: 11px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .definition-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666666;
+    }
+    .compare-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      flex: 1;
+    }
+    .compare-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bad-label {
+      color: #f87171;
+    }
+    .good-label {
+      color: #4ade80;
+    }
+    .compare-text {
+      font-size: 13px;
+      line-height: 1.6;
+      font-family: monospace;
+      color: #666666;
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .highlight {
+      color: #4ade80;
+    }
+    .tips {
+      width: 280px;
+    }
+    .tips-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+    }
+    .tips-title {
+      font-size: 12px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .tip-item {
+      font-size: 12px;
+      margin-bottom: 10px;
+      padding-left: 16px;
+      position: relative;
+      color: #666666;
+    }
+    .tip-item::before {
+      content: "\2192";
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header">
+      <span class="technique-badge">Technique 3</span>
+      <h1>Persona-Based Prompting</h1>
+    </div>
+    <div class="main-content">
+      <div class="comparison">
+        <div class="definition">
+          <div class="definition-label">What It Is</div>
+          <div class="definition-text">Assign AI a specific expert role with detailed characteristics to shape style, tone, and content focus.</div>
+        </div>
+        <div class="compare-box">
+          <div class="compare-label bad-label">&#10007; Basic Role</div>
+          <div class="compare-text">"You are an operations manager."</div>
+        </div>
+        <div class="compare-box">
+          <div class="compare-label good-label">&#10003; Enhanced Role</div>
+          <div class="compare-text">"You are a <span class="highlight">senior distribution center manager with 15 years of experience</span> in high-volume fulfillment. You're <span class="highlight">known for clear, data-driven communication</span> and practical recommendations."</div>
+        </div>
+      </div>
+      <div class="tips">
+        <div class="tips-box">
+          <div class="tips-title">Make It Effective</div>
+          <div class="tip-item">Add years of experience</div>
+          <div class="tip-item">Specify expertise area</div>
+          <div class="tip-item">Include personality traits</div>
+          <div class="tip-item">Describe what they're "known for"</div>
+          <div class="tip-item">Match persona to audience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

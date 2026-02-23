@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 09 - Exercise 1</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: #000000;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .time-box {
+      margin-left: auto;
+      background: #cc0000;
+      border-radius: 12px;
+      padding: 10px 16px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .time-big {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .time-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .right-col {
+      width: 340px;
+    }
+    .scenario-box {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .scenario-header {
+      font-size: 13px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .scenario-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666666;
+      margin-bottom: 12px;
+    }
+    .data-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .data-day {
+      font-size: 11px;
+      color: #666666;
+      width: 80px;
+    }
+    .data-value {
+      font-size: 11px;
+      font-family: monospace;
+    }
+    .data-bad {
+      color: #f87171;
+    }
+    .data-ok {
+      color: #facc15;
+    }
+    .data-good {
+      color: #4ade80;
+    }
+    .instructions-box {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+    }
+    .instructions-title {
+      font-size: 12px;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .instruction-item {
+      font-size: 13px;
+      color: #666666;
+      margin-bottom: 8px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .instruction-item::before {
+      position: absolute;
+      left: 0;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    .instruction-item:nth-child(2)::before { content: "1."; }
+    .instruction-item:nth-child(3)::before { content: "2."; }
+    .instruction-item:nth-child(4)::before { content: "3."; }
+    .instruction-item:nth-child(5)::before { content: "4."; }
+    .prompt-hint {
+      background: #f5f5f5;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      height: 100%;
+    }
+    .hint-title {
+      font-size: 11px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .hint-text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #666666;
+      font-family: monospace;
+      background: #e0e0e0;
+      border-radius: 6px;
+      padding: 12px;
+      white-space: pre-wrap;
+    }
+    .highlight {
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="header-row">
+      <span class="exercise-badge">Exercise 1</span>
+      <h1>Chain-of-Thought Prompts</h1>
+      <div class="time-box">
+        <div class="time-big">25</div>
+        <div class="time-label">Minutes</div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="left-col">
+        <div class="scenario-box">
+          <div class="scenario-header">Scenario</div>
+          <div class="scenario-text">Your DC missed its productivity target by 8% last week. Leadership wants to know why and what to do about it.</div>
+          <div class="data-row">
+            <span class="data-day">Monday:</span>
+            <span class="data-value data-good">95% of target (normal)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Tuesday:</span>
+            <span class="data-value data-ok">92% (2 call-outs)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Wednesday:</span>
+            <span class="data-value data-bad">78% (conveyor down 3 hrs)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Thursday:</span>
+            <span class="data-value data-ok">88% (running behind)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-day">Friday:</span>
+            <span class="data-value data-ok">85% (catching up)</span>
+          </div>
+        </div>
+        <div class="instructions-box">
+          <div class="instructions-title">Your Task</div>
+          <div class="instruction-item">Use CoT to analyze this productivity shortfall</div>
+          <div class="instruction-item">Include the data in your CONTEXT</div>
+          <div class="instruction-item">Use "First..., Then..., Finally..." structure</div>
+          <div class="instruction-item">Get specific recommendations, not generic advice</div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="prompt-hint">
+          <div class="hint-title">Prompt Structure Hint</div>
+          <div class="hint-text">ROLE: Operations analyst...
+
+CONTEXT: [Paste the data above]
+
+TASK: Analyze <span class="highlight">step by step</span>:
+<span class="highlight">1. First</span>, calculate each day's impact
+<span class="highlight">2. Then</span>, identify the biggest factor
+<span class="highlight">3. Next</span>, trace the root cause
+<span class="highlight">4. Finally</span>, recommend actions
+
+FORMAT: Numbered sections...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

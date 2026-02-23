@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 62 - Exercise: Test It in Your Browser</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 24px 40px 20px 48px; }
+.exercise-badge { display: inline-block; background: #e82127; color: #fff; padding: 4px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; border-radius: 4px; margin-bottom: 10px; }
+h1 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
+.steps { background: #1a1a1a; border-radius: 12px; padding: 14px 18px; }
+.step { display: flex; gap: 12px; margin-bottom: 8px; font-size: 15px; color: #e5e5e5; }
+.step-num { color: #e82127; font-weight: 700; min-width: 24px; }
+.note { font-size: 13px; color: #a0a0a0; margin-top: 12px; border-left: 3px solid #facc15; padding-left: 12px; }
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="container">
+  <div class="exercise-badge">Exercise 6 -- Test</div>
+  <h1>Test It in Your Browser</h1>
+  <div class="steps">
+    <div class="step"><span class="step-num">1.</span> Find the HTML file in VS Code file explorer (left sidebar)</div>
+    <div class="step"><span class="step-num">2.</span> Right-click &gt; "Open in Default Browser"</div>
+    <div class="step"><span class="step-num">3.</span> Test: Enter "Weekly KPI Report", without AI: <strong>45 min</strong>, with AI: <strong>15 min</strong></div>
+    <div class="step"><span class="step-num">4.</span> Click submit -- does it show "30 minutes saved"?</div>
+    <div class="step"><span class="step-num">5.</span> Add 2-3 more entries</div>
+    <div class="step"><span class="step-num">6.</span> Check: running total updates? Chart shows?</div>
+  </div>
+  <p class="note">If the dashboard looks blank, tell the agent: "The dashboard doesn't display correctly. Check for JavaScript errors and fix them."</p>
+</div>
+</body>
+</html>

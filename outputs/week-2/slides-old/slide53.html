@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=960, height=540">
+  <title>Slide 53 - Share and Discuss</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 960px; height: 540px;
+      overflow: hidden;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #000000;
+    }
+    .slide {
+      width: 960px; height: 540px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0; top: 0;
+      width: 8px; height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 32px 20px 40px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .content-area {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .left-col {
+      flex: 1;
+    }
+    .discussion-list {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .discussion-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      align-items: flex-start;
+    }
+    .discussion-item:last-child {
+      margin-bottom: 0;
+    }
+    .discussion-icon {
+      width: 32px;
+      height: 32px;
+      background: #cc0000;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .discussion-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: #ffffff;
+    }
+    .discussion-text {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.4;
+    }
+    .discussion-text strong {
+      color: #000000;
+    }
+    .right-col {
+      width: 300px;
+    }
+    .callout-box {
+      background: rgba(204, 0, 0, 0.06);
+      border: 1px solid rgba(204, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .callout-stat {
+      font-size: 48px;
+      font-weight: 700;
+      color: #cc0000;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .callout-label {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 16px;
+    }
+    .callout-text {
+      font-size: 13px;
+      color: #666666;
+      line-height: 1.5;
+      border-top: 1px solid rgba(204, 0, 0, 0.25);
+      padding-top: 16px;
+    }
+    .callout-text strong {
+      color: #000000;
+    }
+    .footer {
+      padding-top: 16px;
+      margin-top: auto;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer strong {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Share &amp; Discuss &mdash; Cross-DC Templates</h1>
+    <div class="content-area">
+      <div class="left-col">
+        <div class="discussion-list">
+          <div class="discussion-item">
+            <div class="discussion-icon">
+              <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+            </div>
+            <div class="discussion-text"><strong>Share your best template</strong> with the group (2-3 volunteers)</div>
+          </div>
+          <div class="discussion-item">
+            <div class="discussion-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+            </div>
+            <div class="discussion-text"><strong>What technique made the biggest difference?</strong> (CoT, Few-Shot, Persona)</div>
+          </div>
+          <div class="discussion-item">
+            <div class="discussion-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+            </div>
+            <div class="discussion-text"><strong>Which model surprised you</strong> in the comparison challenge?</div>
+          </div>
+          <div class="discussion-item">
+            <div class="discussion-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div class="discussion-text"><strong>What will you use first</strong> at work tomorrow?</div>
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="callout-box">
+          <div class="callout-stat">27%</div>
+          <div class="callout-label">of frequent AI users save 9+ hours/week</div>
+          <div class="callout-text"><strong>Your template library is the key.</strong> The more templates you build and refine, the more time you save every week.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <strong>Cross-pollinate:</strong> a template that works at Tampa may solve a problem at Greenville
+    </div>
+  </div>
+</div>
+</body>
+</html>

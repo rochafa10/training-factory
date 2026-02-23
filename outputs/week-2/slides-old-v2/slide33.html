@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 33 - Which Mode to Use When</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 32px 40px 24px 48px; }
+h1 { font-size: 32px; font-weight: 700; margin-bottom: 24px; }
+.mode-row { background: #1a1a1a; border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; display: flex; align-items: baseline; gap: 16px; }
+.trigger { font-size: 16px; color: #e5e5e5; font-style: italic; flex: 1; }
+.action { font-size: 16px; color: #e82127; font-weight: 700; min-width: 120px; text-align: right; }
+.rule { background: #1a1a1a; border-left: 4px solid #4ade80; border-radius: 8px; padding: 14px 18px; margin-top: 20px; font-size: 16px; color: #e5e5e5; }
+.rule strong { color: #4ade80; }
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="container">
+  <h1>Which Mode to Use When</h1>
+  <div class="mode-row"><span class="trigger">"I have a question about..."</span><span class="action">Use Chat</span></div>
+  <div class="mode-row"><span class="trigger">"Change this specific thing in this file..."</span><span class="action">Use Edit</span></div>
+  <div class="mode-row"><span class="trigger">"Build me a..." / "Create a..." / "Set up a..."</span><span class="action">Use Agent</span></div>
+  <div class="rule"><strong>Rule of thumb:</strong> If the result is text, use Chat. If the result is a file, use Agent.</div>
+</div>
+</body>
+</html>

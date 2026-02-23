@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 15 - Raw Data to Insights</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .comparison {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .col {
+      flex: 1;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .col-before {
+      background: #f5f5f5;
+      border: 2px solid #e0e0e0;
+    }
+    .col-after {
+      background: #f5f5f5;
+      border: 2px solid #4ade80;
+    }
+    .col-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .col-label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .col-label-before {
+      color: #666666;
+    }
+    .col-label-after {
+      color: #16a34a;
+    }
+    .col-badge {
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .badge-slow {
+      background: #f87171;
+      color: #ffffff;
+    }
+    .badge-fast {
+      background: #4ade80;
+      color: #000000;
+    }
+    .col-content {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #666666;
+      flex: 1;
+    }
+    .col-content strong {
+      color: #000000;
+    }
+    .col-time {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .time-slow { color: #f87171; }
+    .time-fast { color: #4ade80; }
+    .ask-for {
+      background: #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 16px;
+    }
+    .ask-title {
+      font-size: 11px;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .ask-items {
+      display: flex;
+      gap: 16px;
+    }
+    .ask-item {
+      font-size: 12px;
+      color: #666666;
+      padding-left: 16px;
+      position: relative;
+    }
+    .ask-item::before {
+      content: "\2192";
+      position: absolute;
+      left: 0;
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>From Raw Numbers to Executive Insights</h1>
+    <div class="comparison">
+      <div class="col col-before">
+        <div class="col-header">
+          <span class="col-label col-label-before">What You Have</span>
+          <span class="col-badge badge-slow">Manual</span>
+        </div>
+        <div class="col-content">
+          <strong>Spreadsheet:</strong> 200 rows of daily throughput by shift<br><br>
+          You manually scan columns, build pivot tables, try to spot trends...<br><br>
+          Then write a summary email to your VP.
+        </div>
+        <div class="col-time time-slow">&#9201; 45+ minutes</div>
+      </div>
+      <div class="col col-after">
+        <div class="col-header">
+          <span class="col-label col-label-after">What AI Produces</span>
+          <span class="col-badge badge-fast">AI-Assisted</span>
+        </div>
+        <div class="col-content">
+          <strong>"Morning shift outperformed afternoon by 12%.</strong> Wednesday dips correlate with new hire onboarding days.<br><br>
+          <strong>Recommend:</strong> shift training to Fridays to minimize mid-week impact.<br><br>
+          <strong>3 anomalies flagged</strong> with severity ratings."
+        </div>
+        <div class="col-time time-fast">&#9201; 2-3 minutes</div>
+      </div>
+    </div>
+    <div class="ask-for">
+      <div class="ask-title">Ask AI For</div>
+      <div class="ask-items">
+        <div class="ask-item">Trends over time</div>
+        <div class="ask-item">Outliers & anomalies</div>
+        <div class="ask-item">Shift comparisons</div>
+        <div class="ask-item">Root causes</div>
+        <div class="ask-item">Executive summary</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

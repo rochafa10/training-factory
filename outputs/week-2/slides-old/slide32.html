@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960, height=540">
+<title>Slide 32 - Sample DC Dataset</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 960px; height: 540px;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+  }
+  .slide {
+    width: 960px; height: 540px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .accent-bar {
+    position: absolute;
+    left: 0; top: 0;
+    width: 8px; height: 100%;
+    background: #cc0000;
+  }
+  .header {
+    padding: 24px 32px 16px 32px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #666666;
+  }
+  .content-area {
+    flex: 1;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .table-container {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  thead th {
+    background: #e0e0e0;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #cc0000;
+  }
+  tbody tr:nth-child(odd) { background: #ffffff; }
+  tbody tr:nth-child(even) { background: #f9f9f9; }
+  tbody td {
+    padding: 10px 12px;
+    text-align: center;
+    color: #000000;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 500;
+  }
+  tbody td:first-child {
+    font-weight: 700;
+    color: #cc0000;
+  }
+  .anomaly {
+    background: rgba(248, 113, 113, 0.15) !important;
+    color: #dc2626;
+    font-weight: 700;
+  }
+  .footer {
+    padding: 16px 32px;
+    font-size: 12px;
+    color: #666666;
+    border-top: 1px solid #e0e0e0;
+  }
+  .footer strong {
+    color: #000000;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent-bar"></div>
+  <div class="header">
+    <div class="title">Sample DC Dataset &mdash; Weekly Operations</div>
+    <div class="subtitle">Use this data for Exercise 3: Analyze trends, flag anomalies, generate executive summary</div>
+  </div>
+  <div class="content-area">
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Orders</th>
+            <th>UPH</th>
+            <th>Headcount</th>
+            <th>Safety Incidents</th>
+            <th>OT Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>W1</td>
+            <td>12,450</td>
+            <td>142</td>
+            <td>38</td>
+            <td>0</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>W2</td>
+            <td>13,100</td>
+            <td>148</td>
+            <td>38</td>
+            <td>1</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <td>W3</td>
+            <td>11,800</td>
+            <td class="anomaly">135</td>
+            <td>35</td>
+            <td>0</td>
+            <td class="anomaly">68</td>
+          </tr>
+          <tr>
+            <td>W4</td>
+            <td>14,200</td>
+            <td>151</td>
+            <td>40</td>
+            <td>2</td>
+            <td>38</td>
+          </tr>
+          <tr>
+            <td>W5</td>
+            <td>13,900</td>
+            <td>146</td>
+            <td>39</td>
+            <td>0</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>W6</td>
+            <td>12,100</td>
+            <td class="anomaly">128</td>
+            <td>36</td>
+            <td>1</td>
+            <td class="anomaly">72</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="footer">
+    <strong>Copy this data into Bottle Rocket.</strong> Ask: "What trends do you see? What should I be concerned about?"
+  </div>
+</div>
+</body>
+</html>

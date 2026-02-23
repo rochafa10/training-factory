@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Slide 44 - The Phone Analogy</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 960px; height: 540px; background: #0a0a0a; color: #ffffff; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+.accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #e82127; }
+.container { padding: 28px 40px 24px 48px; }
+h1 { font-size: 28px; font-weight: 700; margin-bottom: 20px; }
+.columns { display: flex; gap: 24px; }
+.column { flex: 1; background: #1a1a1a; border-radius: 12px; padding: 18px; }
+.column.left { border-top: 3px solid #a0a0a0; }
+.column.right { border-top: 3px solid #4ade80; }
+.col-header { font-size: 16px; font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1px; }
+.left .col-header { color: #a0a0a0; }
+.right .col-header { color: #4ade80; }
+.row { margin-bottom: 10px; font-size: 14px; color: #e5e5e5; display: flex; align-items: baseline; gap: 8px; }
+.row-label { color: #a0a0a0; font-size: 12px; min-width: 80px; }
+.row-value { color: #e5e5e5; }
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="container">
+  <h1>The Phone Analogy</h1>
+  <div class="columns">
+    <div class="column left">
+      <div class="col-header">Your Phone</div>
+      <div class="row"><span class="row-label">Out of the box:</span><span class="row-value">Calls, texts, camera</span></div>
+      <div class="row"><span class="row-label">+ Google Maps:</span><span class="row-value">It can navigate</span></div>
+      <div class="row"><span class="row-label">+ Banking app:</span><span class="row-value">It can check balances</span></div>
+      <div class="row"><span class="row-label">+ Slack:</span><span class="row-value">It can message your team</span></div>
+    </div>
+    <div class="column right">
+      <div class="col-header">Your AI Agent</div>
+      <div class="row"><span class="row-label">Out of the box:</span><span class="row-value">Read files, write files, run commands</span></div>
+      <div class="row"><span class="row-label">+ Playwright:</span><span class="row-value">It can browse websites</span></div>
+      <div class="row"><span class="row-label">+ Database:</span><span class="row-value">It can query databases</span></div>
+      <div class="row"><span class="row-label">+ API MCP:</span><span class="row-value">It can connect to services</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
