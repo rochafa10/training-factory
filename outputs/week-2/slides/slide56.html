@@ -2,105 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 56 - What Is a Diff?</title>
+  <title>Slide 56 - What Is copilot-instructions.md?</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
     .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
-    h1 { font-size: 28px; font-weight: bold; margin-bottom: 6px; }
-    .subtitle { font-size: 14px; color: #666666; margin-bottom: 20px; }
-    .explanation { font-size: 14px; color: #333333; line-height: 1.6; margin-bottom: 18px; }
-    .diff-editor {
-      background: #f5f5f5;
-      border-radius: 8px;
-      overflow: hidden;
-      flex: 1;
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .columns { display: flex; gap: 24px; flex: 1; }
+    .col-left { flex: 1; }
+    .col-right { flex: 1; }
+    .bullet {
       display: flex;
-      flex-direction: column;
-    }
-    .editor-titlebar {
-      background: #eeeeee;
-      padding: 8px 14px;
-      font-size: 12px;
-      color: #666666;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .editor-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-    .dot-red { background: #dc2626; }
-    .dot-yellow { background: #b45309; }
-    .dot-green { background: #16a34a; }
-    .diff-lines {
-      padding: 14px 0;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .diff-line {
-      font-family: 'Consolas', 'Courier New', monospace;
-      font-size: 14px;
-      padding: 6px 18px 6px 14px;
-      display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 12px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333333;
     }
-    .diff-line.context {
+    .bullet .dot {
+      width: 6px; height: 6px; min-width: 6px;
+      border-radius: 50%;
+      background: #cc0000;
+      margin-top: 7px;
+    }
+    .file-path-box {
+      background: #f5f5f5;
+      border: 2px solid #cc0000;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+    .file-path {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 18px;
+      color: #cc0000;
+      font-weight: bold;
+    }
+    .file-desc {
+      font-size: 13px;
+      color: #666666;
+      margin-top: 6px;
+    }
+    .how-box {
+      background: #f0fdf4;
+      border: 1px solid #16a34a;
+      border-radius: 8px;
+      padding: 14px 18px;
+    }
+    .how-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #16a34a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .how-text {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.5;
+    }
+    .meta-row {
+      margin-top: 12px;
+      font-size: 12px;
       color: #666666;
     }
-    .diff-line.removed {
-      background: rgba(248, 113, 113, 0.12);
-      border-left: 4px solid #dc2626;
+    .meta-tag {
+      background: #eeeeee;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
     }
-    .diff-line.removed .sign { color: #dc2626; font-weight: bold; }
-    .diff-line.removed .text { color: #dc2626; }
-    .diff-line.added {
-      background: rgba(74, 222, 128, 0.12);
-      border-left: 4px solid #16a34a;
-    }
-    .diff-line.added .sign { color: #16a34a; font-weight: bold; }
-    .diff-line.added .text { color: #16a34a; }
-    .line-num {
-      color: #555;
-      font-size: 12px;
-      min-width: 24px;
-      text-align: right;
-    }
-    .sign { min-width: 12px; }
-    .legend {
-      display: flex;
-      gap: 28px;
-      margin-top: 16px;
-      font-size: 13px;
-    }
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .legend-swatch {
-      width: 14px;
-      height: 14px;
-      border-radius: 3px;
-    }
-    .swatch-red { background: rgba(248, 113, 113, 0.25); border: 2px solid #dc2626; }
-    .swatch-green { background: rgba(74, 222, 128, 0.25); border: 2px solid #16a34a; }
-    .legend-text { color: #666666; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>What Is a Diff?</h1>
-    <div class="subtitle">"Track Changes" for Code</div>
-    <img src="../images/vscode-diff-view--screenshot.png" alt="VS Code Diff View Screenshot" style="width: 90%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+    <h1>What Is copilot-instructions.md?</h1>
+    <div class="columns">
+      <div class="col-left">
+        <div class="file-path-box">
+          <div class="file-path">.github/copilot-instructions.md</div>
+          <div class="file-desc">A file you create in your project folder</div>
+        </div>
+        <div class="bullet">
+          <div class="dot"></div>
+          <div>Copilot reads this file <strong>automatically</strong> every time you start a conversation</div>
+        </div>
+        <div class="bullet">
+          <div class="dot"></div>
+          <div>Tells the agent your project's <strong>rules, conventions, and preferences</strong></div>
+        </div>
+        <div class="bullet">
+          <div class="dot"></div>
+          <div>Like a <strong>training manual</strong> for every new hire &mdash; always on the agent's desk</div>
+        </div>
+        <div class="bullet">
+          <div class="dot"></div>
+          <div>Works in <strong>all modes</strong>: Chat, Edit, and Agent</div>
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="how-box">
+          <div class="how-title">How It Works</div>
+          <div class="how-text">
+            1. You create the file once<br><br>
+            2. Write your rules in plain English<br><br>
+            3. Copilot reads it before every response<br><br>
+            4. Agent follows your rules automatically<br><br>
+            5. Update it anytime &mdash; changes take effect immediately
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span class="meta-tag">Markdown format</span>&nbsp;
+      <span class="meta-tag">Plain English rules</span>&nbsp;
+      <span class="meta-tag">No coding required</span>
+    </div>
   </div>
 </body>
 </html>

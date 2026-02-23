@@ -2,71 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 62 - Test It in Your Browser</title>
+  <title>Slide 62 - Section 11 Divider: Reading Agent Plans & Git Basics</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container { padding: 16px 40px 14px 48px; height: 100%; display: flex; flex-direction: column; }
-    .badge { display: inline-block; background: #cc0000; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 8px; align-self: flex-start; }
-    h1 { font-size: 26px; font-weight: bold; margin-bottom: 10px; }
-    .do-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1.5px; margin-bottom: 5px; }
-    .do-this-box {
-      background: #f5f5f5;
-      border-left: 4px solid #cc0000;
-      border-radius: 8px;
-      padding: 10px 16px;
-      margin-bottom: 10px;
-    }
-    .step-list { list-style: none; display: flex; flex-direction: column; gap: 5px; }
-    .step-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: #333333; line-height: 1.4; }
-    .step-num {
-      flex-shrink: 0;
-      width: 22px;
-      height: 22px;
+    .red-block {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 100%;
       background: #cc0000;
-      color: #000000;
-      font-size: 11px;
-      font-weight: bold;
-      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .step-list li strong { color: #000000; }
-    .troubleshoot-box {
-      background: #f5f5f5;
-      border: 1px solid #eeeeee;
-      border-radius: 8px;
-      padding: 10px 16px;
-      margin-top: auto;
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.06);
+      line-height: 1;
     }
-    .troubleshoot-label {
-      font-size: 10px;
+    .right-content {
+      position: absolute;
+      left: 320px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 60px 60px 60px;
+    }
+    .section-label {
+      font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
-      color: #666666;
-      letter-spacing: 1.5px;
-      margin-bottom: 5px;
+      letter-spacing: 3px;
+      color: #cc0000;
+      margin-bottom: 16px;
     }
-    .troubleshoot-text {
-      font-size: 12px;
-      color: #666666;
-      line-height: 1.5;
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 24px;
     }
-    .troubleshoot-text .prompt {
-      font-family: 'Consolas', 'Courier New', monospace;
-      color: #333333;
-      font-style: italic;
+    .meta {
+      font-size: 16px;
+      color: #666666;
+      line-height: 1.6;
+    }
+    .meta .duration {
+      color: #000000;
+      font-weight: bold;
+    }
+    .activity-detail {
+      font-size: 14px;
+      color: #666666;
+      margin-top: 4px;
     }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="container">
-    <div class="badge">Exercise 6 &mdash; Test</div>
-    <h1>Test It in Your Browser</h1>
-    <img src="../images/exercise-dashboard-result--screenshot.png" alt="Exercise: Dashboard result in browser" style="width: 90%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+  <div class="red-block">
+    <div class="section-number">11</div>
+  </div>
+  <div class="right-content">
+    <div class="section-label">Section 11</div>
+    <h1>Reading Agent Plans &amp; Git Basics</h1>
+    <div class="meta">
+      <span class="duration">5 minutes</span><br>
+      Concept Intro
+      <div class="activity-detail">Understanding agent plans and version control</div>
+    </div>
   </div>
 </body>
 </html>

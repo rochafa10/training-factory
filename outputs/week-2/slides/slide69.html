@@ -2,60 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 69 - Exercise 7: Debug & Redirect an Agent</title>
+  <title>Slide 69 - What to Watch the Agent Do</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .center-content {
-      margin-left: 8px; width: calc(100% - 8px); height: 100%;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      text-align: center; padding: 40px 60px;
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 16px; }
+    .points { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .point-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
     }
-    .section-num {
-      font-size: 64px; font-weight: bold; color: #cc0000; line-height: 1;
-      margin-bottom: 8px;
+    .point-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: #cc0000;
+      color: #000000;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
     }
-    .section-num sub { font-size: 32px; color: #cc0000; }
-    .section-label {
-      font-size: 13px; color: #666666; text-transform: uppercase; letter-spacing: 3px;
-      margin-bottom: 16px;
-    }
-    h1 { font-size: 30px; font-weight: bold; color: #000000; margin-bottom: 20px; line-height: 1.2; }
-    .duration-bar {
-      display: flex; gap: 0; border-radius: 8px; overflow: hidden;
-      width: 100%; max-width: 520px;
-    }
-    .duration-segment {
-      padding: 12px 20px; text-align: center; flex: 1;
-    }
-    .duration-segment:first-child { background: #f5f5f5; }
-    .duration-segment:last-child { background: #eeeeee; }
-    .duration-label { font-size: 11px; color: #666666; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-    .duration-time { font-size: 20px; font-weight: bold; color: #000000; }
-    .total-time {
-      margin-top: 12px; font-size: 14px; color: #666666;
-    }
-    .total-time strong { color: #cc0000; font-size: 18px; }
+    .point-text { font-size: 13px; color: #333333; line-height: 1.5; }
+    .point-text strong { color: #000000; }
+    .point-text .highlight { color: #16a34a; font-weight: bold; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="center-content">
-    <div class="section-num">13<sub>b</sub></div>
-    <div class="section-label">Section</div>
-    <h1>Exercise 7: Debug &amp; Redirect an Agent</h1>
-    <div class="duration-bar">
-      <div class="duration-segment">
-        <div class="duration-label">Part A: Vague Instructions</div>
-        <div class="duration-time">10 min</div>
+  <div class="container">
+    <h1>What to Watch the Agent Do</h1>
+    <div class="points">
+      <div class="point-card">
+        <div class="point-num">1</div>
+        <div class="point-text">Agent creates a <strong>plan</strong> &mdash; does it cover all 6 requirements?</div>
       </div>
-      <div class="duration-segment">
-        <div class="duration-label">Part B: Catch a Mistake</div>
-        <div class="duration-time">15 min</div>
+      <div class="point-card">
+        <div class="point-num">2</div>
+        <div class="point-text">Agent asks to create a file (like <strong>time-savings-dashboard.html</strong>) &mdash; click <span class="highlight">&ldquo;Accept&rdquo;</span></div>
+      </div>
+      <div class="point-card">
+        <div class="point-num">3</div>
+        <div class="point-text">Agent writes <strong>HTML, CSS, and JavaScript</strong> &mdash; let it finish (2&ndash;3 min)</div>
+      </div>
+      <div class="point-card">
+        <div class="point-num">4</div>
+        <div class="point-text">Agent may <strong>iterate on its own</strong> &mdash; if it spots an error, it fixes it automatically</div>
+      </div>
+      <div class="point-card">
+        <div class="point-num">5</div>
+        <div class="point-text">This is <span class="highlight">&ldquo;self-healing&rdquo; behavior</span> &mdash; the agent <strong>checks its own work</strong></div>
       </div>
     </div>
-    <div class="total-time">Total: <strong>25 minutes</strong></div>
   </div>
 </body>
 </html>

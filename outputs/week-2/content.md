@@ -44,16 +44,17 @@ By the end of this session, participants will be able to:
 | **2:00 - 2:10** | -- | **BREAK** | | **10 min** |
 | 2:10 - 2:15 | 9 | MCP Tools: Giving Agents Skills | Concept Intro | 5 min |
 | 2:15 - 2:40 | 10 | **Exercise 5:** Install & Use First MCP Skill | Hands-On | 25 min |
-| 2:40 - 2:45 | 11 | Reading Agent Plans & Git Basics | Concept Intro | 5 min |
-| 2:45 - 3:15 | 12 | **Exercise 6:** Agent Builds a Real Tool | Hands-On | 30 min |
-| 3:15 - 3:40 | 13 | **Exercise 7:** Debug & Redirect an Agent | Hands-On | 25 min |
-| 3:40 - 4:00 | 14 | Share Results + Key Takeaways + Homework | Peer Discussion | 20 min |
+| 2:40 - 2:55 | 10b | **Customizing Your Agent:** Skills, Memory & Instructions | Concept + Hands-On | 15 min |
+| 2:55 - 3:00 | 11 | Reading Agent Plans & Git Basics | Concept Intro | 5 min |
+| 3:00 - 3:25 | 12 | **Exercise 6:** Agent Builds a Real Tool | Hands-On | 25 min |
+| 3:25 - 3:45 | 13 | **Exercise 7:** Debug & Redirect an Agent | Hands-On | 20 min |
+| 3:45 - 4:00 | 14 | Share Results + Key Takeaways + Homework | Peer Discussion | 15 min |
 | **TOTAL** | | | | **240 min** |
 
-**Time Validation:** 10 + 5 + 30 + 10 + 10 + 5 + 20 + 5 + 25 + 10 + 5 + 25 + 5 + 30 + 25 + 20 = **240 min**
+**Time Validation:** 10 + 5 + 30 + 10 + 10 + 5 + 20 + 5 + 25 + 10 + 5 + 25 + 15 + 5 + 25 + 20 + 15 = **240 min**
 
 **Hands-on Time:** ~195 min (81%)
-**Concept Intros:** ~25 min (10%)
+**Concept Intros:** ~30 min (12%)
 **Breaks:** ~20 min (8%)
 
 ---
@@ -711,7 +712,142 @@ Think about what other MCP skills would help with your work:
 - The agent successfully browsed a public website and reported back with real data
 - You can explain the difference between what the agent could do before and after installing MCP
 
-> **SPEAKER NOTES:** Pre-test the public website URL before the session to make sure it works from the training room's network. The "aha" moment is when the agent opens a browser and navigates on its own. If someone cannot install Playwright (Node.js issues), pair them with a neighbor to watch. Make sure everyone sees the before/after comparison -- that is the teaching moment. Transition: "Your agent now has a skill. Let me show you how to review what agents do."
+> **SPEAKER NOTES:** Pre-test the public website URL before the session to make sure it works from the training room's network. The "aha" moment is when the agent opens a browser and navigates on its own. If someone cannot install Playwright (Node.js issues), pair them with a neighbor to watch. Make sure everyone sees the before/after comparison -- that is the teaching moment. Transition: "Your agent now has a skill. But a skill alone isn't enough -- let me show you how to train your agent."
+
+---
+
+## Section 10b: Customizing Your Agent -- Skills, Memory & Instructions
+
+**Duration:** 15 minutes
+**Activity:** Concept Intro + Hands-On
+**Time Allocation:** Concept = 7 min, create instructions = 5 min, test = 3 min
+
+### Content
+
+**The Big Picture:** MCP gave your agent new *abilities* (browse websites, read files). But abilities alone are not enough. A new hire with system access still needs a training manual and a notebook. Your agent needs the same.
+
+**Three Ways to Train Your Agent:**
+
+| Layer | What It Does | Analogy |
+|-------|-------------|---------|
+| **MCP Tools** | New *abilities* -- browse websites, query databases, organize files | Giving a new hire access to company systems |
+| **Instructions File** | Project *knowledge* -- your rules, conventions, preferences, standard formats | A training manual on their desk |
+| **Memory** | Persistent *facts* -- your KPI targets, team size, DC-specific details | A notebook of things to remember |
+
+You just installed an MCP tool (Playwright). Now let's set up the other two layers.
+
+### What Is copilot-instructions.md?
+
+A special file that Copilot reads automatically every time you start a conversation:
+
+- **Location:** `.github/copilot-instructions.md` in your project folder
+- **Format:** Plain English, written in Markdown
+- **Effect:** Copilot follows these rules in every response -- Chat, Edit, and Agent modes
+- **Updates:** Change the file anytime; Copilot picks up changes immediately
+
+**How It Works:**
+1. You create the file once
+2. Write your project rules in plain English
+3. Copilot reads it before every response
+4. Agent follows your rules automatically
+5. Update it anytime -- changes take effect immediately
+
+**Example copilot-instructions.md for a DC operations project:**
+
+```markdown
+# Project Instructions
+
+## Context
+- This project contains tools for a distribution center AGM
+- Target audience: operations managers, non-technical
+- All HTML output uses dark theme: bg #0a0a0a, accent #e82127
+
+## Conventions
+- Always use the term "associate" not "employee"
+- KPI names: Orders Processed, Fill Rate, OT Hours, Headcount, Safety
+- Date format: MM/DD/YYYY
+- Numbers over 1,000 use comma separators
+
+## Rules
+- NEVER include real Tesla data -- use generic/fictional only
+- All files should be standalone HTML (inline CSS and JS)
+- Keep all tools to a single page, no scrolling
+```
+
+### Exercise: Create Your copilot-instructions.md (5 min)
+
+> **TYPE THIS** (in Copilot Agent Mode):
+> ```
+> Create a .github folder in my project, then create a file called copilot-instructions.md inside it with these rules:
+>
+> # Project Instructions
+>
+> ## Context
+> - This project builds tools for a distribution center operations manager
+> - Target audience: non-technical, operations-focused
+>
+> ## Conventions
+> - Use dark theme: background #0a0a0a, accent red #e82127, white text
+> - Always use "associate" instead of "employee"
+> - Format numbers with comma separators (e.g., 2,800 not 2800)
+> - Date format: MM/DD/YYYY
+>
+> ## Rules
+> - All HTML files must be standalone -- inline CSS and JavaScript
+> - Keep all tools to a single page without scrolling
+> - Never include real company data
+> ```
+
+**What Will Happen:** The agent creates the `.github` folder and the instructions file. From now on, every Copilot conversation in this project will automatically follow these rules.
+
+### Test It: Before vs After (3 min)
+
+Try the same prompt and see the difference:
+
+> **TYPE THIS** (in Copilot Agent Mode):
+> ```
+> Build a quick one-page KPI summary showing: 2800 orders, 97.2% fill rate, 48 headcount, 1 safety incident.
+> ```
+
+**What to Look For:**
+- Dark theme with red accents (from your instructions)
+- "associates" instead of "employees"
+- Numbers formatted with commas (2,800 not 2800)
+- Standalone HTML (no external libraries)
+
+**The Point:** Same prompt, dramatically different output -- because the agent now knows your project's rules.
+
+### Agent Memory: Persistent Context
+
+Instructions tell the agent *how* to work. Memory tells the agent *what to remember* between conversations.
+
+**How Memory Works:**
+- Memory MCP stores facts as a knowledge graph
+- Facts persist across sessions -- you tell the agent something once, it remembers next time
+- Example: "Remember that my DC target is 2,800 orders/day with 48 associates and 97% fill rate"
+- Next session, the agent already knows your targets without you repeating them
+
+**We will set up Memory MCP in Week 3.** For now, know that it exists and completes the toolkit.
+
+**Your Agent's Full Toolkit (Summary):**
+
+| Layer | Status | What It Does |
+|-------|--------|-------------|
+| MCP Tools (Playwright) | Installed in Exercise 5 | Agent can browse websites and pull live data |
+| Instructions File | Just created | Agent knows your project conventions and rules |
+| Memory | Coming in Week 3 | Agent remembers your DC targets and preferences |
+
+**Common Pitfalls and Fixes:**
+- *Pitfall:* The instructions file is not being read. *Fix:* Make sure the file is at exactly `.github/copilot-instructions.md` (not `github/` without the dot).
+- *Pitfall:* Agent ignores some instructions. *Fix:* Keep instructions short and specific. Long, vague instructions get diluted. 10-15 clear rules work best.
+- *Pitfall:* Not sure what to put in the file. *Fix:* Start with 3 rules. Add more as you notice the agent doing things wrong -- each mistake becomes a new rule.
+
+**Success Criteria:**
+- `.github/copilot-instructions.md` file exists in your project
+- The agent produces output that follows your conventions (dark theme, "associate" terminology, formatted numbers)
+- You understand the three layers: MCP Tools + Instructions + Memory
+
+> **SPEAKER NOTES:** This section bridges MCP (abilities) with project customization (knowledge). The key teaching moment is the before/after test -- same prompt, different output. If AGMs struggle to think of rules, suggest: "What do you always have to correct when a new hire writes their first report?" Those corrections become instructions. Transition: "Your agent now has skills AND knows your rules. Let me show you how to review what agents do."
 
 ---
 
@@ -772,9 +908,9 @@ This means: the orders number was updated from 2,500 to 2,800, and a new line ab
 
 ## Section 12: Exercise 6 -- Agent Builds a Real Tool
 
-**Duration:** 30 minutes
+**Duration:** 25 minutes
 **Activity:** Hands-On (Copilot Agent Mode)
-**Time Allocation:** Describe task = 3 min, agent plans + builds = 12 min, test in browser = 5 min, iterate = 5 min, review diff = 5 min
+**Time Allocation:** Describe task = 2 min, agent plans + builds = 10 min, test in browser = 5 min, iterate = 5 min, review diff = 3 min
 
 ### Content
 
@@ -925,9 +1061,9 @@ This actually happened during the creation of this training course:
 
 ## Section 13b: Exercise 7 -- Debug & Redirect an Agent
 
-**Duration:** 25 minutes
+**Duration:** 20 minutes
 **Activity:** Hands-On (Copilot Agent Mode)
-**Time Allocation:** Part A (vague instructions) = 10 min, Part B (catch a mistake) = 15 min
+**Time Allocation:** Part A (vague instructions) = 8 min, Part B (catch a mistake) = 12 min
 
 ### Content
 
@@ -1043,9 +1179,9 @@ Challenge yourself: ask for something harder.
 
 ## Section 14: Share Results + Key Takeaways + Homework
 
-**Duration:** 20 minutes
+**Duration:** 15 minutes
 **Activity:** Peer Discussion
-**Time Allocation:** Show & tell = 12 min, takeaways = 3 min, homework = 5 min
+**Time Allocation:** Show & tell = 8 min, takeaways = 3 min, homework = 4 min
 
 ### Content
 
@@ -1069,7 +1205,7 @@ Five things to remember from today:
 
 1. **CoT + Few-Shot + Persona** upgrade your prompts from good to great -- always add "step by step" for complex analysis
 2. **Agents DO work, chat SUGGESTS work** -- that is the fundamental difference between Bottle Rocket and Copilot Agent Mode
-3. **MCP tools give agents new skills** -- like installing apps on a phone. Playwright lets agents browse websites. More tools are coming.
+3. **MCP tools + Instructions + Memory** -- three layers that make agents capable. MCP = abilities, copilot-instructions.md = project knowledge, Memory = persistent facts.
 4. **Check the output, not the count** -- an agent that says "Done!" may have cut corners. Always verify the actual work, not the status update.
 5. **Specific instructions + right-sized tasks** -- break big jobs into small batches with checkpoints. "Make it better" fails. "Add a totals row to the bottom of the table" works.
 
@@ -1083,6 +1219,8 @@ Five things to remember from today:
 | VS Code + Copilot installation | Exercise 3 |
 | Agent Mode basics (plan-approve-review) | Exercise 4 |
 | MCP tool installation (Playwright) | Exercise 5 |
+| Custom instructions (copilot-instructions.md) | Section 10b |
+| Agent memory concept | Section 10b |
 | Multi-step agent builds (dashboard) | Exercise 6 |
 | Root cause analysis (Notice → Investigate → Diagnose → Fix → Prevent) | Section 13 concept + Exercise 7 |
 | Agent debugging and redirection | Exercise 7 |
@@ -1095,9 +1233,11 @@ Five things to remember from today:
 
 2. **Track your AI time savings daily** using the dashboard you built today. Log at least one entry per day. Target: 20-30 minutes saved per day. (~5 min/day)
 
-3. **Explore MCP tools**: In Copilot Chat, type "What MCP tools are available?" or search the VS Code Extensions view for `@mcp`. List 3 MCP tools that would help your DC work. (~10 min)
+3. **Improve your copilot-instructions.md**: Each time the agent does something wrong (wrong format, wrong terminology, wrong style), add a rule to prevent it. Target: 3 new rules added this week. (~5 min)
 
-4. **Think ahead -- your capstone project**: What process at your DC would you most want to automate or build a tool for? Write a 2-sentence description. This seeds your Week 4 final project. (~10 min)
+4. **Explore MCP tools**: In Copilot Chat, type "What MCP tools are available?" or search the VS Code Extensions view for `@mcp`. List 3 MCP tools that would help your DC work. (~5 min)
+
+5. **Think ahead -- your capstone project**: What process at your DC would you most want to automate or build a tool for? Write a 2-sentence description. This seeds your Week 4 final project. (~10 min)
 
 > **TYPE THIS** (in a note or document -- save this for next week):
 > ```

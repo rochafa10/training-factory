@@ -2,103 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 77 - Five Things to Remember from Today</title>
+  <title>Slide 77 - Exercise 7: Debug & Redirect an Agent</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container {
-      padding: 24px 40px 20px 48px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    .center-content {
+      margin-left: 8px; width: calc(100% - 8px); height: 100%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 40px 60px;
     }
-    h1 {
-      font-size: 28px;
-      font-weight: bold;
+    .section-num {
+      font-size: 64px; font-weight: bold; color: #cc0000; line-height: 1;
+      margin-bottom: 8px;
+    }
+    .section-num sub { font-size: 32px; color: #cc0000; }
+    .section-label {
+      font-size: 13px; color: #666666; text-transform: uppercase; letter-spacing: 3px;
       margin-bottom: 16px;
     }
-    .takeaways {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+    h1 { font-size: 30px; font-weight: bold; color: #000000; margin-bottom: 20px; line-height: 1.2; }
+    .duration-bar {
+      display: flex; gap: 0; border-radius: 8px; overflow: hidden;
+      width: 100%; max-width: 520px;
     }
-    .takeaway-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
+    .duration-segment {
+      padding: 12px 20px; text-align: center; flex: 1;
     }
-    .takeaway-num {
-      font-size: 32px;
-      font-weight: bold;
-      color: #cc0000;
-      min-width: 40px;
-      line-height: 1;
-      flex-shrink: 0;
+    .duration-segment:first-child { background: #f5f5f5; }
+    .duration-segment:last-child { background: #eeeeee; }
+    .duration-label { font-size: 11px; color: #666666; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .duration-time { font-size: 20px; font-weight: bold; color: #000000; }
+    .total-time {
+      margin-top: 12px; font-size: 14px; color: #666666;
     }
-    .takeaway-text {
-      font-size: 14px;
-      color: #000000;
-      line-height: 1.4;
-      padding-top: 4px;
-    }
-    .takeaway-text .emphasis {
-      color: #b45309;
-      font-weight: bold;
-    }
-    .bottom-row {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      margin-top: 8px;
-    }
-    .chart-img {
-      width: 220px;
-      height: auto;
-      border-radius: 6px;
-      border: 1px solid #eeeeee;
-    }
-    .chart-label {
-      font-size: 10px;
-      color: #666666;
-      text-align: center;
-      margin-top: 4px;
-    }
+    .total-time strong { color: #cc0000; font-size: 18px; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="container">
-    <h1>Five Things to Remember from Today</h1>
-    <div class="takeaways">
-      <div class="takeaway-row">
-        <div class="takeaway-num">1</div>
-        <div class="takeaway-text"><span class="emphasis">CoT + Few-Shot + Persona</span> upgrade your prompts from good to great &mdash; always add &ldquo;step by step&rdquo; for complex analysis</div>
+  <div class="center-content">
+    <div class="section-num">13<sub>b</sub></div>
+    <div class="section-label">Section</div>
+    <h1>Exercise 7: Debug &amp; Redirect an Agent</h1>
+    <div class="duration-bar">
+      <div class="duration-segment">
+        <div class="duration-label">Part A: Vague Instructions</div>
+        <div class="duration-time">10 min</div>
       </div>
-      <div class="takeaway-row">
-        <div class="takeaway-num">2</div>
-        <div class="takeaway-text"><span class="emphasis">Agents DO work, chat SUGGESTS work</span> &mdash; that is the fundamental difference</div>
-      </div>
-      <div class="takeaway-row">
-        <div class="takeaway-num">3</div>
-        <div class="takeaway-text"><span class="emphasis">MCP tools give agents new skills</span> &mdash; like installing apps on a phone</div>
-      </div>
-      <div class="takeaway-row">
-        <div class="takeaway-num">4</div>
-        <div class="takeaway-text"><span class="emphasis">Check the output, not the count</span> &mdash; an agent that says &ldquo;Done!&rdquo; may have cut corners. Always verify the actual work.</div>
-      </div>
-      <div class="takeaway-row">
-        <div class="takeaway-num">5</div>
-        <div class="takeaway-text"><span class="emphasis">Specific instructions + right-sized tasks</span> &mdash; break big jobs into small batches with checkpoints</div>
+      <div class="duration-segment">
+        <div class="duration-label">Part B: Catch a Mistake</div>
+        <div class="duration-time">15 min</div>
       </div>
     </div>
-    <div class="bottom-row">
-      <div>
-        <img src="../images/skill-progression--chart.png" alt="Skill Progression Chart" class="chart-img">
-        <div class="chart-label">Your Skill Progression</div>
-      </div>
-    </div>
+    <div class="total-time">Total: <strong>25 minutes</strong></div>
   </div>
 </body>
 </html>

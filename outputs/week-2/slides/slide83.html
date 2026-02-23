@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 83 - Challenge: Week-Over-Week Comparison</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
+    .container { padding: 16px 40px 14px 48px; height: 100%; display: flex; flex-direction: column; }
+    .badge { display: inline-block; background: #cc0000; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 6px; align-self: flex-start; }
+    h1 { font-size: 24px; font-weight: bold; margin-bottom: 6px; }
+    .intro { font-size: 12px; color: #666666; margin-bottom: 8px; line-height: 1.3; }
+    .type-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1.5px; margin-bottom: 4px; }
+    .type-this-box {
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 10px;
+    }
+    .type-this-box p { font-size: 12px; color: #333333; line-height: 1.45; }
+    .data-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1.5px; margin-bottom: 5px; }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+    .data-table th {
+      text-align: left;
+      color: #666666;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 8px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .data-table td {
+      padding: 4px 8px;
+      color: #333333;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .data-table td.metric { color: #000000; font-weight: bold; }
+    .up { color: #16a34a; }
+    .down-good { color: #16a34a; }
+    .up-neutral { color: #666666; }
+    .constraint {
+      background: #f5f5f5;
+      border: 1px solid #eeeeee;
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 12px;
+      color: #b45309;
+      margin-top: auto;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="badge">Exercise 7 &mdash; Stretch Challenge</div>
+    <h1>Challenge: Week-Over-Week Comparison</h1>
+    <p class="intro">If the agent got it right on the first try, add this challenge:</p>
+
+    <div class="type-label">Type This</div>
+    <div class="type-this-box">
+      <p>Add a second row of cards showing week-over-week change. Green arrows for improvement, red arrows for decline.</p>
+    </div>
+
+    <div class="data-label">Comparison Data</div>
+    <table class="data-table">
+      <tr>
+        <th>KPI</th>
+        <th>Last Week</th>
+        <th>Change</th>
+      </tr>
+      <tr>
+        <td class="metric">Orders</td>
+        <td>13,800</td>
+        <td class="up">&#x25B2; 2.9%</td>
+      </tr>
+      <tr>
+        <td class="metric">Fill Rate</td>
+        <td>96.5%</td>
+        <td class="up">&#x25B2; 0.7%</td>
+      </tr>
+      <tr>
+        <td class="metric">Overtime</td>
+        <td>210 hrs</td>
+        <td class="down-good">&#x25BC; 14.3% (good)</td>
+      </tr>
+      <tr>
+        <td class="metric">Headcount</td>
+        <td>46</td>
+        <td class="up-neutral">&#x25B2; 4.3%</td>
+      </tr>
+      <tr>
+        <td class="metric">Safety</td>
+        <td>2 incidents</td>
+        <td class="down-good">&#x25BC; 50% (good)</td>
+      </tr>
+      <tr>
+        <td class="metric">Complaints</td>
+        <td>5</td>
+        <td class="down-good">&#x25BC; 40% (good)</td>
+      </tr>
+    </table>
+
+    <div class="constraint">&#x26A0; Still must fit on one screen without scrolling.</div>
+  </div>
+</body>
+</html>

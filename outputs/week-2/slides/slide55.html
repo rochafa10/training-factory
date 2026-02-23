@@ -2,99 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 55 - Reading an Agent's Plan</title>
+  <title>Slide 55 - Three Ways to Train Your Agent</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container { padding: 24px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
-    h1 { font-size: 26px; font-weight: bold; margin-bottom: 6px; }
-    .subtitle { font-size: 13px; color: #666666; margin-bottom: 16px; }
-    .plan-area { flex: 1; display: flex; gap: 20px; }
-    .plan-col { flex: 3; display: flex; flex-direction: column; gap: 8px; }
-    .response-col { flex: 2; display: flex; flex-direction: column; gap: 8px; }
-    .col-label {
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #666666;
-      margin-bottom: 4px;
-    }
-    .plan-item {
-      background: #f5f5f5;
-      border-radius: 8px;
-      padding: 10px 14px;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      border-left: 3px solid #4a9eed;
-    }
-    .plan-icon {
-      font-size: 14px;
-      flex-shrink: 0;
-      width: 20px;
-      text-align: center;
-      margin-top: 1px;
-    }
-    .plan-text {
-      font-family: 'Consolas', 'Courier New', monospace;
-      font-size: 12px;
-      color: #333333;
-      line-height: 1.5;
-    }
-    .plan-num {
-      color: #4a9eed;
-      font-weight: bold;
-      margin-right: 4px;
-    }
-    .response-badge {
-      border-radius: 8px;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .subtitle { font-size: 14px; color: #666666; margin-bottom: 24px; }
+    .layers { display: flex; gap: 16px; flex: 1; }
+    .layer {
       flex: 1;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
     }
-    .response-yes {
-      background: rgba(74, 222, 128, 0.12);
-      border: 2px solid #16a34a;
-    }
-    .response-partial {
-      background: rgba(250, 204, 21, 0.10);
-      border: 2px solid #b45309;
-    }
-    .response-no {
-      background: rgba(232, 33, 39, 0.10);
-      border: 2px solid #cc0000;
-    }
-    .response-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .dot-green { background: #16a34a; }
-    .dot-yellow { background: #b45309; }
-    .dot-red { background: #cc0000; }
-    .response-text { font-size: 13px; line-height: 1.4; }
-    .response-yes .response-text { color: #16a34a; }
-    .response-partial .response-text { color: #b45309; }
-    .response-no .response-text { color: #cc0000; }
-    .response-quote {
-      font-size: 12px;
-      color: #666666;
-      font-style: italic;
-      margin-top: 2px;
-    }
+    .layer-icon { font-size: 32px; margin-bottom: 10px; }
+    .layer-title { font-size: 16px; font-weight: bold; margin-bottom: 8px; }
+    .layer-desc { font-size: 13px; line-height: 1.5; color: #333333; flex: 1; }
+    .layer-analogy { font-size: 12px; color: #666666; margin-top: 10px; font-style: italic; border-top: 1px solid #e0e0e0; padding-top: 8px; }
+    .layer-tools { background: #eef2ff; border: 2px solid #4a9eed; }
+    .layer-instructions { background: #fef2f2; border: 2px solid #cc0000; }
+    .layer-memory { background: #f0fdf4; border: 2px solid #16a34a; }
+    .meta-row { margin-top: 12px; font-size: 12px; color: #666666; text-align: center; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Reading an Agent&rsquo;s Plan</h1>
-    <div class="subtitle">Before an agent acts, it tells you what it plans to do. Read it like a to-do list:</div>
-    <img src="../images/root-cause-framework--concept.png" alt="Root Cause Framework" style="width: 80%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); flex: 1; object-fit: contain;" />
+    <h1>Three Ways to Train Your Agent</h1>
+    <div class="subtitle">MCP gave your agent new abilities. Now let's give it knowledge and memory.</div>
+    <div class="layers">
+      <div class="layer layer-tools">
+        <div class="layer-icon">&#128295;</div>
+        <div class="layer-title">MCP Tools</div>
+        <div class="layer-desc">New <strong>abilities</strong> &mdash; browse websites, read spreadsheets, query databases</div>
+        <div class="layer-analogy">Like giving a new hire access to company systems</div>
+      </div>
+      <div class="layer layer-instructions">
+        <div class="layer-icon">&#128203;</div>
+        <div class="layer-title">Instructions File</div>
+        <div class="layer-desc">Project <strong>knowledge</strong> &mdash; your conventions, rules, preferences, standard formats</div>
+        <div class="layer-analogy">Like a training manual for a new hire</div>
+      </div>
+      <div class="layer layer-memory">
+        <div class="layer-icon">&#129504;</div>
+        <div class="layer-title">Memory</div>
+        <div class="layer-desc">Persistent <strong>facts</strong> &mdash; your KPI targets, team size, DC-specific details</div>
+        <div class="layer-analogy">Like a new hire's notebook of things to remember</div>
+      </div>
+    </div>
+    <div class="meta-row">Tools + Instructions + Memory = a capable, informed agent</div>
   </div>
 </body>
 </html>

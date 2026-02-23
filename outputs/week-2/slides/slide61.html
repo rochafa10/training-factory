@@ -2,66 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 61 - What to Watch the Agent Do</title>
+  <title>Slide 61 - Your Agent's Full Toolkit</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
-    h1 { font-size: 28px; font-weight: bold; margin-bottom: 16px; }
-    .points { display: flex; flex-direction: column; gap: 10px; flex: 1; }
-    .point-card {
-      background: #f5f5f5;
-      border-radius: 8px;
-      padding: 12px 16px;
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-    }
-    .point-num {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      background: #cc0000;
-      color: #000000;
-      font-size: 13px;
-      font-weight: bold;
-      border-radius: 50%;
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #666666; margin-bottom: 20px; }
+    .stack { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .layer-row {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin-top: 1px;
+      gap: 16px;
+      border-radius: 10px;
+      padding: 14px 20px;
+      flex: 1;
     }
-    .point-text { font-size: 13px; color: #333333; line-height: 1.5; }
-    .point-text strong { color: #000000; }
-    .point-text .highlight { color: #16a34a; font-weight: bold; }
+    .layer-icon { font-size: 28px; min-width: 40px; text-align: center; }
+    .layer-content { flex: 1; }
+    .layer-name { font-size: 16px; font-weight: bold; margin-bottom: 2px; }
+    .layer-desc { font-size: 13px; color: #333333; }
+    .layer-status {
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 12px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+    .row-tools { background: #eef2ff; border: 2px solid #4a9eed; }
+    .row-instructions { background: #fef2f2; border: 2px solid #cc0000; }
+    .row-memory { background: #f0fdf4; border: 2px solid #16a34a; }
+    .status-done { background: #dcfce7; color: #16a34a; }
+    .status-new { background: #fef9c3; color: #ca8a04; }
+    .status-preview { background: #f5f5f5; color: #666666; }
+    .bottom-message {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 15px;
+      color: #333333;
+      font-weight: bold;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+    .bottom-message .red { color: #cc0000; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>What to Watch the Agent Do</h1>
-    <div class="points">
-      <div class="point-card">
-        <div class="point-num">1</div>
-        <div class="point-text">Agent creates a <strong>plan</strong> &mdash; does it cover all 6 requirements?</div>
+    <h1>Your Agent's Full Toolkit</h1>
+    <div class="subtitle">Everything you've equipped your agent with today</div>
+    <div class="stack">
+      <div class="layer-row row-tools">
+        <div class="layer-icon">&#128295;</div>
+        <div class="layer-content">
+          <div class="layer-name">MCP Tools &mdash; Abilities</div>
+          <div class="layer-desc">Playwright installed &mdash; agent can browse websites and pull live data</div>
+        </div>
+        <div class="layer-status status-done">Done (Ex. 5)</div>
       </div>
-      <div class="point-card">
-        <div class="point-num">2</div>
-        <div class="point-text">Agent asks to create a file (like <strong>time-savings-dashboard.html</strong>) &mdash; click <span class="highlight">&ldquo;Accept&rdquo;</span></div>
+      <div class="layer-row row-instructions">
+        <div class="layer-icon">&#128203;</div>
+        <div class="layer-content">
+          <div class="layer-name">Instructions File &mdash; Knowledge</div>
+          <div class="layer-desc">copilot-instructions.md &mdash; agent knows your project conventions and rules</div>
+        </div>
+        <div class="layer-status status-new">Just Created</div>
       </div>
-      <div class="point-card">
-        <div class="point-num">3</div>
-        <div class="point-text">Agent writes <strong>HTML, CSS, and JavaScript</strong> &mdash; let it finish (2&ndash;3 min)</div>
+      <div class="layer-row row-memory">
+        <div class="layer-icon">&#129504;</div>
+        <div class="layer-content">
+          <div class="layer-name">Memory &mdash; Persistent Facts</div>
+          <div class="layer-desc">Agent remembers your DC targets, team size, and preferences between sessions</div>
+        </div>
+        <div class="layer-status status-preview">Week 3</div>
       </div>
-      <div class="point-card">
-        <div class="point-num">4</div>
-        <div class="point-text">Agent may <strong>iterate on its own</strong> &mdash; if it spots an error, it fixes it automatically</div>
-      </div>
-      <div class="point-card">
-        <div class="point-num">5</div>
-        <div class="point-text">This is <span class="highlight">&ldquo;self-healing&rdquo; behavior</span> &mdash; the agent <strong>checks its own work</strong></div>
-      </div>
+    </div>
+    <div class="bottom-message">
+      <span class="red">Next up:</span> The agent builds a real tool &mdash; and this time it knows your rules
     </div>
   </div>
 </body>

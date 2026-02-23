@@ -2,46 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 73 - Part B: Catch and Fix a Mistake</title>
+  <title>Slide 73 - Section 13: When Agents Don't Deliver</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container { padding: 16px 40px 14px 48px; height: 100%; display: flex; flex-direction: column; }
-    .badge { display: inline-block; background: #cc0000; color: #ffffff; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 16px; border-radius: 4px; margin-bottom: 6px; align-self: flex-start; }
-    h1 { font-size: 24px; font-weight: bold; margin-bottom: 8px; }
-    .type-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #666666; letter-spacing: 1.5px; margin-bottom: 4px; }
-    .type-this-box {
-      background: #f5f5f5;
-      border-left: 4px solid #cc0000;
-      border-radius: 8px;
-      padding: 10px 16px;
-      margin-bottom: 8px;
-    }
-    .type-this-box p { font-size: 12px; color: #333333; line-height: 1.45; }
-    .type-this-box p + p { margin-top: 6px; }
-    .watch-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #b45309; letter-spacing: 1.5px; margin-bottom: 5px; }
-    .watch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-    .watch-item {
-      background: #f5f5f5;
-      border-radius: 6px;
-      padding: 8px 12px;
+    .red-block {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 100%;
+      background: #cc0000;
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 12px;
-      color: #333333;
-      border: 1px solid #eeeeee;
+      justify-content: center;
     }
-    .watch-icon { color: #b45309; font-size: 14px; flex-shrink: 0; }
+    .section-number {
+      font-size: 180px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.06);
+      line-height: 1;
+    }
+    .right-content {
+      position: absolute;
+      left: 320px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 50px 50px 60px;
+    }
+    .section-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #cc0000;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .meta {
+      font-size: 16px;
+      color: #666666;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .meta .duration {
+      color: #000000;
+      font-weight: bold;
+    }
+    .activity-detail {
+      font-size: 13px;
+      color: #666666;
+    }
   </style>
 </head>
 <body>
-  <div class="accent-bar"></div>
-  <div class="container">
-    <div class="badge">Exercise 7 &mdash; Part B</div>
-    <h1>Part B: Catch and Fix a Mistake</h1>
-    <img src="../images/exercise-copilot-kpi--screenshot.png" alt="Exercise: Copilot building KPI dashboard" style="width: 90%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+  <div class="red-block">
+    <div class="section-number">13</div>
+  </div>
+  <div class="right-content">
+    <div class="section-label">Section 13</div>
+    <h1>When Agents<br>Don&rsquo;t Deliver</h1>
+    <div class="meta">
+      <span class="duration">5 minutes</span> &nbsp;|&nbsp; Concept Intro
+    </div>
+    <div class="activity-detail">Real-world case study &mdash; root-cause analysis</div>
   </div>
 </body>
 </html>

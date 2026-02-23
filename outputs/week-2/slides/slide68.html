@@ -2,42 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 68 - Managing Agents = Managing People</title>
+  <title>Slide 68 - TYPE THIS: Build a Dashboard</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .content { padding: 30px 40px 24px 40px; margin-left: 8px; }
-    .subtitle { font-size: 13px; color: #666666; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
-    h1 { font-size: 26px; font-weight: bold; color: #000000; margin-bottom: 20px; }
-    table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 8px; overflow: hidden; }
-    thead th {
-      padding: 12px 18px; font-size: 14px; font-weight: bold; text-transform: uppercase;
-      letter-spacing: 1px;
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    .header-row { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
+    .badge { background: #cc0000; color: #ffffff; text-transform: uppercase; font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px; white-space: nowrap; letter-spacing: 0.5px; }
+    h1 { font-size: 24px; font-weight: bold; line-height: 1.2; }
+    .prereq {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 10px;
+      padding: 6px 12px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      display: inline-block;
     }
-    thead th:first-child { background: #eeeeee; color: #666666; text-align: left; width: 50%; }
-    thead th:last-child { background: #f5f5f5; color: #000000; text-align: left; width: 50%; }
-    tbody td {
-      padding: 11px 18px; font-size: 13px; line-height: 1.4;
-      border-bottom: 1px solid #2a2a2a;
+    .prereq strong { color: #b45309; }
+    .type-this-label { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #cc0000; letter-spacing: 1.5px; margin-bottom: 6px; }
+    .type-this-box {
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 14px 18px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    tbody tr:last-child td { border-bottom: none; }
-    tbody td:first-child { background: #f5f5f5; color: #666666; }
-    tbody td:last-child { background: #f0f0f0111; color: #000000; font-weight: 500; }
-    .equals {
-      display: flex; align-items: center; justify-content: center; gap: 12px;
-      margin-bottom: 16px;
+    .prompt-text {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 12.5px;
+      color: #333333;
+      line-height: 1.7;
     }
-    .equals-label { font-size: 18px; font-weight: bold; color: #666666; }
-    .equals-sign { font-size: 24px; font-weight: bold; color: #cc0000; }
+    .prompt-text .main-request {
+      color: #000000;
+      font-weight: bold;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .prompt-text .req-item {
+      padding-left: 14px;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .prompt-text .req-num { color: #cc0000; font-weight: bold; }
+    .prompt-text .highlight { color: #b45309; }
+    .bottom-note {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eeeeee;
+    }
+    .note-text {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .note-text strong { color: #16a34a; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="content">
-    <div class="subtitle">Key Insight</div>
-    <h1>Managing Agents = Managing People</h1>
-    <img src="../images/specific-vs-vague--concept.png" alt="Specific vs Vague Instructions Concept" style="width: 80%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+  <div class="container">
+    <div class="header-row">
+      <div class="badge">Exercise 6 &mdash; Build a Dashboard</div>
+      <h1>TYPE THIS: Build a Dashboard</h1>
+    </div>
+
+    <img src="../images/exercise-copilot-dashboard--screenshot.png" alt="Exercise: Copilot building a dashboard" style="width: 90%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
   </div>
 </body>
 </html>

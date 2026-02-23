@@ -1,6 +1,6 @@
 # Slide Plan — Week 2: Advanced Prompts & Your First Agent
 
-**Total slides:** 79
+**Total slides:** 87
 **Source:** outputs/week-2/content.md
 **Dimensions:** 960x540px (16:9)
 **Theme:** Tesla dark (#0a0a0a background, #e82127 accent red, #ffffff text)
@@ -34,10 +34,11 @@
   - 2:00 -- BREAK (10 min)
   - 2:10 -- MCP: Giving Agents Skills (5 min)
   - 2:15 -- Exercise 5: Install First MCP Skill (25 min)
-  - 2:40 -- Reading Agent Plans & Git Basics (5 min)
-  - 2:45 -- Exercise 6: Agent Builds a Real Tool (30 min)
-  - 3:15 -- Exercise 7: Debug & Redirect an Agent (25 min)
-  - 3:40 -- Takeaways + Homework (20 min)
+  - 2:40 -- Customizing Your Agent: Skills, Memory & Instructions (15 min)
+  - 2:55 -- Reading Agent Plans & Git Basics (5 min)
+  - 3:00 -- Exercise 6: Agent Builds a Real Tool (25 min)
+  - 3:25 -- Exercise 7: Debug & Redirect an Agent (20 min)
+  - 3:45 -- Takeaways + Homework (15 min)
 - **Notes:** Walk through the agenda quickly. Emphasize: "First hour is leveling up your prompting. After Break 1, everything changes -- we go from chatting with AI to commanding AI agents."
 
 ---
@@ -736,11 +737,110 @@
   - A tool that sends formatted emails?
   - A tool that monitors a website for changes?
   - Think about what would save the most time at your DC
-- **Notes:** Brief discussion. No hands-on needed. Transition: "Your agent now has a skill. Let me show you how to review what agents do."
+- **Notes:** Brief discussion. No hands-on needed. Transition: "Your agent now has a skill. But a skill alone isn't enough -- let me show you how to train your agent."
 
 ---
 
 ## Slide 54
+- **Type:** divider
+- **Section:** 10b
+- **Title:** Customizing Your Agent: Skills, Memory & Instructions
+- **Content:**
+  - Duration: 15 minutes
+  - Activity: Concept + Hands-On
+  - Concept: 7 min | Create instructions: 5 min | Test: 3 min
+- **Notes:** Bridges MCP (abilities) with project customization (knowledge). The new-hire analogy continues: tools = system access, instructions = training manual, memory = notebook.
+
+---
+
+## Slide 55
+- **Type:** content
+- **Section:** 10b
+- **Title:** Three Ways to Train Your Agent
+- **Content:**
+  - MCP Tools = new abilities (browse websites, query databases). Like giving a new hire access to company systems.
+  - Instructions File = project knowledge (your rules, conventions, preferences). Like a training manual on their desk.
+  - Memory = persistent facts (your KPI targets, team size). Like a new hire's notebook of things to remember.
+  - Tools + Instructions + Memory = a capable, informed agent.
+- **Notes:** Three-column visual layout with distinct colors for each layer. The new-hire analogy resonates with AGMs.
+
+---
+
+## Slide 56
+- **Type:** content
+- **Section:** 10b
+- **Title:** What Is copilot-instructions.md?
+- **Content:**
+  - A file you create at .github/copilot-instructions.md
+  - Copilot reads it automatically every time you start a conversation
+  - Tells the agent your project's rules, conventions, and preferences
+  - Like a training manual that's always on the agent's desk
+  - Works in all modes: Chat, Edit, and Agent
+  - How it works: create once → write rules in plain English → agent follows them automatically
+- **Notes:** Two-column layout: left = key points, right = "How It Works" steps. Emphasize no coding required.
+
+---
+
+## Slide 57
+- **Type:** content
+- **Section:** 10b
+- **Title:** Example: copilot-instructions.md
+- **Content:**
+  - Real example file showing: Context (DC AGM, non-technical, dark theme), Conventions (associate not employee, KPI names, date format, number formatting), Rules (no real data, standalone HTML, no scrolling)
+- **Notes:** Code-block visual with syntax coloring. This is what they will create in the exercise.
+
+---
+
+## Slide 58
+- **Type:** exercise
+- **Section:** 10b
+- **Title:** Create Your copilot-instructions.md
+- **Content:**
+  - TYPE THIS in Copilot Agent Mode: "Create a .github folder in my project, then create a file called copilot-instructions.md inside it."
+  - Add rules: project context, dark theme, associate terminology, number formatting, standalone HTML
+- **Notes:** 5 minutes. Agent creates the folder and file. AGMs customize with their own DC-specific rules.
+
+---
+
+## Slide 59
+- **Type:** exercise
+- **Section:** 10b
+- **Title:** Test It: Before vs After Instructions
+- **Content:**
+  - Left panel (Without Instructions): random colors, says "employees", no formatting consistency, generic layout
+  - Right panel (With Instructions): dark theme, "associates", comma-formatted numbers, DC-relevant layout
+  - Same prompt, dramatically different output
+- **Notes:** Side-by-side comparison. The "aha" moment is identical to the MCP before/after but for conventions instead of capabilities.
+
+---
+
+## Slide 60
+- **Type:** content
+- **Section:** 10b
+- **Title:** Agent Memory: Persistent Context
+- **Content:**
+  - Instructions = how to work. Memory = what to remember between conversations.
+  - Example: "Remember my DC target is 2,800 orders/day" → next session agent already knows.
+  - Memory MCP stores facts as a knowledge graph, persists across sessions.
+  - We'll set this up in Week 3.
+- **Notes:** Three-panel layout showing today's session, next session, and how memory works. Concept intro only -- no hands-on.
+
+---
+
+## Slide 61
+- **Type:** content
+- **Section:** 10b
+- **Title:** Your Agent's Full Toolkit
+- **Content:**
+  - MCP Tools (Playwright) -- Done in Exercise 5 -- abilities
+  - Instructions File -- Just created -- project knowledge
+  - Memory -- Coming in Week 3 -- persistent facts
+  - Next up: the agent builds a real tool, and this time it knows your rules
+- **Notes:** Summary slide with status badges (Done, Just Created, Week 3). Transition to Git Basics.
+
+---
+
+## Slide 62
 - **Type:** divider
 - **Section:** 11
 - **Title:** Reading Agent Plans & Git Basics
@@ -751,7 +851,7 @@
 
 ---
 
-## Slide 55
+## Slide 63
 - **Type:** content
 - **Section:** 11
 - **Title:** Reading an Agent's Plan
@@ -765,7 +865,7 @@
 
 ---
 
-## Slide 56
+## Slide 64
 - **Type:** content
 - **Section:** 11
 - **Title:** What Is a Diff? ("Track Changes" for Code)
@@ -779,7 +879,7 @@
 
 ---
 
-## Slide 57
+## Slide 65
 - **Type:** diagram
 - **Section:** 11
 - **Title:** The Review Workflow
@@ -794,7 +894,7 @@
 
 ---
 
-## Slide 58
+## Slide 66
 - **Type:** content
 - **Section:** 11
 - **Title:** How to Undo
@@ -807,19 +907,19 @@
 
 ---
 
-## Slide 59
+## Slide 67
 - **Type:** divider
 - **Section:** 12
 - **Title:** Exercise 6: Agent Builds a Real Tool
 - **Content:**
-  - Duration: 30 minutes
+  - Duration: 25 minutes
   - Activity: Hands-On with Copilot Agent Mode
-  - Describe: 3 min | Agent builds: 12 min | Test: 5 min | Iterate: 5 min | Review diff: 5 min
+  - Describe: 2 min | Agent builds: 10 min | Test: 5 min | Iterate: 5 min | Review diff: 3 min
 - **Notes:** Flagship exercise of the day. The agent builds a working time-savings tracking dashboard. POLICY REMINDER: Use generic/fictional data only.
 
 ---
 
-## Slide 60
+## Slide 68
 - **Type:** exercise
 - **Section:** 12
 - **Title:** TYPE THIS: Build a Dashboard
@@ -831,7 +931,7 @@
 
 ---
 
-## Slide 61
+## Slide 69
 - **Type:** content
 - **Section:** 12
 - **Title:** What to Watch the Agent Do
@@ -845,7 +945,7 @@
 
 ---
 
-## Slide 62
+## Slide 70
 - **Type:** exercise
 - **Section:** 12
 - **Title:** Test It in Your Browser
@@ -861,7 +961,7 @@
 
 ---
 
-## Slide 63
+## Slide 71
 - **Type:** exercise
 - **Section:** 12
 - **Title:** Ask for an Improvement
@@ -874,7 +974,7 @@
 
 ---
 
-## Slide 64
+## Slide 72
 - **Type:** content
 - **Section:** 12
 - **Title:** Review What Changed (The Diff)
@@ -888,7 +988,7 @@
 
 ---
 
-## Slide 65
+## Slide 73
 - **Type:** divider
 - **Section:** 13
 - **Title:** When Agents Don't Deliver
@@ -899,7 +999,7 @@
 
 ---
 
-## Slide 66
+## Slide 74
 - **Type:** content
 - **Section:** 13
 - **Title:** The Root Cause Framework
@@ -914,7 +1014,7 @@
 
 ---
 
-## Slide 67
+## Slide 75
 - **Type:** content
 - **Section:** 13
 - **Title:** Real Case Study: The 75-Slide Problem
@@ -929,7 +1029,7 @@
 
 ---
 
-## Slide 68
+## Slide 76
 - **Type:** content
 - **Section:** 13
 - **Title:** Managing Agents = Managing People
@@ -944,19 +1044,19 @@
 
 ---
 
-## Slide 69
+## Slide 77
 - **Type:** divider
 - **Section:** 13b
 - **Title:** Exercise 7: Debug & Redirect an Agent
 - **Content:**
-  - Duration: 25 minutes
+  - Duration: 20 minutes
   - Activity: Hands-On with Copilot Agent Mode
-  - Part A: Vague Instructions (10 min) | Part B: Catch a Mistake (15 min)
+  - Part A: Vague Instructions (8 min) | Part B: Catch a Mistake (12 min)
 - **Notes:** This exercise is intentionally frustrating at first. The learning happens when they realize vague instructions cause problems and specific redirects fix them.
 
 ---
 
-## Slide 70
+## Slide 78
 - **Type:** exercise
 - **Section:** 13b
 - **Title:** Part A: What Happens with Vague Instructions
@@ -969,7 +1069,7 @@
 
 ---
 
-## Slide 71
+## Slide 79
 - **Type:** exercise
 - **Section:** 13b
 - **Title:** Now Redirect with Specific Instructions
@@ -981,7 +1081,7 @@
 
 ---
 
-## Slide 72
+## Slide 80
 - **Type:** content
 - **Section:** 13b
 - **Title:** The Lesson: Specific Beats Vague
@@ -994,7 +1094,7 @@
 
 ---
 
-## Slide 73
+## Slide 81
 - **Type:** exercise
 - **Section:** 13b
 - **Title:** Part B: Catch and Fix a Mistake
@@ -1007,7 +1107,7 @@
 
 ---
 
-## Slide 74
+## Slide 82
 - **Type:** content
 - **Section:** 13b
 - **Title:** The Fix Workflow
@@ -1021,7 +1121,7 @@
 
 ---
 
-## Slide 75
+## Slide 83
 - **Type:** exercise
 - **Section:** 13b
 - **Title:** Challenge: Week-Over-Week Comparison
@@ -1034,26 +1134,26 @@
 
 ---
 
-## Slide 76
+## Slide 84
 - **Type:** divider
 - **Section:** 14
 - **Title:** Share Results + Key Takeaways + Homework
 - **Content:**
-  - Duration: 20 minutes
+  - Duration: 15 minutes
   - Activity: Peer Discussion
-  - Show & tell: 12 min | Takeaways: 3 min | Homework: 5 min
+  - Show & tell: 8 min | Takeaways: 3 min | Homework: 4 min
 - **Notes:** The show-and-tell builds confidence and cross-pollinates ideas. If time is short, 1 minute per AGM.
 
 ---
 
-## Slide 77
+## Slide 85
 - **Type:** takeaway
 - **Section:** 14
 - **Title:** Five Things to Remember from Today
 - **Content:**
   - 1. CoT + Few-Shot + Persona upgrade your prompts from good to great -- always add "step by step" for complex analysis
   - 2. Agents DO work, chat SUGGESTS work -- that is the fundamental difference
-  - 3. MCP tools give agents new skills -- like installing apps on a phone
+  - 3. MCP tools + Instructions + Memory -- three layers that make agents capable and informed
   - 4. Check the output, not the count -- an agent that says "Done!" may have cut corners. Always verify the actual work.
   - 5. Specific instructions + right-sized tasks -- break big jobs into small batches with checkpoints
 - **Chart:** skill-progression--chart.png
@@ -1061,21 +1161,22 @@
 
 ---
 
-## Slide 78
+## Slide 86
 - **Type:** content
 - **Section:** 14
 - **Title:** Homework (45 min over the week)
 - **Content:**
   - 1. Use Agent Mode for 1 real task (NO Tesla data in Copilot) -- checklist, time tracker, report layout (~15 min)
   - 2. Track AI time savings daily using your dashboard -- at least 1 entry/day, target 20-30 min saved/day (~5 min/day)
-  - 3. Explore MCP tools: type "What MCP tools are available?" in Copilot Chat. List 3 that would help your DC work (~10 min)
-  - 4. Think ahead -- capstone project: What process would you most want to automate? Write 2 sentences. (~10 min)
+  - 3. Improve your copilot-instructions.md: add 3 new rules based on mistakes the agent makes (~5 min)
+  - 4. Explore MCP tools: type "What MCP tools are available?" in Copilot Chat. List 3 that would help your DC work (~5 min)
+  - 5. Think ahead -- capstone project: What process would you most want to automate? Write 2 sentences. (~10 min)
 - **Chart:** time-savings--chart.png
 - **Notes:** Homework is designed to build muscle memory with Agent Mode before Week 3.
 
 ---
 
-## Slide 79
+## Slide 87
 - **Type:** title
 - **Section:** 14
 - **Title:** Week 3 Preview: Voice Mode & Advanced Agents
@@ -1106,12 +1207,13 @@
 | -- | Break 2 | 1 | 41 |
 | 9 | MCP Concept | 6 | 42-47 |
 | 10 | Exercise 5: MCP | 6 | 48-53 |
-| 11 | Git Basics | 5 | 54-58 |
-| 12 | Exercise 6: Build | 6 | 59-64 |
-| 13 | Root Cause Analysis | 4 | 65-68 |
-| 13b | Exercise 7: Debug | 7 | 69-75 |
-| 14 | Takeaways + Homework | 4 | 76-79 |
-| **TOTAL** | | **79** | |
+| 10b | Skills, Memory & Instructions | 8 | 54-61 |
+| 11 | Git Basics | 5 | 62-66 |
+| 12 | Exercise 6: Build | 6 | 67-72 |
+| 13 | Root Cause Analysis | 4 | 73-76 |
+| 13b | Exercise 7: Debug | 7 | 77-83 |
+| 14 | Takeaways + Homework | 4 | 84-87 |
+| **TOTAL** | | **87** | |
 
 ## Available Visual Assets
 
@@ -1120,10 +1222,10 @@
 - `plan-execute-iterate--slide-embed.png` -- Used in Slide 21
 - `mcp-architecture--slide-embed.png` -- Used in Slide 45
 - `copilot-three-modes--slide-embed.png` -- Used in Slide 32
-- `agent-workflow--slide-embed.png` -- Used in Slide 57
+- `agent-workflow--slide-embed.png` -- Used in Slide 65
 
 ### Charts (from images/)
-- `time-savings--chart.png` -- Used in Slide 78
-- `skill-progression--chart.png` -- Used in Slide 77
+- `time-savings--chart.png` -- Used in Slide 86
+- `skill-progression--chart.png` -- Used in Slide 85
 
 ### All diagram/chart references verified against outputs/week-2/images/ directory listing.

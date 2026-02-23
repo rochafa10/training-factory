@@ -2,114 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 59 - Section 12 Divider: Exercise 6</title>
+  <title>Slide 59 - Test It: Before vs After</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .red-block {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 320px;
-      height: 100%;
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
+    .container { padding: 28px 40px 24px 48px; height: 100%; display: flex; flex-direction: column; }
+    .exercise-badge {
+      display: inline-block;
       background: #cc0000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .section-number {
-      font-size: 180px;
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.06);
-      line-height: 1;
-    }
-    .right-content {
-      position: absolute;
-      left: 320px;
-      top: 0;
-      right: 0;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 48px 50px 48px 60px;
-    }
-    .section-label {
-      font-size: 14px;
+      color: #000000;
+      font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      color: #cc0000;
-      margin-bottom: 14px;
-    }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-    .meta {
-      font-size: 16px;
-      color: #666666;
-      line-height: 1.6;
+      letter-spacing: 1.5px;
+      padding: 4px 16px;
+      border-radius: 4px;
       margin-bottom: 12px;
+      align-self: flex-start;
     }
-    .meta .duration {
-      color: #000000;
-      font-weight: bold;
-    }
-    .breakdown {
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 18px; }
+    .comparison { display: flex; gap: 20px; flex: 1; }
+    .panel {
+      flex: 1;
+      border-radius: 10px;
+      padding: 18px 20px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
+      flex-direction: column;
     }
-    .breakdown-item {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 6px;
-      padding: 6px 12px;
-      font-size: 12px;
-      color: #333333;
-      white-space: nowrap;
+    .panel-before {
+      background: #fef2f2;
+      border: 2px solid #dc2626;
     }
-    .breakdown-item .time {
-      color: #000000;
-      font-weight: bold;
+    .panel-after {
+      background: #f0fdf4;
+      border: 2px solid #16a34a;
     }
-    .policy-reminder {
-      background: #f5f5f5;
-      border: 2px solid #b45309;
-      border-radius: 8px;
-      padding: 12px 16px;
+    .panel-label {
       font-size: 13px;
-      color: #b45309;
-      line-height: 1.5;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
     }
-    .policy-reminder strong {
-      color: #b45309;
+    .label-before { color: #dc2626; }
+    .label-after { color: #16a34a; }
+    .prompt-box {
+      background: rgba(0,0,0,0.05);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+    .result-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #666666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .result-text {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.5;
+      flex: 1;
+    }
+    .meta-row {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #666666;
+      text-align: center;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="red-block">
-    <div class="section-number">12</div>
-  </div>
-  <div class="right-content">
-    <div class="section-label">Section 12</div>
-    <h1>Exercise 6: Agent Builds<br>a Real Tool</h1>
-    <div class="meta">
-      <span class="duration">30 minutes</span>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Hands-On -- 3 Minutes</div>
+    <h1>Test It: Before vs After Instructions</h1>
+    <div class="comparison">
+      <div class="panel panel-before">
+        <div class="panel-label label-before">Without Instructions</div>
+        <div class="prompt-box">"Build a quick KPI summary page"</div>
+        <div class="result-title">Typical Result</div>
+        <div class="result-text">
+          &bull; Random color scheme (white bg, blue accents)<br>
+          &bull; Says "employees" not "associates"<br>
+          &bull; No consistent number formatting<br>
+          &bull; May use external libraries<br>
+          &bull; Generic layout &mdash; no DC context
+        </div>
+      </div>
+      <div class="panel panel-after">
+        <div class="panel-label label-after">With Instructions</div>
+        <div class="prompt-box">"Build a quick KPI summary page"</div>
+        <div class="result-title">Expected Result</div>
+        <div class="result-text">
+          &bull; Dark theme with red accents (#0a0a0a + #e82127)<br>
+          &bull; Uses "associates" consistently<br>
+          &bull; Numbers formatted: 2,800 not 2800<br>
+          &bull; Standalone HTML, inline CSS/JS<br>
+          &bull; DC-relevant KPI labels and layout
+        </div>
+      </div>
     </div>
-    <div class="breakdown">
-      <div class="breakdown-item">Describe: <span class="time">3 min</span></div>
-      <div class="breakdown-item">Agent builds: <span class="time">12 min</span></div>
-      <div class="breakdown-item">Test: <span class="time">5 min</span></div>
-      <div class="breakdown-item">Iterate: <span class="time">5 min</span></div>
-      <div class="breakdown-item">Review diff: <span class="time">5 min</span></div>
-    </div>
-    <div class="policy-reminder">
-      <strong>&#9888; Policy Reminder:</strong> Use generic/fictional data only
-    </div>
+    <div class="meta-row">Same prompt, dramatically different output &mdash; because the agent knows your rules</div>
   </div>
 </body>
 </html>

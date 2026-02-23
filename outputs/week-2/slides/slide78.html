@@ -2,149 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 78 - Homework (45 min over the week)</title>
+  <title>Slide 78 - Part A: What Happens with Vague Instructions</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container {
-      padding: 24px 40px 20px 48px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    .content { padding: 28px 40px 24px 40px; margin-left: 8px; }
+    .badge {
+      display: inline-block; background: #cc0000; color: #ffffff; text-transform: uppercase;
+      font-size: 12px; font-weight: bold; padding: 4px 16px; border-radius: 4px;
+      letter-spacing: 1px; margin-bottom: 12px;
     }
-    h1 {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 4px;
+    h1 { font-size: 24px; font-weight: bold; color: #000000; margin-bottom: 18px; }
+    .type-this-box {
+      background: #f5f5f5; border-left: 4px solid #cc0000; padding: 20px 24px;
+      border-radius: 8px; margin-bottom: 20px; text-align: center;
     }
-    .subtitle {
-      font-size: 13px;
-      color: #666666;
-      margin-bottom: 14px;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      flex: 1;
-    }
-    .card {
-      background: #f5f5f5;
-      border-radius: 8px;
-      padding: 14px 16px;
-      display: flex;
-      flex-direction: column;
-    }
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .type-this-label {
+      font-size: 11px; color: #666666; text-transform: uppercase; letter-spacing: 2px;
       margin-bottom: 8px;
     }
-    .card-num {
-      width: 28px;
-      height: 28px;
-      background: #cc0000;
-      color: #000000;
-      font-size: 14px;
-      font-weight: bold;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
+    .type-this-text {
+      font-size: 28px; font-weight: bold; color: #000000; font-style: italic;
     }
-    .card-title {
-      font-size: 14px;
-      font-weight: bold;
-      color: #000000;
-      line-height: 1.2;
+    .outcomes-label {
+      font-size: 13px; color: #666666; text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 10px;
     }
-    .card-desc {
-      font-size: 12px;
-      color: #333333;
-      line-height: 1.4;
-      flex: 1;
+    .outcomes { display: flex; gap: 16px; margin-bottom: 20px; }
+    .outcome-card {
+      flex: 1; background: #f5f5f5; border-radius: 8px; padding: 14px 18px;
+      border-top: 3px solid;
     }
-    .card-desc .warning {
-      color: #b45309;
-      font-weight: bold;
+    .outcome-card.good { border-top-color: #16a34a; }
+    .outcome-card.common { border-top-color: #b45309; }
+    .outcome-label {
+      font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 6px; font-weight: bold;
     }
-    .card-time {
-      font-size: 11px;
-      color: #666666;
-      margin-top: 6px;
-      text-align: right;
+    .outcome-card.good .outcome-label { color: #16a34a; }
+    .outcome-card.common .outcome-label { color: #b45309; }
+    .outcome-text { font-size: 13px; color: #333333; line-height: 1.4; }
+    .outcome-quote { font-size: 12px; color: #666666; font-style: italic; margin-top: 6px; }
+    .lesson-box {
+      background: #eeeeee; border-radius: 8px; padding: 12px 20px;
+      border-left: 4px solid #cc0000;
     }
-    .bottom-row {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-top: 10px;
-    }
-    .total-badge {
-      background: #eeeeee;
-      border-radius: 6px;
-      padding: 8px 16px;
-      font-size: 13px;
-      color: #666666;
-    }
-    .total-badge strong {
-      color: #cc0000;
-      font-size: 16px;
-    }
-    .chart-img {
-      width: 200px;
-      height: auto;
-      border-radius: 6px;
-      border: 1px solid #eeeeee;
-    }
+    .lesson-label { font-size: 11px; color: #cc0000; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; font-weight: bold; }
+    .lesson-text { font-size: 14px; color: #000000; font-weight: bold; line-height: 1.4; }
+    .lesson-text em { color: #666666; font-weight: normal; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
-  <div class="container">
-    <h1>Homework</h1>
-    <div class="subtitle">45 minutes over the week &mdash; small daily actions, big weekly gains</div>
-    <div class="cards">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-num">1</div>
-          <div class="card-title">Use Agent Mode for 1 Real Task</div>
-        </div>
-        <div class="card-desc"><span class="warning">NO Tesla data in Copilot.</span> Try a checklist, time tracker, or report layout.</div>
-        <div class="card-time">~15 min</div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-num">2</div>
-          <div class="card-title">Track AI Time Savings Daily</div>
-        </div>
-        <div class="card-desc">Use your dashboard &mdash; at least 1 entry/day. Target 20&ndash;30 min saved/day.</div>
-        <div class="card-time">~5 min/day</div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-num">3</div>
-          <div class="card-title">Explore MCP Tools</div>
-        </div>
-        <div class="card-desc">Type &ldquo;What MCP tools are available?&rdquo; in Copilot Chat. List 3 that would help your DC work.</div>
-        <div class="card-time">~10 min</div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-num">4</div>
-          <div class="card-title">Think Ahead &mdash; Capstone Project</div>
-        </div>
-        <div class="card-desc">What process would you most want to automate? Write 2 sentences.</div>
-        <div class="card-time">~10 min</div>
-      </div>
-    </div>
-    <div class="bottom-row">
-      <div class="total-badge">Total: <strong>~45 min</strong> over the week</div>
-      <img src="../images/time-savings--chart.png" alt="Time Savings Chart" class="chart-img">
-    </div>
+  <div class="content">
+    <div class="badge">Exercise 7 -- Part A</div>
+    <h1>Part A: What Happens with Vague Instructions</h1>
+    <img src="../images/exercise-copilot-vague--screenshot.png" alt="Exercise: Copilot response to vague instructions" style="width: 90%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
   </div>
 </body>
 </html>

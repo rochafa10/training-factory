@@ -2,61 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 72 - The Lesson: Specific Beats Vague</title>
+  <title>Slide 72 - Review What Changed (The Diff)</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container { padding: 32px 40px 28px 48px; height: 100%; display: flex; flex-direction: column; }
-    .subtitle { font-size: 13px; color: #666666; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
-    h1 { font-size: 28px; font-weight: bold; margin-bottom: 24px; }
-    .comparison { display: flex; gap: 20px; margin-bottom: 28px; flex: 1; }
-    .card {
-      flex: 1;
-      border-radius: 10px;
-      padding: 24px 22px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .card-bad {
+    .container { padding: 22px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 16px; }
+    .steps { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .step-card {
       background: #f5f5f5;
-      border: 2px solid #dc2626;
-    }
-    .card-good {
-      background: #f5f5f5;
-      border: 2px solid #16a34a;
-    }
-    .card-icon { font-size: 36px; margin-bottom: 12px; }
-    .card-icon-bad { color: #dc2626; }
-    .card-icon-good { color: #16a34a; }
-    .card-prompt { font-size: 16px; font-weight: bold; margin-bottom: 10px; line-height: 1.3; }
-    .card-bad .card-prompt { color: #dc2626; }
-    .card-good .card-prompt { color: #16a34a; }
-    .card-result { font-size: 13px; color: #666666; line-height: 1.4; }
-    .card-label {
-      font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px;
-      margin-bottom: 10px;
-    }
-    .card-bad .card-label { color: #dc2626; }
-    .card-good .card-label { color: #16a34a; }
-    .bottom-insight {
-      background: #eeeeee;
       border-radius: 8px;
-      padding: 14px 20px;
-      border-left: 4px solid #cc0000;
+      padding: 12px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
     }
-    .bottom-insight p { font-size: 14px; color: #333333; line-height: 1.5; }
-    .bottom-insight strong { color: #000000; }
+    .step-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: #eeeeee;
+      border: 2px solid #16a34a;
+      color: #16a34a;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .step-text { font-size: 13px; color: #333333; line-height: 1.5; }
+    .step-text strong { color: #000000; }
+    .step-text .green { color: #16a34a; font-weight: bold; }
+    .step-text .red { color: #dc2626; font-weight: bold; }
+    .questions-box {
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 6px;
+    }
+    .questions-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #cc0000;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+    .question-item {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
+    .question-item:last-child { margin-bottom: 0; }
+    .transition-text {
+      margin-top: auto;
+      font-size: 13px;
+      color: #666666;
+      font-style: italic;
+      padding-top: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <div class="subtitle">Key Principle</div>
-    <h1>The Lesson: Specific Beats Vague</h1>
-    <img src="../images/fix-workflow--concept.png" alt="Fix Workflow Concept" style="width: 80%; display: block; margin: 10px auto 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+    <h1>Review What Changed (The Diff)</h1>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-icon">1</div>
+        <div class="step-text">Look at the file in VS Code &mdash; colored markers in the left margin (<span class="green">green = added</span>, <span class="red">red = removed</span>)</div>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">2</div>
+        <div class="step-text">Click the <strong>Source Control</strong> icon in the left sidebar (branch/fork icon)</div>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">3</div>
+        <div class="step-text">Click the <strong>changed file</strong> to see the full diff</div>
+      </div>
+    </div>
+
+    <div class="questions-box">
+      <div class="questions-label">Two Questions to Ask Yourself</div>
+      <div class="question-item">&bull; &ldquo;Can you identify the new code for your requested feature?&rdquo;</div>
+      <div class="question-item">&bull; &ldquo;Did the agent change anything you did NOT ask for?&rdquo;</div>
+    </div>
+
+    <div class="transition-text">The agent did great work. But what happens when it doesn&rsquo;t?</div>
   </div>
 </body>
 </html>

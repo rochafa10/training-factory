@@ -2,79 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 65 - Section 13: When Agents Don't Deliver</title>
+  <title>Slide 65 - The Review Workflow</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
-    .red-block {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 320px;
-      height: 100%;
-      background: #cc0000;
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
+    .container { padding: 24px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 14px; }
+    .two-col {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+      align-items: stretch;
+    }
+    .col-image {
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .section-number {
-      font-size: 180px;
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.06);
-      line-height: 1;
+    .col-image img {
+      max-width: 100%;
+      max-height: 340px;
+      border-radius: 8px;
+      display: block;
     }
-    .right-content {
-      position: absolute;
-      left: 320px;
-      top: 0;
-      right: 0;
-      height: 100%;
+    .col-steps {
+      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 50px 50px 50px 60px;
+      gap: 12px;
     }
-    .section-label {
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .step-num {
+      background: #cc0000;
+      color: #000000;
       font-size: 14px;
       font-weight: bold;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-text {
+      font-size: 14px;
+      color: #333333;
+      line-height: 1.5;
+      padding-top: 3px;
+    }
+    .step-text .green { color: #16a34a; }
+    .step-text .red { color: #dc2626; }
+    .key-rule {
+      background: #f5f5f5;
+      border-left: 4px solid #b45309;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 10px;
+    }
+    .key-rule-label {
+      font-size: 10px;
+      font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      color: #cc0000;
-      margin-bottom: 14px;
+      letter-spacing: 2px;
+      color: #b45309;
+      margin-bottom: 4px;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-    .meta {
-      font-size: 16px;
-      color: #666666;
-      line-height: 1.6;
-      margin-bottom: 8px;
-    }
-    .meta .duration {
-      color: #000000;
-      font-weight: bold;
-    }
-    .activity-detail {
+    .key-rule-text {
       font-size: 13px;
-      color: #666666;
+      color: #333333;
+      line-height: 1.5;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
-  <div class="red-block">
-    <div class="section-number">13</div>
-  </div>
-  <div class="right-content">
-    <div class="section-label">Section 13</div>
-    <h1>When Agents<br>Don&rsquo;t Deliver</h1>
-    <div class="meta">
-      <span class="duration">5 minutes</span> &nbsp;|&nbsp; Concept Intro
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>The Review Workflow</h1>
+    <div class="two-col">
+      <div class="col-image">
+        <img src="../images/agent-workflow--slide-embed.png" alt="Agent review workflow diagram">
+      </div>
+      <div class="col-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Agent proposes changes (shows you the plan)</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">You review the diff (<span class="green">green</span> = added, <span class="red">red</span> = removed)</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">You accept or reject</div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text">If you reject, tell the agent what to do differently</div>
+        </div>
+      </div>
     </div>
-    <div class="activity-detail">Real-world case study &mdash; root-cause analysis</div>
+    <div class="key-rule">
+      <div class="key-rule-label">Key Rule</div>
+      <div class="key-rule-text">"Never accept changes you do not understand. Ask: 'Explain what you changed and why.'"</div>
+    </div>
   </div>
 </body>
 </html>
