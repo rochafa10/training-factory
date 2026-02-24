@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 28 - Why Now Framing</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    ul li {
+      font-size: 14px;
+      color: #333333;
+      padding: 8px 0 8px 24px;
+      position: relative;
+      line-height: 1.5;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      background: #cc0000;
+      border-radius: 50%;
+    }
+    ul li strong { color: #000000; }
+    .callout {
+      background: #f5f5f5;
+      border-left: 4px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin-top: 8px;
+    }
+    .callout p {
+      font-size: 14px;
+      color: #333333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>&ldquo;Why Now?&rdquo; &mdash; Framing Transitions Positively</h1>
+    <ul>
+      <li><strong>NEVER</strong> badmouth your current employer or role</li>
+      <li>Frame as &ldquo;moving toward&rdquo; not &ldquo;running from&rdquo;</li>
+      <li>Show progression: &ldquo;I&rsquo;ve accomplished X, and now I&rsquo;m ready for the next challenge&rdquo;</li>
+      <li>If layoff/restructuring: &ldquo;The change gave me the opportunity to be intentional about my next step&rdquo;</li>
+    </ul>
+    <div class="callout">
+      <p>Your &ldquo;why now&rdquo; should feel like the natural next chapter, not a desperate escape.</p>
+    </div>
+  </div>
+</body>
+</html>

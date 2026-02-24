@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 18 - Practice 2: Build Your First STAR Story</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: white;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .main-content {
+      display: flex;
+      gap: 24px;
+      flex: 1;
+    }
+    .left-col { flex: 1.2; }
+    .right-col {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    ol {
+      list-style: none;
+      padding: 0;
+      counter-reset: step;
+    }
+    ol li {
+      counter-increment: step;
+      font-size: 13px;
+      color: #666666;
+      padding: 6px 0 6px 32px;
+      position: relative;
+      line-height: 1.5;
+    }
+    ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      top: 6px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .time-big {
+      font-size: 36px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .time-label {
+      font-size: 12px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+    .criteria-box {
+      background: #f5f5f5;
+      border-left: 4px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .criteria-box h3 {
+      font-size: 12px;
+      font-weight: bold;
+      color: #4ade80;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .criteria-box p {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.6;
+    }
+    .tip-box {
+      background: #f5f5f5;
+      border-left: 4px solid #facc15;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .tip-box p {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.5;
+    }
+    .tip-box strong { color: #facc15; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Practice 2</div>
+    <h1>Build Your First STAR Story</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <ol>
+          <li>Pick ONE theme from the Story Bank</li>
+          <li>Think of a real work situation that fits</li>
+          <li>Write out each STAR component &mdash; 1&ndash;2 sentences each</li>
+          <li>Make sure Action is 60% of your story</li>
+          <li>Include at least one specific number in your Result</li>
+          <li>Practice telling it in under 3 minutes</li>
+        </ol>
+      </div>
+      <div class="right-col">
+        <div class="time-box">
+          <div class="time-big">8</div>
+          <div class="time-label">Minutes</div>
+        </div>
+        <div class="criteria-box">
+          <h3>Success Criteria</h3>
+          <p>Uses &ldquo;I&rdquo; not &ldquo;we&rdquo; in Action<br>Result includes a quantified outcome<br>Fits in 2&ndash;3 minutes spoken</p>
+        </div>
+        <div class="tip-box">
+          <p><strong>Tip:</strong> Write it out first, then practice out loud. Stories always take longer than you think.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

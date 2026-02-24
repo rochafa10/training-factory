@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 22 - Strength Answers Comparison</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .columns {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .column.bad { border-top: 3px solid #f87171; }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column h2 {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .column.bad h2 { color: #f87171; }
+    .column.good h2 { color: #4ade80; }
+    .quote {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .verdict {
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #16a34a;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Strength Answers &mdash; What Works vs. What Doesn&rsquo;t</h1>
+    <div class="columns">
+      <div class="column bad">
+        <h2>Generic / Weak</h2>
+        <div class="quote">
+          &ldquo;I&rsquo;m a hard worker and a people person.&rdquo;<br><br>
+          &ldquo;I&rsquo;m detail-oriented.&rdquo;<br><br>
+          &ldquo;I never give up.&rdquo;
+        </div>
+        <div class="verdict">No proof, sounds rehearsed, could be anyone</div>
+      </div>
+      <div class="column good">
+        <h2>Framework / Strong</h2>
+        <div class="quote">
+          &ldquo;My strength is operational problem-solving. At my Tampa DC, I noticed our pack rate was declining every Thursday. I dug into the data, found it correlated with a specific associate rotation pattern, and restructured the Thursday schedule. Pack rate went up 14%.&rdquo;<br><br>
+          &ldquo;That&rsquo;s the kind of analytical approach I&rsquo;d bring to this GM role &mdash; using data to find and fix hidden patterns.&rdquo;
+        </div>
+        <div class="verdict">Specific, proven, connected to the role</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
