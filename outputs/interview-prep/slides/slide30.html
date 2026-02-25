@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 30 - Framework Quick Reference CAR PAR SOAR</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 32px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .framework-cards {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .fw-card {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      border-top: 3px solid #cc0000;
+    }
+    .fw-name {
+      font-size: 32px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .fw-formula {
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 16px;
+      color: #333333;
+    }
+    .fw-best {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .fw-example {
+      background: #eeeeee;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .fw-example strong { color: #333333; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Framework Quick Reference</h1>
+    <div class="framework-cards">
+      <div class="fw-card">
+        <div class="fw-name">CAR</div>
+        <div class="fw-formula">Challenge &rarr; Action &rarr; Result</div>
+        <div class="fw-best">Best for problem-solving questions.<br>&ldquo;What&rsquo;s the biggest challenge you&rsquo;ve faced?&rdquo;</div>
+        <div class="fw-example"><strong>Tip:</strong> Lead with the challenge to hook the interviewer, then show your solution.</div>
+      </div>
+      <div class="fw-card">
+        <div class="fw-name">PAR</div>
+        <div class="fw-formula">Problem &rarr; Action &rarr; Result</div>
+        <div class="fw-best">Best for &ldquo;tell me about a time&rdquo; questions. Simpler than STAR when the task is obvious.</div>
+        <div class="fw-example"><strong>Tip:</strong> Use when the situation and task are the same thing &mdash; no need to separate them.</div>
+      </div>
+      <div class="fw-card">
+        <div class="fw-name">SOAR</div>
+        <div class="fw-formula">Situation &rarr; Obstacle &rarr; Action &rarr; Result</div>
+        <div class="fw-best">Best for adversity questions. Emphasizes what stood in your way.</div>
+        <div class="fw-example"><strong>Tip:</strong> The obstacle is the star &mdash; it shows resilience and problem-solving under pressure.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

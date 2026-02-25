@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 27 - Why This Position Comparison</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 24px 36px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .question-label {
+      font-size: 14px;
+      color: #666666;
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+    .columns {
+      display: flex;
+      gap: 18px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+    .column.bad { border-top: 3px solid #f87171; }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column h2 {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .column.bad h2 { color: #f87171; }
+    .column.good h2 { color: #4ade80; }
+    .quote {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.6;
+      font-style: italic;
+      flex: 1;
+    }
+    .quote .label {
+      font-weight: bold;
+      color: #cc0000;
+      font-style: normal;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: block;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    .verdict {
+      margin-top: 12px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #16a34a;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>&ldquo;Why This Position?&rdquo;</h1>
+    <p class="question-label">Flat vs. Compelling</p>
+    <div class="columns">
+      <div class="column bad">
+        <h2>Flat Answer</h2>
+        <div class="quote">
+          &ldquo;I think it would be a great opportunity. I&rsquo;ve always wanted to work at a bigger company and this seemed like a good next step.&rdquo;
+        </div>
+        <div class="verdict">No research, self-focused, interchangeable</div>
+      </div>
+      <div class="column good">
+        <h2>Compelling Answer</h2>
+        <div class="quote">
+          <span class="label">Company</span>
+          &ldquo;Tesla&rsquo;s mission to accelerate sustainable energy aligns with what I care about &mdash; I want my work to matter beyond the balance sheet.&rdquo;
+          <span class="label">Role</span>
+          &ldquo;This GM role manages the exact scale I&rsquo;ve been building toward &mdash; 40+ associates, multi-shift operations, direct P&amp;L ownership.&rdquo;
+          <span class="label">Timing</span>
+          &ldquo;I&rsquo;ve spent 3 years mastering AGM operations. I&rsquo;ve built the systems and now I&rsquo;m ready to own the full operation.&rdquo;
+        </div>
+        <div class="verdict">Researched, specific, shows career logic</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 31 - When to Use Which Framework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .matrix {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .matrix-row {
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 12px 20px;
+      gap: 20px;
+    }
+    .matrix-fw {
+      font-size: 16px;
+      font-weight: bold;
+      color: #cc0000;
+      min-width: 60px;
+    }
+    .matrix-question {
+      flex: 1;
+      font-size: 13px;
+      color: #333333;
+    }
+    .matrix-best {
+      font-size: 12px;
+      color: #666666;
+      width: 280px;
+      text-align: right;
+    }
+    .callout {
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 12px 20px;
+      margin-top: 12px;
+    }
+    .callout p {
+      font-size: 13px;
+      color: #333333;
+    }
+    .callout strong { color: #cc0000; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>When to Use Which Framework</h1>
+    <div class="matrix">
+      <div class="matrix-row">
+        <span class="matrix-fw">ACE</span>
+        <span class="matrix-question">Direct questions, competency questions, &ldquo;Tell me about yourself&rdquo;</span>
+        <span class="matrix-best">60&ndash;90 sec, answer-first</span>
+      </div>
+      <div class="matrix-row">
+        <span class="matrix-fw">STAR</span>
+        <span class="matrix-question">Behavioral questions: &ldquo;Tell me about a time when...&rdquo;</span>
+        <span class="matrix-best">2&ndash;3 min, detailed story</span>
+      </div>
+      <div class="matrix-row">
+        <span class="matrix-fw">CAR</span>
+        <span class="matrix-question">Problem-solving: &ldquo;What&rsquo;s the biggest challenge...&rdquo;</span>
+        <span class="matrix-best">Lead with the challenge</span>
+      </div>
+      <div class="matrix-row">
+        <span class="matrix-fw">PAR</span>
+        <span class="matrix-question">Simple behavioral questions when STAR feels like overkill</span>
+        <span class="matrix-best">Shorter, situation = task</span>
+      </div>
+      <div class="matrix-row">
+        <span class="matrix-fw">SOAR</span>
+        <span class="matrix-question">Adversity &amp; resilience: &ldquo;Tell me about a setback...&rdquo;</span>
+        <span class="matrix-best">Emphasize the obstacle</span>
+      </div>
+    </div>
+    <div class="callout">
+      <p><strong>Pro tip:</strong> Most stories can be told in any framework. Pick the one that fits the question best.</p>
+    </div>
+  </div>
+</body>
+</html>

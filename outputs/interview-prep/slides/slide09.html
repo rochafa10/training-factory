@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 09 - ACE in Action Comparison</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 20px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .question {
+      font-size: 14px;
+      color: #666666;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    .columns {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .column {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .column.bad { border-top: 3px solid #f87171; }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column h2 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .column.bad h2 { color: #f87171; }
+    .column.good h2 { color: #4ade80; }
+    .response-text {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .response-text .ace-label {
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .verdict {
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #16a34a;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>ACE in Action</h1>
+    <p class="question">&ldquo;Are you a strong leader?&rdquo;</p>
+    <div class="columns">
+      <div class="column bad">
+        <h2>Weak Response</h2>
+        <p class="response-text">&ldquo;Yeah, I think I&rsquo;m a good leader. People like working for me and I try to be fair. I&rsquo;ve been a manager for a few years now.&rdquo;</p>
+        <div class="verdict">No evidence, vague, forgettable</div>
+      </div>
+      <div class="column good">
+        <h2>ACE Response</h2>
+        <p class="response-text">
+          <span class="ace-label">A:</span> &ldquo;Yes &mdash; I lead through ownership and follow-through.&rdquo;<br><br>
+          <span class="ace-label">C:</span> &ldquo;At my last DC, I inherited a team with 34% turnover. I built 1-on-1 cadence, restructured shifts, and launched peer recognition.&rdquo;<br><br>
+          <span class="ace-label">E:</span> &ldquo;Turnover dropped to 12%, throughput up 18%. That&rsquo;s the impact I&rsquo;d bring to this GM role.&rdquo;
+        </p>
+        <div class="verdict">Specific, proven, connected to the role</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

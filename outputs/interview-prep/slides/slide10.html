@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 10 - Practice 1: ACE Your Tell Me About Yourself</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 960px;
+      height: 540px;
+      background: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: #cc0000;
+    }
+    .container {
+      padding: 28px 40px 24px 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .exercise-badge {
+      display: inline-block;
+      background: #cc0000;
+      color: white;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .main-content {
+      display: flex;
+      gap: 28px;
+      flex: 1;
+    }
+    .left-col { flex: 1.2; }
+    .right-col {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    ol {
+      list-style: none;
+      padding: 0;
+      counter-reset: step;
+    }
+    ol li {
+      counter-increment: step;
+      font-size: 13px;
+      color: #666666;
+      padding: 8px 0 8px 32px;
+      position: relative;
+      line-height: 1.5;
+    }
+    ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #cc0000;
+      top: 8px;
+    }
+    .time-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .time-big {
+      font-size: 36px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .time-label {
+      font-size: 12px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+    .criteria-box {
+      background: #f5f5f5;
+      border-left: 4px solid #4ade80;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .criteria-box h3 {
+      font-size: 12px;
+      font-weight: bold;
+      color: #4ade80;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .criteria-box p {
+      font-size: 11px;
+      color: #666666;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <div class="exercise-badge">Practice 1</div>
+    <h1>ACE Your &ldquo;Tell Me About Yourself&rdquo;</h1>
+    <div class="main-content">
+      <div class="left-col">
+        <ol>
+          <li>Think of a leadership accomplishment you&rsquo;re proud of</li>
+          <li>Write a 3-sentence ACE response (Answer &rarr; Cite &rarr; Explain)</li>
+          <li>Keep it under 90 seconds when spoken</li>
+          <li>Share with a partner and get feedback</li>
+        </ol>
+      </div>
+      <div class="right-col">
+        <div class="time-box">
+          <div class="time-big">5</div>
+          <div class="time-label">Minutes</div>
+        </div>
+        <div class="criteria-box">
+          <h3>Success Criteria</h3>
+          <p>Starts with a direct answer (not &ldquo;Well, so...&rdquo;)<br>Includes a specific example with a number<br>Connects back to the target role</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
