@@ -65,11 +65,16 @@ When the slide plan specifies **Type: Teaching Diagram** or **Type: Canonical Di
 2. If it exists, embed it with callouts as specified in the plan
 3. If it does NOT exist, flag it — do not render a text-only substitute
 
-#### Rule 5: Visual Density Check
+#### Rule 5: Visual Density Check (BLOCKING)
 After rendering ALL slides in a batch:
 1. Count how many slides contain an `<img>` tag
-2. Report the visual density percentage
-3. **If below 50%, flag which content slides could benefit from a visual asset**
+2. Calculate: `density = (slides_with_img / total_slides) * 100`
+3. Report the visual density percentage
+4. **If below 50%, STOP. Do not commit or deliver slides.**
+   - List which content/concept slides lack images
+   - Return to Agent 06 to revise slide-plan.md with visual specs (Image: or Generate: fields) for enough slides to reach ≥50%
+   - After plan revision, re-render only the newly visual slides
+   - Re-check density before delivering
 
 ### Visual Testing Protocol
 

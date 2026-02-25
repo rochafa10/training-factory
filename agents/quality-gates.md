@@ -281,6 +281,7 @@ If 4B fails (Renderer):
 | Bullet limits | No slide exceeds 6 bullets | Count per slide block |
 | Diagram references | All point to existing files | Check images/ directory |
 | One idea per slide | No overloaded slides | Review each slide block |
+| Visual density | ≥50% of slides specify a visual asset type | Count slides with Image/Generate/Chart/Screenshot fields in plan |
 
 ### Sub-Gate 5A-2: Slide HTML (Agent 07)
 
@@ -291,6 +292,7 @@ If 4B fails (Renderer):
 | Colors | Tesla palette (#0a0a0a, #e82127) | Playwright style check |
 | Bullet count | ≤6 per slide | Count in snapshot |
 | Naming | Sequential (slide01, slide02...) | File listing |
+| Visual density | ≥50% of slides contain an `<img>` tag | Grep for `<img` across all slide HTML files |
 
 ### Sub-Gate 5B: Exercises (Agent 08)
 
@@ -346,8 +348,8 @@ For each Gemini-rendered PNG:
 
 ### Pass Criteria
 All five sub-gates must pass:
-- [ ] 5A-1: Slide plan covers all content with correct slide count and bullet limits
-- [ ] 5A-2: All slides pass Playwright visual tests
+- [ ] 5A-1: Slide plan covers all content with correct slide count, bullet limits, and ≥50% visual density
+- [ ] 5A-2: All slides pass Playwright visual tests and ≥50% contain an `<img>` tag
 - [ ] 5B: Exercises meet count, difficulty, and format requirements
 - [ ] 5C: Prompts follow formula and are unique
 - [ ] 5D: All Gemini renders match their diagram contracts
@@ -445,7 +447,9 @@ If a gate is bypassed, document in review.md:
 | Gate 4A fails on labels | Diagram Architect not checking Memory | Re-run with Memory MCP query first |
 | Gate 4B fails on drift | Gemini inventing content | Stricter contract in prompt, explicit "DO NOT" |
 | Gate 5A-1 fails on plan | Slide Planner overloading slides | Re-run Agent 06 with bullet/slide limits |
+| Gate 5A-1 fails on visual density | Planner didn't assign visual types to ≥50% of slides | Re-run Agent 06 with visual density enforcement — plan Generate: fields for standalone decks |
 | Gate 5A-2 fails on slides | HTML rendering issue | Check HTML syntax, re-run Agent 07 |
+| Gate 5A-2 fails on visual density | Rendered slides lack images despite plan | Re-run Agent 07 — ensure all Image/Generate fields in plan produce `<img>` tags |
 | Gate 5B fails on exercises | Unrealistic scenarios | Re-run with DC-specific guidance |
 | Gate 5C fails on prompts | Formula not followed | Re-run with formula template |
 | Gate 5D fails on fidelity | Gemini drift (extra nodes/labels) | Re-run Agent 05 with explicit label lock |

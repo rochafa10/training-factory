@@ -319,12 +319,64 @@ For any slide with numbers, percentages, or data comparisons, plan a Chart slide
 
 ---
 
+## Visual Planning Without Pre-existing Assets (Standalone Presentations)
+
+When creating slides for a standalone presentation (no Agents 04-05, no `images/` directory):
+
+**The ≥50% visual density rule still applies.** The planner must assign visual types even when no pre-rendered images exist.
+
+### How to Plan Visuals for Standalone Decks
+
+Instead of `**Image:**` (which references an existing file), use `**Generate:**` to tell Agent 07 to create the asset during rendering:
+
+```
+## Slide NN
+- **Type:** Teaching Diagram
+- **Title:** [Title]
+- **Generate:** [Tool] | [Description of visual to create] | [Output filename]
+- **Callouts:** (optional)
+  1. [Description]
+```
+
+### Generate Field Format
+
+`**Generate:** [tool] | [description] | [filename]`
+
+- **tool:** `nano-banana` (frameworks, concepts, flows), `antv-chart` (data/stats), `playwright` (UI screenshots)
+- **description:** A specific prompt describing the visual. Include labels, node names, colors, and layout.
+- **filename:** Target path relative to slides dir, e.g., `../images/ace-framework--minimal.png`
+
+### Examples
+
+```
+**Generate:** nano-banana | 3-step horizontal flow diagram: "ANSWER" (red box) → "CITE" (red box) → "EXPLAIN" (red box). White background, clean lines, Tesla red #cc0000 accent. Title: "The ACE Framework" | ../images/ace-framework--minimal.png
+```
+
+```
+**Generate:** antv-chart | Column chart with 6 bars: "Unprepared Managers" 33%, "Bad Hire Cost" 30%, "Turnover from Bad Hires" 80%, "Fail in 18mo" 46%, "Prep Advantage" 4.8, "First Impression" 7. Tesla light theme. | ../images/interview-stats--chart.png
+```
+
+### Agent 07 Behavior with Generate Fields
+
+When Agent 07 encounters a `**Generate:**` field:
+1. Parse the tool, description, and filename
+2. Create the `images/` directory if it doesn't exist
+3. Generate the image using the specified tool and description
+4. Save to the specified filename
+5. Embed in the slide HTML with `<img src="[filename]">`
+
+### Density Enforcement
+
+Before outputting slide-plan.md, count slides with either `**Image:**` or `**Generate:**` fields. If the count is below 50% of total slides, add visual specs to concept/framework slides until the threshold is met. Use the "When to Assign Visual Types" table above to determine which slides need visuals.
+
+---
+
 ## Planning Rules
 
 1. **One main idea per slide** — if a concept needs more space, split into multiple slides
 2. **Maximum 6 bullet points** per content slide — trim or split if more
 3. **Every section in content.md must appear** — no skipped content
-4. **Diagram references must point to existing files** — check images/ directory listing
+4. **Diagram references must point to existing files OR use Generate: field** — check images/ directory listing; standalone decks use Generate: for Agent 07 to create assets
 5. **Callout descriptions for teaching diagrams** — describe what each callout highlights (Agent 07 positions them)
 6. **Exercise slides reference exercises.md** — include the exercise number and key details
 7. **Statistics need source attribution** — include the source for every number in grid slides
