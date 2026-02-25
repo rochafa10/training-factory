@@ -77,39 +77,68 @@
       border-top: 1px solid #e0e0e0;
     }
     .footer-note strong { color: #cc0000; }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>Your 48-Hour Interview Prep Checklist</h1>
-    <div class="checklist">
-      <div class="check-item">
-        <div class="check-box"><span class="check-number">1</span></div>
-        <span class="check-text"><strong>Research</strong> the company, role, and interviewer (LinkedIn, news, job posting)</span>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="checklist">
+          <div class="check-item">
+            <div class="check-box"><span class="check-number">1</span></div>
+            <span class="check-text"><strong>Research</strong> the company, role, and interviewer (LinkedIn, news, job posting)</span>
+          </div>
+          <div class="check-item">
+            <div class="check-box"><span class="check-number">2</span></div>
+            <span class="check-text"><strong>Build your STAR story bank</strong> &mdash; at least 6 stories covering the key themes</span>
+          </div>
+          <div class="check-item">
+            <div class="check-box"><span class="check-number">3</span></div>
+            <span class="check-text"><strong>Prepare your ACE</strong> for &ldquo;Tell me about yourself&rdquo; &mdash; practice until natural</span>
+          </div>
+          <div class="check-item">
+            <div class="check-box"><span class="check-number">4</span></div>
+            <span class="check-text"><strong>Know your strength</strong> (with evidence) and <strong>weakness</strong> (with actions + progress)</span>
+          </div>
+          <div class="check-item">
+            <div class="check-box"><span class="check-number">5</span></div>
+            <span class="check-text"><strong>Write your &ldquo;Why&rdquo;</strong> &mdash; Company + Role + Timing answers</span>
+          </div>
+          <div class="check-item">
+            <div class="check-box"><span class="check-number">6</span></div>
+            <span class="check-text"><strong>Prepare 3&ndash;5 questions</strong> to ask THEM (two-way interview mindset)</span>
+          </div>
+        </div>
+        <div class="footer-note"><strong>Screenshot this slide.</strong> Use it 48 hours before every interview.</div>
       </div>
-      <div class="check-item">
-        <div class="check-box"><span class="check-number">2</span></div>
-        <span class="check-text"><strong>Build your STAR story bank</strong> &mdash; at least 6 stories covering the key themes</span>
-      </div>
-      <div class="check-item">
-        <div class="check-box"><span class="check-number">3</span></div>
-        <span class="check-text"><strong>Prepare your ACE</strong> for &ldquo;Tell me about yourself&rdquo; &mdash; practice until natural</span>
-      </div>
-      <div class="check-item">
-        <div class="check-box"><span class="check-number">4</span></div>
-        <span class="check-text"><strong>Know your strength</strong> (with evidence) and <strong>weakness</strong> (with actions + progress)</span>
-      </div>
-      <div class="check-item">
-        <div class="check-box"><span class="check-number">5</span></div>
-        <span class="check-text"><strong>Write your &ldquo;Why&rdquo;</strong> &mdash; Company + Role + Timing answers</span>
-      </div>
-      <div class="check-item">
-        <div class="check-box"><span class="check-number">6</span></div>
-        <span class="check-text"><strong>Prepare 3&ndash;5 questions</strong> to ask THEM (two-way interview mindset)</span>
+      <div class="image-col">
+        <img src="../images/prep-checklist--minimal.png" alt="48-Hour Interview Prep Checklist">
       </div>
     </div>
-    <div class="footer-note"><strong>Screenshot this slide.</strong> Use it 48 hours before every interview.</div>
   </div>
 </body>
 </html>

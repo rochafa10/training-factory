@@ -89,35 +89,64 @@
       line-height: 1.5;
     }
     .tip-card strong { color: #000000; }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>The Strengths Framework: Strength &rarr; Evidence &rarr; Relevance</h1>
-    <div class="framework-steps">
-      <div class="step-card">
-        <div class="step-num">Step 1</div>
-        <div class="step-title">Name the Strength</div>
-        <div class="step-desc">Be specific, not generic.<br>&ldquo;Operational efficiency&rdquo;<br>not &ldquo;hard worker&rdquo;</div>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="framework-steps">
+          <div class="step-card">
+            <div class="step-num">Step 1</div>
+            <div class="step-title">Name the Strength</div>
+            <div class="step-desc">Be specific, not generic.<br>&ldquo;Operational efficiency&rdquo;<br>not &ldquo;hard worker&rdquo;</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 2</div>
+            <div class="step-title">Provide Evidence</div>
+            <div class="step-desc">A concrete example<br>that proves it.<br>Use numbers.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 3</div>
+            <div class="step-title">Connect to Role</div>
+            <div class="step-desc">Why this strength matters<br>for THIS position.<br>Show alignment.</div>
+          </div>
+        </div>
+        <div class="tips">
+          <div class="tip-card">
+            <p><strong>Keep it to 60 seconds.</strong> Don&rsquo;t list 5 strengths &mdash; go deep on one.</p>
+          </div>
+          <div class="tip-card">
+            <p><strong>Pick strategically.</strong> Choose a strength that directly maps to a key requirement of the role.</p>
+          </div>
+        </div>
       </div>
-      <div class="step-card">
-        <div class="step-num">Step 2</div>
-        <div class="step-title">Provide Evidence</div>
-        <div class="step-desc">A concrete example<br>that proves it.<br>Use numbers.</div>
-      </div>
-      <div class="step-card">
-        <div class="step-num">Step 3</div>
-        <div class="step-title">Connect to Role</div>
-        <div class="step-desc">Why this strength matters<br>for THIS position.<br>Show alignment.</div>
-      </div>
-    </div>
-    <div class="tips">
-      <div class="tip-card">
-        <p><strong>Keep it to 60 seconds.</strong> Don&rsquo;t list 5 strengths &mdash; go deep on one.</p>
-      </div>
-      <div class="tip-card">
-        <p><strong>Pick strategically.</strong> Choose a strength that directly maps to a key requirement of the role.</p>
+      <div class="image-col">
+        <img src="../images/strengths-framework--minimal.png" alt="Strengths Framework">
       </div>
     </div>
   </div>

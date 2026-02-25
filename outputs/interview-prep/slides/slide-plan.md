@@ -41,6 +41,7 @@
 
 ## Slide 04
 - **Type:** Content
+- **Image:** ../images/leadership-competency--minimal.png
 - **Title:** Interviews Are a Leadership Competency
 - **Bullets:**
   - Every promotion, lateral move, and external opportunity starts with an interview
@@ -53,6 +54,7 @@
 
 ## Slide 05
 - **Type:** Grid
+- **Image:** ../images/interview-stats--chart.png
 - **Title:** The Cost of Poor Interview Performance
 - **Cards:**
   - 33% | Managers who feel unprepared for interviews | SHRM 2024
@@ -74,6 +76,7 @@
 
 ## Slide 07
 - **Type:** Content
+- **Image:** ../images/ace-framework--minimal.png
 - **Title:** ACE — Answer, Cite, Explain
 - **Bullets:**
   - **A — Answer:** Lead with a clear, direct answer to the question asked
@@ -86,6 +89,7 @@
 
 ## Slide 08
 - **Type:** Grid
+- **Image:** ../images/ace-breakdown--minimal.png
 - **Title:** ACE Breakdown — Each Step in Detail
 - **Cards:**
   - A | ANSWER | Direct response. No preamble, no throat-clearing. Get to the point.
@@ -96,6 +100,7 @@
 
 ## Slide 09
 - **Type:** Comparison
+- **Image:** ../images/ace-comparison--minimal.png
 - **Title:** ACE in Action — "Are you a strong leader?"
 - **Left Column:**
   - **Header:** Weak Response
@@ -137,6 +142,7 @@
 
 ## Slide 12
 - **Type:** Content
+- **Image:** ../images/star-framework--minimal.png
 - **Title:** STAR — The Gold Standard for Behavioral Questions
 - **Bullets:**
   - **S — Situation:** Set the scene briefly. Where were you? What was happening?
@@ -150,6 +156,7 @@
 
 ## Slide 13
 - **Type:** Grid
+- **Image:** ../images/star-time-split--chart.png
 - **Title:** The STAR Time Split
 - **Cards:**
   - 10% | SITUATION | 2-3 sentences of context. Don't over-explain.
@@ -180,6 +187,7 @@
 
 ## Slide 15
 - **Type:** Content
+- **Image:** ../images/star-mistakes--minimal.png
 - **Title:** The 5 Most Common STAR Mistakes
 - **Bullets:**
   - **Too long on Situation** — Spending 2 minutes on context, 30 seconds on action
@@ -204,6 +212,7 @@
 
 ## Slide 17
 - **Type:** Grid
+- **Image:** ../images/story-bank-themes--minimal.png
 - **Title:** Story Bank — Cover These 6 Themes
 - **Cards:**
   - 1 | LEADERSHIP | A time you led a team through a challenge or change
@@ -244,6 +253,7 @@
 
 ## Slide 20
 - **Type:** Content
+- **Image:** ../images/strengths-weaknesses-why--minimal.png
 - **Title:** Why They Ask About Strengths & Weaknesses
 - **Bullets:**
   - It's NOT a trick question — interviewers want to see self-awareness
@@ -256,6 +266,7 @@
 
 ## Slide 21
 - **Type:** Content
+- **Image:** ../images/strengths-framework--minimal.png
 - **Title:** The Strengths Framework: Strength → Evidence → Relevance
 - **Bullets:**
   - **Step 1 — Name the Strength:** Be specific, not generic ("operational efficiency" not "hard worker")
@@ -285,6 +296,7 @@
 
 ## Slide 23
 - **Type:** Content
+- **Image:** ../images/weakness-framework--minimal.png
 - **Title:** The Weakness Framework: Honest → Actions → Progress
 - **Bullets:**
   - **Step 1 — Name a Real Weakness:** Not a disguised strength. Not a cliche.
@@ -322,6 +334,7 @@
 
 ## Slide 26
 - **Type:** Content
+- **Image:** ../images/why-framework--minimal.png
 - **Title:** The 3-Part "Why" Framework
 - **Bullets:**
   - **Company Alignment:** What about this company resonates with your values and goals?
@@ -369,6 +382,7 @@
 
 ## Slide 30
 - **Type:** Grid
+- **Image:** ../images/frameworks-comparison--minimal.png
 - **Title:** Framework Quick Reference — CAR, PAR, SOAR
 - **Cards:**
   - CAR | Challenge → Action → Result | Best for problem-solving questions. "What's the biggest challenge you've faced?"
@@ -379,6 +393,7 @@
 
 ## Slide 31
 - **Type:** Content
+- **Image:** ../images/framework-decision--minimal.png
 - **Title:** When to Use Which Framework
 - **Bullets:**
   - **ACE:** Direct questions, competency questions, "Tell me about yourself"
@@ -400,6 +415,7 @@
 
 ## Slide 33
 - **Type:** Content
+- **Image:** ../images/two-way-interview--minimal.png
 - **Title:** You're Evaluating Them Too
 - **Bullets:**
   - The best interviews are conversations, not interrogations
@@ -412,6 +428,7 @@
 
 ## Slide 34
 - **Type:** Content
+- **Image:** ../images/red-green-flags--minimal.png
 - **Title:** Red Flags & Green Flags in an Employer
 - **Bullets:**
   - **Green flags:** Clear expectations, growth path, team stability, honest about challenges
@@ -432,6 +449,7 @@
 
 ## Slide 36
 - **Type:** Content
+- **Image:** ../images/prep-checklist--minimal.png
 - **Title:** Your 48-Hour Interview Prep Checklist
 - **Bullets:**
   - Research the company, role, and interviewer (LinkedIn, news, job posting)
@@ -445,6 +463,7 @@
 
 ## Slide 37
 - **Type:** Summary
+- **Image:** ../images/key-takeaways--minimal.png
 - **Title:** Key Takeaways
 - **Takeaways:**
   1. ACE every direct question — Answer first, Cite evidence, Explain the connection
@@ -479,3 +498,29 @@
 - Grid: 5
 - Exercise: 2
 - Summary: 1
+
+## Visual Density
+
+**Slides with images:** 19 / 37 = **51.4%** (PASS -- >=50%)
+
+| Slide | Visual Type | Image File |
+|-------|-------------|------------|
+| 04 | Teaching Diagram | ../images/leadership-competency--minimal.png |
+| 05 | Chart | ../images/interview-stats--chart.png |
+| 07 | Teaching Diagram | ../images/ace-framework--minimal.png |
+| 08 | Teaching Diagram | ../images/ace-breakdown--minimal.png |
+| 09 | Teaching Diagram | ../images/ace-comparison--minimal.png |
+| 12 | Teaching Diagram | ../images/star-framework--minimal.png |
+| 13 | Chart | ../images/star-time-split--chart.png |
+| 15 | Teaching Diagram | ../images/star-mistakes--minimal.png |
+| 17 | Teaching Diagram | ../images/story-bank-themes--minimal.png |
+| 20 | Teaching Diagram | ../images/strengths-weaknesses-why--minimal.png |
+| 21 | Teaching Diagram | ../images/strengths-framework--minimal.png |
+| 23 | Teaching Diagram | ../images/weakness-framework--minimal.png |
+| 26 | Teaching Diagram | ../images/why-framework--minimal.png |
+| 30 | Teaching Diagram | ../images/frameworks-comparison--minimal.png |
+| 31 | Teaching Diagram | ../images/framework-decision--minimal.png |
+| 33 | Teaching Diagram | ../images/two-way-interview--minimal.png |
+| 34 | Teaching Diagram | ../images/red-green-flags--minimal.png |
+| 36 | Infographic | ../images/prep-checklist--minimal.png |
+| 37 | Infographic | ../images/key-takeaways--minimal.png |

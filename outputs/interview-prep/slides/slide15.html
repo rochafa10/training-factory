@@ -66,47 +66,76 @@
       font-size: 12px;
       color: #666666;
     }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>The 5 Most Common STAR Mistakes</h1>
-    <div class="mistakes-list">
-      <div class="mistake-item">
-        <span class="mistake-number">1</span>
-        <div class="mistake-content">
-          <div class="mistake-title">Too long on Situation</div>
-          <div class="mistake-desc">Spending 2 minutes on context, 30 seconds on action. Flip the ratio.</div>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="mistakes-list">
+          <div class="mistake-item">
+            <span class="mistake-number">1</span>
+            <div class="mistake-content">
+              <div class="mistake-title">Too long on Situation</div>
+              <div class="mistake-desc">Spending 2 minutes on context, 30 seconds on action. Flip the ratio.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <span class="mistake-number">2</span>
+            <div class="mistake-content">
+              <div class="mistake-title">Using &ldquo;we&rdquo; instead of &ldquo;I&rdquo;</div>
+              <div class="mistake-desc">Interviewers want YOUR contribution, not the team&rsquo;s. Own your actions.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <span class="mistake-number">3</span>
+            <div class="mistake-content">
+              <div class="mistake-title">No numbers</div>
+              <div class="mistake-desc">&ldquo;It improved&rdquo; vs. &ldquo;It improved throughput by 22%.&rdquo; Always quantify.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <span class="mistake-number">4</span>
+            <div class="mistake-content">
+              <div class="mistake-title">Picking the wrong story</div>
+              <div class="mistake-desc">Choose stories relevant to the role, not just your most impressive moment.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <span class="mistake-number">5</span>
+            <div class="mistake-content">
+              <div class="mistake-title">No lesson learned</div>
+              <div class="mistake-desc">Great candidates show growth, not just results. What did the experience teach you?</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="mistake-item">
-        <span class="mistake-number">2</span>
-        <div class="mistake-content">
-          <div class="mistake-title">Using &ldquo;we&rdquo; instead of &ldquo;I&rdquo;</div>
-          <div class="mistake-desc">Interviewers want YOUR contribution, not the team&rsquo;s. Own your actions.</div>
-        </div>
-      </div>
-      <div class="mistake-item">
-        <span class="mistake-number">3</span>
-        <div class="mistake-content">
-          <div class="mistake-title">No numbers</div>
-          <div class="mistake-desc">&ldquo;It improved&rdquo; vs. &ldquo;It improved throughput by 22%.&rdquo; Always quantify.</div>
-        </div>
-      </div>
-      <div class="mistake-item">
-        <span class="mistake-number">4</span>
-        <div class="mistake-content">
-          <div class="mistake-title">Picking the wrong story</div>
-          <div class="mistake-desc">Choose stories relevant to the role, not just your most impressive moment.</div>
-        </div>
-      </div>
-      <div class="mistake-item">
-        <span class="mistake-number">5</span>
-        <div class="mistake-content">
-          <div class="mistake-title">No lesson learned</div>
-          <div class="mistake-desc">Great candidates show growth, not just results. What did the experience teach you?</div>
-        </div>
+      <div class="image-col">
+        <img src="../images/star-mistakes--minimal.png" alt="5 Most Common STAR Mistakes">
       </div>
     </div>
   </div>

@@ -76,35 +76,64 @@
       border-top: 1px solid #e0e0e0;
     }
     .footer-note strong { color: #000000; }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>STAR &mdash; The Gold Standard for Behavioral Questions</h1>
-    <div class="star-cards">
-      <div class="star-card">
-        <span class="star-letter">S</span>
-        <span class="star-label">Situation</span>
-        <span class="star-desc">Set the scene briefly. Where were you? What was happening?</span>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="star-cards">
+          <div class="star-card">
+            <span class="star-letter">S</span>
+            <span class="star-label">Situation</span>
+            <span class="star-desc">Set the scene briefly. Where were you? What was happening?</span>
+          </div>
+          <div class="star-card">
+            <span class="star-letter">T</span>
+            <span class="star-label">Task</span>
+            <span class="star-desc">What was YOUR specific responsibility?</span>
+          </div>
+          <div class="star-card">
+            <span class="star-letter">A</span>
+            <span class="star-label">Action</span>
+            <span class="star-desc">What did YOU do? Not the team &mdash; YOU. Be specific.</span>
+          </div>
+          <div class="star-card">
+            <span class="star-letter">R</span>
+            <span class="star-label">Result</span>
+            <span class="star-desc">What happened? Quantify. What did you learn?</span>
+          </div>
+        </div>
+        <div class="footer-note"><strong>Use when:</strong> &ldquo;Tell me about a time when...&rdquo; or &ldquo;Give me an example of...&rdquo; &nbsp;|&nbsp; <strong>Target length:</strong> 2&ndash;3 minutes</div>
       </div>
-      <div class="star-card">
-        <span class="star-letter">T</span>
-        <span class="star-label">Task</span>
-        <span class="star-desc">What was YOUR specific responsibility?</span>
-      </div>
-      <div class="star-card">
-        <span class="star-letter">A</span>
-        <span class="star-label">Action</span>
-        <span class="star-desc">What did YOU do? Not the team &mdash; YOU. Be specific.</span>
-      </div>
-      <div class="star-card">
-        <span class="star-letter">R</span>
-        <span class="star-label">Result</span>
-        <span class="star-desc">What happened? Quantify. What did you learn?</span>
+      <div class="image-col">
+        <img src="../images/star-framework--minimal.png" alt="STAR Method Overview">
       </div>
     </div>
-    <div class="footer-note"><strong>Use when:</strong> &ldquo;Tell me about a time when...&rdquo; or &ldquo;Give me an example of...&rdquo; &nbsp;|&nbsp; <strong>Target length:</strong> 2&ndash;3 minutes</div>
   </div>
 </body>
 </html>

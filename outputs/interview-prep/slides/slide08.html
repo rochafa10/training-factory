@@ -76,36 +76,65 @@
       font-weight: bold;
       margin-top: 4px;
     }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>ACE Breakdown &mdash; Each Step in Detail</h1>
-    <div class="detail-cards">
-      <div class="detail-card">
-        <span class="step-letter">A</span>
-        <div class="step-content">
-          <div class="step-name">Answer</div>
-          <div class="step-desc">Direct response. No preamble, no throat-clearing, no &ldquo;That&rsquo;s a great question.&rdquo; Get to the point.</div>
-          <div class="step-tip">Tip: Start with &ldquo;Yes&rdquo; / &ldquo;No&rdquo; / &ldquo;My approach is...&rdquo;</div>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="detail-cards">
+          <div class="detail-card">
+            <span class="step-letter">A</span>
+            <div class="step-content">
+              <div class="step-name">Answer</div>
+              <div class="step-desc">Direct response. No preamble, no throat-clearing, no &ldquo;That&rsquo;s a great question.&rdquo; Get to the point.</div>
+              <div class="step-tip">Tip: Start with &ldquo;Yes&rdquo; / &ldquo;No&rdquo; / &ldquo;My approach is...&rdquo;</div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <span class="step-letter">C</span>
+            <div class="step-content">
+              <div class="step-name">Cite</div>
+              <div class="step-desc">One specific story. Name the situation, what you did, the outcome. Quantify whenever possible.</div>
+              <div class="step-tip">Tip: Use numbers &mdash; &ldquo;reduced by 22%&rdquo; beats &ldquo;improved significantly&rdquo;</div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <span class="step-letter">E</span>
+            <div class="step-content">
+              <div class="step-name">Explain</div>
+              <div class="step-desc">Link it back. Why does this matter for THIS role? Show you understand what they need.</div>
+              <div class="step-tip">Tip: &ldquo;That&rsquo;s the same approach I&rsquo;d bring to this [role]...&rdquo;</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="detail-card">
-        <span class="step-letter">C</span>
-        <div class="step-content">
-          <div class="step-name">Cite</div>
-          <div class="step-desc">One specific story. Name the situation, what you did, the outcome. Quantify whenever possible.</div>
-          <div class="step-tip">Tip: Use numbers &mdash; &ldquo;reduced by 22%&rdquo; beats &ldquo;improved significantly&rdquo;</div>
-        </div>
-      </div>
-      <div class="detail-card">
-        <span class="step-letter">E</span>
-        <div class="step-content">
-          <div class="step-name">Explain</div>
-          <div class="step-desc">Link it back. Why does this matter for THIS role? Show you understand what they need.</div>
-          <div class="step-tip">Tip: &ldquo;That&rsquo;s the same approach I&rsquo;d bring to this [role]...&rdquo;</div>
-        </div>
+      <div class="image-col">
+        <img src="../images/ace-breakdown--minimal.png" alt="ACE Breakdown Detail">
       </div>
     </div>
   </div>

@@ -70,20 +70,49 @@
       color: #333333;
       font-weight: bold;
     }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>Why They Ask About Strengths &amp; Weaknesses</h1>
-    <ul>
-      <li>It&rsquo;s NOT a trick question &mdash; interviewers want to see self-awareness</li>
-      <li><strong>Strengths:</strong> Do you know what makes you effective? Can you articulate it?</li>
-      <li><strong>Weaknesses:</strong> Do you have a growth mindset? Are you honest about limitations?</li>
-      <li>The framework matters more than the specific answer</li>
-    </ul>
-    <div class="callout">
-      <p>Authenticity beats rehearsed perfection every time.</p>
+    <div class="split-layout">
+      <div class="text-col">
+        <ul>
+          <li>It&rsquo;s NOT a trick question &mdash; interviewers want to see self-awareness</li>
+          <li><strong>Strengths:</strong> Do you know what makes you effective? Can you articulate it?</li>
+          <li><strong>Weaknesses:</strong> Do you have a growth mindset? Are you honest about limitations?</li>
+          <li>The framework matters more than the specific answer</li>
+        </ul>
+        <div class="callout">
+          <p>Authenticity beats rehearsed perfection every time.</p>
+        </div>
+      </div>
+      <div class="image-col">
+        <img src="../images/strengths-weaknesses-why--minimal.png" alt="Why They Ask About Strengths and Weaknesses">
+      </div>
     </div>
   </div>
 </body>

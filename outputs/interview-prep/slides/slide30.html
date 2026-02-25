@@ -79,30 +79,59 @@
       line-height: 1.4;
     }
     .fw-example strong { color: #333333; }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>Framework Quick Reference</h1>
-    <div class="framework-cards">
-      <div class="fw-card">
-        <div class="fw-name">CAR</div>
-        <div class="fw-formula">Challenge &rarr; Action &rarr; Result</div>
-        <div class="fw-best">Best for problem-solving questions.<br>&ldquo;What&rsquo;s the biggest challenge you&rsquo;ve faced?&rdquo;</div>
-        <div class="fw-example"><strong>Tip:</strong> Lead with the challenge to hook the interviewer, then show your solution.</div>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="framework-cards">
+          <div class="fw-card">
+            <div class="fw-name">CAR</div>
+            <div class="fw-formula">Challenge &rarr; Action &rarr; Result</div>
+            <div class="fw-best">Best for problem-solving questions.<br>&ldquo;What&rsquo;s the biggest challenge you&rsquo;ve faced?&rdquo;</div>
+            <div class="fw-example"><strong>Tip:</strong> Lead with the challenge to hook the interviewer, then show your solution.</div>
+          </div>
+          <div class="fw-card">
+            <div class="fw-name">PAR</div>
+            <div class="fw-formula">Problem &rarr; Action &rarr; Result</div>
+            <div class="fw-best">Best for &ldquo;tell me about a time&rdquo; questions. Simpler than STAR when the task is obvious.</div>
+            <div class="fw-example"><strong>Tip:</strong> Use when the situation and task are the same thing &mdash; no need to separate them.</div>
+          </div>
+          <div class="fw-card">
+            <div class="fw-name">SOAR</div>
+            <div class="fw-formula">Situation &rarr; Obstacle &rarr; Action &rarr; Result</div>
+            <div class="fw-best">Best for adversity questions. Emphasizes what stood in your way.</div>
+            <div class="fw-example"><strong>Tip:</strong> The obstacle is the star &mdash; it shows resilience and problem-solving under pressure.</div>
+          </div>
+        </div>
       </div>
-      <div class="fw-card">
-        <div class="fw-name">PAR</div>
-        <div class="fw-formula">Problem &rarr; Action &rarr; Result</div>
-        <div class="fw-best">Best for &ldquo;tell me about a time&rdquo; questions. Simpler than STAR when the task is obvious.</div>
-        <div class="fw-example"><strong>Tip:</strong> Use when the situation and task are the same thing &mdash; no need to separate them.</div>
-      </div>
-      <div class="fw-card">
-        <div class="fw-name">SOAR</div>
-        <div class="fw-formula">Situation &rarr; Obstacle &rarr; Action &rarr; Result</div>
-        <div class="fw-best">Best for adversity questions. Emphasizes what stood in your way.</div>
-        <div class="fw-example"><strong>Tip:</strong> The obstacle is the star &mdash; it shows resilience and problem-solving under pressure.</div>
+      <div class="image-col">
+        <img src="../images/frameworks-comparison--minimal.png" alt="Framework Quick Reference CAR PAR SOAR">
       </div>
     </div>
   </div>

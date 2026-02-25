@@ -88,40 +88,69 @@
       color: #666666;
     }
     .callout strong { color: #000000; }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>You&rsquo;re Evaluating Them Too</h1>
-    <div class="two-col">
-      <div class="col-left">
-        <div class="mindset-card">
-          <p>The best interviews are <strong>conversations</strong>, not interrogations.</p>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="two-col">
+          <div class="col-left">
+            <div class="mindset-card">
+              <p>The best interviews are <strong>conversations</strong>, not interrogations.</p>
+            </div>
+            <div class="mindset-card">
+              <p>You should leave knowing if this role is right for <strong>YOU</strong>.</p>
+            </div>
+            <div class="mindset-card">
+              <p>Asking smart questions signals <strong>confidence</strong> and <strong>preparation</strong>.</p>
+            </div>
+            <div class="mindset-card">
+              <p>Avoid questions you could Google &mdash; ask what only an <strong>insider</strong> would know.</p>
+            </div>
+          </div>
+          <div class="col-right">
+            <div class="questions-header">Questions to Ask Them</div>
+            <ul class="question-list">
+              <li>&ldquo;What does success look like in the first 90 days?&rdquo;</li>
+              <li>&ldquo;What&rsquo;s the biggest challenge the team is facing right now?&rdquo;</li>
+              <li>&ldquo;How is performance measured and rewarded?&rdquo;</li>
+              <li>&ldquo;What happened to the last person in this role?&rdquo;</li>
+              <li>&ldquo;What&rsquo;s one thing you&rsquo;d change about the team if you could?&rdquo;</li>
+            </ul>
+          </div>
         </div>
-        <div class="mindset-card">
-          <p>You should leave knowing if this role is right for <strong>YOU</strong>.</p>
-        </div>
-        <div class="mindset-card">
-          <p>Asking smart questions signals <strong>confidence</strong> and <strong>preparation</strong>.</p>
-        </div>
-        <div class="mindset-card">
-          <p>Avoid questions you could Google &mdash; ask what only an <strong>insider</strong> would know.</p>
+        <div class="callout">
+          <p><strong>A good company will respect your questions.</strong> A red-flag company will be annoyed by them.</p>
         </div>
       </div>
-      <div class="col-right">
-        <div class="questions-header">Questions to Ask Them</div>
-        <ul class="question-list">
-          <li>&ldquo;What does success look like in the first 90 days?&rdquo;</li>
-          <li>&ldquo;What&rsquo;s the biggest challenge the team is facing right now?&rdquo;</li>
-          <li>&ldquo;How is performance measured and rewarded?&rdquo;</li>
-          <li>&ldquo;What happened to the last person in this role?&rdquo;</li>
-          <li>&ldquo;What&rsquo;s one thing you&rsquo;d change about the team if you could?&rdquo;</li>
-        </ul>
+      <div class="image-col">
+        <img src="../images/two-way-interview--minimal.png" alt="You're Evaluating Them Too">
       </div>
-    </div>
-    <div class="callout">
-      <p><strong>A good company will respect your questions.</strong> A red-flag company will be annoyed by them.</p>
     </div>
   </div>
 </body>

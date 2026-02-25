@@ -82,35 +82,64 @@
       line-height: 1.5;
     }
     .tip-card strong { color: #000000; }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>The Weakness Framework: Honest &rarr; Actions &rarr; Progress</h1>
-    <div class="framework-steps">
-      <div class="step-card">
-        <div class="step-num">Step 1</div>
-        <div class="step-title">Name a Real Weakness</div>
-        <div class="step-desc">Not a disguised strength.<br>Not a clich&eacute;.<br>Something genuine.</div>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="framework-steps">
+          <div class="step-card">
+            <div class="step-num">Step 1</div>
+            <div class="step-title">Name a Real Weakness</div>
+            <div class="step-desc">Not a disguised strength.<br>Not a clich&eacute;.<br>Something genuine.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 2</div>
+            <div class="step-title">Show Actions Taken</div>
+            <div class="step-desc">What have you actively<br>done to improve?<br>Specific steps.</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 3</div>
+            <div class="step-title">Demonstrate Progress</div>
+            <div class="step-desc">Show measurable improvement,<br>not perfection.<br>Growth mindset.</div>
+          </div>
+        </div>
+        <div class="tips">
+          <div class="tip-card">
+            <p><strong>The best answers</strong> show self-awareness AND a growth mindset. You know your gap and you&rsquo;re actively closing it.</p>
+          </div>
+          <div class="tip-card">
+            <p><strong>Pick wisely:</strong> Choose a weakness that is real but not disqualifying for the role you&rsquo;re pursuing.</p>
+          </div>
+        </div>
       </div>
-      <div class="step-card">
-        <div class="step-num">Step 2</div>
-        <div class="step-title">Show Actions Taken</div>
-        <div class="step-desc">What have you actively<br>done to improve?<br>Specific steps.</div>
-      </div>
-      <div class="step-card">
-        <div class="step-num">Step 3</div>
-        <div class="step-title">Demonstrate Progress</div>
-        <div class="step-desc">Show measurable improvement,<br>not perfection.<br>Growth mindset.</div>
-      </div>
-    </div>
-    <div class="tips">
-      <div class="tip-card">
-        <p><strong>The best answers</strong> show self-awareness AND a growth mindset. You know your gap and you&rsquo;re actively closing it.</p>
-      </div>
-      <div class="tip-card">
-        <p><strong>Pick wisely:</strong> Choose a weakness that is real but not disqualifying for the role you&rsquo;re pursuing.</p>
+      <div class="image-col">
+        <img src="../images/weakness-framework--minimal.png" alt="Weakness Framework">
       </div>
     </div>
   </div>

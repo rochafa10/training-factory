@@ -76,45 +76,74 @@
       padding-top: 10px;
       border-top: 1px solid #e0e0e0;
     }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
     <h1>Story Bank &mdash; Cover These 6 Themes</h1>
-    <div class="themes-grid">
-      <div class="theme-card">
-        <span class="theme-number">1</span>
-        <span class="theme-name">Leadership</span>
-        <span class="theme-desc">A time you led a team through a challenge or change</span>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="themes-grid">
+          <div class="theme-card">
+            <span class="theme-number">1</span>
+            <span class="theme-name">Leadership</span>
+            <span class="theme-desc">A time you led a team through a challenge or change</span>
+          </div>
+          <div class="theme-card">
+            <span class="theme-number">2</span>
+            <span class="theme-name">Conflict</span>
+            <span class="theme-desc">A time you resolved a disagreement or difficult conversation</span>
+          </div>
+          <div class="theme-card">
+            <span class="theme-number">3</span>
+            <span class="theme-name">Problem Solving</span>
+            <span class="theme-desc">A time you solved a complex operational problem</span>
+          </div>
+          <div class="theme-card">
+            <span class="theme-number">4</span>
+            <span class="theme-name">Failure</span>
+            <span class="theme-desc">A time something went wrong and what you learned from it</span>
+          </div>
+          <div class="theme-card">
+            <span class="theme-number">5</span>
+            <span class="theme-name">Innovation</span>
+            <span class="theme-desc">A time you improved a process or introduced something new</span>
+          </div>
+          <div class="theme-card">
+            <span class="theme-number">6</span>
+            <span class="theme-name">Pressure</span>
+            <span class="theme-desc">A time you delivered results under a tight deadline</span>
+          </div>
+        </div>
+        <div class="footer-note">Prepare at least one strong STAR story for each theme. Most stories can cover 2&ndash;3 themes.</div>
       </div>
-      <div class="theme-card">
-        <span class="theme-number">2</span>
-        <span class="theme-name">Conflict</span>
-        <span class="theme-desc">A time you resolved a disagreement or difficult conversation</span>
-      </div>
-      <div class="theme-card">
-        <span class="theme-number">3</span>
-        <span class="theme-name">Problem Solving</span>
-        <span class="theme-desc">A time you solved a complex operational problem</span>
-      </div>
-      <div class="theme-card">
-        <span class="theme-number">4</span>
-        <span class="theme-name">Failure</span>
-        <span class="theme-desc">A time something went wrong and what you learned from it</span>
-      </div>
-      <div class="theme-card">
-        <span class="theme-number">5</span>
-        <span class="theme-name">Innovation</span>
-        <span class="theme-desc">A time you improved a process or introduced something new</span>
-      </div>
-      <div class="theme-card">
-        <span class="theme-number">6</span>
-        <span class="theme-name">Pressure</span>
-        <span class="theme-desc">A time you delivered results under a tight deadline</span>
+      <div class="image-col">
+        <img src="../images/story-bank-themes--minimal.png" alt="Story Bank 6 Themes">
       </div>
     </div>
-    <div class="footer-note">Prepare at least one strong STAR story for each theme. Most stories can cover 2&ndash;3 themes.</div>
   </div>
 </body>
 </html>
