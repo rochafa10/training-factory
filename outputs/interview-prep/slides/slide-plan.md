@@ -193,50 +193,55 @@
 - **Type:** Content
 - **Image:** ../images/mechanism-framework--minimal.png
 - **Title:** Action: Build a Mechanism, Not Just a Fix
+- **Quote:** "Good intentions never work, you need good mechanisms to make anything happen." — Jeff Bezos
 - **Bullets:**
-  - **Deliver** — You personally diagnose and fix the immediate problem
-  - **Teach** — You build your team's capability so they can sustain the fix without you
-  - **Scale** — You partner across teams and sites to multiply the impact
-  - The interviewer hears: "This person builds lasting solutions, not band-aids."
+  - **Tool** — The structural thing you built: a process, dashboard, checklist, or meeting cadence
+  - **Ownership** — A specific person accountable for the mechanism after you leave
+  - **Adoption** — Broad implementation, not just you using it — teams, sites, the organization
+  - **Inspection** — Regular auditing and course correction: metrics, reviews, continuous improvement
+  - The interviewer hears: "This person builds systems, not heroics."
 
 ---
 
 ## Slide 17
 - **Type:** Comparison
-- **Title:** Band-Aid vs. Mechanism
+- **Title:** Good Intentions vs. Mechanism
 - **Left Column:**
-  - **Header:** Band-Aid (Deliver Only)
-  - "I added 3 associates to the pack line during peak hours."
-  - Problem recurs when you leave or staffing changes
-  - Shows effort, but not leadership depth
+  - **Header:** Good Intentions (Heroics)
+  - "I personally stayed late to check every order before it shipped."
+  - Depends on your presence — collapses when you leave
+  - Shows effort, but not systems thinking
 - **Right Column:**
-  - **Header:** Mechanism (Deliver + Teach + Scale)
-  - Deliver: "I restructured the pack station staffing model"
-  - Teach: "I trained 2 shift leads to run the daily capacity review"
-  - Scale: "I partnered with Greenville and Tampa DCs to pilot across 3 sites"
+  - **Header:** Mechanism (Tool + Own + Adopt + Inspect)
+  - Tool: "I built a daily capacity dashboard that flags bottlenecks by hour"
+  - Ownership: "I assigned 2 shift leads as dashboard owners with escalation rules"
+  - Adoption: "Rolled out across 3 DCs — Greenville, Tampa, and Chicago"
+  - Inspection: "Weekly ops review audits the dashboard; leads course-correct same day"
 
 ---
 
 ## Slide 18
 - **Type:** Content
 - **Image:** ../images/pyramid-principle--minimal.png
-- **Title:** Result: Lead with the Headline (Pyramid Principle)
+- **Title:** Action: Peel the Onion (Pyramid Principle)
 - **Bullets:**
-  - **Headline first:** The single most impressive outcome
-  - **Evidence:** 2-3 supporting data points that prove the headline
-  - **So-what:** Why it mattered to the business (dollars, adoption, recognition)
-  - Anti-pattern: "Eventually things got better and we hit our targets." (buries the lead)
+  - Start with the answer: state WHAT you did in one sentence, then peel layers deeper
+  - **Layer 1 — Governing Thought:** The single sentence that captures your entire action
+  - **Layer 2 — Key Pillars (MECE):** 2-3 non-overlapping action areas that fully cover what you did
+  - **Layer 3 — Evidence:** Specific details under each pillar (data, tools, people, timelines)
+  - Anti-pattern: chronological brain dump — "First I... then I... then I..." (interviewer gets lost)
 
 ---
 
 ## Slide 19
 - **Type:** Content
-- **Title:** Pyramid Principle in Action
+- **Title:** Peeling the Onion — Worked Example
 - **Content:**
-  - Headline: "Within 6 weeks, on-time delivery went from 78% to 96%."
-  - Evidence: "Pack rate up 28%. Overtime reduced 40%. Error rate dropped from 3.1% to 0.8%."
-  - So-what: "Saved $180K in annual overtime costs. Model adopted by 2 other DCs."
-  - Compare with weak: "Eventually things got better and we hit our targets."
+  - Governing thought: "I redesigned the pack-station workflow and staffing model across 3 sites."
+  - Pillar 1 — Diagnosed: "Analyzed 4 weeks of shift data, identified a 2-hour bottleneck window"
+  - Pillar 2 — Redesigned: "Restructured staffing to add 3 associates during peak, implemented 15-min shift overlaps"
+  - Pillar 3 — Scaled: "Trained 2 shift leads to run the model, partnered with Greenville and Tampa to pilot"
+  - Compare with weak chronological: "First I looked at data, then I talked to leads, then I moved people around..."
 
 ---
 

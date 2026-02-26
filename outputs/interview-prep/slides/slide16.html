@@ -7,17 +7,18 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
     .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
-    .container { padding: 28px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
-    h1 { font-size: 26px; font-weight: bold; margin-bottom: 6px; }
-    .subtitle { font-size: 14px; color: #666; margin-bottom: 16px; font-style: italic; }
+    .container { padding: 24px 40px 18px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 4px; }
+    .quote { font-size: 12.5px; color: #666; margin-bottom: 14px; font-style: italic; border-left: 3px solid #cc0000; padding-left: 10px; }
+    .quote strong { color: #000; font-style: normal; }
     .split-layout { display: flex; gap: 20px; flex: 1; }
     .text-col { flex: 55; display: flex; flex-direction: column; }
     .image-col { flex: 45; display: flex; align-items: center; justify-content: center; }
-    .image-col img { max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px; }
-    .layer { background: #f5f5f5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; border-left: 4px solid #cc0000; }
-    .layer-name { font-size: 15px; font-weight: bold; color: #cc0000; }
-    .layer-desc { font-size: 13px; color: #333; margin-top: 4px; }
-    .takeaway { font-size: 13px; color: #666; margin-top: auto; padding-top: 8px; border-top: 1px solid #eee; }
+    .image-col img { max-width: 100%; max-height: 380px; object-fit: contain; border-radius: 8px; }
+    .layer { background: #f5f5f5; border-radius: 8px; padding: 11px 14px; margin-bottom: 8px; border-left: 4px solid #cc0000; }
+    .layer-name { font-size: 14px; font-weight: bold; color: #cc0000; }
+    .layer-desc { font-size: 12.5px; color: #333; margin-top: 3px; line-height: 1.35; }
+    .takeaway { font-size: 12.5px; color: #666; margin-top: auto; padding-top: 6px; border-top: 1px solid #eee; }
     .takeaway strong { color: #000; }
   </style>
 </head>
@@ -25,25 +26,29 @@
   <div class="accent-bar"></div>
   <div class="container">
     <h1>Action: Build a Mechanism, Not Just a Fix</h1>
-    <p class="subtitle">Great leaders don&rsquo;t just solve &mdash; they build mechanisms with 3 layers</p>
+    <div class="quote">&ldquo;Good intentions never work, you need good mechanisms to make anything happen.&rdquo; &mdash; <strong>Jeff Bezos</strong></div>
     <div class="split-layout">
       <div class="text-col">
         <div class="layer">
-          <div class="layer-name">1. DELIVER</div>
-          <div class="layer-desc">You personally diagnose and fix the immediate problem</div>
+          <div class="layer-name">TOOL</div>
+          <div class="layer-desc">The structural thing you built: a process, dashboard, checklist, or meeting cadence</div>
         </div>
         <div class="layer">
-          <div class="layer-name">2. TEACH</div>
-          <div class="layer-desc">You build your team&rsquo;s capability so they can sustain the fix without you</div>
+          <div class="layer-name">OWNERSHIP</div>
+          <div class="layer-desc">A specific person accountable for the mechanism after you leave</div>
         </div>
         <div class="layer">
-          <div class="layer-name">3. SCALE</div>
-          <div class="layer-desc">You partner across teams and sites to multiply the impact</div>
+          <div class="layer-name">ADOPTION</div>
+          <div class="layer-desc">Broad implementation &mdash; not just you using it. Teams, sites, the organization.</div>
         </div>
-        <p class="takeaway"><strong>The interviewer hears:</strong> &ldquo;This person builds lasting solutions, not band-aids.&rdquo;</p>
+        <div class="layer">
+          <div class="layer-name">INSPECTION</div>
+          <div class="layer-desc">Regular auditing and course correction: metrics, reviews, continuous improvement</div>
+        </div>
+        <p class="takeaway"><strong>The interviewer hears:</strong> &ldquo;This person builds systems, not heroics.&rdquo;</p>
       </div>
       <div class="image-col">
-        <img src="../images/mechanism-framework--minimal.png" alt="Mechanism Framework: Deliver, Teach, Scale">
+        <img src="../images/mechanism-framework--minimal.png" alt="Mechanism Framework: Tool, Ownership, Adoption, Inspection">
       </div>
     </div>
   </div>
