@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 18 - Result: Lead with the Headline</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
+    .container { padding: 28px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 26px; font-weight: bold; margin-bottom: 6px; }
+    .subtitle { font-size: 14px; color: #666; margin-bottom: 16px; font-style: italic; }
+    .split-layout { display: flex; gap: 20px; flex: 1; }
+    .text-col { flex: 55; display: flex; flex-direction: column; }
+    .image-col { flex: 45; display: flex; align-items: center; justify-content: center; }
+    .image-col img { max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px; }
+    .layer { background: #f5f5f5; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; border-left: 4px solid #cc0000; }
+    .layer-name { font-size: 15px; font-weight: bold; color: #cc0000; }
+    .layer-desc { font-size: 13px; color: #333; margin-top: 4px; }
+    .anti { font-size: 12px; color: #999; margin-top: auto; padding-top: 8px; }
+    .anti strong { color: #dc2626; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Result: Lead with the Headline</h1>
+    <p class="subtitle">Don&rsquo;t build up &mdash; lead with impact, then prove it (Pyramid Principle)</p>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="layer">
+          <div class="layer-name">HEADLINE</div>
+          <div class="layer-desc">The single most impressive outcome: &ldquo;Throughput increased 22% in 6 weeks&rdquo;</div>
+        </div>
+        <div class="layer">
+          <div class="layer-name">EVIDENCE</div>
+          <div class="layer-desc">2&ndash;3 supporting data points that prove the headline</div>
+        </div>
+        <div class="layer">
+          <div class="layer-name">SO-WHAT</div>
+          <div class="layer-desc">Why it mattered to the business: dollars saved, model adopted, recognition earned</div>
+        </div>
+        <p class="anti"><strong>&#10007; Anti-pattern:</strong> &ldquo;Eventually things got better and we hit our targets.&rdquo; (buries the lead)</p>
+      </div>
+      <div class="image-col">
+        <img src="../images/pyramid-principle--minimal.png" alt="Pyramid Principle: Headline, Evidence, So-What">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

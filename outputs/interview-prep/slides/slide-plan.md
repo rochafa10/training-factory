@@ -1,6 +1,6 @@
 # Slide Plan — Interview Preparation: ACE Your Interview
 
-**Total slides:** 34
+**Total slides:** 43
 **Source:** inputs/interview-requirements.md
 **Theme:** Tesla light (#ffffff bg, #cc0000 accent)
 **Duration:** ~90 minutes of presentation content
@@ -167,6 +167,80 @@
 ---
 
 ## Slide 14
+- **Type:** Content
+- **Image:** ../images/metric-gap--minimal.png
+- **Title:** Situation: Frame It as a Metric Gap
+- **Bullets:**
+  - Always anchor your Situation in a number: "Target was X, we were at Y"
+  - The gap IS the story — it creates urgency and makes the interviewer lean in
+  - Quantify the duration: how long has the gap persisted?
+  - Strong: "Our DC's on-time delivery target was 95%. We'd been running at 78% for 6 weeks."
+  - Weak: "We had some issues with delivery."
+
+---
+
+## Slide 15
+- **Type:** Grid
+- **Title:** Metric Gap Templates
+- **Cards:**
+  - THROUGHPUT | Target: 1,200 units/shift. Actual: 940. Gap: 22% below target.
+  - TURNOVER | Benchmark: 15% annual. Our site: 34%. Gap: 2.3x above target.
+  - SAFETY | Goal: 0 recordable incidents. YTD Q1: 4 incidents. Gap: 3x prior year.
+
+---
+
+## Slide 16
+- **Type:** Content
+- **Image:** ../images/mechanism-framework--minimal.png
+- **Title:** Action: Build a Mechanism, Not Just a Fix
+- **Bullets:**
+  - **Deliver** — You personally diagnose and fix the immediate problem
+  - **Teach** — You build your team's capability so they can sustain the fix without you
+  - **Scale** — You partner across teams and sites to multiply the impact
+  - The interviewer hears: "This person builds lasting solutions, not band-aids."
+
+---
+
+## Slide 17
+- **Type:** Comparison
+- **Title:** Band-Aid vs. Mechanism
+- **Left Column:**
+  - **Header:** Band-Aid (Deliver Only)
+  - "I added 3 associates to the pack line during peak hours."
+  - Problem recurs when you leave or staffing changes
+  - Shows effort, but not leadership depth
+- **Right Column:**
+  - **Header:** Mechanism (Deliver + Teach + Scale)
+  - Deliver: "I restructured the pack station staffing model"
+  - Teach: "I trained 2 shift leads to run the daily capacity review"
+  - Scale: "I partnered with Greenville and Tampa DCs to pilot across 3 sites"
+
+---
+
+## Slide 18
+- **Type:** Content
+- **Image:** ../images/pyramid-principle--minimal.png
+- **Title:** Result: Lead with the Headline (Pyramid Principle)
+- **Bullets:**
+  - **Headline first:** The single most impressive outcome
+  - **Evidence:** 2-3 supporting data points that prove the headline
+  - **So-what:** Why it mattered to the business (dollars, adoption, recognition)
+  - Anti-pattern: "Eventually things got better and we hit our targets." (buries the lead)
+
+---
+
+## Slide 19
+- **Type:** Content
+- **Title:** Pyramid Principle in Action
+- **Content:**
+  - Headline: "Within 6 weeks, on-time delivery went from 78% to 96%."
+  - Evidence: "Pack rate up 28%. Overtime reduced 40%. Error rate dropped from 3.1% to 0.8%."
+  - So-what: "Saved $180K in annual overtime costs. Model adopted by 2 other DCs."
+  - Compare with weak: "Eventually things got better and we hit our targets."
+
+---
+
+## Slide 20
 - **Type:** Comparison
 - **Title:** Strong STAR vs. Weak STAR
 - **Left Column:**
@@ -185,7 +259,7 @@
 
 ---
 
-## Slide 15
+## Slide 21
 - **Type:** Content
 - **Image:** ../images/star-mistakes--minimal.png
 - **Title:** The 5 Most Common STAR Mistakes
@@ -198,7 +272,7 @@
 
 ---
 
-## Slide 16
+## Slide 22
 - **Type:** Content
 - **Title:** Build Your STAR Story Bank
 - **Bullets:**
@@ -210,7 +284,7 @@
 
 ---
 
-## Slide 17
+## Slide 23
 - **Type:** Grid
 - **Image:** ../images/story-bank-themes--minimal.png
 - **Title:** Story Bank — Cover These 6 Themes
@@ -224,7 +298,7 @@
 
 ---
 
-## Slide 18
+## Slide 24
 - **Type:** Exercise
 - **Badge:** Practice 2
 - **Title:** Build Your First STAR Story
@@ -243,7 +317,7 @@
 
 ---
 
-## Slide 19
+## Slide 25
 - **Type:** Divider
 - **Section:** 4
 - **Title:** Strengths & Weaknesses
@@ -251,7 +325,7 @@
 
 ---
 
-## Slide 20
+## Slide 26
 - **Type:** Content
 - **Image:** ../images/strengths-weaknesses-why--minimal.png
 - **Title:** Why They Ask About Strengths & Weaknesses
@@ -264,7 +338,7 @@
 
 ---
 
-## Slide 21
+## Slide 27
 - **Type:** Content
 - **Image:** ../images/strengths-framework--minimal.png
 - **Title:** The Strengths Framework: Strength → Evidence → Relevance
@@ -277,7 +351,7 @@
 
 ---
 
-## Slide 22
+## Slide 28
 - **Type:** Comparison
 - **Title:** Strength Answers — What Works vs. What Doesn't
 - **Left Column:**
@@ -294,7 +368,7 @@
 
 ---
 
-## Slide 23
+## Slide 29
 - **Type:** Content
 - **Image:** ../images/weakness-framework--minimal.png
 - **Title:** The Weakness Framework: Honest → Actions → Progress
@@ -307,7 +381,7 @@
 
 ---
 
-## Slide 24
+## Slide 30
 - **Type:** Comparison
 - **Title:** Weakness Answers — What Works vs. What Doesn't
 - **Left Column:**
@@ -324,7 +398,7 @@
 
 ---
 
-## Slide 25
+## Slide 31
 - **Type:** Divider
 - **Section:** 5
 - **Title:** "Why This Position?" & "Why Now?"
@@ -332,7 +406,7 @@
 
 ---
 
-## Slide 26
+## Slide 32
 - **Type:** Content
 - **Image:** ../images/why-framework--minimal.png
 - **Title:** The 3-Part "Why" Framework
@@ -345,7 +419,7 @@
 
 ---
 
-## Slide 27
+## Slide 33
 - **Type:** Comparison
 - **Title:** "Why This Position?" — Flat vs. Compelling
 - **Left Column:**
@@ -360,7 +434,7 @@
 
 ---
 
-## Slide 28
+## Slide 34
 - **Type:** Content
 - **Title:** "Why Now?" — Framing Transitions Positively
 - **Bullets:**
@@ -372,7 +446,7 @@
 
 ---
 
-## Slide 29
+## Slide 35
 - **Type:** Divider
 - **Section:** 6
 - **Title:** Additional Frameworks
@@ -380,7 +454,7 @@
 
 ---
 
-## Slide 30
+## Slide 36
 - **Type:** Grid
 - **Image:** ../images/frameworks-comparison--minimal.png
 - **Title:** Framework Quick Reference — CAR, PAR, SOAR
@@ -391,7 +465,7 @@
 
 ---
 
-## Slide 31
+## Slide 37
 - **Type:** Content
 - **Image:** ../images/framework-decision--minimal.png
 - **Title:** When to Use Which Framework
@@ -405,7 +479,7 @@
 
 ---
 
-## Slide 32
+## Slide 38
 - **Type:** Divider
 - **Section:** 7
 - **Title:** The Two-Way Interview
@@ -413,7 +487,7 @@
 
 ---
 
-## Slide 33
+## Slide 39
 - **Type:** Content
 - **Image:** ../images/two-way-interview--minimal.png
 - **Title:** You're Evaluating Them Too
@@ -426,7 +500,7 @@
 
 ---
 
-## Slide 34
+## Slide 40
 - **Type:** Content
 - **Image:** ../images/red-green-flags--minimal.png
 - **Title:** Red Flags & Green Flags in an Employer
@@ -439,7 +513,7 @@
 
 ---
 
-## Slide 35
+## Slide 41
 - **Type:** Divider
 - **Section:** 8
 - **Title:** Putting It All Together
@@ -447,7 +521,7 @@
 
 ---
 
-## Slide 36
+## Slide 42
 - **Type:** Content
 - **Image:** ../images/prep-checklist--minimal.png
 - **Title:** Your 48-Hour Interview Prep Checklist
@@ -461,7 +535,7 @@
 
 ---
 
-## Slide 37
+## Slide 43
 - **Type:** Summary
 - **Image:** ../images/key-takeaways--minimal.png
 - **Title:** Key Takeaways
@@ -481,27 +555,27 @@
 | Title + Agenda | 2 | 01-02 |
 | Section 1: Why Interview Skills Matter | 2 | 03-05 |
 | Section 2: The ACE Framework | 4 | 06-10 |
-| Section 3: The STAR Method | 7 | 11-18 |
-| Section 4: Strengths & Weaknesses | 5 | 19-24 |
-| Section 5: Why This Position / Why Now | 3 | 25-28 |
-| Section 6: Additional Frameworks | 2 | 29-31 |
-| Section 7: The Two-Way Interview | 2 | 32-34 |
-| Section 8: Putting It Together | 2 | 35-37 |
-| **TOTAL** | **37** | |
+| Section 3: The STAR Method | 14 | 11-24 |
+| Section 4: Strengths & Weaknesses | 5 | 25-30 |
+| Section 5: Why This Position / Why Now | 3 | 31-34 |
+| Section 6: Additional Frameworks | 2 | 35-37 |
+| Section 7: The Two-Way Interview | 2 | 38-40 |
+| Section 8: Putting It Together | 2 | 41-43 |
+| **TOTAL** | **43** | |
 
 **Slide Type Distribution:**
 - Title: 1
 - Agenda: 1
 - Divider: 8
-- Content: 14
-- Comparison: 5
-- Grid: 5
+- Content: 17
+- Comparison: 6
+- Grid: 6
 - Exercise: 2
 - Summary: 1
 
 ## Visual Density
 
-**Slides with images:** 19 / 37 = **51.4%** (PASS -- >=50%)
+**Slides with images:** 22 / 43 = **51.2%** (PASS -- >=50%)
 
 | Slide | Visual Type | Image File |
 |-------|-------------|------------|
@@ -512,15 +586,18 @@
 | 09 | Teaching Diagram | ../images/ace-comparison--minimal.png |
 | 12 | Teaching Diagram | ../images/star-framework--minimal.png |
 | 13 | Chart | ../images/star-time-split--chart.png |
-| 15 | Teaching Diagram | ../images/star-mistakes--minimal.png |
-| 17 | Teaching Diagram | ../images/story-bank-themes--minimal.png |
-| 20 | Teaching Diagram | ../images/strengths-weaknesses-why--minimal.png |
-| 21 | Teaching Diagram | ../images/strengths-framework--minimal.png |
-| 23 | Teaching Diagram | ../images/weakness-framework--minimal.png |
-| 26 | Teaching Diagram | ../images/why-framework--minimal.png |
-| 30 | Teaching Diagram | ../images/frameworks-comparison--minimal.png |
-| 31 | Teaching Diagram | ../images/framework-decision--minimal.png |
-| 33 | Teaching Diagram | ../images/two-way-interview--minimal.png |
-| 34 | Teaching Diagram | ../images/red-green-flags--minimal.png |
-| 36 | Infographic | ../images/prep-checklist--minimal.png |
-| 37 | Infographic | ../images/key-takeaways--minimal.png |
+| 14 | Teaching Diagram | ../images/metric-gap--minimal.png |
+| 16 | Teaching Diagram | ../images/mechanism-framework--minimal.png |
+| 18 | Teaching Diagram | ../images/pyramid-principle--minimal.png |
+| 21 | Teaching Diagram | ../images/star-mistakes--minimal.png |
+| 23 | Teaching Diagram | ../images/story-bank-themes--minimal.png |
+| 26 | Teaching Diagram | ../images/strengths-weaknesses-why--minimal.png |
+| 27 | Teaching Diagram | ../images/strengths-framework--minimal.png |
+| 29 | Teaching Diagram | ../images/weakness-framework--minimal.png |
+| 32 | Teaching Diagram | ../images/why-framework--minimal.png |
+| 36 | Teaching Diagram | ../images/frameworks-comparison--minimal.png |
+| 37 | Teaching Diagram | ../images/framework-decision--minimal.png |
+| 39 | Teaching Diagram | ../images/two-way-interview--minimal.png |
+| 40 | Teaching Diagram | ../images/red-green-flags--minimal.png |
+| 42 | Infographic | ../images/prep-checklist--minimal.png |
+| 43 | Infographic | ../images/key-takeaways--minimal.png |

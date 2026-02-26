@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide 15 - Metric Gap Templates</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 960px; height: 540px; background: #ffffff; color: #000000; font-family: Arial, sans-serif; position: relative; overflow: hidden; }
+    .accent-bar { position: absolute; left: 0; top: 0; width: 8px; height: 100%; background: #cc0000; }
+    .container { padding: 28px 40px 20px 48px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 28px; font-weight: bold; margin-bottom: 24px; }
+    .cards { display: flex; gap: 20px; flex: 1; }
+    .card { flex: 1; background: #f5f5f5; border-radius: 12px; padding: 24px 20px; display: flex; flex-direction: column; border-top: 4px solid #cc0000; }
+    .card-label { font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; color: #cc0000; margin-bottom: 16px; }
+    .metric-row { margin-bottom: 12px; }
+    .metric-key { font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+    .metric-val { font-size: 20px; font-weight: bold; margin-top: 2px; }
+    .metric-val.target { color: #16a34a; }
+    .metric-val.actual { color: #dc2626; }
+    .metric-val.gap { color: #cc0000; }
+    .gap-row { border-top: 2px solid #cc0000; padding-top: 12px; margin-top: auto; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h1>Metric Gap Templates</h1>
+    <div class="cards">
+      <div class="card">
+        <span class="card-label">Throughput</span>
+        <div class="metric-row"><div class="metric-key">Target</div><div class="metric-val target">1,200 units/shift</div></div>
+        <div class="metric-row"><div class="metric-key">Actual</div><div class="metric-val actual">940 units/shift</div></div>
+        <div class="metric-row gap-row"><div class="metric-key">Gap</div><div class="metric-val gap">22% below target</div></div>
+      </div>
+      <div class="card">
+        <span class="card-label">Turnover</span>
+        <div class="metric-row"><div class="metric-key">Benchmark</div><div class="metric-val target">15% annual</div></div>
+        <div class="metric-row"><div class="metric-key">Our Site</div><div class="metric-val actual">34% annual</div></div>
+        <div class="metric-row gap-row"><div class="metric-key">Gap</div><div class="metric-val gap">2.3x above target</div></div>
+      </div>
+      <div class="card">
+        <span class="card-label">Safety</span>
+        <div class="metric-row"><div class="metric-key">Goal</div><div class="metric-val target">0 recordable incidents</div></div>
+        <div class="metric-row"><div class="metric-key">YTD (Q1)</div><div class="metric-val actual">4 incidents</div></div>
+        <div class="metric-row gap-row"><div class="metric-key">Gap</div><div class="metric-val gap">3x prior year trend</div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
