@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 33 - You're Evaluating Them Too</title>
+  <title>Slide 33 - Why This Position Comparison</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,133 +23,106 @@
       background: #cc0000;
     }
     .container {
-      padding: 28px 40px 20px 48px;
+      padding: 24px 36px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     h1 {
-      font-size: 30px;
+      font-size: 24px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 6px;
     }
-    .two-col {
+    .question-label {
+      font-size: 14px;
+      color: #666666;
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+    .columns {
       display: flex;
-      gap: 24px;
+      gap: 18px;
       flex: 1;
     }
-    .col-left {
+    .column {
       flex: 1;
-    }
-    .mindset-card {
       background: #f5f5f5;
       border-radius: 12px;
       padding: 18px;
-      margin-bottom: 14px;
-      border-left: 4px solid #cc0000;
-    }
-    .mindset-card p {
-      font-size: 13px;
-      color: #333333;
-      line-height: 1.5;
-    }
-    .col-right {
-      flex: 1;
-    }
-    .questions-header {
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #cc0000;
-      margin-bottom: 12px;
-    }
-    .question-list {
-      list-style: none;
-      padding: 0;
-    }
-    .question-list li {
-      font-size: 13px;
-      color: #333333;
-      padding: 8px 0;
-      border-bottom: 1px solid #e0e0e0;
-      line-height: 1.4;
-    }
-    .question-list li:last-child { border-bottom: none; }
-    .callout {
-      background: #f5f5f5;
-      border-radius: 8px;
-      padding: 12px 16px;
-      text-align: center;
-      margin-top: 12px;
-    }
-    .callout p {
-      font-size: 13px;
-      color: #666666;
-    }
-    .callout strong { color: #000000; }
-    .split-layout {
-      display: flex;
-      gap: 20px;
-      flex: 1;
-    }
-    .text-col {
-      flex: 55;
       display: flex;
       flex-direction: column;
     }
-    .image-col {
-      flex: 45;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .column.bad { border-top: 3px solid #f87171; }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column h2 {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
     }
-    .image-col img {
-      max-width: 100%;
-      max-height: 420px;
-      object-fit: contain;
-      border-radius: 8px;
+    .column.bad h2 { color: #f87171; }
+    .column.good h2 { color: #4ade80; }
+    .quote {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.6;
+      font-style: italic;
+      flex: 1;
+    }
+    .quote .label {
+      font-weight: bold;
+      color: #cc0000;
+      font-style: normal;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: block;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    .verdict {
+      margin-top: 12px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #16a34a;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>You&rsquo;re Evaluating Them Too</h1>
-    <div class="split-layout">
-      <div class="text-col">
-        <div class="two-col">
-          <div class="col-left">
-            <div class="mindset-card">
-              <p>The best interviews are <strong>conversations</strong>, not interrogations.</p>
-            </div>
-            <div class="mindset-card">
-              <p>You should leave knowing if this role is right for <strong>YOU</strong>.</p>
-            </div>
-            <div class="mindset-card">
-              <p>Asking smart questions signals <strong>confidence</strong> and <strong>preparation</strong>.</p>
-            </div>
-            <div class="mindset-card">
-              <p>Avoid questions you could Google &mdash; ask what only an <strong>insider</strong> would know.</p>
-            </div>
-          </div>
-          <div class="col-right">
-            <div class="questions-header">Questions to Ask Them</div>
-            <ul class="question-list">
-              <li>&ldquo;What does success look like in the first 90 days?&rdquo;</li>
-              <li>&ldquo;What&rsquo;s the biggest challenge the team is facing right now?&rdquo;</li>
-              <li>&ldquo;How is performance measured and rewarded?&rdquo;</li>
-              <li>&ldquo;What happened to the last person in this role?&rdquo;</li>
-              <li>&ldquo;What&rsquo;s one thing you&rsquo;d change about the team if you could?&rdquo;</li>
-            </ul>
-          </div>
+    <h1>&ldquo;Why This Position?&rdquo;</h1>
+    <p class="question-label">Flat vs. Compelling</p>
+    <div class="columns">
+      <div class="column bad">
+        <h2>Flat Answer</h2>
+        <div class="quote">
+          &ldquo;I think it would be a great opportunity. I&rsquo;ve always wanted to work at a bigger company and this seemed like a good next step.&rdquo;
         </div>
-        <div class="callout">
-          <p><strong>A good company will respect your questions.</strong> A red-flag company will be annoyed by them.</p>
-        </div>
+        <div class="verdict">No research, self-focused, interchangeable</div>
       </div>
-      <div class="image-col">
-        <img src="../images/two-way-interview--minimal.png" alt="You're Evaluating Them Too">
+      <div class="column good">
+        <h2>Compelling Answer</h2>
+        <div class="quote">
+          <span class="label">Company</span>
+          &ldquo;Tesla&rsquo;s mission to accelerate sustainable energy aligns with what I care about &mdash; I want my work to matter beyond the balance sheet.&rdquo;
+          <span class="label">Role</span>
+          &ldquo;This GM role manages the exact scale I&rsquo;ve been building toward &mdash; 40+ associates, multi-shift operations, direct P&amp;L ownership.&rdquo;
+          <span class="label">Timing</span>
+          &ldquo;I&rsquo;ve spent 3 years mastering AGM operations. I&rsquo;ve built the systems and now I&rsquo;m ready to own the full operation.&rdquo;
+        </div>
+        <div class="verdict">Researched, specific, shows career logic</div>
       </div>
     </div>
   </div>

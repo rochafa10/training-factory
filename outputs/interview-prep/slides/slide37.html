@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 37 - Key Takeaways</title>
+  <title>Slide 37 - When to Use Which Framework</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,88 +23,123 @@
       background: #cc0000;
     }
     .container {
-      padding: 28px 40px 24px 48px;
+      padding: 28px 40px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
-    .takeaways {
+    .matrix {
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 8px;
     }
-    .takeaway {
+    .matrix-row {
       display: flex;
       align-items: center;
-      gap: 20px;
       background: #f5f5f5;
-      border-radius: 10px;
-      padding: 16px 20px;
+      border-radius: 8px;
+      padding: 12px 20px;
+      gap: 20px;
     }
-    .takeaway-number {
-      font-size: 32px;
+    .matrix-fw {
+      font-size: 16px;
       font-weight: bold;
       color: #cc0000;
-      min-width: 40px;
-      text-align: center;
+      min-width: 60px;
     }
-    .takeaway-text {
-      font-size: 14px;
-      color: #333333;
-      line-height: 1.4;
-    }
-    .takeaway-text strong {
-      color: #000000;
-    }
-    .footer {
-      margin-top: 16px;
-      padding-top: 12px;
-      border-top: 1px solid #e0e0e0;
-      text-align: center;
-    }
-    .footer p {
+    .matrix-question {
+      flex: 1;
       font-size: 13px;
-      color: #666666;
-      line-height: 1.6;
+      color: #333333;
     }
-    .footer strong { color: #cc0000; }
+    .matrix-best {
+      font-size: 12px;
+      color: #666666;
+      width: 280px;
+      text-align: right;
+    }
+    .callout {
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 12px 20px;
+      margin-top: 12px;
+    }
+    .callout p {
+      font-size: 13px;
+      color: #333333;
+    }
+    .callout strong { color: #cc0000; }
+    .split-layout {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+    .text-col {
+      flex: 55;
+      display: flex;
+      flex-direction: column;
+    }
+    .image-col {
+      flex: 45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-col img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Key Takeaways</h1>
-    <img src="../images/key-takeaways--minimal.png" alt="Key Takeaways" style="max-width: 100%; max-height: 160px; object-fit: contain; border-radius: 8px; display: block; margin: 0 auto 12px auto;">
-    <div class="takeaways">
-      <div class="takeaway">
-        <span class="takeaway-number">1</span>
-        <span class="takeaway-text"><strong>ACE every direct question</strong> &mdash; Answer first, Cite evidence, Explain the connection</span>
+    <h1>When to Use Which Framework</h1>
+    <div class="split-layout">
+      <div class="text-col">
+        <div class="matrix">
+          <div class="matrix-row">
+            <span class="matrix-fw">ACE</span>
+            <span class="matrix-question">Direct questions, competency questions, &ldquo;Tell me about yourself&rdquo;</span>
+            <span class="matrix-best">60&ndash;90 sec, answer-first</span>
+          </div>
+          <div class="matrix-row">
+            <span class="matrix-fw">STAR</span>
+            <span class="matrix-question">Behavioral questions: &ldquo;Tell me about a time when...&rdquo;</span>
+            <span class="matrix-best">2&ndash;3 min, detailed story</span>
+          </div>
+          <div class="matrix-row">
+            <span class="matrix-fw">CAR</span>
+            <span class="matrix-question">Problem-solving: &ldquo;What&rsquo;s the biggest challenge...&rdquo;</span>
+            <span class="matrix-best">Lead with the challenge</span>
+          </div>
+          <div class="matrix-row">
+            <span class="matrix-fw">PAR</span>
+            <span class="matrix-question">Simple behavioral questions when STAR feels like overkill</span>
+            <span class="matrix-best">Shorter, situation = task</span>
+          </div>
+          <div class="matrix-row">
+            <span class="matrix-fw">SOAR</span>
+            <span class="matrix-question">Adversity &amp; resilience: &ldquo;Tell me about a setback...&rdquo;</span>
+            <span class="matrix-best">Emphasize the obstacle</span>
+          </div>
+        </div>
+        <div class="callout">
+          <p><strong>Pro tip:</strong> Most stories can be told in any framework. Pick the one that fits the question best.</p>
+        </div>
       </div>
-      <div class="takeaway">
-        <span class="takeaway-number">2</span>
-        <span class="takeaway-text"><strong>STAR is your go-to for behavioral questions</strong> &mdash; spend 60% on the Action</span>
+      <div class="image-col">
+        <img src="../images/framework-decision--minimal.png" alt="When to Use Which Framework">
       </div>
-      <div class="takeaway">
-        <span class="takeaway-number">3</span>
-        <span class="takeaway-text"><strong>Strengths &amp; Weaknesses</strong> are about self-awareness &mdash; use the frameworks, be authentic</span>
-      </div>
-      <div class="takeaway">
-        <span class="takeaway-number">4</span>
-        <span class="takeaway-text"><strong>It&rsquo;s a two-way street</strong> &mdash; evaluate the opportunity as much as they evaluate you</span>
-      </div>
-      <div class="takeaway">
-        <span class="takeaway-number">5</span>
-        <span class="takeaway-text"><strong>Preparation is the difference</strong> &mdash; the 48-hour checklist is your competitive advantage</span>
-      </div>
-    </div>
-    <div class="footer">
-      <p><strong>Go ACE those interviews.</strong> You have the frameworks. Now put in the reps.</p>
     </div>
   </div>
 </body>

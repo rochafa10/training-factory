@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 26 - The 3-Part Why Framework</title>
+  <title>Slide 26 - Why They Ask About Strengths and Weaknesses</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -33,55 +33,43 @@
       font-weight: bold;
       margin-bottom: 24px;
     }
-    .why-cards {
-      display: flex;
-      gap: 20px;
+    ul {
+      list-style: none;
+      padding: 0;
       flex: 1;
-      margin-bottom: 16px;
-    }
-    .why-card {
-      flex: 1;
-      background: #f5f5f5;
-      border-radius: 12px;
-      padding: 24px 20px;
-      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      border-top: 3px solid #cc0000;
+      justify-content: space-evenly;
     }
-    .why-icon {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-    .why-label {
-      font-size: 16px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-      color: #cc0000;
-    }
-    .why-question {
-      font-size: 13px;
+    ul li {
+      font-size: 14px;
       color: #333333;
+      padding: 8px 0 8px 24px;
+      position: relative;
       line-height: 1.5;
-      margin-bottom: 8px;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      background: #cc0000;
+      border-radius: 50%;
+    }
+    .callout {
+      background: #f5f5f5;
+      border-left: 4px solid #cc0000;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin-top: 8px;
+    }
+    .callout p {
+      font-size: 14px;
+      color: #333333;
       font-weight: bold;
     }
-    .why-desc {
-      font-size: 12px;
-      color: #666666;
-      line-height: 1.5;
-    }
-    .footer-note {
-      font-size: 13px;
-      color: #666666;
-      text-align: center;
-      padding-top: 12px;
-      border-top: 1px solid #e0e0e0;
-    }
-    .footer-note strong { color: #000000; }
     .split-layout {
       display: flex;
       gap: 20px;
@@ -109,30 +97,21 @@
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>The 3-Part &ldquo;Why&rdquo; Framework</h1>
+    <h1>Why They Ask About Strengths &amp; Weaknesses</h1>
     <div class="split-layout">
       <div class="text-col">
-        <div class="why-cards">
-          <div class="why-card">
-            <div class="why-label">Company</div>
-            <div class="why-question">Why THIS company?</div>
-            <div class="why-desc">What about this organization resonates with your values, mission, and goals? Show you&rsquo;ve done your research.</div>
-          </div>
-          <div class="why-card">
-            <div class="why-label">Role</div>
-            <div class="why-question">Why THIS role?</div>
-            <div class="why-desc">How does this specific position match your skills and career trajectory? Be specific about scope and responsibilities.</div>
-          </div>
-          <div class="why-card">
-            <div class="why-label">Timing</div>
-            <div class="why-question">Why NOW?</div>
-            <div class="why-desc">Why is this the right moment for this move? Show career progression logic, not desperation.</div>
-          </div>
+        <ul>
+          <li>It&rsquo;s NOT a trick question &mdash; interviewers want to see self-awareness</li>
+          <li><strong>Strengths:</strong> Do you know what makes you effective? Can you articulate it?</li>
+          <li><strong>Weaknesses:</strong> Do you have a growth mindset? Are you honest about limitations?</li>
+          <li>The framework matters more than the specific answer</li>
+        </ul>
+        <div class="callout">
+          <p>Authenticity beats rehearsed perfection every time.</p>
         </div>
-        <div class="footer-note"><strong>Research the company before the interview.</strong> Generic answers are immediately obvious.</div>
       </div>
       <div class="image-col">
-        <img src="../images/why-framework--minimal.png" alt="The 3-Part Why Framework">
+        <img src="../images/strengths-weaknesses-why--minimal.png" alt="Why They Ask About Strengths and Weaknesses">
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 34 - Red Flags and Green Flags</title>
+  <title>Slide 34 - Why Now Framing</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,110 +23,68 @@
       background: #cc0000;
     }
     .container {
-      padding: 28px 40px 20px 48px;
+      padding: 32px 40px 24px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     h1 {
-      font-size: 28px;
+      font-size: 30px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
-    .columns {
-      display: flex;
-      gap: 20px;
-      flex: 1;
-    }
-    .column {
-      flex: 1;
-      background: #f5f5f5;
-      border-radius: 12px;
-      padding: 20px;
-    }
-    .column.green { border-top: 3px solid #4ade80; }
-    .column.red { border-top: 3px solid #f87171; }
-    .column h2 {
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 16px;
-    }
-    .column.green h2 { color: #4ade80; }
-    .column.red h2 { color: #f87171; }
-    .flag-list {
+    ul {
       list-style: none;
       padding: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
     }
-    .flag-list li {
-      font-size: 13px;
+    ul li {
+      font-size: 14px;
       color: #333333;
       padding: 8px 0 8px 24px;
       position: relative;
-      line-height: 1.4;
-      border-bottom: 1px solid #e0e0e0;
+      line-height: 1.5;
     }
-    .flag-list li:last-child { border-bottom: none; }
-    .column.green .flag-list li::before {
-      content: '\2713';
+    ul li::before {
+      content: '';
       position: absolute;
       left: 0;
-      color: #4ade80;
-      font-weight: bold;
-      font-size: 14px;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      background: #cc0000;
+      border-radius: 50%;
     }
-    .column.red .flag-list li::before {
-      content: '\2717';
-      position: absolute;
-      left: 0;
-      color: #f87171;
-      font-weight: bold;
-      font-size: 14px;
-    }
+    ul li strong { color: #000000; }
     .callout {
       background: #f5f5f5;
-      border-left: 4px solid #cc0000;
+      border-left: 4px solid #4ade80;
       border-radius: 8px;
-      padding: 12px 20px;
-      margin-top: 14px;
+      padding: 14px 20px;
+      margin-top: 8px;
     }
     .callout p {
-      font-size: 13px;
+      font-size: 14px;
       color: #333333;
+      font-weight: bold;
     }
-    .callout strong { color: #cc0000; }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Red Flags &amp; Green Flags in an Employer</h1>
-    <img src="../images/red-green-flags--minimal.png" alt="Red Flags and Green Flags" style="max-width: 100%; max-height: 200px; object-fit: contain; border-radius: 8px; margin-bottom: 12px;">
-    <div class="columns">
-      <div class="column green">
-        <h2>Green Flags</h2>
-        <ul class="flag-list">
-          <li>Clear expectations for the role from day one</li>
-          <li>Defined growth path and development support</li>
-          <li>Team stability &mdash; low turnover, tenured managers</li>
-          <li>Honest about current challenges</li>
-          <li>Interviewer is engaged and asks follow-ups</li>
-        </ul>
-      </div>
-      <div class="column red">
-        <h2>Red Flags</h2>
-        <ul class="flag-list">
-          <li>Vague answers about the actual role and responsibilities</li>
-          <li>High turnover they can&rsquo;t explain</li>
-          <li>Rushing the interview process</li>
-          <li>Avoiding questions about culture or team dynamics</li>
-          <li>The role has been open for a suspiciously long time</li>
-        </ul>
-      </div>
-    </div>
+    <h1>&ldquo;Why Now?&rdquo; &mdash; Framing Transitions Positively</h1>
+    <ul>
+      <li><strong>NEVER</strong> badmouth your current employer or role</li>
+      <li>Frame as &ldquo;moving toward&rdquo; not &ldquo;running from&rdquo;</li>
+      <li>Show progression: &ldquo;I&rsquo;ve accomplished X, and now I&rsquo;m ready for the next challenge&rdquo;</li>
+      <li>If layoff/restructuring: &ldquo;The change gave me the opportunity to be intentional about my next step&rdquo;</li>
+    </ul>
     <div class="callout">
-      <p><strong>Trust your gut:</strong> If something feels off in the interview, it&rsquo;s usually worse on the inside.</p>
+      <p>Your &ldquo;why now&rdquo; should feel like the natural next chapter, not a desperate escape.</p>
     </div>
   </div>
 </body>

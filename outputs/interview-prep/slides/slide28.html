@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 28 - Why Now Framing</title>
+  <title>Slide 28 - Strength Answers Comparison</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,68 +23,87 @@
       background: #cc0000;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 28px 40px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     h1 {
-      font-size: 30px;
+      font-size: 26px;
       font-weight: bold;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .columns {
+      display: flex;
+      gap: 20px;
       flex: 1;
+    }
+    .column {
+      flex: 1;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
     }
-    ul li {
+    .column.bad { border-top: 3px solid #f87171; }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column h2 {
       font-size: 14px;
-      color: #333333;
-      padding: 8px 0 8px 24px;
-      position: relative;
-      line-height: 1.5;
-    }
-    ul li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 14px;
-      width: 8px;
-      height: 8px;
-      background: #cc0000;
-      border-radius: 50%;
-    }
-    ul li strong { color: #000000; }
-    .callout {
-      background: #f5f5f5;
-      border-left: 4px solid #4ade80;
-      border-radius: 8px;
-      padding: 14px 20px;
-      margin-top: 8px;
-    }
-    .callout p {
-      font-size: 14px;
-      color: #333333;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .column.bad h2 { color: #f87171; }
+    .column.good h2 { color: #4ade80; }
+    .quote {
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .verdict {
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #16a34a;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>&ldquo;Why Now?&rdquo; &mdash; Framing Transitions Positively</h1>
-    <ul>
-      <li><strong>NEVER</strong> badmouth your current employer or role</li>
-      <li>Frame as &ldquo;moving toward&rdquo; not &ldquo;running from&rdquo;</li>
-      <li>Show progression: &ldquo;I&rsquo;ve accomplished X, and now I&rsquo;m ready for the next challenge&rdquo;</li>
-      <li>If layoff/restructuring: &ldquo;The change gave me the opportunity to be intentional about my next step&rdquo;</li>
-    </ul>
-    <div class="callout">
-      <p>Your &ldquo;why now&rdquo; should feel like the natural next chapter, not a desperate escape.</p>
+    <h1>Strength Answers &mdash; What Works vs. What Doesn&rsquo;t</h1>
+    <div class="columns">
+      <div class="column bad">
+        <h2>Generic / Weak</h2>
+        <div class="quote">
+          &ldquo;I&rsquo;m a hard worker and a people person.&rdquo;<br><br>
+          &ldquo;I&rsquo;m detail-oriented.&rdquo;<br><br>
+          &ldquo;I never give up.&rdquo;
+        </div>
+        <div class="verdict">No proof, sounds rehearsed, could be anyone</div>
+      </div>
+      <div class="column good">
+        <h2>Framework / Strong</h2>
+        <div class="quote">
+          &ldquo;My strength is operational problem-solving. At my Tampa DC, I noticed our pack rate was declining every Thursday. I dug into the data, found it correlated with a specific associate rotation pattern, and restructured the Thursday schedule. Pack rate went up 14%.&rdquo;<br><br>
+          &ldquo;That&rsquo;s the kind of analytical approach I&rsquo;d bring to this GM role &mdash; using data to find and fix hidden patterns.&rdquo;
+        </div>
+        <div class="verdict">Specific, proven, connected to the role</div>
+      </div>
     </div>
   </div>
 </body>

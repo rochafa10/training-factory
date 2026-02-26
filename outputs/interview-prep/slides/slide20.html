@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 20 - Why They Ask About Strengths and Weaknesses</title>
+  <title>Slide 20 - Strong STAR vs Weak STAR</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,95 +23,120 @@
       background: #cc0000;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 24px 36px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     h1 {
-      font-size: 30px;
+      font-size: 26px;
       font-weight: bold;
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      flex: 1;
+    .columns {
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      gap: 16px;
+      flex: 1;
     }
-    ul li {
-      font-size: 14px;
-      color: #333333;
-      padding: 8px 0 8px 24px;
-      position: relative;
-      line-height: 1.5;
-    }
-    ul li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 14px;
-      width: 8px;
-      height: 8px;
-      background: #cc0000;
-      border-radius: 50%;
-    }
-    .callout {
+    .column {
+      flex: 1;
       background: #f5f5f5;
-      border-left: 4px solid #cc0000;
-      border-radius: 8px;
-      padding: 14px 20px;
-      margin-top: 8px;
-    }
-    .callout p {
-      font-size: 14px;
-      color: #333333;
-      font-weight: bold;
-    }
-    .split-layout {
-      display: flex;
-      gap: 20px;
-      flex: 1;
-    }
-    .text-col {
-      flex: 55;
+      border-radius: 12px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
     }
-    .image-col {
-      flex: 45;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .column.bad { border-top: 3px solid #f87171; }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column h2 {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
     }
-    .image-col img {
-      max-width: 100%;
-      max-height: 420px;
-      object-fit: contain;
-      border-radius: 8px;
+    .column.bad h2 { color: #f87171; }
+    .column.good h2 { color: #4ade80; }
+    .star-item {
+      padding: 5px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .star-item:last-child { border-bottom: none; }
+    .star-item-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #cc0000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .star-item-text {
+      font-size: 12px;
+      color: #333333;
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+    .verdict {
+      margin-top: auto;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #16a34a;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Why They Ask About Strengths &amp; Weaknesses</h1>
-    <div class="split-layout">
-      <div class="text-col">
-        <ul>
-          <li>It&rsquo;s NOT a trick question &mdash; interviewers want to see self-awareness</li>
-          <li><strong>Strengths:</strong> Do you know what makes you effective? Can you articulate it?</li>
-          <li><strong>Weaknesses:</strong> Do you have a growth mindset? Are you honest about limitations?</li>
-          <li>The framework matters more than the specific answer</li>
-        </ul>
-        <div class="callout">
-          <p>Authenticity beats rehearsed perfection every time.</p>
+    <h1>Strong STAR vs. Weak STAR</h1>
+    <div class="columns">
+      <div class="column bad">
+        <h2>Weak STAR</h2>
+        <div class="star-item">
+          <span class="star-item-label">S</span>
+          <p class="star-item-text">&ldquo;We had a problem at the warehouse&rdquo;</p>
         </div>
+        <div class="star-item">
+          <span class="star-item-label">T</span>
+          <p class="star-item-text">&ldquo;I had to fix it&rdquo;</p>
+        </div>
+        <div class="star-item">
+          <span class="star-item-label">A</span>
+          <p class="star-item-text">&ldquo;We all worked together and figured it out&rdquo;</p>
+        </div>
+        <div class="star-item">
+          <span class="star-item-label">R</span>
+          <p class="star-item-text">&ldquo;It worked out fine&rdquo;</p>
+        </div>
+        <div class="verdict">Vague, uses &ldquo;we&rdquo; not &ldquo;I&rdquo;, no metrics</div>
       </div>
-      <div class="image-col">
-        <img src="../images/strengths-weaknesses-why--minimal.png" alt="Why They Ask About Strengths and Weaknesses">
+      <div class="column good">
+        <h2>Strong STAR</h2>
+        <div class="star-item">
+          <span class="star-item-label">S</span>
+          <p class="star-item-text">&ldquo;In Q3, our Greenville DC was running 15% behind on daily ship targets for 3 consecutive weeks&rdquo;</p>
+        </div>
+        <div class="star-item">
+          <span class="star-item-label">T</span>
+          <p class="star-item-text">&ldquo;As AGM, I was responsible for diagnosing root cause and getting us back on track&rdquo;</p>
+        </div>
+        <div class="star-item">
+          <span class="star-item-label">A</span>
+          <p class="star-item-text">&ldquo;I analyzed shift data, identified a pack station bottleneck, added 3 associates during peak, implemented 15-min shift overlaps&rdquo;</p>
+        </div>
+        <div class="star-item">
+          <span class="star-item-label">R</span>
+          <p class="star-item-text">&ldquo;Hit 102% of target in 2 weeks. The overlap model was adopted by 2 other DCs&rdquo;</p>
+        </div>
+        <div class="verdict">Specific, quantified, shows individual contribution</div>
       </div>
     </div>
   </div>

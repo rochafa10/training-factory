@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Slide 30 - Framework Quick Reference CAR PAR SOAR</title>
+  <title>Slide 30 - Weakness Answers Comparison</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,115 +23,134 @@
       background: #cc0000;
     }
     .container {
-      padding: 32px 40px 24px 48px;
+      padding: 24px 36px 20px 48px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     h1 {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: bold;
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
-    .framework-cards {
+    .columns {
       display: flex;
-      gap: 20px;
+      gap: 18px;
       flex: 1;
     }
-    .fw-card {
+    .column {
       flex: 1;
       background: #f5f5f5;
       border-radius: 12px;
-      padding: 24px 20px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
-      border-top: 3px solid #cc0000;
     }
-    .fw-name {
-      font-size: 32px;
-      font-weight: bold;
-      color: #cc0000;
-      margin-bottom: 8px;
-      text-align: center;
-    }
-    .fw-formula {
+    .column.bad { border-top: 3px solid #f87171; }
+    .column.good { border-top: 3px solid #4ade80; }
+    .column h2 {
       font-size: 13px;
       font-weight: bold;
-      text-align: center;
-      margin-bottom: 16px;
-      color: #333333;
-    }
-    .fw-best {
-      font-size: 12px;
-      color: #666666;
-      line-height: 1.5;
-      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
       margin-bottom: 12px;
-      flex: 1;
     }
-    .fw-example {
-      background: #eeeeee;
-      border-radius: 8px;
-      padding: 10px 12px;
-      font-size: 11px;
-      color: #666666;
-      text-align: center;
-      line-height: 1.4;
-    }
-    .fw-example strong { color: #333333; }
-    .split-layout {
-      display: flex;
-      gap: 20px;
-      flex: 1;
-    }
-    .text-col {
-      flex: 55;
-      display: flex;
-      flex-direction: column;
-    }
-    .image-col {
-      flex: 45;
+    .column.bad h2 { color: #f87171; }
+    .column.good h2 { color: #4ade80; }
+    .bad-item {
+      font-size: 13px;
+      color: #333333;
+      padding: 6px 0;
+      border-bottom: 1px solid #e0e0e0;
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 8px;
     }
-    .image-col img {
-      max-width: 100%;
-      max-height: 420px;
-      object-fit: contain;
-      border-radius: 8px;
+    .bad-item:last-child { border-bottom: none; }
+    .bad-icon { color: #f87171; font-weight: bold; }
+    .bad-label {
+      font-size: 11px;
+      color: #f87171;
+      font-style: italic;
+    }
+    .good-section {
+      margin-bottom: 8px;
+    }
+    .good-label {
+      font-size: 11px;
+      font-weight: bold;
+      color: #4ade80;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .good-text {
+      font-size: 12px;
+      color: #333333;
+      line-height: 1.5;
+    }
+    .verdict {
+      margin-top: auto;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .column.bad .verdict {
+      background: rgba(248, 113, 113, 0.1);
+      color: #f87171;
+    }
+    .column.good .verdict {
+      background: rgba(74, 222, 128, 0.1);
+      color: #16a34a;
     }
   </style>
 </head>
 <body>
   <div class="accent-bar"></div>
   <div class="container">
-    <h1>Framework Quick Reference</h1>
-    <div class="split-layout">
-      <div class="text-col">
-        <div class="framework-cards">
-          <div class="fw-card">
-            <div class="fw-name">CAR</div>
-            <div class="fw-formula">Challenge &rarr; Action &rarr; Result</div>
-            <div class="fw-best">Best for problem-solving questions.<br>&ldquo;What&rsquo;s the biggest challenge you&rsquo;ve faced?&rdquo;</div>
-            <div class="fw-example"><strong>Tip:</strong> Lead with the challenge to hook the interviewer, then show your solution.</div>
-          </div>
-          <div class="fw-card">
-            <div class="fw-name">PAR</div>
-            <div class="fw-formula">Problem &rarr; Action &rarr; Result</div>
-            <div class="fw-best">Best for &ldquo;tell me about a time&rdquo; questions. Simpler than STAR when the task is obvious.</div>
-            <div class="fw-example"><strong>Tip:</strong> Use when the situation and task are the same thing &mdash; no need to separate them.</div>
-          </div>
-          <div class="fw-card">
-            <div class="fw-name">SOAR</div>
-            <div class="fw-formula">Situation &rarr; Obstacle &rarr; Action &rarr; Result</div>
-            <div class="fw-best">Best for adversity questions. Emphasizes what stood in your way.</div>
-            <div class="fw-example"><strong>Tip:</strong> The obstacle is the star &mdash; it shows resilience and problem-solving under pressure.</div>
-          </div>
+    <h1>Weakness Answers &mdash; What Works vs. What Doesn&rsquo;t</h1>
+    <div class="columns">
+      <div class="column bad">
+        <h2>What NOT to Say</h2>
+        <div class="bad-item">
+          <span class="bad-icon">&times;</span>
+          <span>&ldquo;I&rsquo;m a perfectionist&rdquo;</span>
+          <span class="bad-label">&mdash; disguised strength</span>
         </div>
+        <div class="bad-item">
+          <span class="bad-icon">&times;</span>
+          <span>&ldquo;I work too hard&rdquo;</span>
+          <span class="bad-label">&mdash; clich&eacute;</span>
+        </div>
+        <div class="bad-item">
+          <span class="bad-icon">&times;</span>
+          <span>&ldquo;I have no weaknesses&rdquo;</span>
+          <span class="bad-label">&mdash; arrogant</span>
+        </div>
+        <div class="bad-item">
+          <span class="bad-icon">&times;</span>
+          <span>&ldquo;I&rsquo;m terrible with people&rdquo;</span>
+          <span class="bad-label">&mdash; disqualifying</span>
+        </div>
+        <div class="verdict">These answers signal low self-awareness</div>
       </div>
-      <div class="image-col">
-        <img src="../images/frameworks-comparison--minimal.png" alt="Framework Quick Reference CAR PAR SOAR">
+      <div class="column good">
+        <h2>Strong Weakness Answer</h2>
+        <div class="good-section">
+          <div class="good-label">Honest</div>
+          <p class="good-text">&ldquo;I used to struggle with delegation. I&rsquo;d take on too much because I wanted to make sure everything was done right.&rdquo;</p>
+        </div>
+        <div class="good-section">
+          <div class="good-label">Actions</div>
+          <p class="good-text">&ldquo;I started using a priority matrix &mdash; anything not in my top 3, I assign with clear expectations and check-in points.&rdquo;</p>
+        </div>
+        <div class="good-section">
+          <div class="good-label">Progress</div>
+          <p class="good-text">&ldquo;My direct reports now own 70% of daily operations decisions. My last review specifically noted improved delegation.&rdquo;</p>
+        </div>
+        <div class="verdict">Self-aware, proactive, shows growth</div>
       </div>
     </div>
   </div>
